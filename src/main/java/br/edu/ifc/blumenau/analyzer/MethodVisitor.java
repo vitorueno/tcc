@@ -57,3 +57,4 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         metodosChamados.add(parentMethodName);
     }
 }
+
