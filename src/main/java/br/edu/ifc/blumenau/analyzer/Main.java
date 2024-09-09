@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
-blablablablabla
+
     private static final AtomicInteger totalAsserts = new AtomicInteger(0);
     private static final AtomicInteger totalAssertsSemDesc = new AtomicInteger(0);
     private static final AtomicInteger totalAssertionRoulette = new AtomicInteger(0);
