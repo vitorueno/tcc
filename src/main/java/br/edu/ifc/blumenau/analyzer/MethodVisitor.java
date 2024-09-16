@@ -24,9 +24,9 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         this.metodosChamados = metodosChamados;
 
         assertComUmParametro.add("assertTrue");
-        assertComUmParametro.add("AssertFalse");
-        assertComUmParametro.add("AssertNull");
-        assertComUmParametro.add("AssertNotNull");
+        assertComUmParametro.add("assertFalse");
+        assertComUmParametro.add("assertNull");
+        assertComUmParametro.add("assertNotNull");
     }
 
     @Override
