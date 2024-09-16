@@ -1,5 +1,6 @@
 package br.edu.ifc.blumenau.analyzer;
 
+import com.github.javaparser.ast.body.MethodDeclaration;
 import io.github.cdimascio.dotenv.Dotenv;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
@@ -18,7 +19,7 @@ public class Main {
     private static final AtomicInteger totalAsserts = new AtomicInteger(0);
     private static final AtomicInteger totalAssertsSemDesc = new AtomicInteger(0);
     private static final AtomicInteger totalAssertionRoulette = new AtomicInteger(0);
-    private static final ArrayList<String> metodosTesteChamados = new ArrayList<>();
+    private static final ArrayList<MethodDeclaration> metodosTesteChamados = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException, NoSuchMethodException {
         Dotenv dotenv = Dotenv.load();
@@ -38,8 +39,13 @@ public class Main {
 
             System.out.println("Total asserts: " + totalAsserts);
             System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
-            System.out.println("Assertion Roulette: " + totalAssertionRoulette);
+            System.out.println("Assertion Roulette: " + metodosTesteChamados.size());
         } catch (Exception ignored) {
+
+        }
+
+        for (MethodDeclaration metodosTesteChamado : metodosTesteChamados) {
+            System.out.println(metodosTesteChamado.getBody().get().getStatements().get(0).toString());
 
         }
 
@@ -48,6 +54,7 @@ public class Main {
     private static void analyzeFile(Path path) {
         try (FileInputStream in = new FileInputStream(path.toFile())) {
             JavaParser parser = new JavaParser();
+            parser.getParserConfiguration().setAttributeComments(false);
             CompilationUnit compilationUnit = parser.parse(in).getResult().orElse(null);
 
             if (compilationUnit == null) {
