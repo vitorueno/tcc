@@ -6,17 +6,18 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class MethodVisitor extends VoidVisitorAdapter<Path> {
     AtomicInteger numTotalAsserts;
     AtomicInteger numAssertSemDesc;
     AtomicInteger numAssertionRoulette;
-    ArrayList<String> metodosChamados;
+    ArrayList<MethodDeclaration> metodosChamados;
 
     ArrayList<String> assertComUmParametro = new ArrayList<>();
 
-    public MethodVisitor(AtomicInteger numTotalAsserts, AtomicInteger numAssertSemDesc, AtomicInteger numAssertionRoulette, ArrayList<String> metodosChamados) {
+    public MethodVisitor(AtomicInteger numTotalAsserts, AtomicInteger numAssertSemDesc, AtomicInteger numAssertionRoulette, ArrayList<MethodDeclaration> metodosChamados) {
         this.numTotalAsserts = numTotalAsserts;
         this.numAssertSemDesc = numAssertSemDesc;
         this.numAssertionRoulette = numAssertionRoulette;
@@ -31,6 +32,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
     @Override
     public void visit(MethodCallExpr methodCallExpr, Path path) {
         super.visit(methodCallExpr, path);
+
         String nomeMetodo = methodCallExpr.getNameAsString();
         int qtdParametros = methodCallExpr.getArguments().size();
         int numLinha = methodCallExpr.getBegin().get().line;
@@ -41,19 +43,21 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         }
 
         numTotalAsserts.incrementAndGet();
-        String parentMethodName = String.valueOf(methodCallExpr.findAncestor(MethodDeclaration.class).get().getName());
+        MethodDeclaration ancestor = methodCallExpr.findAncestor(MethodDeclaration.class).get();
 
         boolean isAssertionSemDescricao = qtdParametros < (assertComUmParametro.contains(nomeMetodo) ? 2 : 3);
 
         if (isAssertionSemDescricao) {
             numAssertSemDesc.incrementAndGet();
             System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
-            if (metodosChamados.contains(parentMethodName)) {
+            if (metodosChamados.contains(ancestor)) {
                 numAssertionRoulette.incrementAndGet();
                 System.out.println("AssertionRoulette: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
             }
         }
 
-        metodosChamados.add(parentMethodName);
+        if (!metodosChamados.contains(ancestor)) {
+            metodosChamados.add(ancestor);
+        }
     }
 }
