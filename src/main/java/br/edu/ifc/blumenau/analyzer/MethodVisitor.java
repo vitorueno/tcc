@@ -3,6 +3,8 @@ package br.edu.ifc.blumenau.analyzer;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
+import com.github.javaparser.resolution.types.ResolvedType;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -49,10 +51,10 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
 
         if (isAssertionSemDescricao) {
             numAssertSemDesc.incrementAndGet();
-            System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
+//            System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
             if (metodosChamados.contains(ancestor)) {
                 numAssertionRoulette.incrementAndGet();
-                System.out.println("AssertionRoulette: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
+//                System.out.println("AssertionRoulette: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
             }
         }
 
