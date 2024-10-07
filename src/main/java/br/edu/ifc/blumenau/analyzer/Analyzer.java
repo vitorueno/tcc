@@ -2,17 +2,20 @@ package br.edu.ifc.blumenau.analyzer;
 
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.body.MethodDeclaration;
+import com.github.javaparser.ast.body.VariableDeclarator;
 import com.github.javaparser.ast.expr.*;
 import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.ExpressionStmt;
 import com.github.javaparser.ast.stmt.Statement;
+import com.github.javaparser.ast.type.ClassOrInterfaceType;
+import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.symbolsolver.JavaSymbolSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.CombinedTypeSolver;
-import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 import io.github.cdimascio.dotenv.Dotenv;
 import com.github.javaparser.ast.CompilationUnit;
 import org.jetbrains.annotations.NotNull;
 
+import javax.swing.plaf.nimbus.State;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -33,11 +36,13 @@ public class Analyzer {
     private  final ArrayList<MethodDeclaration> metodosTesteChamados = new ArrayList<>();
     private  ArrayList<String> assertComUmParametro = new ArrayList<>();
     private  String openSourceProjectsDir;
+    private int contador;
 
     private CombinedTypeSolver combinedTypeSolver;
     private JavaSymbolSolver symbolSolver;
 
     public void run() {
+        this.contador = 0;
         assertComUmParametro.add("assertTrue");
         assertComUmParametro.add("assertFalse");
         assertComUmParametro.add("assertNull");
@@ -65,7 +70,8 @@ public class Analyzer {
                     .filter(Files::isRegularFile)
                     .filter(path -> path.toString().endsWith(".java"))
                     .forEach(this::analyzeFile);
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -105,15 +111,19 @@ public class Analyzer {
     }
 
     private void refactorAsserts(BlockStmt body, Map<String, String> assertImports) {
+        List<Statement> newStatements = new ArrayList<>();
+
         for (Statement stmt : body.getStatements()) {
+            if (!(stmt.isExpressionStmt())) continue;
+
             ExpressionStmt exprStmt = stmt.asExpressionStmt();
 
             if (!(exprStmt.getExpression() instanceof MethodCallExpr methodCall)) {
-                return;
+                continue;
             }
 
             if (!methodCall.getNameAsString().startsWith("assert")) {
-                return;
+                continue;
             }
 
             int qtdParametros = methodCall.getArguments().size();
@@ -121,7 +131,7 @@ public class Analyzer {
             boolean isAssertionSemDescricao = qtdParametros < (assertComUmParametro.contains(nomeMetodo) ? 2 : 3);
 
             if (!isAssertionSemDescricao) {
-                return;
+                continue;
             }
 
             if (assertImports.get(nomeMetodo).equals(JUNIT_5) || assertImports.get(nomeMetodo).equals(JUNIT_4)) {
@@ -132,23 +142,30 @@ public class Analyzer {
                     param2 = methodCall.getArgument(1);
                 }
 
+
+                String mensagemAssert = getMensagemAssert(nomeMetodo, param2, param1, body, newStatements);
                 MethodCallExpr newMethodCall = new MethodCallExpr(nomeMetodo);
-                String mensagemAssert = getMensagemAssert(nomeMetodo, param2, param1);
 
                 if (assertImports.get(nomeMetodo).equals(JUNIT_5)) {
                     newMethodCall = refactorJunit5(newMethodCall, param1, param2, mensagemAssert);
                 } else {
                     newMethodCall = refactorJunit4(newMethodCall, param1, param2, mensagemAssert);
                 }
-                stmt.replace(new ExpressionStmt(newMethodCall));
+
+                newStatements.add(new ExpressionStmt(newMethodCall));
             } else {
                 System.out.println("refatoração não suportada");
             }
+        }
 
+        // Apply the new statements after the iteration is done
+        for (Statement newStmt : newStatements) {
+            body.addStatement(0, newStmt);  // Add new statements at the start of the body
         }
     }
 
-    private static MethodCallExpr refactorJunit4(MethodCallExpr newMethodCall, Expression param1, Expression param2, String mensagemAssert) {
+
+    private MethodCallExpr refactorJunit4(MethodCallExpr newMethodCall, Expression param1, Expression param2, String mensagemAssert) {
         newMethodCall = newMethodCall.addArgument("\"" + mensagemAssert + "\"");
         newMethodCall = newMethodCall.addArgument(param1);
         if (param2 != null) {
@@ -157,7 +174,7 @@ public class Analyzer {
         return newMethodCall;
     }
 
-    private static MethodCallExpr refactorJunit5(MethodCallExpr newMethodCall, Expression param1, Expression param2, String mensagemAssert) {
+    private MethodCallExpr refactorJunit5(MethodCallExpr newMethodCall, Expression param1, Expression param2, String mensagemAssert) {
         newMethodCall = newMethodCall.addArgument(param1.toString());
         if (param2 != null) {
             newMethodCall = newMethodCall.addArgument(param2.toString());
@@ -167,19 +184,46 @@ public class Analyzer {
     }
 
     @NotNull
-    private static String getMensagemAssert(String nomeMetodo, Expression param2, Expression param1) {
+    private String getMensagemAssert(String nomeMetodo, Expression param2, Expression param1, BlockStmt body, List<Statement> newStatements) {
         String mensagemAssert = "";
+
+//        if (param1 instanceof MethodCallExpr param1AsMethodCall) {
+//            ResolvedMethodDeclaration resolvedMethod = param1AsMethodCall.resolve();
+//            ResolvedType returnType = resolvedMethod.getReturnType();
+//            String nomeVar = "tmp" + String.valueOf(contador++);
+//            VariableDeclarationExpr newVar = new VariableDeclarationExpr((Type) returnType, nomeVar);
+//            AssignExpr assignExpr = new AssignExpr(new NameExpr(nomeVar), param1, AssignExpr.Operator.ASSIGN);
+//            body.addStatement(0, new ExpressionStmt(newVar));
+//            body.addStatement(1, new ExpressionStmt(assignExpr));
+//            System.out.println("param1 é chamada de método : " + param1AsMethodCall);
+//        }
+
+        String nomeVar = "";
+        if (param2 instanceof MethodCallExpr param2AsMethodCall) {
+            Type stringType = new ClassOrInterfaceType(null, "String");
+            nomeVar = "result" + String.valueOf(this.contador++);
+            MethodCallExpr valorVar = new MethodCallExpr("String.valueOf");
+            valorVar.addArgument(param2AsMethodCall);
+            VariableDeclarator newVar = new VariableDeclarator(stringType, nomeVar, valorVar);
+            VariableDeclarationExpr declaration = new VariableDeclarationExpr(newVar);
+            ExpressionStmt expression = new ExpressionStmt(declaration);
+            newStatements.add(expression);
+        }
 
         if (nomeMetodo.equals("assertEquals")) {
             assert param2 != null;
             mensagemAssert = String.format("Era esperado valores iguais, mas %s é diferente de %s", param1.toString(), param2.toString());
+
+            if (!nomeVar.isEmpty()) {
+                mensagemAssert += String.format(": %s", new NameExpr(nomeVar));
+            }
         } else {
             mensagemAssert = "batata";
         }
         return mensagemAssert;
     }
 
-    private static void mapAssertImports(CompilationUnit compilationUnit, Map<String, String> assertImports) {
+    private void mapAssertImports(CompilationUnit compilationUnit, Map<String, String> assertImports) {
         compilationUnit.getImports().forEach(importDeclaration -> {
 
             if (!importDeclaration.isStatic()) {
@@ -211,11 +255,11 @@ public class Analyzer {
         });
     }
 
-    private static void addAllHamcrestMethodsToMap(Map<String, String> assertImports) {
+    private void addAllHamcrestMethodsToMap(Map<String, String> assertImports) {
         assertImports.put("assertThat", HAMCREST);
     }
 
-    private static void addAllAssertJMethodsToMap(Map<String, String> assertImports) {
+    private void addAllAssertJMethodsToMap(Map<String, String> assertImports) {
         assertImports.put("assertThat", ASSERTJ);
         assertImports.put("assertThatPredicate", ASSERTJ);
         assertImports.put("assertThatThrownBy", ASSERTJ);
@@ -244,7 +288,7 @@ public class Analyzer {
         assertImports.put("assertThatComparable", ASSERTJ);
     }
 
-    private static void addAllJunit4MethodsToMap(Map<String, String> assertImports) {
+    private void addAllJunit4MethodsToMap(Map<String, String> assertImports) {
         assertImports.put("assertArrayEquals", JUNIT_4);
         assertImports.put("assertEquals", JUNIT_4);
         assertImports.put("assertFalse", JUNIT_4);
@@ -260,7 +304,7 @@ public class Analyzer {
     }
 
     @NotNull
-    private static String getImportOrigin(String importAsString) {
+    private String getImportOrigin(String importAsString) {
         String origin;
 
         if (importAsString.contains("org.junit.Assert")) {
@@ -277,7 +321,7 @@ public class Analyzer {
         return origin;
     }
 
-    private static void addAllJunit5MethodsToMap(Map<String, String> assertImports) {
+    private void addAllJunit5MethodsToMap(Map<String, String> assertImports) {
         assertImports.put("assertAll", JUNIT_5);
         assertImports.put("assertArrayEquals", JUNIT_5);
         assertImports.put("assertEquals", JUNIT_5);
@@ -310,7 +354,7 @@ public class Analyzer {
         }
     }
 
-    private static void writeToFile(CompilationUnit compilationUnit) throws IOException {
+    private void writeToFile(CompilationUnit compilationUnit) throws IOException {
         try (FileWriter writer = new FileWriter("output.java")) {
             writer.write(compilationUnit.toString());
         }
