@@ -24,6 +24,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Analyzer {
 
+    public static final String DESCRICAO_ERRO_PADRAO = "Insira uma descrição de erro significativo aqui";
     private  final AtomicInteger totalAsserts = new AtomicInteger(0);
     private  final AtomicInteger totalAssertsSemDesc = new AtomicInteger(0);
     private  final AtomicInteger totalAssertsComDesc = new AtomicInteger(0);
@@ -50,13 +51,6 @@ public class Analyzer {
 
         System.out.println("\nProjeto: " + openSourceProjectsDir + "\n");
 
-//        combinedTypeSolver = new CombinedTypeSolver();
-//        combinedTypeSolver.add(new ReflectionTypeSolver());
-
-//        combinedTypeSolver.add(new JavaParserTypeSolver(projectDir));
-
-//        symbolSolver = new JavaSymbolSolver(combinedTypeSolver);
-//        StaticJavaParser.getConfiguration().setSymbolResolver(symbolSolver);
         StaticJavaParser.getConfiguration().setAttributeComments(false);
 
         try {
@@ -97,16 +91,14 @@ public class Analyzer {
             MethodVisitor methodVisitor = new MethodVisitor(totalAsserts, totalAssertsSemDesc, totalAssertsComDesc, totalAssertionRoulette, metodosTesteChamados);
             compilationUnit.accept(methodVisitor, path);
 
-//            for (MethodDeclaration method: metodosTesteChamados) {
-//                method.getBody().ifPresent(body -> {
-//                    refactorAsserts(body, assertImports);
-//                });
-//            }
+            for (MethodDeclaration method: metodosTesteChamados) {
+                method.getBody().ifPresent(body -> {
+                    refactorAsserts(body, assertImports);
+                });
+            }
 
-//            printMethodsAfterRefactor();
-//            writeToFile(compilationUnit);
-
-
+            printMethodsAfterRefactor();
+            writeToFile(path, compilationUnit);
 
         } catch (IOException ignored) {
 
@@ -114,9 +106,13 @@ public class Analyzer {
     }
 
     private void refactorAsserts(BlockStmt body, Map<String, String> assertImports) {
+        List<Statement> statements = body.getStatements();
         List<Statement> newStatements = new ArrayList<>();
 
-        for (Statement stmt : body.getStatements()) {
+//        for (Statement stmt : body.getStatements()) {
+        for (int i=0; i< statements.size(); i++) {
+            Statement stmt = statements.get(i);
+
             if (!(stmt.isExpressionStmt())) continue;
 
             ExpressionStmt exprStmt = stmt.asExpressionStmt();
@@ -137,25 +133,24 @@ public class Analyzer {
                 continue;
             }
 
-            if (assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue()) || assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_4.getValue())) {
+            if (assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue())
+                    || assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_4.getValue())) {
+
                 Expression param1 = methodCall.getArgument(0);
-                Expression param2 = null;
+                Expression param2 = (qtdParametros == 2) ? methodCall.getArgument(1) : null;
 
-                if (qtdParametros == 2) {
-                    param2 = methodCall.getArgument(1);
-                }
-
-
-                String mensagemAssert = getMensagemAssert(nomeMetodo, param2, param1, body, newStatements);
-                MethodCallExpr newMethodCall = new MethodCallExpr(nomeMetodo);
+                Expression mensagemAssert = criarMensagemAssert(nomeMetodo, param2, param1, body, newStatements);
+                MethodCallExpr novaChamada = new MethodCallExpr(nomeMetodo);
 
                 if (assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue())) {
-                    newMethodCall = refactorJunit5(newMethodCall, param1, param2, mensagemAssert);
+                    novaChamada = refactorJunit5(novaChamada, param1, param2, mensagemAssert);
                 } else {
-                    newMethodCall = refactorJunit4(newMethodCall, param1, param2, mensagemAssert);
+                    novaChamada = refactorJunit4(novaChamada, param1, param2, mensagemAssert);
                 }
 
-                newStatements.add(new ExpressionStmt(newMethodCall));
+                statements.addAll(i, newStatements);
+                stmt.replace(new ExpressionStmt(novaChamada));
+                newStatements.clear();
             } else {
                 System.out.println("refatoração não suportada para método: " + nomeMetodo);
             }
@@ -168,8 +163,8 @@ public class Analyzer {
     }
 
 
-    private MethodCallExpr refactorJunit4(MethodCallExpr newMethodCall, Expression param1, Expression param2, String mensagemAssert) {
-        newMethodCall = newMethodCall.addArgument("\"" + mensagemAssert + "\"");
+    private MethodCallExpr refactorJunit4(MethodCallExpr newMethodCall, Expression param1, Expression param2, Expression mensagemAssert) {
+        newMethodCall = newMethodCall.addArgument(mensagemAssert);
         newMethodCall = newMethodCall.addArgument(param1);
         if (param2 != null) {
             newMethodCall = newMethodCall.addArgument(param2);
@@ -177,53 +172,81 @@ public class Analyzer {
         return newMethodCall;
     }
 
-    private MethodCallExpr refactorJunit5(MethodCallExpr newMethodCall, Expression param1, Expression param2, String mensagemAssert) {
+    private MethodCallExpr refactorJunit5(MethodCallExpr newMethodCall, Expression param1, Expression param2, Expression mensagemAssert) {
         newMethodCall = newMethodCall.addArgument(param1.toString());
         if (param2 != null) {
             newMethodCall = newMethodCall.addArgument(param2.toString());
         }
-        newMethodCall = newMethodCall.addArgument("\"" + mensagemAssert + "\"");
+        newMethodCall = newMethodCall.addArgument(mensagemAssert);
         return newMethodCall;
     }
 
     @NotNull
-    private String getMensagemAssert(String nomeMetodo, Expression param2, Expression param1, BlockStmt body, List<Statement> newStatements) {
+    private Expression criarMensagemAssert(String nomeMetodo, Expression param2, Expression param1, BlockStmt body, List<Statement> newStatements) {
         String mensagemAssert = "";
 
-//        if (param1 instanceof MethodCallExpr param1AsMethodCall) {
-//            ResolvedMethodDeclaration resolvedMethod = param1AsMethodCall.resolve();
-//            ResolvedType returnType = resolvedMethod.getReturnType();
-//            String nomeVar = "tmp" + String.valueOf(contador++);
-//            VariableDeclarationExpr newVar = new VariableDeclarationExpr((Type) returnType, nomeVar);
-//            AssignExpr assignExpr = new AssignExpr(new NameExpr(nomeVar), param1, AssignExpr.Operator.ASSIGN);
-//            body.addStatement(0, new ExpressionStmt(newVar));
-//            body.addStatement(1, new ExpressionStmt(assignExpr));
-//            System.out.println("param1 é chamada de método : " + param1AsMethodCall);
-//        }
+        String nomeVar1 = "";
+        String padraoNomeVarTemp = "result";
+        if (param1 instanceof MethodCallExpr param1AsMethodCall) {
+            Type stringType = new ClassOrInterfaceType(null, "String");
+            nomeVar1 = padraoNomeVarTemp + String.valueOf(this.contador++);
 
-        String nomeVar = "";
+            MethodCallExpr valorVar = new MethodCallExpr("String.valueOf");
+            valorVar.addArgument(param1AsMethodCall);
+            VariableDeclarator newVar = new VariableDeclarator(stringType, nomeVar1, valorVar);
+            VariableDeclarationExpr declaration = new VariableDeclarationExpr(newVar);
+            ExpressionStmt expression = new ExpressionStmt(declaration);
+            newStatements.add(expression);
+        }
+
+        String nomeVar2 = "";
         if (param2 instanceof MethodCallExpr param2AsMethodCall) {
             Type stringType = new ClassOrInterfaceType(null, "String");
-            nomeVar = "result" + String.valueOf(this.contador++);
+            nomeVar2 = padraoNomeVarTemp + String.valueOf(this.contador++);
+
             MethodCallExpr valorVar = new MethodCallExpr("String.valueOf");
             valorVar.addArgument(param2AsMethodCall);
-            VariableDeclarator newVar = new VariableDeclarator(stringType, nomeVar, valorVar);
+            VariableDeclarator newVar = new VariableDeclarator(stringType, nomeVar2, valorVar);
             VariableDeclarationExpr declaration = new VariableDeclarationExpr(newVar);
             ExpressionStmt expression = new ExpressionStmt(declaration);
             newStatements.add(expression);
         }
 
         if (nomeMetodo.equals("assertEquals")) {
-            assert param2 != null;
-            mensagemAssert = String.format("Era esperado valores iguais, mas %s é diferente de %s", param1.toString(), param2.toString());
-
-            if (!nomeVar.isEmpty()) {
-                mensagemAssert += String.format(": %s", new NameExpr(nomeVar));
-            }
+            return criarMensagemAssertEquals(param2, param1, nomeVar1, nomeVar2);
         } else {
-            mensagemAssert = "batata";
+            mensagemAssert = DESCRICAO_ERRO_PADRAO;
         }
-        return mensagemAssert;
+        return new StringLiteralExpr(mensagemAssert);
+    }
+
+    @NotNull
+    private static Expression criarMensagemAssertEquals(Expression param2, Expression param1, String nomeVar1, String nomeVar2) {
+        assert param2 != null;
+
+        String mensagemParte1 = "Era esperado valores iguais, mas ";
+        String mensagemParte2 = String.format(" <%s> é diferente de ", param1.toString());
+        String mensagemParte3 = String.format(" <%s>", param2.toString());
+
+        Expression result = new StringLiteralExpr(mensagemParte1);
+
+        if (!nomeVar1.isEmpty()) {
+            result = new BinaryExpr(result, new NameExpr(nomeVar1), BinaryExpr.Operator.PLUS);
+            result = new BinaryExpr(result, new StringLiteralExpr(mensagemParte2), BinaryExpr.Operator.PLUS);
+        } else {
+            String parte2Formatada = mensagemParte2.replace("<", "").replace(">", "");
+            result = new StringLiteralExpr(mensagemParte1 + parte2Formatada);
+        }
+
+        if (!nomeVar2.isEmpty()) {
+            result = new BinaryExpr(result, new NameExpr(nomeVar2), BinaryExpr.Operator.PLUS);
+            result = new BinaryExpr(result, new StringLiteralExpr(mensagemParte3), BinaryExpr.Operator.PLUS);
+        } else {
+            String mensagemSemMaiorEMenor = mensagemParte3.replace("<", "").replace(">", "");
+            result = new BinaryExpr(result, new StringLiteralExpr(mensagemSemMaiorEMenor), BinaryExpr.Operator.PLUS);
+        }
+
+        return result;
     }
 
     private void mapAssertImports(CompilationUnit compilationUnit, Map<String, String> assertImports) {
@@ -309,8 +332,8 @@ public class Analyzer {
         }
     }
 
-    private void writeToFile(CompilationUnit compilationUnit) throws IOException {
-        try (FileWriter writer = new FileWriter("output.java")) {
+    private void writeToFile(Path path, CompilationUnit compilationUnit) throws IOException {
+        try (FileWriter writer = new FileWriter(path.toString())) {
             writer.write(compilationUnit.toString());
         }
     }
