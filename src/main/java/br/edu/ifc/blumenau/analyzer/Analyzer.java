@@ -24,7 +24,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Analyzer {
 
-    public static final String DESCRICAO_ERRO_PADRAO = "Insira uma descrição de erro significativo aqui";
     private  final AtomicInteger totalAsserts = new AtomicInteger(0);
     private  final AtomicInteger totalAssertsSemDesc = new AtomicInteger(0);
     private  final AtomicInteger totalAssertsComDesc = new AtomicInteger(0);
@@ -65,7 +64,7 @@ public class Analyzer {
         System.out.println("Total asserts: " + totalAsserts);
         System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
         System.out.println("Asserts com descrição: " + totalAssertsComDesc);
-        System.out.println("Assertion Roulette: " + metodosTesteChamados.size());
+        System.out.println("Assertion Roulette: " + totalAssertionRoulette);
     }
 
 
@@ -98,7 +97,7 @@ public class Analyzer {
             }
 
             printMethodsAfterRefactor();
-            writeToFile(path, compilationUnit);
+//            writeToFile(path, compilationUnit);
 
         } catch (IOException ignored) {
 
@@ -109,7 +108,6 @@ public class Analyzer {
         List<Statement> statements = body.getStatements();
         List<Statement> newStatements = new ArrayList<>();
 
-//        for (Statement stmt : body.getStatements()) {
         for (int i=0; i< statements.size(); i++) {
             Statement stmt = statements.get(i);
 
@@ -212,41 +210,50 @@ public class Analyzer {
             newStatements.add(expression);
         }
 
-        if (nomeMetodo.equals("assertEquals")) {
-            return criarMensagemAssertEquals(param2, param1, nomeVar1, nomeVar2);
+        if (nomeMetodo.equals(Junit4Asserts.ASSERT_EQUALS.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertEquals(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_FALSE.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertFalse(param1, nomeVar1);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_ARRAY_EQUALS.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertArrayEquals(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_NOT_EQUALS.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertNotEquals(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_NOT_NULL.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertNotNull(param1, nomeVar1);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_NOT_SAME.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertNotSame(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_NULL.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertNull(param1, nomeVar1);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_SAME.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertSame(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_THAT.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertThat(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_THROWS.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertThrows(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit4Asserts.ASSERT_TRUE.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertTrue(param1, nomeVar1);
+        } else if (nomeMetodo.equals(Junit4Asserts.FAIL.getMethodName())) {
+            return MessageGenerator.criarMensagemFail();
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_ALL.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertAll();
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_DOES_NOT_THROW.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertDoesNotThrow(param1, nomeVar1);
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_ITERABLE_EQUALS.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertIterableEquals(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_LINES_MATCH.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertLinesMatch(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_INSTANCE_OF.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertInstanceOf(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_THROWS_EXACTLY.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertThrowsExactly(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_TIMEOUT.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertTimeout(param2, param1, nomeVar1, nomeVar2);
+        } else if (nomeMetodo.equals(Junit5Asserts.ASSERT_TIMEOUT_PREEMPTIVELY.getMethodName())) {
+            return MessageGenerator.criarMensagemAssertTimeout(param2, param1, nomeVar1, nomeVar2);
         } else {
-            mensagemAssert = DESCRICAO_ERRO_PADRAO;
+            mensagemAssert = MessageGenerator.DESCRICAO_ERRO_PADRAO;
         }
         return new StringLiteralExpr(mensagemAssert);
-    }
-
-    @NotNull
-    private static Expression criarMensagemAssertEquals(Expression param2, Expression param1, String nomeVar1, String nomeVar2) {
-        assert param2 != null;
-
-        String mensagemParte1 = "Era esperado valores iguais, mas ";
-        String mensagemParte2 = String.format(" <%s> é diferente de ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
-
-        Expression result = new StringLiteralExpr(mensagemParte1);
-
-        if (!nomeVar1.isEmpty()) {
-            result = new BinaryExpr(result, new NameExpr(nomeVar1), BinaryExpr.Operator.PLUS);
-            result = new BinaryExpr(result, new StringLiteralExpr(mensagemParte2), BinaryExpr.Operator.PLUS);
-        } else {
-            String parte2Formatada = mensagemParte2.replace("<", "").replace(">", "");
-            result = new StringLiteralExpr(mensagemParte1 + parte2Formatada);
-        }
-
-        if (!nomeVar2.isEmpty()) {
-            result = new BinaryExpr(result, new NameExpr(nomeVar2), BinaryExpr.Operator.PLUS);
-            result = new BinaryExpr(result, new StringLiteralExpr(mensagemParte3), BinaryExpr.Operator.PLUS);
-        } else {
-            String mensagemSemMaiorEMenor = mensagemParte3.replace("<", "").replace(">", "");
-            result = new BinaryExpr(result, new StringLiteralExpr(mensagemSemMaiorEMenor), BinaryExpr.Operator.PLUS);
-        }
-
-        return result;
     }
 
     private void mapAssertImports(CompilationUnit compilationUnit, Map<String, String> assertImports) {

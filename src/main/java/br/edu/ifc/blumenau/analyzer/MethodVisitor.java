@@ -3,12 +3,11 @@ package br.edu.ifc.blumenau.analyzer;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
-import com.github.javaparser.resolution.types.ResolvedType;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Optional;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class MethodVisitor extends VoidVisitorAdapter<Path> {
@@ -19,6 +18,8 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
     ArrayList<MethodDeclaration> metodosChamados;
 
     ArrayList<String> assertComUmParametro = new ArrayList<>();
+    private MethodDeclaration ancestor;
+    private Set<String> assertsJunit;
 
     public MethodVisitor(AtomicInteger numTotalAsserts, AtomicInteger numAssertSemDesc, AtomicInteger numAssertComDesc, AtomicInteger numAssertionRoulette, ArrayList<MethodDeclaration> metodosChamados) {
         this.numTotalAsserts = numTotalAsserts;
@@ -31,6 +32,8 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         assertComUmParametro.add("assertFalse");
         assertComUmParametro.add("assertNull");
         assertComUmParametro.add("assertNotNull");
+
+        assertsJunit = obterConjuntoAssertsJunit();
     }
 
     @Override
@@ -48,7 +51,6 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         }
 
         numTotalAsserts.incrementAndGet();
-        MethodDeclaration ancestor;
         try {
             ancestor = methodCallExpr.findAncestor(MethodDeclaration.class).get();
         } catch (Exception e) {
@@ -60,7 +62,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         if (isAssertionSemDescricao) {
             numAssertSemDesc.incrementAndGet();
 //            System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
-            if (metodosChamados.contains(ancestor)) {
+            if (numeroAsserts() > 1) {
                 numAssertionRoulette.incrementAndGet();
 //                System.out.println("AssertionRoulette: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
             }
@@ -75,22 +77,32 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
     }
 
     private boolean isValidAssert(String nomeAssert) {
-        boolean valid = false;
+        return assertsJunit.contains(nomeAssert);
+    }
 
+    private int numeroAsserts() {
+        final int[] count = {0};
+        ancestor.getBody().ifPresent(body -> {
+            body.findAll(MethodCallExpr.class).forEach(methodCall -> {
+                if (assertsJunit.contains(methodCall.getNameAsString())) {
+                    count[0]++;
+                }
+            });
+        });
+
+        return count[0];
+    }
+
+    private static Set<String> obterConjuntoAssertsJunit() {
+        Set<String> enumValues = new HashSet<>();
         for (Junit5Asserts junitAssert : Junit5Asserts.values()) {
-            if (junitAssert.getMethodName().equals(nomeAssert)) {
-                valid = true;
-                break;
-            }
+            enumValues.add(junitAssert.getMethodName());
         }
 
         for (Junit4Asserts junitAssert : Junit4Asserts.values()) {
-            if (junitAssert.getMethodName().equals(nomeAssert) || valid) {
-                valid = true;
-                break;
-            }
+            enumValues.add(junitAssert.getMethodName());
         }
 
-        return valid;
+        return enumValues;
     }
 }
