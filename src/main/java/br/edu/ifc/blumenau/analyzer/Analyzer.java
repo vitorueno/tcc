@@ -15,7 +15,6 @@ import io.github.cdimascio.dotenv.Dotenv;
 import com.github.javaparser.ast.CompilationUnit;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.plaf.nimbus.State;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -25,13 +24,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Analyzer {
 
-    public static final String JUNIT_4 = "junit4";
-    public static final String JUNIT_5 = "junit5";
-    public static final String ASSERTJ = "assertj";
-    public static final String HAMCREST = "hamcrest";
-    public static final String DESCONHECIDO = "desconhecido";
     private  final AtomicInteger totalAsserts = new AtomicInteger(0);
     private  final AtomicInteger totalAssertsSemDesc = new AtomicInteger(0);
+    private  final AtomicInteger totalAssertsComDesc = new AtomicInteger(0);
     private  final AtomicInteger totalAssertionRoulette = new AtomicInteger(0);
     private  final ArrayList<MethodDeclaration> metodosTesteChamados = new ArrayList<>();
     private  ArrayList<String> assertComUmParametro = new ArrayList<>();
@@ -49,12 +44,11 @@ public class Analyzer {
         assertComUmParametro.add("assertNotNull");
 
         Dotenv dotenv = Dotenv.load();
-
         openSourceProjectsDir = dotenv.get("PROJECTS_DIR");
 
-        assert openSourceProjectsDir != null;
-
         Path projectDir = Paths.get(openSourceProjectsDir);
+
+        System.out.println("\nProjeto: " + openSourceProjectsDir + "\n");
 
 //        combinedTypeSolver = new CombinedTypeSolver();
 //        combinedTypeSolver.add(new ReflectionTypeSolver());
@@ -73,13 +67,24 @@ public class Analyzer {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        System.out.println("Total asserts: " + totalAsserts);
+        System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
+        System.out.println("Asserts com descrição: " + totalAssertsComDesc);
+        System.out.println("Assertion Roulette: " + metodosTesteChamados.size());
     }
 
 
     private void analyzeFile(Path path) {
         try (FileInputStream in = new FileInputStream(path.toFile())) {
 
-            CompilationUnit compilationUnit = StaticJavaParser.parse(in);
+            CompilationUnit compilationUnit;
+            try {
+                compilationUnit = StaticJavaParser.parse(in);
+            }
+            catch (Exception e) {
+                return;
+            }
 
             if (compilationUnit == null) {
                 return;
@@ -89,21 +94,19 @@ public class Analyzer {
 
             mapAssertImports(compilationUnit, assertImports);
 
-            MethodVisitor methodVisitor = new MethodVisitor(totalAsserts, totalAssertsSemDesc, totalAssertionRoulette, metodosTesteChamados);
+            MethodVisitor methodVisitor = new MethodVisitor(totalAsserts, totalAssertsSemDesc, totalAssertsComDesc, totalAssertionRoulette, metodosTesteChamados);
             compilationUnit.accept(methodVisitor, path);
 
-            for (MethodDeclaration method: metodosTesteChamados) {
-                method.getBody().ifPresent(body -> {
-                    refactorAsserts(body, assertImports);
-                });
-            }
+//            for (MethodDeclaration method: metodosTesteChamados) {
+//                method.getBody().ifPresent(body -> {
+//                    refactorAsserts(body, assertImports);
+//                });
+//            }
 
-            printMethodsAfterRefactor();
-            writeToFile(compilationUnit);
+//            printMethodsAfterRefactor();
+//            writeToFile(compilationUnit);
 
-            System.out.println("Total asserts: " + totalAsserts);
-            System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
-            System.out.println("Assertion Roulette: " + metodosTesteChamados.size());
+
 
         } catch (IOException ignored) {
 
@@ -134,7 +137,7 @@ public class Analyzer {
                 continue;
             }
 
-            if (assertImports.get(nomeMetodo).equals(JUNIT_5) || assertImports.get(nomeMetodo).equals(JUNIT_4)) {
+            if (assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue()) || assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_4.getValue())) {
                 Expression param1 = methodCall.getArgument(0);
                 Expression param2 = null;
 
@@ -146,7 +149,7 @@ public class Analyzer {
                 String mensagemAssert = getMensagemAssert(nomeMetodo, param2, param1, body, newStatements);
                 MethodCallExpr newMethodCall = new MethodCallExpr(nomeMetodo);
 
-                if (assertImports.get(nomeMetodo).equals(JUNIT_5)) {
+                if (assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue())) {
                     newMethodCall = refactorJunit5(newMethodCall, param1, param2, mensagemAssert);
                 } else {
                     newMethodCall = refactorJunit4(newMethodCall, param1, param2, mensagemAssert);
@@ -154,7 +157,7 @@ public class Analyzer {
 
                 newStatements.add(new ExpressionStmt(newMethodCall));
             } else {
-                System.out.println("refatoração não suportada");
+                System.out.println("refatoração não suportada para método: " + nomeMetodo);
             }
         }
 
@@ -236,71 +239,39 @@ public class Analyzer {
                 String methodName = importDeclaration.getName().getIdentifier(); // Nome do método
                 String origin = getImportOrigin(importAsString);
                 assertImports.put(methodName, origin);
-                System.out.println("Import direto: " + methodName + " de " + importAsString);
+                // System.out.println("Import direto: " + methodName + " de " + importAsString);
             } else if (importAsString.contains("org.junit.jupiter.api.Assertions") && importDeclaration.isAsterisk()) {
-                System.out.println("importa todos os asserts do Junit 5");
+                // System.out.println("importa todos os asserts do Junit 5");
                 addAllJunit5MethodsToMap(assertImports);
             } else if (importAsString.contains("org.junit.Assert") && importDeclaration.isAsterisk()) {
-                System.out.println("importa todos os asserts do Junit 4");
+                // System.out.println("importa todos os asserts do Junit 4");
                 addAllJunit4MethodsToMap(assertImports);
             } else if (importAsString.contains("org.assertj.core.api.Assertions") && importDeclaration.isAsterisk()) {
-                System.out.println("importa todos os asserts do assertJ");
+                // System.out.println("importa todos os asserts do assertJ");
                 addAllAssertJMethodsToMap(assertImports);
             } else if (importAsString.contains("org.hamcrest.MatcherAssert") && importDeclaration.isAsterisk()) {
-                System.out.println("importa todos os asserts do hamcrest");
+                // System.out.println("importa todos os asserts do hamcrest");
                 addAllHamcrestMethodsToMap(assertImports);
-            } else {
-                System.out.println("origem do import desconhecida");
             }
         });
     }
 
     private void addAllHamcrestMethodsToMap(Map<String, String> assertImports) {
-        assertImports.put("assertThat", HAMCREST);
+        for (HamcrestAsserts assertMethod : HamcrestAsserts.values()) {
+            assertImports.put(assertMethod.getMethodName(), AssertOrigin.HAMCREST.getValue());
+        }
     }
 
     private void addAllAssertJMethodsToMap(Map<String, String> assertImports) {
-        assertImports.put("assertThat", ASSERTJ);
-        assertImports.put("assertThatPredicate", ASSERTJ);
-        assertImports.put("assertThatThrownBy", ASSERTJ);
-        assertImports.put("assertThatCode", ASSERTJ);
-        assertImports.put("assertThatObject", ASSERTJ);
-        assertImports.put("assertWith", ASSERTJ);
-        assertImports.put("assertThatExceptionOfType", ASSERTJ);
-        assertImports.put("assertThatNoException", ASSERTJ);
-        assertImports.put("assertThatNullPointerException", ASSERTJ);
-        assertImports.put("assertThatIllegalArgumentException", ASSERTJ);
-        assertImports.put("assertThatIOException", ASSERTJ);
-        assertImports.put("assertThatIllegalStateException", ASSERTJ);
-        assertImports.put("assertThatException", ASSERTJ);
-        assertImports.put("assertThatRuntimeException", ASSERTJ);
-        assertImports.put("assertThatReflectiveOperationException", ASSERTJ);
-        assertImports.put("assertThatIndexOutOfBoundsException", ASSERTJ);
-        assertImports.put("fail", ASSERTJ);
-        assertImports.put("failBecauseExceptionWasNotThrown", ASSERTJ);
-        assertImports.put("assertThatCharSequence", ASSERTJ);
-        assertImports.put("assertThatIterable", ASSERTJ);
-        assertImports.put("assertThatIterator", ASSERTJ);
-        assertImports.put("assertThatCollection", ASSERTJ);
-        assertImports.put("assertThatList", ASSERTJ);
-        assertImports.put("assertThatStream", ASSERTJ);
-        assertImports.put("assertThatPath", ASSERTJ);
-        assertImports.put("assertThatComparable", ASSERTJ);
+        for (AssertJAsserts assertMethod : AssertJAsserts.values()) {
+            assertImports.put(assertMethod.getMethodName(), AssertOrigin.ASSERTJ.getValue());
+        }
     }
 
     private void addAllJunit4MethodsToMap(Map<String, String> assertImports) {
-        assertImports.put("assertArrayEquals", JUNIT_4);
-        assertImports.put("assertEquals", JUNIT_4);
-        assertImports.put("assertFalse", JUNIT_4);
-        assertImports.put("assertNotEquals", JUNIT_4);
-        assertImports.put("assertNotNull", JUNIT_4);
-        assertImports.put("assertNotSame", JUNIT_4);
-        assertImports.put("assertNull", JUNIT_4);
-        assertImports.put("assertSame", JUNIT_4);
-        assertImports.put("assertThat", JUNIT_4);
-        assertImports.put("assertThrows", JUNIT_4);
-        assertImports.put("assertTrue", JUNIT_4);
-        assertImports.put("fail", JUNIT_4);
+        for (Junit4Asserts assertMethod : Junit4Asserts.values()) {
+            assertImports.put(assertMethod.getMethodName(), AssertOrigin.JUNIT_4.getValue());
+        }
     }
 
     @NotNull
@@ -308,39 +279,23 @@ public class Analyzer {
         String origin;
 
         if (importAsString.contains("org.junit.Assert")) {
-            origin = JUNIT_4;
+            origin = AssertOrigin.JUNIT_4.getValue();
         } else if (importAsString.contains("org.junit.jupiter.api.Assertions")) {
-            origin = JUNIT_5;
+            origin = AssertOrigin.JUNIT_5.getValue();
         } else if (importAsString.contains("org.assertj.core.api.Assertions")) {
-            origin = ASSERTJ;
+            origin = AssertOrigin.ASSERTJ.getValue();
         } else if (importAsString.contains("org.hamcrest.MatcherAssert")) {
-            origin = HAMCREST;
+            origin = AssertOrigin.HAMCREST.getValue();
         } else {
-            origin = DESCONHECIDO;
+            origin = AssertOrigin.DESCONHECIDO.getValue();
         }
         return origin;
     }
 
     private void addAllJunit5MethodsToMap(Map<String, String> assertImports) {
-        assertImports.put("assertAll", JUNIT_5);
-        assertImports.put("assertArrayEquals", JUNIT_5);
-        assertImports.put("assertEquals", JUNIT_5);
-        assertImports.put("assertDoesNotThrow", JUNIT_5);
-        assertImports.put("assertFalse", JUNIT_5);
-        assertImports.put("assertIterableEquals", JUNIT_5);
-        assertImports.put("assertLinesMatch", JUNIT_5);
-        assertImports.put("assertNotEquals", JUNIT_5);
-        assertImports.put("assertNotNull", JUNIT_5);
-        assertImports.put("assertNotSame", JUNIT_5);
-        assertImports.put("assertInstanceOf", JUNIT_5);
-        assertImports.put("assertNull", JUNIT_5);
-        assertImports.put("assertSame", JUNIT_5);
-        assertImports.put("assertThrows", JUNIT_5);
-        assertImports.put("assertThrowsExactly", JUNIT_5);
-        assertImports.put("assertTimeout", JUNIT_5);
-        assertImports.put("assertTimeoutPreemptively", JUNIT_5);
-        assertImports.put("assertTrue", JUNIT_5);
-        assertImports.put("fail", JUNIT_5);
+        for (Junit5Asserts assertMethod : Junit5Asserts.values()) {
+            assertImports.put(assertMethod.getMethodName(), AssertOrigin.JUNIT_5.getValue());
+        }
     }
 
     private void printMethodsAfterRefactor() {
