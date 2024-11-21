@@ -71,7 +71,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
             }
         } else {
             numAssertComDesc.incrementAndGet();
-            System.out.println("Assert com mensagem: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
+//            System.out.println("Assert com mensagem: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
         }
 
         if (!metodosChamados.contains(ancestor)) {

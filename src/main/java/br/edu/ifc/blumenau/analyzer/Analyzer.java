@@ -32,11 +32,13 @@ public class Analyzer {
     private  ArrayList<String> assertComUmParametro = new ArrayList<>();
     private String projectPath = "";
     private int contador;
+    private Set<String> assertsJunit;
 
     private CombinedTypeSolver combinedTypeSolver;
     private JavaSymbolSolver symbolSolver;
 
     public Analyzer(String path) {
+        assertsJunit = obterConjuntoAssertsJunit();
         projectPath = path;
     }
 
@@ -46,6 +48,8 @@ public class Analyzer {
         assertComUmParametro.add("assertFalse");
         assertComUmParametro.add("assertNull");
         assertComUmParametro.add("assertNotNull");
+        assertComUmParametro.add("assertDoesNotThrow");
+        assertComUmParametro.add("assertThrows");
 
         Dotenv dotenv = Dotenv.load();
         if (projectPath.isEmpty()) {
@@ -102,7 +106,7 @@ public class Analyzer {
                 });
             }
 
-            printMethodsAfterRefactor();
+//            printMethodsAfterRefactor();
             writeToFile(path, compilationUnit);
 
         } catch (IOException ignored) {
@@ -125,7 +129,7 @@ public class Analyzer {
                 continue;
             }
 
-            if (!methodCall.getNameAsString().startsWith("assert")) {
+            if (!assertsJunit.contains(methodCall.getNameAsString())) {
                 continue;
             }
 
@@ -351,4 +355,16 @@ public class Analyzer {
         }
     }
 
+    private static Set<String> obterConjuntoAssertsJunit() {
+        Set<String> enumValues = new HashSet<>();
+        for (Junit5Asserts junitAssert : Junit5Asserts.values()) {
+            enumValues.add(junitAssert.getMethodName());
+        }
+
+        for (Junit4Asserts junitAssert : Junit4Asserts.values()) {
+            enumValues.add(junitAssert.getMethodName());
+        }
+
+        return enumValues;
+    }
 }
