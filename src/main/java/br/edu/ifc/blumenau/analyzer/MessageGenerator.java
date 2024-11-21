@@ -9,13 +9,17 @@ import org.jetbrains.annotations.NotNull;
 public class MessageGenerator {
     public static final String DESCRICAO_ERRO_PADRAO = "Insira uma descrição de erro significativo aqui";
 
+    private static String formatarParametro(Expression param) {
+        return param.toString().replace("\"", "'");
+    }
+
     @NotNull
     public static Expression criarMensagemAssertEquals(Expression param2, Expression param1, String nomeVar1, String nomeVar2) {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado valores iguais, mas ";
-        String mensagemParte2 = String.format(" <%s> é diferente de ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
+        String mensagemParte2 = String.format(" <%s> é diferente de ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -43,8 +47,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado arrays iguais, mas ";
-        String mensagemParte2 = String.format(" <%s> é diferente de ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
+        String mensagemParte2 = String.format(" <%s> é diferente de ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -71,7 +75,7 @@ public class MessageGenerator {
     public static Expression criarMensagemAssertFalse(Expression param1, String nomeVar1) {
 
         String mensagemParte1 = "Era esperado falso, mas ";
-        String mensagemParte2 = String.format(" <%s> é verdadeiro ", param1.toString());
+        String mensagemParte2 = String.format(" <%s> é verdadeiro ", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -90,8 +94,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado valores diferentes, mas ";
-        String mensagemParte2 = String.format(" <%s> é igual a ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
+        String mensagemParte2 = String.format(" <%s> é igual a ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -117,7 +121,7 @@ public class MessageGenerator {
     @NotNull
     public static Expression criarMensagemAssertNotNull(Expression param1, String nomeVar1) {
         String mensagemParte1 = "Era esperado não nulo, mas ";
-        String mensagemParte2 = String.format(" <%s> é nulo", param1.toString());
+        String mensagemParte2 = String.format(" <%s> é nulo", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -136,8 +140,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado objetos diferentes, mas ";
-        String mensagemParte2 = String.format(" <%s> é igual a ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
+        String mensagemParte2 = String.format(" <%s> é igual a ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -163,7 +167,7 @@ public class MessageGenerator {
     @NotNull
     public static Expression criarMensagemAssertNull(Expression param1, String nomeVar1) {
         String mensagemParte1 = "Era esperado nulo, mas ";
-        String mensagemParte2 = String.format(" <%s> não é nulo", param1.toString());
+        String mensagemParte2 = String.format(" <%s> não é nulo", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -182,8 +186,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado objetos iguais, mas ";
-        String mensagemParte2 = String.format(" <%s> é diferente de ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
+        String mensagemParte2 = String.format(" <%s> é diferente de ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -211,8 +215,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado que ";
-        String mensagemParte2 = String.format(" <%s> satisfizesse a condição ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>, mas não a satisfez", param2.toString());
+        String mensagemParte2 = String.format(" <%s> satisfizesse a condição ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>, mas não a satisfez", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -238,7 +242,7 @@ public class MessageGenerator {
     @NotNull
     public static Expression criarMensagemAssertThrows(Expression param2, Expression param1, String nomeVar1, String nomeVar2) {
         String mensagemParte1 = "Era esperado que a exceção ";
-        String mensagemParte2 = String.format(" <%s> fosse lançada, mas não foi", param1.toString());
+        String mensagemParte2 = String.format(" <%s> fosse lançada, mas não foi", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -256,7 +260,7 @@ public class MessageGenerator {
     @NotNull
     public static Expression criarMensagemAssertTrue(Expression param1, String nomeVar1) {
         String mensagemParte1 = "Era esperado verdadeiro, mas ";
-        String mensagemParte2 = String.format(" <%s> é falso", param1.toString());
+        String mensagemParte2 = String.format(" <%s> é falso", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -287,7 +291,7 @@ public class MessageGenerator {
     @NotNull
     public static Expression criarMensagemAssertDoesNotThrow(Expression param1, String nomeVar1) {
         String mensagemParte1 = "Era esperado que nenhuma exceção fosse lançada, mas ";
-        String mensagemParte2 = String.format(" <%s> foi lançada", param1.toString());
+        String mensagemParte2 = String.format(" <%s> foi lançada", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -307,8 +311,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado que as listas fossem iguais, mas ";
-        String mensagemParte2 = String.format(" <%s> não é igual a ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
+        String mensagemParte2 = String.format(" <%s> não é igual a ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -336,8 +340,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado que as linhas combinassem, mas ";
-        String mensagemParte2 = String.format(" <%s> não corresponde a ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>", param2.toString());
+        String mensagemParte2 = String.format(" <%s> não corresponde a ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -365,8 +369,8 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado que  ";
-        String mensagemParte2 = String.format(" <%s> fosse uma instancia de ", param1.toString());
-        String mensagemParte3 = String.format(" <%s>, mas não é", param2.toString());
+        String mensagemParte2 = String.format(" <%s> fosse uma instancia de ", formatarParametro(param1));
+        String mensagemParte3 = String.format(" <%s>, mas não é", formatarParametro(param2));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -392,7 +396,7 @@ public class MessageGenerator {
     @NotNull
     public static Expression criarMensagemAssertThrowsExactly(Expression param2, Expression param1, String nomeVar1, String nomeVar2) {
         String mensagemParte1 = "Era esperado que a exceção ";
-        String mensagemParte2 = String.format(" <%s> fosse lançada, mas não foi", param1.toString());
+        String mensagemParte2 = String.format(" <%s> fosse lançada, mas não foi", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 
@@ -412,7 +416,7 @@ public class MessageGenerator {
         assert param2 != null;
 
         String mensagemParte1 = "Era esperado que o tempo de execução ";
-        String mensagemParte2 = String.format(" <%s> não fosse ultrapassado, mas foi");
+        String mensagemParte2 = String.format(" <%s> não fosse ultrapassado, mas foi", formatarParametro(param1));
 
         Expression result = new StringLiteralExpr(mensagemParte1);
 

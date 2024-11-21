@@ -32,6 +32,9 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         assertComUmParametro.add("assertFalse");
         assertComUmParametro.add("assertNull");
         assertComUmParametro.add("assertNotNull");
+        assertComUmParametro.add("assertDoesNotThrow");
+        assertComUmParametro.add("assertThrows");
+
 
         assertsJunit = obterConjuntoAssertsJunit();
     }

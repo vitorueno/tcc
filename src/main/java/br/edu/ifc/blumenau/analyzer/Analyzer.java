@@ -30,11 +30,15 @@ public class Analyzer {
     private  final AtomicInteger totalAssertionRoulette = new AtomicInteger(0);
     private  final ArrayList<MethodDeclaration> metodosTesteChamados = new ArrayList<>();
     private  ArrayList<String> assertComUmParametro = new ArrayList<>();
-    private  String openSourceProjectsDir;
+    private String projectPath = "";
     private int contador;
 
     private CombinedTypeSolver combinedTypeSolver;
     private JavaSymbolSolver symbolSolver;
+
+    public Analyzer(String path) {
+        projectPath = path;
+    }
 
     public void run() {
         this.contador = 0;
@@ -44,11 +48,13 @@ public class Analyzer {
         assertComUmParametro.add("assertNotNull");
 
         Dotenv dotenv = Dotenv.load();
-        openSourceProjectsDir = dotenv.get("PROJECTS_DIR");
+        if (projectPath.isEmpty()) {
+            projectPath = dotenv.get("PROJECTS_DIR");
+        }
 
-        Path projectDir = Paths.get(openSourceProjectsDir);
+        Path projectDir = Paths.get(projectPath);
 
-        System.out.println("\nProjeto: " + openSourceProjectsDir + "\n");
+        System.out.println("\nProjeto: " + projectPath + "\n");
 
         StaticJavaParser.getConfiguration().setAttributeComments(false);
 
@@ -97,7 +103,7 @@ public class Analyzer {
             }
 
             printMethodsAfterRefactor();
-//            writeToFile(path, compilationUnit);
+            writeToFile(path, compilationUnit);
 
         } catch (IOException ignored) {
 
@@ -140,7 +146,7 @@ public class Analyzer {
                 Expression mensagemAssert = criarMensagemAssert(nomeMetodo, param2, param1, body, newStatements);
                 MethodCallExpr novaChamada = new MethodCallExpr(nomeMetodo);
 
-                if (assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue())) {
+                if (assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue()) && !nomeMetodo.equals(Junit5Asserts.ASSERT_ALL.getMethodName())) {
                     novaChamada = refactorJunit5(novaChamada, param1, param2, mensagemAssert);
                 } else {
                     novaChamada = refactorJunit4(novaChamada, param1, param2, mensagemAssert);
