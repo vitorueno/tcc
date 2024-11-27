@@ -203,4 +203,9 @@ README.html
 
 
 ### project specific
+*.env
 output.java
+.env/
+env/
+.venv/
+venv/

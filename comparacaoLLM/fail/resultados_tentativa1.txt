@@ -1,0 +1,14 @@
+disruptor-4.0.0.RC1.log & 0.73 & 0.67
+logback-v_1.4.5.log & 0.72 & 0.69
+cucumber-jvm-7.11.1.log & 0.69 & 0.65
+jetcache-2.7.3.log & 0.75 & 0.69
+fastjson2-2.0.24.log & 0.76 & 0.69
+jasypt-spring-boot-jasypt-spring-boot-parent-3.0.5.log & 0.71 & 0.66
+tablesaw-0.43.1.log & 0.71 & 0.66
+liquibase-4.19.1.log & 0.75 & 0.70
+redisson-redisson-3.19.3.log & 0.73 & 0.65
+RoaringBitmap-0.9.39.log & 0.75 & 0.68
+unirest-java-3.14.2.log & 0.75 & 0.69
+jsoup-jsoup-1.15.3.log & 0.73 & 0.69
+javaparser-javaparser-parent-3.25.1.log & 0.67 & 0.64
+avro-release-1.11.1.log & 0.76 & 0.69
