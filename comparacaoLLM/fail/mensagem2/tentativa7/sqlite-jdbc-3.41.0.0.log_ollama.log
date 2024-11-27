@@ -1,0 +1,3 @@
+assertEquals(15, calculator.add(2, 3));
+assertEquals(11, calculator.add(4, 2));
+assertEquals(14, calculator.add(5, 5));

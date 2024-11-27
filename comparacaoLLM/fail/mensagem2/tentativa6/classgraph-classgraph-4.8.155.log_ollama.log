@@ -1,0 +1,33 @@
+public static class AssertionErrorBuilder {
+    public static String build(String assertionName, Object expectedValue, Object actualValue) {
+        return "eram esperados valores iguais, mas " + expectedValue + " é diferente de " + assertionName;
+    }
+
+    public static String build(String assertionName, int expectedValue, int actualValue) {
+        return "eram esperados valores iguais, mas " + expectedValue + " é diferente de " + assertionName;
+    }
+}
+
+public class ExampleUsage {
+    @Test
+    public void testCalculatorAdd() {
+        assertEquals(5, calculator.add(2, 3));
+        assertEquals(7, calculator.add(4, 2));
+        assertEquals(10, calculator.add(5, 5));
+    }
+
+    @Test
+    public void testCalculatorAddIntegers() {
+        assertEquals(5, calculator.add(2, 3));
+        assertEquals(7, calculator.add(4, 2));
+        assertEquals(9, calculator.add(5, 4));
+    }
+}
+
+assertThat(AssuranceErrorBuilder.build("calculator.add(2, 3)", 5, 6), is("eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)"));
+assertThat(AssuranceErrorBuilder.build("calculator.add(4, 2)", 7, 8), is("eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)"));
+assertThat(AssuranceErrorBuilder.build("calculator.add(5, 5)", 10, 11), is("eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)"));
+
+// Usando o builder
+String errorMessage = AssuranceErrorBuilder.build("calculator.add(2, 3)", 5, 6);
+assertThat(errorMessage, is("eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)"));

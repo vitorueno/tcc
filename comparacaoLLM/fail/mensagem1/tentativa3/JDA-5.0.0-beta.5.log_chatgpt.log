@@ -1,0 +1,197 @@
+"A comparação falhou: esperado 10, mas foi 0"
+
+"A comparação falhou: esperado 100, mas foi 0"
+
+"A comparação falhou: esperado true, mas foi false"
+
+"A comparação falhou: esperado 'test', mas foi null"
+
+"A comparação falhou: os mapas não são simétricos"
+
+"A comparação falhou: esperado 'ABCDEF', mas foi '**A_B||C~~D__E`F`__~~||_**'"
+
+"A comparação falhou: esperado uma string vazia, mas foi uma string preenchida"
+
+"A comparação falhou: esperado 'Hello World ~~~~', mas foi 'Hello World ~~~~'"
+
+"A comparação falhou: esperado 'Hello World ~', mas foi 'Hello World ~~~~~'"
+
+"A comparação falhou: esperado 'Hello', mas foi '**Hello**'"
+
+"A comparação falhou: esperado '**Hello', mas foi '**Hello'"
+
+"A comparação falhou: esperado '\\**Hello**', mas foi '\\**Hello**'"
+
+"A comparação falhou: esperado 'Hello', mas foi '*Hello*'"
+
+"A comparação falhou: esperado 'Hello', mas foi '_Hello_'"
+
+"A comparação falhou: esperado '*Hello', mas foi '*Hello'"
+
+"A comparação falhou: esperado '_Hello', mas foi '_Hello'"
+
+"A comparação falhou: esperado '\\*Hello*', mas foi '\\*Hello*'"
+
+"A comparação falhou: esperado '\\_Hello_', mas foi '\\_Hello_'"
+
+"A comparação falhou: esperado 'Hello', mas foi '***Hello***'"
+
+"A comparação falhou: esperado '***Hello', mas foi '***Hello'"
+
+"A comparação falhou: esperado '\\***Hello***', mas foi '\\***Hello***'"
+
+"A comparação falhou: esperado 'Hello', mas foi '__Hello__'"
+
+"A comparação falhou: esperado '__Hello', mas foi '__Hello'"
+
+"A comparação falhou: esperado '\\__Hello__', mas foi '\\__Hello__'"
+
+"A comparação falhou: esperado 'Hello', mas foi '~~Hello~~'"
+
+"A comparação falhou: esperado '~~Hello', mas foi '~~Hello'"
+
+"A comparação falhou: esperado '\\~~Hello~~', mas foi '\\~~Hello~~'"
+
+"A comparação falhou: esperado 'Hello', mas foi '||Hello||'"
+
+"A comparação falhou: esperado '||Hello', mas foi '||Hello'"
+
+"A comparação falhou: esperado '\\||Hello||', mas foi '\\||Hello||'"
+
+"A comparação falhou: esperado 'Hello', mas foi '`Hello`'"
+
+"A comparação falhou: esperado '`Hello', mas foi '`Hello'"
+
+"A comparação falhou: esperado '\\`Hello`', mas foi '\\`Hello`'"
+
+"A comparação falhou: esperado 'Hello **World**', mas foi '`Hello **World**`'"
+
+"A comparação falhou: esperado '`Hello World', mas foi '`Hello **World'"
+
+"A comparação falhou: esperado '\\`Hello World`', mas foi '\\`Hello **World**`'"
+
+"A comparação falhou: esperado 'Hello', mas foi '``Hello``'"
+
+"A comparação falhou: esperado '``Hello', mas foi '``Hello'"
+
+"A comparação falhou: esperado '\\``Hello``', mas foi '\\``Hello``'"
+
+"A comparação falhou: esperado 'Hello **World**', mas foi '``Hello **World**``'"
+
+"A comparação falhou: esperado '``Hello World', mas foi '``Hello **World'"
+
+"A comparação falhou: esperado '\\``Hello World``', mas foi '\\``Hello **World**``'"
+
+"A comparação falhou: esperado 'Hello `to` World', mas foi '``Hello `to` World``'"
+
+"A comparação falhou: esperado '``Hello to World', mas foi '``Hello `to` World'"
+
+"A comparação falhou: esperado '\\``Hello to World``', mas foi '\\``Hello `to` World``'"
+
+"A comparação falhou: esperado 'Hello', mas foi '```Hello```'"
+
+"A comparação falhou: esperado '```Hello', mas foi '```Hello'"
+
+"A comparação falhou: esperado '\\```Hello```', mas foi '\\```Hello```'"
+
+"A comparação falhou: esperado 'Hello **World**', mas foi '```Hello **World**```'"
+
+"A comparação falhou: esperado '```Hello World', mas foi '```Hello **World'"
+
+"A comparação falhou: esperado '\\```Hello World```', mas foi '\\```Hello **World**```'"
+
+"A comparação falhou: esperado 'Hello `to` World', mas foi '```Hello `to` World```'"
+
+"A comparação falhou: esperado '```Hello to World', mas foi '```Hello `to` World'"
+
+"A comparação falhou: esperado '\\```Hello to World```', mas foi '\\```Hello `to` World```'"
+
+"A comparação falhou: esperado 'Test', mas foi '```java\nTest```'"
+
+"A comparação falhou: esperado 'Hello > World', mas foi '> Hello > World'"
+
+"A comparação falhou: esperado 'Hello\nWorld', mas foi '> Hello\n> World'"
+
+"A comparação falhou: esperado 'Hello\nWorld', mas foi '>>> Hello\nWorld'"
+
+"A comparação falhou: esperado 'Hello\nWorld', mas foi '>>>\nHello\nWorld'"
+
+"A comparação falhou: esperado 'Hello > World', mas foi '>>>\nHello > World'"
+
+"A comparação falhou: esperado '**A_B||C~~D__E`F`__~~||_**', mas foi '**A_B||C~~D__E`F`__~~||_**'"
+
+"A comparação falhou: esperado '**Hello**', mas foi '**Hello**'"
+
+"A comparação falhou: esperado '**Hello', mas foi '**Hello'"
+
+"A comparação falhou: esperado '*Hello*', mas foi '*Hello*'"
+
+"A comparação falhou: esperado '_Hello_', mas foi '_Hello_'"
+
+"A comparação falhou: esperado '*Hello', mas foi '*Hello'"
+
+"A comparação falhou: esperado '_Hello', mas foi '_Hello'"
+
+"A comparação falhou: esperado '***Hello***', mas foi '***Hello***'"
+
+"A comparação falhou: esperado '***Hello', mas foi '***Hello'"
+
+"A comparação falhou: esperado '\\***Hello***', mas foi '\\***Hello***'"
+
+"A comparação falhou: esperado '__Hello__', mas foi '__Hello__'"
+
+"A comparação falhou: esperado '__Hello', mas foi '__Hello'"
+
+"A comparação falhou: esperado '~~Hello~~', mas foi '~~Hello~~'"
+
+"A comparação falhou: esperado '~~Hello', mas foi '~~Hello'"
+
+"A comparação falhou: esperado '||Hello||', mas foi '||Hello||'"
+
+"A comparação falhou: esperado '||Hello', mas foi '||Hello'"
+
+"A comparação falhou: esperado '`Hello`', mas foi '`Hello`'"
+
+"A comparação falhou: esperado '`Hello', mas foi '`Hello'"
+
+"A comparação falhou: esperado '`Hello **World**`', mas foi '`Hello **World**`'"
+
+"A comparação falhou: esperado '`Hello **World**', mas foi '`Hello **World'"
+
+"A comparação falhou: esperado '``Hello``', mas foi '``Hello``'"
+
+"A comparação falhou: esperado '``Hello', mas foi '``Hello'"
+
+"A comparação falhou: esperado '``Hello **World**``', mas foi '``Hello **World**``'"
+
+"A comparação falhou: esperado '``Hello **World**', mas foi '``Hello **World'"
+
+"A comparação falhou: esperado '``Hello `to` World``', mas foi '``Hello `to` World``'"
+
+"A comparação falhou: esperado '``Hello `to` World', mas foi '``Hello `to` World'"
+
+"A comparação falhou: esperado '```Hello```', mas foi '```Hello```'"
+
+"A comparação falhou: esperado '```Hello', mas foi '```Hello'"
+
+"A comparação falhou: esperado '```Hello **World**```', mas foi '```Hello **World**```'"
+
+"A comparação falhou: esperado '```Hello **World**', mas foi '```Hello **World'"
+
+"A comparação falhou: esperado '```Hello `to` World```', mas foi '```Hello `to` World```'"
+
+"A comparação falhou: esperado '```Hello `to` World', mas foi '```Hello `to` World'"
+
+"A comparação falhou: esperado '```java\nTest```', mas foi '```java\nTest```'"
+
+"A comparação falhou: esperado '> Hello > World', mas foi '> Hello > World'"
+
+"A comparação falhou: esperado '> Hello\n> World', mas foi '> Hello\n> World'"
+
+"A comparação falhou: esperado '>>> Hello\nWorld', mas foi '>>> Hello\nWorld'"
+
+"A comparação falhou: esperado '>>>\nHello\nWorld', mas foi '>>>\nHello\nWorld'"
+
+"A comparação falhou: esperado '>>>\nHello > World', mas foi '>>>\nHello > World'"
+
+"A comparação falhou: esperado '**A_B||C~~D__E`F`__~~||_**', mas foi '**A_B||C~~D__E`F`__~~||_**'"

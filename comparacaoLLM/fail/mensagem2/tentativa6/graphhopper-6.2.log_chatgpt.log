@@ -1,0 +1,95 @@
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou falso
+eram esperados 2 elementos na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados 3 elementos na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(1).arrivalCancelled retornou falso
+eram esperados 2 elementos na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(2).departureCancelled retornou falso
+eram esperados 1 elemento na lista, mas response.getAll() possui outra quantidade de elementos
+os valores são diferentes: EXTRA0 e ptLeg.trip_id
+eram esperados 1 elemento na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas responseWithRealtimeUpdate.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados valores verdadeiros, mas route.getAll().get(route.getAll().size() - 1).isImpossible() retornou falso
+eram esperados 2 elementos na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados 2 elementos na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados 1 elemento na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados valores falsos, mas ((Trip.PtLeg) possibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou verdadeiro
+route possui erros
+route possui erros
+route não está vazio
+route possui erros
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+a sequência de paradas é diferente de JUSTICE_COURT,MUSEUM
+a sequência de paradas é diferente de EMSI,DADAN
+os horários de partida são diferentes: 2007-01-01T10:00:00 e transferLeg.getDepartureTime()
+os horários de chegada são diferentes: 2007-01-01T10:08:06.670 e transferLeg.getArrivalTime()
+as geometrias são diferentes
+os tempos são diferentes: 4500000 e transitSolution.getTime()
+os pesos de rota são diferentes: 4500000.0 e transitSolution.getRouteWeight()
+route possui erros
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+route possui erros
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+eram esperados 2 elementos na lista, mas transitSolution.getLegs() possui outra quantidade de elementos
+a rota é diferente de COURT2MUSEUM
+a rota é diferente de MUSEUM1
+a parada de início é diferente de JUSTICE_COURT
+a parada de destino é diferente de MUSEUM
+a rota é diferente de MUSEUM2AIRPORT
+a rota é diferente de MUSEUMAIRPORT1
+a parada de início é diferente de NEXT_TO_MUSEUM
+a parada de destino é diferente de AIRPORT
+a sequência de paradas é diferente de NEXT_TO_MUSEUM,AIRPORT
+a sequência de paradas é diferente de BEATTY_AIRPORT,BULLFROG
+os horários de chegada são diferentes: 14:10 e arrivalTime
+os tempos de duração são diferentes: 15000000 e a diferença entre ghRequest.getEarliestDepartureTime() e arrivalTime
+os pesos de rota são diferentes: 1.5E7 e transitSolution.getRouteWeight()
+route possui erros
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+os tempos são diferentes: 4500000L e transitSolution.getTime()
+os pesos de rota são diferentes: 4500000.0 e transitSolution.getRouteWeight()
+a sequência de paradas é diferente de JUSTICE_COURT,MUSEUM
+os horários de início do passeio são diferentes: 10:00 e walkDepartureTime
+as geometrias são diferentes
+os horários de chegada do passeio são diferentes: 10:08:06.670 e walkArrivalTime
+a sequência de paradas é diferente de EMSI,DADAN
+eram esperados 1 elemento na lista, mas walkRoute.getLegs() possui outra quantidade de elementos
+os tempos são diferentes: 486670 e walkRoute.getTime()
+as geometrias são diferentes
+route possui erros
+o valor do montante é menor ou igual ao preço da tarifa
+o valor da tarifa mais barata onde cada perna passa por todas as zonas é menor ou igual ao valor da tarifa mais barata
+eram esperados 2 elementos na lista, mas transfersToStop possui outra quantidade de elementos
+a parada de início é diferente de MUSEUM
+a parada de destino é diferente de NEXT_TO_MUSEUM
+a rota de início não foi fornecida
+a rota de destino não foi fornecida
+os tempos mínimos de transferência são diferentes: 600 e transfer.min_transfer_time
+a parada de início é diferente de NEXT_TO_MUSEUM
+a parada de destino é diferente de NEXT_TO_MUSEUM
+a rota de início não foi fornecida
+a rota de destino não foi fornecida
+eram esperados 5 elementos na lista, mas transfersToStop possui outra quantidade de elementos
+route possui erros
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas response.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+eram esperados 1 elemento na lista, mas route.getAll() possui outra quantidade de elementos
+os valores são diferentes: expectedDepartureTimes e actualDepartureTimes
+os valores são diferentes: expectedDepartureTimes e actualDepartureTimes
+os valores são diferentes: expectedDepartureTimes e actualDepartureTimes
+route não está vazio
+route não está vazio
+a rota é diferente de AB
+a rota não é igual a AB
+a rota não é igual a AB
+a rota é diferente de AB

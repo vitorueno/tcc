@@ -1,0 +1,28 @@
+```java
+assertEquals(5, calculator.add(2, 3));
+assertEquals(7, calculator.add(4, 2));
+assertEquals(10, calculator.add(5, 5));
+assertArrayEquals(new int[]{1,2,3}, calculator.sortArray(new int[]{3,2,1}));
+assertTrue(calculator.isPositive(5));
+assertFalse(calculator.isPositive(-5));
+assertNull(calculator.getValue(0));
+assertNotNull(calculator.getValue(1));
+assertSame(object1, object2); //assumindo object1 e object2 são instâncias da mesma classe
+assertNotSame(object3, object4); //assumindo object3 e object4 são instâncias de classes diferentes
+fail("Teste falhou propositalmente");
+
+```
+
+```
+eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+eram esperados arrays iguais, mas [1, 2, 3] é diferente de calculator.sortArray([3, 2, 1])
+era esperado um valor verdadeiro, mas calculator.isPositive(5) retornou falso
+era esperado um valor falso, mas calculator.isPositive(-5) retornou verdadeiro
+era esperado um valor nulo, mas calculator.getValue(0) retornou um valor
+era esperado um valor não nulo, mas calculator.getValue(1) retornou nulo
+era esperado que object1 e object2 fossem a mesma instância, mas são diferentes.
+era esperado que object3 e object4 fossem instâncias diferentes, mas são a mesma instância.
+o teste falhou propositalmente.
+```

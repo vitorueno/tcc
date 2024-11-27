@@ -1,0 +1,105 @@
+Nome canônico de C incorreto.
+ID de usuário incorreto.
+Nome de usuário incorreto.
+ID de usuário incorreto.
+Nome de usuário incorreto.
+Valor de bean incorreto.
+Fábrica JSON incorreta.
+Tamanho de products incorreto.
+ID do primeiro produto incorreto.
+ID do segundo produto incorreto.
+ID do terceiro produto incorreto.
+Comprimento de SerializationFeature.values() incorreto.
+Tipo de InvalidDefinitionException esperado nulo, mas não é.
+String JSON incorreta.
+Tempo de bean diferente do tempo de bean1.
+String JSON incorreta.
+Tempo de bean diferente do tempo de bean1.
+String JSON incorreta.
+Tempo de bean diferente do tempo de bean1.
+String JSON incorreta.
+Tempo de bean diferente do tempo de bean1.
+String JSON incorreta.
+Tempo de bean diferente do tempo de bean1.
+String JSON incorreta.
+Tempo de bean diferente do tempo de bean1.
+String JSON incorreta.
+Tempo de bean diferente do tempo de bean1.
+instantCsv diferente da string gerada.
+Data de bean diferente da data de bean1.
+instantCsv diferente da string.
+Data de bean diferente da data de bean1.
+String JSON para TypeWithOptional com Optional.of("value") incorreta.
+String JSON para TypeWithOptional com Optional.empty() incorreta.
+Conteúdo de TypeWithOptional.data incorreto para "value\n".
+Conteúdo de TypeWithOptional.data incorreto para "null\n".
+instantCsv diferente da string.
+Data de bean diferente da data de bean1.
+String JSON para TypeWithOptional com Optional.of("value") incorreta.
+String JSON para TypeWithOptional com Optional.empty() incorreta.
+Conteúdo de TypeWithOptional.data incorreto para "value\n".
+Conteúdo de TypeWithOptional.data incorreto para "null\n".
+Conteúdo de TypeWithOptional.data não está vazio.
+Entrada esperada como não nula.
+ID de JobResult incorreto.
+ID de bean incorreto.
+ID de bean1 incorreto.
+ID de bean2 incorreto.
+ID de bean3 incorreto.
+Máscara de MapperFeature.USE_ANNOTATIONS incorreta.
+MapperFeature.USE_ANNOTATIONS não está habilitado na máscara.
+MapperFeature.USE_ANNOTATIONS não está habilitado na máscara longa.
+JSON de carro incorreto.
+Cor de carro diferente.
+Tipo de carro diferente.
+Cor incorreta no mapa.
+ID de bean diferente do ID do nó.
+Nome de bean diferente do nome do nó.
+ID incorreto no JSON.
+ID incorreto no JSON.
+ID incorreto no JSON.
+ID incorreto no JSON.
+Elemento do arrayNode esperado como nulo, mas não é.
+Tipo de nó de arrayNode incorreto.
+String JSON incorreta.
+String JSON incorreta.
+String JSON incorreta.
+ID de bean diferente do ID de bean1.
+Strings diferentes.
+ID de bean diferente do ID de bean2.
+ID de bean diferente do ID de bean3.
+String JSON incorreta.
+JSON de carro esperado diferente do gerado.
+JSON de carro esperado diferente do gerado.
+JSON de carro esperado diferente do gerado.
+Tipo de carro diferente.
+Carro esperado como não nulo.
+Cor de carro incorreta.
+Carro esperado como não nulo.
+Cor de carro incorreta.
+Tipo Java esperado como não nulo.
+Tamanho da lista values incorreto.
+ID na lista values incorreto.
+Nome na lista values incorreto.
+Tamanho da lista values incorreto.
+ID na lista values incorreto.
+Nome na lista values incorreto.
+Tamanho do mapa incorreto.
+ID de bean incorreto.
+Nome de bean incorreto.
+Node esperado como BigInteger.
+Tipo numérico de Node incorreto.
+Tipo de nó de Node incorreto.
+Valor inteiro de Node incorreto.
+Valor inteiro de Node com valor padrão incorreto.
+Valor inteiro de Node incorreto.
+Valor longo de Node incorreto.
+Valor double de Node incorreto.
+Optional em TypeWithOptional.data esperado como não presente.
+Elementos no arrayNode esperados como não presentes.
+Iterador no arrayNode esperado como não presente.
+Node esperado como não BigDecimal.
+Node esperado como não BigInteger.
+Node esperado como não BigDecimal.
+Node esperado como não Float.
+

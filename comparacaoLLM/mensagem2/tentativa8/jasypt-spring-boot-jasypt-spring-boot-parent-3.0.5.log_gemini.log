@@ -1,0 +1,56 @@
+Era esperado true, mas ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Iterable<ConfigurationPropertySource>>>() {}, EncryptableConfigurationPropertySourcesPropertySource.class) retornou false.
+Era esperado false, mas ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Map<String, Object>>>() {}, EncryptableConfigurationPropertySourcesPropertySource.class) retornou true.
+Era esperado true, mas ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Map<String, Object>>>() {}, EncryptableMapPropertySourceWrapper.class) retornou false.
+Era esperado false, mas ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Iterable<ConfigurationPropertySource>>>() {}, EncryptableMapPropertySourceWrapper.class) retornou true.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado true, mas filter.shouldInclude(source, "some.property") retornou false.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado false, mas filter.shouldInclude(source, "some.property") retornou true.
+Era esperado que decrypted fosse igual a message, mas não foram iguais.
+Era esperado que decrypted fosse igual a message, mas não foram iguais.
+Era esperado que decrypted fosse igual a message, mas não foram iguais.
+Era esperado que decrypted fosse igual a message, mas não foram iguais.
+Era esperado que decrypted fosse igual a message, mas não foram iguais.
+Era esperado que decrypted fosse igual a message, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado que message fosse igual a decrypted, mas não foram iguais.
+Era esperado um objeto não nulo, mas this.context.getBean(EnableEncryptablePropertiesBeanFactoryPostProcessor.class) retornou null.
+Era esperado um objeto não nulo, mas this.context.getBean(EnableEncryptablePropertiesBeanFactoryPostProcessor.class) retornou null.
+Era esperado "test1", mas myProperties.getFooString() retornou "${myProperties.getFooString()}".
+Era esperado "test2", mas myProperties.getBarString() retornou "${myProperties.getBarString()}".
+Era esperado um objeto não nulo, mas myProperties.getFooList() retornou null.
+Era esperado "[a1, b1]", mas myProperties.getFooList().toString() retornou "${myProperties.getFooList().toString()}".
+Era esperado um objeto não nulo, mas myProperties.getBarList() retornou null.
+Era esperado "[a2, b2]", mas myProperties.getBarList().toString() retornou "${myProperties.getBarList().toString()}".
+Era esperado um objeto não nulo, mas myProperties.getStringMap() retornou null.
+Era esperado "{k1=v1}", mas myProperties.getStringMap().toString() retornou "${myProperties.getStringMap().toString()}".
+Era esperado um objeto não nulo, mas myProperties.getListMap() retornou null.
+Era esperado "{k2=[v2]}", mas myProperties.getListMap().toString() retornou "${myProperties.getListMap().toString()}".

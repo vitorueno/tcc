@@ -1,0 +1,83 @@
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), stdin, "-")
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--pretty", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema", "\"long\"", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema-file", readerSchemaFile.getPath(), sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head=3", sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", "5", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--head=3000000000", sampleFile.getPath())
+eram esperados valores iguais, mas "\n" é diferente de run(new DataFileReadTool(), "--head=0", sampleFile.getPath())
+eram esperados valores iguais, mas "\n" é diferente de run(new DataFileReadTool(), "--head=-5", sampleFile.getPath())
+eram esperados valores iguais, mas schema.toString() + "\n" é diferente de run(new DataFileGetMetaTool(), sampleFile.getPath(), "--key", "avro.schema")
+eram esperados valores iguais, mas schema.toString() + "\n" é diferente de run(new DataFileGetSchemaTool(), sampleFile.getPath())
+eram esperados valores iguais, mas 0 é diferente de countRecords(outFile)
+eram esperados valores iguais, mas 5 é diferente de countRecords(outFile)
+falha ao verificar se baos.toString().contains("Compression codec (default: null)")
+eram esperados valores iguais, mas readFileAsString(protocol) é diferente de readFileAsString(outfile)
+eram esperados valores iguais, mas "Warning: Found documentation comment at line 19, column 1. Ignoring previous one at line 1, column 1: "..."\nDid you mean to use a multiline comment ( /* ... */ ) instead?" é diferente de warnings
+falha ao verificar se err.toString().contains("Need count (--count)")
+falha ao verificar se err.toString().contains("Compression codec (default: deflate)")
+eram esperados valores iguais, mas COUNT é diferente de i
+eram esperados valores iguais, mas numWords é diferente de WordCountUtil.COUNTS.size()
+eram esperados valores iguais, mas 4 é diferente de files.length
+eram esperados valores iguais, mas "Warning: Found documentation comment at line 19, column 1. Ignoring previous one at line 1, column 1: "..."\nDid you mean to use a multiline comment ( /* ... */ ) instead?" é diferente de warnings
+eram esperados valores iguais, mas 1 é diferente de returnCode
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas "220\n" é diferente de out.toString()
+eram esperados valores iguais, mas json é diferente de baos.toString(UTF8).replace("\r", "")
+eram esperados valores iguais, mas avro é diferente de baos.toString(UTF8)
+falha ao verificar se baos.toString().contains("Compression codec (default: deflate)")
+falha ao verificar se !r.hasNext()
+falha ao verificar se defaultOutputFile.length() é igual a nullOutputFile.length()
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados valores iguais, mas 0 é diferente de getCodec(input1).getClass()
+eram esperados valores iguais, mas 1 é diferente de returnCode
+eram esperados valores iguais, mas 2 é diferente de returnCode
+eram esperados valores iguais, mas 3 é diferente de returnCode
+eram esperados valores iguais, mas 0 é diferente de returnCode
+falha ao verificar se 0 é igual a in.tell()
+falha ao verificar se 0 é igual a in.length()
+falha ao verificar se 1 é igual a bytes.length
+falha ao verificar se 0 é igual a bytes[0]
+falha ao verificar se 0 é igual a in.readInt()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se sentinel é igual a in.readLong()
+falha ao verificar se 0 é igual a in.getRowCount()
+falha ao verificar se 0 é igual a in.getColumnCount()
+falha ao verificar se 0 é igual a in.getRowCount()
+falha ao verificar se 1 é igual a in.getColumnCount()
+falha ao verificar se COUNT é igual a in.getRowCount()
+falha ao verificar se 1 é igual a in.getColumnCount()
+falha ao verificar se COUNT é igual a count
+falha ao verificar se COUNT é igual a in.getRowCount()
+falha ao verificar se 1 é igual a in.getColumnCount()
+falha ao verificar se COUNT é igual a count
+falha ao verificar se COUNT é igual a in.getRowCount()
+falha ao verificar se 1 é igual a in.getColumnCount()
+falha ao verificar se COUNT é igual a count
+falha ao verificar se COUNT é igual a in.getRowCount()
+falha ao verificar se 2 é igual a in.getColumnCount()
+falha ao verificar se COUNT é igual a count
+falha ao verificar se 0 é igual a min
+falha ao verificar se max é maior que 1024 * 32
+falha ao verificar se average é maior que 16.0f
+falha ao verificar se average é menor que 64.0f
+falha ao verificar se compressedSize é maior que 0
+falha ao verificar se compressedSize é menor que inputSize ou codec é igual a "null"
+falha ao verificar se decompressedBuffer é igual a inputByteBuffer
+falha ao verificar se compressedSize é maior que 0
+falha ao verificar se decompressedBuffer é igual a inputByteBuffer

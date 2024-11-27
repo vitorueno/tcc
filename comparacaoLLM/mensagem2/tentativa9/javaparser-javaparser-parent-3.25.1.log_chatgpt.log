@@ -1,0 +1,83 @@
+eram esperados valores iguais, mas "java.lang.Object" é diferente de type.describe()
+o tempo de execução excedeu 1000 milissegundos
+a resolução do método não foi bem-sucedida
+eram esperados valores iguais, mas "a" é diferente de fd.get().getVariable(0).getInitializer().get().asStringLiteralExpr().getValue()
+eram esperados valores iguais, mas "X.A.bar" é diferente de mce.resolve().getQualifiedName()
+eram esperados valores iguais, mas "java.lang.Runnable" é diferente de resolved.getParam(0).getType().describe()
+a resolução não é genérica
+eram esperados valores iguais, mas "MyAnnotation" é diferente de declaration.getNameAsString()
+eram esperados valores iguais, mas "MyAnnotationWithElements" é diferente de declaration.getNameAsString()
+eram esperados valores iguais, mas "VoidVisitor" é diferente de declaration.getNameAsString()
+a declaração não é uma interface
+eram esperados valores iguais, mas "AccessSpecifier" é diferente de declaration.getNameAsString()
+eram esperados valores iguais, mas "PUBLIC" é diferente de declaration.getNameAsString()
+eram esperados valores iguais, mas "getComments" é diferente de resolvedDeclaration.getName()
+eram esperados valores iguais, mas 0 é diferente de resolvedDeclaration.getNumberOfParams()
+eram esperados valores iguais, mas "bar(Optional.of(new Derived()))" é diferente de mces.get(0).toString()
+eram esperados valores iguais, mas "Base.bar(java.util.Optional<Base>)" é diferente de mces.get(0).resolve().getQualifiedSignature()
+o objeto é nulo
+eram esperados valores iguais, mas false é diferente de pr.isSuccessful()
+eram esperados valores iguais, mas "CONSTANT" é diferente de rvd.getName()
+eram esperados valores iguais, mas "com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum" é diferente de rvd.getType().describe()
+eram esperados valores iguais, mas "A.method" é diferente de mce.resolve().getQualifiedName()
+eram esperados valores iguais, mas "Test.setRunnable(java.lang.String, java.lang.Runnable)" é diferente de mce.get(0).resolve().getQualifiedSignature()
+eram esperados valores iguais, mas "Test.getContext(Test)" é diferente de mce.get(1).resolve().getQualifiedSignature()
+eram esperados valores iguais, mas "Test.getContext(Test)" é diferente de sig
+eram esperados valores iguais, mas "java.lang.String" é diferente de exprs.get(0).calculateResolvedType().describe()
+eram esperados valores iguais, mas "java.lang.String" é diferente de exprs.get(1).calculateResolvedType().describe()
+eram esperados valores iguais, mas "java.lang.String" é diferente de exprs.get(2).calculateResolvedType().describe()
+eram esperados valores iguais, mas "float" é diferente de exprs.get(3).calculateResolvedType().describe()
+eram esperados valores iguais, mas "double" é diferente de exprs.get(4).calculateResolvedType().describe()
+eram esperados valores iguais, mas "int" é diferente de exprs.get(5).calculateResolvedType().describe()
+eram esperados valores iguais, mas "long" é diferente de exprs.get(6).calculateResolvedType().describe()
+eram esperados valores iguais, mas "long" é diferente de exprs.get(7).calculateResolvedType().describe()
+eram esperados valores iguais, mas "int" é diferente de exprs.get(8).calculateResolvedType().describe()
+eram esperados valores iguais, mas "long" é diferente de exprs.get(9).calculateResolvedType().describe()
+eram esperados valores iguais, mas "long" é diferente de exprs.get(10).calculateResolvedType().describe()
+eram esperados valores iguais, mas "int" é diferente de exprs.get(11).calculateResolvedType().describe()
+eram esperados valores iguais, mas "int" é diferente de exprs.get(12).calculateResolvedType().describe()
+eram esperados valores iguais, mas "int" é diferente de exprs.get(13).calculateResolvedType().describe()
+eram esperados valores iguais, mas "InnerClass(int)" é diferente de rcd.getSignature()
+eram esperados valores iguais, mas "InnerClass(int)" é diferente de rcd.getSignature()
+eram esperados valores iguais, mas "InnerClass(int)" é diferente de rcd.getSignature()
+eram esperados valores iguais, mas "void" é diferente de (mce.calculateResolvedType().describe())
+eram esperados valores iguais, mas "java.util.concurrent.TimeUnit" é diferente de (mce.getArgument(0).calculateResolvedType().describe())
+o método não foi resolvido
+o objeto é nulo
+eram esperados valores iguais, mas "D" é diferente de javaParserFacade.solve(methodCallExprs.get(0)).getCorrespondingDeclaration().getReturnType().describe()
+eram esperados valores iguais, mas "D" é diferente de javaParserFacade.solve(methodCallExprs.get(2)).getCorrespondingDeclaration().getReturnType().describe()
+eram esperados valores iguais, mas "void" é diferente de javaParserFacade.solve(methodCallExprs.get(1)).getCorrespondingDeclaration().getReturnType().describe()
+eram esperados valores iguais, mas "D" é diferente de javaParserFacade.solve(methodCallExprs.get(4)).getCorrespondingDeclaration().getReturnType().describe()
+eram esperados valores iguais, mas "java.lang.Object" é diferente de a.getQualifiedName()
+a chave não foi encontrada em resultsQualifiedName
+a chave não foi encontrada em resultsResolvedType
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+eram esperados valores iguais, mas "int" é diferente de resolve.getType().describe()
+eram esperados valores iguais, mas "Test1.Test2" é diferente de oce.get(0).calculateResolvedType().describe()
+eram esperados valores iguais, mas "Test1.Test3" é diferente de oce.get(1).calculateResolvedType().describe()
+o tipo do método não está presente
+eram esperados valores iguais, mas "java.util.ArrayList" é diferente de resolvedType
+eram esperados valores iguais, mas "foo(new Object[5])" é diferente de mce.toString()
+eram esperados valores iguais, mas "TestClass2.foo(java.lang.Object)" é diferente de mce.resolve().getQualifiedSignature()
+eram esperados valores iguais, mas "void" é diferente de mce.calculateResolvedType().describe()
+o objeto é nulo
+eram esperados valores iguais, mas "foo.bar.BinaryExpr.Operator" é diferente de fae.get().resolve().getType().describe()
+eram esperados valores iguais, mas "AND" é diferente de fae.get().resolve().getName()
+o objeto é nulo
+eram esperados valores iguais, mas "foo.bar.BinaryExpr.Operator" é diferente de fae.get().resolve().getType().describe()
+eram esperados valores iguais, mas "OR" é diferente de fae.get().resolve().getName()
+o objeto é nulo
+eram esperados valores iguais, mas "foo.bar.BinaryExpr.Operator" é diferente de fae.get().resolve().getType().describe()
+eram esperados valores iguais, mas "AND" é diferente de fae.get().resolve().getName()
+o objeto é nulo
+eram esperados valores iguais, mas "foo.bar.BinaryExpr.Operator" é diferente de fae.get().resolve().getType().describe()
+eram esperados valores iguais, mas "OR" é diferente de fae.get().resolve().getName()
+o resultado não foi bem-sucedido
+eram esperados valores iguais, mas syntacticClassification é diferente de NameLogic.syntacticClassificationAccordingToContext(nameNode)
+eram esperados valores iguais, mas nameCategory é diferente de NameLogic.classifyReference(nameNode, typeSolver)
+eram esperados valores iguais, mas nameCategory é diferente de NameLogic.syntacticClassificationAccordingToContext(nameNode)
+eram esperados valores iguais, mas nameRole é diferente de NameLogic.classifyRole(nameNode)
+o nó não é um nome simples
+o nó não é um nome qualificado
+eram esperados valores iguais, mas false é diferente de NameLogic.isAName(cu)

@@ -1,0 +1,43 @@
+eram esperados valores iguais, mas 1 é diferente de jspFragment.count
+eram esperados valores iguais, mas 1 é diferente de jspFragment.count
+eram esperados valores iguais, mas 2 é diferente de jspFragment.count
+eram esperados valores iguais, mas 3 é diferente de jspFragment.count
+eram esperados valores iguais, mas 2 é diferente de jspFragment.count
+eram esperados valores iguais, mas 6 é diferente de jspFragment.count
+eram esperados valores iguais, mas null é diferente de jspContext.getAttribute("s")
+null é diferente de s
+5 é igual a count
+count - 1 é igual a s.getCount()
+count - 1 é igual a s.getIndex()
+count % s.getModulusValue() é igual a s.getModulus()
+text/html é igual a cotação do corpo da resposta
+text/html é igual a cotação do corpo da resposta
+text/html é igual a cotação do corpo da resposta
+text/html é igual a cotação do corpo da resposta
+" three " é igual a p[2]
+null é diferente de p[1]
+ null é diferente de p[3]
+ null é diferente de p[1]
+ null é diferente de p[3]
+ null é diferente de p[0]
+ null é diferente de p[1]
+2 é igual a vtor.severity
+true é igual a vtor.isValidateAllProfilesByDefault()
+null é diferente de vtor.getViolations()
+2 é igual ao número de violações
+violação1 é igual a vtor.getViolations().get(0)
+violação2 é igual a vtor.getViolations().get(1)
+2 é igual ao número de violações
+null é diferente de vtor.enabledProfiles
+1 é igual ao número de perfis ativos
+1 é igual ao número de perfis ativos
+null é diferente de vtor.enabledProfiles
+2 é igual ao número de perfis ativos
+1 é igual ao número de violações
+ null é diferente de validate
+1 é igual ao número de violações
+"profil1" é igual a violations.get(0).getCheck().getProfiles()[0]
+1 é igual ao número de violações
+ch1 é igual a violations.get(0).getCheck()
+true é igual a vtor.matchProfiles(new String[] { "testProfile" })
+true é igual a vtor.matchProfiles(null)

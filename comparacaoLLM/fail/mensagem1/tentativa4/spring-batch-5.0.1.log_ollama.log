@@ -1,0 +1,61 @@
+- trade.getIsin() deve ser igual a rs.getString(1)
+- trade.getQuantity() deve ser igual a rs.getLong(2)
+- trade.getPrice() deve ser igual a rs.getBigDecimal(3)
+- trade.getCustomer() deve ser igual a rs.getString(4)
+- activeRow deve ser igual a trades.size()
+- customers.size() deve ser igual a activeRow
+- customer.getName() deve ser igual a rs.getString(1)
+- BatchStatus.COMPLETED deve ser igual a execution.getStatus()
+- after - before deve ser igual a execution.getStepExecutions().iterator().next().getReadCount()
+- BatchStatus.COMPLETED deve ser igual a jobExecution.getStatus()
+- "yes" deve ser igual a jobExecution.getExecutionContext().getString("done")
+- "foo" deve ser igual a value
+- "foo2" deve ser igual a strValue
+- 3 deve ser igual a integerValue.intValue()
+- before + 5 deve ser igual a after
+- trade.getIsin() deve ser igual a rs.getString(1)
+- trade.getQuantity() deve ser igual a rs.getLong(2)
+- trade.getPrice() deve ser igual a rs.getBigDecimal(3)
+- trade.getCustomer() deve ser igual a rs.getString(4)
+- EXPECTED_OUTPUT_FILE deve ser igual a output
+- itemGenerator.getLimit() + 2 deve ser igual a itemProcessor.getCounter()
+- itemGenerator.getLimit() + 2 deve ser igual a itemProcessor.getCounter()
+- customer.getName() deve ser igual a rs.getString(1)
+- "4" deve ser igual a step1Execution.get("READ_COUNT").toString()
+- "1" deve ser igual a step1Execution.get("FILTER_COUNT").toString()
+- "3" deve ser igual a step1Execution.get("WRITE_COUNT").toString()
+- ExitStatus.COMPLETED.getExitCode() deve ser igual a jobExecution.getExitStatus().getExitCode()
+- 4 deve ser igual a jobExecution.getStepExecutions().size()
+- BatchStatus.COMPLETED deve ser igual a jobExecution.getStatus()
+- inputs.size() deve ser igual a outputs.size()
+- itemCount > 0 deve ser verdadeiro
+- BatchStatus.COMPLETED deve ser igual a jobExecution.getStatus()
+- BatchStatus.COMPLETDE deve ser igual a jobExecution.getStatus()
+- expected deve ser igual a count
+- BatchStatus.COMPLETED deve ser igual a jobExecution.getStatus()
+- first deve ser igual a jobExecution.getStepExecutions().iterator().next().getWriteCount()
+- BatchStatus.COMPLETED deve ser igual a jobExecution.getStatus()
+- second deve ser igual a jobExecution.getStepExecutions().iterator().next().getWriteCount()
+- personService.getReturnedCount() > 0 deve ser verdadeiro
+- personService.getReturnedCount() deve ser igual a personService.getReceivedCount()
+- rs.getString("PLAYER_ID") deve ser igual a "AKFJDL00"
+- rs.getString("LAST_NAME") deve ser igual a "Doe"
+- rs.getString("FIRST_NAME") deve ser igual a "John"
+- rs.getInt("YEAR_OF_BIRTH") deve ser igual a 1975
+- rs.getInt("YEAR_DRAFTED") deve ser igual a 1998
+- tempGame deve ser igual a game
+- summary deve ser igual a testSummary
+- customerFieldSet deve ser igual a fs
+- customerAddLine deve ser igual a customerTokenizer.getTokenizedLine()
+- customerFieldSet deve ser igual a fs
+- customerAddLine deve ser igual a customerTokenizer.getTokenizedLine()
+- customerFieldSet deve ser igual a fs
+- customerAddLine deve ser igual a customerTokenizer.getTokenizedLine()
+- customerUpdate deve ser igual a processor.process(customerUpdate)
+- customerUpdate deve ser igual a processor.process(customerUpdate)
+- "Incorrect type" deve ser igual a errors.getAllErrors().get(0).getCode()
+- 3 deve ser igual a errors.getAllErrors().size()
+- "error.order.id" deve ser igual a errors.getFieldError("orderId").getCode()
+- "error.order.date.future" deve ser igual a errors.getFieldError("orderDate").getCode()
+- "error.order.lines.badcount" deve ser igual a errors.getFieldError("totalLines").getCode()
+- 2 deve ser igual a errors.getAllErrors().size()

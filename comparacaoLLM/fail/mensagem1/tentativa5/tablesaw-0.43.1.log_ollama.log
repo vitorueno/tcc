@@ -1,0 +1,45 @@
+This is a Java unit test class that tests various aspects of the `Plotly` library. Here's a breakdown of the test cases:
+
+**Test Class**
+
+The test class is named `PlotlyTest`. It extends the `Junit` framework and has several test methods.
+
+**Test Methods**
+
+1. `test_metadata()`: Tests the creation of metadata objects.
+	* Creates two metadata objects (`metadata1` and `metadata2`) with different versions, compression types, and shapes.
+	* Verifies that the metadata objects are correctly created and have the expected values.
+2. `test_table()` : Tests the creation of table objects.
+	* Creates a table object (`table1`) with integers as rows and columns.
+	* Verifies that the table object is correctly created and has the expected number of rows, columns, and cell data.
+3. `test_plotly()` : Tests the creation of plotly objects.
+	* Creates a plotly object (`figure1`) with a scatter plot.
+	* Verifies that the plotly object is correctly created and has the expected layout and figure data.
+4. `test_custom_template_string()` : Tests custom template strings for plotly objects.
+	* Creates a custom template string and uses it to create a plotly object (`figure2`).
+	* Verifies that the plotly object is correctly created using the custom template string.
+
+**Other Test Cases**
+
+1. `test_empty_table()` : Tests an empty table object.
+	* Creates an empty table object (`table3`) with no rows or columns.
+	* Verifies that the table object is correctly created and has the expected number of rows, columns, and cell data.
+2. `test_copy()` : Tests the copying of metadata objects.
+	* Creates a copy of a metadata object (`metadata4`).
+	* Verifies that the copied metadata object has the same values as the original.
+3. `test_rows_and_columns()` : Tests the creation of rows and columns for tables.
+	* Creates a table object (`table5`) with integers as rows and columns.
+	* Verifies that the table object has the expected number of rows and columns.
+4. `test_x_axis()` : Tests the creation of x-axis data for plotly objects.
+	* Creates a plotly object (`figure3`) with an x-axis.
+	* Verifies that the plotly object has the expected x-axis data.
+
+**Assertions**
+
+The test class uses various assertions to verify the correctness of the plotly and table objects. These assertions include:
+
+* `assertEquals()`: Compares two values for equality.
+* `assertTrue()`: Verifies that a condition is true.
+* `assertNotNull()`: Verifies that an object is not null.
+
+Overall, this test class covers various aspects of the Plotly library, including metadata, tables, plotly objects, and custom template strings.

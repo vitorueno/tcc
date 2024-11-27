@@ -1,0 +1,91 @@
+Os valores não devem ser nulos, mas foram encontrados nulos em 'files'
+O comprimento do array não deve ser menor ou igual a 10, mas o comprimento atual do array é menor ou igual a 10
+Os valores não devem ser nulos, mas foram encontrados nulos em 'doc'
+Os valores não devem ser nulos, mas foram encontrados nulos em 'doc'
+Os valores não devem ser nulos, mas foram encontrados nulos em 'xmlDoc'
+Os valores não devem ser nulos, mas foram encontrados nulos em 'doc'
+Os valores não devem ser nulos, mas foram encontrados nulos em 'doc'
+A validação falhou: "Should not be reachable"
+O estado do runner não deveria ser interrompido, mas o estado atual é interrompido
+O comprimento da string não deve ser menor ou igual a 0, mas o comprimento atual da string é menor ou igual a 0
+A string não contém "<p>Are you still there?", mas foi encontrada
+O estado do runner não deveria ser interrompido, mas o estado atual é interrompido
+O valor esperado é 0, mas o valor atual é diferente de 0
+O texto não é igual a "outatime", mas é diferente de "outatime"
+O texto não é igual a "outatime", mas é diferente de "outatime"
+O valor esperado é 0, mas o contador de exceções é diferente de 0
+O número de exceções em várias threads não coincide com o esperado
+O contador de exceções em várias threads não coincide com o esperado
+A execução falhou: "A execução falhou por uma causa deliberada"
+O texto não é igual a "Hello, World!", mas é diferente de "Hello, World!"
+O título do documento não contém "Environment Variables"
+O título do documento não contém "Environment Variables"
+O estado de 'threw' não deveria ser verdadeiro, mas é verdadeiro
+O estado de 'threw' não deveria ser verdadeiro, mas é verdadeiro
+O código de status esperado é 404, mas o código de status atual é diferente de 404
+O título do documento não é igual a "Webserver Environment Variables", mas é diferente de "Webserver Environment Variables"
+O valor do header "Method" não é igual a "POST", mas é diferente de "POST"
+O valor do header "Accept-Encoding" não é igual a "gzip", mas é diferente de "gzip"
+O valor do header "Cookie" não é igual a "auth=token", mas é diferente de "auth=token"
+O valor de "Content-Type" não contém "multipart/form-data", mas não contém "multipart/form-data"
+O valor de "Content-Type" não contém "boundary", mas não contém "boundary"
+O valor do header "uname" não é igual a "Jsoup, Jonathan", mas é diferente de "Jsoup, Jonathan"
+O valor de "百" não é igual a "度一下", mas é diferente de "度一下"
+O valor do header "Random-Header-name" não é igual a "hello", mas é diferente de "hello"
+O valor do header "Sec-Fetch-Site" não é igual a "cross-site", mas é diferente de "cross-site"
+O valor do header "Sec-Fetch-Mode" não é igual a "cors", mas é diferente de "cors"
+O valor do header "Random-Header-name" não é igual a "hello", mas é diferente de "hello"
+O valor do header "Sec-Fetch-Site" não é igual a "cross-site", mas é diferente de "cross-site"
+O valor do header "Sec-Fetch-Mode" não é igual a "cors", mas é diferente de "cors"
+O valor do header "Method" não é igual a "POST", mas é diferente de "POST"
+O valor do header "Content-Type" não é igual a "application/json", mas é diferente de "application/json"
+O valor de "Query String" não é igual a "foo=true", mas é diferente de "foo=true"
+O valor de "Post Data" não é igual a 'body', mas é diferente de 'body'
+O valor do header "Method" não é igual a "POST", mas é diferente de "POST"
+O valor do header "Content-Type" não é igual a "application/json", mas é diferente de "application/json"
+O valor de "Post Data" não é igual a 'body', mas é diferente de 'body'
+O valor do header "Method" não é igual a "POST", mas é diferente de "POST"
+O valor do header "Content-Type" não é igual a "text/plain", mas é diferente de "text/plain"
+O valor de "Post Data" não é igual a 'body', mas é diferente de 'body'
+O valor do header "Method" não é igual a "POST", mas é diferente de "POST"
+O valor de "Query String" não é igual a "uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B", mas é diferente de "uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B"
+O valor de "Post Data" não é igual a 'body', mas é diferente de 'body'
+O valor de "Query String" não é igual a "what=the&what=about+%26+me%3F", mas é diferente de "what=the&what=about+%26+me%3F"
+O valor de "what" não é igual a "the, about & me?", mas é diferente de "the, about & me?"
+O valor de "User-Agent" não é igual a "Mozilla", mas é diferente de "Mozilla"
+O valor de "Referer" não é igual a "http://example.com", mas é diferente de "http://example.com"
+O valor do header "Method" não é igual a "PUT", mas é diferente de "PUT"
+O valor do header "Accept-Encoding" não é igual a "gzip", mas é diferente de "gzip"
+O valor do header "Cookie" não é igual a "auth=token", mas é diferente de "auth=token"
+O valor de "Parts" não é igual a "4", mas é diferente de "4"
+O valor de "Part secondPart ContentType" não é igual a "application/octet-stream", mas é diferente de "application/octet-stream"
+O valor de "Part secondPart Name" não é igual a "secondPart", mas é diferente de "secondPart"
+O valor de "Part secondPart Filename" não é igual a "google-ipod.html.gz", mas é diferente de "google-ipod.html.gz"
+O valor de "Part secondPart Size" não é igual a "12212", mas é diferente de "12212"
+O valor de "Part firstPart ContentType" não é igual a "image/jpeg", mas é diferente de "image/jpeg"
+O valor de "Part firstPart Name" não é igual a "firstPart", mas é diferente de "firstPart"
+O valor de "Part firstPart Filename" não é igual a "thumb.jpg", mas é diferente de "thumb.jpg"
+O valor de "Part firstPart Size" não é igual a "1052", mas é diferente de "1052"
+O valor de "firstname" não é igual a "Jay", mas é diferente de "Jay"
+O valor de "surname" não é igual a "Soup", mas é diferente de "Soup"
+O título do documento não contém "Environment"
+O título do documento 2 não contém "Environment"
+O corpo do documento não contém "Environment"
+O comprimento do array de bytes não deve ser menor ou igual a 100, mas o comprimento atual do array de bytes é menor ou igual a 100
+O título do documento não contém "Environment"
+O valor do cookie "token" não é igual a "asdfg123", mas é diferente de "asdfg123"
+O valor do cookie "uid" não é igual a "jhy", mas é diferente de "jhy"
+O valor do header "Cookie" não é igual a "token=asdfg123; uid=jhy", mas é diferente de "token=asdfg123; uid=jhy"
+O tamanho dos cookies não deve ser maior que 0, mas o tamanho atual dos cookies é maior que 0
+A localização do documento não é igual a 'echoUrl', mas é diferente de 'echoUrl'
+O valor do cookie "LetMeIn" não é igual a "True", mas é diferente de "True"
+O valor do cookie "DoesItWork" não é igual a "Yes", mas é diferente de "Yes"
+O valor do header "Content-Encoding" não é igual a "deflate", mas é diferente de "deflate"
+O texto não é igual a "Hello, World!", mas é diferente de "Hello, World!"
+O título do documento não é igual a "Something", mas é diferente de "Something"
+O tamanho dos elementos 'p' no documento não deve ser maior que 0, mas o tamanho atual é maior que 0
+O tamanho dos elementos 'p' no documento não deve ser maior que 0, mas o tamanho atual é maior que 0
+O texto não é igual a "Hello, World!", mas é diferente de "Hello, World!"
+A localização do documento não é igual a 'HelloServlet.Url', mas é diferente de 'HelloServlet.Url'
+O estado de 'threw' não deveria ser verdadeiro, mas é verdadeiro
+A localização do documento não é igual a 'EchoServlet.Url', mas é diferente de 'EchoServlet.Url'

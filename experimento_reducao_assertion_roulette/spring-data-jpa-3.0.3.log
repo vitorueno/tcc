@@ -1,0 +1,33 @@
+Antes do refactor: 
+
+
+Projeto: /home/vitor-otto/opensource/spring-data-jpa-3.0.3
+
+Total asserts: 1658
+Asserts sem descrição: 1658
+Asserts com descrição: 0
+Assertion Roulette: 1063
+
+Após o refactor: 
+
+
+Projeto: /home/vitor-otto/opensource/spring-data-jpa-3.0.3
+
+chamada antiga: Assertions.assertEquals(0, accessor.getValues().length)
+nova chamada: assertEquals("Era esperado valores iguais, mas  0 é diferente de " + " accessor.getValues().length", 0, accessor.getValues().length)
+chamada antiga: Assertions.assertEquals(parameters, accessor.getParameters())
+nova chamada: assertEquals("Era esperado valores iguais, mas  parameters é diferente de " + result0 + " <accessor.getParameters()>", parameters, accessor.getParameters())
+chamada antiga: assertNotNull(userRepository)
+nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", userRepository)
+chamada antiga: assertNotNull(roleRepository)
+nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", roleRepository)
+chamada antiga: assertNotNull(auditableUserRepository)
+nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", auditableUserRepository)
+chamada antiga: assertNotNull(mappingContext)
+nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", mappingContext)
+chamada antiga: assertFalse(beans.entrySet().isEmpty())
+nova chamada: assertFalse("Era esperado falso, mas " + result1 + " <beans.entrySet().isEmpty()> é verdadeiro ", beans.entrySet().isEmpty())
+Total asserts: 1658
+Asserts sem descrição: 1658
+Asserts com descrição: 0
+Assertion Roulette: 1063

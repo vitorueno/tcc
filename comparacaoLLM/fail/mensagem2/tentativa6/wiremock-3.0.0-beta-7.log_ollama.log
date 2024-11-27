@@ -1,0 +1,70 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. assertEquals(5, calculator.add(2, 3))
+   - eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+
+2. assertFalse(mappings.get(0).getRequest().getHeaders().containsKey("No"))
+   - Não há um header chamado "No" nas requisições
+
+3. assertTrue(match.isExactMatch())
+   - A string não é uma exatensão perfeita
+
+4. assertTrue(match.isExactMatch())
+   - A string não é uma exatensão perfeita
+
+5. assertTrue(result)
+   - O resultado está verdadeiro, mas não é possível determinar se é esperado ou não
+
+6. assertTrue(result)
+   - O resultado está verdadeiro, mas não é possível determinar se é esperado ou não
+
+7. assertFalse(result)
+   - O resultado está falso
+
+8. assertTrue(pattern.isMatchAny())
+   - A string contém uma combinação de padrões
+
+9. FALSEUSE(pattern.isMatchAll())
+   - A string não contém todos os padrões
+
+10. assertTrue(pattern.isMatchAny())
+    - A string contém uma combinação de padrões
+
+11. FALSEUSE(pattern.isMatchAll())
+    - A string não contém todos os padrões
+
+12. TRUEFALSE(pattern.isMatchAll())
+    - A string contém alguns, mas não todos, padrões
+
+13. FALSEUSE(pattern.isMatchAny())
+    - A string não contém nenhum padrão
+
+14. FALSEUSE(pattern.isMatchAll())
+    - A string não contém todos os padrões
+
+15. TRUEFALSE(pattern.isMatchAll())
+    - A string contém alguns, mas não todos, padrões
+
+16. TRUEFALSE(pattern.isMatchAny())
+    - A string contém uma combinação de padrões
+
+17. assertNull(pattern)
+   - A string é nula ou vazia
+
+18. assertTrue(matcher.match("2022-06-14T12:13:14Z").isExactMatch())
+   - A data está correta, mas a hora não é exata
+
+19. FALSEUSE(matcher.match("1921-06-14T12:13:14Z").isExactMatch())
+   - A data está incorreta (ano errado)
+
+20. TRUEFALSE(matcher.match("2021-06-24T12:40:27Z").isExactMatch())
+   - A data é correta, mas a hora não é exata
+
+21. FALSEUSE(matcher.match("2021-06-24T13:40:27Z").isExactMatch())
+   - A data é incorreta (hora errada)
+
+22. TRUEFALSE(matcher.match("2021-06-14T12:13:14").isExactMatch())
+   - A data é correta, mas a hora não é exata
+
+23. FALSEUSE(matcher.match("1921-06-14T12:13:14Z").isExactMatch())
+   - A data está incorreta (ano errado)

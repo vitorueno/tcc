@@ -1,0 +1,151 @@
+eram esperados valores iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+
+eram esperados valores iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"odd\">" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+
+eram esperados valores iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td><p>foo</p></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+
+eram esperados valores iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>&lt;p&gt;foo&lt;/p&gt;</td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+
+eram esperados valores iguais, mas json é diferente de writer.toString()
+
+eram esperados valores iguais, mas json é diferente de output
+
+eram esperados valores iguais, mas 2 é diferente de table.columnCount()
+
+eram esperados valores iguais, mas 3 é diferente de table.rowCount()
+
+eram esperados valores iguais, mas "Date" é diferente de table.column(0).name()
+
+eram esperados valores iguais, mas "Value" é diferente de table.column(1).name()
+
+eram esperados valores iguais, mas ColumnType.LONG é diferente de table.typeArray()[0]
+
+eram esperados valores iguais, mas 1453438800000L é diferente de table.column("Date").get(0)
+
+eram esperados valores iguais, mas 2 é diferente de table.columnCount()
+
+eram esperados valores iguais, mas 3 é diferente de table.rowCount()
+
+eram esperados valores iguais, mas ColumnType.LONG é diferente de table.typeArray()[0]
+
+eram esperados valores iguais, mas 2 é diferente de table.columnCount()
+
+eram esperados valores iguais, mas 3 é diferente de table.rowCount()
+
+eram esperados valores iguais, mas "a" é diferente de table.column(0).name()
+
+eram esperados valores iguais, mas "b.c" é diferente de table.column(1).name()
+
+eram esperados valores iguais, mas ColumnType.LONG é diferente de table.typeArray()[0]
+
+eram esperados valores iguais, mas ColumnType.INTEGER é diferente de actual.typeArray()[0]
+
+eram esperados valores iguais, mas expected.column("A").asList() é diferente de actual.column("A").asList()
+
+eram esperados valores iguais, mas expected.column("B").asList() é diferente de actual.column("B").asList()
+
+eram esperados valores iguais, mas expected.column("C").asList() é diferente de actual.column("C").asList()
+
+os arrays não são iguais
+
+os arrays não são iguais
+
+o objeto não é nulo
+
+eram esperados valores iguais, mas "x title" é diferente de layout.getTitle()
+
+o objeto não é nulo
+
+eram esperados valores iguais, mas Up.upBuilder(1, 2, 3).build().asJavascript() é diferente de javaScript
+
+eram esperados valores iguais, mas Eye.eyeBuilder(1, 2, 3).build().asJavascript() é diferente de javaScript
+
+eram esperados valores iguais, mas Center.centerBuilder(1, 2, 3).build().asJavascript() é diferente de javaScript
+
+eram esperados valores iguais, mas "    <script>" + LINE_END + "        var target_target = document.getElementById('target');" + LINE_END + "        " + LINE_END + "var trace0 =" + LINE_END + "{" + LINE_END + "x: [\"1.0\",\"2.0\",\"3.0\",\"4.0\",\"5.0\"]," + LINE_END + "y: [\"1.0\",\"4.0\",\"9.0\",\"16.0\",\"25.0\"]," + LINE_END + "mode: 'markers'," + LINE_END + "xaxis: 'x'," + LINE_END + "yaxis: 'y'," + LINE_END + "type: 'scatter'," + LINE_END + "name: ''," + LINE_END + "};" + LINE_END + "" + LINE_END + "        var data = [ trace0];" + LINE_END + "Plotly.newPlot(target_target, data);            </script>" + LINE_END é diferente de figure.asJavascript(divName)
+
+eram esperados valores iguais, mas "    <script>" + LINE_END + "        var target_target = document.getElementById('target');" + LINE_END + "        var layout = {" + LINE_END + "    title: 'A test title'," + LINE_END + "    height: 450," + LINE_END + "    width: 700," + LINE_END + "    showlegend: true," + LINE_END + "    margin: {" + LINE_END + "  \"autoexpand\" : true," + LINE_END + "  \"b\" : 80," + LINE_END + "  \"l\" : 200," + LINE_END + "  \"pad\" : 0," + LINE_END + "  \"r\" : 80," + LINE_END + "  \"t\" : 200" + LINE_END + "}," + LINE_END + "    xaxis: {" + LINE_END + "    title: 'x Axis 1'," + LINE_END + "        titlefont: {" + LINE_END + "  \"color\" : \"red\"," + LINE_END + "  \"family\" : \"arial\"," + LINE_END + "  \"size\" : 8" + LINE_END + "}," + LINE_END + "    }," + LINE_END + "" + LINE_END + "" + LINE_END + "};" + LINE_END + "" + LINE_END + "var trace0 =" + LINE_END + "{" + LINE_END + "x: [\"1.0\",\"2.0\",\"3.0\",\"4.0\",\"5.0\"]," + LINE_END + "y: [\"1.0\",\"4.0\",\"9.0\",\"16.0\",\"25.0\"]," + LINE_END + "mode: 'markers'," + LINE_END + "xaxis: 'x'," + LINE_END + "yaxis: 'y'," + LINE_END + "type: 'scatter'," + LINE_END + "name: ''," + LINE_END + "};" + LINE_END + "" + LINE_END + "        var data = [ trace0];" + LINE_END + "Plotly.newPlot(target_target, data, layout);            </script>" + LINE_END é diferente de figure.asJavascript(divName)
+
+eram esperados valores iguais, mas layout é diferente de figure.getLayout()
+
+a string não contém "A test title"
+
+as informações não correspondem
+
+as informações não correspondem
+
+as informações não correspondem
+
+as informações não correspondem
+
+o objeto não é nulo
+
+o objeto não é nulo
+
+o objeto não é nulo
+
+as informações não correspondem
+
+as informações não correspondem
+
+o objeto não é nulo
+
+as informações não correspondem
+
+o objeto não é nulo
+
+as informações não correspondem
+
+o tamanho das colunas é diferente
+
+o objeto não é nulo
+
+o tamanho das colunas é diferente
+
+o tamanho das colunas é diferente
+
+o nome da tabela é diferente
+
+o tipo de compressão é diferente
+
+as informações não correspondem
+
+o nome da tabela é diferente
+
+o número de versão é diferente
+
+o número de colunas é diferente
+
+as informações não correspondem
+
+as informações não correspondem
+
+o número de colunas é diferente
+
+o número de linhas é diferente
+
+o nome da tabela é diferente
+
+o número de linhas é diferente
+
+o número de colunas é diferente
+
+o objeto não é nulo
+
+o objeto não é nulo
+
+o número de colunas é maior que zero
+
+a tabela não está vazia
+
+o objeto não é nulo
+
+o número de linhas é diferente
+
+o objeto não é nulo
+
+o número de linhas é diferente
+
+o tamanho da coluna é maior que zero
+
+o tipo da coluna é diferente

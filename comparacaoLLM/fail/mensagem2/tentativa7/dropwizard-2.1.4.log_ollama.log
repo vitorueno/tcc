@@ -1,0 +1,34 @@
+Segue abaixo as mensagens de descrição de erro para cada assert, conforme o exemplo solicitado:
+
+eram esperados valores iguais, mas `calculator.add(2, 3)` retornou diferente do esperado
+eram esperados valores iguais, mas `calculator.add(4, 2)` retornou diferente do esperado
+eram esperados valores iguais, mas `calculator.add(5, 5)` retornou diferente do esperado
+
+eram esperados valores iguais, mas a configuração SSL foi nula para o servidor
+esperava que a classe de violação de constraint fosse `ConstraintViolationException`, mas encontrou outra classe
+esperava que a resposta contivesse apenas uma mapa com a chave "color" e valor "orange", mas encontrou outro tipo de resposta
+esperava que a resposta contivesse apenas uma mapa com a chave "message" e valor "stuff!", mas encontrou outro tipo de resposta
+não esperava que o conjunto de classes de entidade do diretório estivesse vazio
+esperava que o tamanho do conjunto de classes de entidade do diretório fosse 4, mas encontrou outro tamanho
+não esperava que o conjunto de classes de entidade do diretório estivesse vazio
+esperava que o tamanho do conjunto de classes de entidade do diretório fosse 8, mas encontrou outro tamanho
+esperava que a data de criação do evento fosse igual a 0 milissegundos, mas encontrou uma data diferente
+esperava que a duração da tarefa fosse igual a 0 segundos, mas encontrou uma duração diferente
+não esperava que o contexto de segurança da solicitação estivesse inseguro
+esperava que o caminho do contexto administrativo fosse igual a `/admin`, mas encontrou outro caminho
+esperava que o caminho do contexto aplicativo fosse igual a `/app`, mas encontrou outro caminho
+esperava que o caminho do contexto administrativo fosse igual a `/admin`, mas encontrou outro caminho
+esperava que o caminho do contexto aplicativo fosse igual a `/app`, mas encontrou outro caminho
+esperava que o código de status para a solicitação GET fosse 200, mas encontrou um código diferente
+esperava que o código de status para a solicitação POST fosse 200, mas encontrou um código diferente
+esperava que o código de status para a solicitação PUT fosse 403, mas encontrou um código diferente
+esperava que o código de status para a solicitação DELETE fosse 403, mas encontrou um código diferente
+esperava que o código de status para a solicitação TRACE fosse 403, mas encontrou um código diferente
+esperava que a invocação do teste estivesse igual à instância `inv`, mas encontrou uma invocação diferente
+esperava que a resposta da solicitação tivesse status BAD_REQUEST com código 400, mas encontrou um status diferente
+não esperava que o Guava Optional nulo fosse presente
+esperava que o Guava Optional de "Foo" estivesse presente
+esperava que o Guava Optional de "Foo" fosse igual à instância `java.util.Optional.of("Foo")`
+esperava que o Guava Optional nulo fosse presente para converter
+esperava que o Guava Optional de "Foo" estivesse presente para converter
+esperava que a instância Guava Optional de "Foo" fosse igual à instância `com.google.common.base.Optional.of("Foo")`

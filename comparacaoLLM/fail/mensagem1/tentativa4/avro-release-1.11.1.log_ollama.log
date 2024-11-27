@@ -1,0 +1,26 @@
+assertEquals("\n", "O valor esperado não foi encontrado.")
+assertEquals("\n", "O valor esperado não foi encontrado.")
+
+assertEquals("220" + System.lineSeparator(), "O valor esperado não foi encontrado.")
+
+assertEquals(ROWS_IN_INPUT_FILES - OFFSET, numRowsInFile(output), "O valor esperado não foi encontrado.")
+
+assertEquals(getCodec(input1).getClass(), getCodec(output).getClass(), "Os codecs não são iguais.")
+
+assertEquals(sentinel, in.readLong(), "O valor esperado não foi encontrado.")
+
+assertEquals(sentinel, in.readLong(), "O valor esperado não foi encontrado.")
+
+assertEquals(0, returnCode, "O valor esperado não foi encontrado.")
+
+assertEquals(COUNT, "O valor esperado não foi encontrado.")
+
+assertEquals(ROWS_IN_INPUT_FILES * 3, numRowsInFile(output), "O valor esperado não foi encontrado.")
+
+assertEquals(getCodec(input1).getClass(), getCodec(output).getClass(), "Os codecs não são iguais.")
+
+assertEquals(sentinel, in.readLong(), "O valor esperado não foi encontrado.")
+
+assertEquals(sentinel, in.readLong(), "O valor esperado não foi encontrado.")
+
+assertEquals(0, returnCode, "O valor esperado não foi encontrado.")

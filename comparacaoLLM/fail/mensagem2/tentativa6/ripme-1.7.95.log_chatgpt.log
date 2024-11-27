@@ -1,0 +1,12 @@
+eram esperadas strings iguais, mas "test.test" é diferente de fileName
+eram esperadas strings iguais, mas "test" é diferente de fileName
+eram esperados objetos iguais, mas Object é diferente de fileName
+eram esperadas strings iguais, mas "file.png" é diferente de fileName
+eram esperadas strings iguais, mas "file." é diferente de fileName
+eram esperadas strings iguais, mas "test" é diferente de new String(Base64.decode("dGVzdA=="))
+o objeto ripper não encontrou um JSONObject contendo o photoId "-45984105_457345201" no json fornecido
+a localização atual 'https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150' não é igual à esperada
+a localização atual 'https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300' não é igual à esperada
+o GID obtido '975973' não é igual ao esperado '975973'
+a página não contém álbuns conforme o esperado
+a página não contém álbuns conforme o esperado

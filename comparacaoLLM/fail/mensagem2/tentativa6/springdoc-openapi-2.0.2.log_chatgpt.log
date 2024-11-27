@@ -1,0 +1,8 @@
+eram esperados valores verdadeiros, mas result.contains("!<Type A>") é falso.  
+era esperado o valor "Swagger UI" em contentAsString.  
+eram esperados valores iguais, mas expected é diferente de result.  
+era esperado o valor "window.ui" em result.  
+eram esperados valores iguais, mas expected é diferente de result após a remoção de caracteres de quebra de linha.  
+era esperado o cabeçalho "Cache-Control" com o valor "no-store" na resposta.  
+eram esperados valores iguais, mas o conteúdo do arquivo fileName é diferente de htmlResult após a remoção de caracteres de quebra de linha.  
+era esperado o valor "window.ui" em htmlResult.

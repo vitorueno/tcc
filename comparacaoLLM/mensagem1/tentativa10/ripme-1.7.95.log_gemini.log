@@ -1,0 +1,13 @@
+Falha ao comparar o nome do arquivo: o esperado era "test.test", mas foi encontrado "[valor_encontrado]".
+Falha ao comparar o nome do arquivo: o esperado era "test", mas foi encontrado "[valor_encontrado]".
+Falha ao comparar o nome do arquivo: o esperado era "Object", mas foi encontrado "[valor_encontrado]".
+Falha ao comparar o nome do arquivo: o esperado era "file.png", mas foi encontrado "[valor_encontrado]".
+Falha ao comparar o nome do arquivo: o esperado era "file.", mas foi encontrado "[valor_encontrado]".
+Falha ao comparar a string decodificada Base64: o esperado era "test", mas foi encontrado "[valor_encontrado]".
+Falha ao comparar os JSONs: o JSONObject esperado não é similar ao JSONObject retornado.
+Falha ao comparar a URL: a URL esperada não corresponde à URL encontrada.
+Falha ao comparar a URL: a URL esperada não corresponde à URL encontrada.
+Falha ao comparar o GID: o GID esperado era "975973", mas foi encontrado "[valor_encontrado]".
+Falha ao verificar se a página contém álbuns: a página não contém álbuns.
+Falha ao verificar se a página contém álbuns: a página não contém álbuns.
+

@@ -1,0 +1,56 @@
+eram esperados valores verdadeiros, mas a classe ClassUtils.isAssignable não retornou verdadeiro
+eram esperados valores falsos, mas a classe ClassUtils.isAssignable não retornou falso
+eram esperados valores verdadeiros, mas a classe ClassUtils.isAssignable não retornou verdadeiro
+eram esperados valores falsos, mas a classe ClassUtils.isAssignable não retornou falso
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores verdadeiros, mas o filtro não incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores falsos, mas o filtro incluiu a propriedade 'some.property'
+eram esperados valores iguais, mas 'decrypted' é diferente de 'message'
+eram esperados valores iguais, mas 'decrypted' é diferente de 'message'
+eram esperados valores iguais, mas 'decrypted' é diferente de 'message'
+eram esperados valores iguais, mas 'decrypted' é diferente de 'message'
+eram esperados valores iguais, mas 'decrypted' é diferente de 'message'
+eram esperados valores iguais, mas 'decrypted' é diferente de 'message'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+eram esperados valores iguais, mas 'message' é diferente de 'decrypted'
+esperava-se um objeto não nulo, mas 'this.context.getBean(EnableEncryptablePropertiesBeanFactoryPostProcessor.class)' retornou nulo
+esperava-se um objeto não nulo, mas 'this.context.getBean(EnableEncryptablePropertiesBeanFactoryPostProcessor.class)' retornou nulo
+eram esperados valores iguais, mas 'test1' é diferente de myProperties.getFooString()
+eram esperados valores iguais, mas 'test2' é diferente de myProperties.getBarString()
+esperava-se um objeto não nulo, mas 'myProperties.getFooList()' retornou nulo
+eram esperados valores iguais, mas '[a1, b1]' é diferente de myProperties.getFooList().toString()
+esperava-se um objeto não nulo, mas 'myProperties.getBarList()' retornou nulo
+eram esperados valores iguais, mas '[a2, b2]' é diferente de myProperties.getBarList().toString()
+esperava-se um objeto não nulo, mas 'myProperties.getStringMap()' retornou nulo
+eram esperados valores iguais, mas '{k1=v1}' é diferente de myProperties.getStringMap().toString()
+esperava-se um objeto não nulo, mas 'myProperties.getListMap()' retornou nulo
+eram esperados valores iguais, mas '{k2=[v2]}' é diferente de myProperties.getListMap().toString()

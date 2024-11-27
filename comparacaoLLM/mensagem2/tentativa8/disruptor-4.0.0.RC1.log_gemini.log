@@ -1,0 +1,83 @@
+eventHandlerGroup não pode ser nulo.
+testException e actualException deveriam ser a mesma instância, mas são diferentes.
+testException e actualException deveriam ser a mesma instância, mas são diferentes.
+testException e actualException deveriam ser a mesma instância, mas são diferentes.
+testException e actualException deveriam ser a mesma instância, mas são diferentes.
+Era esperado o valor 0, mas sequencer.next() retornou um valor diferente.
+Era esperado o valor 3, mas sequencer.next(4) retornou um valor diferente.
+Era esperado que sequencer.hasAvailableCapacity(1) retornasse true, mas retornou false.
+Era esperado que sequencer.hasAvailableCapacity(BUFFER_SIZE) retornasse true, mas retornou false.
+Era esperado que sequencer.hasAvailableCapacity(BUFFER_SIZE + 1) retornasse false, mas retornou true.
+Era esperado que sequencer.hasAvailableCapacity(BUFFER_SIZE - 1) retornasse true, mas retornou false.
+Era esperado que sequencer.hasAvailableCapacity(BUFFER_SIZE) retornasse false, mas retornou true.
+Era esperado que sequencer.hasAvailableCapacity(1) retornasse false, mas retornou true.
+Era esperado que sequencer.isAvailable(seq) retornasse false, mas retornou true.
+Era esperado que sequencer.isAvailable(seq) retornasse true, mas retornou false.
+Era esperado que sequencer.isAvailable(seq) retornasse true, mas retornou false.
+Era esperado que sequencer.isAvailable(seq) retornasse false, mas retornou true.
+Era esperado que eventLatch.await(2, TimeUnit.SECONDS) retornasse true, mas retornou false.
+Era esperado que exceptionLatch.await(2, TimeUnit.SECONDS) retornasse true, mas retornou false.
+Era esperada a lista [3L, 2L, 1L], mas batchSizes contém uma lista diferente.
+Era esperado que h1.awaitStart(2, TimeUnit.SECONDS) retornasse true, mas retornou false.
+Era esperado que h1.awaitStop(2, TimeUnit.SECONDS) retornasse true, mas retornou false.
+Era esperado que timeWaiting fosse maior ou igual a theTimeout, mas não foi.
+Era esperado o valor 10, mas sequence.addAndGet(10) retornou um valor diferente.
+Era esperado o valor 10, mas sequence.get() retornou um valor diferente.
+Era esperado o valor 1, mas sequence.incrementAndGet() retornou um valor diferente.
+Era esperado o valor 1, mas sequence.get() retornou um valor diferente.
+Era esperado o valor 0, mas sequence.getAndAdd(1) retornou um valor diferente.
+Era esperado o valor 1, mas sequence.get() retornou um valor diferente.
+Era esperado o valor -1L, mas batchEventProcessor.getSequence().get() retornou um valor diferente.
+Era esperado o valor 0L, mas batchEventProcessor.getSequence().get() retornou um valor diferente.
+Era esperado o valor 0L, mas batchEventProcessor.getSequence().get() retornou um valor diferente.
+Era esperado o valor TEST_VALUE, mas event.getTestString() retornou um valor diferente.
+Era esperado o valor SingleProducerSequencer.INITIAL_CURSOR_VALUE, mas ringBuffer.getCursor() retornou um valor diferente.
+Era esperado o valor 0, mas sequence retornou um valor diferente.
+Era esperado o evento expectedEvent, mas event é diferente.
+Era esperado o valor 0L, mas ringBuffer.getCursor() retornou um valor diferente.
+Era esperado o evento expectedEvent, mas messages.get().get(0) é diferente.
+Era esperado o valor expectedSequence, mas available é diferente.
+Era esperado o valor expectedSequence, mas available é diferente.
+Era esperado que ringBuffer.tryPublishEvent(StubEvent.TRANSLATOR, 3, "3") retornasse false, mas retornou true.
+Era esperado que publisherComplete.get() retornasse false, mas retornou true.
+Era esperado que publisherComplete.get() retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translators) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translators, 0, 1) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translators, 1, 2) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo" }) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Foo" }) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo", "Foo", "Foo" }) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Foo4", "Foo5" }, new String[] { "Bar3", "Bar4", "Bar5" }, new String[] { "Baz3", "Baz4", "Baz5" }) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }) retornasse true, mas retornou false.
+Era esperado que ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Bar3", "Baz3", "Bam3" }, new String[] { "Foo4", "Bar4", "Baz4", "Bam4" }, new String[] { "Foo5", "Bar5", "Baz5", "Bam5" }) retornasse true, mas retornou false.
+Era esperado que ringBuffer.removeGatingSequence(sequenceThree) retornasse true, mas retornou false.
+Era esperado o valor Long.MAX_VALUE, mas sequenceGroup.get() retornou um valor diferente.
+Era esperado que sequence.get() fosse igual a sequenceGroup.get(), mas não foi.
+Era esperado que sequenceThree.get() fosse igual a sequenceGroup.get(), mas não foi.
+Era esperado o tamanho 3, mas sequenceGroup.size() retornou um valor diferente.
+Era esperado que sequenceThree.get() fosse igual a sequenceGroup.get(), mas não foi.
+Era esperado que sequenceGroup.remove(sequenceThree) retornasse true, mas retornou false.
+Era esperado que sequenceSeven.get() fosse igual a sequenceGroup.get(), mas não foi.
+Era esperado o tamanho 1, mas sequenceGroup.size() retornou um valor diferente.
+Era esperado que sequenceThree.get() fosse igual a sequenceGroup.get(), mas não foi.
+Era esperado que sequenceGroup.remove(sequenceThree) retornasse true, mas retornou false.
+Era esperado que sequenceSeven.get() fosse igual a sequenceGroup.get(), mas não foi.
+Era esperado o tamanho 1, mas sequenceGroup.size() retornou um valor diferente.
+Era esperado o valor expectedSequence, mas sequenceThree.get() retornou um valor diferente.
+Era esperado o valor expectedSequence, mas sequenceSeven.get() retornou um valor diferente.
+Era esperado que completedWorkSequence fosse maior ou igual a expectedWorkSequence, mas não foi.
+Era esperado que completedWorkSequence fosse maior ou igual a expectedWorkSequence, mas não foi.
+Era esperado que completedWorkSequence fosse maior ou igual a expectedWorkSequence, mas não foi.
+Era esperado que sequenceBarrier.isAlerted() retornasse false, mas retornou true.
+Era esperado que sequenceBarrier.isAlerted() retornasse true, mas retornou false.
+Era esperado que sequenceBarrier.isAlerted() retornasse false, mas retornou true.
+Era esperado que timeWaiting fosse maior ou igual a theTimeout, mas não foi.
+Era esperado a mensagem "not rewindable", mas exceptionHandled.get().getMessage() retornou uma mensagem diferente.
+Era esperado o valor 3, mas rewindPauseStrategy.count retornou um valor diferente.
+Era esperado o valor 0, mas rewindPauseStrategy.count retornou um valor diferente.
+Era esperado o valor 1024, mas powerOfTwo retornou um valor diferente.
+Era esperado o valor 1024, mas powerOfTwo retornou um valor diferente.
+Era esperado o valor 3L, mas Util.getMinimumSequence(sequences) retornou um valor diferente.
+Era esperado o valor Long.MAX_VALUE, mas Util.getMinimumSequence(sequences) retornou um valor diferente.
+Era esperado que causeException fosse igual a ex.getCause(), mas não foi.

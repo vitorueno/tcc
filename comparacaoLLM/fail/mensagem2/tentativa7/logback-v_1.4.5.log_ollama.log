@@ -1,0 +1,34 @@
+eram esperados valores iguais, mas 5 não é igual a calculator.add(2, 3)
+eram esperados valores iguais, mas 7 não é igual a calculator.add(4, 2)
+eram esperados valores iguais, mas 10 não é igual a calculator.add(5, 5)
+
+Assertion de negação falhou: não foi encontrado consoleAppender
+Assertion de negação falhou: ErrorFreeChecker said that there were no errors in 0
+Assertion de negação falhou: não foi encontrado consoleAppender
+Assertion de negação falhou: ErrorFreeChecker said that there were no errors em 0
+Assertion de negação falhou: não foi encontrado listAppender
+Assertion de negação falhou: ErrorFreeChecker said que havia erros em 0
+Assertion de negação falhou: não foi encontrado ae
+Assertion de negação falhou: não foi encontrado o
+Assertion de negação falhou: Header map de resposta DummyResponse.DUMMY_DEFAULT_HDEADER_MAP não é igual ao de aeBack.getResponseHeaderMap()
+Assertion de negação falhou: Key "x" da header map de resposta DummyResponse.DUMMY_DEFAULT_HDEADER_MAP não é igual à resposta de aeBack.getResponseHeader("x")
+Assertion de negação falhou: Key "headerName1" da header map de resposta DummyResponse.DUMMY_DEFAULT_HDEADER_MAP não é igual à resposta de aeBack.getResponseHeader("headerName1")
+Assertion de negição falhou: Tamanho da lista de headers de resposta de aeBack não é igual ao tamanho do Map DummyResponse.DUMMY_DEFAULT_HDEADER_MAP
+Assertion de negação falhou: Length de conteúdo da resposta DummyResponse.DUMMY_DEFAULT_CONTENT_COUNT não é igual ao de aeBack.getContentLength()
+Assertion de negição falhou: Status code de resposta DummyResponse.DUMMY_DEFAULT_STATUS não é igual ao de aeBack.getStatusCode()
+Assertion de negição falhou: Conténto request de DummyRequest.DUMMY_CONTENT_STRING não é igual ao de aeBack.getRequestContent()
+Assertion de negição falhou: Content response de DummyRequest.DUMMY_RESPONSE_CONTENT_STRING não é igual ao de aeBack.getResponseContent()
+Assertion de negição falhou: Valor da atributo "testKey" de ae não é igual a  "ORIGINAL"
+Assertion de negação falhou: valor não está dentro do Map DummyResponse.DUMMY_DEFAULT_ATTR_MAP
+Assertion de negição falhou: Atributo "testKey" de ae não é igual à "ORIGINAL"
+Assertion de negião falhou: Valor da cabeçaria do request "key" não é igual a  val
+Assertion de negição falhou: Valor da cabeçaria do request "key" não é igual a  val
+Assertion de negião falhou: Valor da cabeçaria do request "key" não é igual a  val
+Assertion de negião falhou: Valor da cabeçaria do request "key" não é igual a  val
+Assertion de negição falhou: valor não está dentro do Map DummyResponse.DUMMY_DEFAULT_ATTR_MAP
+Assertion de negião falhou: Atributo "testKey" de ae não é igual à "ORIGINAL"
+Assertion de negião falhou: Valor da cabeçaria do request "key" não é igual a  val
+Assertion de negião falhou: Valor da cabeçaria do request "key" não é igual a  val
+Assertion de negição falhou: Valor da cabeçaria do request "key" não é igual a  val
+Assertion de negião falhou: valor não está dentro do Array bytes
+Assertion de negação falhou: O array de bytes não tem o mesmo tamanho que expectedBytes

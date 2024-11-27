@@ -1,0 +1,75 @@
+Antes do refactor: 
+
+
+Projeto: /home/vitor-otto/opensource/dropwizard-2.1.4
+
+Total asserts: 4316
+Asserts sem descrição: 4313
+Asserts com descrição: 3
+Assertion Roulette: 3386
+
+Após o refactor: 
+
+
+Projeto: /home/vitor-otto/opensource/dropwizard-2.1.4
+
+chamada antiga: assertNotNull(factory.configureSslContextFactory(new SslContextFactory.Server()))
+nova chamada: assertNotNull(factory.configureSslContextFactory(new SslContextFactory.Server()), "Era esperado não nulo, mas " + result0 + " <factory.configureSslContextFactory(new SslContextFactory.Server())> é nulo")
+chamada antiga: Assertions.assertEquals(ConstraintViolationException.class, throwable.getClass())
+nova chamada: assertEquals(ConstraintViolationException.class, throwable.getClass(), "Era esperado valores iguais, mas  ConstraintViolationException.class é diferente de " + result1 + " <throwable.getClass()>")
+chamada antiga: Assertions.assertEquals(Collections.singletonMap("color", "orange"), response)
+nova chamada: assertEquals(Collections.singletonMap("color", "orange"), response, "Era esperado valores iguais, mas " + result2 + " <Collections.singletonMap('color', 'orange')> é diferente de " + " response")
+chamada antiga: Assertions.assertEquals(Collections.singletonMap("message", "stuff!"), response)
+nova chamada: assertEquals(Collections.singletonMap("message", "stuff!"), response, "Era esperado valores iguais, mas " + result3 + " <Collections.singletonMap('message', 'stuff!')> é diferente de " + " response")
+chamada antiga: assertFalse(findEntityClassesFromDirectory.isEmpty())
+nova chamada: assertFalse(findEntityClassesFromDirectory.isEmpty(), "Era esperado falso, mas " + result4 + " <findEntityClassesFromDirectory.isEmpty()> é verdadeiro ")
+chamada antiga: assertEquals(4, findEntityClassesFromDirectory.size())
+nova chamada: assertEquals(4, findEntityClassesFromDirectory.size(), "Era esperado valores iguais, mas  4 é diferente de " + result5 + " <findEntityClassesFromDirectory.size()>")
+chamada antiga: assertFalse(findEntityClassesFromDirectory.isEmpty())
+nova chamada: assertFalse(findEntityClassesFromDirectory.isEmpty(), "Era esperado falso, mas " + result6 + " <findEntityClassesFromDirectory.isEmpty()> é verdadeiro ")
+chamada antiga: assertEquals(8, findEntityClassesFromDirectory.size())
+nova chamada: assertEquals(8, findEntityClassesFromDirectory.size(), "Era esperado valores iguais, mas  8 é diferente de " + result7 + " <findEntityClassesFromDirectory.size()>")
+chamada antiga: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(event.getCreatedAt()).isEqualTo(Instant.ofEpochMilli(0)))
+nova chamada: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(event.getCreatedAt()).isEqualTo(Instant.ofEpochMilli(0)), "Era esperado que o tempo de execução " + result8 + " <Duration.ofSeconds(5L)> não fosse ultrapassado, mas foi")
+chamada antiga: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(task.getDuration()).isEqualTo(Duration.ofSeconds(0)))
+nova chamada: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(task.getDuration()).isEqualTo(Duration.ofSeconds(0)), "Era esperado que o tempo de execução " + result9 + " <Duration.ofSeconds(5L)> não fosse ultrapassado, mas foi")
+chamada antiga: assertTrue(requestContext.getSecurityContext().isSecure())
+nova chamada: assertTrue(requestContext.getSecurityContext().isSecure(), "Era esperado verdadeiro, mas " + result10 + " <requestContext.getSecurityContext().isSecure()> é falso")
+chamada antiga: assertEquals(http.getAdminContextPath(), environment.getAdminContext().getContextPath())
+nova chamada: assertEquals(http.getAdminContextPath(), environment.getAdminContext().getContextPath(), "Era esperado valores iguais, mas " + result11 + " <http.getAdminContextPath()> é diferente de " + result12 + " <environment.getAdminContext().getContextPath()>")
+chamada antiga: assertEquals(http.getApplicationContextPath(), environment.getApplicationContext().getContextPath())
+nova chamada: assertEquals(http.getApplicationContextPath(), environment.getApplicationContext().getContextPath(), "Era esperado valores iguais, mas " + result13 + " <http.getApplicationContextPath()> é diferente de " + result14 + " <environment.getApplicationContext().getContextPath()>")
+chamada antiga: assertEquals(http.getAdminContextPath(), environment.getAdminContext().getContextPath())
+nova chamada: assertEquals(http.getAdminContextPath(), environment.getAdminContext().getContextPath(), "Era esperado valores iguais, mas " + result15 + " <http.getAdminContextPath()> é diferente de " + result16 + " <environment.getAdminContext().getContextPath()>")
+chamada antiga: assertEquals(http.getApplicationContextPath(), environment.getApplicationContext().getContextPath())
+nova chamada: assertEquals(http.getApplicationContextPath(), environment.getApplicationContext().getContextPath(), "Era esperado valores iguais, mas " + result17 + " <http.getApplicationContextPath()> é diferente de " + result18 + " <environment.getApplicationContext().getContextPath()>")
+chamada antiga: assertEquals(OK_STATUS_CODE, getResponseStatusForRequestMethod("GET", false))
+nova chamada: assertEquals(OK_STATUS_CODE, getResponseStatusForRequestMethod("GET", false), "Era esperado valores iguais, mas  OK_STATUS_CODE é diferente de " + result19 + " <getResponseStatusForRequestMethod('GET', false)>")
+chamada antiga: assertEquals(OK_STATUS_CODE, getResponseStatusForRequestMethod("POST", true))
+nova chamada: assertEquals(OK_STATUS_CODE, getResponseStatusForRequestMethod("POST", true), "Era esperado valores iguais, mas  OK_STATUS_CODE é diferente de " + result20 + " <getResponseStatusForRequestMethod('POST', true)>")
+chamada antiga: assertEquals(DISALLOWED_STATUS_CODE, getResponseStatusForRequestMethod("PUT", true))
+nova chamada: assertEquals(DISALLOWED_STATUS_CODE, getResponseStatusForRequestMethod("PUT", true), "Era esperado valores iguais, mas  DISALLOWED_STATUS_CODE é diferente de " + result21 + " <getResponseStatusForRequestMethod('PUT', true)>")
+chamada antiga: assertEquals(DISALLOWED_STATUS_CODE, getResponseStatusForRequestMethod("DELETE", false))
+nova chamada: assertEquals(DISALLOWED_STATUS_CODE, getResponseStatusForRequestMethod("DELETE", false), "Era esperado valores iguais, mas  DISALLOWED_STATUS_CODE é diferente de " + result22 + " <getResponseStatusForRequestMethod('DELETE', false)>")
+chamada antiga: assertEquals(DISALLOWED_STATUS_CODE, getResponseStatusForRequestMethod("TRACE", false))
+nova chamada: assertEquals(DISALLOWED_STATUS_CODE, getResponseStatusForRequestMethod("TRACE", false), "Era esperado valores iguais, mas  DISALLOWED_STATUS_CODE é diferente de " + result23 + " <getResponseStatusForRequestMethod('TRACE', false)>")
+chamada antiga: assertSame(inv, test.getInvocable())
+nova chamada: assertSame(inv, test.getInvocable(), "Era esperado objetos iguais, mas  inv é diferente de " + result24 + " <test.getInvocable()>")
+chamada antiga: Assertions.assertEquals(Response.Status.BAD_REQUEST.getStatusCode(), reponse.getStatus())
+nova chamada: assertEquals(Response.Status.BAD_REQUEST.getStatusCode(), reponse.getStatus(), "Era esperado valores iguais, mas " + result25 + " <Response.Status.BAD_REQUEST.getStatusCode()> é diferente de " + result26 + " <reponse.getStatus()>")
+chamada antiga: assertFalse(Optionals.fromGuavaOptional(com.google.common.base.Optional.absent()).isPresent())
+nova chamada: assertFalse(Optionals.fromGuavaOptional(com.google.common.base.Optional.absent()).isPresent(), "Era esperado falso, mas " + result27 + " <Optionals.fromGuavaOptional(com.google.common.base.Optional.absent()).isPresent()> é verdadeiro ")
+chamada antiga: assertTrue(Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")).isPresent())
+nova chamada: assertTrue(Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")).isPresent(), "Era esperado verdadeiro, mas " + result28 + " <Optionals.fromGuavaOptional(com.google.common.base.Optional.of('Foo')).isPresent()> é falso")
+chamada antiga: assertEquals(java.util.Optional.of("Foo"), Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")))
+nova chamada: assertEquals(java.util.Optional.of("Foo"), Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")), "Era esperado valores iguais, mas " + result29 + " <java.util.Optional.of('Foo')> é diferente de " + result30 + " <Optionals.fromGuavaOptional(com.google.common.base.Optional.of('Foo'))>")
+chamada antiga: assertFalse(Optionals.toGuavaOptional(java.util.Optional.empty()).isPresent())
+nova chamada: assertFalse(Optionals.toGuavaOptional(java.util.Optional.empty()).isPresent(), "Era esperado falso, mas " + result31 + " <Optionals.toGuavaOptional(java.util.Optional.empty()).isPresent()> é verdadeiro ")
+chamada antiga: assertTrue(Optionals.toGuavaOptional(java.util.Optional.of("Foo")).isPresent())
+nova chamada: assertTrue(Optionals.toGuavaOptional(java.util.Optional.of("Foo")).isPresent(), "Era esperado verdadeiro, mas " + result32 + " <Optionals.toGuavaOptional(java.util.Optional.of('Foo')).isPresent()> é falso")
+chamada antiga: assertEquals(com.google.common.base.Optional.of("Foo"), Optionals.toGuavaOptional(java.util.Optional.of("Foo")))
+nova chamada: assertEquals(com.google.common.base.Optional.of("Foo"), Optionals.toGuavaOptional(java.util.Optional.of("Foo")), "Era esperado valores iguais, mas " + result33 + " <com.google.common.base.Optional.of('Foo')> é diferente de " + result34 + " <Optionals.toGuavaOptional(java.util.Optional.of('Foo'))>")
+Total asserts: 4316
+Asserts sem descrição: 4313
+Asserts com descrição: 3
+Assertion Roulette: 3386

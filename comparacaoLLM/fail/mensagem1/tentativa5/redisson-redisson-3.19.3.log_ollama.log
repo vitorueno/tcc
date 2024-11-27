@@ -1,0 +1,10 @@
+- Exceção de tipo AssertInvalidArgumentException: Argumento é inválido
+- Exceção de tipo AssertNotEqualsCollectionException: Conjuntos são diferentes
+- Exceção de tipo AssertionError: Operação não foi executada com sucesso
+- Exceção de tipo AssertNotEqualsException: Valores são diferentes
+- Exceção de tipo AssertNotEqualsElementException: Elemento não está presente no conjunto
+- Exceção de tipo AssertNotEqualsValueException: Valor é inválido
+- Exceção de tipo AssertNotEqualsSetException: Conjuntos são diferentes
+- Exceção de tipo AssertThrowsException: A operação não pode ser realizada sem o método "throws"
+- Exceção de tipo AssertionError: Operação não foi executada com sucesso, valor esperado é zero
+- Exceção de tipo AssertThrowsException: Valor é inválido

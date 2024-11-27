@@ -1,0 +1,100 @@
+"Esperado 'sun.misc.Unsafe', mas o nome canônico obtido foi: " + c.getCanonicalName()
+"Esperado id 1, mas o id obtido foi: " + user.id
+"Esperado nome 'kraity', mas o nome obtido foi: " + user.name
+"Esperado id 1, mas o id obtido foi: " + user.id
+"Esperado nome 'kraity', mas o nome obtido foi: " + user.name
+"Esperado valor 123, mas o valor obtido foi: " + bean.value
+"Esperado a mesma instância de JsonFactory, mas as instâncias são diferentes."
+"Esperado tamanho 3, mas o tamanho obtido foi: " + products.size()
+"Esperado id 1 no índice 0, mas o id obtido foi: " + products.get(0).id
+"Esperado id 2 no índice 1, mas o id obtido foi: " + products.get(1).id
+"Esperado id 3 no índice 2, mas o id obtido foi: " + products.get(2).id
+"Esperado que o comprimento de SerializationFeature.values() seja maior que 0, mas o comprimento é: " + SerializationFeature.values().length
+"Esperado nulo, mas o tipo obtido foi: " + new InvalidDefinitionException(null).getType()
+"Esperado \"{\"time\":\"121314\"}\", mas a string obtida foi: " + str
+"Esperado que os timestamps de bean e bean1 fossem iguais, mas são diferentes: bean.time = " + bean.time + ", bean1.time = " + bean1.time
+"Esperado \"{\"time\":\"121314\"}\", mas a string obtida foi: " + str
+"Esperado que os timestamps de bean e bean1 fossem iguais, mas são diferentes: bean.time = " + bean.time + ", bean1.time = " + bean1.time
+"Esperado \"{\"time\":\"121314\"}\", mas a string obtida foi: " + str
+"Esperado que os timestamps de bean e bean1 fossem iguais, mas são diferentes: bean.time = " + bean.time + ", bean1.time = " + bean1.time
+"Esperado \"{\"time\":\"121314\"}\", mas a string obtida foi: " + str
+"Esperado que os timestamps de bean e bean1 fossem iguais, mas são diferentes: bean.time = " + bean.time + ", bean1.time = " + bean1.time
+"Esperado \"{\"time\":\"121314\"}\", mas a string obtida foi: " + str
+"Esperado que os timestamps de bean e bean1 fossem iguais, mas são diferentes: bean.time = " + bean.time + ", bean1.time = " + bean1.time
+"Esperado '" + instantCsv + "', mas a string obtida foi: " + writer.writeValueAsString(bean)
+"Esperado que os dados de bean e bean1 fossem iguais, mas são diferentes: bean.data = " + bean.data + ", bean1.data = " + bean1.data
+"Esperado '" + instantCsv + "', mas a string obtida foi: " + str
+"Esperado que os dados de bean e bean1 fossem iguais, mas são diferentes: bean.data = " + bean.data + ", bean1.data = " + bean1.data
+"Esperado \"value\\n\", mas a string obtida foi: " + writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+"Esperado \"\\n\", mas a string obtida foi: " + writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+"Esperado que a string 'value' esteja contida em (reader.readValue(\"value\\n\", TypeWithOptional.class).data).get(), mas a string obtida foi: " + (reader.readValue("value\n", TypeWithOptional.class).data).get()
+"Esperado que a string 'null' esteja contida em (reader.readValue(\"null\\n\", TypeWithOptional.class).data).get(), mas a string obtida foi: " + (reader.readValue("null\n", TypeWithOptional.class).data).get()
+"Esperado '" + instantCsv + "', mas a string obtida foi: " + str
+"Esperado que os dados de bean e bean1 fossem iguais, mas são diferentes: bean.data = " + bean.data + ", bean1.data = " + bean1.data
+"Esperado \"value\\n\", mas a string obtida foi: " + writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+"Esperado \"\\n\", mas a string obtida foi: " + writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+"Esperado que a string 'value' esteja contida em (reader.readValue(\"value\\n\", TypeWithOptional.class).data).get(), mas a string obtida foi: " + (reader.readValue("value\n", TypeWithOptional.class).data).get()
+"Esperado que a string 'null' esteja contida em (reader.readValue(\"null\\n\", TypeWithOptional.class).data).get(), mas a string obtida foi: " + (reader.readValue("null\n", TypeWithOptional.class).data).get()
+"Esperado que (reader.readValue(\"\\n\", TypeWithOptional.class).data).get() esteja vazio, mas obteve: " + (reader.readValue("\n", TypeWithOptional.class).data).get()
+"Esperado que entry não seja nulo, mas é nulo."
+"Esperado id 123, mas o id obtido foi: " + entry.getJobResult().id
+"Esperado id 123, mas o id obtido foi: " + bean.id
+"Esperado id 123, mas o id obtido foi: " + bean1.id
+"Esperado id 123, mas o id obtido foi: " + bean2.id
+"Esperado id 123, mas o id obtido foi: " + bean3.id
+"Esperado que as máscaras de MapperFeature.USE_ANNOTATIONS fossem iguais, mas são diferentes: " + MapperFeature.USE_ANNOTATIONS.getMask() + " != " + MapperFeature.USE_ANNOTATIONS.getLongMask()
+"Esperado que MapperFeature.USE_ANNOTATIONS estivesse habilitado na máscara, mas não está."
+"Esperado que MapperFeature.USE_ANNOTATIONS estivesse habilitado na máscara longa, mas não está."
+"Esperado \"{\"color\":\"yellow\",\"type\":\"renault\"}\", mas a string obtida foi: " + json
+"Esperado que as cores de car e car1 fossem iguais, mas são diferentes: car.color = " + car.color + ", car1.color = " + car1.color
+"Esperado que os tipos de car e car1 fossem iguais, mas são diferentes: car.type = " + car.type + ", car1.type = " + car1.type
+"Esperado \"Black\", mas o valor obtido foi: " + map.get("color")
+"Esperado que os ids de bean e node fossem iguais, mas são diferentes: bean.id = " + bean.id + ", node.get(\"id\").asInt() = " + node.get("id").asInt()
+"Esperado que os nomes de bean e node fossem iguais, mas são diferentes: bean.name = " + bean.name + ", node.get(\"name\").asText() = " + node.get("name").asText()
+"Esperado 123, mas o valor obtido foi: " + mapper.readTree(new ByteArrayInputStream(str.getBytes())).get("id").asInt()
+"Esperado 123, mas o valor obtido foi: " + mapper.readTree(new StringReader(str)).get("id").asInt()
+"Esperado 123, mas o valor obtido foi: " + mapper.readTree(str).get("id").asInt()
+"Esperado 123, mas o valor obtido foi: " + ((JsonNode) mapper.readTree(mapper.factory.createParser(str))).get("id").asInt()
+"Esperado que arrayNode.get(0) fosse nulo, mas obteve: " + arrayNode.get(0)
+"Esperado JsonNodeType.ARRAY, mas o tipo de nó obtido foi: " + arrayNode.getNodeType()
+"Esperado \"{\"id\":101}\", mas a string obtida foi: " + str
+"Esperado \"{\"id\":101,\"name\":null}\", mas a string obtida foi: " + str
+"Esperado \"{\"bean_id\":1001}\", mas a string obtida foi: " + str
+"Esperado que os ids de bean e bean1 fossem iguais, mas são diferentes: bean.id = " + bean.id + ", bean1.id = " + bean1.id
+"Esperado '" + str + "', mas a string obtida foi: " + new String(bytes, StandardCharsets.UTF_8)
+"Esperado que os ids de bean e bean2 fossem iguais, mas são diferentes: bean.id = " + bean.id + ", bean2.id = " + bean2.id
+"Esperado que os ids de bean e bean3 fossem iguais, mas são diferentes: bean.id = " + bean.id + ", bean3.id = " + bean3.id
+"Esperado \"{\"bean_id\":1001}\", mas a string obtida foi: " + str
+"Esperado '" + expected + "', mas a string obtida foi: " + carJson
+"Esperado '" + expected + "', mas a string obtida foi: " + new String(byteOut.toByteArray(), StandardCharsets.UTF_8)
+"Esperado '" + expected + "', mas a string obtida foi: " + strWriter.toString()
+"Esperado que os tipos de car e car1 fossem iguais, mas são diferentes: car.type = " + car.type + ", car1.type = " + car1.type
+"Esperado que car não seja nulo, mas é nulo."
+"Esperado \"Black\", mas a cor obtida foi: " + car.getColor()
+"Esperado que car não seja nulo, mas é nulo."
+"Esperado \"Black\", mas a cor obtida foi: " + car.color
+"Esperado que javaType não seja nulo, mas é nulo."
+"Esperado tamanho 1, mas o tamanho obtido foi: " + values.size()
+"Esperado id 123 no índice 0, mas o id obtido foi: " + values.get(0).id
+"Esperado nome 'XX' no índice 0, mas o nome obtido foi: " + values.get(0).name
+"Esperado tamanho 1, mas o tamanho obtido foi: " + values.size()
+"Esperado id 123 no índice 0, mas o id obtido foi: " + values.get(0).id
+"Esperado nome 'XX' no índice 0, mas o nome obtido foi: " + values.get(0).name
+"Esperado tamanho 1, mas o tamanho obtido foi: " + map.size()
+"Esperado id 123, mas o id obtido foi: " + bean.id
+"Esperado nome 'XXX', mas o nome obtido foi: " + bean.name
+"Esperado que node seja um BigInteger, mas não é."
+"Esperado JsonParser.NumberType.BIG_INTEGER, mas o tipo de número obtido foi: " + node.numberType()
+"Esperado JsonNodeType.NUMBER, mas o tipo de nó obtido foi: " + node.getNodeType()
+"Esperado que o valor inteiro de bigInt fosse igual a node.asInt(), mas são diferentes: bigInt.intValue() = " + bigInt.intValue() + ", node.asInt() = " + node.asInt()
+"Esperado que o valor inteiro de bigInt fosse igual a node.asInt(2), mas são diferentes: bigInt.intValue() = " + bigInt.intValue() + ", node.asInt(2) = " + node.asInt(2)
+"Esperado que o valor inteiro de bigInt fosse igual a node.intValue(), mas são diferentes: bigInt.intValue() = " + bigInt.intValue() + ", node.intValue() = " + node.intValue()
+"Esperado que o valor longo de bigInt fosse igual a node.longValue(), mas são diferentes: bigInt.longValue() = " + bigInt.longValue() + ", node.longValue() = " + node.longValue()
+"Esperado que o valor double de bigInt fosse igual a node.asDouble(), mas são diferentes: bigInt.doubleValue() = " + bigInt.doubleValue() + ", node.asDouble() = " + node.asDouble()
+"Esperado que (reader.readValue(\"\\n\", TypeWithOptional.class).data) não estivesse presente, mas está presente."
+"Esperado que arrayNode.elements() não tivesse elementos, mas tem elementos."
+"Esperado que arrayNode.iterator() não tivesse elementos, mas tem elementos."
+"Esperado que node não seja um BigDecimal, mas é."
+"Esperado que node não seja um BigInteger, mas é."
+"Esperado que node não seja um BigDecimal, mas é."
+"Esperado que node não seja um Float, mas é."

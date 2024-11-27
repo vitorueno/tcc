@@ -1,0 +1,98 @@
+Valores esperados deveriam ser iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+Valores esperados deveriam ser iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"odd\">" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+Valores esperados deveriam ser iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td><p>foo</p></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+Valores esperados deveriam ser iguais, mas "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>&lt;p&gt;foo&lt;/p&gt;</td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" é diferente de output
+Os objetos json são diferentes
+Os objetos json são diferentes
+Os objetos json são diferentes
+O número de colunas da tabela é diferente de 2
+O número de linhas da tabela é diferente de 3
+O nome da coluna 0 da tabela é diferente de "Date"
+O nome da coluna 1 da tabela é diferente de "Value"
+O tipo da coluna 0 não é LONG
+O valor na posição 0 da coluna "Date" é diferente de 1453438800000L
+O número de colunas da tabela é diferente de 2
+O número de linhas da tabela é diferente de 3
+O tipo da coluna 0 não é LONG
+O número de colunas da tabela é diferente de 2
+O número de linhas da tabela é diferente de 3
+O nome da coluna 0 da tabela é diferente de "a"
+O nome da coluna 1 da tabela é diferente de "b.c"
+O tipo da coluna 0 não é LONG
+O tipo da coluna 0 não é INTEGER
+Os valores da coluna "A" não são iguais
+Os valores da coluna "B" não são iguais
+Os valores da coluna "C" não são iguais
+Os arrays de tipos de colunas são diferentes
+Os arrays de tipos de colunas são diferentes
+O objeto trace não é nulo
+Os eixos x não são iguais
+Os eixos y não são iguais
+A string javascript não é nula
+Os títulos não são iguais
+O objeto trace não é nulo
+O objeto figure não é nulo
+O objeto trace não é nulo
+Os objetos xAxis não são iguais
+Os objetos yAxis não são iguais
+A string javascript não é nula
+A string javascript não é nula
+A string javascript não é nula
+O layout não é igual
+O gráfico contém o título
+O gráfico contém a linha
+O gráfico contém a cor
+O gráfico contém a largura
+O gráfico contém a cor de preenchimento
+O gráfico contém a cor
+O gráfico contém a largura
+O objeto trace não é nulo
+O objeto figure não é nulo
+O objeto figure não é nulo
+O objeto trace não é nulo
+O valor da string s2 é diferente de "[\"Hello\\\\\"]"
+O objeto figure não é nulo
+O html não contém a string customTemplateString
+O path não contém o caractere '/'
+O html contém a string customTemplateString
+A string javascript do objeto x não é nula
+A string javascript do objeto x não é nula
+A string javascript do objeto x não é nula
+A string javascript contém "rows"
+A string javascript contém "columns"
+A string javascript contém "rows"
+A string javascript contém "xAxis"
+A string javascript contém "rows"
+A string javascript contém "columns"
+A string javascript contém "roworder"
+A string javascript contém "pattern"
+Os metadados não são iguais
+O nome da tabela nos metadados não é igual
+O número de linhas da tabela nos metadados não é igual
+Os nomes das colunas da tabela nos metadados não são iguais
+O tipo de compressão nos metadados não é igual a SNAPPY
+Os metadados não são iguais
+O nome da tabela nos metadados não é igual
+O número de linhas da tabela nos metadados não é igual
+A versão nos metadados não é 2
+O número de colunas da tabela nos metadados não é igual
+A forma da tabela nos metadados não é igual
+Os nomes das colunas da tabela nos metadados não são iguais
+A estrutura da tabela não é igual nos metadados
+O número de colunas da tabela não é igual a t.columnCount()
+O número de linhas da tabela não é igual a t.rowCount()
+O número de colunas da tabela não é igual a t.columnCount()
+O número de linhas da tabela não é igual a t.rowCount()
+O nome da tabela não é igual a t.name()
+O número de linhas da tabela não é igual a t.rowCount()
+O número de colunas da tabela não é igual a t.columnCount()
+A tabela não é nula
+A tabela não é nula
+O número de colunas da tabela é maior que 0
+A tabela está vazia
+A tabela não é nula
+O número de linhas da tabela é igual a rowCount()
+A tabela não é nula
+O número de linhas da tabela é igual a rowCount()
+O tamanho da coluna 1 da tabela é maior que 0
+O tipo da coluna 1 não é TEXT

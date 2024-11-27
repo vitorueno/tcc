@@ -1,0 +1,28 @@
+eram esperados valores não nulos, mas factory.configureSslContextFactory(new SslContextFactory.Server()) retornou null
+eram esperados valores iguais, mas a exceção esperada ConstraintViolationException é diferente de throwable.getClass()
+eram esperados valores iguais, mas {color=orange} é diferente de response
+eram esperados valores iguais, mas {message=stuff!} é diferente de response
+esperava-se falso, mas findEntityClassesFromDirectory não está vazio
+eram esperados valores iguais, mas 4 é diferente de findEntityClassesFromDirectory.size()
+esperava-se falso, mas findEntityClassesFromDirectory não está vazio
+eram esperados valores iguais, mas 8 é diferente de findEntityClassesFromDirectory.size()
+o tempo de execução excedeu 5 segundos ao comparar event.getCreatedAt() com Instant.ofEpochMilli(0)
+o tempo de execução excedeu 5 segundos ao comparar task.getDuration() com Duration.ofSeconds(0)
+esperava-se verdadeiro, mas requestContext.getSecurityContext().isSecure() retornou falso
+eram esperados valores iguais, mas o caminho do contexto de administração http é diferente de environment.getAdminContext().getContextPath()
+eram esperados valores iguais, mas o caminho do contexto de aplicação http é diferente de environment.getApplicationContext().getContextPath()
+eram esperados valores iguais, mas o caminho do contexto de administração http é diferente de environment.getAdminContext().getContextPath()
+eram esperados valores iguais, mas o caminho do contexto de aplicação http é diferente de environment.getApplicationContext().getContextPath()
+eram esperados valores iguais, mas o código de status OK é diferente de getResponseStatusForRequestMethod("GET", false)
+eram esperados valores iguais, mas o código de status OK é diferente de getResponseStatusForRequestMethod("POST", true)
+eram esperados valores iguais, mas o código de status DISALLOWED é diferente de getResponseStatusForRequestMethod("PUT", true)
+eram esperados valores iguais, mas o código de status DISALLOWED é diferente de getResponseStatusForRequestMethod("DELETE", false)
+eram esperados valores iguais, mas o código de status DISALLOWED é diferente de getResponseStatusForRequestMethod("TRACE", false)
+eram esperados valores idênticos, mas inv é diferente de test.getInvocable()
+eram esperados valores iguais, mas o código de status de resposta BAD REQUEST é diferente de reponse.getStatus()
+esperava-se falso, mas a Optional do Guava está presente
+esperava-se verdadeiro, mas a Optional do Guava não está presente
+eram esperados valores iguais, mas java.util.Optional[Foo] é diferente de Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo"))
+esperava-se falso, mas a Optional está presente
+esperava-se verdadeiro, mas a Optional não está presente
+eram esperados valores iguais, mas com.google.common.base.Optional.of(Foo) é diferente de Optionals.toGuavaOptional(java.util.Optional.of("Foo"))

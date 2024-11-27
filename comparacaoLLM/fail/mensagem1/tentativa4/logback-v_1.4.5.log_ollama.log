@@ -1,0 +1,54 @@
+- A negação do valor de consoleAppender.
+- A negação da erro livreidade do checker em 0.
+- A confirmação de que o consoleAppender é nulo.
+- A negação da erro livreída do checker em 0.
+- A confirmação de que o consoleAppender é nulo.
+- A confirmação da erro livreída do checker em 0.
+- A confirmação de que o consoleAppender é nulo.
+- A confirmação da erro livreída do checker em 0.
+- A confirmação de que o consoleAppender é nulo.
+- A confirmação da erro livreída do checker em 0.
+- A confirmação da erro livreída do checker em 0.
+- A negação da erro livreída do checker em 0.
+- A confirmação de que o consoleAppender é nulo.
+- A confirmação de que a lista Appender tem um tamanho igual a 1.
+- A confirmação de que a lista Appender tem um tamanho igual a 1.
+- A confirmação de que ae não é nulo.
+- A confirmação da erro livreída do checker em 0.
+- A confirmação de que a lista Appender tem um tamanho igual a 1.
+- A confirmação de que a lista Appender tem um tamanho igual a 1.
+- A confirmação de que ae não é nulo.
+- A confirmação da erro livreída do checker em 0.
+- A confirmação de que o aeBack não é nulo.
+- A confirmação de que o aeBack possui a mapeamento header correspondente ao código "x".
+- A confirmação de que o aeBack possui o header correspondente a "headerName1".
+- A confirmação de que o aeBack possui 1 mapeamento header.
+- A confirmação de que o aeBack possui o tamanho corrente igual à contagem do conteúdo da resposta.
+- A confirmação de que o aeBack possui status igual ao código de sucesso default.
+- A confirmação de que a string de conteúdo da resposta é igual à constante contentDefault.
+- A confirmação de que o aeBack possui a constante map de atributo correspondente ao "testKey".
+- A confirmação de que o event possui o valor atribuído à chave "testKey" igual à constante original.
+- A confirmação de que o ae possui o valor atribuído à chave "key" igual à constante val.
+- A confirmação de que a string do header da solicitação do ae é igual à constante val.
+- A confirmação de que a string do parâmetro de solicitação do ae é igual à primeira constante val.
+- A confirmação de que o ae possui a string do header correspondente à chave "key".
+- A confirmação de que a string do header da solicitação do ae é igual à constante val.
+- A confirmação de que a string do parâmetro de solicitação do ae é igual à primeira constante val.
+- A confirmação de que o ae possui a string do header correspondente à chave "key".
+- A confirmação de que a lista de porcentagem da estatística dos dias passados possui tamanho igual a 1.
+- A confirmação de que a lista de porcentagem da estatística dos dias passados possui tamanho igual a 1.
+- A confirmação de que a lista de porcentagem da estatística dos dias passados possui tamanho igual a 2.
+- A confirmação de que a lista de porcentagem da estatística dos dias passados possui tamanho igual a 4.
+- A confirmação de que a string do conteúdo resultante é igual à constante contentDefault.
+- A negação de uma condição.
+- A confirmação da avaliação da condição.
+- A confirmação da erro livreída do checker em 0.
+- A confirmação da erro livreída do checker em 0.
+- A confirmação da propriedade sistema com valor nulo.
+- A confirmação de que a propriedade dinâmica possui um valor nulo.
+- A confirmação de que a propriedade dinâmica possui um valor não nulo.
+- A confirmação de que a propriedade dinâmica possui um valor nulo.
+- A confirmação de que a propriedade dinâmica possui um valor nulo.
+- A confirmação da propriedade dinâmica com valor não nulo.
+- A confirmação de que o consoleAppender não é nulo.
+- A confirmação de que o fileAppender não é nulo.

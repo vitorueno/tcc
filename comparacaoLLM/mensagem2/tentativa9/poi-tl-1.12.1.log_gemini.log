@@ -1,0 +1,100 @@
+O tipo em typeArguments[0] era esperado como TextRenderData.class, mas foi encontrado um tipo diferente.
+O tipo em typeArguments[0] era esperado como TextRenderData.class, mas foi encontrado um tipo diferente.
+O texto em result era esperado como igual ao texto em data, mas são diferentes.
+A URL em ((HyperlinkTextRenderData) result) era esperada como igual à URL em ((HyperlinkTextRenderData) data), mas são diferentes.
+A cor em result.getStyle() era esperada como igual à cor em data.getStyle(), mas são diferentes.
+Os padrões de sublinhado em result.getStyle() eram esperados como iguais aos padrões de sublinhado em data.getStyle(), mas são diferentes.
+A largura em result.getPictureStyle() era esperada como igual à largura em data.getPictureStyle(), mas são diferentes.
+A altura em result.getPictureStyle() era esperada como igual à altura em data.getPictureStyle(), mas são diferentes.
+O tipo de imagem em result era esperado como igual ao tipo de imagem em data, mas são diferentes.
+O metadado alternativo em result era esperado como igual ao metadado alternativo em data, mas são diferentes.
+O título do gráfico em result era esperado como igual ao título do gráfico em data, mas são diferentes.
+As categorias em result eram esperadas como iguais às categorias em data, mas são diferentes.
+O nome em result.getSeriesDatas().get(0) era esperado como igual ao nome em data.getSeriesDatas().get(0), mas são diferentes.
+O tipo combo em result.getSeriesDatas().get(0) era esperado como igual ao tipo combo em data.getSeriesDatas().get(0), mas são diferentes.
+O documento mesclado em result era esperado como igual ao documento mesclado em data, mas são diferentes.
+A largura em result.getTableStyle() era esperada como igual à largura em data.getTableStyle(), mas são diferentes.
+O alinhamento em result.getTableStyle() era esperado como igual ao alinhamento em data.getTableStyle(), mas são diferentes.
+O tamanho de contents2 era esperado como igual ao tamanho de contents, mas são diferentes.
+Os formatos em result eram esperados como iguais aos formatos em data, mas são diferentes.
+A cor do estilo de glifo em result.getItems().get(1).getItem().getParagraphStyle() era esperada como igual à cor do estilo de glifo em data.getItems().get(1).getItem().getParagraphStyle(), mas são diferentes.
+O tipo de imagem sugerido para o arquivo "src/test/resources/picture/p.svg" era esperado como PictureType.SVG, mas foi encontrado um tipo diferente.
+O tipo de imagem sugerido para o arquivo "src/test/resources/picture/p.gif" era esperado como PictureType.GIF, mas foi encontrado um tipo diferente.
+O tipo de imagem sugerido para o arquivo "src/test/resources/picture/p.png" era esperado como PictureType.PNG, mas foi encontrado um tipo diferente.
+O tipo de imagem sugerido para o arquivo "src/test/resources/picture/p.jpg" era esperado como PictureType.JPEG, mas foi encontrado um tipo diferente.
+O tipo de imagem sugerido para o arquivo "src/test/resources/picture/p.bmp" era esperado como PictureType.BMP, mas foi encontrado um tipo diferente.
+O tipo de imagem sugerido para o arquivo "src/test/resources/picture/p.tif" era esperado como PictureType.TIFF, mas foi encontrado um tipo diferente.
+O tipo de imagem sugerido para a URL "http://deepoove.com/images/icecream.png" era esperado como PictureType.PNG, mas foi encontrado um tipo diferente.
+O tipo de imagem sugerido para a URL "http://deepoove.com/images/%E8%8C%84%E5%AD%90.svg" era esperado como PictureType.SVG, mas foi encontrado um tipo diferente.
+O tamanho de renew.getElementTemplates() era esperado como 0, mas foi encontrado um tamanho diferente.
+O tamanho de renew.getElementTemplates() era esperado como 4, mas foi encontrado um tamanho diferente.
+O tamanho de template.getElementTemplates() era esperado como 3, mas foi encontrado um tamanho diferente.
+O tamanho de template.getElementTemplates() era esperado como 5, mas foi encontrado um tamanho diferente.
+O tamanho de renew.getElementTemplates() era esperado como 0, mas foi encontrado um tamanho diferente.
+O resultado de Arrays.toString(text.split(regexLine, -1)) era esperado como "[hello, poi-tl]", mas foi encontrado um resultado diferente.
+O resultado de Arrays.toString(text1.split(regexLine, -1)) era esperado como "[hello, , poi-tl]", mas foi encontrado um resultado diferente.
+O resultado de Arrays.toString(text2.split(regexLine, -1)) era esperado como "[hello, , ]", mas foi encontrado um resultado diferente.
+O resultado de Arrays.toString(text3.split(regexLine, -1)) era esperado como "[, , poi-tl]", mas foi encontrado um resultado diferente.
+O resultado de Arrays.toString(text4.split(regexLine, -1)) era esperado como "[, , , , ]", mas foi encontrado um resultado diferente.
+O resultado de Arrays.toString(text5.split(regexLine, -1)) era esperado como "[hi, , , , what, is, , , this]", mas foi encontrado um resultado diferente.
+O resultado de Arrays.toString(text7.split(regexLine, -1)) era esperado como "[hi, , , , what, is, , this]", mas foi encontrado um resultado diferente.
+O texto em document.getParagraphArray(0) era esperado como "123", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "Sayi", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "卅一", mas foi encontrado um texto diferente.
+Era esperado que paragraph fosse nulo, mas não foi.
+O tamanho de document.getAllPictures() era esperado como 1, mas foi encontrado um tamanho diferente.
+O tamanho de document.getTables() era esperado como 1, mas foi encontrado um tamanho diferente.
+Era esperado que a causa da exceção fosse uma instância de ExpressionEvalException, mas foi encontrada uma causa diferente.
+O texto em paragraph era esperado como "Sayi", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "卅一", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "2018-10-01", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "http://www.deepoove.com", mas foi encontrado um texto diferente.
+O tamanho de document.getAllPictures() era esperado como 1, mas foi encontrado um tamanho diferente.
+O tamanho de document.getTables() era esperado como 1, mas foi encontrado um tamanho diferente.
+O texto em document.getParagraphArray(0) era esperado como igual ao valor de args.get("sea"), mas são diferentes.
+O tamanho de document.getAllPictures() era esperado como 1, mas foi encontrado um tamanho diferente.
+O texto em document.getParagraphArray(2) era esperado como "面朝大海春暖花开", mas foi encontrado um texto diferente.
+Era esperado que document.getParagraphArray(2).getNumID() não fosse nulo, mas foi.
+O texto em document.getParagraphArray(3) era esperado como "今朝有酒今朝醉", mas foi encontrado um texto diferente.
+Era esperado que document.getParagraphArray(3).getNumID() não fosse nulo, mas foi.
+Era esperado que document.getParagraphArray(2).getNumID() fosse igual a document.getParagraphArray(3).getNumID(), mas são diferentes.
+O texto em document.getTables().get(0).getRow(1).getCell(1) era esperado como "日落：日落山花红四海", mas foi encontrado um texto diferente.
+O texto em document.getParagraphArray(0) era esperado como "123", mas foi encontrado um texto diferente.
+O resultado de spelForMap.compute("['name']") era esperado como "Sayi", mas foi encontrado um resultado diferente.
+O resultado de spelForMap.compute("['data']['hello']") era esperado como "poi-tl", mas foi encontrado um resultado diferente.
+O resultado de spelForMap.compute("name") era esperado como "Sayi", mas foi encontrado um resultado diferente.
+O resultado de spelForMap.compute("data.hello") era esperado como "poi-tl", mas foi encontrado um resultado diferente.
+O resultado de spelForMap.compute("localDate.format(T(java.time.format.DateTimeFormatter).ofPattern('yyyy年MM月dd日'))") era esperado como "2021年03月08日", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("name") era esperado como "poi-tl", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("name == 'poi-tl'") era esperado como true, mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("name.toUpperCase()") era esperado como "POI-TL", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("empty?:'这个字段为空'") era esperado como "这个字段为空", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("sex ? '男' : '女'") era esperado como "男", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("new java.text.SimpleDateFormat('yyyy-MM-dd HH:mm:ss').format(time)") era esperado como "2019-05-20 22:14:10", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("new java.text.SimpleDateFormat('yyyy-MM-dd hh:mm').format(time)") era esperado como "2019-05-20 10:14", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("price") era esperado como 88880000L, mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("price + '元'") era esperado como "88880000元", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("price + '元' == '88880000元'") era esperado como true, mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("price/1000 + '千元'") era esperado como "88880千元", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("price/10000 + '万元'") era esperado como "8888万元", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("dogs[0].name") era esperado como "阿黄", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("dogs[1].age") era esperado como 6, mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("dogs[2].name") era esperado como "阿蓝", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("dogsArr[2].name") era esperado como "阿蓝", mas foi encontrado um resultado diferente.
+O resultado de spelForBean.compute("data['hello']") era esperado como "poi-tl", mas foi encontrado um resultado diferente.
+O resultado de spelForFunction.compute("#substringStaticMethod('spElFunction', 2)") era esperado como "ElFunction", mas foi encontrado um resultado diferente.
+O texto em paragraph era esperado como "poi-tl", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "lowCase:poi-tlUpcase:POI-TL", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "这个字段为空", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "男", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "2019-05-20 22:14:10", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "2019-05-20 10:14", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "88880000", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "8888万元", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "阿黄", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "6", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "阿蓝", mas foi encontrado um texto diferente.
+O texto em paragraph era esperado como "ElFunction", mas foi encontrado um texto diferente.
+Era esperado que config.getGrammerRegex() fosse igual a Configure.DEFAULT_GRAMER_REGEX, mas são diferentes.
+Era esperado que config.getGrammerRegex() fosse diferente de Configure.DEFAULT_GRAMER_REGEX, mas são iguais.
+Era esperado que pattern.matcher("abc-123").matches() retornasse false, mas retornou true.

@@ -1,0 +1,101 @@
+ISIN do trade não confere com o valor do banco de dados.
+Quantidade do trade não confere com o valor do banco de dados.
+Preço do trade não confere com o valor do banco de dados.
+Cliente do trade não confere com o valor do banco de dados.
+Número de linhas ativas não confere com o tamanho da lista de trades.
+Tamanho da lista de clientes não confere com o número de linhas ativas.
+Nome do cliente não confere com o valor do banco de dados.
+Status da execução não é COMPLETO.
+Contagem de leitura da execução de etapa não confere com o esperado.
+Status do job não é COMPLETO.
+Valor da propriedade 'done' no contexto de execução do job não é 'yes'.
+Valor da variável 'value' não é 'foo'.
+Valor da variável 'strValue' não é 'foo2'.
+Valor da variável 'integerValue' não é 3.
+Valor de 'after' não confere com o esperado ('before' + 5).
+ISIN do trade não confere com o valor do banco de dados.
+Quantidade do trade não confere com o valor do banco de dados.
+Preço do trade não confere com o valor do banco de dados.
+Cliente do trade não confere com o valor do banco de dados.
+Arquivo de saída não confere com o esperado.
+Contador do processador de itens não confere com o esperado.
+Contador do processador de itens não confere com o esperado.
+Nome do cliente não confere com o valor do banco de dados.
+Contagem de leitura da etapa 1 não é '4'.
+Contagem de filtro da etapa 1 não é '1'.
+Contagem de escrita da etapa 1 não é '3'.
+Código de saída do job não é igual ao código de saída de execução COMPLETA.
+Número de execuções de etapa do job não é 4.
+Status do job não é COMPLETO.
+Número de entradas não confere com o número de saídas.
+Contagem de itens é menor ou igual a 0.
+Status do job não é COMPLETO.
+Status do job não é COMPLETO.
+Contagem não confere com o esperado.
+Status do job não é COMPLETO.
+Contagem de escrita da execução de etapa não confere com o esperado.
+Status do job não é COMPLETO.
+Contagem de escrita da execução de etapa não confere com o esperado.
+Contagem de registros retornados pelo serviço de pessoas é menor ou igual a 0.
+Contagem de registros recebidos e retornados pelo serviço de pessoas não conferem.
+ID do jogador não é 'AKFJDL00'.
+Sobrenome não é 'Doe'.
+Nome não é 'John'.
+Posição não é 'QB'.
+Ano de nascimento não é 1975.
+Ano do draft não é 1998.
+Jogo temporário não confere com o jogo.
+Resumo não confere com o resumo de teste.
+Conjunto de campos do cliente não confere com o esperado.
+Linha tokenizada do cliente não confere com o esperado.
+Conjunto de campos do cliente não confere com o esperado.
+Linha tokenizada do cliente não confere com o esperado.
+Conjunto de campos do cliente não confere com o esperado.
+Linha tokenizada do cliente não confere com o esperado.
+Resultado do processamento do cliente não confere com o esperado.
+Resultado do processamento do cliente não confere com o esperado.
+Crédito não é 95.
+Cliente não é 'testCustomer'.
+Preço não é 99.69.
+Quantidade não é 5.
+Crédito após processamento não confere com o esperado.
+Nome do débito do cliente não é 'testCustomerName'.
+Débito do cliente não é 123.0.
+Leitura do leitor não retornou nulo.
+Contador não confere com o limite.
+Contador do leitor não confere com o contador.
+Trade 1 clonado não confere com o trade original.
+Trade 1 e Trade 2 são iguais.
+Número de linhas não é 3.
+Leitura do provedor não retornou nulo.
+Linhas dos arquivos de entrada e saída não conferem.
+Linhas dos arquivos de entrada e saída não conferem.
+Item agregado de rodapé não é um rodapé.
+Item agregado de cabeçalho não é um cabeçalho.
+Item mapeado não é um cabeçalho.
+Item mapeado não é um cabeçalho.
+Item mapeado não é um rodapé.
+Item mapeado não é um rodapé.
+Item mapeado não é 'foo'.
+Resultado é nulo.
+Ordem não confere com o esperado.
+Cliente da ordem não confere com o esperado.
+Endereço de cobrança da ordem não confere com o esperado.
+Endereço de entrega da ordem não confere com o esperado.
+Informações de cobrança da ordem não conferem com o esperado.
+Informações de entrega da ordem não conferem com o esperado.
+Número de itens da ordem não é 3.
+Leitura do provedor não retornou nulo.
+Validador de ordem não suporta a classe Order.
+Número de erros não é 1.
+Código do erro não é 'Incorrect type'.
+Número de erros não é 0.
+Número de erros não é 3.
+Código do erro de campo 'orderId' não é 'error.order.id'.
+Código do erro de campo 'orderDate' não é 'error.order.date.future'.
+Código do erro de campo 'totalLines' não é 'error.order.lines.badcount'.
+Número de erros não é 2.
+Código do erro de campo 'orderId' não é 'error.order.id'.
+Código do erro de campo 'totalLines' não é 'error.order.lines.badcount'.
+Número de erros não é 0.
+

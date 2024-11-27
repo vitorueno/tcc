@@ -1,0 +1,109 @@
+```python
+# Casos de assert null
+assertNotNull(eventHandlerGroup) 
+# Caso de assert igual para objeto
+assertSame(testException, actualException) 
+# Caso de assert igual para objeto (repetido)
+assertSame(testException, actualException) 
+# Caso de assert igual para objeto (repetido)
+assertSame(testException, actualException) 
+# Casos de assert igual para objetos diferentes
+assertSame(testException, actualException) 
+# Caso de assert igual para números inteiros
+assertEquals(0, sequencer.next()) 
+# Caso de assert igual para números inteiros com parâmetro
+assertEquals(3, sequencer.next(4)) 
+# Casos de assert igual para booleano
+assertTrue(sequencer.hasAvailableCapacity(1))
+# Casos de assert igual para booleano
+assertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE)) 
+# Casos de assert igual para booleano com valor negativo
+assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE + 1)) 
+# Casos de assert igual para booleano com valor negativo
+assertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE - 1))
+# Casos de assert igual para booleano
+assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE))
+# Casos de assert igual para booleano
+FALSE = False # não é possível usar 'false' diretamente 
+assertFalse(sequencer.hasAvailableCapacity(1))
+# Casos de assert igual para objeto
+assertTrue(sequencer.isAvailable(seq)) 
+# Casos de assert igual para objeto
+assertTrue(sequencer.isAvailable(seq)) 
+# Casos de assert igual para objeto
+assertTrue(sequencer.isAvailable(seq)) 
+# Caso de assert igual para objeto com valor falso
+assertFalse(sequencer.isAvailable(seq))
+# Casos de assert igual para objeto
+assertTrue(eventLatch.await(2, TimeUnit.SECONDS)) 
+# Casos de assert igual para objeto
+assertTrue(exceptionLatch.await(2, TimeUnit.SECONDS))
+# Casos de assert igual para lista
+assertEquals(Arrays.asList(3L, 2L, 1L), batchSizes)
+# Casos de assert igual para objeto
+assertTrue(h1.awaitStart(2, TimeUnit.SECONDS)) 
+# Casos de assert igual para objeto
+assertTrue(h1.awaitStop(2, TimeUnit.SECONDS))
+# Caso de assert igual para número
+assertTrue(timeWaiting >= theTimeout) 
+# Casos de assert igual para objeto
+assertEquals(10, sequence.addAndGet(10))
+# Casos de assert igual para objeto
+assertEquals(10, sequence.get())
+# Casos de assert igual para objeto
+assertEquals(1, sequence.incrementAndGet())
+# Casos de assert igual para objeto
+assertEquals(1, sequence.get())
+# Casos de assert igual para objeto
+assertEquals(0, sequence.getAndAdd(1))
+# Casos de assert igual para objeto
+assertEquals(1, sequence.get())
+# Caso de assert igual para número negativo
+assertEquals(-1L, batchEventProcessor.getSequence().get()) 
+# Caso de assert igual para zero
+assertEquals(0L, batchEventProcessor.getSequence().get())
+# Casos de assert igual para zero
+assertEquals(0L, batchEventProcessor.getSequence().get())
+# Casos de assert igual para objeto
+assertEquals(TEST_VALUE, event.getTestString())
+# Casos de assert igual para objeto
+assertEquals(SingleProducerSequencer.INITIAL_CURSOR_VALUE, ringBuffer.getCursor())
+# Caso de assert igual para zero
+assertEquals(0, sequence)
+# Casos de assert igual para objeto
+assertEquals(expectedEvent, event)
+# Caso de assert igual para zero
+assertEquals(expectedSequence, sequenceThree.get())
+# Casos de assert igual para zero
+assertEquals(expectedSequence, sequenceSeven.get())
+# Casos de assert igual para objeto
+assertTrue(completedWorkSequence >= expectedWorkSequence) 
+# Casos de assert igual para objeto
+assertTrue(completedWorkSequence >= expectedWorkSequence)
+# Casos de assert igual para objeto
+assertTrue(completedWorkSequence >= expectedWorkSequence)
+# Caso de assert igual para booleano
+assertFalse(sequenceBarrier.isAlerted())
+# Casos de assert igual para objeto
+assertTrue(sequenceBarrier.isAlerted()) 
+# Casos de assert igual para objeto
+assertFalse(sequenceBarrier.isAlerted()) 
+# Casos de assert igual para objeto
+assertTrue(timeWaiting >= theTimeout) 
+# Caso de assert igual para objeto com mensagem
+assertEquals("not rewindable", exceptionHandled.get().getMessage())
+# Casos de assert igual para número
+assertEquals(3, rewindPauseStrategy.count)
+# Caso de assert igual para zero
+assertEquals(0, rewindPauseStrategy.count)
+# Casos de assert igual para objeto
+assertEquals(1024, powerOfTwo) 
+# Casos de assert igual para objeto
+assertEquals(1024, powerOfTwo) 
+# Casos de assert igual para objeto
+assertEquals(3L, Util.getMinimumSequence(sequences))
+# Caso de assert igual para número máximo
+assertEquals(Long.MAX_VALUE, Util.getMinimumSequence(sequences)) 
+# Casos de assert igual para objeto
+assertEquals(causeException, ex.getCause()) 
+```

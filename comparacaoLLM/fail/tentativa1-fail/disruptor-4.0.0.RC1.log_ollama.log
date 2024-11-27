@@ -1,0 +1,65 @@
+* eventHandlerGroup não pode ser nulo
+* testException é igual a actualException
+* testException é igual a actualException
+* testException é igual a actualException
+* testException é igual a actualException
+* 0 é igual a sequencer.next()
+* 3 é igual a sequencer.next(4)
+* sequencer tem capacidade disponível de 1 unidade
+* sequencer tem capacidade disponível de BUFFER_SIZE unidades
+* sequencer não tem capacidade disponível de BUFFER_SIZE + 1 unidades
+* sequencer tem capacidade disponível de BUFFER_SIZE - 1 unidades
+* sequencer não tem capacidade disponível de BUFFER_SIZE unidades
+* sequencer não tem capacidade disponível de 1 unidade
+* sequencer não é disponível para seq
+* sequencer é disponível para seq
+* sequencer é disponível para seq
+* sequencer não é disponível para seq
+* 2 segundos são igual a sequencer.await(2, TimeUnit.SECONDS)
+* 2 segundos são igual a exceptionLatch.await(2, TimeUnit.SECONDS)
+* lista de batchSizes é igual a Arrays.asList(3L, 2L, 1L)
+* h1 está esperando por iniciar com 2 segundos
+* h1 está esperando por parar com 2 segundos
+* timeWaiting é maior ou igual a theTimeout
+* sequência adiciona 10 unidades
+* sequência adiciona 10 unidades
+* sequência incrementa de 1 unidade
+* sequência adiciona 1 unidade
+* sequência adiciona 0 unidades
+* sequência adiciona 1 unidade
+* batchEventProcessor tem sequence igual a -1L
+* batchEventProcessor tem sequence igual a 0L
+* batchEventProcessor tem sequence igual a 0L
+* event tem testString igual a TEST_VALUE
+* cursor do ringBuffer é igual a SINGLE_PRODUCER_SEQUENCER.INITIAL_CURSOR_VALUE
+* sequência é igual a 0
+* event é igual a expectedEvent
+* cursor do ringBuffer é igual a 0
+* mensagem do ringBuffer é igual a expectedEvent
+* lista de available é igual a expectedSequence
+* lista de available é igual a expectedSequence
+* gatilho do ringBuffer não publica o evento translador com 3 unidades, 3, "3"
+* gatilho do publisherCompleto está completo
+* gatilho do publisherCompleto está completo
+* gatilho do ringBuffer publica os eventos translators
+* gatilho do ringBuffer publica os eventos translators, 0, 1
+* gatilho do ringBuffer publica os eventos translators, 1, 2
+* gatilho do ringBuffer publica o evento translator com "Foo"
+* gatilho do ringBuffer publica os eventos translator, 0, 1, new String[] { "Foo", "Foo" }
+* gatilho do ringBuffer publica os eventos translator, 1, 2, new String[] { "Foo3", "Foo4", "Foo5" }, new String[] { "Bar3", "Bar4", "Bar5" }, new String[] { "Baz3", "Baz4", "Baz5" }
+* gatilho do ringBuffer publica os eventos translator com "Foo", "Bar", "Baz", "Bam"
+* gatilho do ringBuffer publica os eventos translator, 0, 1, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }
+* gatilho do ringBuffer publica os eventos translator, 1, 2, new String[] { "Foo3", "Bar3", "Baz3", "Bam3" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Baz3", "Baz4", "Baz5" }
+* barrier da sequência está alertado
+* barrier da sequência está alertado
+* barrier da sequência não está alertado
+* timeWaiting é maior ou igual a theTimeout
+* exceptionHandled tem mensagem igual a "not rewindable"
+* estratégia de pausa rewind tem contagem igual a 3
+* estratégia de pausa rewind tem contagem igual a 0
+* potência de dois é igual a 1024
+* potência de dois é igual a 1024
+* mínimo da sequência é igual a 3L
+* mínimo da sequência é igual a Long.MAX_VALUE
+* causa do exception é igual a causeException
+* exception é igual a ex.getCause()

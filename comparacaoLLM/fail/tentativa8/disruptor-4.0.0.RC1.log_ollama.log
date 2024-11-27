@@ -1,0 +1,54 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. assertNotNull(eventHandlerGroup) -> eram esperados valores iguais, mas null é diferente de eventHandlerGroup
+2.assertSame(testException, actualException) -> eram esperados valores iguais, mas testException não é igual a actualException
+3.assertSame(testException, actualException) -> eram esperados valores iguais, mas testException não é igual a actualException (duplo)
+4.assertSame(testException, actualException) -> eram esperados valores iguais, mas testException não é igual a actualException (triplo)
+5.assertSame(testException, actualException) -> eram esperados valores iguais, mas testException não é igual a actualException (quadruplo)
+6.assertEquals(0, sequencer.next()) -> eram esperados valores iguais, mas 0 é diferente de sequencer.next()
+7.assertEquals(3, sequencer.next(4)) -> eram esperados valores iguais, mas 3 não é igual a sequencer.next(4)
+8.assertTrue(sequencer.hasAvailableCapacity(1)) -> não foi encontrado erro, mas sequencer.hasAvailableCapacity(1) é verdadeiro
+9.assertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE)) -> não foi encontrado erro, mas sequencer.hasAvailableCapacity(BUFFER_SIZE) é verdadeiro
+10.assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE + 1)) -> não foi encontrado erro, mas sequencer.hasAvailableCapacity(BUFFER_SIZE + 1) é falso
+11.assertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE - 1)) -> não foi encontrado erro, mas sequencer.hasAvailableCapacity(BUFFER_SIZE - 1) é verdadeiro
+12.assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE)) -> não foi encontrado erro, mas sequencer.hasAvailableCapacity(BUFFER_SIZE) é falso
+13.assertFalse(sequencer.hasAvailableCapacity(1)) -> não foi encontrado erro, mas sequencer.hasAvailableCapacity(1) é falso
+14.assertFalse(sequencer.isAvailable(seq)) -> não foi encontrado erro, mas sequencer.isAvailable(seq) é falso
+15.assertTrue(sequencer.isAvailable(seq)) -> não foi encontrado erro, mas sequencer.isAvailable(seq) é verdadeiro (duplo)
+16.assertTrue(sequencer.isAvailable(seq)) -> não foi encontrado erro, mas sequencer.isAvailable(seq) é verdadeiro (duplo)
+17.assertTrue(sequencer.isAvailable(seq)) -> não foi encontrado erro, mas sequencer.isAvailable(seq) é verdadeiro (triple)
+18.assertFalse(sequencer.isAvailable(seq)) -> não foi encontrado erro, mas sequencer.isAvailable(seq) é falso (quadruplo)
+19.assertTrue(eventLatch.await(2, TimeUnit.SECONDS)) -> não foi encontrado erro, mas eventLatch.await(2, TimeUnit.SECONDS) é verdadeiro
+20.assertTrue(exceptionLatch.await(2, TimeUnit.SECONDS)) -> não foi encontrado erro, mas exceptionLatch.await(2, TimeUnit.SECONDS) é verdadeiro
+21.assertEquals(Arrays.asList(3L, 2L, 1L), batchSizes) -> não foi encontrado erro, mas Arrays.asList(3L, 2L, 1L) é igual a batchSizes
+22.assertTrue(h1.awaitStart(2, TimeUnit.SECONDS)) -> não foi encontrado erro, mas h1.awaitStart(2, TimeUnit.SECONDS) é verdadeiro
+23.assertTrue(h1.awaitStop(2, TimeUnit.SECONDS)) -> não foi encontrado erro, mas h1.awaitStop(2, TimeUnit.SECONDS) é verdadeiro
+24.assertEquals(Long.MAX_VALUE, sequenceGroup.get()) -> não foi encontrado erro, mas Long.MAX_VALUE é igual a sequenceGroup.get()
+25.assertEquals(sequence.get(), sequenceGroup.get()) -> não foi encontrado erro, mas sequence.get() é igual a sequenceGroup.get()
+26.assertEquals(sequenceThree.get(), sequenceGroup.get()) -> não foi encontrado erro, mas sequenceThree.get() é igual a sequenceGroup.get()
+27.assertEquals(3, sequenceGroup.size()) -> não foi encontrado erro, mas 3 é igual a sequenceGroup.size()
+28.assertEquals(sequenceThree.get(), sequenceGroup.get()) -> não foi encontrado erro, mas sequenceThree.get() é igual a sequenceGroup.get()
+29.assertTrue(sequenceGroup.remove(sequenceThree)) -> não foi encontrado erro, mas sequenceGroup.remove(sequenceThree) é verdadeiro
+30.assertEquals(sequenceSeven.get(), sequenceGroup.get()) -> não foi encontrado erro, mas sequenceSeven.get() é igual a sequenceGroup.get()
+31.assertEquals(1, sequenceGroup.size()) -> não foi encontrado erro, mas 1 é igual a sequenceGroup.size()
+32.assertEquals(sequenceThree.get(), sequenceGroup.get()) -> não foi encontrado erro, mas sequenceThree.get() é igual a sequenceGroup.get()
+33.assertTrue(sequenceGroup.remove(sequenceThree)) -> não foi encontrado erro, mas sequenceGroup.remove(sequenceThree) é verdadeiro
+34.assertEquals(sequenceSeven.get(), sequenceGroup.get()) -> não foi encontrado erro, mais sequenceSeven.get() é igual a sequenceGroup.get()
+35.assertEquals(1, sequenceGroup.size()) -> não foi encontrado erro, mais 1 é igual a sequenceGroup.size()
+36.assertEquals(expectedSequence, sequenceThree.get()) -> não foi encontrado erro, mais expectedSequence é igual a sequenceThree.get()
+37.assertEquals(expectedSequence, sequenceSeven.get()) -> não foi encontrado erro, mais expectedSequence é igual a sequenceSeven.get()
+38.assertTrue(completedWorkSequence >= expectedWorkSequence) -> não foi encontrado erro, mais completedWorkSequence é maior ou igual a expectedWorkSequence
+39.assertTrue(completedWorkSequence >= expectedWorkSequence) -> não foi encontrado erro, mais completedWorkSequence é maior ou igual a expectedWorkSequence (duplo)
+40.assertTrue(completedWorkSequence >= expectedWorkSequence) -> não foi encontrado erro, mais completedWorkSequence é maior ou igual a expectedWorkSequence (triplo)
+41.assertFalse(sequenceBarrier.isAlerted()) -> não foi encontrado erro, mas sequenceBarrier.isAlerted() é falso
+42.assertTrue(sequenceBarrier.isAlerted()) -> não foi encontrado erro, mas sequenceBarrier.isAlerted() é verdadeiro
+43.assertFalse(sequenceBarrier.isAlerted()) -> não foi encontrado erro, mais sequenceBarrier.isAlerted() é falso (duplo)
+44.assertTrue(timeWaiting >= theTimeout) -> não foi encontrado erro, mais timeWaiting é maior ou igual a theTimeout
+45.assertEquals("not rewindable", exceptionHandled.get().getMessage()) -> não foi encontrado erro, mas "not rewindable" é igual à mensagem de exceção
+46.assertEquals(3, rewindPauseStrategy.count) -> não foi encontrado erro, mais 3 é igual a rewindPauseStrategy.count
+47.assertEquals(0, rewindPauseStrategy.count) -> não foi encontrado erro, mais 0 é igual a rewindPauseStrategy.count (duplo)
+48.assertEquals(1024, powerOfTwo) -> não foi encontrado erro, mas 1024 é igual a powerOfTwo
+49.assertEquals(1024, powerOfTwo) -> não foi encontrado erro, mais 1024 é igual a powerOfTwo (duplo)
+50.assertEquals(3L, Util.getMinimumSequence(sequences)) -> não foi encontrado erro, mais 3L é igual a Util.getMinimumSequence(sequences)
+51.assertEquals(Long.MAX_VALUE, Util.getMinimumSequence(sequences)) -> não foi encontrado erro, mais Long.MAX_VALUE é igual a Util.getMinimumSequence(sequences) (duplo)
+52.assertEquals(causeException, ex.getCause()) -> não foi encontrado erro, mais causeException é igual a ex.getCause()

@@ -1,0 +1,96 @@
+Eram esperados valores iguais, mas o resultado de executor.isAllOK() é falso
+Eram esperados valores iguais, mas o resultado de executor.isAllOK() é falso
+Eram esperados valores iguais, mas expected é diferente de ResourceUtils.normalize(result)
+Eram esperados valores iguais, mas expected é diferente de ResourceUtils.normalize(result)
+Eram esperados valores iguais, mas expected é diferente de ResourceUtils.normalize(result)
+Eram esperados valores iguais, mas expected1 é diferente de result1
+Eram esperados valores iguais, mas expected2 é diferente de result2
+Eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue)
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextTrue)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextFalse)
+Eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextTrue)
+lazyTrue.initialized deveria ser verdadeiro
+Eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextFalse)
+Os objetos rr01 e rr03 deveriam ser os mesmos
+Os objetos rr02 e rr04 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[ref='abc' or data-ref='abc' or fragment='abc' or data-fragment='abc' or fragment^='abc(' or data-fragment^='abc(' or fragment^='abc (' or data-fragment^='abc (']" é diferente de result01
+Os objetos result01 e result02 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" é diferente de result03
+Os objetos result03 e result04 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[q:ref='abc' or data-q-ref='abc' or q:fragment='abc' or data-q-fragment='abc' or q:fragment^='abc(' or data-q-fragment^='abc(' or q:fragment^='abc (' or data-q-fragment^='abc (']" é diferente de result05
+Os objetos result05 e result06 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" é diferente de result07
+Os objetos result07 e result08 deveriam ser os mesmos
+Os objetos rr01 e rr03 deveriam ser os mesmos
+Os objetos rr02 e rr04 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[ref='abc' or fragment='abc' or fragment^='abc(' or fragment^='abc (']" é diferente de result01
+Os objetos result01 e result02 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" é diferente de result03
+Os objetos result03 e result04 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[q:ref='abc' or q:fragment='abc' or q:fragment^='abc(' or q:fragment^='abc (']" é diferente de result05
+Os objetos result05 e result06 deveriam ser os mesmos
+Eram esperados valores iguais, mas "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" é diferente de result07
+Os objetos result07 e result08 deveriam ser os mesmos
+resourcesFolderURL não deveria ser nulo
+resourcesFolder deveria ser um diretório
+Eram esperados valores iguais, mas expectedResult é diferente de decoupledTemplateLogic.toString()
+Eram esperados valores iguais, mas ResourceUtils.normalize(expected) é diferente de ResourceUtils.normalize(result)
+Deveria haver exatamente 1 elemento em templateResolvers
+O nome do primeiro TemplateResolver deveria ser "org.thymeleaf.templateresolver.StringTemplateResolver"
+Deveria haver exatamente 1 elemento em templateResolvers
+O nome do primeiro TemplateResolver deveria ser "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver"
+Deveria haver exatamente 1 elemento em templateResolvers
+O nome do primeiro TemplateResolver deveria ser "org.thymeleaf.templateresolver.FileTemplateResolver"
+Deveria haver exatamente 2 elementos em templateResolvers
+Os nomes dos TemplateResolvers deveriam ser "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e "org.thymeleaf.templateresolver.FileTemplateResolver"
+Deveria haver exatamente 2 elementos em templateResolvers
+Os nomes dos TemplateResolvers deveriam ser "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e "org.thymeleaf.templateresolver.FileTemplateResolver"
+Deveria haver exatamente 2 elementos em templateResolvers
+Os nomes dos TemplateResolvers deveriam ser "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e "org.thymeleaf.templateresolver.FileTemplateResolver"
+Deveria haver exatamente 2 elementos em templateResolvers
+Os nomes dos TemplateResolvers deveriam ser "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e "org.thymeleaf.templateresolver.FileTemplateResolver"
+O resultado esperado é "/[ref='abc' or fragment='abc' or fragment^='abc(' or fragment^='abc (']"
+O resultado esperado é "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']"
+O resultado esperado é "/[q:ref='abc' or q:fragment='abc' or q:fragment^='abc(' or q:fragment^='abc (']"
+O resultado esperado é "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']"
+O resultado esperado é ""
+O resultado esperado é ""
+O resultado esperado é "<p>something</p>"
+O resultado esperado é "<div>some text <p><p>inserted!</p></p> other text</div>"
+templateResolver.tempCalled deveria ser verdadeiro
+templateResolver.fragCalled deveria ser verdadeiro
+O output deveria ser EXPECTED_OUTPUT
+templateResolver.tempCalled deveria ser verdadeiro
+templateResolver.fragCalled deveria ser verdadeiro
+O output deveria ser EXPECTED_OUTPUT
+templateResolver.tempCalled deveria ser verdadeiro
+templateResolver.fragCalled deveria ser verdadeiro
+O output deveria ser EXPECTED_OUTPUT
+O resultado esperado é "/"
+O resultado esperado é "/something"
+O resultado esperado é "/"
+O resultado esperado é "/"

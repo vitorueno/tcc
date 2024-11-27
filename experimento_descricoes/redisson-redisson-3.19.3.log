@@ -1,0 +1,622 @@
+
+Projeto: /home/vitor-otto/opensource/redisson-redisson-3.19.3
+
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/misc/CompositeIteratorTest.java linha: 26 Método: Assertions.assertThrows(NoSuchElementException.class, () -> {
+    List<Integer> emptyList = new ArrayList<Integer>();
+    CompositeIterable<Integer> compositeIterable = new CompositeIterable<Integer>(emptyList);
+    compositeIterable.iterator().next();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/misc/CompositeIteratorTest.java linha: 61 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    List<Integer> emptyList = new ArrayList<>();
+    CompositeIterable<Integer> compositeIterable = new CompositeIterable<Integer>(emptyList);
+    compositeIterable.iterator().remove();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonLockTest.java linha: 196 Método: Assertions.assertThrows(WriteRedisConnectionException.class, () -> {
+    RedisRunner.RedisProcess master = new RedisRunner().port(6377).nosave().randomDir().run();
+    Config config = new Config();
+    config.useSingleServer().setAddress("redis://127.0.0.1:6377");
+    RedissonClient redisson = Redisson.create(config);
+    RLock lock = redisson.getLock("myLock");
+    master.stop();
+    Thread.sleep(3000);
+    lock.tryLock(5, 10, TimeUnit.SECONDS);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonLockTest.java linha: 449 Método: Assertions.assertThrows(IllegalMonitorStateException.class, () -> {
+    RLock lock = redisson.getLock("lock");
+    Thread t = new Thread() {
+
+        public void run() {
+            RLock lock = redisson.getLock("lock");
+            lock.lock();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            lock.unlock();
+        }
+    };
+    t.start();
+    t.join(400);
+    try {
+        lock.unlock();
+    } catch (IllegalMonitorStateException e) {
+        t.join();
+        throw e;
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonListReactiveTest.java linha: 323 Método: Assertions.assertThrows(IndexOutOfBoundsException.class, () -> {
+    RListReactive<Integer> list = redisson.getList("list");
+    sync(list.add(1));
+    sync(list.add(2));
+    sync(list.add(3));
+    sync(list.add(4));
+    sync(list.add(5));
+    sync(list.set(5, 6));
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonListReactiveTest.java linha: 420 Método: Assertions.assertThrows(RedisException.class, () -> {
+    RListReactive<Integer> list = redisson.getList("list");
+    sync(list.addAll(2, Arrays.asList(7, 8, 9)));
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 276 Método: Assertions.assertTrue(firstTTL >= 29900 && firstTTL <= 30100, "Expected 30000 +/- 100 but was " + firstTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 281 Método: Assertions.assertTrue(secondTTL >= 34900 && secondTTL <= 35100, "Expected 35000 +/- 100 but was " + secondTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 286 Método: Assertions.assertTrue(thirdTTL >= 39900 && thirdTTL <= 40100, "Expected 40000 +/- 100 but was " + thirdTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 291 Método: Assertions.assertTrue(fourthTTL >= 44900 && fourthTTL <= 45100, "Expected 45000 +/- 100 but was " + fourthTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 299 Método: Assertions.assertTrue(firstTTL >= 29900 && firstTTL <= 30100, "Expected 30000 +/- 100 but was " + firstTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 304 Método: Assertions.assertTrue(thirdTTL >= 34700 && thirdTTL <= 35300, "Expected 35000 +/- 300 but was " + thirdTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 309 Método: Assertions.assertTrue(fourthTTL >= 39900 && fourthTTL <= 40100, "Expected 40000 +/- 100 but was " + fourthTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 323 Método: Assertions.assertTrue(thirdTTL >= 29700 && thirdTTL <= 30300, "Expected 30000 +/- 300 but was " + thirdTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 327 Método: Assertions.assertTrue(fourthTTL >= 34900 && fourthTTL <= 35100, "Expected 35000 +/- 100 but was " + fourthTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 433 Método: Assertions.assertTrue(diff > 4900 && diff < 5100, "Expected 5000 +/- 100 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 435 Método: Assertions.assertTrue(diff > 4900 && diff < 5100, "Expected 5000 +/- 100 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 440 Método: Assertions.assertTrue(diff > 4900 && diff < 5100, "Expected 5000 +/- 100 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 480 Método: Assertions.assertTrue(diff > 190 && diff < 210, "Expected 200 +/- 10 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 576 Método: Assertions.assertFalse(epiry > leaseTimeSeconds + 60 * 5 * (i + 1), "It would take more than " + (leaseTimeSeconds + 60 * 5 * (i + 1)) + "s to get the lock!")
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 796 Método: Assertions.assertThrows(IllegalMonitorStateException.class, () -> {
+    RLock lock = redisson.getFairLock("lock");
+    Thread t = new Thread() {
+
+        public void run() {
+            RLock lock = redisson.getFairLock("lock");
+            lock.lock();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            lock.unlock();
+        }
+    };
+    t.start();
+    t.join(400);
+    try {
+        lock.unlock();
+    } catch (IllegalMonitorStateException e) {
+        t.join();
+        throw e;
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonSpinLockTest.java linha: 70 Método: Assertions.assertThrows(WriteRedisConnectionException.class, () -> {
+    RLock lock = redisson.getSpinLock("myLock");
+    master.stop();
+    Thread.sleep(3000);
+    lock.tryLock(5, 10, TimeUnit.SECONDS);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonSpinLockTest.java linha: 312 Método: Assertions.assertThrows(IllegalMonitorStateException.class, () -> {
+    RLock lock = redisson.getSpinLock("lock");
+    Thread t = new Thread() {
+
+        public void run() {
+            RLock lock = redisson.getSpinLock("lock");
+            lock.lock();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            lock.unlock();
+        }
+    };
+    t.start();
+    t.join(400);
+    try {
+        lock.unlock();
+    } catch (IllegalMonitorStateException e) {
+        t.join();
+        throw e;
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonSortedSetTest.java linha: 242 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    TreeSet<Integer> set = new TreeSet<Integer>();
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    set.add(4);
+    set.add(5);
+    SortedSet<Integer> hs = set.tailSet(3);
+    hs.add(10);
+    assertThat(hs).containsExactly(3, 4, 5, 10);
+    set.remove(4);
+    assertThat(hs).containsExactly(3, 5, 10);
+    set.remove(3);
+    assertThat(hs).containsExactly(5, 10);
+    hs.add(-1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonSortedSetTest.java linha: 270 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    TreeSet<Integer> set = new TreeSet<>();
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    set.add(4);
+    set.add(5);
+    SortedSet<Integer> hs = set.headSet(3);
+    hs.add(0);
+    assertThat(hs).containsExactly(0, 1, 2);
+    set.remove(2);
+    assertThat(hs).containsExactly(0, 1);
+    set.remove(3);
+    assertThat(hs).containsExactly(0, 1);
+    hs.add(7);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/connection/balancer/WeightedRoundRobinBalancerTest.java linha: 23 Método: Assertions.assertThrows(WriteRedisConnectionException.class, () -> {
+    RedisProcess master = null;
+    RedisProcess slave = null;
+    RedissonClient client = null;
+    try {
+        master = redisTestInstance();
+        slave = redisTestInstance();
+        Map<String, Integer> weights = new HashMap<>();
+        weights.put(master.getRedisServerAddressAndPort(), 1);
+        weights.put(slave.getRedisServerAddressAndPort(), 2);
+        Config config = new Config();
+        config.useMasterSlaveServers().setReadMode(ReadMode.SLAVE).setMasterAddress(master.getRedisServerAddressAndPort()).addSlaveAddress(slave.getRedisServerAddressAndPort()).setLoadBalancer(new WeightedRoundRobinBalancer(weights, 1));
+        client = Redisson.create(config);
+        slave.stop();
+        RedissonClient clientCopy = client;
+        assertThat(clientCopy.getBucket("key").get()).isNull();
+    } finally {
+        if (master != null) {
+            master.stop();
+        }
+        if (slave != null) {
+            slave.stop();
+        }
+        if (client != null) {
+            client.shutdown();
+        }
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonPermitExpirableSemaphoreTest.java linha: 363 Método: Assertions.assertThrows(RedisException.class, () -> {
+    RPermitExpirableSemaphore s = redisson.getPermitExpirableSemaphore("test");
+    s.release("1234");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonScheduledExecutorServiceTest.java linha: 379 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    RScheduledExecutorService executor = redisson.getExecutorService("test");
+    executor.schedule(new ScheduledRunnableTask("executed"), CronSchedule.of("0 44 12 19 JUN ? 2018 32"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 109 Método: Assertions.assertThrows(NullPointerException.class, () -> {
+    RExecutorService e = redisson.getExecutorService("test");
+    e.execute();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 459 Método: Assertions.assertThrows(RejectedExecutionException.class, () -> {
+    RExecutorService e = redisson.getExecutorService("test");
+    e.execute(new RunnableTask());
+    Future<?> f1 = e.submit(new RunnableTask2());
+    Future<String> f2 = e.submit(new CallableTask());
+    e.shutdown();
+    f1.get();
+    assertThat(f2.get()).isEqualTo(CallableTask.RESULT);
+    assertThat(e.isShutdown()).isTrue();
+    e.execute(new RunnableTask());
+    assertThat(redisson.getKeys().count()).isZero();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 479 Método: Assertions.assertThrows(RejectedExecutionException.class, () -> {
+    RExecutorService e = redisson.getExecutorService("test");
+    e.execute(new RunnableTask());
+    Future<?> f1 = e.submit(new RunnableTask2());
+    Future<String> f2 = e.submit(new CallableTask());
+    e.shutdown();
+    f1.get();
+    assertThat(f2.get()).isEqualTo(CallableTask.RESULT);
+    assertThat(e.isShutdown()).isTrue();
+    e.submit(new RunnableTask2());
+    assertThat(redisson.getKeys().count()).isZero();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 499 Método: Assertions.assertThrows(RejectedExecutionException.class, () -> {
+    RExecutorService e = redisson.getExecutorService("test");
+    e.execute(new RunnableTask());
+    Future<?> f1 = e.submit(new RunnableTask2());
+    Future<String> f2 = e.submit(new CallableTask());
+    e.shutdown();
+    f1.get();
+    assertThat(f2.get()).isEqualTo(CallableTask.RESULT);
+    assertThat(e.isShutdown()).isTrue();
+    e.submit(new CallableTask());
+    assertThat(redisson.getKeys().count()).isZero();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 538 Método: Assertions.assertThrows(RejectedExecutionException.class, () -> {
+    RExecutorService e = redisson.getExecutorService("test");
+    e.shutdown();
+    assertThat(e.isShutdown()).isTrue();
+    e.submit(new RunnableTask2());
+    assertThat(redisson.getKeys().count()).isZero();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 638 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    redisson.getExecutorService("test").submit(new Runnable() {
+
+        @Override
+        public void run() {
+        }
+    });
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 649 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    redisson.getExecutorService("test").submit(new Callable<Object>() {
+
+        @Override
+        public Object call() throws Exception {
+            return null;
+        }
+    });
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 670 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    redisson.getExecutorService("test").submit(new TaskCallableClass());
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 700 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    redisson.getExecutorService("test").submit(new TaskRunnableClass());
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/executor/RedissonExecutorServiceTest.java linha: 720 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    redisson.getExecutorService("test").execute(new Runnable() {
+
+        @Override
+        public void run() {
+        }
+    });
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/spring/cache/RedissonSpringCacheTest.java linha: 179 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    AnnotationConfigApplicationContext context = contexts.get(contextClass);
+    SampleBean bean = context.getBean(SampleBean.class);
+    bean.read("object2");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/spring/cache/RedissonSpringCacheShortTTLTest.java linha: 152 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    bean.read("object1");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/spring/cache/RedissonSpringCacheShortTTLTest.java linha: 167 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    bean.read("object1");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonMapReduceTest.java linha: 89 Método: Assertions.assertThrows(MapReduceTimeoutException.class, () -> {
+    RMap<String, String> map = getMap(mapClass);
+    for (int i = 0; i < 100000; i++) {
+        map.put("" + i, "ab cd fjks");
+    }
+    RMapReduce<String, String, String, Integer> mapReduce = map.<String, Integer>mapReduce().mapper(new WordMapper()).reducer(new WordReducer()).timeout(1, TimeUnit.SECONDS);
+    mapReduce.execute();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1170 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    TreeSet<Integer> set = new TreeSet<Integer>();
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    set.add(4);
+    set.add(5);
+    SortedSet<Integer> hs = set.tailSet(3);
+    hs.add(10);
+    assertThat(hs).containsExactly(3, 4, 5, 10);
+    set.remove(4);
+    assertThat(hs).containsExactly(3, 5, 10);
+    set.remove(3);
+    assertThat(hs).containsExactly(5, 10);
+    hs.add(-1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1198 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    TreeSet<Integer> set = new TreeSet<>();
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    set.add(4);
+    set.add(5);
+    SortedSet<Integer> hs = set.headSet(3);
+    hs.add(0);
+    assertThat(hs).containsExactly(0, 1, 2);
+    set.remove(2);
+    assertThat(hs).containsExactly(0, 1);
+    set.remove(3);
+    assertThat(hs).containsExactly(0, 1);
+    hs.add(7);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1501 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1502 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1520 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1521 Método: Assertions.assertEquals(1d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1538 Método: Assertions.assertEquals(1d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1539 Método: Assertions.assertEquals(2d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1556 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1557 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1568 Método: Assertions.assertEquals(12, (double) res, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1570 Método: Assertions.assertEquals(12, (double) score, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTopicTest.java linha: 780 Método: Assertions.assertThrows(RedisException.class, () -> {
+    topic.addListener(Integer.class, (channel, msg) -> {
+    });
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonReadWriteLockTest.java linha: 638 Método: Assertions.assertThrows(IllegalMonitorStateException.class, () -> {
+    RReadWriteLock rwlock = redisson.getReadWriteLock("lock");
+    Thread t = new Thread() {
+
+        public void run() {
+            RReadWriteLock rwlock = redisson.getReadWriteLock("lock");
+            rwlock.readLock().lock();
+        }
+    };
+    t.start();
+    t.join();
+    RLock lock = rwlock.readLock();
+    try {
+        lock.unlock();
+    } finally {
+        lock.forceUnlock();
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTwoLockedThread.java linha: 72 Método: Assertions.assertTrue(current - millis >= 500, "current=" + current + ", millis=" + millis)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTwoLockedThread.java linha: 142 Método: Assertions.assertTrue((current - millis) >= 1000, "current=" + current + ", millis=" + millis)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/transaction/RedissonBaseTransactionalMapTest.java linha: 28 Método: Assertions.assertThrows(TransactionTimeoutException.class, () -> {
+    RMap<Integer, String> m = redisson.getMap("test");
+    m.put(1, "test");
+    RTransaction transaction1 = redisson.createTransaction(TransactionOptions.defaults().timeout(10, TimeUnit.SECONDS));
+    RMap<Integer, String> map1 = transaction1.getMap("put_test");
+    map1.remove(1);
+    RTransaction transaction2 = redisson.createTransaction(TransactionOptions.defaults());
+    RMap<Integer, String> map2 = transaction2.getMap("put_test");
+    map2.put(1, "aryan");
+    try {
+        transaction2.commit();
+        Assertions.fail();
+    } catch (TransactionTimeoutException e) {
+    }
+    transaction1.commit();
+    assertThat(m.size()).isZero();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 260 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    RedissonClient r = Redisson.create(config);
+    r.getMap("test").put("1", new Dummy());
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 273 Método: Assertions.assertThrows(RedisOutOfMemoryException.class, () -> {
+    RedissonClient r = null;
+    try {
+        r = Redisson.create(config);
+        r.getKeys().flushall();
+        for (int i = 0; i < 10000; i++) {
+            r.getMap("test").put("" + i, "" + i);
+        }
+    } finally {
+        r.shutdown();
+        p.stop();
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 295 Método: Assertions.assertThrows(RedisOutOfMemoryException.class, () -> {
+    RedissonClient r = null;
+    try {
+        r = Redisson.create(config);
+        r.getKeys().flushall();
+        for (int i = 0; i < 10000; i++) {
+            r.getMap("test").fastPut("" + i, "" + i);
+        }
+    } finally {
+        r.shutdown();
+        p.stop();
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 312 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    Config redissonConfig = new Config();
+    redissonConfig.useSingleServer().setAddress(RedisRunner.getDefaultRedisServerBindAddressAndPort()).setConnectionPoolSize(2);
+    Redisson.create(redissonConfig);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 1182 Método: Assertions.assertThrows(RedisConnectionException.class, () -> {
+    Config config = new Config();
+    config.useSingleServer().setAddress("redis://127.99.0.1:1111");
+    Redisson.create(config);
+    Thread.sleep(1500);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 1193 Método: Assertions.assertThrows(RedisConnectionException.class, () -> {
+    Config config = new Config();
+    config.useClusterServers().addNodeAddress("redis://127.99.0.1:1111");
+    Redisson.create(config);
+    Thread.sleep(1500);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 1204 Método: Assertions.assertThrows(RedisConnectionException.class, () -> {
+    Config config = new Config();
+    config.useReplicatedServers().addNodeAddress("redis://127.99.0.1:1111");
+    Redisson.create(config);
+    Thread.sleep(1500);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 1215 Método: Assertions.assertThrows(RedisConnectionException.class, () -> {
+    Config config = new Config();
+    config.useMasterSlaveServers().setMasterAddress("redis://127.99.0.1:1111").addSlaveAddress("redis://127.99.0.2:1111");
+    Redisson.create(config);
+    Thread.sleep(1500);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 1228 Método: Assertions.assertThrows(RedisConnectionException.class, () -> {
+    Config config = new Config();
+    config.useMasterSlaveServers().setMasterAddress("redis://gadfgdfgdsfg:1111").addSlaveAddress("redis://asdfasdfsdfaasdf:1111");
+    Redisson.create(config);
+    Thread.sleep(1500);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTest.java linha: 1241 Método: Assertions.assertThrows(RedisConnectionException.class, () -> {
+    Config config = new Config();
+    config.useSentinelServers().addSentinelAddress("redis://127.99.0.1:1111").setMasterName("test");
+    Redisson.create(config);
+    Thread.sleep(1500);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/codec/MarshallingCodecTest.java linha: 40 Método: org.junit.jupiter.api.Assertions.assertThrows(IOException.class, () -> {
+    m.getValueEncoder().encode(new NonSerializable());
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/codec/JsonJacksonCodecTest.java linha: 22 Método: Assertions.assertThrows(JsonMappingException.class, () -> {
+    String JSON = "{'id': 124,\n" + " 'obj':[ 'com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl',\n" + "  {\n" + "    'transletBytecodes' : [ 'AAIAZQ==' ],\n" + "    'transletName' : 'a.b',\n" + "    'outputProperties' : { }\n" + "  }\n" + " ]\n" + "}";
+    JSON = JSON.replace("'", "\"");
+    JsonJacksonCodec codec = new JsonJacksonCodec();
+    codec.getObjectMapper().readValue(JSON, Bean1599.class);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/BaseMapTest.java linha: 416 Método: Assertions.assertThrows(NullPointerException.class, () -> {
+    RMap<Integer, String> map = getMap("simple12");
+    destroy(map);
+    map.put(1, null);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/BaseMapTest.java linha: 425 Método: Assertions.assertThrows(NullPointerException.class, () -> {
+    RMap<Integer, String> map = getMap("simple12");
+    destroy(map);
+    map.put(null, "1");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/CommandHandlersTest.java linha: 12 Método: Assertions.assertThrows(RuntimeException.class, () -> {
+    Config config = createConfig();
+    config.setCodec(new ErrorsCodec());
+    RedissonClient redisson = Redisson.create(config);
+    redisson.getBucket("1234").set("1234");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/CommandHandlersTest.java linha: 24 Método: Assertions.assertThrows(RuntimeException.class, () -> {
+    redisson.getBucket("1234").set("1234");
+    Config config = createConfig();
+    config.setCodec(new ErrorsCodec());
+    RedissonClient redisson = Redisson.create(config);
+    redisson.getBucket("1234").get();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBloomFilterTest.java linha: 15 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    RBloomFilter<String> filter = redisson.getBloomFilter("filter");
+    filter.tryInit(1, -1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBloomFilterTest.java linha: 23 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    RBloomFilter<String> filter = redisson.getBloomFilter("filter");
+    filter.tryInit(1, 2);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBloomFilterTest.java linha: 31 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    RBloomFilter<String> filter = redisson.getBloomFilter("filter");
+    filter.tryInit(1, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBloomFilterTest.java linha: 61 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    RBloomFilter<String> filter = redisson.getBloomFilter("filter");
+    filter.getExpectedInsertions();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBloomFilterTest.java linha: 83 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    RBloomFilter<String> filter = redisson.getBloomFilter("filter");
+    filter.contains("32");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBloomFilterTest.java linha: 91 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    RBloomFilter<String> filter = redisson.getBloomFilter("filter");
+    filter.add("123");
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonLiveObjectServiceTest.java linha: 2004 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    Customer customer = new Customer("12");
+    customer = redisson.getLiveObjectService().persist(customer);
+    Order order = new Order();
+    customer.getOrders().add(order);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonStreamTest.java linha: 164 Método: Assertions.assertThrows(RedisException.class, () -> {
+    RStream<String, String> stream = redisson.getStream("test");
+    stream.add(StreamAddArgs.entry("0", "0"));
+    stream.createGroup("testGroup");
+    StreamMessageId id1 = stream.add(StreamAddArgs.entry("1", "1"));
+    StreamMessageId id2 = stream.add(StreamAddArgs.entry("2", "2"));
+    stream.removeGroup("testGroup");
+    stream.readGroup("testGroup", "consumer1", StreamReadGroupArgs.neverDelivered());
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonListTest.java linha: 464 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    List<Integer> list = new ArrayList<Integer>();
+    list.add(1);
+    ListIterator<Integer> iterator = list.listIterator();
+    iterator.next();
+    iterator.add(2);
+    iterator.set(3);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonListTest.java linha: 478 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    List<Integer> list = redisson.getList("list");
+    list.add(1);
+    ListIterator<Integer> iterator = list.listIterator();
+    iterator.next();
+    iterator.add(2);
+    iterator.set(3);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonListTest.java linha: 492 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    List<Integer> list = redisson.getList("simpleList");
+    list.add(1);
+    ListIterator<Integer> iterator = list.listIterator();
+    iterator.hasNext();
+    iterator.set(3);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonListTest.java linha: 969 Método: Assertions.assertThrows(IndexOutOfBoundsException.class, () -> {
+    List<Integer> list = redisson.getList("list");
+    list.add(1);
+    list.add(2);
+    list.add(3);
+    list.add(4);
+    list.add(5);
+    list.set(5, 6);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonListTest.java linha: 1082 Método: Assertions.assertThrows(RedisException.class, () -> {
+    RList<Integer> list = redisson.getList("list");
+    list.addAll(2, Arrays.asList(7, 8, 9));
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBoundedBlockingQueueTest.java linha: 211 Método: Assertions.assertThrows(RedisException.class, () -> {
+    RBoundedBlockingQueue<Integer> queue1 = redisson.getBoundedBlockingQueue("bounded-queue:testInitCapacityError");
+    queue1.add(1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonBoundedBlockingQueueTest.java linha: 600 Método: Assertions.assertThrows(NoSuchElementException.class, () -> {
+    RBoundedBlockingQueue<Integer> queue = redisson.getBoundedBlockingQueue("blocking:queue");
+    queue.trySetCapacity(10);
+    queue.remove();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonBatchRxTest.java linha: 408 Método: Assertions.assertThrows(RedisException.class, () -> {
+    RBatchRx batch = redisson.createBatch(batchOptions);
+    batch.getMap("test").put("1", "2");
+    batch.getScript().eval(Mode.READ_WRITE, "wrong_code", RScript.ReturnType.VALUE);
+    sync(batch.execute());
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonBatchRxTest.java linha: 419 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    RBatchRx batch = redisson.createBatch(batchOptions);
+    batch.getMap("test").put("1", "2");
+    sync(batch.execute());
+    sync(batch.execute());
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 312 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 313 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 324 Método: Assertions.assertEquals(12, (double) res, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 326 Método: Assertions.assertEquals(12, (double) score, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonListRxTest.java linha: 268 Método: Assertions.assertThrows(IndexOutOfBoundsException.class, () -> {
+    RListRx<Integer> list = redisson.getList("list");
+    sync(list.add(1));
+    sync(list.add(2));
+    sync(list.add(3));
+    sync(list.add(4));
+    sync(list.add(5));
+    sync(list.set(5, 6));
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonListRxTest.java linha: 366 Método: Assertions.assertThrows(RedisException.class, () -> {
+    RListRx<Integer> list = redisson.getList("list");
+    sync(list.addAll(2, Arrays.asList(7, 8, 9)));
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 311 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 312 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 323 Método: Assertions.assertEquals(12, (double) res, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 325 Método: Assertions.assertEquals(12, (double) score, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonQueueTest.java linha: 95 Método: Assertions.assertThrows(NoSuchElementException.class, () -> {
+    RQueue<Integer> queue = getQueue();
+    queue.remove();
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonRemoteServiceTest.java linha: 419 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    redisson.getRemoteService().get(RemoteInterfaceWrongMethodAsync.class);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonRemoteServiceTest.java linha: 426 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    redisson.getRemoteService().get(RemoteInterfaceWrongParamsAsync.class);
+})
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonRemoteServiceTest.java linha: 589 Método: Assertions.assertThrows(RemoteServiceTimeoutException.class, () -> {
+    RedissonClient r1 = createInstance();
+    r1.getRemoteService().register(RemoteInterface.class, new RemoteImpl());
+    RedissonClient r2 = createInstance();
+    RemoteInterface ri = r2.getRemoteService().get(RemoteInterface.class, 1, TimeUnit.SECONDS);
+    try {
+        ri.timeoutMethod();
+    } finally {
+        r1.shutdown();
+        r2.shutdown();
+    }
+})
+Total asserts: 7589
+Asserts sem descrição: 7483
+Asserts com descrição: 106
+Assertion Roulette: 6623

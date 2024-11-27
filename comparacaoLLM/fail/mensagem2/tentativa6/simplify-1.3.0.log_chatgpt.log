@@ -1,0 +1,53 @@
+eram esperados valores iguais, mas o número de registros esperado é diferente do número de registros atual
+eram esperados arrays iguais, mas os arrays esperado e atual são diferentes
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "I", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "Z", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "B", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "C", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "Ljava/lang/Object;", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "S", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "J", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "D", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "I", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "Z", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "B", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "C", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "Ljava/lang/Object;", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "S", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "J", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado para o tipo "D", estático
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+era esperado que nenhuma alteração fosse feita, mas alterações foram feitas
+eram esperados valores iguais, mas o Smali antes da transformação é diferente do Smali depois da transformação
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+eram esperados valores iguais, mas o deslocamento de código é diferente
+era esperado um descritor de método específico, mas o descritor de método atual é diferente
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+eram esperados valores iguais, mas o registrador A é diferente
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados arrays iguais, mas os endereços esperados e atuais são diferentes
+eram esperados valores iguais, mas a instrução esperada é de um tipo diferente da instrução real
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+eram esperados valores iguais, mas o registrador A é diferente
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+eram esperados valores iguais, mas o registrador A é diferente
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+eram esperados valores iguais, mas o registrador A é diferente
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+eram esperados valores iguais, mas o registrador A é diferente
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+eram esperados valores iguais, mas o registrador A é diferente
+era esperado um valor específico, mas o valor encontrado é diferente
+eram esperados valores iguais, mas o Opcode esperado é diferente do Opcode retornado
+era esperado um conjunto com um determinado tipo, mas o tipo do item encontrado é diferente
+era esperado um texto específico, mas o texto retornado é diferente
+era esperado um conjunto com um determinado tipo, mas o tipo do item encontrado é diferente
+era esperado um texto específico, mas o texto retornado é diferente
+era esperado um valor específico, mas o valor encontrado é diferente
+era esperado um conjunto com um determinado tipo, mas o tipo do item encontrado é diferente
+era esperado um texto específico, mas o texto retornado é diferente
+era esperado um conjunto com um determinado tipo, mas o tipo do item encontrado é diferente

@@ -1,0 +1,45 @@
+Era esperado que os valores fossem diferentes, mas n é igual a belly.getCukes()
+Era esperado que não ocorresse exceção, mas ocorreu uma exceção ao parar
+Era esperado que não ocorresse exceção, mas ocorreu uma exceção ao iniciar
+Era esperado que não ocorresse exceção, mas ocorreu uma exceção ao parar
+Era esperado que todos os testes passassem, mas pelo menos um falhou
+Era esperado que o valor fosse verdadeiro, mas não é
+Era esperado que o valor fosse falso, mas é verdadeiro
+Era esperado que o valor fosse falso, mas é verdadeiro
+Era esperado que o valor fosse verdadeiro, mas é falso
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que os Optional fossem iguais, mas são diferentes
+Era esperado que a URI fosse igual a classpath:example.feature, mas é diferente
+Era esperado que a URI fosse igual a classpath:example.feature, mas é diferente
+Era esperado que a URI fosse igual a classpath:example.feature, mas é diferente
+Era esperado que os objetos não fossem nulos, mas são nulos
+Era esperado que os objetos não fossem nulos, mas são nulos
+Era esperado que os objetos não fossem nulos, mas são nulos
+Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou
+Era esperado que os valores fossem iguais, mas são diferentes
+Era esperado que os valores fossem iguais, mas são diferentes
+Era esperado que os valores fossem iguais, mas são diferentes
+Era esperado que os valores fossem diferentes, mas são iguais
+Era esperado que os valores fossem diferentes, mas são iguais
+Era esperado que os objetos fossem diferentes, mas são iguais
+Era esperado que os objetos fossem diferentes, mas são iguais
+Era esperado que os objetos fossem diferentes, mas são iguais
+Era esperado que os valores fossem verdadeiros, mas são falsos
+Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou
+Era esperado que os valores fossem iguais, mas são diferentes
+Era esperado que os valores fossem verdadeiros, mas são falsos

@@ -1,0 +1,101 @@
+Falha ao comparar o tipo de argumento com TextRenderData.class
+Falha ao comparar o tipo de argumento com TextRenderData.class
+O texto resultante é diferente do texto de dados.
+A URL resultante é diferente da URL de dados.
+A cor resultante é diferente da cor de dados.
+Os padrões de sublinhado resultantes são diferentes dos padrões de sublinhado de dados.
+A largura resultante é diferente da largura de dados.
+A altura resultante é diferente da altura de dados.
+O tipo de imagem resultante é diferente do tipo de imagem de dados.
+Os metadados alternativos resultantes são diferentes dos metadados alternativos de dados.
+O título do gráfico resultante é diferente do título do gráfico de dados.
+As categorias resultantes são diferentes das categorias de dados.
+O nome da série de dados resultante é diferente do nome da série de dados.
+O tipo de combinação da série de dados resultante é diferente do tipo de combinação da série de dados.
+O documento mesclado resultante é diferente do documento mesclado de dados.
+A largura do estilo de tabela resultante é diferente da largura do estilo de tabela de dados.
+O alinhamento do estilo de tabela resultante é diferente do alinhamento do estilo de tabela de dados.
+Os tamanhos das listas são diferentes.
+Os formatos resultantes são diferentes dos formatos de dados.
+A cor do estilo de glifo do item resultante é diferente da cor do estilo de glifo do item de dados.
+Falha ao comparar o tipo de imagem sugerido com SVG.
+Falha ao comparar o tipo de imagem sugerido com GIF.
+Falha ao comparar o tipo de imagem sugerido com PNG.
+Falha ao comparar o tipo de imagem sugerido com JPEG.
+Falha ao comparar o tipo de imagem sugerido com BMP.
+Falha ao comparar o tipo de imagem sugerido com TIFF.
+Falha ao comparar o tipo de imagem sugerido com PNG.
+Falha ao comparar o tipo de imagem sugerido com SVG.
+O tamanho dos modelos de elemento é diferente de 0.
+O tamanho dos modelos de elemento é diferente de 4.
+O tamanho dos modelos de elemento é diferente de 3.
+O tamanho dos modelos de elemento é diferente de 5.
+O tamanho dos modelos de elemento é diferente de 0.
+As strings resultantes da divisão são diferentes.
+As strings resultantes da divisão são diferentes.
+As strings resultantes da divisão são diferentes.
+As strings resultantes da divisão são diferentes.
+As strings resultantes da divisão são diferentes.
+As strings resultantes da divisão são diferentes.
+As strings resultantes da divisão são diferentes.
+O texto do parágrafo é diferente de "123".
+O texto do parágrafo é diferente de "Sayi".
+O texto do parágrafo é diferente de "卅一".
+O parágrafo é esperado como nulo.
+O tamanho das imagens do documento é diferente de 1.
+O tamanho das tabelas do documento é diferente de 1.
+A causa da exceção não é uma instância de ExpressionEvalException.
+O texto do parágrafo é diferente de "Sayi".
+O texto do parágrafo é diferente de "卅一".
+O texto do parágrafo é diferente de "2018-10-01".
+O texto do parágrafo é diferente de "http://www.deepoove.com".
+O tamanho das imagens do documento é diferente de 1.
+O tamanho das tabelas do documento é diferente de 1.
+O texto do parágrafo é diferente do valor de "sea" nos argumentos.
+O tamanho das imagens do documento é diferente de 1.
+O texto do parágrafo é diferente de "面朝大海春暖花开".
+O ID numérico do parágrafo é nulo.
+O texto do parágrafo é diferente de "今朝有酒今朝醉".
+O ID numérico do parágrafo é nulo.
+Os IDs numéricos dos parágrafos são diferentes.
+O texto da célula é diferente de "日落：日落山花红四海".
+O texto do parágrafo é diferente de "123".
+O resultado do cálculo é diferente de "Sayi".
+O resultado do cálculo é diferente de "poi-tl".
+O resultado do cálculo é diferente de "Sayi".
+O resultado do cálculo é diferente de "poi-tl".
+O resultado do cálculo é diferente de "2021年03月08日".
+O resultado do cálculo é diferente de "poi-tl".
+O resultado do cálculo é diferente de true.
+O resultado do cálculo é diferente de "POI-TL".
+O resultado do cálculo é diferente de "这个字段为空".
+O resultado do cálculo é diferente de "男".
+O resultado do cálculo é diferente de "2019-05-20 22:14:10".
+O resultado do cálculo é diferente de "2019-05-20 10:14".
+O resultado do cálculo é diferente de 88880000L.
+O resultado do cálculo é diferente de "88880000元".
+O resultado do cálculo é diferente de true.
+O resultado do cálculo é diferente de "88880千元".
+O resultado do cálculo é diferente de "8888万元".
+O resultado do cálculo é diferente de "阿黄".
+O resultado do cálculo é diferente de 6.
+O resultado do cálculo é diferente de "阿蓝".
+O resultado do cálculo é diferente de "阿蓝".
+O resultado do cálculo é diferente de "poi-tl".
+O resultado do cálculo é diferente de "ElFunction".
+O texto do parágrafo é diferente de "poi-tl".
+O texto do parágrafo é diferente de "lowCase:poi-tlUpcase:POI-TL".
+O texto do parágrafo é diferente de "这个字段为空".
+O texto do parágrafo é diferente de "男".
+O texto do parágrafo é diferente de "2019-05-20 22:14:10".
+O texto do parágrafo é diferente de "2019-05-20 10:14".
+O texto do parágrafo é diferente de "88880000".
+O texto do parágrafo é diferente de "8888万元".
+O texto do parágrafo é diferente de "阿黄".
+O texto do parágrafo é diferente de "6".
+O texto do parágrafo é diferente de "阿蓝".
+O texto do parágrafo é diferente de "ElFunction".
+A expressão regular da gramática é igual à expressão regular padrão.
+A expressão regular da gramática é diferente da expressão regular padrão.
+A correspondência da expressão regular é verdadeira.
+

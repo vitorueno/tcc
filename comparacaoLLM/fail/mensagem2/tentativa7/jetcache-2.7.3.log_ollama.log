@@ -1,0 +1,21 @@
+eram esperados valores iguais, mas o valor passado para a função "buildKey" é diferente do resultado esperado
+eram esperados valores iguais, mas os valores passados para o método "buildKey" são idênticos
+eram esperados valores iguais, mas o tipo da variável passada para a função "buildKey" não combina com o tipo do resultado esperado
+eram esperados valores iguais, mas o valor passado para a função "buildKey" é de um tipo diferente do resultado esperado
+eram esperados valores iguais, mas os valores passados para o método "buildKey" são diferentes
+eram esperados valores iguais, mas o valor passado para a função "buildKey" não é igual ao resultado esperado
+eram esperados valores iguais, mas a comparação com o valor passado para a função "buildKey" falhou
+eram esperados valores iguais, mas os valores passados para o método "assertArrayEquals" não são idênticos
+eram esperados valores iguais, mas os tipos das strings passadas para o método "assertArrayEquals" não são compatíveis
+eram esperados valores iguais, mas as dates passadas para o método "buildKey" não são equivalentes
+eram esperados valores iguais, mas as comparações com os valores passados para a função "buildKey" falharam
+eram esperados valores iguais, mas os tipos das strings passadas para o método "assertArrayEquals" não são compatíveis
+eram esperados valores iguais, mas o valor passado para o método "buildKey" é de tipo diferente do resultado esperado
+eram esperados valores iguais, mas os valores passados para o método "buildKey" são diferentes
+eram esperados valores iguais, mas a comparação com os valores passados para a função "buildKey" falhou
+eram esperados valores iguais, mas as dates passadas para o método "buildKey" não são equivalentes
+eram esperados valores iguais, mas o valor passado para a função "buildKey" não é igual ao resultado esperado
+eram esperados valores iguais, mas os tipos das strings passadas para o método "assertArrayEquals" não são compatíveis
+eram esperados valores iguais, mas as comparações com os valores passados para a função "buildKey" falharam
+eram esperados valores iguais, mas as dates passadas para o método "buildKey" não são equivalentes
+eram esperados valores iguais, mas o valor passado para a função "buildKey" não é igual ao resultado esperado

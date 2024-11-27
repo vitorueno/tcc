@@ -1,0 +1,26 @@
+eram esperados valores iguais, mas 58 é diferente de 23+35
+eram esperados valores iguais, mas "Hello [[#{something}]]" não é igual a "Hello ??something_en??"
+eram esperados valores iguais, mas "Hello [[23+35]]" não é igual a "Hello 58"
+eram esperados valores iguais, mas "nonexisting" não é igual a "<p>something</p>"
+eram esperados valores iguais, mas "nonexisting" não é igual a "<p>this value</p>"
+eram esperados valores iguais, mas "<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>" não é igual a "<div>some text <p><p>inserted!</p></p> other text</div>"
+eram esperados valores iguais, mas "..." não é igual a "..."
+
+eram valores esperados igual, 1 é igual a 1
+eram valores esperados igual, 1 é igual a 2
+
+eram valores esperados igual, "/something" é igual a "/"
+eram valores esperados igual, "/something" é igual a ""
+
+eram valores esperados igual, "some text <p><p>inserted!</p></p>" é igual a "<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>"
+eram valores esperados igual, "" é igual a ""
+eram valores esperados igual, "/something" é igual a "something"
+eram valores esperados igual, "/" é igual a "/"
+eram valores esperados igual, "" é igual a ""
+
+eram valores esperados igual, 58 é igual a 23+35
+eram valores esperados igual, "Hello [[#{something}]]" não é igual a "Hello ??something_en??"
+eram valores esperados igual, "nonexisting" não é igual a "<p>something</p>"
+eram valores esperados igual, "nonexisting" não é igual a "<p>this value</p>"
+eram valores esperados igual, "SomethingEn" não é igual a "Hello something_en"
+eram valores esperados igual, 2 é igual a 1

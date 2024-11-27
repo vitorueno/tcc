@@ -1,0 +1,11 @@
+1. assertEquals expected, actual - mensagem de erro
+2. assertTrue(boolean) - mensagem de erro
+3. assertFalse(boolean) - mensagem de erro
+4. assertNotEquals(expected, actual) - mensagem de erro
+5. assertNotNull(objeto) - mensagem de erro
+6. assertNull(objeto) - mensagem de erro
+7. assertArrayEquals(arrayExpectado, arrayAtual) - mensagem de erro
+8. assertArrayEquals(arrayExpectado, arrayAtual, mensagemFormato) - mensagem de erro
+9. assertEquals(expected, actual, mensagemFormato) - mensagem de erro
+10. assertTrue(boolean, mensagemFormato) - mensagem de erro
+11. assertFalse(boolean, mensagemFormato) - mensagem de erro

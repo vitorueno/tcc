@@ -1,0 +1,100 @@
+Era esperado que n fosse igual a belly.getCukes()
+Era esperado que não ocorresse nenhuma exceção em factory::stop
+Era esperado que não ocorresse nenhuma exceção em factory::start
+Era esperado que não ocorresse nenhuma exceção em factory::stop
+Era esperado que todos os testes passassem, mas pelo menos um falhou
+Era esperado que hasTheSameRowsAs(table).inOrder().matches(identical) fosse falso
+Era esperado que hasTheSameRowsAs(table).inOrder().matches(shuffled) fosse verdadeiro
+Era esperado que hasTheSameRowsAs(table).inOrder().matches(different) fosse falso
+Era esperado que hasTheSameRowsAs(table).matches(identical) fosse verdadeiro
+Era esperado que hasTheSameRowsAs(table).matches(shuffled) fosse verdadeiro
+Era esperado que hasTheSameRowsAs(table).matches(different) fosse falso
+Era esperado que Optional.of(asList(outline, examplesA, example1)) fosse igual a pathTo
+Era esperado que Optional.of(asList(outline, examplesA, example2)) fosse igual a pathTo
+Era esperado que Optional.of(asList(outline, examplesB, example3)) fosse igual a pathTo
+Era esperado que Optional.of(asList(outline, examplesB, example4)) fosse igual a pathTo
+Era esperado que Optional.of(asList(outline, examplesA)) fosse igual a pathTo
+Era esperado que Optional.of(asList(emptyOutline, emptyExamplesA)) fosse igual a pathTo
+Era esperado que Optional.of(asList(outline, examplesB)) fosse igual a pathTo
+Era esperado que Optional.of(asList(emptyOutline, emptyExamplesB)) fosse igual a pathTo
+Era esperado que Optional.of(asList(outline)) fosse igual a pathTo
+Era esperado que Optional.of(asList(emptyOutline)) fosse igual a pathTo
+Era esperado que Optional.empty() fosse igual a pathTo
+Era esperado que Optional.empty() fosse igual a pathTo
+Era esperado que Optional.of(asList(example1)) fosse igual a pathTo
+Era esperado que Optional.empty() fosse igual a pathTo
+Era esperado que events.get(0).getUndefinedParameterType() não fosse nulo
+Era esperado que parameterInfos.size() fosse igual ao comprimento de args
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/path/to"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() fosse igual a "/path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() fosse igual a "/path/to"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() terminasse com "path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() terminasse com "path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() terminasse com "path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() fosse igual a "/C:/path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() terminasse com "path/to the/file.feature"
+Era esperado que uri.getScheme() fosse igual a "file" e uri.getSchemeSpecificPart() fosse igual a "/C:/path/to/file.feature"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "com/example/app"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/com/example/app"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/com/example/app"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/com/example/app"
+Era esperado que uri.getScheme() fosse igual a "classpath" e uri.getSchemeSpecificPart() fosse igual a "/com/example/app"
+Era esperado que featureWithLines.uri() fosse igual a URI.create("classpath:example.feature") e featureWithLines.lines() fosse uma coleção vazia de Integers
+Era esperado que featureWithLines.uri() fosse igual a URI.create("classpath:example.feature") e featureWithLines.lines() contivesse 999
+Era esperado que featureWithLines.uri() fosse igual a URI.create("classpath:example.feature") e featureWithLines.lines() contivesse 999 e 2000
+optionsBuilder não deveria ser nulo
+options não deveria ser nulo
+Era esperado que options.getFeaturePaths() contivesse new File("somewhere_else.feature").toURI() e options.getLineFilters() tivesse uma entrada com new File("somewhere_else.feature").toURI() e singleton(3)
+plugins.getPlugins() não deveria ter o plugin "io.cucumber.core.plugin.DefaultSummaryPrinter"
+actual não deveria conter "@should_not_be_clobbered" e options.getLineFilters() deveria ter uma entrada com new File("this/should/be/rerun.feature").toURI() e singleton(12)
+Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou
+Era esperado que options.getFeaturePaths() contivesse URI.create("classpath:com/example.feature") e tagExpressions contivesse "@example"
+Era esperado que options.getFeaturePaths() contivesse URI.create("classpath:path/to.feature") e options.getTagExpressions() não contivesse "@example"
+runtimeOptions deveria ter tamanho 0 e runtimeOptions.getLineFilters() deveria ser um mapa vazio
+runtimeOptions deveria ter tamanho 0 e runtimeOptions.getLineFilters() deveria ser um mapa vazio
+runtimeOptions deveria ter tamanho 0 e runtimeOptions.getLineFilters() deveria ser um mapa vazio
+runtimeOptions deveria ter tamanho 0 e runtimeOptions.getLineFilters() deveria ser um mapa vazio
+runtimeOptions.getFeaturePaths() deveria conter URI.create("file:/home/users/mp/My%20Documents/tests/bar.feature") e runtimeOptions.getLineFilters() deveria ter uma entrada com URI.create("file:/home/users/mp/My%20Documents/tests/bar.feature") e singleton(2)
+options.getFeaturePaths() deveria conter new File("path/bar.feature").toURI() e options.getLineFilters() deveria ter uma entrada com new File("path/bar.feature").toURI() e singleton(2)
+prettyPluginA deveria ser igual a prettyPluginB
+prettyPluginA.hashCode() deveria ser igual a prettyPluginB.hashCode()
+htmlPluginA deveria ser igual a htmlPluginB
+htmlPluginA.hashCode() deveria ser igual a htmlPluginB.hashCode()
+prettyPluginA não deveria ser igual a htmlPluginA
+prettyPluginA.hashCode() não deveria ser igual a htmlPluginA.hashCode()
+plugins.getPlugins() deveria ser vazio
+getRegexpPattern(iterator.next()) deveria ser igual a "name1" e getRegexpPattern(iterator.next()) deveria ser igual a "name2"
+actual.getMessage() deveria ser "Invalid tag expression at 'io.cucumber.core.options.CucumberOptionsAnnotationParserTest$ClassWithInvalidTagExpression'" e actual.getCause() deveria ser uma TagExpressionException
+actual.getMessage() deveria ser "Invalid tag expression at 'io.cucumber.core.options.CucumberOptionsAnnotationParserTest$ClassWithInvalidTagExpression'" e actual.getCause() deveria ser uma TagExpressionException
+pluginList deveria conter HtmlFormatter.class.getName() e PrettyFormatter.class.getName()
+runtimeOptions.isMonochrome() deveria ser verdadeiro
+plugins.getPlugins() deveria ser vazio
+Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou
+snakeCase.generate(sentence) deveria ser igual a expectedSnakeCase e camelCase.generate(sentence) deveria ser igual a expectedCamelCase
+JarUriFileSystemService.supports(URI.create("jar:file:/example.jar!com/example/app")) deveria ser verdadeiro
+JarUriFileSystemService.supports(URI.create("file:/example.jar")) deveria ser verdadeiro
+fileSystem1 deveria estar aberto
+fileSystem2 deveria estar aberto
+fileSystem1 não deveria estar aberto
+fileSystem2 não deveria estar aberto
+packageName deveria ser igual a "com.example"
+packageName deveria ser igual a "com.example"
+packageName deveria ser igual a "com.example.app"
+packageName deveria ser igual a "com.example.app"
+packageName deveria ser igual a "com.example.app"
+fqn deveria ser igual a "com.example.app.App"
+fqn deveria ser igual a "com.example.app.App"
+fqn deveria ser igual a "com.example.app.App"
+fqn deveria ser igual a URI.create("classpath:com/example/app/app.feature")
+fqn deveria ser igual a URI.create("classpath:com/example/app/app.feature")
+fqn deveria ser igual a URI.create("classpath:com/example/app/app.feature")
+runners[0] deveria ser diferente de runners[1] e runners[1] deveria ser diferente de runners[0]
+eventBus deveria ser diferente de runnerBus e runnerBus deveria ser diferente de eventBus
+predicate.test(pickle) deveria ser verdadeiro

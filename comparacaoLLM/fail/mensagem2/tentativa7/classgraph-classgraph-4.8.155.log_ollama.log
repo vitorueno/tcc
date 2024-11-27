@@ -1,0 +1,9 @@
+```java
+String mensagemAssert(String valorEsperado, String valorObtido) {
+    return "Eram esperados valores iguais, mas " + valorEsperado + " é diferente de " + valorObtido;
+}
+
+assertEquals(mensagemAssert(5, calculator.add(2, 3)), calculator.add(2, 3));
+assertEquals(mensagemAssert(7, calculator.add(4, 2)), calculator.add(4, 2));
+assertEquals(mensagemAssert(10, calculator.add(5, 5)), calculator.add(5, 5));
+```

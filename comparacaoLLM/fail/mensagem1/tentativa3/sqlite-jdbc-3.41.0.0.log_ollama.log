@@ -1,0 +1,8 @@
+- assertEquals expectations
+- assertTrue expectations
+- assertFalse expectations
+- assertNotNull expectations
+- assertNull expectations
+- assertArrayEquals expectations
+- assertNotEquals expectations
+- assertThrows exceptionType expectations

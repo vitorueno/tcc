@@ -1,0 +1,107 @@
+"<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>"
+"<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"odd\">" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>"
+"<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td><p>foo</p></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>"
+"<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>&lt;p&gt;foo&lt;/p&gt;</td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>"
+json
+json
+json
+2
+3
+Date
+Value
+LONG
+1453438800000L
+2
+3
+LONG
+2
+3
+a
+b.c
+LONG
+INTEGER
+[INSTANT, DOUBLE]
+[STRING, STRING]
+trace.asJavascript(1)
+"x title"
+Scatter3DPlot.create("3D plot", data, "x", "y", "z")
+html.indexOf("\"" + "https://cdn.plot.ly/plotly-latest.min.js" + "\"") > 0
+html.indexOf("\"" + location + "\"") > 0
+trace.asJavascript(1)
+figure
+trace
+traceBuilder.xAxis
+traceBuilder.yAxis
+Up.upBuilder(1, 2, 3).build().asJavascript()
+Eye.eyeBuilder(1, 2, 3).build().asJavascript()
+Center.centerBuilder(1, 2, 3).build().asJavascript()
+"    <script>" + LINE_END + "        var target_target = document.getElementById('target');" + LINE_END + "        " + LINE_END + "var trace0 =" + LINE_END + "{" + LINE_END + "x: [\"1.0\",\"2.0\",\"3.0\",\"4.0\",\"5.0\"]," + LINE_END + "y: [\"1.0\",\"4.0\",\"9.0\",\"16.0\",\"25.0\"]," + LINE_END + "mode: 'markers'," + LINE_END + "xaxis: 'x'," + LINE_END + "yaxis: 'y'," + LINE_END + "type: 'scatter'," + LINE_END + "name: ''," + LINE_END + "};" + LINE_END + "" + LINE_END + "        var data = [ trace0];" + LINE_END + "Plotly.newPlot(target_target, data);            </script>" + LINE_END
+"    <script>" + LINE_END + "        var target_target = document.getElementById('target');" + LINE_END + "        var layout = {" + LINE_END + "    title: 'A test title'," + LINE_END + "    height: 450," + LINE_END + "    width: 700," + LINE_END + "    showlegend: true," + LINE_END + "    margin: {" + LINE_END + "  \"autoexpand\" : true," + LINE_END + "  \"b\" : 80," + LINE_END + "  \"l\" : 200," + LINE_END + "  \"pad\" : 0," + LINE_END + "  \"r\" : 80," + LINE_END + "  \"t\" : 200" + LINE_END + "}," + LINE_END + "    xaxis: {" + LINE_END + "    title: 'x Axis 1'," + LINE_END + "        titlefont: {" + LINE_END + "  \"color\" : \"red\"," + LINE_END + "  \"family\" : \"arial\"," + LINE_END + "  \"size\" : 8" + LINE_END + "}," + LINE_END + "    }," + LINE_END + "" + LINE_END + "" + LINE_END + "};" + LINE_END + "" + LINE_END + "var trace0 =" + LINE_END + "{" + LINE_END + "x: [\"1.0\",\"2.0\",\"3.0\",\"4.0\",\"5.0\"]," + LINE_END + "y: [\"1.0\",\"4.0\",\"9.0\",\"16.0\",\"25.0\"]," + LINE_END + "mode: 'markers'," + LINE_END + "xaxis: 'x'," + LINE_END + "yaxis: 'y'," + LINE_END + "type: 'scatter'," + LINE_END + "name: ''," + LINE_END + "};" + LINE_END + "" + LINE_END + "        var data = [ trace0];" + LINE_END + "Plotly.newPlot(target_target, data, layout);            </script>" + LINE_END
+layout
+String.valueOf(figure.getContext().get("figure")).contains(title)
+increasing.asJavascript().contains("line")
+increasing.asJavascript().contains("color")
+increasing.asJavascript().contains("width")
+increasing.asJavascript().contains("fillcolor")
+line.asJavascript().contains("color")
+line.asJavascript().contains("width")
+trace.asJavascript(1)
+figure
+figure
+trace
+"[\"Hello\\\\\"]"
+figure
+html.indexOf(customTemplateString) < 0
+path.lastIndexOf('/') >= 0
+html.indexOf(customTemplateString) >= 0
+x.asJavascript().contains("color")
+x.asJavascript().contains("symbol")
+x.asJavascript().contains("size")
+asJavascript.contains("rows")
+asJavascript.contains("columns")
+asJavascript.contains("rows")
+asJavascript.contains("xAxis")
+asJavascript.contains("rows")
+asJavascript.contains("columns")
+asJavascript.contains("roworder")
+asJavascript.contains("pattern")
+metadata1
+copy
+table1.name()
+metadata.getTableName()
+metadata.getRowCount()
+metadata.columnNames()
+SNAPPY
+copy
+table1.name()
+metadata1.getTableName()
+metadata1.getRowCount()
+2
+metadata1.getVersion()
+table1.columnCount()
+metadata1.columnCount()
+table1.shape()
+metadata1.shape()
+table1.columnNames()
+metadata1.columnNames()
+table1.structure().toString()
+metadata1.structure().toString()
+table.columnCount()
+t.columnCount()
+table.rowCount()
+t.rowCount()
+table.name()
+t.name()
+t.rowCount()
+t.columnCount()
+table
+table
+table.columnCount() > 0
+table.isEmpty()
+table
+intsOnly.rowCount()
+table.rowCount()
+intsAndStrings.rowCount()
+table.rowCount()
+table.column(1).size() > 0
+table.column(1).type()

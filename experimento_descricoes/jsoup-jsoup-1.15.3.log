@@ -1,0 +1,97 @@
+
+Projeto: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3
+
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/integration/ConnectIT.java linha: 86 Método: assertTrue(took > timeout, ("Time taken was " + took))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/integration/ConnectIT.java linha: 87 Método: assertTrue(took < timeout * 1.8, ("Time taken was " + took))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/integration/ConnectTest.java linha: 311 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Connection.Response res = Jsoup.connect(echoUrl).execute();
+    Document doc = res.parse();
+    String body = res.body();
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/integration/ConnectTest.java linha: 332 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Connection.Response res = Jsoup.connect(echoUrl).execute();
+    Document doc = res.parse();
+    assertTrue(doc.title().contains("Environment"));
+    Document doc2 = res.parse();
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/integration/UrlConnectTest.java linha: 244 Método: assertThrows(IOException.class, () -> Jsoup.connect(url).execute())
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/integration/UrlConnectTest.java linha: 259 Método: assertThrows(IOException.class, () -> Jsoup.connect(WEBSITE_WITH_SNI).execute())
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/TagTest.java linha: 73 Método: assertThrows(IllegalArgumentException.class, () -> Tag.valueOf(null))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/TagTest.java linha: 77 Método: assertThrows(IllegalArgumentException.class, () -> Tag.valueOf(" "))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/HtmlParserTest.java linha: 957 Método: assertTrue(el instanceof FormElement, "Is form element")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/HtmlParserTest.java linha: 971 Método: assertTrue(el instanceof FormElement, "Is form element")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/HtmlParserTest.java linha: 1042 Método: assertTrue(endOfEmail > -1, "Comment not found")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/HtmlParserTest.java linha: 1043 Método: assertTrue(guarantee > -1, "Search text not found")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/HtmlParserTest.java linha: 1044 Método: assertTrue(guarantee > endOfEmail, "Search text did not come after comment")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java linha: 58 Método: assertTrue(Tag.isKnownTag(tagName), String.format("Unknown tag name: %s", tagName))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/CharacterReaderTest.java linha: 337 Método: assertFalse(r.isEmpty(), "Should not be empty")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/AttributeParseTest.java linha: 85 Método: assertEquals(3, attributes.size(), "There should be 3 attribute present")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/AttributeParseTest.java linha: 93 Método: assertFalse(doc.select("img[onerror]").isEmpty(), "SelfClosingStartTag ignores last character")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/HtmlTreeBuilderTest.java linha: 26 Método: assertThrows(IllegalArgumentException.class, () -> {
+    HtmlTreeBuilder treeBuilder = new HtmlTreeBuilder();
+    treeBuilder.parse(null, null, null);
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/TokeniserTest.java linha: 38 Método: assertTrue(src.contains("X"), "Handles for quote " + quote)
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/TokeniserTest.java linha: 176 Método: assertEquals(s.charAt(0), Tokeniser.win1252Extensions[i], "At: " + i)
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/TokeniserTest.java linha: 192 Método: assertTrue(commentNode instanceof Comment, "Expected comment node")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/parser/TokeniserTest.java linha: 209 Método: assertTrue(cdataNode instanceof CDataNode, "Expected CDATA node")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/AttributeTest.java linha: 26 Método: assertThrows(IllegalArgumentException.class, () -> new Attribute(" ", "Check"))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/AttributeTest.java linha: 30 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Attribute attr = new Attribute("One", "Check");
+    attr.setKey(" ");
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/DocumentTypeTest.java linha: 23 Método: assertThrows(IllegalArgumentException.class, () -> new DocumentType("html", null, null))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/AttributesTest.java linha: 201 Método: assertFalse(a.hasKey("a"), "Attribute 'a' not correctly removed")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/AttributesTest.java linha: 202 Método: assertTrue(a.hasKey("b"), "Attribute 'b' not present after renaming")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/ElementTest.java linha: 586 Método: assertEquals(1, attributes.size(), "There should be one attribute")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/ElementTest.java linha: 645 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Document doc = Jsoup.parse("<div id=1><p>Hello</p></div>");
+    Element div = doc.getElementById("1");
+    div.appendText(null);
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/ElementTest.java linha: 654 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Document doc = Jsoup.parse("<div id=1><p>Hello</p></div>");
+    Element div = doc.getElementById("1");
+    div.prependText(null);
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/DocumentTest.java linha: 470 Método: assertFalse(output.contains("?"), "Should not have contained a '?'.")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/nodes/DocumentTest.java linha: 471 Método: assertTrue(output.contains("&#xa0;") || output.contains("&nbsp;"), "Should have contained a '&#xa0;' or a '&nbsp;'.")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/helper/HttpConnectionTest.java linha: 28 Método: assertThrows(IllegalArgumentException.class, () -> {
+    URL url = con.request().url();
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/helper/HttpConnectionTest.java linha: 34 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Connection con = HttpConnection.connect("http://example.com");
+    con.response();
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/helper/HttpConnectionTest.java linha: 41 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Connection con = HttpConnection.connect("http://example.com");
+    con.response().parse();
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/helper/HttpConnectionTest.java linha: 48 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Connection con = HttpConnection.connect("http://example.com");
+    con.response().body();
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/helper/HttpConnectionTest.java linha: 55 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Connection con = HttpConnection.connect("http://example.com");
+    con.response().bodyAsBytes();
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/helper/HttpConnectionTest.java linha: 183 Método: assertThrows(IllegalArgumentException.class, () -> HttpConnection.connect("bzzt"))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/helper/HttpConnectionTest.java linha: 214 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Connection con = HttpConnection.connect("http://example.com/");
+    con.data("Name", "val", "what");
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/safety/CleanerTest.java linha: 310 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Safelist w = Safelist.none();
+    w.addAttributes("a", "href");
+    w.removeProtocols("a", "href", "javascript");
+})
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/select/QueryParserTest.java linha: 62 Método: assertThrows(Selector.SelectorParseException.class, () -> QueryParser.parse("section > a[href=\"]"))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/select/QueryParserTest.java linha: 66 Método: assertThrows(Selector.SelectorParseException.class, () -> QueryParser.parse("p:contains(One \" One)"))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/select/QueryParserTest.java linha: 71 Método: assertThrows(Selector.SelectorParseException.class, () -> QueryParser.parse(""))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/select/QueryParserTest.java linha: 75 Método: assertThrows(Selector.SelectorParseException.class, () -> QueryParser.parse(null))
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/select/CssTest.java linha: 201 Método: assertEquals(expectedContent.length, result.size(), "Number of elements")
+Assert com mensagem: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3/src/test/java/org/jsoup/select/CssTest.java linha: 204 Método: assertEquals(expectedContent[i], result.get(i).ownText(), "Expected element")
+Total asserts: 3255
+Asserts sem descrição: 3209
+Asserts com descrição: 46
+Assertion Roulette: 2850

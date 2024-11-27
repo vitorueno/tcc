@@ -1,0 +1,98 @@
+eram esperados valores nulos, mas p1.getUnderlyingDataset() retornou um valor
+eram esperados valores iguais, mas o valor retornado é diferente de 0
+era esperado que p1.getKeys() estivesse vazio, mas não está
+eram esperados valores nulos, mas "R1" possui um valor
+eram esperados valores iguais, mas o valor retornado de d1.getValue("C1") é diferente de 1.1
+eram esperados valores iguais, mas o valor retornado de d1.getValue("C2") é diferente de 2.2
+eram esperados valores iguais, mas o valor retornado de d1.getKey(0) é diferente de "C1"
+eram esperados valores iguais, mas o valor retornado de d1.getKey(1) é diferente de "C2"
+eram esperados valores iguais, mas 0 é diferente do índice retornado por d1.getIndex("C1")
+eram esperados valores iguais, mas 1 é diferente do índice retornado por d1.getIndex("C2")
+eram esperados valores iguais, mas -1 é diferente do índice retornado por d1.getIndex("XX")
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem iguais, mas não são
+os datasets são diferentes
+os datasets são diferentes
+o tipo de extração dos datasets é diferente
+o índice de extração dos datasets é diferente
+eram esperados valores iguais, mas o valor retornado de d.getValue("R1", "C1") é diferente de 1.0
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o valor retornado não é nulo
+eram esperados valores iguais, mas o valor retornado de d.getValue("R2", "C1") é diferente de 2.0
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o número de linhas não é igual a 0
+o número de linhas não é igual a 1
+o número de linhas não é igual a 2
+o número de linhas não é igual a 2
+o número de linhas não é igual a 2
+o número de colunas não é igual a 0
+o número de colunas não é igual a 1
+o número de colunas não é igual a 2
+o número de colunas não é igual a 2
+o número de colunas não é igual a 2
+os datasets são diferentes
+os datasets são diferentes
+os datasets são diferentes
+os datasets são diferentes
+os datasets são diferentes
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem diferentes, mas são iguais
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem diferentes, mas são iguais
+era esperado que os objetos fossem iguais, mas não são
+o resultado deveria ser verdadeiro, mas foi falso
+eram esperados valores nulos, mas o valor retornado não é nulo
+eram esperados valores iguais, mas o valor retornado de d1.getValue("R2", "C1") é diferente de 1.0
+o resultado deveria ser verdadeiro, mas foi falso
+o número de linhas não é igual a 0
+o número de colunas não é igual a 0
+o valor retornado é diferente de 2.0
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+os datasets são diferentes
+os datasets são diferentes
+era esperado que os objetos fossem diferentes, mas são iguais
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o número de colunas não é igual a 2
+o número de colunas não é igual a 1
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o número de linhas não é igual a 2
+o número de linhas não é igual a 1
+o valor inicial é diferente de 0.1
+o valor inicial é diferente de 0.2
+o valor inicial é diferente de 0.3
+o valor inicial é diferente de 0.3
+o valor inicial é diferente de 0.4
+o valor inicial é diferente de 0.5
+o valor final é diferente de 0.5
+o valor final é diferente de 0.6
+o valor final é diferente de 0.7
+o valor final é diferente de 0.7
+o valor final é diferente de 0.8
+o valor final é diferente de 0.9
+o resultado deveria ser verdadeiro, mas foi falso
+o resultado deveria ser verdadeiro, mas foi falso
+o número de linhas não é igual a 2
+o número de colunas não é igual a 3
+os datasets são diferentes
+os datasets são diferentes
+os datasets são iguais
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem diferentes, mas são iguais
+era esperado que os objetos fossem iguais, mas não são
+os datasets são diferentes
+o valor inicial é diferente de 99.9
+o valor final é diferente de 99.9

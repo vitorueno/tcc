@@ -1,0 +1,7 @@
+- Assertions.assertEquals(0, accessor.getValues().length), "A lista de valores não deve ter elemento"
+- Assertions.assertEquals(parameters, accessor.getParameters()), "Os parâmetros não coincidem com os obtidos"
+- assertNotNull(userRepository), "O usuário não pode ser nulo"
+- assertNotNull(roleRepository), "O papel não pode ser nulo"
+- assertNotNull(auditableUserRepository), "A usuária auditável não pode ser nula"
+- assertNotNull(mappingContext), "O contexto de mapeamento não pode ser nulo"
+- assertFalse(beans.entrySet().isEmpty()), "A lista de beans não está vazia"

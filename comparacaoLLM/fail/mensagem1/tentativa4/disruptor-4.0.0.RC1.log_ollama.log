@@ -1,0 +1,32 @@
+*   `eventHandlerGroup`
+*   `testException`
+*   `testException`
+*   `testException`
+*   `testException`
+*   `sequencer.next()`
+*   `sequencer.next(4)`
+*   `sequencer.hasAvailableCapacity(1)`
+*   `sequencer.hasAvailableCapacity(BUFFER_SIZE)`
+*   `sequencer.hasAvailableCapacity(BUFFER_SIZE + 1)`
+*   `sequencer.hasAvailableCapacity(BUFFER_SIZE - 1)`
+*   `sequencer.isAvailable(seq)`
+*   `sequencer.await(2, TimeUnit.SECONDS)`
+*   `exceptionLatch.await(2, TimeUnit.SECONDS)`
+*   `batchSizes`
+*   `h1.awaitStart(2, TimeUnit.SECONDS)`
+*   `h1.awaitStop(2, TimeUnit.SECONDS)`
+*   `timeWaiting >= theTimeout`
+*   `sequence.addAndGet(10)`
+*   `sequence.get()`
+*   `sequence.incrementAndGet()`
+*   `sequence.getAndAdd(1)`
+*   `batchEventProcessor.getSequence().get()`
+*   `ringBuffer.getCursor()`
+*   `expectedEvent`
+*   `messages.get().get(0)`
+*   `available`
+*   `rewindPauseStrategy.count`
+*   `rewindPauseStrategy.count`
+*   `powerOfTwo`
+*   `Util.getMinimumSequence(sequences)`
+*   `ex.getCause()`

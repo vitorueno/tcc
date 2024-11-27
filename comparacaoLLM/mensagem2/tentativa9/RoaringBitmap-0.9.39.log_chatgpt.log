@@ -1,0 +1,99 @@
+eram esperados valores falsos, mas o resultado foi verdadeiro
+eram esperados valores falsos, mas o resultado foi verdadeiro
+eram esperados valores iguais, mas bitmap.getCardinality() é diferente de iteratorCopy.size()
+eram esperados valores iguais, mas bitmap.getCardinality() é diferente de intIteratorCopy.size()
+eram esperados valores iguais, mas bitmap.getCardinality() é diferente de reverseIntIteratorCopy.size()
+eram esperados valores iguais, mas Ints.asList(data) é diferente de iteratorCopy
+eram esperados valores iguais, mas Ints.asList(data) é diferente de intIteratorCopy
+eram esperados valores iguais, mas Lists.reverse(Ints.asList(data)) é diferente de reverseIntIteratorCopy
+eram esperados valores iguais, mas ImmutableList.of(1, 2, 3) é diferente de iteratorCopy
+eram esperados valores iguais, mas ImmutableList.of(1, 2, 3) é diferente de intIteratorCopy
+eram esperados valores iguais, mas ImmutableList.of(3, 2, 1) é diferente de reverseIntIteratorCopy
+eram esperados valores iguais, mas bitmap.last() é diferente de bitmap.reverseStream().max().getAsInt()
+eram esperados valores iguais, mas bitmap.last() é diferente de bitmap.stream().max().getAsInt()
+eram esperados valores iguais, mas total é diferente de source.size()
+eram esperados valores iguais, mas rb1 é diferente de rb2
+eram esperados valores diferentes, mas rb1 é igual a rb2
+eram esperados valores iguais, mas total é diferente de i
+eram esperados valores iguais, mas source.size() é diferente de i
+eram esperados valores iguais, mas select2 é diferente de deserStreamOne.select(2)
+eram esperados valores iguais, mas select2 é diferente de deserBBOne.select(2)
+eram esperados valores falsos, mas map.getLongIterator().hasNext() é verdadeiro
+eram esperados valores iguais, mas 0 é diferente de map.getLongCardinality()
+eram esperados valores verdadeiros, mas map.isEmpty() é falso
+eram esperados valores falsos, mas map.contains(0) é verdadeiro
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Long.MIN_VALUE)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Long.MIN_VALUE + 1)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(-1)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(0)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(1)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Long.MAX_VALUE - 1)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Long.MAX_VALUE)
+eram esperados valores verdadeiros, mas iterator.hasNext() é falso
+eram esperados valores iguais, mas 0 é diferente de iterator.next()
+eram esperados valores iguais, mas 0 é diferente de map.select(0)
+eram esperados valores verdadeiros, mas map.contains(0) é falso
+eram esperados valores falsos, mas iterator.hasNext() é verdadeiro
+eram esperados valores iguais, mas 1 é diferente de map.getLongCardinality()
+eram esperados valores verdadeiros, mas map.isEmpty() é falso
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(Long.MIN_VALUE)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(Integer.MIN_VALUE - 1L)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(-1)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(0)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(1)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(Integer.MAX_VALUE + 1L)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(Long.MAX_VALUE)
+eram esperados valores verdadeiros, mas iterator.hasNext() é falso
+eram esperados valores iguais, mas -1 é diferente de iterator.next()
+eram esperados valores iguais, mas -1 é diferente de map.select(0)
+eram esperados valores verdadeiros, mas map.contains(-1) é falso
+eram esperados valores falsos, mas iterator.hasNext() é verdadeiro
+eram esperados valores iguais, mas 1 é diferente de map.getLongCardinality()
+eram esperados valores verdadeiros, mas map.isEmpty() é falso
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Long.MIN_VALUE)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Integer.MIN_VALUE - 1L)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(0)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(1)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Integer.MAX_VALUE + 1L)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Long.MAX_VALUE)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(-2)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(-1)
+eram esperados valores diferentes, mas o array não é igual
+eram esperados valores verdadeiros, mas iterator.hasNext() é falso
+eram esperados valores iguais, mas 123 é diferente de iterator.next()
+eram esperados valores iguais, mas 123 é diferente de map.select(0)
+eram esperados valores verdadeiros, mas map.contains(123) é falso
+eram esperados valores verdadeiros, mas iterator.hasNext() é falso
+eram esperados valores iguais, mas 234 é diferente de iterator.next()
+eram esperados valores iguais, mas 234 é diferente de map.select(1)
+eram esperados valores verdadeiros, mas map.contains(234) é falso
+eram esperados valores falsos, mas iterator.hasNext() é verdadeiro
+eram esperados valores falsos, mas map.contains(345) é verdadeiro
+eram esperados valores iguais, mas 2 é diferente de map.getLongCardinality()
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(0)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(123)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(233)
+eram esperados valores iguais, mas 2 é diferente de map.rankLong(234)
+eram esperados valores iguais, mas 2 é diferente de map.rankLong(235)
+eram esperados valores iguais, mas 2 é diferente de map.rankLong(Integer.MAX_VALUE + 1L)
+eram esperados valores iguais, mas 2 é diferente de map.rankLong(Long.MAX_VALUE)
+eram esperados valores diferentes, mas o array não é igual
+eram esperados valores iguais, mas 0xFFFFFFFFL é diferente de map.select(0)
+eram esperados valores verdadeiros, mas map.getLongIterator().hasNext() é falso
+eram esperados valores iguais, mas 0 é diferente de map.getLongIterator().next()
+eram esperados valores verdadeiros, mas iterator.hasNext() é falso
+eram esperados valores iguais, mas Long.MAX_VALUE é diferente de iterator.next()
+eram esperados valores iguais, mas Long.MAX_VALUE é diferente de map.select(0)
+eram esperados valores verdadeiros, mas iterator.hasNext() é falso
+eram esperados valores iguais, mas 1 é diferente de map.getLongCardinality()
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(Long.MIN_VALUE)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(Long.MIN_VALUE + 1)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(-1)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(0)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(1)
+eram esperados valores iguais, mas 0 é diferente de map.rankLong(Long.MAX_VALUE - 1)
+eram esperados valores iguais, mas 1 é diferente de map.rankLong(Long.MAX_VALUE)
+eram esperados valores diferentes, mas o array não é igual
+eram esperados valores verdadeiros, mas iterator.hasNext() é falso
+eram esperados valores iguais, mas Long.MIN_VALUE é diferente de iterator.next()
+eram esperados valores iguais, mas Long.MIN_VALUE é diferente de map.select(0)

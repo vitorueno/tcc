@@ -1,0 +1,130 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. assertEquals(trade.getIsin(), rs.getString(1))
+eram esperados valores iguais, mas "testCustomer" é diferente de trade.getIsin()
+
+2. assertEquals(trade.getQuantity(), rs.getLong(2))
+eram esperados valores iguais, mas 5 é diferente de trade.getQuantity()
+
+3. assertEquals(trade.getPrice(), rs.getBigDecimal(3))
+eram esperados valores iguais, mas 99.69 não é igual a trade.getPrice()
+
+4. assertEquals(trade.getCustomer(), rs.getString(4))
+eram esperados valores iguais, mas "Doe" é diferente de trade.getCustomer()
+
+5. assertEquals(activeRow, trades.size())
+eram esperados valores iguais, mas 1 é diferente de activeRow
+
+6. assertEquals(customers.size(), activeRow)
+eram esperados valores iguais, mas 1 é diferente de customers.size()
+
+7. assertEquals(customer.getName(), rs.getString(1))
+eram esperados valores iguais, mas "John" é diferente de customer.getName()
+
+8. assertEquals(BatchStatus.COMPLETED, execution.getStatus())
+eram esperados valores iguais, mas BatchStatus.COMPLETED não é igual a BatchStatus.COMPLETED
+
+9. assertEquals(after - before, execution.getStepExecutions().iterator().next().getReadCount())
+eram esperados valores iguais, mas 95 é diferente de after - before
+
+10. assertEquals(BatchStatus.COMPLETED, jobExecution.getStatus())
+eram esperados valores iguais, mas BatchStatus.COMPLETED não é igual a BatchStatus.COMPLETED
+
+11. assertEquals("yes", jobExecution.getExecutionContext().getString("done"))
+eram esperados valores iguais, mas "yes" não é igual a "yes"
+
+12. assertEquals("foo", value)
+eram esperados valores iguais, mas "foo" não é igual a "foo"
+
+13. assertEquals("foo2", strValue)
+eram esperados valores iguais, mas "foo2" não é igual a "foo2"
+
+14. assertEquals(3, integerValue.intValue())
+eram esperados valores iguais, mas 5 é diferente de 3
+
+15. assertEquals(before + 5, after)
+eram esperados valores iguais, mas before + 5 não é igual a after
+
+16. assertEquals(trade.getIsin(), rs.getString(1))
+eram esperados valores iguais, mas "testCustomer" é diferente de trade.getIsin()
+
+17. assertEquals(trade.getQuantity(), rs.getLong(2))
+eram esperados valores iguais, mas 5 é diferente de trade.getQuantity()
+
+18. assertEquals(trade.getPrice(), rs.getBigDecimal(3))
+eram esperados valores iguais, mas 99.69 não é igual a trade.getPrice()
+
+19. assertEquals(trade.getCustomer(), rs.getString(4))
+eram esperados valores iguais, mas "Doe" é diferente de trade.getCustomer()
+
+20. assertEquals(EXPECTED_OUTPUT_FILE, output)
+eram esperados valores iguais, mas EXPECTED_OUTPUT_FILE não é igual a output
+
+21. assertEquals(itemGenerator.getLimit() + 2, itemProcessor.getCounter())
+eram esperados valores iguais, mas itemProcessor.getCounter() é diferente de itemGenerator.getLimit() + 2
+
+22. assertEquals("foo", mapper.mapFieldSet(new DefaultFieldSet(new String[] { "FOO" })).getItem())
+eram esperados valores iguais, mas "foo" não é igual a "foo"
+
+23. assertNotNull(result)
+eram esperados valores iguais, mas result é NULL
+
+24. assertEquals(o, order)
+eram esperados valores iguais, mas o não é igual a order
+
+25. assertEquals(o.getCustomer(), customer)
+eram esperados valores iguais, mas o.getCustomer() não é igual a customer
+
+26. assertEquals(o.getBillingAddress(), billing)
+eram esperados valores iguais, mas o.getBillingAddress() não é igual a billing
+
+27. assertEquals(o.getShippingAddress(), shipping)
+eram esperados valores iguais, mas o.getShippingAddress() não é igual a shipping
+
+28. assertEquals(o.getBilling(), billingInfo)
+eram esperados valores iguais, mas o.getBilling() não é igual a billingInfo
+
+29. assertEquals(o.getShipping(), shippingInfo)
+eram esperados valores iguais, mas o.getShipping() não é igual a shippingInfo
+
+30. assertEquals(3, o.getLineItems().size())
+eram esperados valores iguais, mas 4 são diferentes de 3
+
+31. assertNull(provider.read())
+eram esperados valores iguais, mas provider.read() não é NULL
+
+32. assertTrue(orderValidator.supports(Order.class))
+eram esperados valores iguais, mas orderValidator.supports(Order.class) é falso
+
+33. assertEquals(1, errors.getAllErrors().size())
+eram esperados valores iguais, mas 0 são diferentes de 1
+
+34. assertEquals("Incorrect type", errors.getAllErrors().get(0).getCode())
+eram esperados valores iguais, mas "Incorrect type" não é igual a "Incorrect type"
+
+35. assertEquals(0, errors.getAllErrors().size())
+eram esperados valores iguais, mas 0 são diferentes de 0
+
+36. assertEquals(3, errors.getAllErrors().size())
+eram esperados valores iguais, mas 2 são diferentes de 3
+
+37. assertEquals("error.order.id", errors.getFieldError("orderId").getCode())
+eram esperados valores iguais, mas "error.order.id" não é igual a "error.order.id"
+
+38. assertEquals("error.order.date.future", errors.getFieldError("orderDate").getCode())
+eram esperados valores iguais, mas "error.order.date.future" não é igual a "error.order.date.future"
+
+39. assertEquals("error.order.lines.badcount", errors.getFieldError("totalLines").getCode())
+eram esperados valores iguais, mas "error.order.lines.badcount" não é igual a "error.order.lines.badcount"
+
+40. assertEquals(2, errors.getAllErrors().size())
+eram esperados valores iguais, mas 1 são diferentes de 2
+
+41. assertEquals("error.order.id", errors.getFieldError("orderId").getCode())
+eram esperados valores iguais, mas "error.order.id" não é igual a "error.order.id"
+
+42. assertEquals("error.order.lines.badcount", errors.getFieldError("totalLines").getCode())
+eram esperados valores iguais, mas "error.order.lines.badcount" não é igual a "error.order.lines.badcount"
+
+43. assertEquals(0, errors.getAllErrors().size())
+eram esperados valores iguais, mas 0 são diferentes de 0

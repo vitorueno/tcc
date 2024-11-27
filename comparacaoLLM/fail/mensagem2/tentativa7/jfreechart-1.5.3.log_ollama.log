@@ -1,0 +1,21 @@
+1. eram esperados valores iguais, mas p1.getUnderlyingDataset() não é nulo
+2. eram esperados valores iguais, mas o tamanho do item de p1 é zero
+3. eram esperados valores iguais, mas as chaves de p1 estão vazias
+4. eram esperados valores iguais, mas a chave 'R1' de p1 não existe
+5. eram esperados valores iguais, mas o valor "C1" de d1 é igual a 1.1
+6. eram esperados valores iguais, mas o valor "C2" de d1 é igual a 2.2
+7. eram esperados valores iguais, mas o índice 'C1' de d1 é igual a 0
+8. eram esperados valores iguais, mas o índice 'C2' de d1 é igual a 1
+9. eram esperados valores iguais, mas o índice 'XX' de d1 é igual a -1
+10. eram esperados valores iguais, mas pass é verdadeiro
+11. eram esperados valores iguais, mas pass é verdadeiro
+12. eram esperados valores iguais, mas pass é verdadeiro
+13. o valor "R1" de d1 está igual a 1.0 em 'C1'
+14. eram esperados valores iguais, mas pass é verdadeiro
+15. eram esperados valores iguais, mas pass é verdadeiro
+16. eram esperados valores iguais, mas o número de linhas na matriz é dois
+17. eram esperados valores iguais, mas o número de colunas da matriz é três
+18. as duas instâncias 'dA' e 'dB' são igualas
+19. as duas instâncias 'empty1' e 'empty2' são igualas
+20. o valor "R1" de d1 está igual a 99.9 em 'Series 1', 'Category 2'
+21. eram esperados valores iguais, mas pass é verdadeiro

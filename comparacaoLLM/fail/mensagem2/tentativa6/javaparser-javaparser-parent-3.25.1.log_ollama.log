@@ -1,0 +1,25 @@
+eram esperados valores iguais, mas "java.lang.Object" é diferente de type.describe()
+eram esperados valores iguais, mas a execução foi interrompida após 1000ms
+eram esperados valores iguais, mas a expressão "foo(new Object[5])" não foi igual à string literal "foo.bar.BinaryExpr.Operator OR"
+eram esperados valores iguais, mas o valor de type.equals("java.lang.String")
+eram esperados valores iguais, mas a variável "fae" não é nula
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(3).calculateResolvedType().describe()" não é "float"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(4).calculateResolvedType().describe()" não é "double"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(5).calculateResolvedType().describe()" não é "int"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(6).calculateResolvedType().describe()" não é "long"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(7).calculateResolvedType().describe()" não é "long"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(8).calculateResolvedType().describe()" não é "int"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(9).calculateResolvedType().describe()" não é "long"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(10).calculateResolvedType().describe()" não é "long"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(11).calculateResolvedType().describe()" não é "int"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(12).calculateResolvedType().describe()" não é "int"
+eram esperados valores iguais, mas o tipo da expressão "exprs.get(13).calculateResolvedType().describe()" não é "void"
+eram esperados valores iguais, mas a classe do retorno de D não foi encontrada
+eram esperados valores iguais, mas a classe do retorno de void não foi encontrada
+eram esperados valores iguais, mas o tipo da expressão "resolve.getType().describe()" não é "int"
+eram esperados valores iguais, mas o nome "Test1.Test2" não foi encontrado
+eram esperados valores iguais, mas o nome "Test1.Test3" não foi encontrado
+eram esperados valores iguais, mas a classe do retorno de java.util.ArrayList não foi encontrada
+eram esperados valores iguais, mas o tipo da expressão "mce.calculateResolvedType().describe()" não é "void"
+eram esperados valores iguais, mas a classe do retorno de void não foi encontrada
+eram esperados valores iguais, mas a expressão "foo.bar.BinaryExpr.Operator OR" não é igual à string literal "foo.bar.BinaryExpr.Operator AND"

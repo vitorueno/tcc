@@ -1,0 +1,12 @@
+eram esperadas strings iguais, mas "test.test" é diferente de fileName
+eram esperadas strings iguais, mas "test" é diferente de fileName
+eram esperadas strings iguais, mas "Object" é diferente de fileName
+eram esperadas strings iguais, mas "file.png" é diferente de fileName
+eram esperadas strings iguais, mas "file." é diferente de fileName
+esperado "test", mas obtido "dGVzdA=="
+o objeto ripper não encontrou um JSONObject contendo o photoId "-45984105_457345201"
+a URL "https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150" é diferente de doc.location()
+a URL "https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300" é diferente de doc.location()
+esperado "975973", mas obtido ripper.getGID(new URL("https://hitomi.la/galleries/975973.html"))
+a página não contém álbuns
+a página não contém álbuns

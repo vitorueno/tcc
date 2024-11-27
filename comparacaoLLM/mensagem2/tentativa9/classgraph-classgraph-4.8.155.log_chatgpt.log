@@ -1,0 +1,3 @@
+eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)

@@ -1,0 +1,27 @@
+Bons dias!
+
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+```java
+eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+
+falsamente negado, pois mappings.get(0).getRequest().getHeaders() não contém a chave "No"
+verificado verdadeiro
+verificado verdadeiro
+falsamente negado, pois result não é igual a verdadeiro
+verificado verdadeiro, mas não é o valor esperado
+verificado verdadeiro
+falsamente negado, pois matcher.match("2022-06-14T12:13:14Z").isExactMatch() falhou
+falsamente negado, pois matcher.match("1921-06-14T12:13:14Z").isExactMatch() falhou
+verificado verdadeiro
+falsamente negado, pois matcher.match("2021-06-24T13:40:27Z").isExactMatch() falhou
+falsamente negado, pois matcher.match("1921-06-24T13:40:27Z").isExactMatch() falhou
+verificado verdadeiro
+falsamente negado, pois matcher.match("2021-06-14T12:13:14").isExactMatch() falhou
+falsamente negado, pois matcher.match("1921-06-14T12:13:14").isExactMatch() falhou
+verificado verdadeiro
+```
+
+Espero que isso ajude! Se tiver mais alguma dúvida, não hesite em perguntar.

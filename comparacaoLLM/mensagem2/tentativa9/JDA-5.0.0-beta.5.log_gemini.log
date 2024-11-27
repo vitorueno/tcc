@@ -1,0 +1,100 @@
+O valor esperado era 10, mas o valor obtido em object.getInt("int", 0) foi diferente.
+O valor esperado era 100, mas o valor obtido em object.getLong("long", 0) foi diferente.
+O valor esperado era true, mas o valor obtido em object.getBoolean("boolean", false) foi diferente.
+O valor esperado era "test", mas o valor obtido em object.getString("string", null) foi diferente.
+O mapa esperado era diferente do mapa obtido em object.toMap() e symmetric.toMap().
+O valor esperado era "ABCDEF", mas o valor obtido em markdown.compute("**A_B||C~~D__E`F`__~~||_**") foi diferente.
+O valor esperado era "", mas o valor obtido em markdown.compute("") foi diferente.
+O valor esperado era "Hello World ~~~~", mas o valor obtido em markdown.compute("Hello World ~~~~") foi diferente.
+O valor esperado era "Hello World ~", mas o valor obtido em markdown.compute("Hello World ~~~~~") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("**Hello**") foi diferente.
+O valor esperado era "**Hello", mas o valor obtido em markdown.compute("**Hello") foi diferente.
+O valor esperado era "\\**Hello**", mas o valor obtido em markdown.compute("\\**Hello**") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("*Hello*") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("_Hello_") foi diferente.
+O valor esperado era "*Hello", mas o valor obtido em markdown.compute("*Hello") foi diferente.
+O valor esperado era "_Hello", mas o valor obtido em markdown.compute("_Hello") foi diferente.
+O valor esperado era "\\*Hello*", mas o valor obtido em markdown.compute("\\*Hello*") foi diferente.
+O valor esperado era "\\_Hello_", mas o valor obtido em markdown.compute("\\_Hello_") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("***Hello***") foi diferente.
+O valor esperado era "***Hello", mas o valor obtido em markdown.compute("***Hello") foi diferente.
+O valor esperado era "\\***Hello***", mas o valor obtido em markdown.compute("\\***Hello***") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("__Hello__") foi diferente.
+O valor esperado era "__Hello", mas o valor obtido em markdown.compute("__Hello") foi diferente.
+O valor esperado era "\\__Hello__", mas o valor obtido em markdown.compute("\\__Hello__") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("~~Hello~~") foi diferente.
+O valor esperado era "~~Hello", mas o valor obtido em markdown.compute("~~Hello") foi diferente.
+O valor esperado era "\\~~Hello~~", mas o valor obtido em markdown.compute("\\~~Hello~~") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("||Hello||") foi diferente.
+O valor esperado era "||Hello", mas o valor obtido em markdown.compute("||Hello") foi diferente.
+O valor esperado era "\\||Hello||", mas o valor obtido em markdown.compute("\\||Hello||") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("`Hello`") foi diferente.
+O valor esperado era "`Hello", mas o valor obtido em markdown.compute("`Hello") foi diferente.
+O valor esperado era "\\`Hello`", mas o valor obtido em markdown.compute("\\`Hello`") foi diferente.
+O valor esperado era "Hello **World**", mas o valor obtido em markdown.compute("`Hello **World**`") foi diferente.
+O valor esperado era "`Hello World", mas o valor obtido em markdown.compute("`Hello **World**") foi diferente.
+O valor esperado era "\\`Hello World`", mas o valor obtido em markdown.compute("\\`Hello **World**`") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("``Hello``") foi diferente.
+O valor esperado era "``Hello", mas o valor obtido em markdown.compute("``Hello") foi diferente.
+O valor esperado era "\\``Hello``", mas o valor obtido em markdown.compute("\\``Hello``") foi diferente.
+O valor esperado era "Hello **World**", mas o valor obtido em markdown.compute("``Hello **World**``") foi diferente.
+O valor esperado era "``Hello World", mas o valor obtido em markdown.compute("``Hello **World**") foi diferente.
+O valor esperado era "\\``Hello World``", mas o valor obtido em markdown.compute("\\``Hello **World**``") foi diferente.
+O valor esperado era "Hello `to` World", mas o valor obtido em markdown.compute("``Hello `to` World``") foi diferente.
+O valor esperado era "``Hello to World", mas o valor obtido em markdown.compute("``Hello `to` World") foi diferente.
+O valor esperado era "\\``Hello to World``", mas o valor obtido em markdown.compute("\\``Hello `to` World``") foi diferente.
+O valor esperado era "Hello", mas o valor obtido em markdown.compute("```Hello```") foi diferente.
+O valor esperado era "```Hello", mas o valor obtido em markdown.compute("```Hello") foi diferente.
+O valor esperado era "\\```Hello```", mas o valor obtido em markdown.compute("\\```Hello```") foi diferente.
+O valor esperado era "Hello **World**", mas o valor obtido em markdown.compute("```Hello **World**```") foi diferente.
+O valor esperado era "```Hello World", mas o valor obtido em markdown.compute("```Hello **World**") foi diferente.
+O valor esperado era "\\```Hello World```", mas o valor obtido em markdown.compute("\\```Hello **World**```") foi diferente.
+O valor esperado era "Hello `to` World", mas o valor obtido em markdown.compute("```Hello `to` World```") foi diferente.
+O valor esperado era "```Hello to World", mas o valor obtido em markdown.compute("```Hello `to` World") foi diferente.
+O valor esperado era "\\```Hello to World```", mas o valor obtido em markdown.compute("\\```Hello `to` World```") foi diferente.
+O valor esperado era "Test", mas o valor obtido em markdown.compute("```java\nTest```") foi diferente.
+O valor esperado era "Hello > World", mas o valor obtido em markdown.compute("> Hello > World") foi diferente.
+O valor esperado era "Hello\nWorld", mas o valor obtido em markdown.compute("> Hello\n> World") foi diferente.
+O valor esperado era "Hello\nWorld", mas o valor obtido em markdown.compute(">>> Hello\nWorld") foi diferente.
+O valor esperado era "Hello\nWorld", mas o valor obtido em markdown.compute(">>>\nHello\nWorld") foi diferente.
+O valor esperado era "Hello > World", mas o valor obtido em markdown.compute(">>>\nHello > World") foi diferente.
+O valor esperado era "**A_B||C~~D__E`F`__~~||_**", mas o valor obtido em markdown.compute("**A_B||C~~D__E`F`__~~||_**") foi diferente.
+O valor esperado era "**Hello**", mas o valor obtido em markdown.compute("**Hello**") foi diferente.
+O valor esperado era "**Hello", mas o valor obtido em markdown.compute("**Hello") foi diferente.
+O valor esperado era "*Hello*", mas o valor obtido em markdown.compute("*Hello*") foi diferente.
+O valor esperado era "_Hello_", mas o valor obtido em markdown.compute("_Hello_") foi diferente.
+O valor esperado era "*Hello", mas o valor obtido em markdown.compute("*Hello") foi diferente.
+O valor esperado era "_Hello", mas o valor obtido em markdown.compute("_Hello") foi diferente.
+O valor esperado era "***Hello***", mas o valor obtido em markdown.compute("***Hello***") foi diferente.
+O valor esperado era "***Hello", mas o valor obtido em markdown.compute("***Hello") foi diferente.
+O valor esperado era "\\***Hello***", mas o valor obtido em markdown.compute("\\***Hello***") foi diferente.
+O valor esperado era "__Hello__", mas o valor obtido em markdown.compute("__Hello__") foi diferente.
+O valor esperado era "__Hello", mas o valor obtido em markdown.compute("__Hello") foi diferente.
+O valor esperado era "~~Hello~~", mas o valor obtido em markdown.compute("~~Hello~~") foi diferente.
+O valor esperado era "~~Hello", mas o valor obtido em markdown.compute("~~Hello") foi diferente.
+O valor esperado era "||Hello||", mas o valor obtido em markdown.compute("||Hello||") foi diferente.
+O valor esperado era "||Hello", mas o valor obtido em markdown.compute("||Hello") foi diferente.
+O valor esperado era "`Hello`", mas o valor obtido em markdown.compute("`Hello`") foi diferente.
+O valor esperado era "`Hello", mas o valor obtido em markdown.compute("`Hello") foi diferente.
+O valor esperado era "`Hello **World**`", mas o valor obtido em markdown.compute("`Hello **World**`") foi diferente.
+O valor esperado era "`Hello **World**", mas o valor obtido em markdown.compute("`Hello **World**") foi diferente.
+O valor esperado era "``Hello``", mas o valor obtido em markdown.compute("``Hello``") foi diferente.
+O valor esperado era "``Hello", mas o valor obtido em markdown.compute("``Hello") foi diferente.
+O valor esperado era "``Hello **World**``", mas o valor obtido em markdown.compute("``Hello **World**``") foi diferente.
+O valor esperado era "``Hello **World**", mas o valor obtido em markdown.compute("``Hello **World**") foi diferente.
+O valor esperado era "``Hello `to` World``", mas o valor obtido em markdown.compute("``Hello `to` World``") foi diferente.
+O valor esperado era "``Hello `to` World", mas o valor obtido em markdown.compute("``Hello `to` World") foi diferente.
+O valor esperado era "```Hello```", mas o valor obtido em markdown.compute("```Hello```") foi diferente.
+O valor esperado era "```Hello", mas o valor obtido em markdown.compute("```Hello") foi diferente.
+O valor esperado era "```Hello **World**```", mas o valor obtido em markdown.compute("```Hello **World**```") foi diferente.
+O valor esperado era "```Hello **World**", mas o valor obtido em markdown.compute("```Hello **World**") foi diferente.
+O valor esperado era "```Hello `to` World```", mas o valor obtido em markdown.compute("```Hello `to` World```") foi diferente.
+O valor esperado era "```Hello `to` World", mas o valor obtido em markdown.compute("```Hello `to` World") foi diferente.
+O valor esperado era "```java\nTest```", mas o valor obtido em markdown.compute("```java\nTest```") foi diferente.
+O valor esperado era "> Hello > World", mas o valor obtido em markdown.compute("> Hello > World") foi diferente.
+O valor esperado era "> Hello\n> World", mas o valor obtido em markdown.compute("> Hello\n> World") foi diferente.
+O valor esperado era ">>> Hello\nWorld", mas o valor obtido em markdown.compute(">>> Hello\nWorld") foi diferente.
+O valor esperado era ">>>\nHello\nWorld", mas o valor obtido em markdown.compute(">>>\nHello\nWorld") foi diferente.
+O valor esperado era ">>>\nHello > World", mas o valor obtido em markdown.compute(">>>\nHello > World") foi diferente.
+O valor esperado era "\\*\\*A\\_B\\||C\\~~D\\_\\_E\\`F\\`\\_\\_\\~~\\||\\_\\*\\*", mas o valor obtido em markdown.compute("**A_B||C~~D__E`F`__~~||_**") foi diferente.
+O valor esperado era "\\*\\*Hello\\*\\*", mas o valor obtido em markdown.compute("**Hello**") foi diferente.

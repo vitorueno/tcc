@@ -1,0 +1,419 @@
+
+Projeto: /home/vitor-otto/opensource/RoaringBitmap-0.9.39
+
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 223 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64Bitmap map = newDefaultCtor();
+    map.addLong(123);
+    map.select(1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 247 Método: assertThrows(IllegalStateException.class, () -> {
+    Roaring64Bitmap map = newDefaultCtor();
+    map.getLongIterator().next();
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 804 Método: assertThrows(IllegalArgumentException.class, () -> left.select(0))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 805 Método: assertThrows(IllegalArgumentException.class, () -> swapLeft.select(0))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1103 Método: assertThrows(IllegalArgumentException.class, () -> map.add(0L, 0L))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1106 Método: assertThrows(IllegalArgumentException.class, () -> map.add(1L, 0L))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1107 Método: assertThrows(IllegalArgumentException.class, () -> map.add(-1, -2))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1110 Método: assertThrows(IllegalArgumentException.class, () -> map.add(Long.MAX_VALUE, 0L))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1111 Método: assertThrows(IllegalArgumentException.class, () -> map.add(Long.MIN_VALUE, Long.MAX_VALUE))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1163 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RoaringBitmap map = new RoaringBitmap();
+    map.add(0L, outOfRoaringBitmapRange);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1237 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    Roaring64Bitmap map = newDefaultCtor();
+    map.addLong(123);
+    map.addLong(234);
+    Iterator<Long> it = map.iterator();
+    assertTrue(it.hasNext());
+    it.remove();
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1266 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64Bitmap map = newDefaultCtor();
+    map.select(0);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1276 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64Bitmap map = newDefaultCtor();
+    map.addLong(123);
+    map.select(1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1285 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64Bitmap map = newDefaultCtor();
+    map.addLong(123);
+    map.select(2);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 1997 Método: assertThrows(NoSuchElementException.class, () -> lni.peekNext())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 2210 Método: assertThrows(NoSuchElementException.class, () -> newDefaultCtor().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64Bitmap.java linha: 2215 Método: assertThrows(NoSuchElementException.class, () -> newDefaultCtor().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 250 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64NavigableMap map = newDefaultCtor();
+    map.addLong(123);
+    map.select(1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 281 Método: assertThrows(IllegalStateException.class, () -> {
+    Roaring64NavigableMap map = newDefaultCtor();
+    map.getLongIterator().next();
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1201 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RoaringBitmap map = new RoaringBitmap();
+    map.add(0L, outOfRoaringBitmapRange);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1285 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    Roaring64NavigableMap map = newUnsignedHeap();
+    map.addLong(123);
+    map.addLong(234);
+    Iterator<Long> it = map.iterator();
+    assertTrue(it.hasNext());
+    it.remove();
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1315 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64NavigableMap map = newUnsignedHeap();
+    map.select(0);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1325 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64NavigableMap map = newUnsignedHeap();
+    map.addLong(123);
+    map.select(1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1336 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Roaring64NavigableMap map = newUnsignedHeap();
+    map.addLong(123);
+    map.select(2);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1573 Método: Assertions.assertThrows(UnsupportedOperationException.class, () -> x.and(y))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1804 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    x.addRange(Long.MAX_VALUE - 1L, Long.MAX_VALUE + 3L);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1811 Método: assertThrows(NoSuchElementException.class, () -> newDefaultCtor().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/longlong/TestRoaring64NavigableMap.java linha: 1816 Método: assertThrows(NoSuchElementException.class, () -> newDefaultCtor().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 32 Método: assertNotEquals(Value.UNINITIALISED, b, "Provide only fully initialised buffers!")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 55 Método: assertEquals(buffer[relativePos], Value.PRESENT, () -> "Mismatch at position " + relativePos)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 65 Método: assertEquals(buffer[relativePos], Value.ABSENT, () -> "Mismatch at position " + relativePos)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 73 Método: assertTrue(relativeFrom < relativeTo, "Only consume [start, end) ranges!")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 78 Método: assertEquals(buffer[i], Value.PRESENT, () -> "Mismatch at position " + finalI)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 87 Método: assertTrue(relativeFrom < relativeTo, "Only consume [start, end) ranges!")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 92 Método: assertEquals(buffer[i], Value.ABSENT, () -> "Mismatch at position " + finalI)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 124 Método: assertEquals(Value.ABSENT, buffer[i], () -> "Mismatch at position " + finalI)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 120 Método: assertEquals(Value.PRESENT, buffer[i], () -> "Mismatch at position " + finalI)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 118 Método: assertEquals(Value.ABSENT, buffer[i], () -> "Mismatch at position " + finalI)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 133 Método: assertEquals(Value.ABSENT, buffer[i], () -> "Mismatch at position " + finalI)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ValidationRangeConsumer.java linha: 140 Método: assertEquals(Value.PRESENT, buffer[i], () -> "Mismatch at position " + finalI)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 323 Método: assertThrows(ArrayIndexOutOfBoundsException.class, () -> emptyContainer().nextSetBit(Short.MAX_VALUE + 1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 329 Método: assertThrows(ArrayIndexOutOfBoundsException.class, () -> emptyContainer().nextSetBit(-1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 335 Método: assertThrows(ArrayIndexOutOfBoundsException.class, () -> emptyContainer().prevSetBit(Short.MAX_VALUE + 1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 342 Método: assertThrows(ArrayIndexOutOfBoundsException.class, () -> emptyContainer().prevSetBit(-1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 349 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container bc = new BitmapContainer();
+    bc.add(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 357 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container bc = new BitmapContainer();
+    bc.iadd(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 615 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container ac = new BitmapContainer();
+    ac.iremove(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 674 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container bc = new BitmapContainer();
+    bc = bc.add(1, 13);
+    bc.select(100);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 683 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container ac = new BitmapContainer();
+    ac.remove(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 715 Método: assertThrows(NoSuchElementException.class, () -> new BitmapContainer().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestBitmapContainer.java linha: 720 Método: assertThrows(NoSuchElementException.class, () -> new BitmapContainer().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/RoaringArrayTest.java linha: 88 Método: assertSame(keys, array.keys, "Keys were not reallocated")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2349 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2423 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2444 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2445 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2464 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2465 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2486 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2487 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2511 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 2512 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 4993 Método: assertThrows(NoSuchElementException.class, () -> new RoaringBitmap().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 4998 Método: assertThrows(NoSuchElementException.class, () -> new RoaringBitmap().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 5306 Método: assertEquals(b1, b2, "mismatch at " + i + "(bitset=" + b2 + ", rb=" + b1 + ")")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 5366 Método: assertThrows(IOException.class, () -> {
+    RoaringBitmap bitmap = new RoaringBitmap();
+    bitmap.deserialize(ByteBuffer.allocate(4));
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 5374 Método: assertThrows(IOException.class, () -> {
+    RoaringBitmap bitmap = new RoaringBitmap();
+    bitmap.deserialize(new DataInputStream(new ByteArrayInputStream(new byte[4])));
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap.java linha: 5382 Método: assertThrows(IOException.class, () -> {
+    RoaringBitmap bitmap = new RoaringBitmap();
+    bitmap.deserialize(new DataInputStream(new ByteArrayInputStream(new byte[4])), new byte[8]);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap_FastRank.java linha: 239 Método: assertThrows(IllegalArgumentException.class, () -> {
+    FastRankRoaringBitmap b = new FastRankRoaringBitmap();
+    b.select(0);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap_FastRank.java linha: 532 Método: assertThrows(IllegalArgumentException.class, () -> roaringBitmap.select(roaringBitmap.getCardinality()))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap_FastRank.java linha: 533 Método: assertThrows(IllegalArgumentException.class, () -> roaringBitmap.select(roaringBitmap.getCardinality() + 1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap_FastRank.java linha: 540 Método: assertThrows(IllegalArgumentException.class, () -> rankRoaringBitmap.select(rankRoaringBitmap.getCardinality()))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmap_FastRank.java linha: 541 Método: assertThrows(IllegalArgumentException.class, () -> rankRoaringBitmap.select(rankRoaringBitmap.getCardinality() + 1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestImmutableRoaringBitmap.java linha: 41 Método: assertThrows(RuntimeException.class, () -> {
+    ImmutableRoaringBitmap a = ImmutableRoaringBitmap.bitmapOf(1, 5, 7, 13);
+    ImmutableRoaringBitmap.flip(a, 7L, 5L);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestImmutableRoaringBitmap.java linha: 49 Método: assertThrows(IllegalArgumentException.class, () -> {
+    ImmutableRoaringBitmap a = ImmutableRoaringBitmap.bitmapOf(1, 5, 7, 13);
+    ImmutableRoaringBitmap.flip(a, 1L << 32, 1L << 33);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestImmutableRoaringBitmap.java linha: 57 Método: assertThrows(IllegalArgumentException.class, () -> {
+    ImmutableRoaringBitmap a = ImmutableRoaringBitmap.bitmapOf(1, 5, 7, 13);
+    ImmutableRoaringBitmap.flip(a, 1L, 1L << 33);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 70 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 91 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 92 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 111 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 112 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 133 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 134 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 158 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 159 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 194 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 195 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 231 Método: assertTrue(iterator1.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 232 Método: assertEquals(i, iterator1.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 248 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 249 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 268 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 269 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 289 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 290 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 293 Método: assertFalse(iterator.hasNext(), "Number of elements " + (2 << 16))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 310 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 311 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapOrNot.java linha: 314 Método: assertFalse(iterator.hasNext(), "Number of elements " + (2 << 16))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestAdversarialInputs.java linha: 53 Método: assertThrows(IOException.class, () -> deserialize(fileName))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestConcatenation.java linha: 83 Método: assertArrayEquals(array1, shifted.toArray(), failureMessage(bitmap))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestConcatenation.java linha: 94 Método: assertArrayEquals(array1, shifted.toArray(), failureMessage(bitmap))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestConcatenation.java linha: 101 Método: assertEquals(bitmap.getCardinality(), shifted.getCardinality(), failureMessage(bitmap))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestConcatenation.java linha: 108 Método: assertEquals(bitmap.getCardinality(), shifted.getCardinality(), failureMessage(bitmap))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestConcatenation.java linha: 119 Método: assertEquals(shifted, deserialized, failureMessage(bitmap))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestConcatenation.java linha: 130 Método: assertEquals(shifted, deserialized, failureMessage(bitmap))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/insights/BitmapAnalyserTest.java linha: 42 Método: assertEquals(runFraction, result.containerFraction(result.getRunContainerCount()), delta)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/insights/BitmapAnalyserTest.java linha: 43 Método: assertEquals(bitmapFraction, result.containerFraction(result.getBitmapContainerCount()), delta)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/insights/BitmapAnalyserTest.java linha: 44 Método: assertEquals(arrayFraction, result.containerFraction(result.getArrayContainersStats().getContainersCount()), delta)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/insights/BitmapAnalyserTest.java linha: 63 Método: assertEquals(runFraction, result.containerFraction(result.getRunContainerCount()), delta)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/insights/BitmapAnalyserTest.java linha: 64 Método: assertEquals(bitmapFraction, result.containerFraction(result.getBitmapContainerCount()), delta)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/insights/BitmapAnalyserTest.java linha: 65 Método: assertEquals(arrayFraction, result.containerFraction(result.getArrayContainersStats().getContainersCount()), delta)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestContainer.java linha: 820 Método: assertEquals(x.xor(y).getCardinality(), x.xorCardinality(y), x.getContainerName() + " " + x + " " + y.getContainerName() + " " + y)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestContainer.java linha: 822 Método: assertEquals(y.xor(x).getCardinality(), y.xorCardinality(x), y.getContainerName() + " " + y + " " + x.getContainerName() + " " + x)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestContainer.java linha: 816 Método: assertEquals(x.xor(x).getCardinality(), x.xorCardinality(x), x.getContainerName() + ": " + x)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestContainer.java linha: 1245 Método: assertThrows(IllegalArgumentException.class, () -> container.forAllInRange(start, end, consumer))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ContainerBatchIteratorTest.java linha: 122 Método: assertArrayEquals(copyOfRange(expectedValues, from, cardinality), copyOfRange(buffer, 0, cardinality - from), "Failure with batch size " + batchSize)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/ContainerBatchIteratorTest.java linha: 144 Método: assertArrayEquals(copyOfRange(expectedValues, from, cardinality), copyOfRange(buffer, 0, cardinality - from), "Failure with batch size " + batchSize + " and container type " + container.getContainerName())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRankIteratorsOfContainers.java linha: 85 Método: assertSame(empty, container, "bad test -- container was changed")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRankIteratorsOfContainers.java linha: 93 Método: assertSame(empty, container, "bad test -- container was changed")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRankIteratorsOfContainers.java linha: 198 Método: assertSame(container, c1, "bad test -- container was changed")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 385 Método: assertTrue(intersectionNOT.contains((char) (k * 10 + 5)), " missing k=" + k)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 406 Método: assertTrue(intersectionNOT.contains((char) (k * 10 + 5)), " missing k=" + k)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 611 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container rc = new RunContainer();
+    rc.iadd(10, 9);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 621 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container rc = new RunContainer();
+    rc.iadd(0, 1 << 20);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 1754 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container rc = new RunContainer();
+    rc.iremove(10, 9);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 1762 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container rc = new RunContainer();
+    rc.remove(0, 1 << 20);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 2704 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RunContainer container = new RunContainer();
+    container.add((char) 0);
+    container.add((char) 3);
+    container.add((char) 118);
+    container.select(666);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 3159 Método: assertThrows(RuntimeException.class, () -> new RunContainer(new char[] { 1, 2, 10, 3 }, 5))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 3288 Método: assertThrows(NoSuchElementException.class, () -> new RunContainer().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRunContainer.java linha: 3293 Método: assertThrows(NoSuchElementException.class, () -> new RunContainer().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/BufferContainerBatchIteratorTest.java linha: 126 Método: assertArrayEquals(copyOfRange(expectedValues, from, cardinality), copyOfRange(buffer, 0, cardinality - from), "Failure with batch size " + batchSize)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/BufferContainerBatchIteratorTest.java linha: 149 Método: assertArrayEquals(copyOfRange(expectedValues, from, cardinality), copyOfRange(buffer, 0, cardinality - from), "Failure with batch size " + batchSize + " and container type " + container.getContainerName())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2379 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2453 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2474 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2475 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2494 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2495 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2516 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2517 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2541 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 2542 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 3708 Método: assertThrows(NoSuchElementException.class, () -> new MutableRoaringBitmap().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 3713 Método: assertThrows(NoSuchElementException.class, () -> new MutableRoaringBitmap().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 3885 Método: assertThrows(IOException.class, () -> {
+    MutableRoaringBitmap bitmap = new MutableRoaringBitmap();
+    bitmap.deserialize(ByteBuffer.allocate(4));
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRoaringBitmap.java linha: 3893 Método: assertThrows(IOException.class, () -> {
+    MutableRoaringBitmap bitmap = new MutableRoaringBitmap();
+    bitmap.deserialize(new DataInputStream(new ByteArrayInputStream(new byte[4])));
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 69 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 90 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 91 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 110 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 111 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 132 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 133 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 157 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 158 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 193 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 194 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 230 Método: assertTrue(iterator1.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 231 Método: assertEquals(i, iterator1.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 247 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 248 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 267 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 268 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 288 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 289 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 292 Método: assertFalse(iterator.hasNext(), "Number of elements " + (2 << 16))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 309 Método: assertTrue(iterator.hasNext(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 310 Método: assertEquals(i, iterator.next(), "Error on iteration " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmapOrNot.java linha: 313 Método: assertFalse(iterator.hasNext(), "Number of elements " + (2 << 16))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmap.java linha: 1232 Método: assertThrows(NoSuchElementException.class, () -> new MutableRoaringBitmap().toImmutableRoaringBitmap().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmap.java linha: 1237 Método: assertThrows(NoSuchElementException.class, () -> new MutableRoaringBitmap().toImmutableRoaringBitmap().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmap.java linha: 1477 Método: assertEquals(b1, b2, "mismatch at " + i + "(bitset=" + b2 + ", rb=" + b1 + ")")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestImmutableRoaringBitmap.java linha: 1524 Método: assertThrows(InvalidRoaringFormat.class, () -> new ImmutableRoaringBitmap(ByteBuffer.allocate(8)))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableRunContainer.java linha: 76 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer bc = new MappeableRunContainer();
+    bc = bc.add(1, 13);
+    bc.select(100);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestBufferAdversarialInputs.java linha: 87 Método: assertThrows(IOException.class, () -> deserialize(file))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestBufferAdversarialInputs.java linha: 96 Método: assertThrows(IndexOutOfBoundsException.class, () -> map(file))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestBufferAdversarialInputs.java linha: 94 Método: assertThrows(IllegalArgumentException.class, () -> map(file))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableArrayContainer.java linha: 29 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer ac = new MappeableArrayContainer();
+    ac.add(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableArrayContainer.java linha: 37 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer ac = new MappeableArrayContainer();
+    ac.iadd(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableArrayContainer.java linha: 73 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer ac = new MappeableArrayContainer();
+    ac.remove(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableArrayContainer.java linha: 88 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer ac = new MappeableArrayContainer();
+    ac.iremove(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestContainer.java linha: 771 Método: assertThrows(NoSuchElementException.class, () -> new MappeableArrayContainer().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestContainer.java linha: 776 Método: assertThrows(NoSuchElementException.class, () -> new MappeableArrayContainer().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestContainer.java linha: 781 Método: assertThrows(NoSuchElementException.class, () -> new MappeableRunContainer().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestContainer.java linha: 786 Método: assertThrows(NoSuchElementException.class, () -> new MappeableRunContainer().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestContainer.java linha: 791 Método: assertThrows(NoSuchElementException.class, () -> new MappeableBitmapContainer().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestContainer.java linha: 796 Método: assertThrows(NoSuchElementException.class, () -> new MappeableBitmapContainer().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRunContainer.java linha: 408 Método: assertTrue(intersectionNOT.contains((char) (k * 10 + 5)), " missing k=" + k)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRunContainer.java linha: 429 Método: assertTrue(intersectionNOT.contains((char) (k * 10 + 5)), " missing k=" + k)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRunContainer.java linha: 520 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer rc = new MappeableRunContainer();
+    rc.iadd(10, 9);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRunContainer.java linha: 528 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer rc = new MappeableRunContainer();
+    rc.iadd(0, 1 << 20);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRunContainer.java linha: 1137 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer rc = new MappeableRunContainer();
+    rc.iremove(10, 9);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRunContainer.java linha: 1145 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer rc = new MappeableRunContainer();
+    rc.remove(0, 1 << 20);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestFastAggregation.java linha: 88 Método: assertThrows(IllegalArgumentException.class, () -> {
+    int[] array1 = { 1232, 3324, 123, 43243, 1322, 7897, 8767 };
+    int[] array2 = { 39173, 39174, 39175, 39176, 39177, 39178, 39179 };
+    int[] array3 = { 1232, 3324, 123, 43243, 1322, 7897, 8767, 39173, 39174, 39175, 39176, 39177, 39178, 39179 };
+    ImmutableRoaringBitmap data1 = MutableRoaringBitmap.bitmapOf(array1);
+    ImmutableRoaringBitmap data2 = MutableRoaringBitmap.bitmapOf(array2);
+    ImmutableRoaringBitmap data3 = MutableRoaringBitmap.bitmapOf(array3);
+    assertEquals(data3, BufferFastAggregation.priorityqueue_xor(data1, data2));
+    BufferFastAggregation.priorityqueue_xor(data1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestFastAggregation.java linha: 166 Método: assertThrows(IllegalArgumentException.class, () -> {
+    int[] array1 = { 1232, 3324, 123, 43243, 1322, 7897, 8767 };
+    int[] array2 = { 39173, 39174, 39175, 39176, 39177, 39178, 39179 };
+    int[] array3 = { 1232, 3324, 123, 43243, 1322, 7897, 8767, 39173, 39174, 39175, 39176, 39177, 39178, 39179 };
+    ImmutableRoaringBitmap data1 = toMapped(MutableRoaringBitmap.bitmapOf(array1));
+    ImmutableRoaringBitmap data2 = toMapped(MutableRoaringBitmap.bitmapOf(array2));
+    ImmutableRoaringBitmap data3 = toMapped(MutableRoaringBitmap.bitmapOf(array3));
+    assertEquals(data3, BufferFastAggregation.priorityqueue_xor(data1, data2));
+    BufferFastAggregation.priorityqueue_xor(data1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 334 Método: assertThrows(IndexOutOfBoundsException.class, () -> emptyContainer().nextSetBit(Short.MAX_VALUE + 1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 340 Método: assertThrows(IndexOutOfBoundsException.class, () -> emptyContainer().nextSetBit(-1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 346 Método: assertThrows(IndexOutOfBoundsException.class, () -> emptyContainer().prevSetBit(Short.MAX_VALUE + 1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 352 Método: assertThrows(IndexOutOfBoundsException.class, () -> emptyContainer().prevSetBit(-1))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 358 Método: assertThrows(RuntimeException.class, () -> {
+    MappeableBitmapContainer bc = new MappeableBitmapContainer();
+    bc.add(10, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 366 Método: assertThrows(RuntimeException.class, () -> {
+    MappeableBitmapContainer bc = new MappeableBitmapContainer();
+    bc.iadd(10, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 407 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableBitmapContainer bc = new MappeableBitmapContainer();
+    bc.iremove(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 449 Método: assertThrows(IllegalArgumentException.class, () -> {
+    MappeableContainer bc = new MappeableBitmapContainer();
+    bc = bc.add(1, 13);
+    bc.select(100);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestMappeableBitmapContainer.java linha: 715 Método: assertFalse(BufferUtil.isBackedBySimpleArray(buffer), "Sanity check - aiming to test non array backed branch")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestUtil.java linha: 57 Método: assertThrows(IllegalArgumentException.class, () -> {
+    LongBuffer data1 = LongBuffer.wrap(new long[] { 1, 2, 4, 8, 16 });
+    LongBuffer data2 = LongBuffer.wrap(new long[] { 2, 1, 3, 7 });
+    char[] content = new char[5];
+    BufferUtil.fillArrayANDNOT(content, data1, data2);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestUtil.java linha: 142 Método: assertEquals(bitmap.get(i), referenceBitmap.get(i), "mismatch at " + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/MutableRoaringArrayTest.java linha: 18 Método: assertSame(keys, array.keys, "Keys were not reallocated")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/buffer/TestRange.java linha: 694 Método: assertEquals(0, bitmap.getCardinality(), "fails with bits: " + bitset)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRoaringBitmapWriterWizard.java linha: 23 Método: assertThrows(IllegalStateException.class, () -> bufferWriter().fastRank().get().getUnderlying())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestForAllInRange.java linha: 156 Método: assertThrows(IllegalArgumentException.class, () -> {
+    bitmap.forAllInRange(0xFFFFFFFE, 3, ValidationRangeConsumer.ofSize(3));
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/RangeBitmapTest.java linha: 220 Método: assertEquals(supplierInvocations.get() - 2, cleanerInvocations.get(), "two internal buffers remain active and uncleaned at any time, the rest must be cleaned")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/RangeBitmapTest.java linha: 222 Método: assertTrue(supplierInvocations.get() > 2, "this test requires more than 2 buffer allocations to ensure cleaning occurs")
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/RangeBitmapTest.java linha: 419 Método: assertEquals(expected.getCardinality(), sut.gteCardinality(min, lte), "" + i)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/RangeBitmapTest.java linha: 765 Método: assertAll(() -> regresssionTestIssue586(0x0FFFFFFFFFFFFFFL, 0xFFFFFFFFFFFFFF0L, 0xFFFFFFFFFFFFFF0L), () -> regresssionTestIssue586(0x0FFFFFFFFFFFFFFFL, 0xFFFFFFFFFFFFFFF0L, 0xFFFFFFFFFFFFFFF0L), () -> regresssionTestIssue586(0x0FFFFFFFFFFFFFFFL, 0xFFFFFFFFFFFFFFF1L, 0xFFFFFFFFFFFFFFF0L), () -> regresssionTestIssue586(0, 10_000_000_000L, 10_000_000L))
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestRange.java linha: 683 Método: assertEquals(0, bitmap.getCardinality(), "fails with bits: " + bitset)
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestArrayContainer.java linha: 162 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container ac = new ArrayContainer();
+    ac.add(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestArrayContainer.java linha: 177 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Container ac = new ArrayContainer();
+    ac.iadd(13, 1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestArrayContainer.java linha: 223 Método: assertThrows(NoSuchElementException.class, () -> new ArrayContainer().first())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestArrayContainer.java linha: 228 Método: assertThrows(NoSuchElementException.class, () -> new ArrayContainer().last())
+Assert com mensagem: /home/vitor-otto/opensource/RoaringBitmap-0.9.39/RoaringBitmap/src/test/java/org/roaringbitmap/TestArrayContainer.java linha: 944 Método: assertTrue(container == c, "Container type changed!")
+Total asserts: 6627
+Asserts sem descrição: 6406
+Asserts com descrição: 221
+Assertion Roulette: 5804

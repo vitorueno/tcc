@@ -1,0 +1,13 @@
+assertNotNull(cdiLiquibase)
+assertEquals(shouldBeRunning, cdiLiquibase.isInitialized(), "Expecting liquibase to be initialized.")
+assertEquals(shouldBeRunning, cdiLiquibase.isUpdateSuccessful(), "Expecting LiquiBase update to be successful.")
+assertEquals(shouldBeRunning, cdiLiquibase.getDatabaseChangeLogVersion().equals("1.0"), "Expecting a database change log version of 1.0")
+assertEquals(shouldBeRunning, cdiLiquibase.getDatabaseName() != null, "Expecting a valid database name")
+assertEquals(shouldBeRunning, cdiLiquibase.getDatabasePlatform() != null, "Expecting a valid database platform")
+
+assertEquals(shouldBeRunning, cdiLiquibase.getDatabaseChangeLogVersion().equals("1.0"), "Expecting a database change log version of 1.0")
+assertEquals(shouldBeRunning, cdiLiquibase.getDatabaseName() != null, "Expecting a valid database name")
+assertEquals(shouldBeRunning, cdiLiquibase.getDatabasePlatform() != null, "Expecting a valid database platform")
+
+assertNotNull(serializer)
+assertSame(XMLChangeLogSerializer.class, serializer.getClass(), "Expecting XML change log serializer")

@@ -4,15 +4,25 @@ public class Main {
 
     public static void main(String[] args) {
         String repo = "";
+        String shouldrRefactor = "";
+        String shouldWriteToFile = "";
         if (args.length > 0) {
             repo = args[0];
+            shouldrRefactor = args[1];
+            shouldWriteToFile = args[2];
         }
 
 //        System.out.println("projeto: " + repo);
 
         Analyzer analyzer = new Analyzer(repo);
-        analyzer.setShouldRefactor(true);
+        analyzer.setShouldRefactor(false);
+        if (shouldrRefactor.equals("true")) {
+            analyzer.setShouldRefactor(true);
+        }
         analyzer.setShouldWriteToFile(false);
+        if (shouldWriteToFile.equals("true")) {
+            analyzer.setShouldWriteToFile(true);
+        }
         analyzer.run();
     }
 }

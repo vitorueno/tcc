@@ -1,0 +1,142 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. assertEquals(5, calculator.add(2, 3));
+eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+
+2. assertEquals(7, calculator.add(4, 2));
+eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+
+3. assertEquals(10, calculator.add(5, 5));
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+
+4. Assertions.assertTrue(sync(list.add("1")))
+O valor addido não foi igual a "1"
+
+5. Assertions.assertTrue(sync(list.add("2")))
+O valor addido não foi igual a "2"
+
+6. Assertions.assertTrue(sync(list.add("3")))
+O valor addido não foi igual a "3"
+
+7. Assertions.assertTrue(sync(list.add("4")))
+O valor addido não foi igual a "4"
+
+8. Assertions.assertTrue(sync(list.add("5")))
+O valor addido não foi igual a "5"
+
+9. Assertions.assertEquals(true, sync(list2.addAll(list.iterator())))
+O valor de true não é igual ao resultado do addAll
+
+10. Assertions.assertEquals(5, sync(list2.size()).intValue())
+O tamanho da lista não é igual a 5
+
+11. Assertions.assertTrue(sync(set.add("a")))
+O valor adicionado não foi igual a "a"
+
+12. Assertions.assertTrue(sync(set.add("b")))
+O valor adicionado não foi igual a "b"
+
+13. Assertions.assertTrue(sync(set.add("c")))
+O valor adicionado não foi igual a "c"
+
+14. Assertions.assertTrue(sync(set.add("d")))
+O valor adicionado não foi igual a "d"
+
+15. Assertions.assertTrue(sync(set.add("e")))
+O valor adicionado não foi igual a "e"
+
+16. Assertions.assertTrue(sync(set.add("f")))
+O valor adicionado não foi igual a "f"
+
+17. Assertions.assertEquals(0, sync(set.removeRangeTail("z", false)).intValue())
+O tamanho do conjunto após remover é diferente de 0
+
+18. Assertions.assertEquals(4, sync(set.removeRangeTail("c", false)).intValue())
+O tamanho do conjunto após remover é diferente de 4
+
+19. Assertions.assertEquals(1, sync(set.removeRangeTail("c", true)).intValue())
+O tamanho do conjunto após remover é diferente de 1
+
+20. Assertions.assertEquals(2, sync(set.removeRangeHead("c", false)).intValue())
+O tamanho do conjunto após remover é diferente de 2
+
+21. Assertions.assertEquals(1, (int) sync(set.removeRangeHead("c", true)))
+O tamanho do conjunto após remover é diferente de 1
+
+22. Assertions.assertEquals(5, sync(set.removeRange("aaa", true, "g", false)).intValue())
+O tamanho do conjunto após remover é diferente de 5
+
+23. Assertions.assertTrue(sync(set.add("a")))
+O valor adicionado não foi igual a "a"
+
+24. Assertions.assertTrue(sync(set.add("b")))
+O valor adicionado não foi igual a "b"
+
+25. Assertions.assertTrue(sync(set.add("c")))
+O valor adicionado não foi igual a "c"
+
+26. Assertions.assertTrue(sync(set.add("d")))
+O valor adicionado não foi igual a "d"
+
+27. Assertions.assertTrue(sync(set.add("e")))
+O valor adicionado não foi igual a "e"
+
+28. Assertions.assertTrue(sync(set.add("f")))
+O valor adicionado não foi igual a "f"
+
+29. Assertions.assertEquals(5, (int) sync(set.count("b", true, "f", true)))
+O número de elementos que começam com "b" e terminam com "f" é diferente de 5
+
+30. Assertions.assertTrue(sync(list2.addAll(list.iterator())))
+O valor de true não é igual ao resultado do addAll
+
+31. Assertions.assertEquals(5, sync(list2.size()).intValue())
+O tamanho da lista não é igual a 5
+
+32. Assertions.assertNull(sync(set.removeRandom()))
+Não foi possível remover um elemento aleatório
+
+33. Assertions.assertEquals(sb.getLng(), toIterator(set.iterator()).next().getLng())
+Os valores de lng são diferentes
+
+34. Assertions.assertTrue(sync(set.remove(1)))
+O valor removido não é igual a 1
+
+35. Assertions.assertEquals(0, setCopy.size())
+O tamanho do conjunto é diferente de 0
+
+36. Assertions.assertTrue(sync(set.retainAll(Arrays.asList(1, 2))))
+O número de elementos que são iguais aos 1 e 2 é diferente de 2
+
+37. Assertions.assertEquals(2, sync(set.size()).intValue())
+O número de elementos no conjunto é diferente de 2
+
+38. Assertions.assertTrue(sync(set.containsAll(Collections.emptyList())))
+Não foi possível encontrar um valor em branco
+
+39. Assertions.assertTrue(sync(set.containsAll(Arrays.asList(30, 11))))
+Não foi possível encontrar os valores 30 e 11
+
+40. Assertions.assertTrue(sync(set.contains(new TestObject("2", "3"))))
+Não foi possível encontrar o objeto com nome 2 e lng 3
+
+41. Assertions.assertTrue(sync(set.contains(new TestObject("1", "2"))))
+Não foi possível encontrar o objeto com nome 1 e lng 2
+
+42. Assertions.assertEquals(4, sync(set.size()).intValue())
+O número de elementos no conjunto é diferente de 4
+
+43. Assertions.assertEquals(5, sync(set.size()).intValue())
+O número de elementos no conjunto é diferente de 5
+
+44. Assertions.assertTrue(sync(set.retainAll(Collections.<Integer>emptyList())))
+O número de elementos que são iguais a 0 é diferente de 0
+
+45. Assertions.assertEquals(0, sync(set.size()).intValue())
+O tamanho do conjunto não é igual a 0
+
+46. Assertions.assertTrue(sync(set.move("otherSet", 1)))
+O valor removido não é igual a "otherSet"
+
+47. Assertions.assertNull(executor.awaitTermination(10, TimeUnit.SECONDS))
+Não foi possível esperar pelo término

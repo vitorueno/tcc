@@ -1,0 +1,69 @@
+"java.lang.Object" era esperado, mas o resultado foi diferente de type.describe()
+O teste excedeu o tempo limite de 1000 milissegundos
+O tamanho da lista de referenceTypes deveria ser maior que 0, mas não foi
+O número de métodos deveria ser igual a 1, mas não foi
+Era esperado "java.lang.String", mas o resultado foi diferente de fae.calculateResolvedType().describe()
+O nome do objeto deveria ser "AFIELD", mas não era
+O resultado deveria ser "X.A.bar", mas não foi
+Era esperado "java.lang.Runnable", mas o tipo resolvido é diferente
+A declaração não é genérica
+O nome da declaração deveria ser "MyAnnotation", mas não era
+O nome da declaração deveria ser "MyAnnotationWithElements", mas não era
+O nome da declaração deveria ser "VoidVisitor", mas não era
+A declaração não é de uma interface
+O nome da declaração deveria ser "AccessSpecifier", mas não era
+O nome da declaração deveria ser "PUBLIC", mas não era
+O nome da declaração deveria ser "CompilationUnit", mas não era
+O nome da declaração deveria ser "getComments", mas não era
+O número de parâmetros deveria ser igual a 0, mas não era
+O nome da declaração deveria ser "CompilationUnit", mas não era
+O resultado da expressão não corresponde ao esperado
+O resultado da expressão não corresponde ao esperado
+O resultado da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+A assinatura da classe interna não corresponde ao esperado
+A assinatura da classe interna não corresponde ao esperado
+A assinatura da classe interna não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O tipo resolvido da expressão não corresponde ao esperado
+O nome qualificado do objeto não corresponde ao esperado
+O tipo resolvido do objeto não corresponde ao esperado
+O teste não foi bem-sucedido
+O método de conversão não retornou o esperado
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido
+O teste não foi bem-sucedido

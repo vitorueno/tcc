@@ -1,0 +1,27 @@
+eram esperados valores iguais, mas 2 é diferente de impossibleAlternative.isImpossible()
+eram esperados valores iguais, mas 7 é diferente de (((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled)
+eram esperados valores iguais, mas 2 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 3 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de (((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(1).arrivalCancelled)
+eram esperados valores iguais, mas 2 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de ((((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(2).departureCancelled)
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 4500000L é diferente de transitSolution.getTime()
+eram esperados valores iguais, mas 4500000.0 é diferente de transitSolution.getRouteWeight()
+eram esperados valores iguais, mas 600 é diferente de transfer.min_transfer_time
+eram esperados valores iguais, mas 5 é diferente de transfersToStop.size()
+eram esperados valores iguais, mas "AB" é diferente de transfersToStop.get(0).from_route_id
+eram esperados valores iguais, mas "FUNNY_BLOCK_AB" é diferente de transfersToStop.get(1).from_route_id
+eram esperados valores iguais, mas "STBA" é diferente de transfersToStop.get(2).from_route_id
+eram esperados valores iguais, mas "AAMV" é diferente de transfersToStop.get(3).from_route_id
+eram esperados valores iguais, mas "ABBFC" é diferente de transfersToStop.get(4).from_route_id
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores iguais, mas 4500000L é diferente de transitSolution.getTime()
+eram esperados valores iguais, mas 4500000.0 é diferente de transitSolution.getRouteWeight()
+eram esperados valores iguais, mas "AB" é diferente de ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id
+eram esperados valores iguais, mas "AB" é diferente de ((Trip.PtLeg) mondayTrip.getLegs().get(0)).route_id
+eram esperados valores iguais, mas "AB" é diferente de ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id
+eram esperados valores iguais, mas 2 é diferente de ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id

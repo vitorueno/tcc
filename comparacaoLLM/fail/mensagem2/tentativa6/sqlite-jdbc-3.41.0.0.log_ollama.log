@@ -1,0 +1,20 @@
+assertEqualsIntesperado(
+    "eram esperados valores iguais, mas "
+        + ex expectedValue + " é diferente de " + ex.actualMethodName() + "("
+        + ex.actualArguments()[0] + ", " + ex.actualArguments()[1]
+        + ")"
+)
+
+assertEqualsDoubleesperado(
+    "eram esperados valores iguais, mas "
+        + String.format("%.2f", ex expectedValue) + " é diferente de " + ex.actualMethodName() + "("
+        + ex.actualArguments()[0] + ", " + ex.actualArguments()[1]
+        + ")"
+)
+
+assertEqualsObjectsesperado(
+    "eram esperados valores iguais, mas "
+        + ex expectedValue.toString() + " não são iguais a " + ex.actualMethodName() + "("
+        + ex.actualArguments()[0] + ", " + ex.actualArguments()[1]
+        + ")"
+)

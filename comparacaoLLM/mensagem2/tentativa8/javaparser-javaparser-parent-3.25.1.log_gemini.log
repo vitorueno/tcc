@@ -1,0 +1,91 @@
+"java.lang.Object" esperado, mas o valor obtido em type.describe() é diferente.
+Tempo limite de 1000 milissegundos excedido ou exceção lançada durante a execução do código.
+"java.lang.String" esperado, mas o valor obtido em fae.calculateResolvedType().describe() é diferente.
+"AFIELD" esperado, mas o valor obtido em value.getName() é diferente.
+"a" esperado, mas o valor obtido em fd.get().getVariable(0).getInitializer().get().asStringLiteralExpr().getValue() é diferente.
+"X.A.bar" esperado, mas o valor obtido em mce.resolve().getQualifiedName() é diferente.
+"java.lang.Runnable" esperado, mas o valor obtido em resolved.getParam(0).getType().describe() é diferente.
+Era esperado que resolved não fosse genérico.
+"MyAnnotation" esperado, mas o valor obtido em declaration.getNameAsString() é diferente.
+"MyAnnotationWithElements" esperado, mas o valor obtido em declaration.getNameAsString() é diferente.
+"VoidVisitor" esperado, mas o valor obtido em declaration.getNameAsString() é diferente.
+Era esperado que declaration fosse uma interface.
+"AccessSpecifier" esperado, mas o valor obtido em declaration.getNameAsString() é diferente.
+"AccessSpecifier" esperado, mas o valor obtido em enumDeclaration.getNameAsString() é diferente.
+"PUBLIC" esperado, mas o valor obtido em declaration.getNameAsString() é diferente.
+"CompilationUnit" esperado, mas o valor obtido em classDeclaration.getNameAsString() é diferente.
+"CompilationUnit" esperado, mas o valor obtido em classDeclaration.getNameAsString() é diferente.
+"getComments" esperado, mas o valor obtido em resolvedDeclaration.getName() é diferente.
+Era esperado 0, mas o valor obtido em resolvedDeclaration.getNumberOfParams() é diferente.
+"CompilationUnit" esperado, mas o valor obtido em classDeclaration.getNameAsString() é diferente.
+"bar(Optional.of(new Derived()))" esperado, mas o valor obtido em mces.get(0).toString() é diferente.
+"Base.bar(java.util.Optional<Base>)" esperado, mas o valor obtido em mces.get(0).resolve().getQualifiedSignature() é diferente.
+Era esperado que foo não fosse nulo.
+Era esperado true, mas o valor obtido em pr.isSuccessful() é diferente.
+"com.github.javaparser.symbolsolver.testingclasses.UtilityClass.method(com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum)" esperado, mas o valor obtido em rmd.getQualifiedSignature() é diferente.
+"CONSTANT" esperado, mas o valor obtido em rvd.getName() é diferente.
+"com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum" esperado, mas o valor obtido em rvd.getType().describe() é diferente.
+"A.method" esperado, mas o valor obtido em mce.resolve().getQualifiedName() é diferente.
+"Test.setRunnable(java.lang.String, java.lang.Runnable)" esperado, mas o valor obtido em mce.get(0).resolve().getQualifiedSignature() é diferente.
+"Test.getContext(Test)" esperado, mas o valor obtido em mce.get(1).resolve().getQualifiedSignature() é diferente.
+"Test.getContext(Test)" esperado, mas o valor obtido em sig é diferente.
+"java.lang.String" esperado, mas o valor obtido em exprs.get(0).calculateResolvedType().describe() é diferente.
+"java.lang.String" esperado, mas o valor obtido em exprs.get(1).calculateResolvedType().describe() é diferente.
+"java.lang.String" esperado, mas o valor obtido em exprs.get(2).calculateResolvedType().describe() é diferente.
+"float" esperado, mas o valor obtido em exprs.get(3).calculateResolvedType().describe() é diferente.
+"double" esperado, mas o valor obtido em exprs.get(4).calculateResolvedType().describe() é diferente.
+"int" esperado, mas o valor obtido em exprs.get(5).calculateResolvedType().describe() é diferente.
+"long" esperado, mas o valor obtido em exprs.get(6).calculateResolvedType().describe() é diferente.
+"long" esperado, mas o valor obtido em exprs.get(7).calculateResolvedType().describe() é diferente.
+"int" esperado, mas o valor obtido em exprs.get(8).calculateResolvedType().describe() é diferente.
+"long" esperado, mas o valor obtido em exprs.get(9).calculateResolvedType().describe() é diferente.
+"long" esperado, mas o valor obtido em exprs.get(10).calculateResolvedType().describe() é diferente.
+"int" esperado, mas o valor obtido em exprs.get(11).calculateResolvedType().describe() é diferente.
+"int" esperado, mas o valor obtido em exprs.get(12).calculateResolvedType().describe() é diferente.
+"int" esperado, mas o valor obtido em exprs.get(13).calculateResolvedType().describe() é diferente.
+"InnerClass(int)" esperado, mas o valor obtido em rcd.getSignature() é diferente.
+"InnerClass(int)" esperado, mas o valor obtido em rcd.getSignature() é diferente.
+"InnerClass(int)" esperado, mas o valor obtido em rcd.getSignature() é diferente.
+"void" esperado, mas o valor obtido em mce.calculateResolvedType().describe() é diferente.
+"java.util.concurrent.TimeUnit" esperado, mas o valor obtido em mce.getArgument(0).calculateResolvedType().describe() é diferente.
+Era esperado que method estivesse resolvido.
+Era esperado que javaParserFacade.solve(expression) não fosse nulo.
+Era esperado que javaParserFacade.convertToUsage(expression.getType()) não fosse nulo.
+Era esperado que parseResult fosse bem-sucedido.
+"D" esperado, mas o valor obtido em javaParserFacade.solve(methodCallExprs.get(0)).getCorrespondingDeclaration().getReturnType().describe() é diferente.
+"D" esperado, mas o valor obtido em javaParserFacade.solve(methodCallExprs.get(2)).getCorrespondingDeclaration().getReturnType().describe() é diferente.
+"void" esperado, mas o valor obtido em javaParserFacade.solve(methodCallExprs.get(1)).getCorrespondingDeclaration().getReturnType().describe() é diferente.
+"D" esperado, mas o valor obtido em javaParserFacade.solve(methodCallExprs.get(4)).getCorrespondingDeclaration().getReturnType().describe() é diferente.
+"java.lang.Object" esperado, mas o valor obtido em a.getQualifiedName() é diferente.
+Era esperado que o valor obtido em resultsQualifiedName.get(expr.toString()) fosse igual a qName.
+Era esperado que o valor obtido em resultsResolvedType.get(expr.toString()) fosse igual a resolvedType.
+Era esperado que parseResult fosse bem-sucedido.
+Era esperado que parseResult.getResult().isPresent() retornasse true.
+"int" esperado, mas o valor obtido em resolve.getType().describe() é diferente.
+"Test1.Test2" esperado, mas o valor obtido em oce.get(0).calculateResolvedType().describe() é diferente.
+"Test1.Test3" esperado, mas o valor obtido em oce.get(1).calculateResolvedType().describe() é diferente.
+Era esperado que methodType estivesse presente.
+"java.util.ArrayList" esperado, mas o valor obtido em resolvedType é diferente.
+"foo(new Object[5])" esperado, mas o valor obtido em mce.toString() é diferente.
+"TestClass2.foo(java.lang.Object)" esperado, mas o valor obtido em mce.resolve().getQualifiedSignature() é diferente.
+"void" esperado, mas o valor obtido em mce.calculateResolvedType().describe() é diferente.
+Era esperado que fae estivesse presente.
+"foo.bar.BinaryExpr.Operator" esperado, mas o valor obtido em fae.get().resolve().getType().describe() é diferente.
+"OR" esperado, mas o valor obtido em fae.get().resolve().getName() é diferente.
+Era esperado que fae estivesse presente.
+"foo.bar.BinaryExpr.Operator" esperado, mas o valor obtido em fae.get().resolve().getType().describe() é diferente.
+"AND" esperado, mas o valor obtido em fae.get().resolve().getName() é diferente.
+Era esperado que fae estivesse presente.
+"foo.bar.BinaryExpr.Operator" esperado, mas o valor obtido em fae.get().resolve().getType().describe() é diferente.
+"OR" esperado, mas o valor obtido em fae.get().resolve().getName() é diferente.
+Era esperado que fae estivesse presente.
+"foo.bar.BinaryExpr.Operator" esperado, mas o valor obtido em fae.get().resolve().getType().describe() é diferente.
+"AND" esperado, mas o valor obtido em fae.get().resolve().getName() é diferente.
+Era esperado que parseResult fosse bem-sucedido.
+Era esperado que syntacticClassification fosse igual ao valor obtido em NameLogic.syntacticClassificationAccordingToContext(nameNode).
+Era esperado que nameCategory fosse igual ao valor obtido em NameLogic.classifyReference(nameNode, typeSolver).
+Era esperado que nameCategory fosse igual ao valor obtido em NameLogic.syntacticClassificationAccordingToContext(nameNode).
+Era esperado que nameRole fosse igual ao valor obtido em NameLogic.classifyRole(nameNode).
+Era esperado que NameLogic.isSimpleName(nameNode) retornasse true.
+Era esperado que NameLogic.isQualifiedName(nameNode) retornasse true.
+Era esperado que NameLogic.isAName(cu) retornasse false.

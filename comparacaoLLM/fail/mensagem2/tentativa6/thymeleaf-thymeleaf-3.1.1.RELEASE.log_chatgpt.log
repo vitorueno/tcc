@@ -1,0 +1,287 @@
+Assertions.assertTrue(executor.isAllOK())
+Esperava-se que executor.isAllOK() retornasse true, mas retornou false
+
+Assertions.assertEquals(expected, ResourceUtils.normalize(result))
+Esperava-se que o valor esperado fosse igual ao valor retornado após a normalização, porém são diferentes
+
+Assertions.assertEquals(expected1, result1)
+Esperava-se que o valor esperado fosse igual ao valor resultante 1, mas são diferentes
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue))
+Esperava-se que a string "<Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC1, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC1, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hey, Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue))
+Esperava-se que a string "<Hey, Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC2, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC2, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hey, Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue))
+Esperava-se que a string "<Hey, Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC3, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC3, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue))
+Esperava-se que a string "<Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC4, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC4, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue))
+Esperava-se que a string "<Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC1, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC1, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hey, Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue))
+Esperava-se que a string "<Hey, Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC2, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC2, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hey, Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue))
+Esperava-se que a string "<Hey, Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC3, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC3, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue))
+Esperava-se que a string "<Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC4, mas são diferentes
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC4, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextTrue))
+Esperava-se que a string "<Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC9, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC9, mas são diferentes
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextTrue))
+Esperava-se que a string "<Hello there!>" fosse igual ao resultado do processamento com TEMPLATE_SPEC10, mas são diferentes
+
+Assertions.assertTrue(lazyTrue.initialized)
+Esperava-se que lazyTrue.initialized fosse true, mas é false
+
+Assertions.assertEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextFalse))
+Esperava-se que a string "<>" fosse igual ao resultado do processamento com TEMPLATE_SPEC10, mas são diferentes
+
+Assertions.assertSame(rr01, rr03)
+Esperava-se que rr01 e rr03 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertSame(rr02, rr04)
+Esperava-se que rr02 e rr04 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[ref='abc' or data-ref='abc' or fragment='abc' or data-fragment='abc' or fragment^='abc(' or data-fragment^='abc(' or fragment^='abc (' or data-fragment^='abc (']", result01)
+Esperava-se que a string "/[...]" fosse igual a result01, mas são diferentes
+
+Assertions.assertSame(result01, result02)
+Esperava-se que result01 e result02 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']", result03)
+Esperava-se que a string "/[...]" fosse igual a result03, mas são diferentes
+
+Assertions.assertSame(result03, result04)
+Esperava-se que result03 e result04 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[q:ref='abc' or data-q-ref='abc' or q:fragment='abc' or data-q-fragment='abc' or q:fragment^='abc(' or data-q-fragment^='abc(' or q:fragment^='abc (' or data-q-fragment^='abc (']", result05)
+Esperava-se que a string "/[...]" fosse igual a result05, mas são diferentes
+
+Assertions.assertSame(result05, result06)
+Esperava-se que result05 e result06 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']", result07)
+Esperava-se que a string "/[...]" fosse igual a result07, mas são diferentes
+
+Assertions.assertSame(result07, result08)
+Esperava-se que result07 e result08 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertSame(rr01, rr03)
+Esperava-se que rr01 e rr03 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertSame(rr02, rr04)
+Esperava-se que rr02 e rr04 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[ref='abc' or fragment='abc' or fragment^='abc(' or fragment^='abc (']", result01)
+Esperava-se que a string "/[...]" fosse igual a result01, mas são diferentes
+
+Assertions.assertSame(result01, result02)
+Esperava-se que result01 e result02 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']", result03)
+Esperava-se que a string "/[...]" fosse igual a result03, mas são diferentes
+
+Assertions.assertSame(result03, result04)
+Esperava-se que result03 e result04 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[q:ref='abc' or q:fragment='abc' or q:fragment^='abc(' or q:fragment^='abc (']", result05)
+Esperava-se que a string "/[...]" fosse igual a result05, mas são diferentes
+
+Assertions.assertSame(result05, result06)
+Esperava-se que result05 e result06 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertEquals("/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']", result07)
+Esperava-se que a string "/[...]" fosse igual a result07, mas são diferentes
+
+Assertions.assertSame(result07, result08)
+Esperava-se que result07 e result08 referenciassem o mesmo objeto, mas não referenciam
+
+Assertions.assertNotNull(resourcesFolderURL)
+Esperava-se que resourcesFolderURL não fosse nulo, mas é nulo
+
+Assertions.assertTrue(resourcesFolder.isDirectory())
+Esperava-se que resourcesFolder fosse um diretório, mas não é
+
+Assertions.assertEquals(expectedResult, decoupledTemplateLogic.toString())
+Esperava-se que o resultado esperado fosse igual ao resultado retornado pelo decoupledTemplateLogic.toString(), mas são diferentes
+
+Assertions.assertEquals(ResourceUtils.normalize(expected), ResourceUtils.normalize(result))
+Esperava-se que a normalização de expected fosse igual à normalização de result, mas são diferentes
+
+Assertions.assertEquals(1, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 1, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.StringTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.StringTemplateResolver", mas é diferente
+
+Assertions.assertEquals(1, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 1, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é diferente
+
+Assertions.assertEquals(1, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 1, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.FileTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é diferente
+
+Assertions.assertEquals(2, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 2, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.FileTemplateResolver", templateResolvers.get(1).getName())
+Esperava-se que o nome do segundo templateResolver fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é diferente
+
+Assertions.assertEquals(2, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 2, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.FileTemplateResolver", templateResolvers.get(1).getName())
+Esperava-se que o nome do segundo templateResolver fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é diferente
+
+Assertions.assertEquals(2, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 2, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.FileTemplateResolver", templateResolvers.get(1).getName())
+Esperava-se que o nome do segundo templateResolver fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é diferente
+
+Assertions.assertEquals("Hello ??something_en??", templateEngine.process("Hello [[#{something}]]", context))
+Esperava-se que a string resultante do processamento fosse igual a "Hello ??something_en??", mas é diferente
+
+Assertions.assertEquals("Hello 58", templateEngine.process("Hello [[23+35]]", context))
+Esperava-se que a string resultante do processamento fosse igual a "Hello 58", mas é diferente
+
+Assertions.assertEquals(2, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 2, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.DefaultTemplateResolver", templateResolvers.get(1).getName())
+Esperava-se que o nome do segundo templateResolver fosse "org.thymeleaf.templateresolver.DefaultTemplateResolver", mas é diferente
+
+Assertions.assertEquals("<p>something</p>", templateEngine.process("nonexisting", context))
+Esperava-se que a string resultante do processamento fosse igual a "<p>something</p>", mas é diferente
+
+Assertions.assertEquals(2, templateResolvers.size())
+Esperava-se que o tamanho dos templateResolvers fosse igual a 2, mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Esperava-se que o nome do primeiro templateResolver fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é diferente
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.DefaultTemplateResolver", templateResolvers.get(1).getName())
+Esperava-se que o nome do segundo templateResolver fosse "org.thymeleaf.templateresolver.DefaultTemplateResolver", mas é diferente
+
+Assertions.assertEquals("<p>this value</p>", templateEngine.process("nonexisting", context))
+Esperava-se que a string resultante do processamento fosse igual a "<p>this value</p>", mas é diferente
+
+Assertions.assertEquals("<div>some text <p><p>inserted!</p></p> other text</div>", templateEngine.process("<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>", context))
+Esperava-se que a string resultante do processamento fosse igual a "<div>some text <p><p>inserted!</p></p> other text</div>", mas é diferente
+
+Assertions.assertTrue(templateResolver.tempCalled)
+Esperava-se que o método tempCalled de templateResolver fosse chamado, mas não foi
+
+Assertions.assertTrue(templateResolver.fragCalled)
+Esperava-se que o método fragCalled de templateResolver fosse chamado, mas não foi
+
+Assertions.assertEquals(EXPECTED_OUTPUT, output)
+Esperava-se que o output fosse igual a EXPECTED_OUTPUT, mas são diferentes
+
+Assertions.assertTrue(templateResolver.tempCalled)
+Esperava-se que o método tempCalled de templateResolver fosse chamado, mas não foi
+
+Assertions.assertTrue(templateResolver.fragCalled)
+Esperava-se que o método fragCalled de templateResolver fosse chamado, mas não foi
+
+Assertions.assertEquals(EXPECTED_OUTPUT, output)
+Esperava-se que o output fosse igual a EXPECTED_OUTPUT, mas são diferentes
+
+Assertions.assertTrue(templateResolver.tempCalled)
+Esperava-se que o método tempCalled de templateResolver fosse chamado, mas não foi
+
+Assertions.assertTrue(templateResolver.fragCalled)
+Esperava-se que o método fragCalled de templateResolver fosse chamado, mas não foi
+
+Assertions.assertEquals(EXPECTED_OUTPUT, output)
+Esperava-se que o output fosse igual a EXPECTED_OUTPUT, mas são diferentes
+
+Assertions.assertEquals("/", TemplateResourceUtils.computeRelativeLocation("/", "/"))
+Esperava-se que a string resultante do cálculo de localização relativa fosse igual a "/", mas é diferente
+
+Assertions.assertEquals("/something", TemplateResourceUtils.computeRelativeLocation("/", "something"))
+Esperava-se que a string resultante do cálculo de localização relativa fosse igual a "/something", mas é diferente
+
+Assertions.assertEquals("/", TemplateResourceUtils.computeRelativeLocation("/something", "/"))
+Esperava-se que a string resultante do cálculo de localização relativa fosse igual a "/", mas é diferente
+
+Assertions.assertEquals("/", TemplateResourceUtils.computeRelativeLocation("something", "/"))
+Esperava-se que a string resultante do cálculo de localização relativa fosse igual a "/", mas é diferente

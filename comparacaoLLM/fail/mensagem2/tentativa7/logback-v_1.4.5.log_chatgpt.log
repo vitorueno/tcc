@@ -1,0 +1,72 @@
+eram esperados valores não nulos, mas consoleAppender é nulo
+era esperado um valor verdadeiro, mas o resultado de checker.isErrorFree(0) é falso
+eram esperados valores nulos, mas consoleAppender não é nulo
+era esperado um valor verdadeiro, mas o resultado de checker.isErrorFree(0) é falso
+eram esperados valores nulos, mas consoleAppender não é nulo
+eram esperados valores não nulos, mas listAppender é nulo
+era esperado um valor verdadeiro, mas o resultado de checker.isErrorFree(0) é falso
+eram esperados valores não nulos, mas listAppender é nulo
+eram esperados tamanhos iguais, mas 1 é diferente de listAppender.list.size()
+eram esperados tamanhos iguais, mas 1 é diferente de listAppender.list.size()
+eram esperados valores não nulos, mas ae é nulo
+era esperado um valor verdadeiro, mas o resultado de listAppender.strList.get(0).startsWith("testMethod") é falso
+eram esperados valores não nulos, mas o é nulo
+os mapas de headers são diferentes
+o valor DummyResponse.DUMMY_DEFAULT_HDEADER_MAP.get("x") é diferente de aeBack.getResponseHeader("x")
+o valor DummyResponse.DUMMY_DEFAULT_HDEADER_MAP.get("headerName1") é diferente de aeBack.getResponseHeader("headerName1")
+os tamanhos dos mapas são diferentes
+os tamanhos dos conteúdos são diferentes
+os códigos de status são diferentes
+os conteúdos das requisições são diferentes
+os conteúdos das respostas são diferentes
+os valores dos atributos são diferentes
+os valores dos headers de requisição são diferentes
+os valores dos parâmetros de requisição são diferentes
+os valores dos atributos são diferentes
+os valores dos headers de requisição são diferentes
+os valores dos parâmetros de requisição são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os tamanhos são diferentes
+os conjuntos são diferentes
+os valores são diferentes
+o resultado é falso
+o resultado é verdadeiro
+o resultado é verdadeiro
+o resultado é verdadeiro
+o resultado é verdadeiro
+o resultado é falso
+o resultado é falso
+o resultado é falso
+o resultado é falso
+o resultado é verdadeiro
+o resultado é verdadeiro
+o resultado é falso
+o resultado é falso
+o resultado é falso
+o resultado é verdadeiro
+o resultado é verdadeiro
+o resultado é verdadeiro
+o resultado é falso
+o resultado é falso
+o resultado é verdadeiro
+o resultado é verdadeiro
+o resultado é falso
+o resultado é falso
+o resultado é falso
+o resultado é verdadeiro
+o resultado é verdadeiro

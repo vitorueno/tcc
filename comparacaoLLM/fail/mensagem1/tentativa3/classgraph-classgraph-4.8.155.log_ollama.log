@@ -1,0 +1,7 @@
+- assertEquals("valor esperado", valorReal)
+- assertEquals("Mensagem de erro", valorReal)
+- assertTrue("Mensagem de erro")
+- assertFalse("Mensagem de erro")
+- assertNull("Valor nulo")
+- assertNotNull("Valor nulo")
+- assertThrows(Exceção, código)

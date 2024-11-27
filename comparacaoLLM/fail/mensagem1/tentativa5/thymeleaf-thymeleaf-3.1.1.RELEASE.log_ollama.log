@@ -1,0 +1,23 @@
+Assertions.assertTrue(executor.isAllOK())
+Assertions.assertFalse(executor.isAllOK())
+
+Assertions.assertEquals(expected, ResourceUtils.normalize(result))
+Assertions.assertNotEquals(expected, ResourceUtils.normalize(result))
+
+Assertions.assertEquals(expected1, result1)
+Assertions.assertNotEquals(expected2, result2)
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue))
+Assertions.assertNotEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse))
+
+Assertions.assertTrue(lazyTrue.initialized)
+Assertions.assertFalse(lazyTrue.initialized)
+
+Assertions.assertEquals("<Hey, Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue))
+Assertions.assertNotEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse))
+
+Assertions.assertTrue(lazyTrue.initialized)
+Assertions.assertFalse(lazyTrue.initialized)
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue))
+Assertions.assertNotEquals("<>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse))

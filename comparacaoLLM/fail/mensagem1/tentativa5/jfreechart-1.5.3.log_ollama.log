@@ -1,0 +1,13 @@
+- Nulo: O valor é nulo.
+- Diferente de: Valor esperado e valor obtido são diferentes.
+- Iguais a: Valores esperados e obtidos não são iguais.
+- Null: O valor é nulo.
+- Diferente de zero: Valor absoluto do valor é diferente de zero.
+- Igual a zero: Valor absoluto do valor é igual a zero.
+- Diferente de zero e igual a: Valor absoluto do valor é diferente de zero e igual ao valor esperado.
+- Iguais a zero e igual a: Valores absolutos dos valores são iguais à zero e igual aos valores esperados.
+- Diferente da zero porcentagem: Valor absoluto do valor é diferente de 0%.
+- Iguais a zero por cento: Valores absolutos dos valores são iguais à zero por cento e iguais aos valores esperados.
+- Diferente da percentagem: Valor absoluto do valor é diferente da percentagem.
+- Igual à percentagem: Valor absoluto do valor é igual à percentagem.
+- Zero: O valor é zero.

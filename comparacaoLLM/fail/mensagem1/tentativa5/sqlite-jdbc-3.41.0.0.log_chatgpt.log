@@ -1,0 +1,5 @@
+"Mensagem de descrição de erro para o assertEqual: Valores não são iguais."
+"Mensagem de descrição de erro para o assertNull: Valor não é nulo."
+"Mensagem de descrição de erro para o assertNotNull: Valor é nulo."
+"Mensagem de descrição de erro para o assertTrue: Condição é falsa."
+"Mensagem de descrição de erro para o assertFalse: Condição é verdadeira."

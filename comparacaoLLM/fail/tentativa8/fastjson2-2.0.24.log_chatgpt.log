@@ -1,0 +1,205 @@
+eram esperados valores iguais, mas "sun.misc.Unsafe" é diferente de c.getCanonicalName()
+eram esperados valores iguais, mas 1 é diferente de user.id
+eram esperados valores iguais, mas "kraity" é diferente de user.name
+eram esperados valores iguais, mas 123 é diferente de bean.value
+eram esperados valores iguais, mas jsonFactory é diferente de objectMapper.getFactory()
+eram esperados valores iguais, mas 3 é diferente de products.size()
+eram esperados valores iguais, mas 1 é diferente de products.get(0).id
+eram esperados valores iguais, mas 2 é diferente de products.get(1).id
+eram esperados valores iguais, mas 3 é diferente de products.get(2).id
+eram esperados valores iguais, mas true é diferente de SerializationFeature.values().length > 0
+eram esperados valores iguais, mas null é diferente de new InvalidDefinitionException(null).getType()
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas instantCsv é diferente de writer.writeValueAsString(bean)
+eram esperados valores iguais, mas bean.data é diferente de bean1.data
+eram esperados valores iguais, mas instantCsv é diferente de str
+eram esperados valores iguais, mas bean.data é diferente de bean1.data
+eram esperados valores iguais, mas "value\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+eram esperados valores iguais, mas "\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+eram esperados valores iguais, mas false é diferente de (reader.readValue("value\n", TypeWithOptional.class).data).get().contains("value")
+eram esperados valores iguais, mas false é diferente de (reader.readValue("null\n", TypeWithOptional.class).data).get().contains("null")
+eram esperados valores iguais, mas instantCsv é diferente de str
+eram esperados valores iguais, mas bean.data é diferente de bean1.data
+eram esperados valores iguais, mas "value\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+eram esperados valores iguais, mas "\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+eram esperados valores iguais, mas false é diferente de (reader.readValue("value\n", TypeWithOptional.class).data).get().contains("value")
+eram esperados valores iguais, mas false é diferente de (reader.readValue("null\n", TypeWithOptional.class).data).get().contains("null")
+eram esperados valores iguais, mas false é diferente de (reader.readValue("\n", TypeWithOptional.class).data).get().isEmpty()
+eram esperados valores iguais, mas entry é diferente de null
+eram esperados valores iguais, mas 123 é diferente de entry.getJobResult().id
+eram esperados valores iguais, mas 123 é diferente de bean.id
+eram esperados valores iguais, mas 123 é diferente de bean1.id
+eram esperados valores iguais, mas 123 é diferente de bean2.id
+eram esperados valores iguais, mas 123 é diferente de bean3.id
+eram esperados valores iguais, mas 2147483648 é diferente de MapperFeature.USE_ANNOTATIONS.getMask()
+eram esperados valores iguais, mas false é diferente de MapperFeature.USE_ANNOTATIONS.enabledIn(MapperFeature.USE_ANNOTATIONS.getMask())
+eram esperados valores iguais, mas false é diferente de MapperFeature.USE_ANNOTATIONS.enabledIn(MapperFeature.USE_ANNOTATIONS.getLongMask())
+eram esperados valores iguais, mas "{\"color\":\"yellow\",\"type\":\"renault\"}" é diferente de json
+eram esperados valores iguais, mas car.color é diferente de car1.color
+eram esperados valores iguais, mas car.type é diferente de car1.type
+eram esperados valores iguais, mas "Black" é diferente de map.get("color")
+eram esperados valores iguais, mas bean.id é diferente de node.get("id").asInt()
+eram esperados valores iguais, mas bean.name é diferente de node.get("name").asText()
+eram esperados valores iguais, mas 123 é diferente de mapper.readTree(new ByteArrayInputStream(str.getBytes())).get("id").asInt()
+eram esperados valores iguais, mas 123 é diferente de mapper.readTree(new StringReader(str)).get("id").asInt()
+eram esperados valores iguais, mas 123 é diferente de mapper.readTree(str).get("id").asInt()
+eram esperados valores iguais, mas 123 é diferente de ((JsonNode) mapper.readTree(mapper.factory.createParser(str))).get("id").asInt()
+eram esperados valores iguais, mas null é diferente de arrayNode.get(0)
+eram esperados valores iguais, mas JsonNodeType.ARRAY é diferente de arrayNode.getNodeType()
+eram esperados valores iguais, mas "{\"id\":101}" é diferente de str
+eram esperados valores iguais, mas "{\"id\":101,\"name\":null}" é diferente de str
+eram esperados valores iguais, mas "{\"bean_id\":1001}" é diferente de str
+eram esperados valores iguais, mas bean.id é diferente de bean1.id
+eram esperados valores iguais, mas str é diferente de new String(bytes, StandardCharsets.UTF_8)
+eram esperados valores iguais, mas bean.id é diferente de bean2.id
+eram esperados valores iguais, mas bean.id é diferente de bean3.id
+eram esperados valores iguais, mas "{\"bean_id\":1001}" é diferente de str
+eram esperados valores iguais, mas expected é diferente de carJson
+eram esperados valores iguais, mas expected é diferente de new String(byteOut.toByteArray(), StandardCharsets.UTF_8)
+eram esperados valores iguais, mas expected é diferente de strWriter.toString()
+eram esperados valores iguais, mas car.type é diferente de car1.type
+eram esperados valores iguais, mas car é diferente de null
+eram esperados valores iguais, mas "Black" é diferente de car.getColor()
+eram esperados valores iguais, mas red é diferente de car.color
+eram esperados valores iguais, mas javaType é diferente de null
+eram esperados valores iguais, mas values.size() é diferente de 1
+eram esperados valores iguais, mas 123 é diferente de values.get(0).id
+eram esperados valores iguais, mas "XX" é diferente de values.get(0).name
+eram esperados valores iguais, mas 1 é diferente de values.size()
+eram esperados valores iguais, mas 123 é diferente de values.get(0).id
+eram esperados valores iguais, mas "XX" é diferente de values.get(0).name
+eram esperados valores iguais, mas 1 é diferente de map.size()
+eram esperados valores iguais, mas 123 é diferente de bean.id
+eram esperados valores iguais, mas "XXX" é diferente de bean.name
+eram esperados valores iguais, mas node.isBigInteger() é diferente de true
+eram esperados valores iguais, mas JsonParser.NumberType.BIG_INTEGER é diferente de node.numberType()
+eram esperados valores iguais, mas JsonNodeType.NUMBER é diferente de node.getNodeType()
+eram esperados valores iguais, mas bigInt.intValue() é diferente de node.asInt()
+eram esperados valores iguais, mas bigInt.intValue() é diferente de node.asInt(2)
+eram esperados valores iguais, mas bigInt.intValue() é diferente de node.intValue()
+eram esperados valores iguais, mas bigInt.longValue() é diferente de node.longValue()
+eram esperados valores iguais, mas bigInt.doubleValue() é diferente de node.asDouble()
+eram esperados valores iguais, mas (reader.readValue("\n", TypeWithOptional.class).data).isPresent() é diferente de false
+eram esperados valores iguais, mas arrayNode.elements().hasNext() é diferente de false
+eram esperados valores iguais, mas arrayNode.iterator().hasNext() é diferente de false
+eram esperados valores iguais, mas node.isBigDecimal() é diferente de false
+eram esperados valores iguais, mas node.isBigInteger() é diferente de false
+eram esperados valores iguais, mas node.isBigDecimal() é diferente de false
+eram esperados valores iguais, mas node.isFloat() é diferente de false
+eram esperados valores iguais, mas node.isDouble() é diferente de false
+eram esperados valores iguais, mas JsonParser.NumberType.INT é diferente de node.numberType()
+eram esperados valores iguais, mas JsonNodeType.NUMBER é diferente de node.getNodeType()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt(2)
+eram esperados valores iguais, mas val.intValue() é diferente de node.intValue()
+eram esperados valores iguais, mas val.longValue() é diferente de node.longValue()
+eram esperados valores iguais, mas val.floatValue() é diferente de node.floatValue()
+eram esperados valores iguais, mas val.doubleValue() é diferente de node.doubleValue()
+eram esperados valores iguais, mas val.doubleValue() é diferente de node.asDouble()
+eram esperados valores iguais, mas BigInteger.ONE é diferente de node.bigIntegerValue()
+eram esperados valores iguais, mas "null" é diferente de new POJONode(null).asText()
+eram esperados valores iguais, mas "{}" é diferente de object.getJSONObject().toString()
+eram esperados valores iguais, mas "{}" é diferente de object.asText()
+eram esperados valores iguais, mas 0 é diferente de object.size()
+eram esperados valores iguais, mas flag.booleanValue() é diferente de true
+eram esperados valores iguais, mas "true" é diferente de flag.asText()
+eram esperados valores iguais, mas "true" é diferente de flag.toString()
+eram esperados valores iguais, mas 1 é diferente de object.size()
+eram esperados valores iguais, mas 123 é diferente de node.getValue()
+eram esperados valores iguais, mas Short.toString(value) é diferente de node.asText()
+eram esperados valores iguais, mas Short.toString(value) é diferente de node.toString()
+eram esperados valores iguais, mas value é diferente de node.getValue()
+eram esperados valores iguais, mas Integer.toString(value) é diferente de node.asText()
+eram esperados valores iguais, mas Integer.toString(value) é diferente de node.toString()
+eram esperados valores iguais, mas value é diferente de node.getValue()
+eram esperados valores iguais, mas Long.toString(value) é diferente de node.asText()
+eram esperados valores iguais, mas Long.toString(value) é diferente de node.toString()
+eram esperados valores iguais, mas value é diferente de node.getValue()
+eram esperados valores iguais, mas Float.toString(value) é diferente de node.asText()
+eram esperados valores iguais, mas Float.toString(value) é diferente de node.toString()
+eram esperados valores iguais, mas value é diferente de node.getValue()
+eram esperados valores iguais, mas Double.toString(value) é diferente de node.asText()
+eram esperados valores iguais, mas Double.toString(value) é diferente de node.toString()
+eram esperados valores iguais, mas value é diferente de node.getValue()
+eram esperados valores iguais, mas value.toPlainString() é diferente de node.asText()
+eram esperados valores iguais, mas value.toString() é diferente de node.toString()
+eram esperados valores iguais, mas value é diferente de node.getValue()
+eram esperados valores iguais, mas value.toString() é diferente de node.asText()
+eram esperados valores iguais, mas value.toString() é diferente de node.toString()
+eram esperados valores iguais, mas value é diferente de node.getValue()
+eram esperados valores iguais, mas value é diferente de node.asText()
+eram esperados valores iguais, mas JSON.toJSONString(value) é diferente de node.toString()
+eram esperados valores iguais, mas node.isDouble() é diferente de true
+eram esperados valores iguais, mas JsonParser.NumberType.DOUBLE é diferente de node.numberType()
+eram esperados valores iguais, mas JsonNodeType.NUMBER é diferente de node.getNodeType()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt(2)
+eram esperados valores iguais, mas val.intValue() é diferente de node.intValue()
+eram esperados valores iguais, mas val.longValue() é diferente de node.longValue()
+eram esperados valores iguais, mas val.doubleValue() é diferente de node.asDouble()
+eram esperados valores iguais, mas 123 é diferente de node.asInt()
+eram esperados valores iguais, mas "123" é diferente de node.asText()
+eram esperados valores iguais, mas 123 é diferente de node.getValue()
+eram esperados valores iguais, mas JsonNodeType.NUMBER é diferente de node.getNodeType()
+eram esperados valores iguais, mas node.binaryValue() é diferente de null
+eram esperados valores iguais, mas node.textValue() é diferente de null
+eram esperados valores iguais, mas bytes é diferente de node.binaryValue()
+eram esperados valores iguais, mas 0 é diferente de node.asInt()
+eram esperados valores iguais, mas node.isFloat() é diferente de true
+eram esperados valores iguais, mas JsonParser.NumberType.FLOAT é diferente de node.numberType()
+eram esperados valores iguais, mas JsonNodeType.NUMBER é diferente de node.getNodeType()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt(2)
+eram esperados valores iguais, mas val.intValue() é diferente de node.intValue()
+eram esperados valores iguais, mas val.longValue() é diferente de node.longValue()
+eram esperados valores iguais, mas val.doubleValue() é diferente de node.asDouble()
+eram esperados valores iguais, mas 0 é diferente de node.asInt()
+eram esperados valores iguais, mas "[]" é diferente de array.asText()
+eram esperados valores iguais, mas "[1]" é diferente de array.toString()
+eram esperados valores iguais, mas "[1]" é diferente de array.toString()
+eram esperados valores iguais, mas "[1]" é diferente de array.toString()
+eram esperados valores iguais, mas "[1]" é diferente de array.toString()
+eram esperados valores iguais, mas "[1]" é diferente de array.toString()
+eram esperados valores iguais, mas "[1]" é diferente de array.toString()
+eram esperados valores iguais, mas "[true]" é diferente de array.toString()
+eram esperados valores iguais, mas "[true]" é diferente de array.toString()
+eram esperados valores iguais, mas "[12.34]" é diferente de array.toString()
+eram esperados valores iguais, mas "[12.34]" é diferente de array.toString()
+eram esperados valores iguais, mas "[\"abc\"]" é diferente de array.toString()
+eram esperados valores iguais, mas JsonParser.NumberType.LONG é diferente de node.numberType()
+eram esperados valores iguais, mas JsonNodeType.NUMBER é diferente de node.getNodeType()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt()
+eram esperados valores iguais, mas val.intValue() é diferente de node.asInt(2)
+eram esperados valores iguais, mas val.intValue() é diferente de node.intValue()
+eram esperados valores iguais, mas val.longValue() é diferente de node.longValue()
+eram esperados valores iguais, mas val.floatValue() é diferente de node.floatValue()
+eram esperados valores iguais, mas val.doubleValue() é diferente de node.doubleValue()
+eram esperados valores iguais, mas val.doubleValue() é diferente de node.asDouble()
+eram esperados valores iguais, mas BigInteger.ONE é diferente de node.bigIntegerValue()
+eram esperados valores iguais, mas "null" é diferente de new POJONode(null).asText()
+eram esperados valores iguais, mas "{}" é diferente de object.getJSONObject().toString()
+eram esperados valores iguais, mas "{}" é diferente de object.asText()
+eram esperados valores iguais, mas 0 é diferente de object.size()
+eram esperados valores iguais, mas true é diferente de flag.booleanValue()
+eram esperados valores iguais, mas "true" é diferente de flag.asText()
+eram esperados valores iguais, mas "true" é diferente de flag.toString()
+eram esperados valores iguais, mas 1 é diferente de object.size()
+eram esperados valores iguais, mas 123 é diferente de bean.id
+eram esperados valores iguais, mas "XXX" é diferente de bean.name
+eram esperados valores iguais, mas node.isBigInteger() é diferente de true
+eram esperados valores iguais, mas JsonParser.NumberType.BIG_INTEGER é diferente de node.numberType()
+eram esperados valores iguais, mas JsonNodeType.NUMBER é diferente de node.getNodeType()
+eram esperados valores iguais, mas dec.intValue() é diferente de node.asInt()
+eram esperados valores iguais, mas dec.intValue() é diferente de node.asInt(2)
+eram esperados valores iguais, mas dec.intValue() é diferente de node.intValue()
+eram esperados valores iguais, mas dec.longValue() é diferente de node.longValue()
+eram esperados valores iguais, mas dec.doubleValue() é diferente de node

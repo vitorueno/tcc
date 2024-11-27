@@ -1,0 +1,26 @@
+eram esperados valores iguais, mas 58 é diferente de 23+35
+eram esperados valores iguais, mas Hello ??something_en?? não é igual a Hello [[#{something}]]
+eram esperados valores iguais, mas "Hello 58" não é igual a Hello [[23+35]]
+eram esperados valores iguais, mas não foi encontrado um valor igual para "Hello [[#{something}]]"
+eram esperados valores iguais, mas não foi encontrado um valor igual para "Hello [[23+35]]"
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("/", "/")
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("/", "something")
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("/something", "/")
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("something", "/")
+eram esperados valores iguais, mas não foram encontrados dois valores iguais
+eram esperados valores iguais, mas não foi encontrado um valor igual para org.thymeleaf.templateresolver.StringTemplateResolver
+eram esperados valores iguais, mas não foi encontrado um valor igual para org.thymeleaf.templateresolver.ClassLoaderTemplateResolver
+eram esperados valores iguais, mas não foi encontrado um valor igual para org.thymeleaf.templateresolver.FileTemplateResolver
+eram esperados valores iguais, mas não foram encontradas duas instâncias do tipo org.thymeleaf.templateresolver.TemplateResolver
+eram esperados valores iguais, mas não foi encontrado um valor igual para org.thymeleaf.templateresolver.ClassLoaderTemplateResolver
+eram esperados valores iguais, mas não foi encontrado um valor igual para org.thymeleaf.templateresolver.FileTemplateResolver
+eram esperados valores iguais, mas não foram encontradas duas instâncias do tipo org.thymeleaf.templateresolver.TemplateResolver
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("/", "/")
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("/", "something")
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("/something", "/")
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("something", "/")
+eram esperados valores iguais, mas não foram encontradas duas instâncias do tipo TemplateResourceUtils
+eram esperados valores iguais, mas não foi encontrado um valor igual para org.thymeleaf.templateresolver.ClassLoaderTemplateResolver
+eram esperados valores iguais, mas não foi encontrado um valor igual para org.thymeleaf.templateresolver.DefaultTemplateResolver
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("nonexisting", "/")
+eram esperados valores iguais, mas não foi encontrado um valor igual para TemplateResourceUtils.computeRelativeLocation("nonexisting", "something")

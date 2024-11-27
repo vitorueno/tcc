@@ -1,0 +1,4 @@
+"O valor esperado é verdadeiro, porém o valor atual é falso."
+"Número esperado: <número_esperado> mas foi: <número_atual>."
+"Os objetos são diferentes: <objeto_esperado> e <objeto_atual>."
+"Os arrays diferem nas posições <posição> - esperado: <valor_esperado>, atual: <valor_atual>."

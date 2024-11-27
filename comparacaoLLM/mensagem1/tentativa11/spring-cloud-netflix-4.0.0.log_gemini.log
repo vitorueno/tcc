@@ -1,0 +1,53 @@
+```
+assertEquals(valorEsperado, valorAtual);
+"O valor atual {valorAtual} não corresponde ao valor esperado {valorEsperado}."
+
+
+assertNotEquals(valorEsperado, valorAtual);
+"O valor atual {valorAtual} é igual ao valor esperado {valorEsperado}, mas não deveria ser."
+
+
+assertTrue(condicao);
+"A condição {condicao} é falsa, mas deveria ser verdadeira."
+
+
+assertFalse(condicao);
+"A condição {condicao} é verdadeira, mas deveria ser falsa."
+
+
+assertNull(objeto);
+"O objeto não é nulo, mas deveria ser."
+
+
+assertNotNull(objeto);
+"O objeto é nulo, mas não deveria ser."
+
+
+assertSame(objetoEsperado, objetoAtual);
+"Os objetos {objetoEsperado} e {objetoAtual} não são o mesmo objeto, mas deveriam ser."
+
+
+assertNotSame(objetoEsperado, objetoAtual);
+"Os objetos {objetoEsperado} e {objetoAtual} são o mesmo objeto, mas não deveriam ser."
+
+
+assertArrayEquals(arrayEsperado, arrayAtual);
+"Os arrays {arrayEsperado} e {arrayAtual} não são iguais."
+
+
+assertEquals(valorEsperado, valorAtual, delta);
+"O valor atual {valorAtual} difere do valor esperado {valorEsperado} em mais de {delta}."
+
+
+assertThat(valorAtual, is(valorEsperado));
+"O valor atual {valorAtual} não corresponde ao valor esperado {valorEsperado}."
+
+
+assertThat(valorAtual, not(valorEsperado));
+"O valor atual {valorAtual} corresponde ao valor esperado {valorEsperado}, mas não deveria."
+
+
+fail();
+"Teste falhou."
+
+```

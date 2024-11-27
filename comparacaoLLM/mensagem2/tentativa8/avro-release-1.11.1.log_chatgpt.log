@@ -1,0 +1,99 @@
+eram esperados os mesmos valores, mas jsonData é diferente de run(new DataFileReadTool(), sampleFile.getPath())
+eram esperados os mesmos valores, mas jsonData é diferente de run(new DataFileReadTool(), stdin, "-")
+eram esperados os mesmos valores, mas jsonData é diferente de run(new DataFileReadTool(), "--pretty", sampleFile.getPath())
+eram esperados os mesmos valores, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema", "\"long\"", sampleFile.getPath())
+eram esperados os mesmos valores, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema-file", readerSchemaFile.getPath(), sampleFile.getPath())
+eram esperados os mesmos valores, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", sampleFile.getPath())
+eram esperados os mesmos valores, mas expectedJson é diferente de run(new DataFileReadTool(), "--head=3", sampleFile.getPath())
+eram esperados os mesmos valores, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", "5", sampleFile.getPath())
+eram esperados os mesmos valores, mas jsonData é diferente de run(new DataFileReadTool(), "--head=3000000000", sampleFile.getPath())
+eram esperados os mesmos valores, mas "\n" é diferente de run(new DataFileReadTool(), "--head=0", sampleFile.getPath())
+eram esperados os mesmos valores, mas "\n" é diferente de run(new DataFileReadTool(), "--head=-5", sampleFile.getPath())
+eram esperados os mesmos valores, mas schema.toString() + "\n" é diferente de run(new DataFileGetMetaTool(), sampleFile.getPath(), "--key", "avro.schema")
+eram esperados os mesmos valores, mas schema.toString() + "\n" é diferente de run(new DataFileGetSchemaTool(), sampleFile.getPath())
+eram esperados os mesmos valores, mas 0 é diferente de countRecords(outFile)
+eram esperados os mesmos valores, mas 5 é diferente de countRecords(outFile)
+eram esperados os mesmos valores, mas false é diferente de baos.toString().contains("Compression codec (default: null)")
+eram esperados os mesmos valores, mas readFileAsString(protocol) é diferente de readFileAsString(outfile)
+eram esperados os mesmos valores, mas "Warning: Found documentation comment at line 19, column 1. Ignoring previous one at line 1, column 1: \"Licensed to the Apache Software Foundation (ASF) under one\nor more contributor license agreements.  See the NOTICE file\ndistributed with this work for additional information\nregarding copyright ownership.  The ASF licenses this file\nto you under the Apache License, Version 2.0 (the\n\"License\"); you may not use this file except in compliance\nwith the License.  You may obtain a copy of the License at\n\n    https://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License." + "\"\nDid you mean to use a multiline comment ( /* ... */ ) instead?" é diferente de warnings
+eram esperados os mesmos valores, mas true é diferente de err.toString().contains("Need count (--count)")
+eram esperados os mesmos valores, mas true é diferente de err.toString().contains("Compression codec (default: deflate)")
+eram esperados os mesmos valores, mas COUNT é diferente de i
+eram esperados os mesmos valores, mas WordCountUtil.COUNTS.size() é diferente de numWords
+eram esperados os mesmos valores, mas 4 é diferente de files.length
+eram esperados os mesmos valores, mas "Warning: Found documentation comment at line 19, column 1. Ignoring previous one at line 1, column 1: \"Licensed to the Apache Software Foundation (ASF) under one\nor more contributor license agreements.  See the NOTICE file\ndistributed with this work for additional information\nregarding copyright ownership.  The ASF licenses this file\nto you under the Apache License, Version 2.0 (the\n\"License\"); you may not use this file except in compliance\nwith the License.  You may obtain a copy of the License at\n\n    https://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License." + "\"\nDid you mean to use a multiline comment ( /* ... */ ) instead?" é diferente de warnings
+eram esperados os mesmos valores, mas 1 é diferente de returnCode
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas "220\n" é diferente de out.toString()
+eram esperados os mesmos valores, mas json é diferente de baos.toString(UTF8).replace("\r", "")
+eram esperados os mesmos valores, mas avro é diferente de baos.toString(UTF8)
+eram esperados os mesmos valores, mas Assert.assertTrue(baos.toString().contains("Compression codec (default: deflate)")) é diferente de null
+eram esperados os mesmos valores, mas false é diferente de r.hasNext()
+eram esperados os mesmos valores, mas Assert.assertEquals(defaultOutputFile.length(), nullOutputFile.length()) é diferente de null
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas ROWS_IN_INPUT_FILES - OFFSET é diferente de numRowsInFile(output)
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas true é diferente de baos1.toString("UTF-8").replace("\r", "").endsWith("hello\t{\"greeting\":\"Hi!\"}\n")
+eram esperados os mesmos valores, mas "\"Hello!\"\n" é diferente de baos2.toString("UTF-8").replace("\r", "")
+eram esperados os mesmos valores, mas Assert.assertEquals(String.format("zstandard[%d]", level), codec.toString()) é diferente de null
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas ROWS_IN_INPUT_FILES * 3 é diferente de numRowsInFile(output)
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas ROWS_IN_INPUT_FILES * 3 é diferente de numRowsInFile(output)
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas ROWS_IN_INPUT_FILES * 3 é diferente de numRowsInFile(output)
+eram esperados os mesmos valores, mas getCodec(input1).getClass() é diferente de getCodec(output).getClass()
+eram esperados os mesmos valores, mas 1 é diferente de returnCode
+eram esperados os mesmos valores, mas 2 é diferente de returnCode
+eram esperados os mesmos valores, mas 3 é diferente de returnCode
+eram esperados os mesmos valores, mas 0 é diferente de returnCode
+eram esperados os mesmos valores, mas Assert.assertEquals(0, in.tell()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(0, in.length()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(1, bytes.length) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(0, bytes[0]) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(0, in.readInt()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(sentinel, in.readLong()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(0, in.getRowCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(0, in.getColumnCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(0, in.getRowCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(1, in.getColumnCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, in.getRowCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(1, in.getColumnCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, count) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, in.getRowCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(1, in.getColumnCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, count) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, in.getRowCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(1, in.getColumnCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, count) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, in.getRowCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(2, in.getColumnCount()) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(COUNT, count) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertEquals(0, min) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertTrue(max > 1024 * 32) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertTrue(average > 16.0f) é diferente de null
+eram esperados os mesmos valores, mas Assert.assertTrue(average < 64.0f) é diferente de null
+eram esperados os mesmos valores, mas true é diferente de compressedSize > 0
+eram esperados os mesmos valores, mas true é diferente de compressedSize < inputSize || codec.equals("null")
+eram esperados os mesmos valores, mas decompressedBuffer é diferente de inputByteBuffer
+eram esperados os mesmos valores, mas true é diferente de compressedSize > 0
+eram esperados os mesmos valores, mas decompressedBuffer é diferente de inputByteBuffer

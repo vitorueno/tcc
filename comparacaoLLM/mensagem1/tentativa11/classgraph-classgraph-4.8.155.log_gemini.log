@@ -1,0 +1,21 @@
+```
+"Valor esperado era '10', mas o valor atual era '5'."
+
+"A lista deveria conter o elemento 'elementoX', mas não o contém."
+
+"O objeto 'meuObjeto' era esperado como nulo, mas não era nulo."
+
+"A exceção 'MinhaExceção' era esperada, mas a exceção lançada foi 'OutraExceção'."
+
+"O tamanho da lista deveria ser '5', mas o tamanho atual é '3'."
+
+"Os objetos 'objetoA' e 'objetoB' deveriam ser iguais, mas são diferentes."
+
+"A string 'textoEsperado' era esperada, mas a string atual era 'textoAtual'."
+
+"O valor booleano deveria ser 'true', mas o valor atual é 'false'."
+
+"O método 'meuMétodo' deveria lançar uma exceção 'MinhaExceção', mas não lançou nenhuma exceção."
+
+"O valor deveria estar entre 1 e 10, mas o valor atual é 12."
+```

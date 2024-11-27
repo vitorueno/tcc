@@ -1,0 +1,193 @@
+NotNull(files)
+ 
+ files.length > 10
+ 
+NotNull(doc)
+ 
+NotNull(doc)
+ 
+NotNull(xmlDoc)
+ 
+NotNull(doc)
+ 
+Validate fail("Should not be reachable")
+ 
+runner.isInterrupted()
+ 
+body[0].length() > 0
+ 
+body[0].contains("<p>Are you still there?")
+ 
+runner.isInterrupted()
+ 
+assertEquals(0, body[0].length())
+ 
+threw
+ 
+assertEquals("outatime", h1.text())
+ 
+assertEquals("outatime", h1.text())
+ 
+assertEquals(0, catcher.exceptionCount.get())
+ 
+numThreads - 1, catcher.multiThreadExceptions.get()
+ 
+assertEquals(numThreads - 1, catcher.exceptionCount.get())
+ 
+fail("Should not be reachable", "A execução falhou por uma causa deliberada")
+ 
+assertEquals("Hello, World!", p.text())
+ 
+doc.title().contains("Environment Variables")
+ 
+doc.title().contains("Environment Variables")
+ 
+threw
+ 
+threw
+ 
+assertEquals(404, res.statusCode())
+ 
+assertEquals("Webserver Environment Variables", doc.title())
+ 
+ihVal("Method", doc)
+ 
+"gzip"
+ 
+"auth=token"
+ 
+"度一下"
+ 
+"Jsoup, Jonathan"
+ 
+"application/x-www-form-urlencoded; charset=UTF-8"
+ 
+ihVal("Content-Type", doc).contains(MULTIPART_FORM_DATA)
+ 
+ihVal("Content-Type", doc).contains("boundary")
+ 
+ihVal("uname", doc)
+ 
+度一下
+ 
+hello
+ 
+cross-site
+ 
+cors
+ 
+hello
+ 
+cross-site
+ 
+cors
+ 
+POST
+ 
+application/json
+ 
+foo=true
+ 
+body
+ 
+POST
+ 
+application/json
+ 
+body
+ 
+POST
+ 
+text/plain
+ 
+body
+ 
+POST
+ 
+uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B
+ 
+body
+ 
+what=the&what=about+%26+me%3F
+ 
+the, about & me?
+ 
+Mozilla
+ 
+http://example.com
+ 
+PUT
+ 
+gzip
+ 
+auth=token
+ 
+4
+ 
+application/octet-stream
+ 
+secondPart
+ 
+google-ipod.html.gz
+ 
+12212
+ 
+image/jpeg
+ 
+firstPart
+ 
+thumb.jpg
+ 
+1052
+ 
+Jay
+ 
+Soup
+ 
+doc.title().contains("Environment")
+ 
+doc2.title().contains("Environment")
+ 
+body.contains("Environment")
+ 
+bytes.length > 100
+ 
+doc.title().contains("Environment")
+ 
+assertEquals("asdfg123", cookies.get("token"))
+ 
+assertEquals("jhy", cookies.get("uid"))
+ 
+token=asdfg123; uid=jhy
+ 
+"True"
+ 
+"Yes"
+ 
+deflate
+ 
+Hello, World!
+ 
+Something
+ 
+document.title()
+ 
+0
+ 
+0
+ 
+doc.select("p").size()
+ 
+0
+ 
+ HelloServlet.Url
+ 
+threw
+ 
+assertEquals(EchoServlet.Url, doc.location())
+ 
+"GET"
+ 
+ihVal("Hello", doc)
+ 
+assertEquals(EchoServlet.Url, doc.location())

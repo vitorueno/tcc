@@ -1,0 +1,101 @@
+`impossibleAlternative.isImpossible() deve retornar true`
+`A propriedade departureCancelled da parada 0 da perna 0 da viagem impossibleAlternative deve ser true`
+`O tamanho da lista response.getAll() deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`O tamanho da lista response.getAll() deve ser 3`
+`impossibleAlternative.isImpossible() deve retornar true`
+`A propriedade arrivalCancelled da parada 1 da perna 0 da viagem impossibleAlternative deve ser true`
+`O tamanho da lista response.getAll() deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`A propriedade departureCancelled da parada 2 da perna 0 da viagem impossibleAlternative deve ser true`
+`O tamanho da lista response.getAll() deve ser 1`
+`O atributo trip_id da variável ptLeg deve ser igual a EXTRA0`
+`O tamanho da lista response.getAll() deve ser 1`
+`O tamanho da lista responseWithRealtimeUpdate.getAll() deve ser 1`
+`O tamanho da lista response.getAll() deve ser 1`
+`O tamanho da lista response.getAll() deve ser 1`
+`O último elemento da lista route.getAll() deve ter a propriedade isImpossible() como true`
+`O tamanho da lista response.getAll() deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`O tamanho da lista response.getAll() deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`O tamanho da lista response.getAll() deve ser 1`
+`A propriedade departureCancelled da parada 0 da perna 0 da viagem possibleAlternative deve ser false`
+`A rota route não deve conter erros`
+`A rota route não deve conter erros`
+`A lista route.getAll() não deve estar vazia`
+`A rota route não deve conter erros`
+`O tamanho da lista route.getAll() deve ser 1`
+`A concatenação dos stop_id's da variável firstLeg deve ser JUSTICE_COURT,MUSEUM`
+`A concatenação dos stop_id's da variável secondLeg deve ser EMSI,DADAN`
+`O tempo de partida de transferLeg deve ser 2007-01-01T10:00:00`
+`O tempo de chegada de transferLeg deve ser 2007-01-01T10:08:06.670`
+`A geometria da perna 1 da solução de trânsito deve ser LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)`
+`O tempo total da solução de trânsito deve ser 4500000`
+`O peso da rota da solução de trânsito deve ser 4500000.0`
+`A rota route não deve conter erros`
+`O tamanho da lista route.getAll() deve ser 1`
+`A rota route não deve conter erros`
+`O tamanho da lista route.getAll() deve ser 1`
+`A solução de trânsito deve conter 2 pernas`
+`O route_id de ptLeg1 deve ser COURT2MUSEUM`
+`O trip_id de ptLeg1 deve ser MUSEUM1`
+`O stop_id da parada 0 de ptLeg1 deve ser JUSTICE_COURT`
+`O stop_id da parada 1 de ptLeg1 deve ser MUSEUM`
+`O route_id de ptLeg2 deve ser MUSEUM2AIRPORT`
+`O trip_id de ptLeg2 deve ser MUSEUMAIRPORT1`
+`O stop_id da parada 0 de ptLeg2 deve ser NEXT_TO_MUSEUM`
+`O stop_id da parada 1 de ptLeg2 deve ser AIRPORT`
+`A concatenação dos stop_id's da perna 0 de ptLegs deve ser NEXT_TO_MUSEUM,AIRPORT`
+`A concatenação dos stop_id's da perna 1 de ptLegs deve ser BEATTY_AIRPORT,BULLFROG`
+`O horário de chegada deve ser 14:10`
+`A duração entre o horário de partida mais cedo e o horário de chegada deve ser 15000000 milissegundos`
+`O peso da rota da solução de trânsito deve ser 1.5E7`
+`A rota route não deve conter erros`
+`O tamanho da lista route.getAll() deve ser 1`
+`O tempo total da solução de trânsito deve ser 4500000`
+`O peso da rota da solução de trânsito deve ser 4500000.0`
+`A concatenação dos stop_id's da perna 0 da solução de trânsito deve ser JUSTICE_COURT,MUSEUM`
+`O horário de partida a pé deve ser 10:00`
+`A geometria da perna 1 da solução de trânsito deve ser LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)`
+`O horário de chegada a pé deve ser 10:08:06.670`
+`A concatenação dos stop_id's da perna 2 da solução de trânsito deve ser EMSI,DADAN`
+`A rota a pé deve conter 1 perna`
+`O tempo da rota a pé deve ser 486670`
+`A geometria da perna 0 da rota a pé deve ser LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)`
+`A rota route não deve conter erros`
+`O valor de amount.getAmount().doubleValue() deve ser maior que onlyFare.fare_attribute.price`
+`O valor de cheapestFareWhereEveryLegGoesThroughAllZones deve ser maior ou igual ao valor de cheapestFare`
+`O tamanho da lista transfersToStop deve ser 2`
+`O from_stop_id de transfer deve ser MUSEUM`
+`O to_stop_id de transfer deve ser NEXT_TO_MUSEUM`
+`O from_route_id de transfer deve ser nulo`
+`O to_route_id de transfer deve ser nulo`
+`O min_transfer_time de transfer deve ser 600`
+`O from_stop_id de withinStationTransfer deve ser NEXT_TO_MUSEUM`
+`O to_stop_id de withinStationTransfer deve ser NEXT_TO_MUSEUM`
+`O from_route_id de withinStationTransfer deve ser nulo`
+`O to_route_id de withinStationTransfer deve ser nulo`
+`O tamanho da lista transfersToStop deve ser 5`
+`O from_route_id do elemento 0 da lista transfersToStop deve ser AB`
+`O from_route_id do elemento 1 da lista transfersToStop deve ser FUNNY_BLOCK_AB`
+`O from_route_id do elemento 2 da lista transfersToStop deve ser STBA`
+`O from_route_id do elemento 3 da lista transfersToStop deve ser AAMV`
+`O from_route_id do elemento 4 da lista transfersToStop deve ser ABBFC`
+`A rota route não deve conter erros`
+`O tamanho da lista route.getAll() deve ser 1`
+`O tamanho da lista route.getAll() deve ser 1`
+`O tamanho da lista route.getAll() deve ser 1`
+`O tamanho da lista response.getAll() deve ser 1`
+`O tamanho da lista route.getAll() deve ser 1`
+`O tamanho da lista route.getAll() deve ser 1`
+`As listas expectedDepartureTimes e actualDepartureTimes devem ser iguais`
+`As listas expectedDepartureTimes e actualDepartureTimes devem ser iguais`
+`As listas expectedDepartureTimes e actualDepartureTimes devem ser iguais`
+`A lista route.getAll() deve estar vazia`
+`A lista route.getAll() deve estar vazia`
+`O route_id da perna 1 da viagem mondayTrip deve ser AB`
+`O route_id da perna 0 da viagem mondayTrip não deve ser AB`
+`O route_id da perna 1 da viagem mondayTrip não deve ser AB`
+`O route_id da perna 1 da viagem mondayTrip deve ser AB`
+

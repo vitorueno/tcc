@@ -1,0 +1,24 @@
+eram esperados valores iguais, mas 1 é diferente de jspFragment.count
+eram esperados valores iguais, mas 1 é diferente de jspFragment.count
+eram esperados valores iguais, mas 2 é diferente de jspFragment.count
+eram esperados valores iguais, mas 3 é diferente de jspFragment.count
+eram esperados valores iguais, mas 2 é diferente de jspFragment.count
+eram esperados valores iguais, mas 6 é diferente de jspFragment.count
+eram esperados valores iguais, mas o valor de jspContext.getAttribute("s") é nulo
+eram esperados valores iguais, mas s é nulo
+eram esperados valores iguais, mas o resultado da chamada de method count em s é -1
+eram esperados valores iguais, mas o resultado da subtração de 1 do resultado da chamada de method count em s é -2
+eram esperados valores iguais, mas o resultado da chamada de method severity em vtor é 0
+eram esperados valores iguais, mas vtor não é valido
+eram esperados valores iguais, mas o valor do elemento violations é nulo
+eram esperados valores iguais, mas o número de violações é igual a 2
+eram esperados valores iguais, mas o resultado da chamada de method getViolations em vtor é um array vazio
+eram esperados valores iguais, mas o tamanho do array de violações é igual a 2
+eram esperados valores iguais, mas o elemento com index 0 do array de violações não é igual a violation1
+eram esperados valores iguais, mas o elemento com index 1 do array de violações não é igual a violation2
+eram esperados valores iguais, mas o número de violações é igual a 2
+eram esperados valores iguais, mas o valor do array de violações não é igual a [violación1, violation2]
+eram esperados valores iguais, mas o tamanho do array de violações é igual a 2
+eram esperados valores iguais, mas o número de violões é igual a 2
+eram esperados valores iguais, mas a lista de violões não está definida
+eram esperados valores iguais, mas a variável validate é nula

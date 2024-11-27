@@ -1,0 +1,107 @@
+assertEquals(jsonData, run(new DataFileReadTool(), sampleFile.getPath()))
+assertEquals(jsonData, run(new DataFileReadTool(), stdin, "-"))
+
+assertEquals(jsonData, run(new DataFileReadTool(), "--pretty", sampleFile.getPath()))
+assertEquals(jsonData, run(new DataFileReadTool(), "--reader-schema", "\"long\"", sampleFile.getPath()))
+
+assertEquals(jsonData, run(new DataFileReadTool(), "--reader-schema-file", readerSchemaFile.getPath(), sampleFile.getPath()))
+assertEquals(expectedJson, run(new DataFileReadTool(), "--head", sampleFile.getPath()))
+
+assertEquals(expectedJson, run(new DataFileReadTool(), "--head=3", sampleFile.getPath()))
+assertEquals(expectedJson, run(new DataFileReadTool(), "--head", "5", sampleFile.getPath()))
+assertEquals(jsonData, run(new DataFileReadTool(), "--head=3000000000", sampleFile.getPath()))
+
+assertEquals("\n", run(new DataFileReadTool(), "--head=0", sampleFile.getPath()))
+assertEquals("\n", run(new DataFileReadTool(), "--head=-5", sampleFile.getPath()))
+
+assertEquals(schema.toString() + "\n", run(new DataFileGetMetaTool(), sampleFile.getPath(), "--key", "avro.schema"))
+assertEquals(schema.toString() + "\n", run(new DataFileGetSchemaTool(), sampleFile.getPath()))
+
+assertEquals(0, countRecords(outFile))
+assertEquals(5, countRecords(outFile))
+
+assertTrue(baos.toString().contains("Compression codec (default: null)"))
+assertFalse(r.hasNext())
+
+assertEquals(defaultOutputFile.length(), nullOutputFile.length())
+assertEquals(0, returnCode)
+assertEquals(LIMIT_WITHIN_INPUT_BOUNDS, numRowsInFile(output))
+
+assertEquals(0, returnCode)
+assertEquals(LIMIT_WITHIN_INPUT_BOUNDS, numRowsInFile(output))
+assertEquals(0, returnCode)
+
+assertEquals(ROWS_IN_INPUT_FILES - OFFSET, numRowsInFile(output))
+assertEquals(0, returnCode)
+
+assertEquals(0, returnCode)
+assertEquals(0, returnCode)
+assertEquals(0, returnCode)
+assertEquals(0, returnCode)
+assertEquals(0, returnCode)
+
+assertTrue(baos1.toString("UTF-8").replace("\r", "").endsWith("hello\t{\"greeting\":\"Hi!\"}\n"))
+assertEquals("\"Hello!\"\n", baos2.toString("UTF-8").replace("\r", ""))
+
+assertEquals(String.format("zstandard[%d]", level), codec.toString())
+assertEquals(0, returnCode)
+assertEquals(ROWS_IN_INPUT_FILES * 3, numRowsInFile(output))
+
+assertEquals(0, returnCode)
+assertEquals(ROWS_IN_INPUT_FILES * 3, numRowsInFile(output))
+assertEquals(0, returnCode)
+
+assertEquals(ROWS_IN_INPUT_FILES * 3, numRowsInFile(output))
+assertEquals(getCodec(input1).getClass(), getCodec(output).getClass())
+
+assertEquals(1, returnCode)
+assertEquals(2, returnCode)
+assertEquals(3, returnCode)
+assertEquals(0, returnCode)
+
+assertEquals(0, in.tell())
+assertEquals(0, in.length())
+assertEquals(1, bytes.length)
+assertEquals(0, bytes[0])
+assertEquals(0, in.readInt())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+assertEquals(sentinel, in.readLong())
+
+assertEquals(0, in.getRowCount())
+assertEquals(0, in.getColumnCount())
+assertEquals(0, in.getRowCount())
+assertEquals(1, in.getColumnCount())
+assertEquals(COUNT, in.getRowCount())
+assertEquals(1, in.getColumnCount())
+
+assertEquals(COUNT, count)
+assertEquals(COUNT, in.getRowCount())
+assertEquals(1, in.getColumnCount())
+assertEquals(COUNT, count)
+
+assertEquals(COUNT, in.getRowCount())
+assertEquals(2, in.getColumnCount())
+assertEquals(COUNT, count)
+assertEquals(0, min)
+
+assertTrue(max > 1024 * 32)
+assertTrue(average > 16.0f)
+assertTrue(average < 64.0f)
+assertTrue(compressedSize > 0)
+assertTrue(compressedSize < inputSize || codec.equals("null"))
+
+assertEquals(decompressedBuffer, inputByteBuffer)
+assertTrue(compressedSize > 0)
+assertEquals(decompressedBuffer, inputByteBuffer)
+
+assertEquals(0, returnCode)

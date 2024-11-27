@@ -1,0 +1,100 @@
+A string "{\"serialNumber\": 1234,\"modelYear\": 2013,\"available\": \"T\",\"code\": \"A\",\"someNumbers\": [0, 1, 2, 3, 4],\"vehicleCode\": \"ab\\\"def\",\"extras\": { \"sunRoof\": false, \"sportsPack\": true, \"cruiseControl\": true },\"engine\": {\"capacity\": 2000,\"numCylinders\": 4,\"maxRpm\": 9000,\"manufacturerCode\": \"123\",\"fuel\": \"Petrol\"},\"uuid\": [7, 3],\"cupHolderCount\": 5,\"fuelFigures\": [{\"speed\": 30,\"mpg\": 35.9},{\"speed\": 55,\"mpg\": 49.0},{\"speed\": 75,\"mpg\": 40.0}],\"performanceFigures\": [{\"octaneRating\": 95,\"acceleration\": [{\"mph\": 30,\"seconds\": 4.0},{\"mph\": 60,\"seconds\": 7.5},{\"mph\": 100,\"seconds\": 12.2}]},{\"octaneRating\": 99,\"acceleration\": [{\"mph\": 30,\"seconds\": 3.8},{\"mph\": 60,\"seconds\": 7.1},{\"mph\": 100,\"seconds\": 11.8}]}],\"manufacturer\": \"Honda\",\"model\": \"Civic VTi\",\"activationCode\": \"315\\\\8\"}" não é igual ao valor esperado.
+A string "{\"login\": \"example\",\"encryptedPassword\": \"0b004061\"}" não é igual ao valor esperado.
+A mensagem de exceção "For input string: \"" + value + "\"" não é igual ao valor esperado.
+A mensagem de exceção "had 4 errors" não é igual ao valor esperado.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+O valor de filteringVersion não é igual ao valor de transformedSchema.version().
+Era esperado um valor nulo, mas o valor obtido foi diferente de nulo.
+Era esperado um valor nulo, mas map.get("testType").semanticType() retornou um valor diferente de nulo.
+Era esperado um valor nulo para minValue(), mas o valor obtido foi diferente de nulo.
+Era esperado um valor nulo para maxValue(), mas o valor obtido foi diferente de nulo.
+Era esperado um valor nulo para nullValue(), mas o valor obtido foi diferente de nulo.
+Uma exceção IllegalStateException foi inesperada.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+Era esperado um valor não nulo para fields.get(1).dimensionType(), mas o valor obtido foi nulo.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+Era esperado um valor não nulo para messageSchema.getType("Symbol"), mas o valor obtido foi nulo.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu.
+varDataField.isVariableLength() retornou falso, mas era esperado verdadeiro.
+Era esperado um valor nulo para fields.get(1).type(), mas o valor obtido foi diferente de nulo.
+Era esperado um valor nulo para fields.get(1).type(), mas o valor obtido foi diferente de nulo.
+Era esperado um valor nulo para fields.get(1).type(), mas o valor obtido foi diferente de nulo.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+Uma exceção IllegalStateException foi esperada, mas não ocorreu. A execução falhou por uma causa deliberada.
+schemaTransformerFactory.delegate() não retornou SchemaTransformer.IDENTITY_TRANSFORMER.
+schemaTransformerFactory.delegate() não retornou SchemaTransformer.IDENTITY_TRANSFORMER.
+delegate não é uma instância de SinceVersionSchemaTransformer.class.
+O valor de transformer.sinceVersion() não é igual a 5.
+delegate não é uma instância de IdKeyedSchemaTransformer.class.
+O valor de schemaTransformer1.sinceVersion() não é igual a 20.
+O valor de schemaTransformer4.sinceVersion() não é igual a 32.
+O valor de schemaTransformerDefault.sinceVersion() não é igual a 5.
+O valor de (char) aByte não é igual a 'a'.
+O valor de Byte.toString(aByte) não é igual a "97".
+O valor de generateRustLiteral(CHAR, "65") não é igual a "65_u8".
+O valor de generateRustLiteral(DOUBLE, "64.1") não é igual a "64.1_f64".
+O valor de generateRustLiteral(DOUBLE, "NaN") não é igual a "f64::NAN".
+O valor de generateRustLiteral(FLOAT, "64.1") não é igual a "64.1_f32".
+O valor de generateRustLiteral(FLOAT, "NaN") não é igual a "f32::NAN".
+O valor de generateRustLiteral(INT8, "65") não é igual a "65_i8".
+O valor de generateRustLiteral(INT16, "65") não é igual a "65_i16".
+O valor de generateRustLiteral(INT32, "65") não é igual a "65_i32".
+O valor de generateRustLiteral(INT64, "65") não é igual a "65_i64".
+O valor de generateRustLiteral(UINT8, "65") não é igual a "0x41_u8".
+O valor de generateRustLiteral(UINT16, "65") não é igual a "0x41_u16".
+O valor de generateRustLiteral(UINT32, "65") não é igual a "0x41_u32".
+O valor de generateRustLiteral(UINT64, "65") não é igual a "0x41_u64".
+O valor de generateRustLiteral(UINT8, UINT8.nullValue().toString()) não é igual a "0xff_u8".
+O valor de generateRustLiteral(UINT16, UINT16.nullValue().toString()) não é igual a "0xffff_u16".
+O valor de generateRustLiteral(UINT32, UINT32.nullValue().toString()) não é igual a "0xffffffff_u32".
+O valor de generateRustLiteral(UINT64, UINT64.nullValue().toString()) não é igual a "0xffffffffffffffff_u64".
+O valor de cleanUpperAcronyms("ABee") não é igual a "ABee".
+O valor de cleanUpperAcronyms("MDEntryTypeBook") não é igual a "mdEntryTypeBook".
+O valor de cleanUpperAcronyms("MD_EntryTypeBook") não é igual a "MD_EntryTypeBook".
+O valor de cleanUpperAcronyms("PRICE9Book") não é igual a "price9Book".
+O valor de formatFunctionName("") não é igual a "".
+O valor de formatFunctionName("a") não é igual a "a".
+O valor de formatFunctionName("A") não é igual a "a".
+O valor de formatFunctionName("Car") não é igual a "car".
+O valor de formatFunctionName("car") não é igual a "car".
+O valor de formatFunctionName("DecodeCar") não é igual a "decode_car".
+O valor de formatFunctionName("decodeCar") não é igual a "decode_car".
+O valor de formatFunctionName("decode_car") não é igual a "decode_car".
+O valor de formatFunctionName("Decode_car") não é igual a "decode_car".
+O valor de formatFunctionName("decode_Car") não é igual a "decode_car".
+O valor de formatFunctionName("Decode_Car") não é igual a "decode_car".
+O valor de formatFunctionName("DECODE_Car") não é igual a "decode_car".
+O valor de formatFunctionName("DECODE_car") não é igual a "decode_car".
+O valor de formatFunctionName("DECODECar") não é igual a "decode_car".
+O valor de formatFunctionName("DECODE_CAR") não é igual a "decode_car".
+O valor de formatFunctionName("DECODE_caR") não é igual a "decode_ca_r".
+O valor de formatFunctionName("PRICENULL9") não é igual a "pricenull_9".
+O valor de formatFunctionName("PRICE9Book") não é igual a "price_9_book".
+O valor de formatFunctionName("issue435") não é igual a "issue_435".
+O valor de formatFunctionName("UPPERCase") não é igual a "upper_case".
+O valor de formatFunctionName("NoMDEntries") não é igual a "no_md_entries".
+O valor de formatFunctionName("MD_EntryTYPEBook") não é igual a "md_entry_type_book".
+O valor de formatFunctionName("ClOrdID") não é igual a "cl_ord_id".
+O valor de formatFunctionName("aBc") não é igual a "ab_c".
+O valor de formatFunctionName("aBcD") não é igual a "ab_cd".
+O valor de formatFunctionName("aB_cD") não é igual a "ab_cd".
+O valor de formatFunctionName("AbCd") não é igual a "ab_cd".
+containsCodeWithSinceVersion(sources, versionIncluded) retornou falso, mas era esperado verdadeiro.
+doesNotContainsCodeWithSinceVersion(sources, versionExcluded) retornou falso, mas era esperado verdadeiro.
+A string "[Car](sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):serialNumber=1234|modelYear=2013|available=T|code=A|someNumbers=[0,1,2,3,4]|vehicleCode=ab\"def|extras={sportsPack,cruiseControl}|engine=(capacity=2000|numCylinders=4|manufacturerCode=123|)|uuid=[7,3]|cupHolderCount=5|fuelFigures=[(speed=30|mpg=35.9),(speed=55|mpg=49.0),(speed=75|mpg=40.0)]|performanceFigures=[(octaneRating=95|acceleration=[(mph=30|seconds=4.0),(mph=60|seconds=7.5),(mph=100|seconds=12.2)]),(octaneRating=99|acceleration=[(mph=30|seconds=3.8),(mph=60|seconds=7.1),(mph=100|seconds=11.8)])]|manufacturer='Honda'|model='Civic VTi'|activationCode='315\\8'" não é igual ao valor esperado.
+A string "[Car](sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):serialNumber=0|modelYear=0|available=F|code=NULL_VAL|someNumbers=[0,0,0,0,0]|vehicleCode=|extras={}|engine=(capacity=0|numCylinders=0|manufacturerCode=|)|uuid=[0,0]|cupHolderCount=0|fuelFigures=[]|performanceFigures=[]|manufacturer=''|model=''|activationCode=''" não é igual ao valor esperado.

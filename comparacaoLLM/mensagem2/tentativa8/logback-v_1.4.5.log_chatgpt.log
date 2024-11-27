@@ -1,0 +1,7 @@
+consoleAppender não é nulo
+condition.evaluate() retornou falso
+consoleAppender não é nulo
+condition.evaluate() retornou falso
+context.getProperty(dynaKey) é nulo
+fileAppender não é nulo
+consoleAppender não é nulo

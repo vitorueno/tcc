@@ -1,0 +1,97 @@
+eram esperados valores iguais, mas o resultado de trade.getIsin() é diferente de rs.getString(1)
+eram esperados valores iguais, mas o resultado de trade.getQuantity() é diferente de rs.getLong(2)
+eram esperados valores iguais, mas o resultado de trade.getPrice() é diferente de rs.getBigDecimal(3)
+eram esperados valores iguais, mas o resultado de trade.getCustomer() é diferente de rs.getString(4)
+eram esperados valores iguais, mas activeRow é diferente de trades.size()
+eram esperados valores iguais, mas customers.size() é diferente de activeRow
+eram esperados valores iguais, mas o nome do cliente é diferente de rs.getString(1)
+eram esperados valores iguais, mas BatchStatus.COMPLETED é diferente de execution.getStatus()
+eram esperados valores iguais, mas a diferença entre after e before é diferente de execution.getStepExecutions().iterator().next().getReadCount()
+eram esperados valores iguais, mas BatchStatus.COMPLETED é diferente de jobExecution.getStatus()
+eram esperados valores iguais, mas "yes" é diferente de jobExecution.getExecutionContext().getString("done")
+eram esperados valores iguais, mas "foo" é diferente de value
+eram esperados valores iguais, mas "foo2" é diferente de strValue
+eram esperados valores iguais, mas 3 é diferente de integerValue.intValue()
+eram esperados valores iguais, mas a soma entre before e 5 é diferente de after
+eram esperados valores iguais, mas o resultado de trade.getIsin() é diferente de rs.getString(1)
+eram esperados valores iguais, mas o resultado de trade.getQuantity() é diferente de rs.getLong(2)
+eram esperados valores iguais, mas o resultado de trade.getPrice() é diferente de rs.getBigDecimal(3)
+eram esperados valores iguais, mas o resultado de trade.getCustomer() é diferente de rs.getString(4)
+eram esperados valores iguais, mas EXPECTED_OUTPUT_FILE é diferente de output
+eram esperados valores iguais, mas a soma entre itemGenerator.getLimit() e 2 é diferente de itemProcessor.getCounter()
+eram esperados valores iguais, mas a soma entre itemGenerator.getLimit() e 2 é diferente de itemProcessor.getCounter()
+eram esperados valores iguais, mas o nome do cliente é diferente de rs.getString(1)
+eram esperados valores iguais, mas "4" é diferente de step1Execution.get("READ_COUNT").toString()
+eram esperados valores iguais, mas "1" é diferente de step1Execution.get("FILTER_COUNT").toString()
+eram esperados valores iguais, mas "3" é diferente de step1Execution.get("WRITE_COUNT").toString()
+eram esperados valores iguais, mas ExitStatus.COMPLETED.getExitCode() é diferente de jobExecution.getExitStatus().getExitCode()
+eram esperados valores iguais, mas 4 é diferente de jobExecution.getStepExecutions().size()
+eram esperados valores iguais, mas BatchStatus.COMPLETED é diferente de jobExecution.getStatus()
+eram esperados valores iguais, mas o tamanho de inputs é diferente do tamanho de outputs
+itemCount deveria ser maior que 0
+eram esperados valores iguais, mas BatchStatus.COMPLETED é diferente de jobExecution.getStatus()
+eram esperados valores iguais, mas BatchStatus.COMPLETED é diferente de jobExecution.getStatus()
+eram esperados valores iguais, mas expected é diferente de count
+eram esperados valores iguais, mas BatchStatus.COMPLETED é diferente de jobExecution.getStatus()
+eram esperados valores iguais, mas o resultado de first é diferente de jobExecution.getStepExecutions().iterator().next().getWriteCount()
+eram esperados valores iguais, mas BatchStatus.COMPLETED é diferente de jobExecution.getStatus()
+eram esperados valores iguais, mas o resultado de second é diferente de jobExecution.getStepExecutions().iterator().next().getWriteCount()
+a contagem de retornos de personService deveria ser maior que 0
+eram esperados valores iguais, mas a contagem de retornos de personService é diferente da contagem de recebimentos
+eram esperados valores iguais, mas rs.getString("PLAYER_ID") é diferente de "AKFJDL00"
+eram esperados valores iguais, mas rs.getString("LAST_NAME") é diferente de "Doe"
+eram esperados valores iguais, mas rs.getString("FIRST_NAME") é diferente de "John"
+eram esperados valores iguais, mas rs.getString("POS") é diferente de "QB"
+eram esperados valores iguais, mas rs.getInt("YEAR_OF_BIRTH") é diferente de 1975
+eram esperados valores iguais, mas rs.getInt("YEAR_DRAFTED") é diferente de 1998
+eram esperados valores iguais, mas tempGame é diferente de game
+eram esperados valores iguais, mas summary é diferente de testSummary
+eram esperados valores iguais, mas customerFieldSet é diferente de fs
+eram esperados valores iguais, mas customerAddLine é diferente de customerTokenizer.getTokenizedLine()
+eram esperados valores iguais, mas customerFieldSet é diferente de fs
+eram esperados valores iguais, mas customerAddLine é diferente de customerTokenizer.getTokenizedLine()
+eram esperados valores iguais, mas customerFieldSet é diferente de fs
+eram esperados valores iguais, mas customerAddLine é diferente de customerTokenizer.getTokenizedLine()
+eram esperados valores iguais, mas customerUpdate é diferente de processor.process(customerUpdate)
+eram esperados valores iguais, mas customerUpdate é diferente de processor.process(customerUpdate)
+eram esperados valores iguais, mas 95 é diferente de rs.getLong("credit")
+eram esperados valores iguais, mas "testCustomer" é diferente de rs.getString("CUSTOMER")
+eram esperados valores iguais, mas 99.69 é diferente de rs.getBigDecimal("PRICE")
+eram esperados valores iguais, mas 5 é diferente de rs.getLong("QUANTITY")
+eram esperados valores iguais, mas a adição entre oldCredit e CustomerCreditIncreaseProcessor.FIXED_AMOUNT é diferente do processamento de customerCredit
+eram esperados valores iguais, mas "testCustomerName" é diferente de customerDebit.getName()
+eram esperados valores iguais, mas 123.0 é diferente de customerDebit.getDebit()
+reader deveria ser nulo
+eram esperados valores iguais, mas limit é diferente de counter
+eram esperados valores iguais, mas counter é diferente de reader.getCounter()
+eram esperados valores iguais, mas trade1 é diferente de trade1Clone
+trade1 deveria ser diferente de trade2
+eram esperados 3 elementos na lista, mas encontrados 3
+reader deveria ser nulo
+os arquivos de input e output não possuem as mesmas linhas
+os arquivos de input e output não possuem as mesmas linhas
+AggregateItem.getFooter() deveria ser um rodapé
+AggregateItem.getHeader() deveria ser um cabeçalho
+o mapeamento do campo deveria resultar em um cabeçalho
+o mapeamento do campo deveria resultar em um cabeçalho
+o mapeamento do campo deveria resultar em um rodapé
+o mapeamento do campo deveria resultar em um rodapé
+o item mapeado deveria ser "foo"
+o resultado não deveria ser nulo
+o objeto order deveria ser igual a o
+o cliente do pedido deveria ser igual a customer
+o endereço de faturamento do pedido deveria ser igual a billing
+o endereço de entrega do pedido deveria ser igual a shipping
+as informações de faturamento do pedido deveriam ser iguais a billingInfo
+as informações de entrega do pedido deveriam ser iguais a shippingInfo
+eram esperados 3 itens na lista de line items
+provider deveria ser nulo
+orderValidator deveria suportar a classe Order
+erros deveriam conter 1 erro
+o código de erro do campo orderId deveria ser "error.order.id"
+o código de erro do campo orderDate deveria ser "error.order.date.future"
+o código de erro do campo totalLines deveria ser "error.order.lines.badcount"
+erros deveriam conter 2 erros
+o código de erro do campo orderId deveria ser "error.order.id"
+o código de erro do campo totalLines deveria ser "error.order.lines.badcount"
+erros deveriam estar vazios

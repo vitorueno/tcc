@@ -77,7 +77,7 @@ public class Analyzer {
 
         Path projectDir = Paths.get(projectPath);
 
-//        System.out.println("\nProjeto: " + projectPath + "\n");
+        System.out.println("\nProjeto: " + projectPath + "\n");
 
         StaticJavaParser.getConfiguration().setAttributeComments(false);
 
@@ -90,10 +90,10 @@ public class Analyzer {
             e.printStackTrace();
         }
 
-//        System.out.println("Total asserts: " + totalAsserts);
-//        System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
-//        System.out.println("Asserts com descrição: " + totalAssertsComDesc);
-//        System.out.println("Assertion Roulette: " + totalAssertionRoulette);
+        System.out.println("Total asserts: " + totalAsserts);
+        System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
+        System.out.println("Asserts com descrição: " + totalAssertsComDesc);
+        System.out.println("Assertion Roulette: " + totalAssertionRoulette);
     }
 
 
@@ -183,7 +183,7 @@ public class Analyzer {
                 assert param2 != null;
 
                 Expression mensagemAssert = criarMensagemAssert(nomeMetodo, param2, param1, body, newStatements);
-                System.out.println(mensagemAssert);
+//                System.out.println(mensagemAssert);
 
                 MethodCallExpr novaChamada = new MethodCallExpr(nomeMetodo);
 
@@ -193,12 +193,12 @@ public class Analyzer {
                     novaChamada = refactorJunit4(novaChamada, param1, param2, mensagemAssert);
                 }
 
-//                System.out.println(novaChamada);
-
                 statements.addAll(i, newStatements);
                 stmt.replace(new ExpressionStmt(novaChamada));
                 newStatements.clear();
-//                System.out.println(methodCall);
+                System.out.println("chamada antiga: " + methodCall);
+
+                System.out.println("nova chamada: " + novaChamada);
             }
 //            else {
 ////                System.out.println("refatoração não suportada para método: " + nomeMetodo);

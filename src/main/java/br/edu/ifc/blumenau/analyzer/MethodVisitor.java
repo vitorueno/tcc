@@ -17,6 +17,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
     AtomicInteger numAssertionRoulette;
     ArrayList<MethodDeclaration> metodosChamados;
 
+
     ArrayList<String> assertComUmParametro = new ArrayList<>();
     private MethodDeclaration ancestor;
     private Set<String> assertsJunit;
@@ -65,6 +66,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         if (isAssertionSemDescricao) {
             numAssertSemDesc.incrementAndGet();
 //            System.out.println(methodCallExpr);
+
 //            System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
             if (numeroAsserts() > 1) {
                 numAssertionRoulette.incrementAndGet();

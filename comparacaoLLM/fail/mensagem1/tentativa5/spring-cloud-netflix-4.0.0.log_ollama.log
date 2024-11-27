@@ -1,0 +1,14 @@
+* Asserts com igualdade:
+  - "Valor esperado != Valor obtido"
+* Asserts com menor que:
+  - "Valor esperado < Valor obtido"
+* Asserts com maior que:
+  - "Valor esperado > Valor obtido"
+* Asserts com igual a:
+  - "Valor esperado == Valor obtido"
+* Asserts com não igual:
+  - "Valor esperado != Valor obtido"
+* Asserts com maior ou igual:
+  - "Valor esperado >= Valor obtido"
+* Asserts com menor ou igual:
+  - "Valor esperado <= Valor obtido"

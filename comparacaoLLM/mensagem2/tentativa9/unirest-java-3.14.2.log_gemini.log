@@ -1,0 +1,100 @@
+eram esperados valores iguais, mas "Hey Ma" é diferente de body
+eram esperados valores nulos, mas Unirest.post(path).asString().getBody() retornou um valor diferente de nulo
+eram esperados valores iguais, mas "bar" é diferente de Unirest.post(path).body("foo").asString().getBody()
+eram esperados valores iguais, mas null é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas 400 é diferente de res.getStatus()
+eram esperados valores iguais, mas "wtf" é diferente de res.getStatusText()
+eram esperados valores iguais, mas "boo" é diferente de res.getBody()
+eram esperados valores iguais, mas "Hi" é diferente de Unirest.get(otherPath).asString().getBody()
+eram esperados valores iguais, mas "Hey Buddy" é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas "Yeaaaah Buddy" é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas "Call Result" é diferente de response.getBody()
+eram esperados os mesmos objetos, mas response e interceptor.response são diferentes
+eram esperados valores iguais, mas "two" é diferente de result
+eram esperados valores iguais, mas "Boo!" é diferente de err.say
+eram esperados valores iguais, mas "cool" é diferente de result
+era esperado um valor verdadeiro, mas wasCalled é falso
+eram esperados valores iguais, mas "http://localhost/get/cheese/passed?fruit=apples" é diferente de sum.getUrl()
+eram esperados valores iguais, mas "http://localhost/get/{params}/passed" é diferente de sum.getRawPath()
+eram esperados valores iguais, mas HttpMethod.GET é diferente de sum.getHttpMethod()
+eram esperados valores iguais, mas BAD_REQUEST é diferente de response.getStatus()
+eram esperados valores iguais, mas "oh noes" é diferente de response.getStatusText()
+eram esperados valores iguais, mas BAD_REQUEST é diferente de response.getStatus()
+eram esperados valores iguais, mas "" é diferente de response.getStatusText()
+eram esperados valores iguais, mas "Hello World" é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas "Hello World" é diferente de new String(body)
+eram esperados valores iguais, mas "apple" é diferente de Unirest.get(path).asJson().getBody().getObject().getString("fruit")
+eram esperados valores iguais, mas "apple" é diferente de Unirest.get(path).asJson().getBody().getObject().getString("fruit")
+eram esperados valores iguais, mas "apple" é diferente de pojo.fruit
+eram esperados valores iguais, mas "derp" é diferente de pojo
+eram esperados valores iguais, mas "derp" é diferente de pojo
+eram esperados valores iguais, mas "foo" é diferente de rez.getBody()
+eram esperados valores iguais, mas "grover" é diferente de rez.getHeaders().getFirst("monster")
+eram esperados valores nulos, mas rez.getBody() retornou um valor diferente de nulo
+eram esperados valores iguais, mas "grover" é diferente de rez.getHeaders().getFirst("monster")
+eram esperados valores iguais, mas 400 é diferente de httpResponse.getStatus()
+eram esperados valores iguais, mas "Bad Request" é diferente de httpResponse.getBody()
+eram esperados valores iguais, mas 400 é diferente de httpResponse.getStatus()
+eram esperados valores iguais, mas "howdy" é diferente de httpResponse.getBody().getObject().getString("message")
+eram esperados valores iguais, mas 400 é diferente de httpResponse.getStatus()
+eram esperados valores iguais, mas "Pears" é diferente de httpResponse.getBody().fruit
+eram esperados os mesmos objetos, mas client e Unirest.primaryInstance().config().getClient() são diferentes
+eram esperados os mesmos objetos, mas client e Unirest.primaryInstance().config().getAsyncClient() são diferentes
+era esperado um valor falso, mas Unirest.primaryInstance().config().getClient() instanceof MockClient é verdadeiro
+era esperado um valor falso, mas Unirest.primaryInstance().config().getAsyncClient() instanceof MockClient é verdadeiro
+eram esperados os mesmos objetos, mas client e i.config().getClient() são diferentes
+eram esperados os mesmos objetos, mas client e i.config().getAsyncClient() são diferentes
+era esperado um valor falso, mas i.config().getClient() instanceof MockClient é verdadeiro
+era esperado um valor falso, mas i.config().getAsyncClient() instanceof MockClient é verdadeiro
+eram esperados valores iguais, mas 200 é diferente de response.getStatus()
+eram esperados valores iguais, mas "Hi Mom" é diferente de response.getBody()
+eram esperados valores iguais, mas "application/xml" é diferente de response.getHeaders().getFirst("Accept")
+eram esperados valores iguais, mas 400 é diferente de response.getStatus()
+eram esperados valores iguais, mas "Hi Mom" é diferente de response.getParsingError().get().getOriginalBody()
+eram esperados valores iguais, mas "Transformed!" é diferente de response.mapError(TransformedError.class).message
+eram esperados valores iguais, mas "foo" é diferente de test.text
+eram esperados valores iguais, mas 42 é diferente de test.nmbr.intValue()
+eram esperados valores iguais, mas "bar" é diferente de test.another.text
+eram esperados valores iguais, mas 666 é diferente de test.another.nmbr.intValue()
+eram esperados valores nulos, mas test.another.another retornou um valor diferente de nulo
+eram esperados valores iguais, mas "foo" é diferente de test.text
+eram esperados valores iguais, mas 42 é diferente de test.nmbr.intValue()
+eram esperados valores iguais, mas "bar" é diferente de test.another.text
+eram esperados valores iguais, mas 666 é diferente de test.another.nmbr.intValue()
+eram esperados valores nulos, mas test.another.another retornou um valor diferente de nulo
+eram esperados valores iguais, mas "{\"text\":null,\"nmbr\":null,\"another\":null}" é diferente de om.writeValue(testMe)
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de Unirest.get(url).asEmpty().getStatus()
+eram esperados valores iguais, mas s é diferente de message
+eram esperados valores iguais, mas "{\"message\":\"boom!\"}" é diferente de e
+eram esperados valores nulos, mas error retornou um valor diferente de nulo
+eram esperados valores nulos, mas error.merp retornou um valor diferente de nulo
+eram esperados valores iguais, mas "{\"message\":\"boom!\"}" é diferente de request.getParsingError().get().getOriginalBody()
+era esperado um valor verdadeiro, mas errorCalled é falso
+eram esperados valores iguais, mas "boom!" é diferente de e.getMessage()
+eram esperados valores iguais, mas "java.io.IOException: Something horrible happened" é diferente de ex.getMessage()
+eram esperados valores iguais, mas 200 é diferente de response.getStatusLine().getStatusCode()
+era esperado um valor verdadeiro, mas Unirest.isRunning() é falso
+era esperado um valor verdadeiro, mas Unirest.isRunning() é falso
+era esperado um valor verdadeiro, mas Unirest.isRunning() é falso
+eram esperados os mesmos objetos, mas Unirest.primaryInstance() e Unirest.primaryInstance() são diferentes
+eram esperados objetos diferentes, mas Unirest.primaryInstance() e Unirest.spawnInstance() são iguais
+eram esperados objetos diferentes, mas Unirest.spawnInstance() e Unirest.spawnInstance() são iguais
+era esperado que ManagementFactory.getThreadMXBean().getThreadCount() <= startingCount + 10 fosse verdadeiro, mas é falso
+eram esperados valores iguais, mas 0 é diferente de reference.config().getDefaultHeaders().size()
+eram esperados objetos diferentes, mas first e second são iguais
+eram esperados valores diferentes, mas c e Unirest.config().getAsyncClient() são iguais
+eram esperados valores iguais, mas i é diferente de Unirest.config().getInterceptor().get(0)
+eram esperados valores iguais, mas 4000 é diferente de Unirest.config().getConnectionTimeout()
+eram esperados valores iguais, mas 200 é diferente de result.getStatus()
+eram esperados valores iguais, mas "Howdy Ho!" é diferente de result.getBody()
+era esperado um valor verdadeiro, mas requestConfigUsed é falso
+era esperado um valor verdadeiro, mas interceptorCalled é falso
+eram esperados valores iguais, mas 1 é diferente de request.getHeaders().size()
+eram esperados valores iguais, mas "Marco" é diferente de request.getHeaders().get("name").get(0)
+eram esperados valores iguais, mas "Marco" é diferente de request.getHeaders().get("NAme").get(0)
+eram esperados valores iguais, mas "Marco" é diferente de request.getHeaders().get("Name").get(0)

@@ -1,0 +1,45 @@
+This is a Java test class that verifies the functionality of various methods and properties related to data tables. Here's a breakdown of what each method does:
+
+**Test Class**
+
+```java
+public class DataTablesTest {
+    // ...
+}
+```
+
+**Test Methods**
+
+1. **`testCreateTable()`**: Verifies that creating a table with two columns and three rows works correctly.
+	* Creates a `DataTable` object with two columns (`intsOnly` and `intsAndStrings`) and three rows.
+	* Asserts that the resulting table has the correct number of columns, rows, and data values.
+2. **`testCopyTable()`**: Verifies that copying a table creates an identical copy.
+	* Creates a `DataTable` object with two columns (`intsOnly` and `intsAndStrings`) and three rows.
+	* Calls the `copy()` method on the original table to create a copy.
+	* Asserts that the resulting copy has the same number of columns, rows, and data values as the original table.
+3. **`testMetadata()`**: Verifies that metadata information is correctly extracted from a table.
+	* Creates a `DataTable` object with two columns (`intsOnly` and `intsAndStrings`) and three rows.
+	* Calls the `getMetadata()` method on the table to extract metadata information.
+	* Asserts that the resulting metadata contains the correct version, compression type, and data structure information.
+4. **`testTableProperties()`**: Verifies that various table properties are correctly set and retrieved.
+	* Creates a `DataTable` object with two columns (`intsOnly` and `intsAndStrings`) and three rows.
+	* Sets various table properties (e.g., name, row count, column count).
+	* Retrieves these properties using corresponding getter methods.
+	* Asserts that the resulting values match the expected ones.
+
+**Helper Classes**
+
+1. **`DataTable`**: A class representing a data table with multiple columns and rows.
+2. **`Metadata`**: A class containing metadata information about a data table (e.g., version, compression type, structure).
+3. **`TableUtils`**: A utility class providing methods for working with tables (e.g., creating, copying, getting metadata).
+
+**Assertions**
+
+The test class uses various assertions to verify the correctness of each method and property being tested. These assertions check things like:
+
+* The number of columns and rows in a table.
+* The data values in a table.
+* The version and compression type of metadata information.
+* The correctness of table properties (e.g., name, row count, column count).
+
+Overall, this test class provides a comprehensive set of tests for the `DataTable` class and its associated utility classes.

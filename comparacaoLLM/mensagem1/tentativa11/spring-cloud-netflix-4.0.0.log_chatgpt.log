@@ -1,0 +1,7 @@
+"Mensagem de descrição de erro para o assertEqual: Os valores são diferentes."
+"Mensagem de descrição de erro para o assertNull: O valor não é nulo."
+"Mensagem de descrição de erro para o assertTrue: A condição não é verdadeira."
+"Mensagem de descrição de erro para o assertFalse: A condição não é falsa."
+"Mensagem de descrição de erro para o assertArrayEquals: Os arrays são diferentes."
+"Mensagem de descrição de erro para o assertNotEquals: Os valores são iguais."
+"Mensagem de descrição de erro para o assertNotNull: O valor é nulo."

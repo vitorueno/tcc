@@ -1,0 +1,13 @@
+```java
+assertEquals("eram esperados valores iguais, mas " + fileName + " é diferente de " + fileName)
+assertEquals("eram esperados valores iguais, mas " + fileName + " é diferente de " + fileName)
+assertEquals("eram esperados valores iguais, mas não foi encontrado o valor " + fileName + " em " + fileName)
+assertEquals("eram esperados valores iguais, mas o nome do arquivo está incorreto, esperado: " + fileName + ", encontrado: " + fileName)
+assertEquals("eram esperados valores iguais, mas o nome do arquivo está com um caractere não numérico, esperado: " + fileName + ", encontrado: " + fileName)
+assertEquals("eram esperados valores iguais, mas o valor do arquivo é desconhecido, esperado: " + fileName + ", encontrado: " + Base64.getDecoder().decode("dGVzdA=="))
+Assertions.assertTrue("verificar se o objeto encontrado é similar ao esperado", ripper.findJSONObjectContainingPhotoId("-45984105_457345201", new JSONObject(json)))
+Assertions.assertTrue("comparar a URL com a localização do documento", "https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150".equalsIgnoreCase(doc.location()))
+Assertions.assertTrue("verificar se o GID encontrado é igual ao esperado", ripper.getGID(new URL("https://hitomi.la/galleries/975973.html")).equals("975973"))
+Assertions.assertTrue("verificar se a página contém álbuns", ripper.pageContainsAlbums(url))
+Assertions.assertTrue("verificar se a página contém álbuns", ripper.pageContainsAlbums(url2))
+```

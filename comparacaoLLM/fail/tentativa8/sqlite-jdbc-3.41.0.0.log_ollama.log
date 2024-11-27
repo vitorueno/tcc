@@ -1,0 +1,13 @@
+Asserts Junit com mensagens de descrição de erro:
+
+- assertEquals(0, calculator.getValor())
+eram esperados valores iguais, mas 0 é diferente de calculator.getValor()
+
+- assertTrue(false)
+verifiquei que false não era igual a verdadeiro
+
+- assertFalse(true)
+verifiquei que verdadeiro não era igual a falso
+
+- assertThrows(Exception.class, () -> calculator.divisao(10, 0))
+tentei realizar uma divisão por zero com a função divisao do objeto Calculator e esperava uma exceção de tipo Exception

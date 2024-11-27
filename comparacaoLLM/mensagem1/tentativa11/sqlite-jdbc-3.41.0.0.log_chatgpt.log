@@ -1,0 +1,8 @@
+Mensagem de descrição de erro para o assertEquals: "Os valores são diferentes"
+Mensagem de descrição de erro para o assertNotEquals: "Os valores são iguais"
+Mensagem de descrição de erro para o assertTrue: "A condição é falsa"
+Mensagem de descrição de erro para o assertFalse: "A condição é verdadeira"
+Mensagem de descrição de erro para o assertNull: "O valor não é nulo"
+Mensagem de descrição de erro para o assertNotNull: "O valor é nulo"
+Mensagem de descrição de erro para o assertSame: "Os objetos são diferentes"
+Mensagem de descrição de erro para o assertNotSame: "Os objetos são iguais"

@@ -1,0 +1,28 @@
+factory.configureSslContextFactory(new SslContextFactory.Server()) retornou um valor nulo, mas era esperado um valor diferente de nulo.
+Era esperado ConstraintViolationException.class, mas throwable.getClass() retornou uma classe diferente.
+Era esperado o mapa {color=orange}, mas response retornou um mapa diferente.
+Era esperado o mapa {message=stuff!}, mas response retornou um mapa diferente.
+findEntityClassesFromDirectory estava vazio, mas era esperado um resultado não vazio.
+Era esperado que findEntityClassesFromDirectory contivesse 4 elementos, mas contém um número diferente.
+findEntityClassesFromDirectory estava vazio, mas era esperado um resultado não vazio.
+Era esperado que findEntityClassesFromDirectory contivesse 8 elementos, mas contém um número diferente.
+O método assertThat(event.getCreatedAt()).isEqualTo(Instant.ofEpochMilli(0)) demorou mais que 5 segundos para executar.
+O método assertThat(task.getDuration()).isEqualTo(Duration.ofSeconds(0)) demorou mais que 5 segundos para executar.
+requestContext.getSecurityContext().isSecure() retornou false, mas era esperado true.
+O caminho do contexto administrativo retornado por http.getAdminContextPath() é diferente do caminho retornado por environment.getAdminContext().getContextPath().
+O caminho do contexto da aplicação retornado por http.getApplicationContextPath() é diferente do caminho retornado por environment.getApplicationContext().getContextPath().
+O caminho do contexto administrativo retornado por http.getAdminContextPath() é diferente do caminho retornado por environment.getAdminContext().getContextPath().
+O caminho do contexto da aplicação retornado por http.getApplicationContextPath() é diferente do caminho retornado por environment.getApplicationContext().getContextPath().
+getResponseStatusForRequestMethod("GET", false) retornou um código de status diferente de OK_STATUS_CODE.
+getResponseStatusForRequestMethod("POST", true) retornou um código de status diferente de OK_STATUS_CODE.
+getResponseStatusForRequestMethod("PUT", true) retornou um código de status diferente de DISALLOWED_STATUS_CODE.
+getResponseStatusForRequestMethod("DELETE", false) retornou um código de status diferente de DISALLOWED_STATUS_CODE.
+getResponseStatusForRequestMethod("TRACE", false) retornou um código de status diferente de DISALLOWED_STATUS_CODE.
+inv e test.getInvocable() referenciam objetos diferentes, mas era esperado que referenciassem o mesmo objeto.
+O código de status retornado por reponse.getStatus() é diferente de Response.Status.BAD_REQUEST.getStatusCode().
+Optionals.fromGuavaOptional(com.google.common.base.Optional.absent()).isPresent() retornou true, mas era esperado false.
+Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")).isPresent() retornou false, mas era esperado true.
+Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")) retornou um valor diferente de java.util.Optional.of("Foo").
+Optionals.toGuavaOptional(java.util.Optional.empty()).isPresent() retornou true, mas era esperado false.
+Optionals.toGuavaOptional(java.util.Optional.of("Foo")).isPresent() retornou false, mas era esperado true.
+Optionals.toGuavaOptional(java.util.Optional.of("Foo")) retornou um valor diferente de com.google.common.base.Optional.of("Foo").

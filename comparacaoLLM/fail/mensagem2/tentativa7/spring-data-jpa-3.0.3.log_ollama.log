@@ -1,0 +1,9 @@
+Segue abaixo as mensagens de descrição de erro de asserts:
+
+eram esperados valores iguais, mas 0 é diferente de accessor.getValues().size()
+eram esperados valores iguais, mas 0 é diferente de accessor.getParameters().size()
+eram esperado valor não nulo, mas null é igual a userRepository
+eram esperado valor não nulo, mas null é igual a roleRepository
+eram esperado valor não nulo, mas null é igual a auditableUserRepository
+eram esperado valor não nulo, mas null é igual a mappingContext
+eram esperados valores iguais, mas o conjunto de entradas de beans não está vazio

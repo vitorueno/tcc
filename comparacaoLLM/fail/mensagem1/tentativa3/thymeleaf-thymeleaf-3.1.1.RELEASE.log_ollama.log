@@ -1,0 +1,104 @@
+Assertions.assertTrue(executor.isAllOK())
+Assertions.assertFalse(executor.isAllOK())
+
+Assertions.assertEquals(expected, ResourceUtils.normalize(result))
+Assertions.assertNotEquals(expected, ResourceUtils.normalize(result))
+
+Assertions.assertEquals(expected1, result1)
+Assertions.assertNotEquals(expected1, result1)
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue))
+Assertions.assertNotEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse))
+
+Assertions.assertTrue(lazyTrue.initialized)
+Assertions.assertFalse(lazyTrue.initialized)
+
+Assertions.assertEquals("<Hey, Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue))
+Assertions.assertNotEquals("<Hey, Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse))
+
+Assertions.assertTrue(lazyTrue.initialized)
+Assertions.assertFalse(lazyTrue.initialized)
+
+Assertions.assertEquals("<Hello there!>", TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue))
+Assertions.assertNotEquals("<Hello there!>", TemplateResourceUtils.computeRelativeLocation("/something", "/"))
+
+Assertions.assertNotNull(resourcesFolderURL)
+Assertions.assertFalse(resourcesFolder.isDirectory())
+
+Assertions.assertEquals(expectedResult, decoupledTemplateLogic.toString())
+Assertions.assertNotEquals(expectedResult, decoupledTemplateLogic.toString())
+
+Assertions.assertEquals(1, templateResolvers.size())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.StringTemplateResolver", templateResolvers.get(0).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals(2, templateResolvers.size())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals(1, templateResolvers.size())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.FileTemplateResolver", templateResolvers.get(0).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(1).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals(2, templateResolvers.size())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.FileTemplateResolver", templateResolvers.get(1).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("Hello ??something_en??", templateEngine.process("Hello [[#{something}]]", context))
+Assertions.assertNotEquals("Hello 58", templateEngine.process("Hello [[23+35]]", context))
+
+Assertions.assertEquals(2, templateResolvers.size())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", templateResolvers.get(0).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("org.thymeleaf.templateresolver.DefaultTemplateResolver", templateResolvers.get(1).getName())
+Assertions.assertFalse(templateResolvers.size())
+
+Assertions.assertEquals("<p>something</p>", templateEngine.process("nonexisting", context))
+Assertions.assertNotEquals("<p>this value</p>", templateEngine.process("nonexisting", context))
+
+Assertions.assertEquals("<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>", templateEngine.process("<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>", context))
+Assertions.assertNotEquals("<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>", templateEngine.process("<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>", context))
+
+Assertions.assertTrue(templateResolver.tempCalled)
+Assertions.assertFalse(templateResolver.fragCalled)
+
+Assertions.assertEquals(EXPECTED_OUTPUT, output)
+Assertions.assertFalse(output.contains("expected"))
+
+Assertions.assertTrue(templateResolver.tempCalled)
+Assertions.assertFalse(templateResolver.fragCalled)
+
+Assertions.assertEquals(EXPECTED_OUTPUT, output)
+Assertions.assertFalse(output.contains("expected"))
+
+Assertions.assertTrue(templateResolver.tempCalled)
+Assertions.assertFalse(templateResolver.fragCalled)
+
+Assertions.assertEquals(EXPECTED_OUTPUT, output)
+Assertions.assertFalse(output.contains("expected"))
+
+Assertions.assertEquals("/", TemplateResourceUtils.computeRelativeLocation("/", "/"))
+Assertions.assertNotEquals("/something", TemplateResourceUtils.computeRelativeLocation("/", "something"))
+
+Assertions.assertEquals("/", TemplateResourceUtils.computeRelativeLocation("/something", "/"))
+Assertions.NOT_ASSERTED
+
+Assertions.assertEquals("/", TemplateResourceUtils.computeRelativeLocation("something", "/"))
+AssertionsNOT_ASSERTED

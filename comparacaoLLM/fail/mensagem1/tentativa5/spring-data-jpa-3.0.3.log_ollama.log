@@ -1,0 +1,7 @@
+- Assertions.assertEquals(0, accessor.getValues().length, "Quantidade de valores acessados é zero")
+- Assertions.assertEquals(parameters, accessor.getParameters(), "Parâmetros não coincidem com os acessados")
+- assertNotNull(userRepository)
+- assertNotNull(roleRepository)
+- assertNotNull(auditableUserRepository)
+- assertNotNull(mappingContext)
+- assertFalse(beans.entrySet().isEmpty(), "Set de beans não está vazio")

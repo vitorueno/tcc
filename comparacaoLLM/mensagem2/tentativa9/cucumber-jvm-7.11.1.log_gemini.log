@@ -1,0 +1,100 @@
+O número de pepinos na barriga era esperado ser n, mas foi encontrado belly.getCukes()
+Nenhuma exceção era esperada ao executar factory::stop, mas uma foi lançada.
+Nenhuma exceção era esperada ao executar factory::start, mas uma foi lançada.
+Nenhuma exceção era esperada ao executar factory::stop, mas uma foi lançada.
+A classe do bean era esperada ser diferente de ApplicationScopedBean.class, mas era ApplicationScopedBean.class; e a superclasse do bean era esperada ser ApplicationScopedBean.class, mas era diferente.
+Era esperado que as linhas fossem idênticas e na ordem correta, mas não foram.
+Era esperado que as linhas não fossem idênticas e na ordem correta, mas foram.
+Era esperado que as linhas não fossem idênticas e na ordem correta, mas foram.
+Era esperado que as linhas fossem idênticas, mas não foram.
+Era esperado que as linhas fossem idênticas, mas não foram.
+Era esperado que as linhas não fossem idênticas, mas foram.
+Era esperado o valor Optional.of(asList(outline, examplesA, example1)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(outline, examplesA, example2)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(outline, examplesB, example3)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(outline, examplesB, example4)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(outline, examplesA)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(emptyOutline, emptyExamplesA)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(outline, examplesB)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(emptyOutline, emptyExamplesB)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(outline)), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(emptyOutline)), mas foi encontrado pathTo
+Era esperado o valor Optional.empty(), mas foi encontrado pathTo
+Era esperado o valor Optional.empty(), mas foi encontrado pathTo
+Era esperado o valor Optional.of(asList(example1)), mas foi encontrado pathTo
+Era esperado o valor Optional.empty(), mas foi encontrado pathTo
+Era esperado um valor diferente de null para events.get(0).getUndefinedParameterType(), mas foi encontrado null.
+Era esperado que parameterInfos.size() fosse igual a args.length, mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/path/to", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/path/to", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/C:/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/path/to the/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "file" e a parte específica do esquema fosse "/C:/path/to/file.feature", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "com/example/app", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/com/example/app", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/com/example/app", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/com/example/app", mas não foi.
+Era esperado que o esquema da URI fosse "classpath" e a parte específica do esquema fosse "/com/example/app", mas não foi.
+Era esperado que a URI fosse classpath:example.feature e as linhas estivessem vazias, mas não estavam.
+Era esperado que a URI fosse classpath:example.feature e as linhas contivessem 999, mas não continham.
+Era esperado que a URI fosse classpath:example.feature e as linhas contivessem 999 e 2000, mas não continham.
+Era esperado um valor diferente de null para optionsBuilder, mas foi encontrado null.
+Era esperado um valor diferente de null para options, mas foi encontrado null.
+Era esperado que options.getFeaturePaths() contivesse new File("somewhere_else.feature").toURI() e options.getLineFilters() contivesse a entrada new File("somewhere_else.feature").toURI(), singleton(3), mas não continha.
+Era esperado que a mensagem do logRecordListener.getLogRecords().get(0) fosse "Use '--no-summary' instead of '-p/--plugin null_summary'. '-p/--plugin null_summary' will be removed in a future release." e que plugins.getPlugins() não contivesse plugin("io.cucumber.core.plugin.DefaultSummaryPrinter"), mas continha.
+Era esperado que plugins.getPlugins() não contivesse plugin("io.cucumber.core.plugin.DefaultSummaryPrinter"), mas continha.
+Era esperado que actual contivesse "@should_not_be_clobbered" e que options.getLineFilters() contivesse a entrada new File("this/should/be/rerun.feature").toURI(), singleton(12), mas não continha.
+Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou. plugins.getPlugins() não deveria conter plugin("io.cucumber.core.plugin.DefaultSummaryPrinter").
+Era esperado que options.getFeaturePaths() contivesse URI.create("classpath:com/example.feature") e tagExpressions contivesse "@example", mas não continha.
+Era esperado que options.getFeaturePaths() contivesse URI.create("classpath:path/to.feature") e options.getTagExpressions() não contivesse "@example", mas continha.
+Era esperado que runtimeOptions.getFeaturePaths() tivesse tamanho 0 e runtimeOptions.getLineFilters() fosse igual a emptyMap(), mas não foi.
+Era esperado que runtimeOptions.getFeaturePaths() tivesse tamanho 0 e runtimeOptions.getLineFilters() fosse igual a emptyMap(), mas não foi.
+Era esperado que runtimeOptions.getFeaturePaths() tivesse tamanho 0 e runtimeOptions.getLineFilters() fosse igual a emptyMap(), mas não foi.
+Era esperado que runtimeOptions.getFeaturePaths() tivesse tamanho 0 e runtimeOptions.getLineFilters() fosse igual a emptyMap(), mas não foi.
+Era esperado que runtimeOptions.getFeaturePaths() contivesse URI.create("file:/home/users/mp/My%20Documents/tests/bar.feature") e runtimeOptions.getLineFilters() contivesse a entrada URI.create("file:/home/users/mp/My%20Documents/tests/bar.feature"), singleton(2), mas não continha.
+Era esperado que options.getFeaturePaths() contivesse new File("path/bar.feature").toURI() e options.getLineFilters() contivesse a entrada new File("path/bar.feature").toURI(), singleton(2), mas não continha.
+Era esperado que prettyPluginA fosse igual a prettyPluginB, mas não foi.
+Era esperado que prettyPluginA.hashCode() fosse igual a prettyPluginB.hashCode(), mas não foi.
+Era esperado que htmlPluginA fosse igual a htmlPluginB, mas não foi.
+Era esperado que htmlPluginA.hashCode() fosse igual a htmlPluginB.hashCode(), mas não foi.
+Era esperado que prettyPluginA fosse diferente de htmlPluginA, mas não foi.
+Era esperado que prettyPluginA.hashCode() fosse diferente de htmlPluginA.hashCode(), mas não foi.
+Era esperado que plugins.getPlugins() estivesse vazio, mas não estava.
+Era esperado que getRegexpPattern(iterator.next()) fosse "name1" e getRegexpPattern(iterator.next()) fosse "name2", mas não foi.
+Era esperado que actual.getMessage() fosse "Invalid tag expression at 'io.cucumber.core.options.CucumberOptionsAnnotationParserTest$ClassWithInvalidTagExpression'" e actual.getCause() fosse uma instância de TagExpressionException.class, mas não foi.
+Era esperado que actual.getMessage() fosse "Invalid tag expression at 'io.cucumber.core.options.CucumberOptionsAnnotationParserTest$ClassWithInvalidTagExpression'" e actual.getCause() fosse uma instância de TagExpressionException.class, mas não foi.
+Era esperado que pluginList contivesse HtmlFormatter.class.getName() e PrettyFormatter.class.getName(), mas não continha.
+Era esperado que runtimeOptions.isMonochrome() fosse verdadeiro, mas foi falso.
+Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou. plugins.getPlugins() deveria estar vazio.
+Era esperado que snakeCase.generate(sentence) fosse igual a expectedSnakeCase e camelCase.generate(sentence) fosse igual a expectedCamelCase, mas não foi.
+Era esperado que JarUriFileSystemService.supports(URI.create("jar:file:/example.jar!com/example/app")) fosse verdadeiro, mas foi falso.
+Era esperado que JarUriFileSystemService.supports(URI.create("file:/example.jar")) fosse verdadeiro, mas foi falso.
+Era esperado que fileSystem1.isOpen() fosse verdadeiro, mas foi falso.
+Era esperado que fileSystem2.isOpen() fosse verdadeiro, mas foi falso.
+Era esperado que fileSystem1.isOpen() fosse falso, mas foi verdadeiro.
+Era esperado que fileSystem2.isOpen() fosse falso, mas foi verdadeiro.
+Era esperado que packageName fosse "com.example", mas não foi.
+Era esperado que packageName fosse "com.example", mas não foi.
+Era esperado que packageName fosse "com.example.app", mas não foi.
+Era esperado que packageName fosse "com.example.app", mas não foi.
+Era esperado que packageName fosse "com.example.app", mas não foi.
+Era esperado que fqn fosse "com.example.app.App", mas não foi.
+Era esperado que fqn fosse "com.example.app.App", mas não foi.
+Era esperado que fqn fosse "com.example.app.App", mas não foi.
+Era esperado que fqn fosse URI.create("classpath:com/example/app/app.feature"), mas não foi.
+Era esperado que fqn fosse URI.create("classpath:com/example/app/app.feature"), mas não foi.
+Era esperado que fqn fosse URI.create("classpath:com/example/app/app.feature"), mas não foi.
+Era esperado que runners[0] fosse diferente de runners[1] e runners[1] fosse diferente de runners[0], mas não foi.
+Era esperado que eventBus fosse diferente de runnerBus e runnerBus fosse diferente de eventBus, mas não foi.
+Era esperado que predicate.test(pickle) fosse verdadeiro, mas foi falso.

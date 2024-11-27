@@ -1,0 +1,91 @@
+consoleAppender não deve ser nulo, mas é nulo
+checker.isErrorFree(0) deveria retornar true, mas retornou false
+consoleAppender deveria ser nulo, mas não é nulo
+checker.isErrorFree(0) deveria retornar true, mas retornou false
+consoleAppender deveria ser nulo, mas não é nulo
+listAppender não deve ser nulo, mas é nulo
+checker.isErrorFree(0) deveria retornar true, mas retornou false
+listAppender não deve ser nulo, mas é nulo
+o tamanho da lista deveria ser 1, mas é diferente de 1
+o tamanho da lista deveria ser 1, mas é diferente de 1
+ae não deve ser nulo, mas é nulo
+o tamanho da lista de strings deveria ser 1, mas é diferente de 1
+o primeiro elemento da lista de strings não começa com "testMethod"
+o objeto não deve ser nulo, mas é nulo
+o mapa de cabeçalhos da resposta deveria ser igual ao mapa de cabeçalhos padrão, mas é diferente
+o valor associado à chave "x" no mapa de cabeçalhos da resposta deveria ser igual ao valor padrão, mas é diferente
+o valor associado à chave "headerName1" no mapa de cabeçalhos da resposta deveria ser igual ao valor padrão, mas é diferente
+o tamanho do mapa de cabeçalhos da resposta deveria ser igual ao tamanho padrão, mas é diferente
+o comprimento do conteúdo da resposta deveria ser igual ao comprimento padrão, mas é diferente
+o status da resposta deveria ser igual ao status padrão, mas é diferente
+o conteúdo da requisição deveria ser igual ao conteúdo padrão, mas é diferente
+o conteúdo da resposta deveria ser igual ao conteúdo padrão, mas é diferente
+o valor associado à chave "testKey" no mapa de atributos deveria ser igual ao valor padrão, mas é diferente
+o valor associado à chave "testKey" no evento deveria ser "ORIGINAL", mas é diferente
+o valor associado à chave key no atributo ae deveria ser val, mas é diferente
+o valor associado à chave key no cabeçalho da requisição de ae deveria ser val, mas é diferente
+o primeiro valor associado à chave key nos parâmetros da requisição de ae deveria ser val, mas é diferente
+o valor associado à chave key no atributo ae deveria ser val, mas é diferente
+o valor associado à chave key no cabeçalho da requisição de ae deveria ser val, mas é diferente
+o primeiro valor associado à chave key nos parâmetros da requisição de ae deveria ser val, mas é diferente
+o último valor retornado pelo método getLastCount() em statsByDay deveria ser 0, mas é diferente de 0
+o último valor retornado pelo método getLastCount() em statsByDay deveria ser 0, mas é diferente de 0
+o último valor retornado pelo método getLastCount() em statsByDay deveria ser 1, mas é diferente de 1
+o último valor retornado pelo método getLastCount() em statsByDay deveria ser 2, mas é diferente de 2
+o último valor retornado pelo método getLastCount() em statsByDay deveria ser 2, mas é diferente de 2
+o último valor retornado pelo método getLastCount() em statsByDay deveria ser 4, mas é diferente de 4
+o resultado deveria ser "hello world", mas é diferente de "hello world"
+o resultado deveria ser "hello world", mas é diferente de "hello world"
+o endereço remoto do evento deveria ser "127.0.0.1", mas é diferente de "127.0.0.1"
+o nome do servidor do evento deveria ser "localhost", mas é diferente de "localhost"
+o método evaluate() do avaliador deveria retornar true, mas retornou false
+o método evaluate() do avaliador deveria retornar true, mas retornou false
+o comprimento do conteúdo retornado pelo adaptador do servidor deveria ser igual ao conteúdo padrão, mas é diferente
+a data formatada pelo conversor deveria ser igual ao resultado esperado, mas é diferente
+a data formatada pelo conversor deveria ser "21/Oct/2022:21:30:20 +1100", mas é diferente de "21/Oct/2022:21:30:20 +1100"
+a data formatada pelo conversor deveria ser igual ao resultado esperado, mas é diferente
+a porta local da requisição deveria ser igual ao resultado esperado, mas é diferente
+o endereço remoto da requisição deveria ser igual ao resultado esperado, mas é diferente
+o usuário remoto da requisição deveria ser igual ao resultado esperado, mas é diferente
+o atributo "testKey" da requisição deveria ser igual ao resultado esperado, mas é diferente
+o valor do cookie deveria ser igual ao resultado esperado, mas é diferente
+o cabeçalho "headerName1" da requisição deveria ser igual ao resultado esperado, mas é diferente
+o método da requisição deveria ser igual ao resultado esperado, mas é diferente
+o protocolo da requisição deveria ser igual ao resultado esperado, mas é diferente
+a URI da requisição deveria ser igual ao resultado esperado, mas é diferente
+o resultado deveria ser igual ao resultado esperado, mas é diferente
+o cabeçalho "headerName1" da requisição deveria ser igual ao resultado esperado, mas é diferente
+o nome do servidor da requisição deveria ser igual ao resultado esperado, mas é diferente
+o código de status do adaptador do servidor deveria ser igual ao resultado esperado, mas é diferente
+o tamanho do conjunto de chaves deveria ser 3, mas é diferente de 3
+o conjunto de chaves deveria ser igual ao conjunto de testemunhas, mas é diferente
+o tamanho da lista deveria ser igual ao tamanho esperado, mas é diferente
+o método evaluate() do avaliador deveria retornar false, mas retornou true
+o método evaluate() do avaliador deveria retornar true, mas retornou false
+o método evaluate() do avaliador deveria retornar true, mas retornou false
+o ScheduledExecutorService de valve não deve ser nulo, mas é nulo
+a lista de nomes extraídos deveria ser igual à lista esperada, mas é diferente
+a lista de nomes extraídos deveria ser igual à lista esperada, mas é diferente
+a lista de nomes extraídos deveria ser igual à lista esperada, mas é diferente
+a lista de nomes extraídos deveria ser igual à lista esperada, mas é diferente
+a ativação deveria ser true, mas é false
+a ativação deveria ser true, mas é false
+a ativação deveria ser true, mas é false
+a ativação deveria ser true, mas é false
+a ativação deveria ser false, mas é true
+a ativação deveria ser false, mas é true
+a ativação deveria ser false, mas é true
+a ativação deveria ser false, mas é true
+a ativação deveria ser true, mas é false
+a ativação deveria ser true, mas é false
+a ativação deveria ser false, mas é true
+a ativação deveria ser false, mas é true
+a ativação deveria ser false, mas é true
+a ativação deveria ser true, mas é false
+a ativação deveria ser true, mas é false
+a ativação deveria ser false, mas é true
+a ativação deveria ser false, mas é true
+a ativação deveria ser true, mas é false
+a ativação deveria ser true, mas é false
+a ativação deveria ser false, mas é true
+o array de bytes esperado deveria ser igual ao array retornado, mas é diferente

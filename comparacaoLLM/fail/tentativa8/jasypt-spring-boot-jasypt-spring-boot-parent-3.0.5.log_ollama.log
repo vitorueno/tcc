@@ -1,0 +1,56 @@
+*   eram esperados valores iguais, mas 5 não é igual a calculator.add(2, 3)
+*   eram esperados valores iguais, mas 7 não é igual a calculator.add(4, 2)
+*   eram esperados valores iguais, mas 10 não é igual a calculator.add(5, 5)
+
+*   Erros na inclusão do "some.property":
+    -   Esse valor não deve ser incluído no filter
+    -   O valor de "some.property" não deve ser incluído no filter
+    -   Esse valor não deve ser incluído no filter
+    -   O valor de "some.property" não deve ser incluído no filter
+    -   Erro na inclusão do "some.property": o valor não é incluído no filter
+    -   O valor de "some.property" não é incluído no filter
+    -   Esse valor não é um tipo de PropertySource que pode ser usado em EncryptableConfigurationPropertySourcesPropertySource
+    -   Erro na inclusão do "some.property": o valor não é incluído no filter
+    -   O valor de "some.property" não é incluído no filter
+
+*   Equivalência entre Decrypt e Message:
+    -   Os valores não são iguais, mas Decrypt é igual a message
+    -   Os valores não são iguais, mas Decrypt é igual a message
+    -   O valor Decrypt não é igual a message
+    -   Os valores não são iguais, mas Decrypt é igual a message
+    -   Erro na equivalência: Decrypt e Message não são iguais
+    -   Os valores não são iguais, mas Decrypt é igual a message
+    -   O valor de Decrypt não é igual a message
+    -   Os valores não são iguais, mas Decrypt é igual a message
+    -   O valor de Decrypt não é igual a message
+
+*   Existência do Bean:
+    -   Este objeto não existe no contexto
+    -   Este objeto não existe no contexto
+    -   Não é possível encontrar o bean EnableEncryptablePropertiesBeanFactoryPostProcessor
+    -   Erro na busca pelo bean: não foi encontrado EnableEncryptablePropertiesBeanFactoryPostProcessor
+    -   Esse objeto não existe no contexto
+    -   O bean EnableEncryptablePropertiesBeanFactoryPostProcessor não pode ser encontrado
+    -   Não é possível encontrar o bean EnableEncryptablePropertiesBeanFactoryPostProcessor
+    -   Erro na busca pelo bean: não foi encontrado EnableEncryptablePropertiesBeanFactoryPostProcessor
+
+*   Existência do valor:
+    -   Este valor não existe para o getter fooString
+    -   Este valor não existe para o getter barString
+    -   Não é possível encontrar o valor "test1" para fooString
+    -   O valor "test2" não é igual ao valor esperado para a propriedade barString
+    -   Esse valor não existe no objeto
+    -   Este valor não pode ser encontrado em myProperties.getFooList
+    -   O valor "a1" não está presente no lista de fooList
+    -   Este valor não existe na lista de fooList
+
+*   Existência do valor:
+    -   Não é possível encontrar o valor esperado para a propriedade fooString em myProperties
+    -   Este valor não existe para o getter barString
+    -   O valor "test1" não está presente no objeto meuProperties
+    -   Esse valor não existe na lista de fooList
+    -   O valor "b1" não está presente na lista de fooList
+    -   Não é possível encontrar o valor esperado para a propriedade barString em myProperties
+    -   O valor "a2" não está presente na lista de barList
+    -   Este valor não existe no objeto meuProperties
+    -   O valor "b2" não está presente na lista de barList

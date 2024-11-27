@@ -1,0 +1,99 @@
+consoleAppender não pode ser nulo.
+checker.isErrorFree(0) deve retornar true, mas retornou false.
+consoleAppender deve ser nulo.
+checker.isErrorFree(0) deve retornar true, mas retornou false.
+consoleAppender deve ser nulo.
+listAppender não pode ser nulo.
+checker.isErrorFree(0) deve retornar true, mas retornou false.
+listAppender não pode ser nulo.
+o tamanho de listAppender.list era esperado como 1, mas foi encontrado um tamanho diferente.
+o tamanho de listAppender.list era esperado como 1, mas foi encontrado um tamanho diferente.
+ae não pode ser nulo.
+o tamanho de listAppender.strList era esperado como 1, mas foi encontrado um tamanho diferente.
+listAppender.strList.get(0) era esperado que começasse com "testMethod", mas não começou.
+o não pode ser nulo.
+eram esperados mapas de cabeçalho de resposta iguais, mas DummyResponse.DUMMY_DEFAULT_HDEADER_MAP é diferente de aeBack.getResponseHeaderMap().
+eram esperados valores iguais, mas DummyResponse.DUMMY_DEFAULT_HDEADER_MAP.get("x") é diferente de aeBack.getResponseHeader("x").
+eram esperados valores iguais, mas DummyResponse.DUMMY_DEFAULT_HDEADER_MAP.get("headerName1") é diferente de aeBack.getResponseHeader("headerName1").
+eram esperados tamanhos iguais, mas DummyResponse.DUMMY_DEFAULT_HDEADER_MAP.size() é diferente de aeBack.getResponseHeaderNameList().size().
+eram esperados valores iguais, mas DummyResponse.DUMMY_DEFAULT_CONTENT_COUNT é diferente de aeBack.getContentLength().
+eram esperados valores iguais, mas DummyResponse.DUMMY_DEFAULT_STATUS é diferente de aeBack.getStatusCode().
+eram esperados valores iguais, mas DummyRequest.DUMMY_CONTENT_STRING é diferente de aeBack.getRequestContent().
+eram esperados valores iguais, mas DummyRequest.DUMMY_RESPONSE_CONTENT_STRING é diferente de aeBack.getResponseContent().
+eram esperados valores iguais, mas DummyRequest.DUMMY_DEFAULT_ATTR_MAP.get("testKey") é diferente de aeBack.getAttribute("testKey").
+eram esperados valores iguais, mas "ORIGINAL" é diferente de event.getAttribute("testKey").
+eram esperados valores iguais, mas val é diferente de ae.getAttribute(key).
+eram esperados valores iguais, mas val é diferente de ae.getRequestHeader(key).
+eram esperados valores iguais, mas val é diferente de ae.getRequestParameter(key)[0].
+eram esperados valores iguais, mas val é diferente de ae.getAttribute(key).
+eram esperados valores iguais, mas val é diferente de ae.getRequestHeader(key).
+eram esperados valores iguais, mas val é diferente de ae.getRequestParameter(key)[0].
+eram esperados valores iguais, mas 0 é diferente de statsByDay.getLastCount().
+eram esperados valores iguais, mas 0 é diferente de statsByDay.getLastCount().
+eram esperados valores iguais, mas 1 é diferente de statsByDay.getLastCount().
+eram esperados valores iguais, mas 2 é diferente de statsByDay.getLastCount().
+eram esperados valores iguais, mas 2 é diferente de statsByDay.getLastCount().
+eram esperados valores iguais, mas 4 é diferente de statsByDay.getLastCount().
+eram esperados valores iguais, mas "hello world" é diferente de result.
+eram esperados valores iguais, mas "hello world" é diferente de result.
+eram esperados valores iguais, mas "127.0.0.1" é diferente de event.getRemoteHost().
+eram esperados valores iguais, mas "localhost" é diferente de event.getServerName().
+evaluator.evaluate(ae) deve retornar true, mas retornou false.
+evaluator.evaluate(ae) deve retornar true, mas retornou false.
+eram esperados valores iguais, mas Long.toString(event.getServerAdapter().getContentLength()) é diferente de result.
+eram esperados valores iguais, mas converter.cachingDateFormatter.format(event.getTimeStamp()) é diferente de result.
+eram esperados valores iguais, mas "21/Oct/2022:21:30:20 +1100" é diferente de result.
+eram esperados valores iguais, mas converter.cachingDateFormatter.format(event.getTimeStamp()) é diferente de result.
+eram esperados valores iguais, mas Integer.toString(request.getLocalPort()) é diferente de result.
+eram esperados valores iguais, mas request.getRemoteHost() é diferente de result.
+eram esperados valores iguais, mas request.getRemoteAddr() é diferente de result.
+eram esperados valores iguais, mas request.getRemoteUser() é diferente de result.
+eram esperados valores iguais, mas request.getAttribute("testKey") é diferente de result.
+eram esperados valores iguais, mas cookie.getValue() é diferente de result.
+eram esperados valores iguais, mas request.getHeader("headerName1") é diferente de result.
+eram esperados valores iguais, mas request.getMethod() é diferente de result.
+eram esperados valores iguais, mas request.getProtocol() é diferente de result.
+eram esperados valores iguais, mas request.getRequestURI() é diferente de result.
+eram esperados valores iguais, mas expected é diferente de result.
+eram esperados valores iguais, mas request.getHeader("headerName1") é diferente de result.
+eram esperados valores iguais, mas request.getServerName() é diferente de result.
+eram esperados valores iguais, mas Integer.toString(event.getServerAdapter().getStatusCode()) é diferente de result.
+eram esperados valores iguais, mas 3 é diferente de keySet.size().
+eram esperados conjuntos iguais, mas witnessSet é diferente de keySet.
+eram esperados valores iguais, mas expectedCount é diferente de listAppender.list.size().
+evaluator.evaluate(ae) deve retornar false, mas retornou true.
+evaluator.evaluate(ae) deve retornar true, mas retornou false.
+evaluator.evaluate(ae) deve retornar true, mas retornou false.
+valve.getScheduledExecutorService() não pode ser nulo.
+eram esperados listas iguais, mas Arrays.asList(new String[] { "a" }) é diferente de TeeFilter.extractNameList("a").
+eram esperados listas iguais, mas Arrays.asList(new String[] { "a", "b" }) é diferente de TeeFilter.extractNameList("a, b").
+eram esperados listas iguais, mas Arrays.asList(new String[] { "a", "b" }) é diferente de TeeFilter.extractNameList("a; b").
+eram esperados listas iguais, mas Arrays.asList(new String[] { "a", "b", "c" }) é diferente de TeeFilter.extractNameList("a; b, c").
+TeeFilter.computeActivation("somehost", "", "") deve retornar true, mas retornou false.
+TeeFilter.computeActivation("somehost", null, null) deve retornar true, mas retornou false.
+TeeFilter.computeActivation("a", "a", null) deve retornar true, mas retornou false.
+TeeFilter.computeActivation("a", "a, b", null) deve retornar true, mas retornou false.
+TeeFilter.computeActivation("a", "b", null) deve retornar false, mas retornou true.
+TeeFilter.computeActivation("a", "b, c", null) deve retornar false, mas retornou true.
+TeeFilter.computeActivation("a", null, "a") deve retornar false, mas retornou true.
+TeeFilter.computeActivation("a", null, "a, b") deve retornar false, mas retornou true.
+TeeFilter.computeActivation("a", null, "b") deve retornar true, mas retornou false.
+TeeFilter.computeActivation("a", null, "b, c") deve retornar true, mas retornou false.
+TeeFilter.computeActivation("a", "a", "a") deve retornar false, mas retornou true.
+TeeFilter.computeActivation("a", "a", "b") deve retornar true, mas retornou false.
+TeeFilter.computeActivation("a", "b", "a") deve retornar false, mas retornou true.
+TeeFilter.computeActivation("a", "b", "b") deve retornar false, mas retornou true.
+eram esperados arrays iguais, mas expectedBytes é diferente de byteArrayOutputStream.toByteArray().
+teste falhou.
+condition não pode ser nulo.
+condition.evaluate() deve retornar true, mas retornou false.
+condition não pode ser nulo.
+checker.isErrorFree(0) deve retornar true, mas retornou false.
+checker.isErrorFree(0) deve retornar true, mas retornou false.
+System.getProperty(sysKey) deve ser nulo.
+context.getProperty(dynaKey) deve ser nulo.
+context.getProperty(dynaKey) não pode ser nulo.
+context.getProperty(dynaKey) deve ser nulo.
+context.getProperty(dynaKey) deve ser nulo.
+fileAppender não pode ser nulo.
+consoleAppender não pode ser nulo.

@@ -1,0 +1,98 @@
+Eram esperados valores iguais, mas 1 é diferente de jspFragment.count
+Eram esperados valores iguais, mas 1 é diferente de jspFragment.count
+Eram esperados valores iguais, mas 2 é diferente de jspFragment.count
+Eram esperados valores iguais, mas 3 é diferente de jspFragment.count
+Eram esperados valores iguais, mas 2 é diferente de jspFragment.count
+Eram esperados valores iguais, mas 6 é diferente de jspFragment.count
+O objeto jspContext.getAttribute("s") não é nulo
+O objeto s não é nulo
+Eram esperados valores iguais, mas count é diferente de s.getCount()
+Eram esperados valores iguais, mas count - 1 é diferente de s.getValue()
+Eram esperados valores iguais, mas count - 1 é diferente de s.getIndex()
+Eram esperados valores iguais, mas count % s.getModulusValue() é diferente de s.getModulus()
+Eram esperados valores iguais, mas "text/html" é diferente de cthr.getMimeType()
+Eram esperados valores iguais, mas "utf-8" é diferente de cthr.getEncoding()
+Eram esperados valores iguais, mas "text/html" é diferente de cthr.getMimeType()
+O objeto cthr.getEncoding() é nulo
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é falso
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é falso
+gzipFilter.isGzipEligible(servletRequest) é falso
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é falso
+gzipFilter.isGzipEligible(servletRequest) é verdadeiro
+gzipFilter.isGzipEligible(servletRequest) é falso
+Eram esperados valores iguais, mas "OneTwo" é diferente de string
+Eram esperados valores iguais, mas "OneTwo123" é diferente de string
+Eram esperados valores iguais, mas 5 é diferente de wrappedResponse.getBufferSize()
+Eram esperados valores iguais, mas "first" é diferente de new String(bytes)
+Eram esperados valores iguais, mas "first173WOW" é diferente de new String(bytes)
+Eram esperados valores iguais, mas "first173WOWYYZ" é diferente de new String(bytes)
+Eram esperados valores iguais, mas result é diferente de form1(form)
+Eram esperados valores iguais, mas "" é diferente de form("")
+Eram esperados valores iguais, mas "<form></form>" é diferente de form("<form></form>")
+Eram esperados valores iguais, mas "<input type=\"text\"/>" é diferente de form("<input type='text'/>")
+Eram esperados valores iguais, mas "<input type=\"text\"></input>" é diferente de form("<input type='text'></input>")
+Eram esperados valores iguais, mas "<input type=\"text\"> </input>" é diferente de form("<input type='text'> </input>")
+Eram esperados valores iguais, mas "<input type=\"text\"> " é diferente de form("<input type='text'> </input")
+Eram esperados valores iguais, mas "<input type=\"text\"> " é diferente de form("<input type='text'>")
+Eram esperados valores iguais, mas "<input type=\"\"> " é diferente de form("<input type=''>")
+Eram esperados valores iguais, mas "<input tYpE=\"text\"> " é diferente de form("<input tYpE='text'>")
+Eram esperados valores iguais, mas "<input type=\"text\"/>" é diferente de form("<input  type=\"text\"  />")
+Eram esperados valores iguais, mas "<input type=\"textx\" name=\"foo\"/>" é diferente de form("<input type='textx' name='foo'/>")
+Eram esperados valores iguais, mas "<input type=\"text\" name=\"foo\" value=\"*foo*\"/>" é diferente de form("<input type='text' name='foo'/>")
+Eram esperados valores iguais, mas "<input tYpE=\"text\" nAmE=\"foo\" value=\"*foo*\"/>" é diferente de form("<input tYpE='text' nAmE='foo'/>")
+Eram esperados valores iguais, mas "<input type=\"text\" name=\"foo\" value=\"*foo*\"/>" é diferente de form("<input type  =  'text'  name = 'foo'/>")
+Eram esperados valores iguais, mas "<input type=\"text\" name=\"&quot;foo\" value=\"*&quot;foo*\"/>" é diferente de form("<input type  =  'text'  name = '\"foo'/>")
+Eram esperados valores iguais, mas "<input name=\"foo\" type=\"text\" value=\"*foo*\"/>" é diferente de form("<input name='foo' type='text' />")
+Eram esperados valores iguais, mas "<input type=\"hidden\" name=\"foo\" value=\"*foo*\"/>" é diferente de form("<input type='hidden' name='foo'/>")
+Eram esperados valores iguais, mas "<input type=\"password\" name=\"foo\" value=\"*foo*\"/>" é diferente de form("<input type='password' name='foo'/>")
+Eram esperados valores iguais, mas "<input type=\"image\" name=\"foo\" value=\"*foo*\"/>" é diferente de form("<input type='image' name='foo'/>")
+Eram esperados valores iguais, mas "<input type=\"checkbox\" name=\"foo\" value=\"not\"/>" é diferente de form("<input type='checkbox' name='foo' value='not'/>")
+Eram esperados valores iguais, mas "<input type=\"checkbox\" name=\"foo\" value=\"*foo*\" checked/>" é diferente de form("<input type='checkbox' name='foo' value='*foo*'/>")
+Eram esperados valores iguais, mas "<input type=\"radio\" name=\"foo\" value=\"not\"/>" é diferente de form("<input type='radio' name='foo' value='not'/>")
+Eram esperados valores iguais, mas "<input type=\"radio\" name=\"foo\" value=\"*foo*\" checked/>" é diferente de form("<input type='radio' name='foo' value='*foo*'/>")
+Eram esperados valores iguais, mas "<textarea name=\"foo\">*foo*</textarea>" é diferente de form("<textarea name='foo'></textarea>")
+Eram esperados valores iguais, mas "<textarea name=\"foo\">*\"foo*</textarea>" é diferente de form2("<textarea name='foo'></textarea>")
+Eram esperados valores iguais, mas "<select name=\"foo\"><option value=\"1\"/><option value=\"2\"></option><option value=\"*foo*\" selected/></select>" é diferente de form("<select name='foo'><option value='1'/><option value='2'></option><option value='*foo*'/></select>")
+Eram esperados valores iguais, mas "<form><input type=\"hidden\" name=\"logTime>=\" value=\"*logTime>=*\"></form>" é diferente de form("<form><input type='hidden' name='logTime>='></form>")
+O texto em response.bodyText().trim() é igual a TEXT_RESULT
+O texto em response.bodyText().trim() é igual a TEXT_RESULT
+O texto em response.bodyText().trim() é igual a TEXT_RESULT
+O texto em response.bodyText().trim() é igual a TEXT_RESULT
+O texto em response.bodyText().trim() é igual a "<input type=\"text\" name=\"cc\" id=\"cc1\" value=\"one\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc2\" value=\"two\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc3\"/>"
+A posição 2 do array p contém " three "
+O objeto na posição 1 do array p não é nulo
+O objeto na posição 3 do array p é nulo
+O objeto na posição 1 do array p é nulo
+O objeto na posição 3 do array p é nulo
+O objeto na posição 0 do array p é nulo
+O objeto na posição 1 do array p é nulo
+O objeto na posição 2 do array p não é nulo
+O objeto vtor.severity é igual a 1
+O método isValidateAllProfilesByDefault() de vtor retorna verdadeiro
+O array de violações em vtor é nulo
+O tamanho do array de violações em vtor é igual a 2
+A primeira violação em vtor é igual a violation1
+A segunda violação em vtor é igual a violation2
+O tamanho do array de violações em vtor é igual a 2
+O objeto enabledProfiles em vtor é nulo
+O tamanho do array de enabledProfiles em vtor é igual a 1
+O tamanho do array de enabledProfiles em vtor é igual a 1
+O objeto enabledProfiles em vtor é nulo
+O tamanho do array de enabledProfiles em vtor é igual a 2
+O tamanho do array de enabledProfiles em vtor é igual a 2
+O tamanho do array de violations é igual a 1
+O objeto validate é nulo
+O tamanho do array de violations é igual a 1
+O perfil "profil1" está presente na primeira violação
+O tamanho do array de violations é igual a 1
+O objeto ch1 é igual ao objeto check da primeira violação
+O método matchProfiles(new String[] { "testProfile" }) em vtor retorna verdadeiro
+O método matchProfiles(null) em vtor retorna verdadeiro

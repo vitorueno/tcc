@@ -1,0 +1,27 @@
+eram esperados valores iguais, mas 0 não é igual a sequencer.next()
+eram esperados valores iguais, mas 3 não é igual a sequencer.next(4)
+eram esperados valores iguais, mas 1 não é igual a sequencer.hasAvailableCapacity(BUFFER_SIZE)
+eram esperados valores iguais, mas 1 não é igual a sequencer.hasAvailableCapacity(1)
+eram esperados valores iguais, mas 0 não é igual a sequencer.isAvailable(seq)
+eram esperados valores iguais, mas 2 não é igual a sequencer.await(2, TimeUnit.SECONDS)
+eram esperados valores iguais, mas 2 não é igual a exceptionLatch.await(2, TimeUnit.SECONDS)
+eram esperados valores iguais, mas [3L, 2L, 1L] não é igual a batchSizes
+eram esperados valores iguais, mas 0 não é igual a h1.awaitStart(2, TimeUnit.SECONDS)
+eram esperados valores iguais, mas 0 não é igual a h1.awaitStop(2, TimeUnit.SECONDS)
+eram esperados valores iguais, mas 10 não é igual a sequence.addAndGet(10)
+eram esperados valores iguais, mas 10 não é igual a sequence.get()
+eram esperados valores iguais, mas 1 não é igual a sequence.incrementAndGet()
+eram esperados valores iguais, mas 1 não é igual a sequence.get()
+eram esperados valores iguais, mas 0 não é igual a sequence.getAndAdd(1)
+eram esperados valores iguais, mas 1 não é igual a sequence.get()
+eram esperados valores iguais, mas -1L não é igual a batchEventProcessor.getSequence().get()
+eram esperados valores iguais, mas 0L não é igual a batchEventProcessor.getSequence().get()
+eram esperados valores iguais, mas 0L não é igual a batchEventProcessor.getSequence().get()
+eram esperados valores iguais, mas "not rewindable" não é igual a exceptionHandled.get().getMessage()
+eram esperados valores iguais, mas 3 não é igual a rewindPauseStrategy.count
+eram esperados valores iguais, mas 0 não é igual a rewindPauseStrategy.count
+eram esperados valores iguais, mas 1024 não é igual a powerOfTwo
+eram esperados valores iguais, mas 1024 não é igual a powerOfTwo
+eram esperados valores iguais, mas 3L não é igual a Util.getMinimumSequence(sequences)
+eram esperados valores iguais, mas Long.MAX_VALUE não é igual a Util.getMinimumSequence(sequences)
+eram esperados valores iguais, mas causaException não é igual a ex.getCause()

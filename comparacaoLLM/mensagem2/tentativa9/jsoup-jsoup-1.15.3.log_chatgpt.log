@@ -1,0 +1,16 @@
+assertNotNull(files) - era esperado um objeto não nulo, mas files é nulo
+assertTrue(files.length > 10) - era esperado verdadeiro, mas o tamanho de files não é maior que 10
+assertNotNull(doc) - era esperado um objeto não nulo, mas doc é nulo
+assertTrue(doc.title().contains("Environment Variables")) - era esperado verdadeiro, mas o título de doc não contém "Environment Variables"
+assertTrue(threw) - era esperado verdadeiro, mas threw é falso
+assertEquals("Hello, World!", p.text()) - eram esperados valores iguais, mas "Hello, World!" é diferente de p.text()
+assertTrue(doc.title().contains("Environment Variables")) - era esperado verdadeiro, mas o título de doc não contém "Environment Variables"
+assertEquals("Webserver Environment Variables", doc.title()) - eram esperados valores iguais, mas "Webserver Environment Variables" é diferente do título de doc
+assertEquals("POST", ihVal("Method", doc)) - eram esperados valores iguais, mas "POST" é diferente de ihVal("Method", doc)
+assertEquals("gzip", ihVal("Accept-Encoding", doc)) - eram esperados valores iguais, mas "gzip" é diferente de ihVal("Accept-Encoding", doc)
+assertTrue(ihVal("Content-Type", doc).contains(MULTIPART_FORM_DATA)) - era esperado verdadeiro, mas ihVal("Content-Type", doc) não contém MULTIPART_FORM_DATA
+assertEquals("hello", ihVal("Random-Header-name", doc)) - eram esperados valores iguais, mas "hello" é diferente de ihVal("Random-Header-name", doc)
+assertEquals("POST", ihVal("Method", doc)) - eram esperados valores iguais, mas "POST" é diferente de ihVal("Method", doc)
+assertEquals("application/json", ihVal("Content-Type", doc)) - eram esperados valores iguais, mas "application/json" é diferente de ihVal("Content-Type", doc)
+assertEquals("foo=true", ihVal("Query String", doc)) - eram esperados valores iguais, mas "foo=true" é diferente de ihVal("Query String", doc)
+assertEquals("POST", ihVal("Method", doc)) - eram esperados valores iguais, mas "POST" é diferente de ihVal("Method", doc)

@@ -1,0 +1,56 @@
+eram esperados valores verdadeiros, mas a classe não é atribuível a EncryptableConfigurationPropertySourcesPropertySource
+eram esperados valores falsos, mas a classe é atribuível a EncryptableConfigurationPropertySourcesPropertySource
+eram esperados valores verdadeiros, mas a classe não é atribuível a EncryptableMapPropertySourceWrapper
+eram esperados valores falsos, mas a classe é atribuível a EncryptableMapPropertySourceWrapper
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores verdadeiros, mas 'some.property' não foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores falsos, mas 'some.property' foi incluído no filtro
+eram esperados valores iguais, mas decrypted é diferente de message
+eram esperados valores iguais, mas decrypted é diferente de message
+eram esperados valores iguais, mas decrypted é diferente de message
+eram esperados valores iguais, mas decrypted é diferente de message
+eram esperados valores iguais, mas decrypted é diferente de message
+eram esperados valores iguais, mas decrypted é diferente de message
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+eram esperados valores iguais, mas message é diferente de decrypted
+o objeto retornado por getBean(EnableEncryptablePropertiesBeanFactoryPostProcessor.class) é nulo
+o objeto retornado por getBean(EnableEncryptablePropertiesBeanFactoryPostProcessor.class) é nulo
+eram esperados valores iguais, mas 'test1' é diferente de myProperties.getFooString()
+eram esperados valores iguais, mas 'test2' é diferente de myProperties.getBarString()
+a lista retornada por getFooList() é nula
+eram esperados valores iguais, mas '[a1, b1]' é diferente de myProperties.getFooList().toString()
+a lista retornada por getBarList() é nula
+eram esperados valores iguais, mas '[a2, b2]' é diferente de myProperties.getBarList().toString()
+o mapa retornado por getStringMap() é nulo
+eram esperados valores iguais, mas '{k1=v1}' é diferente de myProperties.getStringMap().toString()
+o mapa retornado por getListMap() é nulo
+eram esperados valores iguais, mas '{k2=[v2]}' é diferente de myProperties.getListMap().toString()

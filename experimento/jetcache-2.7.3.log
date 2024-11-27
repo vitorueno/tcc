@@ -1,0 +1,12 @@
+
+Projeto: /home/vitor-otto/opensource/jetcache-2.7.3
+
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/main/java/com/alicp/jetcache/test/external/AbstractExternalCacheTest.java linha: 41 Método: Assert.assertNull("V2", cache.get(d2))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 137 Método: Assert.assertEquals(1.0, 1.0 * result[1] / result[0], 0.2)
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 138 Método: Assert.assertEquals(1.0, 1.0 * result[2] / result[0], 0.2)
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 147 Método: Assert.assertEquals(2.0, 1.0 * result[1] / result[0], 0.2)
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 148 Método: Assert.assertEquals(3.0, 1.0 * result[2] / result[0], 0.4)
+Total asserts: 1049
+Asserts sem descrição: 1044
+Asserts com descrição: 5
+Assertion Roulette: 983

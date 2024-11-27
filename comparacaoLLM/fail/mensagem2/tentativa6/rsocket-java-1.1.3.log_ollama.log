@@ -1,0 +1,44 @@
+eram esperados valores iguais, mas 2 não é igual a s.nextStreamId(map)
+eram esperados valores iguais, mas 4 não é igual a s.nextStreamId(map)
+eram esperados valores iguais, mas 6 não é igual a s.nextStreamId(map)
+eram esperados valor falso em s.isBeforeOrCurrent(1), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(3), mas obtido true
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(1), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(3), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(3), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(-1), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(0), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(2), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(2), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(4), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(2), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(4), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(4), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(-2), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(0), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(1), mas obtido true
+eram esperados valor de 2147483646 em s.nextStreamId(map), mas obtido 2
+eram esperados valores iguais, mas 2 não é igual a s.nextStreamId(map)
+eram esperados valores iguais, mas 4 não é igual a s.nextStreamId(map)
+eram esperados valores iguais, mas 6 não é igual a s.nextStreamId(map)
+eram esperados valor falso em s.isBeforeOrCurrent(1), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(3), mas obtido true
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(1), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(3), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(3), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(-1), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(0), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(2), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(2), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(4), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(2), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(4), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(4), mas obtido true
+eram esperados valor falso em s.isBeforeOrCurrent(-2), mas obtido false
+eram esperados valor falso em s.isBeforeOrCurrent(0), mas obtido false
+eram esperados valor verdadeiro em s.isBeforeOrCurrent(1), mas obtido true
+eram esperados valor de 2147483646 em s.nextStreamId(map), mas obtido 2
+eram esperados valor de Long.MAX_VALUE em actualRequest, mas obtido 42L
+eram esperados valores iguais, mas "d" não é igual a data
+eram esperados valores iguais, mas "md" não é igual a metadata
+eram esperados valores iguais, mas "d" não é igual à quantidade de dados

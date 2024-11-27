@@ -1,0 +1,37 @@
+NotNull(factory.configureSslContextFactory(new SslContextFactory.Server()), "Falha ao criar o contexto SSL.")
+ 
+ConstraintViolationException.class != throwable.getClass(), "O tipo do throwable não é uma ConstraintViolationException.")
+
+Collections.singletonMap("color", "orange") != response, "A resposta não contém a chave 'color' com valor 'orange'.")
+Collections.singletonMap("message", "stuff!") != response, "A resposta não contém a chave 'message' com valor 'stuff!'.")
+
+findEntityClassesFromDirectory.isEmpty(), "O conjunto de classes de entidade não foi inicializado corretamente.")
+4 != findEntityClassesFromDirectory.size(), "O tamanho do conjunto de classes de entidade é inválido.")
+
+findEntityClassesFromDirectory.isEmpty(), "O conjunto de classes de entidade não foi inicializado corretamente.")
+8 != findEntityClassesFromDirectory.size(), "O tamanho do conjunto de classes de entidade é inválido.")
+
+Instant.ofEpochMilli(0) != event.getCreatedAt(), "A data criada do evento não coincide com 0 milisegundos.")
+Duration.ofSeconds(0) != task.getDuration(), "A duração da tarefa não coincide com 0 segundos.")
+
+requestContext.getSecurityContext().isSecure() == false, "O contexto de segurança não é seguro.")
+http.getAdminContextPath() != environment.getAdminContext().getContextPath(), "O caminho do contexto administrativo não coincide com o esperado.")
+http.getApplicationContextPath() != environment.getApplicationContext().getContextPath(), "O caminho do contexto aplicação não coincide com o esperado.")
+
+http.getAdminContextPath() == http.getApplicationContextPath(), "Os caminhos do contexto administrativo e de aplicação não coincem.")
+http.getAdminContextPath() != environment.getAdminContext().getContextPath(), "O caminho do contexto administrativo não coincide com o esperado.")
+http.getApplicationContextPath() != environment.getApplicationContext().getContextPath(), "O caminho do contexto aplicação não coincide com o esperado.")
+
+OK_STATUS_CODE == getResponseStatusForRequestMethod("GET", false), "O código de resposta para GET é inválido.")
+OK_STATUS_CODE == getResponseStatusForRequestMethod("POST", true), "O código de resposta para POST é inválido.")
+DISALLOWED_STATUS_CODE == getResponseStatusForRequestMethod("PUT", true), "O código de resposta para PUT é inválido.")
+DISALLOWED_STATUS_CODE == getResponseStatusForRequestMethod("DELETE", false), "O código de resposta para DELETE é inválido.")
+DISALLOWED_STATUS_CODE == getResponseStatusForRequestMethod("TRACE", false), "O código de resposta para TRACE é inválido.")
+
+assertSame(inv, test.getInvocable()), "A invocável não coincide com a esperada.")
+Response.Status.BAD_REQUEST.getStatusCode() != reponse.getStatus(), "O código de resposta é inválido.")
+Optionals.fromGuavaOptional(com.google.common.base.Optional.absent()).isPresent(), "O optional não está presente.")
+Optionals.toGuavaOptional(java.util.Optional.empty()).isPresent(), "O optional não está presente.")
+
+java.util.Optional.of("Foo") == Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")), "O optional de 'Foo' não coincide com o esperado.")
+Optionals.toGuavaOptional(java.util.Optional.of("Foo")).isPresent(), "O optional de 'Foo' não está presente.")

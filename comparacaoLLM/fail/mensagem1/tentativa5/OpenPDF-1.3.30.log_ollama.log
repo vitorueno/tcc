@@ -1,0 +1,44 @@
+assertTrue(result.length > input.length, "A lista de resultados não é maior que a entrada")
+Assertions.assertEquals(2, countPages(target), "O número de páginas não é igual a 2")
+Assertions.assertEquals(5, countPages(target), "O número de páginas não é igual a 5")
+Assertions.assertEquals(expected, color, "A cor não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#f09"), "A cor RGB não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#F09"), "A cor RGB não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099"), "A cor RGB não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099"), "A cor RGB não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#f09a"), "A cor RGB não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#F09A"), "A cor RGB não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099aa"), "A cor RGB não é igual à esperada")
+Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099AA"), "A cor RGB não é igual à esperada")
+assertEquals(3, actualHeaderFooter.getChunks().size(), "O número de chaves não é igual a 3")
+assertEquals("before", actualHeaderFooter.getChunks().get(0).toString(), "O primeiro chunk não é igual a ' antes'")
+assertEquals("0", actualHeaderFooter.getChunks().get(1).toString(), "O segundo chunk não é igual a '0'")
+assertEquals("after", actualHeaderFooter.getChunks().get(2).toString(), "O terceiro chunk não é igual a ' após'")
+assertEquals(2, actualHeaderFooter.getChunks().size(), "O número de chaves não é igual a 2")
+assertEquals("before", actualHeaderFooter.getChunks().get(0).toString(), "O primeiro chunk não é igual a ' antes'")
+assertEquals("0", actualHeaderFooter.getChunks().get(1).toString(), "O segundo chunk não é igual a '0'")
+assertEquals(1, actualHeaderFooter.getChunks().size(), "O número de chaves não é igual a 1")
+assertEquals("before", actualHeaderFooter.getChunks().get(0).toString(), "O único chunk não é igual a ' antes'")
+assertEquals("1 1.1 1.2 ", actualHeaderFooter.getChunks().get(0).toString(), "O único chunk não é igual a '1 1.1 1.2'")
+assertEquals("1.4 ", actualHeaderFooter.getChunks().get(5).toString(), "O último chunk não é igual a '1.4'")
+assertEquals("lvi", getString(56), "A string não é igual a 'lvi'")
+assertEquals("mmcmxcix", getString(2999), "A string não é igual a 'mmcmxcix'")
+assertEquals("mmm", getString(3000), "A string não é igual a 'mmm'")
+assertAll(() -> assertThat(getString(input), is(expected)), () -> assertThat(getString(input, false), is(expected.toUpperCase())))
+assertNotNull(image.getUrl(), "O URL da imagem não é notado")
+assertNotNull(image.getUrl(), "O URL da imagem não é notato")
+Assertions.assertEquals(1, names.size(), "O número de nomes não é igual a 1")
+assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix(), "As prefixas não são iguais")
+assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix(), "As prefixas não são iguais")
+assertEquals(subsetPrefixOne, subsetPrefixTwo, "As prefixas não são igualas")
+Assertions.assertTrue(comparePdf(), "A comparação do PDF não é verdadeira")
+assertTimeout(ofSeconds(10), () -> {
+    Document document = new Document(PageSize.A4);
+    PdfWriter writer = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get("test.pdf")));
+    Table table = new Table(2);
+    Cell cell1 = new Cell("any text");
+    cell1.setVerticalAlignment(VerticalAlignment.BOTTOM);
+    table.addCell(cell1);
+    StringBuilder largeStr = new StringBuilder();
+    for (int i = 0; i < 45; i++) {
+        largeStr.append(String.format("this is to test-> row %d\n", i));

@@ -1,0 +1,12 @@
+`assertEquals("test.test", fileName)`: Era esperado o valor "test.test", mas o valor de fileName é diferente.
+`assertEquals("test", fileName)`: Era esperado o valor "test", mas o valor de fileName é diferente.
+`assertEquals("Object", fileName)`: Era esperado o valor "Object", mas o valor de fileName é diferente.
+`assertEquals("file.png", fileName)`: Era esperado o valor "file.png", mas o valor de fileName é diferente.
+`assertEquals("file.", fileName)`: Era esperado o valor "file.", mas o valor de fileName é diferente.
+`assertEquals("test", new String(Base64.decode("dGVzdA==")))`: Era esperado o valor "test", mas o resultado da decodificação Base64 de "dGVzdA==" é diferente.
+`Assertions.assertTrue(ripper.findJSONObjectContainingPhotoId("-45984105_457345201", new JSONObject(json)).similar(new JSONObject(responseJson)))`: A comparação entre o JSONObject retornado por ripper.findJSONObjectContainingPhotoId("-45984105_457345201", new JSONObject(json)) e new JSONObject(responseJson) retornou falso, indicando que os objetos não são considerados similares.
+`Assertions.assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150".equalsIgnoreCase(doc.location()))`: Era esperado que a URL "https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150" fosse igual (ignorando maiúsculas/minúsculas) ao valor de doc.location(), mas não foi.
+`Assertions.assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300".equalsIgnoreCase(doc.location()))`: Era esperado que a URL "https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300" fosse igual (ignorando maiúsculas/minúsculas) ao valor de doc.location(), mas não foi.
+`Assertions.assertTrue(ripper.getGID(new URL("https://hitomi.la/galleries/975973.html")).equals("975973"))`: Era esperado que o GID retornado por ripper.getGID(new URL("https://hitomi.la/galleries/975973.html")) fosse igual a "975973", mas não foi.
+`Assertions.assertTrue(ripper.pageContainsAlbums(url))`: Era esperado que a página representada pela URL contivesse álbuns, mas não foi o caso.
+`Assertions.assertTrue(ripper.pageContainsAlbums(url2))`: Era esperado que a página representada pela URL2 contivesse álbuns, mas não foi o caso.

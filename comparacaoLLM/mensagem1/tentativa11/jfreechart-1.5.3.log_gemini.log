@@ -1,0 +1,101 @@
+O conjunto de dados subjacente deve ser nulo.
+O número de itens deve ser 0.
+As chaves devem estar vazias.
+O valor para 'R1' deve ser nulo.
+O valor para 'C1' deve ser 1.1.
+O valor para 'C2' deve ser 2.2.
+A chave no índice 0 deve ser 'C1'.
+A chave no índice 1 deve ser 'C2'.
+O índice para 'C1' deve ser 0.
+O índice para 'C2' deve ser 1.
+O índice para 'XX' deve ser -1.
+A variável 'pass' deve ser verdadeira.
+d1 e d2 devem ser iguais.
+d1 e d2 devem ser iguais.
+Os conjuntos de dados subjacentes de d1 e d2 devem ser iguais.
+Os tipos de extração de d1 e d2 devem ser iguais.
+Os índices de extração de d1 e d2 devem ser iguais.
+O valor em 'R1', 'C1' deve ser 1.0.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+O valor em 'R1', 'C1' deve ser 3.0.
+O valor em 'R2', 'C1' deve ser 2.0.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+O número de linhas deve ser 0.
+O número de linhas deve ser 1.
+O número de linhas deve ser 2.
+O número de linhas deve ser 2.
+O número de linhas deve ser 2.
+O número de colunas deve ser 0.
+O número de colunas deve ser 1.
+O número de colunas deve ser 2.
+O número de colunas deve ser 2.
+O número de colunas deve ser 2.
+d1 e d2 devem ser iguais.
+d2 e d1 devem ser iguais.
+d1 e d2 não devem ser iguais.
+d1 e d2 devem ser iguais.
+d1 e d2 não devem ser iguais.
+d1 e d2 devem ser iguais.
+d1 e d2 devem ser iguais.
+O valor em 'R1', 'C1' deve ser nulo.
+O valor em 'R2', 'C1' deve ser 1.0.
+A variável 'pass' deve ser verdadeira.
+O número de linhas deve ser 0.
+O número de colunas deve ser 0.
+O valor na posição (0, 0) deve ser 2.0.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+d1 e d2 não devem ser o mesmo objeto.
+d1 e d2 devem ser da mesma classe.
+d1 e d2 devem ser iguais.
+d1 e d2 não devem ser o mesmo objeto.
+d1 e d2 devem ser da mesma classe.
+d1 e d2 devem ser iguais.
+d1 e d2 não devem ser iguais.
+d1 e d2 devem ser iguais.
+d deve implementar PublicCloneable.
+O número de colunas deve ser 2.
+O número de colunas deve ser 1.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+O número de linhas deve ser 2.
+O número de linhas deve ser 1.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+O valor inicial para "Series 1", "Category 1" deve ser 0.1.
+O valor inicial para "Series 1", "Category 2" deve ser 0.2.
+O valor inicial para "Series 1", "Category 3" deve ser 0.3.
+O valor inicial para "Series 2", "Category 1" deve ser 0.3.
+O valor inicial para "Series 2", "Category 2" deve ser 0.4.
+O valor inicial para "Series 2", "Category 3" deve ser 0.5.
+O valor final para "Series 1", "Category 1" deve ser 0.5.
+O valor final para "Series 1", "Category 2" deve ser 0.6.
+O valor final para "Series 1", "Category 3" deve ser 0.7.
+O valor final para "Series 2", "Category 1" deve ser 0.7.
+O valor final para "Series 2", "Category 2" deve ser 0.8.
+O valor final para "Series 2", "Category 3" deve ser 0.9.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+O número de linhas deve ser 2.
+O número de colunas deve ser 3.
+dA e dB devem ser iguais.
+dB e dA devem ser iguais.
+empty1 e empty2 devem ser iguais.
+d1 e d2 devem ser iguais.
+d1 e d2 não devem ser o mesmo objeto.
+d1 e d2 devem ser da mesma classe.
+d1 e d2 devem ser iguais.
+d1 e d2 não devem ser iguais.
+d1 e d2 devem ser iguais.
+d1 e d2 não devem ser o mesmo objeto.
+d1 e d2 devem ser da mesma classe.
+d1 e d2 devem ser iguais.
+O valor inicial para "Series 1", "Category 2" deve ser 99.9.
+A variável 'pass' deve ser verdadeira.
+A variável 'pass' deve ser verdadeira.
+O valor final para "Series 1", "Category 2" deve ser 99.9.
+A variável 'pass' deve ser verdadeira.
+

@@ -1,0 +1,101 @@
+eram esperados contagens de registro iguais, mas expectedRegisterCount é diferente de actualRegisterCount
+eram esperados arrays iguais, mas expectedLines é diferente de actualLines
+eram esperados Opcode.IGET, mas Opcode.IGET é diferente de UnreflectionStrategy.getGetOpcode("I", isStatic)
+eram esperados Opcode.IGET_BOOLEAN, mas Opcode.IGET_BOOLEAN é diferente de UnreflectionStrategy.getGetOpcode("Z", isStatic)
+eram esperados Opcode.IGET_BYTE, mas Opcode.IGET_BYTE é diferente de UnreflectionStrategy.getGetOpcode("B", isStatic)
+eram esperados Opcode.IGET_CHAR, mas Opcode.IGET_CHAR é diferente de UnreflectionStrategy.getGetOpcode("C", isStatic)
+eram esperados Opcode.IGET_OBJECT, mas Opcode.IGET_OBJECT é diferente de UnreflectionStrategy.getGetOpcode("Ljava/lang/Object;", isStatic)
+eram esperados Opcode.IGET_SHORT, mas Opcode.IGET_SHORT é diferente de UnreflectionStrategy.getGetOpcode("S", isStatic)
+eram esperados Opcode.IGET_WIDE, mas Opcode.IGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("J", isStatic)
+eram esperados Opcode.IGET_WIDE, mas Opcode.IGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("D", isStatic)
+eram esperados Opcode.SGET, mas Opcode.SGET é diferente de UnreflectionStrategy.getGetOpcode("I", isStatic)
+eram esperados Opcode.SGET_BOOLEAN, mas Opcode.SGET_BOOLEAN é diferente de UnreflectionStrategy.getGetOpcode("Z", isStatic)
+eram esperados Opcode.SGET_BYTE, mas Opcode.SGET_BYTE é diferente de UnreflectionStrategy.getGetOpcode("B", isStatic)
+eram esperados Opcode.SGET_CHAR, mas Opcode.SGET_CHAR é diferente de UnreflectionStrategy.getGetOpcode("C", isStatic)
+eram esperados Opcode.SGET_OBJECT, mas Opcode.SGET_OBJECT é diferente de UnreflectionStrategy.getGetOpcode("Ljava/lang/Object;", isStatic)
+eram esperados Opcode.SGET_SHORT, mas Opcode.SGET_SHORT é diferente de UnreflectionStrategy.getGetOpcode("S", isStatic)
+eram esperados Opcode.SGET_WIDE, mas Opcode.SGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("J", isStatic)
+eram esperados Opcode.SGET_WIDE, mas Opcode.SGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("D", isStatic)
+eram esperados opcodes iguais, mas expected.getOpcode() é diferente de actual.getOpcode()
+changesMade deveria ser falso
+eram esperados valores iguais, mas before.toSmali() é diferente de after.toSmali()
+eram esperados Opcode.GOTO_32, mas instruction.getOpcode() é diferente
+eram esperados valores iguais, mas 4 é diferente de ((OffsetInstruction) instruction).getCodeOffset()
+eram esperados "Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;", mas methodDescriptor é diferente
+eram esperados Opcode.CONST_CLASS, mas instruction.getOpcode() é diferente
+eram esperados 0, mas instruction.getRegisterA() é diferente
+eram esperados classNames iguais, mas expectedClassName é diferente de actualClassName
+eram esperados arrays iguais, mas [0] é diferente de manipulator.getAddresses()
+eram esperados "return-void", mas manipulator.getOp(0).toString() é diferente
+eram esperados arrays iguais, mas [0, 2, 4] é diferente de addresses
+eram esperados "if-eqz r0, :addr_4", mas manipulator.getOp(0).toString() é diferente
+eram esperados "sget r0, Ljava/lang/Integer;->MAX_VALUE:I", mas manipulator.getOp(2).toString() é diferente
+eram esperados "return-void", mas manipulator.getOp(4).toString() é diferente
+eram esperados arrays iguais, mas [0, 2] é diferente de manipulator.getAddresses()
+eram esperados "check-cast r0, Ljava/lang/Integer;", mas manipulator.getOp(0).toString() é diferente
+eram esperados "return-void", mas manipulator.getOp(2).toString() é diferente
+eram esperados arrays iguais, mas [0, 2, 3, 6, 7, 9] é diferente de manipulator.getAddresses()
+eram esperados "if-eqz r1, :addr_7", mas manipulator.getOp(0).toString() é diferente
+eram esperados "const/4 r0, 0x0", mas manipulator.getOp(2).toString() é diferente
+eram esperados "invoke-static {r0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;", mas manipulator.getOp(3).toString() é diferente
+eram esperados "move-result r1", mas manipulator.getOp(6).toString() é diferente
+eram esperados "check-cast r1, Ljava/lang/Integer;", mas manipulator.getOp(7).toString() é diferente
+eram esperados "return-void", mas manipulator.getOp(9).toString() é diferente
+eram esperados "Ljava/lang/String;-><init>([B)V", mas methodDescriptor é diferente
+eram esperados Opcode.CONST_STRING, mas instruction.getOpcode() é diferente
+eram esperados 0, mas instruction.getRegisterA() é diferente
+eram esperados valores iguais, mas expectedConstant é diferente de actualConstant
+eram esperados BuilderInstruction21c.class, mas manipulator.getInstruction(ADDRESS).getClass() é diferente
+eram esperados Opcode.CONST_CLASS, mas instruction.getOpcode() é diferente
+eram esperados 0, mas instruction.getRegisterA() é diferente
+eram esperados CLASS_NAME iguais, mas CLASS_NAME é diferente de actualClassName
+eram esperados BuilderInstruction21c.class, mas manipulator.getInstruction(ADDRESS).getClass() é diferente
+eram esperados Opcode.CONST_CLASS, mas instruction.getOpcode() é diferente
+eram esperados 0, mas instruction.getRegisterA() é diferente
+eram esperados CLASS_NAME iguais, mas CLASS_NAME é diferente de actualClassName
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados Opcode.INVOKE_DIRECT, mas instruction.getOpcode() é diferente
+eram esperados 0, mas found.size() é diferente
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expected é diferente de found
+eram esperados valores iguais, mas expectedInstr.getOpcode() é diferente de actualInstr.getOpcode()
+o arquivo outFile deveria existir
+o arquivo outFile deveria existir
+eram esperados 0, mas template.getChildren().size() é diferente
+os nós filho de template não deveriam ser nulos
+eram esperados op iguais, mas template.getOp() é diferente de node.getOp()
+eram esperados 1, mas children.size() é diferente
+eram esperados 1, mas childLocations.length é diferente
+o nó filho deveria ter node como pai
+o contexto do nó filho deveria ter node.getContext().getParent()
+o local da operação do filho deveria ser igual a childLocations[0]
+o local da operação do filho deveria ser igual a node.getOp().getChildren()[0]
+eram esperados arrays iguais, mas expectedAddresses é diferente de actualAddresses
+eram esperados [0], mas parentState.getRegistersAssigned() é diferente
+eram esperados [2], mas childState.getRegistersAssigned() é diferente
+eram esperados [3], mas grandchildState.getRegistersAssigned() é diferente
+eram esperados 2, mas manipulator.getTryBlocks().size() é diferente
+eram esperados 0, mas manipulator.getTryBlocks().size() é diferente
+eram esperados 0, mas consensus.getValue() é diferente
+eram esperados 1, mas consensus.getValue() é diferente
+eram esperados 2, mas consensus.getValue() é diferente
+eram esperados 1, mas manipulator.getInstruction(3).getLocation().getLabels().size() é diferente
+eram esperados 1, mas manipulator.getInstruction(3).getLocation().getLabels().size() é diferente
+a configuração deveria ser imutável para "Ljava/lang/String;"
+a configuração não deveria ser imutável para "[Ljava/lang/String;"
+a configuração não deveria ser imutável para "Ljava/lang/StringBuilder;"
+eram esperados tipos iguais, mas cmpValue.getClass() é diferente de setItem.getValue().getValue().getClass()
+eram esperados tipos CMP_TYPE, mas CMP_TYPE é diferente de setItem.getValue().getType()
+eram esperados "cmp-long r0, r2, r4", mas op.toString() é diferente
+eram esperados tipos iguais, mas cmpValue.getClass() é diferente de setItem.getValue().getValue().getClass()
+eram esperados tipos CMP_TYPE, mas CMP_TYPE é diferente de setItem.getValue().getType()
+eram esperados valores iguais, mas cmpValue é diferente de setItem.getValue().getValue()
+eram esperados tipos CMP_TYPE, mas CMP_TYPE é diferente de setItem.getValue().getType()

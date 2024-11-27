@@ -1,0 +1,6 @@
+- assertEquals expectations
+- assertTrue condition
+- assertFalse condition
+- assertNull object
+- assertNotEquals expectations
+- assertNotNull object

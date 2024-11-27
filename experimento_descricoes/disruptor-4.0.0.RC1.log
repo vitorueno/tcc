@@ -1,0 +1,469 @@
+
+Projeto: /home/vitor-otto/opensource/disruptor-4.0.0.RC1
+
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 92 Método: assertFalse(disruptor.hasStarted(), "Should only be set to started after start is called")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 96 Método: assertTrue(disruptor.hasStarted(), "Should be set to started after start is called")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 284 Método: assertThrows(IllegalArgumentException.class, () -> disruptor.after(createDelayedEventHandler()).handleEventsWith(createDelayedEventHandler()))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 292 Método: assertThrows(IllegalArgumentException.class, () -> {
+    EvilEqualsEventHandler handler1 = new EvilEqualsEventHandler();
+    EvilEqualsEventHandler handler2 = new EvilEqualsEventHandler();
+    disruptor.handleEventsWith(handler1);
+    disruptor.after(handler2);
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 431 Método: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 444 Método: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.start();
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 545 Método: assertThrows(TimeoutException.class, () -> {
+    final DelayedEventHandler delayedEventHandler = createDelayedEventHandler();
+    disruptor.handleEventsWith(delayedEventHandler);
+    publishEvent();
+    disruptor.shutdown(1, SECONDS);
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 611 Método: assertEquals(0, barrierSequences.length, "Should not have had any barrier sequences")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 631 Método: assertSame(1, barrierSequences.length, "Should have had a barrier sequence")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 679 Método: assertTrue(actualPublicationCount >= expectedPublicationCount, msg)
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 738 Método: assertTrue(released, "Batch handler did not receive entries: " + countDownLatch.getCount())
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 104 Método: assertThrows(IllegalArgumentException.class, () -> consumerRepository.getEventProcessorFor(new SleepingEventHandler()))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 136 Método: assertTrue(seen1, "Included eventProcessor 1")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 137 Método: assertTrue(seen2, "Included eventProcessor 2")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/stubs/StubThreadFactory.java linha: 87 Método: assertFalse(thread.isAlive(), "Failed to stop thread: " + thread)
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 139 Método: assertThrows(InsufficientCapacityException.class, () -> {
+    sequencer.addGatingSequences(gatingSequence);
+    for (int i = 0; i < BUFFER_SIZE; i++) {
+        sequencer.next();
+    }
+    sequencer.tryNext();
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 247 Método: assertThrows(InsufficientCapacityException.class, sequencer::tryNext)
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 265 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.next(-1))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 272 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.next(0))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 279 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(-1))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 286 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(0))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 45 Método: assertThrows(NullPointerException.class, () -> {
+    final BatchEventProcessor<StubEvent> batchEventProcessor = new BatchEventProcessor<>(ringBuffer, sequenceBarrier, new ExceptionEventHandler());
+    batchEventProcessor.setExceptionHandler(null);
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/LiteTimeoutBlockingWaitStrategyTest.java linha: 24 Método: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 144 Método: assertThrows(InsufficientCapacityException.class, ringBuffer::tryNext)
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 266 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    final EventTranslator<Object[]> eventTranslator = new NoArgEventTranslator();
+    final EventTranslator<Object[]>[] translators = new EventTranslator[] { eventTranslator, eventTranslator, eventTranslator, eventTranslator, eventTranslator };
+    try {
+        ringBuffer.tryPublishEvents(translators);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 332 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 390 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 455 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" }, new String[] { "Baz", "Baz", "Baz", "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 532 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorVararg<Object[]> translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 597 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 617 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 637 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 657 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 677 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 697 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 717 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 736 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 755 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 774 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 793 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 812 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 831 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 849 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 868 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        assertFalse(ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }));
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 887 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 906 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 925 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 944 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 963 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 982 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1000 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1019 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1038 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1057 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1078 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1099 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1120 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1141 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1162 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1183 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1204 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1225 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1249 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1271 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1295 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1319 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1343 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1367 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1391 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 108 Método: assertThrows(AlertException.class, () -> sequenceBarrier.waitFor(expectedNumberMessages - 1))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/TimeoutBlockingWaitStrategyTest.java linha: 25 Método: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/FatalExceptionHandlerTest.java linha: 34 Método: assertThrows(RuntimeException.class, () -> exceptionHandler.handleEventException(causeException, 0L, event))
+Total asserts: 290
+Asserts sem descrição: 218
+Asserts com descrição: 72
+Assertion Roulette: 148

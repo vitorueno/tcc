@@ -1,0 +1,26 @@
+```java
+assertEquals(10, calculator.multiply(2, 5));
+assertEquals("Hello, World!", greeting.getMessage());
+assertTrue(user.isRegistered());
+assertFalse(file.isEmpty());
+assertNull(exception);
+assertNotNull(user);
+assertSame(originalObject, copiedObject);
+assertNotSame(objectA, objectB);
+assertArrayEquals(expectedArray, resultArray);
+```
+
+Saídas:
+
+```
+Esperava-se que o resultado da multiplicação de 2 por 5 fosse 10, mas o valor obtido foi: calculator.multiply(2, 5)
+Esperava-se a mensagem "Hello, World!", mas a mensagem obtida foi: greeting.getMessage()
+Esperava-se que o usuário estivesse registrado, mas user.isRegistered() retornou falso.
+Esperava-se que o arquivo não estivesse vazio, mas file.isEmpty() retornou verdadeiro.
+Esperava-se que a exceção fosse nula, mas uma exceção foi encontrada: exception
+Esperava-se um objeto não nulo, mas user era nulo.
+Esperava-se que originalObject e copiedObject referenciavam o mesmo objeto, mas eles referenciam objetos diferentes.
+Esperava-se que objectA e objectB referenciavam objetos diferentes, mas eles referenciam o mesmo objeto.
+Esperava-se que os arrays fossem iguais, mas os arrays expectedArray e resultArray são diferentes.
+
+```

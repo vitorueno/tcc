@@ -1,0 +1,101 @@
+Era esperado que 'n' fosse diferente de belly.getCukes()
+Era esperado que 'factory::stop' não lançasse exceção
+Era esperado que 'factory::start' não lançasse exceção
+Era esperado que 'factory::stop' não lançasse exceção
+Era esperado que todos os asserts fossem verdadeiros
+Era esperado que 'table' tivesse as mesmas linhas em ordem
+Era esperado que 'table' não tivesse as mesmas linhas em ordem
+Era esperado que 'table' não tivesse as mesmas linhas em ordem
+Era esperado que 'table' tivesse as mesmas linhas
+Era esperado que 'table' tivesse as mesmas linhas
+Era esperado que 'table' não tivesse as mesmas linhas
+Era esperado que 'pathTo' fosse Optional com os valores [outline, examplesA, example1]
+Era esperado que 'pathTo' fosse Optional com os valores [outline, examplesA, example2]
+Era esperado que 'pathTo' fosse Optional com os valores [outline, examplesB, example3]
+Era esperado que 'pathTo' fosse Optional com os valores [outline, examplesB, example4]
+Era esperado que 'pathTo' fosse Optional com os valores [outline, examplesA]
+Era esperado que 'pathTo' fosse Optional com os valores [emptyOutline, emptyExamplesA]
+Era esperado que 'pathTo' fosse Optional com os valores [outline, examplesB]
+Era esperado que 'pathTo' fosse Optional com os valores [emptyOutline, emptyExamplesB]
+Era esperado que 'pathTo' fosse Optional com os valores [outline]
+Era esperado que 'pathTo' fosse Optional com os valores [emptyOutline]
+Era esperado que 'pathTo' fosse Optional vazio
+Era esperado que 'pathTo' fosse Optional vazio
+Era esperado que 'pathTo' fosse Optional com o valor [example1]
+Era esperado que 'pathTo' fosse Optional vazio
+Era esperado que 'events.get(0).getUndefinedParameterType()' não fosse nulo
+Era esperado que 'parameterInfos.size()' fosse igual a 'args.length'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/path/to'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart '/path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart '/path/to'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart terminando com 'path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart terminando com 'path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart terminando com 'path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart terminando com 'path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart '/C:/path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart terminando com 'path/to the/file.feature'
+Era esperado que 'uri' tivesse scheme 'file' e schemeSpecificPart '/C:/path/to/file.feature'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart 'com/example/app'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/com/example/app'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/com/example/app'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/com/example/app'
+Era esperado que 'uri' tivesse scheme 'classpath' e schemeSpecificPart '/com/example/app'
+Era esperado que 'featureWithLines.uri()' fosse URI 'classpath:example.feature' e 'lines()' fosse uma coleção vazia de Integers
+Era esperado que 'featureWithLines.uri()' fosse URI 'classpath:example.feature' e 'lines()' contivesse 999
+Era esperado que 'featureWithLines.uri()' fosse URI 'classpath:example.feature' e 'lines()' contivesse 999 e 2000
+Era esperado que 'optionsBuilder' não fosse nulo
+Era esperado que 'options' não fosse nulo
+Era esperado que 'options.getFeaturePaths()' contivesse 'somewhere_else.feature' e 'getLineFilters()' tivesse a entrada 'somewhere_else.feature' com o valor 3
+Era esperado que 'logRecordListener.getLogRecords().get(0).getMessage()' fosse "Use '--no-summary' em vez de '-p/--plugin null_summary'. '-p/--plugin null_summary' será removido em uma versão futura." e 'plugins.getPlugins()' não contivesse 'io.cucumber.core.plugin.DefaultSummaryPrinter'
+Era esperado que 'plugins.getPlugins()' não contivesse 'io.cucumber.core.plugin.DefaultSummaryPrinter'
+Era esperado que 'actual' contivesse '@should_not_be_clobbered' e 'options.getLineFilters()' tivesse a entrada 'this/should/be/rerun.feature' com o valor 12
+Era esperado que todos os asserts fossem verdadeiros, mas pelo menos um falhou
+Era esperado que 'options.getFeaturePaths()' contivesse 'com/example.feature' e 'tagExpressions' contivesse '@example'
+Era esperado que 'options.getFeaturePaths()' contivesse 'path/to.feature' e 'options.getTagExpressions()' não contivesse '@example'
+Era esperado que 'runtimeOptions.getFeaturePaths()' tivesse tamanho 0 e 'runtimeOptions.getLineFilters()' fosse um mapa vazio
+Era esperado que 'runtimeOptions.getFeaturePaths()' tivesse tamanho 0 e 'runtimeOptions.getLineFilters()' fosse um mapa vazio
+Era esperado que 'runtimeOptions.getFeaturePaths()' tivesse tamanho 0 e 'runtimeOptions.getLineFilters()' fosse um mapa vazio
+Era esperado que 'runtimeOptions.getFeaturePaths()' tivesse tamanho 0 e 'runtimeOptions.getLineFilters()' fosse um mapa vazio
+Era esperado que 'runtimeOptions.getFeaturePaths()' contivesse 'file:/home/users/mp/My%20Documents/tests/bar.feature' e 'runtimeOptions.getLineFilters()' tivesse a entrada 'file:/home/users/mp/My%20Documents/tests/bar.feature' com o valor 2
+Era esperado que 'options.getFeaturePaths()' contivesse 'path/bar.feature' e 'options.getLineFilters()' tivesse a entrada 'path/bar.feature' com o valor 2
+Era esperado que 'prettyPluginA' fosse igual a 'prettyPluginB'
+Era esperado que 'prettyPluginA.hashCode()' fosse igual a 'prettyPluginB.hashCode()'
+Era esperado que 'htmlPluginA' fosse igual a 'htmlPluginB'
+Era esperado que 'htmlPluginA.hashCode()' fosse igual a 'htmlPluginB.hashCode()'
+Era esperado que 'prettyPluginA' não fosse igual a 'htmlPluginA'
+Era esperado que 'prettyPluginA.hashCode()' não fosse igual a 'htmlPluginA.hashCode()'
+Era esperado que 'plugins.getPlugins()' estivesse vazio
+Era esperado que 'getRegexpPattern(iterator.next())' fosse igual a 'name1' e 'getRegexpPattern(iterator.next())' fosse igual a 'name2'
+Era esperado que 'actual.getMessage()' fosse "Invalid tag expression at 'io.cucumber.core.options.CucumberOptionsAnnotationParserTest$ClassWithInvalidTagExpression'" e 'actual.getCause()' fosse uma TagExpressionException
+Era esperado que 'actual.getMessage()' fosse "Invalid tag expression at 'io.cucumber.core.options.CucumberOptionsAnnotationParserTest$ClassWithInvalidTagExpression'" e 'actual.getCause()' fosse uma TagExpressionException
+Era esperado que 'assertPluginExists(pluginList, HtmlFormatter.class.getName())' fosse verdadeiro e 'assertPluginExists(pluginList, PrettyFormatter.class.getName())' fosse verdadeiro
+Era esperado que 'runtimeOptions.isMonochrome()' fosse verdadeiro
+Era esperado que todos os asserts fossem verdadeiros, mas pelo menos um falhou
+Era esperado que 'snakeCase.generate(sentence)' fosse igual a 'expectedSnakeCase' e 'camelCase.generate(sentence)' fosse igual a 'expectedCamelCase'
+Era esperado que 'JarUriFileSystemService.supports(URI.create("jar:file:/example.jar!com/example/app"))' fosse verdadeiro
+Era esperado que 'JarUriFileSystemService.supports(URI.create("file:/example.jar"))' fosse verdadeiro
+Era esperado que 'fileSystem1.isOpen()' fosse verdadeiro
+Era esperado que 'fileSystem2.isOpen()' fosse verdadeiro
+Era esperado que 'fileSystem1.isOpen()' fosse falso
+Era esperado que 'fileSystem2.isOpen()' fosse falso
+Era esperado que 'packageName' fosse igual a 'com.example'
+Era esperado que 'packageName' fosse igual a 'com.example'
+Era esperado que 'packageName' fosse igual a 'com.example.app'
+Era esperado que 'packageName' fosse igual a 'com.example.app'
+Era esperado que 'packageName' fosse igual a 'com.example.app'
+Era esperado que 'fqn' fosse igual a 'com.example.app.App'
+Era esperado que 'fqn' fosse igual a 'com.example.app.App'
+Era esperado que 'fqn' fosse igual a 'com.example.app.App'
+Era esperado que 'fqn' fosse igual a 'classpath:com/example/app/app.feature'
+Era esperado que 'fqn' fosse igual a 'classpath:com/example/app/app.feature'
+Era esperado que 'fqn' fosse igual a 'classpath:com/example/app/app.feature'
+Era esperado que 'runners[0]' fosse diferente de 'runners[1]' e 'runners[1]' fosse diferente de 'runners[0]'
+Era esperado que 'eventBus' fosse diferente de 'runnerBus' e 'runnerBus' fosse diferente de 'eventBus'
+Era esperado que 'predicate.test(pickle)' fosse verdadeiro

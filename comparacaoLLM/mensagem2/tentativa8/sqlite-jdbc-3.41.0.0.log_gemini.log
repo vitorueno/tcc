@@ -1,0 +1,31 @@
+```java
+assertEquals(5, calculator.add(2, 3));
+assertEquals(7, calculator.add(4, 2));
+assertEquals(10, calculator.add(5, 5));
+assertTrue(calculator.isPositive(5));
+assertFalse(calculator.isPositive(-5));
+assertNull(calculator.getValue(0));
+assertNotNull(calculator.getValue(5));
+assertSame(obj1, obj2);
+assertNotSame(obj1, obj3);
+assertThat(value, greaterThan(10));
+assertThat(value, lessThan(100));
+
+```
+
+Saída:
+
+```
+eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+era esperado true, mas calculator.isPositive(5) retornou false
+era esperado false, mas calculator.isPositive(-5) retornou true
+era esperado null, mas calculator.getValue(0) retornou um valor diferente de null
+era esperado um valor diferente de null, mas calculator.getValue(5) retornou null
+era esperado que obj1 e obj2 referenciassem o mesmo objeto, mas referenciam objetos diferentes.
+era esperado que obj1 e obj3 referenciassem objetos diferentes, mas referenciam o mesmo objeto.
+o valor é esperado ser maior que 10, mas é:  value
+o valor é esperado ser menor que 100, mas é: value
+
+```

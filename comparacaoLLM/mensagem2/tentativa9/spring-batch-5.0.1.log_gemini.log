@@ -1,0 +1,100 @@
+O valor de trade.getIsin() era esperado como igual a rs.getString(1), mas não são iguais.
+O valor de trade.getQuantity() era esperado como igual a rs.getLong(2), mas não são iguais.
+O valor de trade.getPrice() era esperado como igual a rs.getBigDecimal(3), mas não são iguais.
+O valor de trade.getCustomer() era esperado como igual a rs.getString(4), mas não são iguais.
+O tamanho de trades era esperado como igual a activeRow, mas não são iguais.
+O tamanho de customers era esperado como igual a activeRow, mas não são iguais.
+O valor de customer.getName() era esperado como igual a rs.getString(1), mas não são iguais.
+O valor de execution.getStatus() era esperado como BatchStatus.COMPLETED, mas não são iguais.
+A diferença entre after e before era esperada como igual a execution.getStepExecutions().iterator().next().getReadCount(), mas não são iguais.
+O valor de jobExecution.getStatus() era esperado como BatchStatus.COMPLETED, mas não são iguais.
+O valor de jobExecution.getExecutionContext().getString("done") era esperado como "yes", mas não são iguais.
+O valor de value era esperado como "foo", mas não são iguais.
+O valor de strValue era esperado como "foo2", mas não são iguais.
+O valor de integerValue.intValue() era esperado como 3, mas não são iguais.
+A soma de before e 5 era esperada como igual a after, mas não são iguais.
+O valor de trade.getIsin() era esperado como igual a rs.getString(1), mas não são iguais.
+O valor de trade.getQuantity() era esperado como igual a rs.getLong(2), mas não são iguais.
+O valor de trade.getPrice() era esperado como igual a rs.getBigDecimal(3), mas não são iguais.
+O valor de trade.getCustomer() era esperado como igual a rs.getString(4), mas não são iguais.
+O valor de output era esperado como igual a EXPECTED_OUTPUT_FILE, mas não são iguais.
+A soma de itemGenerator.getLimit() e 2 era esperada como igual a itemProcessor.getCounter(), mas não são iguais.
+A soma de itemGenerator.getLimit() e 2 era esperada como igual a itemProcessor.getCounter(), mas não são iguais.
+O valor de customer.getName() era esperado como igual a rs.getString(1), mas não são iguais.
+O valor de step1Execution.get("READ_COUNT").toString() era esperado como "4", mas não são iguais.
+O valor de step1Execution.get("FILTER_COUNT").toString() era esperado como "1", mas não são iguais.
+O valor de step1Execution.get("WRITE_COUNT").toString() era esperado como "3", mas não são iguais.
+O código de retorno de jobExecution.getExitStatus().getExitCode() era esperado como igual ao código de retorno de ExitStatus.COMPLETED.getExitCode(), mas não são iguais.
+O tamanho de jobExecution.getStepExecutions() era esperado como 4, mas não são iguais.
+O valor de jobExecution.getStatus() era esperado como BatchStatus.COMPLETED, mas não são iguais.
+O tamanho de inputs era esperado como igual ao tamanho de outputs, mas não são iguais.
+Era esperado que itemCount fosse maior que 0, mas não é.
+O valor de jobExecution.getStatus() era esperado como BatchStatus.COMPLETED, mas não são iguais.
+O valor de jobExecution.getStatus() era esperado como BatchStatus.COMPLETED, mas não são iguais.
+O valor de count era esperado como igual a expected, mas não são iguais.
+O valor de jobExecution.getStatus() era esperado como BatchStatus.COMPLETED, mas não são iguais.
+O valor de jobExecution.getStepExecutions().iterator().next().getWriteCount() era esperado como igual a first, mas não são iguais.
+O valor de jobExecution.getStatus() era esperado como BatchStatus.COMPLETED, mas não são iguais.
+O valor de jobExecution.getStepExecutions().iterator().next().getWriteCount() era esperado como igual a second, mas não são iguais.
+Era esperado que personService.getReturnedCount() fosse maior que 0, mas não é.
+O valor de personService.getReturnedCount() era esperado como igual a personService.getReceivedCount(), mas não são iguais.
+O valor de rs.getString("PLAYER_ID") era esperado como "AKFJDL00", mas não são iguais.
+O valor de rs.getString("LAST_NAME") era esperado como "Doe", mas não são iguais.
+O valor de rs.getString("FIRST_NAME") era esperado como "John", mas não são iguais.
+O valor de rs.getString("POS") era esperado como "QB", mas não são iguais.
+O valor de rs.getInt("YEAR_OF_BIRTH") era esperado como 1975, mas não são iguais.
+O valor de rs.getInt("YEAR_DRAFTED") era esperado como 1998, mas não são iguais.
+O valor de game era esperado como igual a tempGame, mas não são iguais.
+O valor de testSummary era esperado como igual a summary, mas não são iguais.
+O valor de fs era esperado como igual a customerFieldSet, mas não são iguais.
+O valor de customerTokenizer.getTokenizedLine() era esperado como igual a customerAddLine, mas não são iguais.
+O valor de fs era esperado como igual a customerFieldSet, mas não são iguais.
+O valor de customerTokenizer.getTokenizedLine() era esperado como igual a customerAddLine, mas não são iguais.
+O valor de fs era esperado como igual a customerFieldSet, mas não são iguais.
+O valor de customerTokenizer.getTokenizedLine() era esperado como igual a customerAddLine, mas não são iguais.
+O valor de processor.process(customerUpdate) era esperado como igual a customerUpdate, mas não são iguais.
+O valor de processor.process(customerUpdate) era esperado como igual a customerUpdate, mas não são iguais.
+O valor de rs.getLong("credit") era esperado como 95, mas não são iguais.
+O valor de rs.getString("CUSTOMER") era esperado como "testCustomer", mas não são iguais.
+O valor de rs.getBigDecimal("PRICE") era esperado como new BigDecimal(Double.toString(99.69)), mas não são iguais.
+O valor de rs.getLong("QUANTITY") era esperado como 5, mas não são iguais.
+O valor de tested.process(customerCredit).getCredit() era esperado como igual a oldCredit.add(CustomerCreditIncreaseProcessor.FIXED_AMOUNT), mas não são iguais.
+O valor de customerDebit.getName() era esperado como "testCustomerName", mas não são iguais.
+O valor de customerDebit.getDebit() era esperado como new BigDecimal("123.0"), mas não são iguais.
+Era esperado que reader.read() retornasse null, mas não retornou.
+O valor de counter era esperado como igual a limit, mas não são iguais.
+O valor de reader.getCounter() era esperado como igual a counter, mas não são iguais.
+O valor de trade1Clone era esperado como igual a trade1, mas não são iguais.
+O valor de trade1 era esperado como diferente de trade2, mas não são diferentes.
+O tamanho de lines era esperado como 3, mas não são iguais.
+Era esperado que provider.read() retornasse null, mas não retornou.
+As linhas de inputFile e outputFile eram esperadas como correspondentes, mas não são.
+As linhas de inputFile e outputFile eram esperadas como correspondentes, mas não são.
+Era esperado que AggregateItem.getFooter().isFooter() retornasse true, mas retornou false.
+Era esperado que AggregateItem.getHeader().isHeader() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "BEGIN" })).isHeader() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "FOO" })).isHeader() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "END" })).isFooter() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "FOO" })).isFooter() retornasse true, mas retornou false.
+O valor de mapper.mapFieldSet(new DefaultFieldSet(new String[] { "FOO" })).getItem() era esperado como "foo", mas não são iguais.
+Era esperado que result não fosse null, mas é null.
+O valor de order era esperado como igual a o, mas não são iguais.
+O valor de customer era esperado como igual a o.getCustomer(), mas não são iguais.
+O valor de billing era esperado como igual a o.getBillingAddress(), mas não são iguais.
+O valor de shipping era esperado como igual a o.getShippingAddress(), mas não são iguais.
+O valor de billingInfo era esperado como igual a o.getBilling(), mas não são iguais.
+O valor de shippingInfo era esperado como igual a o.getShipping(), mas não são iguais.
+O tamanho de o.getLineItems() era esperado como 3, mas não são iguais.
+Era esperado que provider.read() retornasse null, mas não retornou.
+Era esperado que orderValidator.supports(Order.class) retornasse true, mas retornou false.
+O tamanho de errors.getAllErrors() era esperado como 1, mas não são iguais.
+O código de errors.getAllErrors().get(0).getCode() era esperado como "Incorrect type", mas não são iguais.
+O tamanho de errors.getAllErrors() era esperado como 0, mas não são iguais.
+O tamanho de errors.getAllErrors() era esperado como 3, mas não são iguais.
+O código de errors.getFieldError("orderId").getCode() era esperado como "error.order.id", mas não são iguais.
+O código de errors.getFieldError("orderDate").getCode() era esperado como "error.order.date.future", mas não são iguais.
+O código de errors.getFieldError("totalLines").getCode() era esperado como "error.order.lines.badcount", mas não são iguais.
+O tamanho de errors.getAllErrors() era esperado como 2, mas não são iguais.
+O código de errors.getFieldError("orderId").getCode() era esperado como "error.order.id", mas não são iguais.
+O código de errors.getFieldError("totalLines").getCode() era esperado como "error.order.lines.badcount", mas não são iguais.
+O tamanho de errors.getAllErrors() era esperado como 0, mas não são iguais.

@@ -1,0 +1,28 @@
+eram esperados valores não nulos, mas factory.configureSslContextFactory(new SslContextFactory.Server()) retornou nulo
+eram esperadas ConstraintViolationException, mas foi lançado throwable.getClass()
+eram esperados mapas iguais, mas Collections.singletonMap("color", "orange") é diferente de response
+eram esperados mapas iguais, mas Collections.singletonMap("message", "stuff!") é diferente de response
+esperava-se que findEntityClassesFromDirectory não estivesse vazio, mas estava
+eram esperados valores iguais, mas 4 é diferente de findEntityClassesFromDirectory.size()
+esperava-se que findEntityClassesFromDirectory não estivesse vazio, mas estava
+eram esperados valores iguais, mas 8 é diferente de findEntityClassesFromDirectory.size()
+o tempo limite de 5 segundos foi excedido enquanto verificava event.getCreatedAt()
+o tempo limite de 5 segundos foi excedido enquanto verificava task.getDuration()
+esperava-se que requestContext.getSecurityContext().isSecure() fosse verdadeiro, mas era falso
+eram esperados valores iguais, mas http.getAdminContextPath() é diferente de environment.getAdminContext().getContextPath()
+eram esperados valores iguais, mas http.getApplicationContextPath() é diferente de environment.getApplicationContext().getContextPath()
+eram esperados valores iguais, mas http.getAdminContextPath() é diferente de environment.getAdminContext().getContextPath()
+eram esperados valores iguais, mas http.getApplicationContextPath() é diferente de environment.getApplicationContext().getContextPath()
+eram esperados valores iguais, mas OK_STATUS_CODE é diferente de getResponseStatusForRequestMethod("GET", false)
+eram esperados valores iguais, mas OK_STATUS_CODE é diferente de getResponseStatusForRequestMethod("POST", true)
+eram esperados valores iguais, mas DISALLOWED_STATUS_CODE é diferente de getResponseStatusForRequestMethod("PUT", true)
+eram esperados valores iguais, mas DISALLOWED_STATUS_CODE é diferente de getResponseStatusForRequestMethod("DELETE", false)
+eram esperados valores iguais, mas DISALLOWED_STATUS_CODE é diferente de getResponseStatusForRequestMethod("TRACE", false)
+eram esperados objetos idênticos, mas inv e test.getInvocable() são diferentes
+eram esperados valores iguais, mas Response.Status.BAD_REQUEST.getStatusCode() é diferente de reponse.getStatus()
+esperava-se que Optionals.fromGuavaOptional(com.google.common.base.Optional.absent()) não estivesse presente, mas estava
+esperava-se que Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")) estivesse presente, mas não estava
+eram esperados valores iguais, mas java.util.Optional.of("Foo") é diferente de Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo"))
+esperava-se que Optionals.toGuavaOptional(java.util.Optional.empty()) não estivesse presente, mas estava
+esperava-se que Optionals.toGuavaOptional(java.util.Optional.of("Foo")) estivesse presente, mas não estava
+eram esperados valores iguais, mas com.google.common.base.Optional.of("Foo") é diferente de Optionals.toGuavaOptional(java.util.Optional.of("Foo"))

@@ -1,0 +1,61 @@
+eram esperados valores nulos, mas p1.getUnderlyingDataset() não é nulo
+eram esperados valores iguais, mas 0 é diferente de p1.getItemCount()
+era esperado que p1.getKeys() estivesse vazio, mas não está
+eram esperados valores nulos, mas "R1" não é nulo
+eram esperados valores iguais, mas 1.1 é diferente de d1.getValue("C1")
+eram esperados valores iguais, mas 2.2 é diferente de d1.getValue("C2")
+eram esperados valores iguais, mas "C1" é diferente de d1.getKey(0)
+eram esperados valores iguais, mas "C2" é diferente de d1.getKey(1)
+eram esperados valores iguais, mas 0 é diferente de d1.getIndex("C1")
+eram esperados valores iguais, mas 1 é diferente de d1.getIndex("C2")
+eram esperados valores iguais, mas -1 é diferente de d1.getIndex("XX")
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas d1 não é igual a d2
+eram esperados valores iguais, mas d1 é diferente de d2
+eram esperados valores iguais, mas d1.getUnderlyingDataset() é diferente de d2.getUnderlyingDataset()
+eram esperados valores iguais, mas d1.getExtractType() é diferente de d2.getExtractType()
+eram esperados valores iguais, mas d1.getExtractIndex() é diferente de d2.getExtractIndex()
+eram esperados valores iguais, mas 1.0 é diferente de d.getValue("R1", "C1")
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas pass é falso
+eram esperados valores iguais, mas 3.0 é diferente de d.getValue("R1", "C1")
+eram esperados valores iguais, mas 2.0 é diferente de d.getValue("R2", "C1")
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas o número de linhas de d não é 0
+era esperado verdadeiro, mas o número de linhas de d não é 1
+era esperado verdadeiro, mas o número de linhas de d não é 2
+era esperado verdadeiro, mas o número de linhas de d não é 2
+era esperado verdadeiro, mas o número de linhas de d não é 2
+era esperado verdadeiro, mas o número de colunas de d não é 0
+era esperado verdadeiro, mas o número de colunas de d não é 1
+era esperado verdadeiro, mas o número de colunas de d não é 2
+era esperado verdadeiro, mas o número de colunas de d não é 2
+era esperado verdadeiro, mas o número de colunas de d não é 2
+era esperado verdadeiro, mas d1 não é igual a d2
+era esperado verdadeiro, mas d2 não é igual a d1
+era esperado falso, mas d1 é igual a d2
+era esperado verdadeiro, mas d1 não é igual a d2
+era esperado falso, mas d1 é igual a d2
+era esperado verdadeiro, mas d1 é igual a d2
+eram esperados valores iguais, mas d1 é diferente de d2
+eram esperados valores nulos, mas d1.getValue("R1", "C1") não é nulo
+eram esperados valores iguais, mas 1.0 é diferente de d1.getValue("R2", "C1")
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas o número de linhas de d não é 0
+era esperado verdadeiro, mas o número de colunas de d não é 0
+eram esperados valores iguais, mas 2.0 é diferente de d.getValue(0, 0)
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas pass é falso
+era esperado falso, mas d1 é igual a d2
+era esperado verdadeiro, mas a classe de d1 não é igual a classe de d2
+era esperado verdadeiro, mas d1 não é igual a d2
+era esperado falso, mas d1 é igual a d2
+era esperado verdadeiro, mas a classe de d1 não é igual a classe de d2
+era esperado verdadeiro, mas d1 não é igual a d2
+eram esperados valores iguais, mas 99.9 é diferente de d1.getStartValue("Series 1", "Category 2")
+era esperado verdadeiro, mas pass é falso
+era esperado verdadeiro, mas pass é falso
+eram esperados valores iguais, mas 99.9 é diferente de d1.getEndValue("Series 1", "Category 2")
+era esperado verdadeiro, mas pass é falso

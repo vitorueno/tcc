@@ -1,0 +1,19 @@
+* **`assertEquals(expected, actual)`:** "Valores esperados e reais são diferentes. Esperado: {expected}, Real: {actual}"
+
+* **`assertNotEquals(unexpected, actual)`:** "Valores esperados e reais são iguais. Não esperado: {unexpected}, Real: {actual}"
+
+* **`assertTrue(condition)`:** "Condição avaliada como falsa."
+
+* **`assertFalse(condition)`:** "Condição avaliada como verdadeira."
+
+* **`assertNull(object)`:** "Objeto não é nulo. Objeto: {object}"
+
+* **`assertNotNull(object)`:** "Objeto é nulo."
+
+* **`assertSame(expected, actual)`:** "Objetos não são o mesmo objeto na memória. Esperado: {expected}, Real: {actual}"
+
+* **`assertNotSame(unexpected, actual)`:** "Objetos são o mesmo objeto na memória. Não esperado: {unexpected}, Real: {actual}"
+
+* **`assertThat(actual, is(equalTo(expected)))`:** "Valor real não corresponde ao valor esperado. Esperado: {expected}, Real: {actual}"
+
+* **`fail()`:** "Teste falhou."

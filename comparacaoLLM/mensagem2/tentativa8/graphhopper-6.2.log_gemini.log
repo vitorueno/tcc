@@ -1,0 +1,100 @@
+Esperava-se que impossibleAlternative.isImpossible() retornasse true, mas retornou false.
+Esperava-se que ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornasse true, mas retornou false.
+Esperava-se que o tamanho de response.getAll() fosse 2, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que impossibleAlternative.isImpossible() retornasse true, mas retornou false.
+Esperava-se que o tamanho de response.getAll() fosse 3, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que impossibleAlternative.isImpossible() retornasse true, mas retornou false.
+Esperava-se que ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(1).arrivalCancelled retornasse true, mas retornou false.
+Esperava-se que o tamanho de response.getAll() fosse 2, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que impossibleAlternative.isImpossible() retornasse true, mas retornou false.
+Esperava-se que ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(2).departureCancelled retornasse true, mas retornou false.
+Esperava-se que o tamanho de response.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que ptLeg.trip_id fosse igual a "EXTRA0", mas foi encontrado "[valor encontrado]".
+Esperava-se que o tamanho de response.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de responseWithRealtimeUpdate.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de response.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de response.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que route.getAll().get(route.getAll().size() - 1).isImpossible() retornasse true, mas retornou false.
+Esperava-se que o tamanho de response.getAll() fosse 2, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que impossibleAlternative.isImpossible() retornasse true, mas retornou false.
+Esperava-se que o tamanho de response.getAll() fosse 2, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que impossibleAlternative.isImpossible() retornasse true, mas retornou false.
+Esperava-se que o tamanho de response.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que ((Trip.PtLeg) possibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornasse false, mas retornou true.
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que route.getAll().isEmpty() retornasse false, mas retornou true.
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que firstLeg.stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) fosse igual a "JUSTICE_COURT,MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que secondLeg.stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) fosse igual a "EMSI,DADAN", mas foi encontrado "[valor encontrado]".
+Esperava-se que transferLeg.getDepartureTime().toInstant() fosse igual a LocalDateTime.parse("2007-01-01T10:00:00").atZone(zoneId).toInstant(), mas foi encontrado "[valor encontrado]".
+Esperava-se que transferLeg.getArrivalTime().toInstant() fosse igual a LocalDateTime.parse("2007-01-01T10:08:06.670").atZone(zoneId).toInstant(), mas foi encontrado "[valor encontrado]".
+Esperava-se que transitSolution.getLegs().get(1).geometry fosse igual a readWktLineString("LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)"), mas foi encontrado "[valor encontrado]".
+Esperava-se que transitSolution.getTime() fosse igual a 4500000L, mas foi encontrado "[valor encontrado]".
+Esperava-se que transitSolution.getRouteWeight() fosse igual a 4500000.0, mas foi encontrado "[valor encontrado]".
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de transitSolution.getLegs() fosse 2, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que ptLeg1.route_id fosse igual a "COURT2MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que ptLeg1.trip_id fosse igual a "MUSEUM1", mas foi encontrado "[valor encontrado]".
+Esperava-se que ptLeg1.stops.get(0).stop_id fosse igual a "JUSTICE_COURT", mas foi encontrado "[valor encontrado]".
+Esperava-se que ptLeg1.stops.get(1).stop_id fosse igual a "MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que ptLeg2.route_id fosse igual a "MUSEUM2AIRPORT", mas foi encontrado "[valor encontrado]".
+Esperava-se que ptLeg2.trip_id fosse igual a "MUSEUMAIRPORT1", mas foi encontrado "[valor encontrado]".
+Esperava-se que ptLeg2.stops.get(0).stop_id fosse igual a "NEXT_TO_MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que ptLeg2.stops.get(1).stop_id fosse igual a "AIRPORT", mas foi encontrado "[valor encontrado]".
+Esperava-se que ((Trip.PtLeg) ptLegs.get(0)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) fosse igual a "NEXT_TO_MUSEUM,AIRPORT", mas foi encontrado "[valor encontrado]".
+Esperava-se que ((Trip.PtLeg) ptLegs.get(1)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) fosse igual a "BEATTY_AIRPORT,BULLFROG", mas foi encontrado "[valor encontrado]".
+Esperava-se que LocalDateTime.ofInstant(arrivalTime, zoneId).toLocalTime().toString() fosse igual a "14:10", mas foi encontrado "[valor encontrado]".
+Esperava-se que Duration.between(ghRequest.getEarliestDepartureTime(), arrivalTime).toMillis() fosse igual a 15_000_000, mas foi encontrado "[valor encontrado]".
+Esperava-se que transitSolution.getRouteWeight() fosse igual a 1.5E7, mas foi encontrado "[valor encontrado]".
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que transitSolution.getTime() fosse igual a 4500000L, mas foi encontrado "[valor encontrado]".
+Esperava-se que transitSolution.getRouteWeight() fosse igual a 4500000.0, mas foi encontrado "[valor encontrado]".
+Esperava-se que ((Trip.PtLeg) transitSolution.getLegs().get(0)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) fosse igual a "JUSTICE_COURT,MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que LocalDateTime.ofInstant(walkDepartureTime, zoneId).toLocalTime().toString() fosse igual a "10:00", mas foi encontrado "[valor encontrado]".
+Esperava-se que transitSolution.getLegs().get(1).geometry fosse igual a readWktLineString("LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)"), mas foi encontrado "[valor encontrado]".
+Esperava-se que LocalDateTime.ofInstant(walkArrivalTime, zoneId).toLocalTime().toString() fosse igual a "10:08:06.670", mas foi encontrado "[valor encontrado]".
+Esperava-se que ((Trip.PtLeg) transitSolution.getLegs().get(2)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) fosse igual a "EMSI,DADAN", mas foi encontrado "[valor encontrado]".
+Esperava-se que o tamanho de walkRoute.getLegs() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que walkRoute.getTime() fosse igual a 486670, mas foi encontrado "[valor encontrado]".
+Esperava-se que walkRoute.getLegs().get(0).geometry fosse igual a readWktLineString("LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)"), mas foi encontrado "[valor encontrado]".
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que amount.getAmount().doubleValue() > onlyFare.fare_attribute.price retornasse true, mas retornou false.
+Esperava-se que cheapestFareWhereEveryLegGoesThroughAllZones >= cheapestFare retornasse true, mas retornou false.
+Esperava-se que o tamanho de transfersToStop fosse 2, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que transfer.from_stop_id fosse igual a "MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que transfer.to_stop_id fosse igual a "NEXT_TO_MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que transfer.from_route_id fosse nulo, mas foi encontrado "[valor encontrado]".
+Esperava-se que transfer.to_route_id fosse nulo, mas foi encontrado "[valor encontrado]".
+Esperava-se que transfer.min_transfer_time fosse igual a 600, mas foi encontrado "[valor encontrado]".
+Esperava-se que withinStationTransfer.from_stop_id fosse igual a "NEXT_TO_MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que withinStationTransfer.to_stop_id fosse igual a "NEXT_TO_MUSEUM", mas foi encontrado "[valor encontrado]".
+Esperava-se que withinStationTransfer.from_route_id fosse nulo, mas foi encontrado "[valor encontrado]".
+Esperava-se que withinStationTransfer.to_route_id fosse nulo, mas foi encontrado "[valor encontrado]".
+Esperava-se que o tamanho de transfersToStop fosse 5, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que transfersToStop.get(0).from_route_id fosse igual a "AB", mas foi encontrado "[valor encontrado]".
+Esperava-se que transfersToStop.get(1).from_route_id fosse igual a "FUNNY_BLOCK_AB", mas foi encontrado "[valor encontrado]".
+Esperava-se que transfersToStop.get(2).from_route_id fosse igual a "STBA", mas foi encontrado "[valor encontrado]".
+Esperava-se que transfersToStop.get(3).from_route_id fosse igual a "AAMV", mas foi encontrado "[valor encontrado]".
+Esperava-se que transfersToStop.get(4).from_route_id fosse igual a "ABBFC", mas foi encontrado "[valor encontrado]".
+Esperava-se que route.hasErrors() retornasse false, mas retornou true.
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de response.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que o tamanho de route.getAll() fosse 1, mas foi encontrado o tamanho  [tamanho encontrado].
+Esperava-se que expectedDepartureTimes fosse igual a actualDepartureTimes, mas foi encontrado "[valor encontrado]".
+Esperava-se que expectedDepartureTimes fosse igual a actualDepartureTimes, mas foi encontrado "[valor encontrado]".
+Esperava-se que expectedDepartureTimes fosse igual a actualDepartureTimes, mas foi encontrado "[valor encontrado]".
+Esperava-se que route.getAll().isEmpty() retornasse true, mas retornou false.
+Esperava-se que route.getAll().isEmpty() retornasse true, mas retornou false.
+Esperava-se que ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id fosse igual a "AB", mas foi encontrado "[valor encontrado]".
+Esperava-se que ((Trip.PtLeg) mondayTrip.getLegs().get(0)).route_id fosse diferente de "AB", mas foi encontrado "[valor encontrado]".
+Esperava-se que ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id fosse diferente de "AB", mas foi encontrado "[valor encontrado]".
+Esperava-se que ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id fosse igual a "AB", mas foi encontrado "[valor encontrado]".

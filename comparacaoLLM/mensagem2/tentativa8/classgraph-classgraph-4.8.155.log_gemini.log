@@ -1,0 +1,27 @@
+```java
+assertEquals(5, calculator.add(2, 3));
+assertEquals(7, calculator.add(4, 2));
+assertEquals(10, calculator.add(5, 5));
+assertTrue(calculator.isPositive(5));
+assertFalse(calculator.isPositive(-5));
+assertNull(calculator.divide(5,0));
+assertNotNull(calculator.divide(10,2));
+assertSame(str1, str2); //assumindo str1 e str2 são Strings
+assertNotSame(str3, str4); //assumindo str3 e str4 são Strings
+
+```
+
+Saída:
+
+```
+eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+Era esperado true, mas calculator.isPositive(5) retornou false
+Era esperado false, mas calculator.isPositive(-5) retornou true
+Era esperado null, mas calculator.divide(5,0) retornou um valor diferente de null
+Era esperado um valor diferente de null, mas calculator.divide(10,2) retornou null
+Era esperado que str1 e str2 referenciavam o mesmo objeto, mas referenciam objetos diferentes.
+Era esperado que str3 e str4 referenciavam objetos diferentes, mas referenciam o mesmo objeto.
+
+```

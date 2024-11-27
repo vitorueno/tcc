@@ -1,0 +1,85 @@
+eram esperados valores iguais, mas 2 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 6 é diferente de s.nextStreamId(map)
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(1) é verdadeira
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(3) é verdadeira
+o valor esperado era verdadeiro, mas a expressão s.isBeforeOrCurrent(1) é falsa
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(3) é verdadeira
+o valor esperado era verdadeiro, mas a expressão s.isBeforeOrCurrent(3) é falsa
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(-1) é verdadeira
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(0) é verdadeira
+o valor esperado era verdadeiro, mas a expressão s.isBeforeOrCurrent(2) é falsa
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(2) é verdadeira
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(4) é verdadeira
+o valor esperado era verdadeiro, mas a expressão s.isBeforeOrCurrent(2) é falsa
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(4) é verdadeira
+o valor esperado era verdadeiro, mas a expressão s.isBeforeOrCurrent(4) é falsa
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(-2) é verdadeira
+o valor esperado era falso, mas a expressão s.isBeforeOrCurrent(0) é verdadeira
+o valor esperado era verdadeiro, mas a expressão s.isBeforeOrCurrent(1) é falsa
+eram esperados valores iguais, mas 2147483646 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 2 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 2147483647 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 1 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 3 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 1 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 3 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 7 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 11 é diferente de s.nextStreamId(map)
+o setupPayload não irá honrar o Lease
+o intervalo de keep alive é diferente do esperado
+o tempo máximo de vida do keep alive é diferente do esperado
+o tipo de metadados é diferente do esperado
+o tipo de dados é diferente do esperado
+o setupPayload não possui metadados
+o metadado do payload não pode ser nulo
+os metadados do payload são diferentes dos esperados
+os dados do payload são diferentes dos esperados
+o metadado do payload não pode ser nulo
+os metadados do payload são diferentes dos esperados
+os dados do payload são diferentes dos esperados
+o setupPayload não possui metadados
+o metadado do payload não pode ser nulo
+os dados do payload são diferentes dos esperados
+o tipo de TTL é diferente do esperado
+o número de requisições é diferente do esperado
+os metadados são diferentes dos esperados
+o tipo de TTL é diferente do esperado
+o número de requisições é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado
+o tipo de frame é diferente do esperado

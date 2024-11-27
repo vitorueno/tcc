@@ -1,0 +1,103 @@
+Nome canônico de C inválido.
+ID de usuário incorreto.
+Nome de usuário incorreto.
+ID de usuário incorreto.
+Nome de usuário incorreto.
+Valor do bean incorreto.
+Fábrica JSON incorreta.
+Tamanho da lista de produtos incorreto.
+ID do primeiro produto incorreto.
+ID do segundo produto incorreto.
+ID do terceiro produto incorreto.
+O array SerializationFeature está vazio.
+Tipo de exceção inválida não é nulo.
+String JSON incorreta.
+Atributo 'time' dos beans diferentes.
+String JSON incorreta.
+Atributo 'time' dos beans diferentes.
+String JSON incorreta.
+Atributo 'time' dos beans diferentes.
+String JSON incorreta.
+Atributo 'time' dos beans diferentes.
+String JSON incorreta.
+Atributo 'time' dos beans diferentes.
+String JSON incorreta.
+Atributo 'time' dos beans diferentes.
+Serialização do bean incorreta.
+Atributo 'data' dos beans diferentes.
+String JSON incorreta.
+Atributo 'data' dos beans diferentes.
+Serialização de TypeWithOptional com Optional.of("value") incorreta.
+Serialização de TypeWithOptional com Optional.empty() incorreta.
+Conteúdo da string "value" não encontrado.
+Conteúdo da string "null" não encontrado.
+String JSON incorreta.
+Atributo 'data' dos beans diferentes.
+Serialização de TypeWithOptional com Optional.of("value") incorreta.
+Serialização de TypeWithOptional com Optional.empty() incorreta.
+Conteúdo da string "value" não encontrado.
+Conteúdo da string "null" não encontrado.
+Optional do TypeWithOptional está presente quando deveria estar vazio.
+Entrada é nula.
+ID do resultado do trabalho incorreto.
+ID do bean incorreto.
+ID do bean incorreto.
+ID do bean incorreto.
+ID do bean incorreto.
+Máscara de MapperFeature incorreta.
+MapperFeature não está habilitado na máscara.
+MapperFeature não está habilitado na máscara longa.
+String JSON incorreta.
+Atributo 'color' dos carros diferentes.
+Atributo 'type' dos carros diferentes.
+Cor do carro incorreta.
+ID do bean incorreto.
+Nome do bean incorreto.
+ID incorreto no JSON.
+ID incorreto no JSON.
+ID incorreto no JSON.
+ID incorreto no JSON.
+Primeiro elemento do arrayNode não é nulo.
+Tipo de nó incorreto.
+String JSON incorreta.
+String JSON incorreta.
+String JSON incorreta.
+ID dos beans diferentes.
+String incorreta.
+ID dos beans diferentes.
+ID dos beans diferentes.
+String JSON incorreta.
+String JSON esperada diferente da gerada.
+String JSON esperada diferente da gerada.
+String JSON esperada diferente da gerada.
+Atributo 'type' dos carros diferentes.
+Carro é nulo.
+Cor do carro incorreta.
+Carro é nulo.
+Cor do carro incorreta.
+Tipo Java incorreto.
+Tamanho da lista incorreto.
+ID incorreto.
+Nome incorreto.
+Tamanho da lista incorreto.
+ID incorreto.
+Nome incorreto.
+Tamanho do mapa incorreto.
+ID do bean incorreto.
+Nome do bean incorreto.
+Nó não é um BigInteger.
+Tipo numérico incorreto.
+Tipo de nó incorreto.
+Valor inteiro incorreto.
+Valor inteiro incorreto.
+Valor inteiro incorreto.
+Valor longo incorreto.
+Valor double incorreto.
+Optional do TypeWithOptional está presente quando deveria estar vazio.
+Iterador do arrayNode não está vazio.
+Iterador do arrayNode não está vazio.
+Nó não é um BigDecimal.
+Nó não é um BigInteger.
+Nó não é um BigDecimal.
+Nó não é um Float.
+

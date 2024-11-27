@@ -1,0 +1,100 @@
+`assertNotNull(files)`: Falha ao encontrar o objeto `files`. Era esperado um objeto diferente de nulo.
+`assertTrue(files.length > 10)`: O tamanho do array `files` não é maior que 10.  Era esperado um tamanho maior que 10, mas o tamanho encontrado foi de `files.length`.
+`assertNotNull(files)`: Falha ao encontrar o objeto `files`. Era esperado um objeto diferente de nulo.
+`assertTrue(files.length > 10)`: O tamanho do array `files` não é maior que 10. Era esperado um tamanho maior que 10, mas o tamanho encontrado foi de `files.length`.
+`assertNotNull(doc)`: Falha ao encontrar o objeto `doc`. Era esperado um objeto diferente de nulo.
+`assertNotNull(doc)`: Falha ao encontrar o objeto `doc`. Era esperado um objeto diferente de nulo.
+`assertNotNull(xmlDoc)`: Falha ao encontrar o objeto `xmlDoc`. Era esperado um objeto diferente de nulo.
+`assertNotNull(doc)`: Falha ao encontrar o objeto `doc`. Era esperado um objeto diferente de nulo.
+`assertNotNull(doc)`: Falha ao encontrar o objeto `doc`. Era esperado um objeto diferente de nulo.
+`Validate.fail("Should not be reachable")`:  A execução alcançou um ponto que deveria ser inalcançável.
+`assertTrue(runner.isInterrupted())`: O `runner` não foi interrompido. Era esperado que `runner.isInterrupted()` retornasse `true`.
+`assertTrue(body[0].length() > 0)`: O comprimento de `body[0]` não é maior que 0. Era esperado um comprimento maior que 0, mas o comprimento encontrado foi de `body[0].length()`.
+`assertTrue(body[0].contains("<p>Are you still there?"))`: A string `body[0]` não contém "<p>Are you still there?". Era esperado que contivesse esta string.
+`assertTrue(runner.isInterrupted())`: O `runner` não foi interrompido. Era esperado que `runner.isInterrupted()` retornasse `true`.
+`assertEquals(0, body[0].length())`: O comprimento de `body[0]` não é igual a 0. Era esperado 0, mas o comprimento encontrado foi de `body[0].length()`.
+`assertTrue(threw)`: A exceção esperada não foi lançada. Era esperado que `threw` fosse `true`.
+`assertEquals("outatime", h1.text())`: O texto de `h1` não é "outatime". Era esperado "outatime", mas o texto encontrado foi `h1.text()`.
+`assertEquals("outatime", h1.text())`: O texto de `h1` não é "outatime". Era esperado "outatime", mas o texto encontrado foi `h1.text()`.
+`assertEquals(0, catcher.exceptionCount.get())`: A contagem de exceções em `catcher` não é 0. Era esperado 0, mas o valor encontrado foi `catcher.exceptionCount.get()`.
+`assertEquals(numThreads - 1, catcher.multiThreadExceptions.get())`: A contagem de exceções multithread em `catcher` não é `numThreads - 1`. Era esperado `numThreads - 1`, mas o valor encontrado foi `catcher.multiThreadExceptions.get()`.
+`assertEquals(numThreads - 1, catcher.exceptionCount.get())`: A contagem de exceções em `catcher` não é `numThreads - 1`. Era esperado `numThreads - 1`, mas o valor encontrado foi `catcher.exceptionCount.get()`.
+`fail("Should not be reachable", "A execução falhou por uma causa deliberada")`: A execução alcançou um ponto que deveria ser inalcançável.  A execução falhou por uma causa deliberada.
+`assertEquals("Hello, World!", p.text())`: O texto de `p` não é "Hello, World!". Era esperado "Hello, World!", mas o texto encontrado foi `p.text()`.
+`assertTrue(doc.title().contains("Environment Variables"))`: O título de `doc` não contém "Environment Variables". Era esperado que contivesse esta string.
+`assertTrue(doc.title().contains("Environment Variables"))`: O título de `doc` não contém "Environment Variables". Era esperado que contivesse esta string.
+`assertTrue(threw)`: A exceção esperada não foi lançada. Era esperado que `threw` fosse `true`.
+`assertTrue(threw)`: A exceção esperada não foi lançada. Era esperado que `threw` fosse `true`.
+`assertEquals(404, res.statusCode())`: O código de status de `res` não é 404. Era esperado 404, mas o código encontrado foi `res.statusCode()`.
+`assertEquals("Webserver Environment Variables", doc.title())`: O título de `doc` não é "Webserver Environment Variables". Era esperado "Webserver Environment Variables", mas o título encontrado foi `doc.title()`.
+`assertEquals("POST", ihVal("Method", doc))`: O valor de "Method" em `doc` não é "POST". Era esperado "POST", mas o valor encontrado foi `ihVal("Method", doc)`.
+`assertEquals("gzip", ihVal("Accept-Encoding", doc))`: O valor de "Accept-Encoding" em `doc` não é "gzip". Era esperado "gzip", mas o valor encontrado foi `ihVal("Accept-Encoding", doc)`.
+`assertEquals("auth=token", ihVal("Cookie", doc))`: O valor de "Cookie" em `doc` não é "auth=token". Era esperado "auth=token", mas o valor encontrado foi `ihVal("Cookie", doc)`.
+`assertEquals("度一下", ihVal("百", doc))`: O valor de "百" em `doc` não é "度一下". Era esperado "度一下", mas o valor encontrado foi `ihVal("百", doc)`.
+`assertEquals("Jsoup, Jonathan", ihVal("uname", doc))`: O valor de "uname" em `doc` não é "Jsoup, Jonathan". Era esperado "Jsoup, Jonathan", mas o valor encontrado foi `ihVal("uname", doc)`.
+`assertEquals("application/x-www-form-urlencoded; charset=UTF-8", ihVal("Content-Type", doc))`: O valor de "Content-Type" em `doc` não é "application/x-www-form-urlencoded; charset=UTF-8". Era esperado "application/x-www-form-urlencoded; charset=UTF-8", mas o valor encontrado foi `ihVal("Content-Type", doc)`.
+`assertTrue(ihVal("Content-Type", doc).contains(MULTIPART_FORM_DATA))`: O valor de "Content-Type" em `doc` não contém `MULTIPART_FORM_DATA`. Era esperado que contivesse esta string.
+`assertTrue(ihVal("Content-Type", doc).contains("boundary"))`: O valor de "Content-Type" em `doc` não contém "boundary". Era esperado que contivesse esta string.
+`assertEquals("Jsoup, Jonathan", ihVal("uname", doc))`: O valor de "uname" em `doc` não é "Jsoup, Jonathan". Era esperado "Jsoup, Jonathan", mas o valor encontrado foi `ihVal("uname", doc)`.
+`assertEquals("度一下", ihVal("百", doc))`: O valor de "百" em `doc` não é "度一下". Era esperado "度一下", mas o valor encontrado foi `ihVal("百", doc)`.
+`assertEquals("hello", ihVal("Random-Header-name", doc))`: O valor de "Random-Header-name" em `doc` não é "hello". Era esperado "hello", mas o valor encontrado foi `ihVal("Random-Header-name", doc)`.
+`assertEquals("cross-site", ihVal("Sec-Fetch-Site", doc))`: O valor de "Sec-Fetch-Site" em `doc` não é "cross-site". Era esperado "cross-site", mas o valor encontrado foi `ihVal("Sec-Fetch-Site", doc)`.
+`assertEquals("cors", ihVal("Sec-Fetch-Mode", doc))`: O valor de "Sec-Fetch-Mode" em `doc` não é "cors". Era esperado "cors", mas o valor encontrado foi `ihVal("Sec-Fetch-Mode", doc)`.
+`assertEquals("hello", ihVal("Random-Header-name", doc))`: O valor de "Random-Header-name" em `doc` não é "hello". Era esperado "hello", mas o valor encontrado foi `ihVal("Random-Header-name", doc)`.
+`assertEquals("cross-site", ihVal("Sec-Fetch-Site", doc))`: O valor de "Sec-Fetch-Site" em `doc` não é "cross-site". Era esperado "cross-site", mas o valor encontrado foi `ihVal("Sec-Fetch-Site", doc)`.
+`assertEquals("cors", ihVal("Sec-Fetch-Mode", doc))`: O valor de "Sec-Fetch-Mode" em `doc` não é "cors". Era esperado "cors", mas o valor encontrado foi `ihVal("Sec-Fetch-Mode", doc)`.
+`assertEquals("POST", ihVal("Method", doc))`: O valor de "Method" em `doc` não é "POST". Era esperado "POST", mas o valor encontrado foi `ihVal("Method", doc)`.
+`assertEquals("application/json", ihVal("Content-Type", doc))`: O valor de "Content-Type" em `doc` não é "application/json". Era esperado "application/json", mas o valor encontrado foi `ihVal("Content-Type", doc)`.
+`assertEquals("foo=true", ihVal("Query String", doc))`: O valor de "Query String" em `doc` não é "foo=true". Era esperado "foo=true", mas o valor encontrado foi `ihVal("Query String", doc)`.
+`assertEquals(body, ihVal("Post Data", doc))`: O valor de "Post Data" em `doc` não é igual a `body`. Era esperado `body`, mas o valor encontrado foi `ihVal("Post Data", doc)`.
+`assertEquals("POST", ihVal("Method", doc))`: O valor de "Method" em `doc` não é "POST". Era esperado "POST", mas o valor encontrado foi `ihVal("Method", doc)`.
+`assertEquals("application/json", ihVal("Content-Type", doc))`: O valor de "Content-Type" em `doc` não é "application/json". Era esperado "application/json", mas o valor encontrado foi `ihVal("Content-Type", doc)`.
+`assertEquals(body, ihVal("Post Data", doc))`: O valor de "Post Data" em `doc` não é igual a `body`. Era esperado `body`, mas o valor encontrado foi `ihVal("Post Data", doc)`.
+`assertEquals("POST", ihVal("Method", doc))`: O valor de "Method" em `doc` não é "POST". Era esperado "POST", mas o valor encontrado foi `ihVal("Method", doc)`.
+`assertEquals("text/plain", ihVal("Content-Type", doc))`: O valor de "Content-Type" em `doc` não é "text/plain". Era esperado "text/plain", mas o valor encontrado foi `ihVal("Content-Type", doc)`.
+`assertEquals(body, ihVal("Post Data", doc))`: O valor de "Post Data" em `doc` não é igual a `body`. Era esperado `body`, mas o valor encontrado foi `ihVal("Post Data", doc)`.
+`assertEquals("POST", ihVal("Method", doc))`: O valor de "Method" em `doc` não é "POST". Era esperado "POST", mas o valor encontrado foi `ihVal("Method", doc)`.
+`assertEquals("uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B", ihVal("Query String", doc))`: O valor de "Query String" em `doc` não é "uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B". Era esperado "uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B", mas o valor encontrado foi `ihVal("Query String", doc)`.
+`assertEquals(body, ihVal("Post Data", doc))`: O valor de "Post Data" em `doc` não é igual a `body`. Era esperado `body`, mas o valor encontrado foi `ihVal("Post Data", doc)`.
+`assertEquals("what=the&what=about+%26+me%3F", ihVal("Query String", doc))`: O valor de "Query String" em `doc` não é "what=the&what=about+%26+me%3F". Era esperado "what=the&what=about+%26+me%3F", mas o valor encontrado foi `ihVal("Query String", doc)`.
+`assertEquals("the, about & me?", ihVal("what", doc))`: O valor de "what" em `doc` não é "the, about & me?". Era esperado "the, about & me?", mas o valor encontrado foi `ihVal("what", doc)`.
+`assertEquals("Mozilla", ihVal("User-Agent", doc))`: O valor de "User-Agent" em `doc` não é "Mozilla". Era esperado "Mozilla", mas o valor encontrado foi `ihVal("User-Agent", doc)`.
+`assertEquals("http://example.com", ihVal("Referer", doc))`: O valor de "Referer" em `doc` não é "http://example.com". Era esperado "http://example.com", mas o valor encontrado foi `ihVal("Referer", doc)`.
+`assertEquals("PUT", ihVal("Method", doc))`: O valor de "Method" em `doc` não é "PUT". Era esperado "PUT", mas o valor encontrado foi `ihVal("Method", doc)`.
+`assertEquals("gzip", ihVal("Accept-Encoding", doc))`: O valor de "Accept-Encoding" em `doc` não é "gzip". Era esperado "gzip", mas o valor encontrado foi `ihVal("Accept-Encoding", doc)`.
+`assertEquals("auth=token", ihVal("Cookie", doc))`: O valor de "Cookie" em `doc` não é "auth=token". Era esperado "auth=token", mas o valor encontrado foi `ihVal("Cookie", doc)`.
+`assertEquals("4", ihVal("Parts", res))`: O valor de "Parts" em `res` não é "4". Era esperado "4", mas o valor encontrado foi `ihVal("Parts", res)`.
+`assertEquals("application/octet-stream", ihVal("Part secondPart ContentType", res))`: O valor de "Part secondPart ContentType" em `res` não é "application/octet-stream". Era esperado "application/octet-stream", mas o valor encontrado foi `ihVal("Part secondPart ContentType", res)`.
+`assertEquals("secondPart", ihVal("Part secondPart Name", res))`: O valor de "Part secondPart Name" em `res` não é "secondPart". Era esperado "secondPart", mas o valor encontrado foi `ihVal("Part secondPart Name", res)`.
+`assertEquals("google-ipod.html.gz", ihVal("Part secondPart Filename", res))`: O valor de "Part secondPart Filename" em `res` não é "google-ipod.html.gz". Era esperado "google-ipod.html.gz", mas o valor encontrado foi `ihVal("Part secondPart Filename", res)`.
+`assertEquals("12212", ihVal("Part secondPart Size", res))`: O valor de "Part secondPart Size" em `res` não é "12212". Era esperado "12212", mas o valor encontrado foi `ihVal("Part secondPart Size", res)`.
+`assertEquals("image/jpeg", ihVal("Part firstPart ContentType", res))`: O valor de "Part firstPart ContentType" em `res` não é "image/jpeg". Era esperado "image/jpeg", mas o valor encontrado foi `ihVal("Part firstPart ContentType", res)`.
+`assertEquals("firstPart", ihVal("Part firstPart Name", res))`: O valor de "Part firstPart Name" em `res` não é "firstPart". Era esperado "firstPart", mas o valor encontrado foi `ihVal("Part firstPart Name", res)`.
+`assertEquals("thumb.jpg", ihVal("Part firstPart Filename", res))`: O valor de "Part firstPart Filename" em `res` não é "thumb.jpg". Era esperado "thumb.jpg", mas o valor encontrado foi `ihVal("Part firstPart Filename", res)`.
+`assertEquals("1052", ihVal("Part firstPart Size", res))`: O valor de "Part firstPart Size" em `res` não é "1052". Era esperado "1052", mas o valor encontrado foi `ihVal("Part firstPart Size", res)`.
+`assertEquals("Jay", ihVal("firstname", res))`: O valor de "firstname" em `res` não é "Jay". Era esperado "Jay", mas o valor encontrado foi `ihVal("firstname", res)`.
+`assertEquals("Soup", ihVal("surname", res))`: O valor de "surname" em `res` não é "Soup". Era esperado "Soup", mas o valor encontrado foi `ihVal("surname", res)`.
+`assertTrue(doc.title().contains("Environment"))`: O título de `doc` não contém "Environment". Era esperado que contivesse esta string.
+`assertTrue(doc2.title().contains("Environment"))`: O título de `doc2` não contém "Environment". Era esperado que contivesse esta string.
+`assertTrue(body.contains("Environment"))`: A string `body` não contém "Environment". Era esperado que contivesse esta string.
+`assertTrue(bytes.length > 100)`: O comprimento de `bytes` não é maior que 100. Era esperado um comprimento maior que 100, mas o comprimento encontrado foi `bytes.length`.
+`assertTrue(doc.title().contains("Environment"))`: O título de `doc` não contém "Environment". Era esperado que contivesse esta string.
+`assertEquals("asdfg123", cookies.get("token"))`: O valor do cookie "token" não é "asdfg123". Era esperado "asdfg123", mas o valor encontrado foi `cookies.get("token")`.
+`assertEquals("jhy", cookies.get("uid"))`: O valor do cookie "uid" não é "jhy". Era esperado "jhy", mas o valor encontrado foi `cookies.get("uid")`.
+`assertEquals("token=asdfg123; uid=jhy", ihVal("Cookie", doc))`: O valor de "Cookie" em `doc` não é "token=asdfg123; uid=jhy". Era esperado "token=asdfg123; uid=jhy", mas o valor encontrado foi `ihVal("Cookie", doc)`.
+`assertEquals(0, res.cookies().size())`: O tamanho de `res.cookies()` não é 0. Era esperado 0, mas o tamanho encontrado foi `res.cookies().size()`.
+`assertEquals(echoUrl, doc.location())`: A localização de `doc` não é `echoUrl`. Era esperado `echoUrl`, mas a localização encontrada foi `doc.location()`.
+`assertEquals("True", ihVal("Cookie: LetMeIn", doc))`: O valor de "Cookie: LetMeIn" em `doc` não é "True". Era esperado "True", mas o valor encontrado foi `ihVal("Cookie: LetMeIn", doc)`.
+`assertEquals("Yes", ihVal("Cookie: DoesItWork", doc))`: O valor de "Cookie: DoesItWork" em `doc` não é "Yes". Era esperado "Yes", mas o valor encontrado foi `ihVal("Cookie: DoesItWork", doc)`.
+`assertEquals("deflate", res.header("Content-Encoding"))`: O valor do cabeçalho "Content-Encoding" em `res` não é "deflate". Era esperado "deflate", mas o valor encontrado foi `res.header("Content-Encoding")`.
+`assertEquals("Hello, World!", doc.selectFirst("p").text())`: O texto do primeiro elemento `<p>` em `doc` não é "Hello, World!". Era esperado "Hello, World!", mas o texto encontrado foi `doc.selectFirst("p").text()`.
+`assertEquals("Something", document.title())`: O título de `document` não é "Something". Era esperado "Something", mas o título encontrado foi `document.title()`.
+`assertEquals(0, document.select("p").size())`: O número de elementos `<p>` em `document` não é 0. Era esperado 0, mas o número encontrado foi `document.select("p").size()`.
+`assertEquals(0, doc.select("p").size())`: O número de elementos `<p>` em `doc` não é 0. Era esperado 0, mas o número encontrado foi `doc.select("p").size()`.
+`assertEquals("Hello, World!", p.text())`: O texto de `p` não é "Hello, World!". Era esperado "Hello, World!", mas o texto encontrado foi `p.text()`.
+`assertEquals(HelloServlet.Url, doc.location())`: A localização de `doc` não é `HelloServlet.Url`. Era esperado `HelloServlet.Url`, mas a localização encontrada foi `doc.location()`.
+`assertTrue(threw)`: A exceção esperada não foi lançada. Era esperado que `threw` fosse `true`.
+`assertEquals(EchoServlet.Url, doc.location())`: A localização de `doc` não é `EchoServlet.Url`. Era esperado `EchoServlet.Url`, mas a localização encontrada foi `doc.location()`.
+`assertEquals("GET", ihVal("Method", doc))`: O valor de "Method" em `doc` não é "GET". Era esperado "GET", mas o valor encontrado foi `ihVal("Method", doc)`.
+`assertNull(ihVal("Hello", doc))`: O valor de "Hello" em `doc` não é nulo. Era esperado nulo, mas o valor encontrado foi `ihVal("Hello", doc)`.
+`assertEquals(EchoServlet.Url, doc.location())`: A localização de `doc` não é `EchoServlet.Url`. Era esperado `EchoServlet.Url`, mas a localização encontrada foi `doc.location()`.

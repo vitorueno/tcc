@@ -1,0 +1,7 @@
+eram esperados valores iguais, mas 0 é diferente de accessor.getValues().length
+eram esperados valores iguais, mas os parâmetros são diferentes de accessor.getParameters()
+o userRepository é nulo, mas era esperado que não fosse
+o roleRepository é nulo, mas era esperado que não fosse
+o auditableUserRepository é nulo, mas era esperado que não fosse
+o mappingContext é nulo, mas era esperado que não fosse
+a entrada de beans não está vazia, mas era esperado que fosse vazia

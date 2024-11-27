@@ -1,0 +1,31 @@
+eram esperados valores iguais, mas "test/Person" não é igual a calculator.add("test/Jedi", "test/Sith")
+eram esperados valores iguais, mas "test/Person" não é igual a calculator.add("test/Jedi", "test/Person")
+eram esperados valores iguais, mas "test/Person" não é igual a calculator.add("test/Person", "test/Person")
+o tamanho da coleção "expected" não é igual ao número de elementos na coleção resultante do stream filter
+eram valores esperados diferentes, mas o valor da função "toString" para "test/Yoda" não é igual a ()Ljava/lang/String;
+eram valores esperados diferentes, mas os vértices "say" e "test/Greetings" não estão linkados com a função "say"
+o tamanho da coleção "results" não é igual a 1
+o tamanho do conjunto de diferenças não é igual à quantidade de elementos na lista resultante
+eram valores esperados diferentes, mas o tamanho da coleção "mappings" não é igual a 20
+o tamanho do conjunto de diferenças não é igual à quantidade de elementos na lista resultante
+o número de campos não é igual a 1
+eram valores esperados diferentes, mas o nome da variável "i" não é igual a "int"
+eram valores esperados diferentes, mas a descrição da variável "i" está vazia
+os modificadores do campo não são iguais aos especificados
+o número de métodos não é igual a 2
+eram valores esperados diferentes, mas o nome do método "evaluate" não é igual a "double"
+a descrição do método "evaluate" não é igual a "Evaluates an expression as a level deeper than the current one in the expression tree,"
+os modificadores do método não são iguais aos especificados
+eram valores esperados diferentes, mas o retorno do método "evaluate" não está igual à string "Evaluated result."
+o número de parâmetros não é igual a 1
+eram valores esperados diferentes, mas o nome do parâmetro "expression" não é igual a "Some math expression."
+a descrição do parâmetro "expression" não está definida
+os modificadores do método não são iguais aos especificados
+eram valores esperados diferentes, mas o número de heranças não é igual a 2
+o nome da classe de herança "calc/Calculator" não é igual à subclasse "java/lang/Object"
+a quantidade de subclasses não está correta
+o número de frames não é igual a 1
+eram valores esperados diferentes, mas o valor local do frame não é igual a "small"
+as strings nas pilhas dos frames não têm a mesma duração
+as string concatenadas não são iguais às string individuais
+os valores locais das variáveis de frame não estão iguais

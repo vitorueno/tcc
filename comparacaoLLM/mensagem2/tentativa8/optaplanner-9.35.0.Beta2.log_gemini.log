@@ -1,0 +1,100 @@
+O valor "0" era esperado para result.get("score"), mas o valor encontrado foi diferente.
+O valor de result.get("entity.0.fullValue") era esperado como não nulo, mas foi encontrado nulo.
+O valor de result.get("entity.1.fullValue") era esperado como não nulo, mas foi encontrado nulo.
+solverConfig era esperado como não nulo, mas foi encontrado nulo.
+Era esperado DomainAccessType.GIZMO, mas o valor retornado por solverConfig.getDomainAccessType() foi diferente.
+Era esperada a classe TestdataQuarkusSolution.class, mas a classe retornada por solverConfig.getSolutionClass() foi diferente.
+Era esperada a lista Collections.singletonList(TestdataQuarkusEntity.class), mas a lista retornada por solverConfig.getEntityClassList() foi diferente.
+Era esperada a classe TestdataQuarkusConstraintProvider.class, mas a classe retornada por solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass() foi diferente.
+Era esperado o valor 3L, mas o valor long retornado por solverConfig.getTerminationConfig().getSecondsSpentLimit().longValue() foi diferente.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+solverFactory.buildSolver() era esperado como não nulo, mas foi encontrado nulo.
+solverConfig era esperado como não nulo, mas foi encontrado nulo.
+Era esperada a classe TestdataQuarkusSolution.class, mas a classe retornada por solverConfig.getSolutionClass() foi diferente.
+Era esperado DomainAccessType.GIZMO, mas o valor retornado por solverConfig.getDomainAccessType() foi diferente.
+Era esperada a lista Collections.singletonList(TestdataQuarkusEntity.class), mas a lista retornada por solverConfig.getEntityClassList() foi diferente.
+Era esperada a classe TestdataQuarkusConstraintProvider.class, mas a classe retornada por solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass() foi diferente.
+Era esperado o valor 2L, mas o valor long retornado por solverConfig.getTerminationConfig().getSecondsSpentLimit().longValue() foi diferente.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+solverFactory.buildSolver() era esperado como não nulo, mas foi encontrado nulo.
+Era esperado EnvironmentMode.FULL_ASSERT, mas o valor retornado por solverConfig.getEnvironmentMode() foi diferente.
+Era esperado true, mas o valor retornado por solverConfig.getDaemon() foi false.
+Era esperado o valor "2", mas o valor retornado por solverConfig.getMoveThreadCount() foi diferente.
+Era esperado DomainAccessType.REFLECTION, mas o valor retornado por solverConfig.getDomainAccessType() foi diferente.
+Era esperado null, mas o valor retornado por solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType() foi diferente.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+Era esperado Duration.ofHours(4), mas o valor retornado por solverConfig.getTerminationConfig().getSpentLimit() foi diferente.
+Era esperado Duration.ofHours(5), mas o valor retornado por solverConfig.getTerminationConfig().getUnimprovedSpentLimit() foi diferente.
+Era esperado SimpleScore.of(0).toString(), mas o valor retornado por solverConfig.getTerminationConfig().getBestScoreLimit() foi diferente.
+solverConfig era esperado como não nulo, mas foi encontrado nulo.
+Era esperada a classe TestdataQuarkusSolution.class, mas a classe retornada por solverConfig.getSolutionClass() foi diferente.
+Era esperado DomainAccessType.GIZMO, mas o valor retornado por solverConfig.getDomainAccessType() foi diferente.
+Era esperada a lista Collections.singletonList(TestdataQuarkusEntity.class), mas a lista retornada por solverConfig.getEntityClassList() foi diferente.
+Era esperada a classe TestdataQuarkusConstraintProvider.class, mas a classe retornada por solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass() foi diferente.
+Era esperado null, mas o valor retornado por solverConfig.getTerminationConfig().getSecondsSpentLimit() foi diferente.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+solverFactory.buildSolver() era esperado como não nulo, mas foi encontrado nulo.
+solution era esperado como não nulo, mas foi encontrado nulo.
+Era esperado "secondsSpentLimit=2", mas o valor de resp foi diferente.
+Era esperado "secondsSpentLimit=9", mas o valor de resp foi diferente.
+solution era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que o tamanho de entityList fosse igual ao tamanho de solution.getEntityList(), mas os tamanhos são diferentes.
+A construção falhou inesperadamente.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+scoreManager era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que ((DefaultSolverFactory<?>) solverFactory).getScoreDirectorFactory() fosse o mesmo que ((DefaultSolutionManager<?, ?>) solutionManager).getScoreDirectorFactory(), mas são diferentes.
+solverManager era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que solverFactory fosse o mesmo que ((DefaultSolverManager<TestDataKitchenSinkSolution, Long>) solverManager).getSolverFactory(), mas são diferentes.
+solution era esperado como não nulo, mas foi encontrado nulo.
+Era esperado 1, mas o valor retornado por solution.getPlanningEntityProperty().testGetIntVariable() foi diferente.
+Era esperado "A", mas o valor retornado por solution.getPlanningEntityProperty().testGetStringVariable() foi diferente.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que ((DefaultSolverFactory<TestdataQuarkusSolution>) solverFactory).getScoreDirectorFactory() fosse o mesmo que ((DefaultSolutionManager<TestdataQuarkusSolution, SimpleScore>) solutionManager).getScoreDirectorFactory(), mas são diferentes.
+solverManager era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que solverFactory fosse o mesmo que ((DefaultSolverManager<TestdataQuarkusSolution, Long>) solverManager).getSolverFactory(), mas são diferentes.
+solutionManager era esperado como não nulo, mas foi encontrado nulo.
+solution era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que solution.getScore().score() fosse maior ou igual a 0, mas foi menor.
+Era esperado que solution.score.score() fosse 0, mas foi diferente.
+Era esperado "7", mas o valor retornado por solverConfigProperties.get("termination.bestScoreLimit") foi diferente.
+Era esperado "3", mas o valor retornado por solverConfigProperties.get("moveThreadCount") foi diferente.
+Era esperado "10", mas o valor retornado por solverManagerProperties.get("parallelSolverCount") foi diferente.
+Era esperada a classe TestdataQuarkusConstraintProvider.class, mas a classe retornada por solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass() foi diferente.
+solverFactory.buildSolver() era esperado como não nulo, mas foi encontrado nulo.
+Era esperada a lista Collections.singletonList(CONSTRAINTS_DRL), mas a lista retornada por solverConfig.getScoreDirectorFactoryConfig().getScoreDrlList() foi diferente.
+solverFactory.buildSolver() era esperado como não nulo, mas foi encontrado nulo.
+Era esperada a lista Collections.singletonList("constraints.drl"), mas a lista retornada por solverConfig.getScoreDirectorFactoryConfig().getScoreDrlList() foi diferente.
+solverFactory.buildSolver() era esperado como não nulo, mas foi encontrado nulo.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que ((DefaultSolverFactory<TestdataQuarkusSolution>) solverFactory).getScoreDirectorFactory() fosse o mesmo que ((DefaultSolutionManager<TestdataQuarkusSolution, SimpleScore>) solutionManager).getScoreDirectorFactory(), mas são diferentes.
+solverManager era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que solverFactory fosse o mesmo que ((DefaultSolverManager<TestdataQuarkusSolution, Long>) solverManager).getSolverFactory(), mas são diferentes.
+scoreManager era esperado como não nulo, mas foi encontrado nulo.
+solution era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que solution.getScore().score() fosse maior ou igual a 0, mas foi menor.
+Era esperado "Extra Data", mas o valor retornado por solution.getExtraData() foi diferente.
+Era esperado ConstraintStreamImplType.BAVET, mas o valor retornado por solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType() foi diferente.
+solverFactory era esperado como não nulo, mas foi encontrado nulo.
+A execução falhou por uma causa deliberada.
+Era esperado ConstraintStreamImplType.DROOLS, mas o valor retornado por ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType() foi diferente.
+Era esperado que !ConfigUtils.isNativeImage() fosse igual a ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).isDroolsAlphaNetworkCompilationEnabled(), mas são diferentes.
+Era esperado ConstraintStreamImplType.BAVET, mas o valor retornado por ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType() foi diferente.
+benchmarkResultDirectory era esperado como não nulo, mas foi encontrado nulo.
+Era esperado que benchmarkResultDirectoryPath fosse um diretório, mas não é.
+Era esperado que benchmarkResultPath fosse um arquivo regular, mas não é.
+Era esperado true para xmlPath.getBoolean("plannerBenchmarkResult.solverBenchmarkResult.singleBenchmarkResult.subSingleBenchmarkResult.succeeded"), mas foi false.
+Era esperada a classe TestdataQuarkusSolution.class, mas a classe retornada por solverConfig.getSolutionClass() foi diferente.
+Era esperado 2, mas o tamanho da lista retornada por solverConfig.getEntityClassList() foi diferente.
+Era esperado que a lista retornada por solverConfig.getEntityClassList() contivesse TestdataQuarkusEntity.class, mas não contém.
+Era esperado que a lista retornada por solverConfig.getEntityClassList() contivesse TestdataQuarkusOtherEntity.class, mas não contém.
+Era esperado 5, mas o valor retornado por plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getTerminationConfig().getMillisecondsSpentLimit() foi diferente.
+Era esperada a lista List.of(TestdataQuarkusEntity.class), mas a lista retornada por plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getEntityClassList() foi diferente.
+Era esperada a classe TestdataQuarkusSolution.class, mas a classe retornada por childBenchmarkConfig.getSolverConfig().getSolutionClass() foi diferente.
+Era esperado null, mas a lista retornada por childBenchmarkConfig.getSolverConfig().getEntityClassList() foi diferente.
+Era esperada a classe TestdataQuarkusConstraintProvider.class, mas a classe retornada por childBenchmarkConfig.getSolverConfig().getScoreDirectorFactoryConfig().getConstraintProviderClass() foi diferente.
+Era esperada a classe TestdataQuarkusConstraintProvider.class, mas a classe retornada por childBenchmarkConfig.getSolverConfig().getSolutionClass() foi diferente.
+Era esperado null, mas a lista retornada por childBenchmarkConfig.getSolverConfig().getEntityClassList() foi diferente.
+Era esperada a classe TestdataQuarkusConstraintProvider.class, mas a classe retornada por childBenchmarkConfig.getSolverConfig().getScoreDirectorFactoryConfig().getConstraintProviderClass() foi diferente.
+Era esperado 2, mas o tamanho da lista retornada por plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(0).getSolverConfig().getPhaseConfigList() foi diferente.
+Era esperado 3, mas o tamanho da lista retornada por plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(1).getSolverConfig().getPhaseConfigList() foi diferente.
+A exceção lançada continha a mensagem: "The following SolverBenchmarkConfig do not have termination configured: [First Fit and Local Search without Termination]. At least one of the properties quarkus.optaplanner.benchmark.solver.termination.spent-limit, quarkus.optaplanner.benchmark.solver.termination.best-score-limit, quarkus.optaplanner.benchmark.solver.termination.unimproved-spent-limit is required if termination is not configured in a solver benchmark and the inherited solver benchmark config."

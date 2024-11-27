@@ -1,0 +1,3 @@
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 6)
+o resultado esperado era 100, mas o valor retornado foi 110
+esperava-se um valor nulo, porém foi retornado um valor diferente de nulo

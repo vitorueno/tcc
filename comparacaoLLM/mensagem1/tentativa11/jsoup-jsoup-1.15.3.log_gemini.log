@@ -1,0 +1,101 @@
+A lista de arquivos não pode ser nula.
+O número de arquivos deve ser maior que 10.
+A lista de arquivos não pode ser nula.
+O número de arquivos deve ser maior que 10.
+O documento não pode ser nulo.
+O documento não pode ser nulo.
+O documento XML não pode ser nulo.
+O documento não pode ser nulo.
+O documento não pode ser nulo.
+A execução não deveria alcançar este ponto.
+O runner deveria estar interrompido.
+O comprimento do primeiro elemento do corpo deve ser maior que 0.
+O primeiro elemento do corpo deve conter "<p>Are you still there?".
+O runner deveria estar interrompido.
+O comprimento do primeiro elemento do corpo deve ser 0.
+A exceção deveria ter sido lançada.
+O texto do elemento h1 deve ser "outatime".
+O texto do elemento h1 deve ser "outatime".
+A contagem de exceções deve ser 0.
+A contagem de exceções multithread deve ser numThreads - 1.
+A contagem de exceções deve ser numThreads - 1.
+A execução falhou por uma causa deliberada.
+O texto do elemento p deve ser "Hello, World!".
+O título do documento deve conter "Environment Variables".
+O título do documento deve conter "Environment Variables".
+A exceção deveria ter sido lançada.
+A exceção deveria ter sido lançada.
+O código de status deve ser 404.
+O título do documento deve ser "Webserver Environment Variables".
+O valor do cabeçalho "Method" deve ser "POST".
+O valor do cabeçalho "Accept-Encoding" deve ser "gzip".
+O valor do cabeçalho "Cookie" deve ser "auth=token".
+O valor do cabeçalho "百" deve ser "度一下".
+O valor do cabeçalho "uname" deve ser "Jsoup, Jonathan".
+O valor do cabeçalho "Content-Type" deve ser "application/x-www-form-urlencoded; charset=UTF-8".
+O valor do cabeçalho "Content-Type" deve conter "multipart/form-data".
+O valor do cabeçalho "Content-Type" deve conter "boundary".
+O valor do cabeçalho "uname" deve ser "Jsoup, Jonathan".
+O valor do cabeçalho "百" deve ser "度一下".
+O valor do cabeçalho "Random-Header-name" deve ser "hello".
+O valor do cabeçalho "Sec-Fetch-Site" deve ser "cross-site".
+O valor do cabeçalho "Sec-Fetch-Mode" deve ser "cors".
+O valor do cabeçalho "Random-Header-name" deve ser "hello".
+O valor do cabeçalho "Sec-Fetch-Site" deve ser "cross-site".
+O valor do cabeçalho "Sec-Fetch-Mode" deve ser "cors".
+O valor do cabeçalho "Method" deve ser "POST".
+O valor do cabeçalho "Content-Type" deve ser "application/json".
+O valor do cabeçalho "Query String" deve ser "foo=true".
+O valor do cabeçalho "Post Data" deve ser igual a body.
+O valor do cabeçalho "Method" deve ser "POST".
+O valor do cabeçalho "Content-Type" deve ser "application/json".
+O valor do cabeçalho "Post Data" deve ser igual a body.
+O valor do cabeçalho "Method" deve ser "POST".
+O valor do cabeçalho "Content-Type" deve ser "text/plain".
+O valor do cabeçalho "Post Data" deve ser igual a body.
+O valor do cabeçalho "Method" deve ser "POST".
+O valor do cabeçalho "Query String" deve ser "uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B".
+O valor do cabeçalho "Post Data" deve ser igual a body.
+O valor do cabeçalho "Query String" deve ser "what=the&what=about+%26+me%3F".
+O valor do parâmetro "what" deve ser "the, about & me?".
+O valor do cabeçalho "User-Agent" deve ser "Mozilla".
+O valor do cabeçalho "Referer" deve ser "http://example.com".
+O valor do cabeçalho "Method" deve ser "PUT".
+O valor do cabeçalho "Accept-Encoding" deve ser "gzip".
+O valor do cabeçalho "Cookie" deve ser "auth=token".
+O número de partes deve ser 4.
+O tipo de conteúdo da segunda parte deve ser "application/octet-stream".
+O nome da segunda parte deve ser "secondPart".
+O nome do arquivo da segunda parte deve ser "google-ipod.html.gz".
+O tamanho da segunda parte deve ser 12212.
+O tipo de conteúdo da primeira parte deve ser "image/jpeg".
+O nome da primeira parte deve ser "firstPart".
+O nome do arquivo da primeira parte deve ser "thumb.jpg".
+O tamanho da primeira parte deve ser 1052.
+O primeiro nome deve ser "Jay".
+O sobrenome deve ser "Soup".
+O título do documento deve conter "Environment".
+O título do documento 2 deve conter "Environment".
+O corpo deve conter "Environment".
+O tamanho dos bytes deve ser maior que 100.
+O título do documento deve conter "Environment".
+O valor do cookie "token" deve ser "asdfg123".
+O valor do cookie "uid" deve ser "jhy".
+O valor do cabeçalho "Cookie" deve ser "token=asdfg123; uid=jhy".
+O tamanho da lista de cookies deve ser 0.
+A localização do documento deve ser echoUrl.
+O valor do cookie "LetMeIn" deve ser "True".
+O valor do cookie "DoesItWork" deve ser "Yes".
+O cabeçalho "Content-Encoding" deve ser "deflate".
+O texto do primeiro parágrafo deve ser "Hello, World!".
+O título do documento deve ser "Something".
+O número de parágrafos deve ser 0.
+O número de parágrafos deve ser 0.
+O texto do elemento p deve ser "Hello, World!".
+A localização do documento deve ser HelloServlet.Url.
+A exceção deveria ter sido lançada.
+A localização do documento deve ser EchoServlet.Url.
+O valor do cabeçalho "Method" deve ser "GET".
+O valor do cabeçalho "Hello" deve ser nulo.
+A localização do documento deve ser EchoServlet.Url.
+

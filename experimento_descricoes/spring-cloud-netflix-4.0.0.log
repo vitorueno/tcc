@@ -1,0 +1,9 @@
+
+Projeto: /home/vitor-otto/opensource/spring-cloud-netflix-4.0.0
+
+Assert com mensagem: /home/vitor-otto/opensource/spring-cloud-netflix-4.0.0/spring-cloud-netflix-eureka-client-tls-tests/src/test/java/org/springframework/cloud/netflix/eureka/BaseCertTest.java linha: 158 Método: Assertions.assertThrows(BeanCreationException.class, client::start)
+Assert com mensagem: /home/vitor-otto/opensource/spring-cloud-netflix-4.0.0/spring-cloud-netflix-eureka-client-tls-tests/src/test/java/org/springframework/cloud/netflix/eureka/BaseCertTest.java linha: 166 Método: Assertions.assertThrows(BeanCreationException.class, client::start)
+Total asserts: 344
+Asserts sem descrição: 342
+Asserts com descrição: 2
+Assertion Roulette: 237

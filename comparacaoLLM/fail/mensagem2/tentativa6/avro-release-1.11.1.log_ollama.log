@@ -1,0 +1,41 @@
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), stdin, "-")
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--pretty", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema", "\"long\"", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema-file", readerSchemaFile.getPath(), sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", sampleFile@Path())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head=3", sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", sampleFile.Path())
+eram esperados valores iguais, mas 220+System.lineSeparator() não é igual a out.toString()
+eram esperados valores iguais, mas jsonData é diferente de baos.toString(UTF8).replace("\r", "")
+eram esperados valores iguais, mas avro é diferente de baos.toString(UTF8)
+eram esperados valores iguais, mas "Compression codec (default: deflate)" não está contido em baos.toString("UTF-8").replace("\r", "")
+eram esperados valores iguais, mas "\"Hello!\"\n" não é igual a baos2.toString("UTF-8").replace("\r", "")
+eram esperados valores iguais, mas String.format("zstandard[%d]", level) é diferente de codec.toString()
+eram esperados valores iguais, mas 0 não é igual a in.tell()
+eram esperados valores iguais, mas 0 não é igual a in.length()
+eram esperados valores iguais, mas 1 não é igual a bytes.length
+eram esperados valores iguais, mas 0 não é igual a bytes[0]
+eram esperados valores iguais, mas 0 não é igual a in.readInt()
+eram esperados valores iguais, mas sentinel não é igual a in.readLong()
+eram esperados valores iguais, mas sentinel não é igual a in.readLong()
+eram esperados valores iguais, mas sentinel não é igual a in.readLong()
+eram esperados valores iguais, mas sentinel não é igual a in.readLong()
+eram esperados valores iguais, mas sentinel não é igual a in.readLong()
+eram esperados valores iguais, mas sentinel não é igual a in.readLong()
+eram esperados valores iguais, mas 0 não é igual a in.getRowCount()
+eram esperados valores iguais, mas 0 não é igual a in.getColumnCount()
+eram esperados valores iguais, mas 0 não é igual a in.getRowCount()
+eram esperados valores iguais, mas 1 não é igual a in.getColumnCount()
+eram esperados valores iguais, mas COUNT não é igual a count
+eram esperados valores iguais, mas COUNT não é igual a count
+eram esperados valores iguais, mas 0 não é igual a min
+eram esperados valores iguais, mas max > 1024 * 32 não está contido em assertion verdadeira
+eram esperados valores iguais, mas average > 16.0f não está contido em assert verdadeiro
+eram esperados valores iguais, mas average < 64.0f não está contido em assert verdadeiro
+eram esperados valores iguais, mas compressedSize > 0 não está contido em assertion verdadeira
+eram esperados valores iguais, mas compressedSize < inputSize || codec.equals("null") não está contido em assertion verdadeira
+eram esperados valores iguais, mas decompressedBuffer é diferente de inputByteBuffer
+eram esperados valores iguais, mas compressedSize > 0 não está contido em assert verdadeiro
+eram esperados valores iguais, mas compressedSize < inputSize || codec.equals("null") não está contido em assertion verdadeira
+eram esperados valores iguais, mas decompressedBuffer é diferente de inputByteBuffer

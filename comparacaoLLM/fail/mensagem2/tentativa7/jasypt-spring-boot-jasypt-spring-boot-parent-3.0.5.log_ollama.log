@@ -1,0 +1,56 @@
+```java
+eram esperados valores iguais, mas "true" não é igual a ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Iterable<ConfigurationPropertySource>>>() {
+}, EncryptableConfigurationPropertySourcesPropertySource.class)
+eram esperados valores iguais, mas "false" não é igual a ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Map<String, Object>>>() {
+}, EncryptableConfigurationPropertySourcesPropertySource.class)
+eram esperados valores iguais, mas "true" não é igual a ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Map<String, Object>>>() {
+}, EncryptableMapPropertySourceWrapper.class)
+eram esperados valores iguais, mas "false" não é igual a ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Iterable<ConfigurationPropertySource>>>() {
+}, EncryptableMapPropertySourceWrapper.class)
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "true"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se deve incluir "some.property" na lista de propriedades, mas o valor é "false"
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se a mensagem decifrada está igual à mensagem originada
+verifica se existe algum bean "EnableEncryptablePropertiesBeanFactoryPostProcessor" no contexto
+verifica se existe algum bean "EnableEncryptablePropertiesBeanFactoryPostProcessor" no contexto
+verifica se o valor da propriedade "fooString" é igual a "test1"
+verifica se o valor da propriedade "barString" é igual a "test2"
+verifica se a lista de propriedades "fooList" não está vazia
+verifica se a lista de propriedades "fooList" está igual a "[a1, b1]"
+verifica se a lista de propriedades "barList" não está vazia
+verifica se a lista de propriedades "barList" está igual a "[a2, b2]"
+verifica se o mapa de propriedades "getStringMap" não está vazio
+verifica se o mapa de propriedades "getStringMap" está igual a "{k1=v1}"
+verifica se o mapa de propriedades "getListMap" não está vazio
+verifica se o mapa de propriedades "getListMap" está igual a "{k2=[v2]}"
+```
+
+Essas mensagens fornecem uma descrição clara do que está acontecendo com cada assert, ajudando a identificar e corrigir o problema de testes unitários.

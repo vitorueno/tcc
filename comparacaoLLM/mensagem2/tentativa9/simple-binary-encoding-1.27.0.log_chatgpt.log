@@ -1,0 +1,89 @@
+eram esperados valores iguais, mas "{\n" + "    \"serialNumber\": 1234,\n" + "    \"modelYear\": 2013,\n" + "    \"available\": \"T\",\n" + "    \"code\": \"A\",\n" + "    \"someNumbers\": [0, 1, 2, 3, 4],\n" + "    \"vehicleCode\": \"ab\\\"def\",\n" + "    \"extras\": { \"sunRoof\": false, \"sportsPack\": true, \"cruiseControl\": true },\n" + "    \"engine\": \n" + "    {\n" + "        \"capacity\": 2000,\n" + "        \"numCylinders\": 4,\n" + "        \"maxRpm\": 9000,\n" + "        \"manufacturerCode\": \"123\",\n" + "        \"fuel\": \"Petrol\"\n" + "    },\n" + "    \"uuid\": [7, 3],\n" + "    \"cupHolderCount\": 5,\n" + "    \"fuelFigures\": [\n" + "    {\n" + "        \"speed\": 30,\n" + "        \"mpg\": 35.9\n" + "    },\n" + "    {\n" + "        \"speed\": 55,\n" + "        \"mpg\": 49.0\n" + "    },\n" + "    {\n" + "        \"speed\": 75,\n" + "        \"mpg\": 40.0\n" + "    }],\n" + "    \"performanceFigures\": [\n" + "    {\n" + "        \"octaneRating\": 95,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 4.0\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.5\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 12.2\n" + "        }]\n" + "    },\n" + "    {\n" + "        \"octaneRating\": 99,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 3.8\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.1\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 11.8\n" + "        }]\n" + "    }],\n" + "    \"manufacturer\": \"Honda\",\n" + "    \"model\": \"Civic VTi\",\n" + "    \"activationCode\": \"315\\\\8\"\n" + "}" é diferente de result
+eram esperados valores iguais, mas "{\n" + "    \"login\": \"example\",\n" + "    \"encryptedPassword\": \"0b004061\"\n" + "}" é diferente de result
+eram esperados valores iguais, mas "For input string: \"" + value + "\"" é diferente de exception.getMessage()
+eram esperados valores iguais, mas "had 4 errors" é diferente de exception.getMessage()
+eram esperados valores iguais, mas null é diferente de transformedSchema.version()
+eram esperados valores iguais, mas null é diferente de map.get("testType").semanticType()
+eram esperados valores iguais, mas null é diferente de ((EncodedDataType) map.get("testTypeDefaultCharMinValue")).minValue()
+eram esperados valores iguais, mas null é diferente de ((EncodedDataType) map.get("testTypeDefaultCharMaxValue")).maxValue()
+eram esperados valores iguais, mas null é diferente de ((EncodedDataType) map.get("testTypeDefaultCharNullValue")).nullValue()
+A execução falhou por uma causa deliberada
+eram esperados valores iguais, mas null é diferente de fields.get(1).dimensionType()
+eram esperados valores iguais, mas null é diferente de groupFields
+eram esperados valores iguais, mas null é diferente de testResource
+eram esperados valores iguais, mas null é diferente de messageSchema.getType("Symbol")
+A execução falhou por uma causa deliberada
+eram esperados valores iguais, mas null é diferente de fields.get(1).type()
+eram esperados valores iguais, mas null é diferente de fields.get(1).type()
+eram esperados valores iguais, mas null é diferente de fields.get(1).type()
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+A execução falhou por uma causa deliberada
+eram esperados valores iguais, mas SchemaTransformer.IDENTITY_TRANSFORMER é diferente de schemaTransformerFactory.delegate()
+eram esperados valores iguais, mas SchemaTransformer.IDENTITY_TRANSFORMER é diferente de schemaTransformerFactory.delegate()
+eram esperados valores iguais, mas SinceVersionSchemaTransformer é diferente de delegate
+eram esperados valores iguais, mas 5 é diferente de transformer.sinceVersion()
+eram esperados valores iguais, mas IdKeyedSchemaTransformer é diferente de delegate
+eram esperados valores iguais, mas 20 é diferente de schemaTransformer1.sinceVersion()
+eram esperados valores iguais, mas 32 é diferente de schemaTransformer4.sinceVersion()
+eram esperados valores iguais, mas 5 é diferente de schemaTransformerDefault.sinceVersion()
+eram esperados valores iguais, mas 'a' é diferente de (char) aByte
+eram esperados valores iguais, mas "97" é diferente de Byte.toString(aByte)
+eram esperados valores iguais, mas "65_u8" é diferente de generateRustLiteral(CHAR, "65")
+eram esperados valores iguais, mas "64.1_f64" é diferente de generateRustLiteral(DOUBLE, "64.1")
+eram esperados valores iguais, mas "f64::NAN" é diferente de generateRustLiteral(DOUBLE, "NaN")
+eram esperados valores iguais, mas "64.1_f32" é diferente de generateRustLiteral(FLOAT, "64.1")
+eram esperados valores iguais, mas "f32::NAN" é diferente de generateRustLiteral(FLOAT, "NaN")
+eram esperados valores iguais, mas "65_i8" é diferente de generateRustLiteral(INT8, "65")
+eram esperados valores iguais, mas "65_i16" é diferente de generateRustLiteral(INT16, "65")
+eram esperados valores iguais, mas "65_i32" é diferente de generateRustLiteral(INT32, "65")
+eram esperados valores iguais, mas "65_i64" é diferente de generateRustLiteral(INT64, "65")
+eram esperados valores iguais, mas "0x41_u8" é diferente de generateRustLiteral(UINT8, "65")
+eram esperados valores iguais, mas "0x41_u16" é diferente de generateRustLiteral(UINT16, "65")
+eram esperados valores iguais, mas "0x41_u32" é diferente de generateRustLiteral(UINT32, "65")
+eram esperados valores iguais, mas "0x41_u64" é diferente de generateRustLiteral(UINT64, "65")
+eram esperados valores iguais, mas "0xff_u8" é diferente de generateRustLiteral(UINT8, UINT8.nullValue().toString())
+eram esperados valores iguais, mas "0xffff_u16" é diferente de generateRustLiteral(UINT16, UINT16.nullValue().toString())
+eram esperados valores iguais, mas "0xffffffff_u32" é diferente de generateRustLiteral(UINT32, UINT32.nullValue().toString())
+eram esperados valores iguais, mas "0xffffffffffffffff_u64" é diferente de generateRustLiteral(UINT64, UINT64.nullValue().toString())
+eram esperados valores iguais, mas "ABee" é diferente de cleanUpperAcronyms("ABee")
+eram esperados valores iguais, mas "mdEntryTypeBook" é diferente de cleanUpperAcronyms("MDEntryTypeBook")
+eram esperados valores iguais, mas "MD_EntryTypeBook" é diferente de cleanUpperAcronyms("MD_EntryTypeBook")
+eram esperados valores iguais, mas "price9Book" é diferente de cleanUpperAcronyms("PRICE9Book")
+eram esperados valores iguais, mas "" é diferente de formatFunctionName("")
+eram esperados valores iguais, mas "a" é diferente de formatFunctionName("a")
+eram esperados valores iguais, mas "a" é diferente de formatFunctionName("A")
+eram esperados valores iguais, mas "car" é diferente de formatFunctionName("Car")
+eram esperados valores iguais, mas "car" é diferente de formatFunctionName("car")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("DecodeCar")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("decodeCar")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("decode_car")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("Decode_car")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("decode_Car")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("Decode_Car")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("DECODE_Car")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("DECODE_car")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("DECODECar")
+eram esperados valores iguais, mas "decode_car" é diferente de formatFunctionName("DECODE_CAR")
+eram esperados valores iguais, mas "decode_ca_r" é diferente de formatFunctionName("DECODE_caR")
+eram esperados valores iguais, mas "pricenull_9" é diferente de formatFunctionName("PRICENULL9")
+eram esperados valores iguais, mas "price_9_book" é diferente de formatFunctionName("PRICE9Book")
+eram esperados valores iguais, mas "issue_435" é diferente de formatFunctionName("issue435")
+eram esperados valores iguais, mas "upper_case" é diferente de formatFunctionName("UPPERCase")
+eram esperados valores iguais, mas "no_md_entries" é diferente de formatFunctionName("NoMDEntries")
+eram esperados valores iguais, mas "md_entry_type_book" é diferente de formatFunctionName("MD_EntryTYPEBook")
+eram esperados valores iguais, mas "cl_ord_id" é diferente de formatFunctionName("ClOrdID")
+eram esperados valores iguais, mas "ab_c" é diferente de formatFunctionName("aBc")
+eram esperados valores iguais, mas "ab_cd" é diferente de formatFunctionName("aBcD")
+eram esperados valores iguais, mas "ab_cd" é diferente de formatFunctionName("aB_cD")
+eram esperados valores iguais, mas "ab_cd" é diferente de formatFunctionName("AbCd")
+eram esperados valores iguais, mas true é diferente de containsCodeWithSinceVersion(sources, versionIncluded)
+eram esperados valores iguais, mas true é diferente de doesNotContainsCodeWithSinceVersion(sources, versionExcluded)
+eram esperados valores iguais, mas "[Car]" + "(sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):" + "serialNumber=1234|modelYear=2013|available=T|code=A|" + "someNumbers=[0,1,2,3,4]|" + "vehicleCode=ab\"def|" + "extras={sportsPack,cruiseControl}|" + "engine=(capacity=2000|numCylinders=4|manufacturerCode=123|)|" + "uuid=[7,3]|cupHolderCount=5|" + "fuelFigures=[" + "(speed=30|mpg=35.9)," + "(speed=55|mpg=49.0)," + "(speed=75|mpg=40.0)]|" + "performanceFigures=[" + "(octaneRating=95|acceleration=[(mph=30|seconds=4.0),(mph=60|seconds=7.5),(mph=100|seconds=12.2)])," + "(octaneRating=99|acceleration=[(mph=30|seconds=3.8),(mph=60|seconds=7.1),(mph=100|seconds=11.8)])]|" + "manufacturer='Honda'|model='Civic VTi'|activationCode='315\\8'" é diferente de result
+eram esperados valores iguais, mas "[Car]" + "(sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):" + "serialNumber=0|modelYear=0|available=F|code=NULL_VAL|someNumbers=[0,0,0,0,0]|vehicleCode=|extras={}|" + "engine=(capacity=0|numCylinders=0|manufacturerCode=|)|" + "uuid=[0,0]|cupHolderCount=0|" + "fuelFigures=[]|performanceFigures=[]|manufacturer=''|model=''|activationCode=''" é diferente de result

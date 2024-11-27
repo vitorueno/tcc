@@ -1,0 +1,75 @@
+eram esperados valores iguais, mas "java.lang.Object" é diferente de type.describe()
+o tempo de execução excedeu 1000 milissegundos
+a declaração não foi bem-sucedida
+a declaração não foi bem-sucedida
+número de métodos é diferente de 1
+valor esperado: "a", valor atual: fd.get().getVariable(0).getInitializer().get().asStringLiteralExpr().getValue()
+caminho qualificado esperado: "X.A.bar", caminho qualificado atual: mce.resolve().getQualifiedName()
+tipo de parâmetro esperado: "java.lang.Runnable", tipo de parâmetro atual: resolved.getParam(0).getType().describe()
+a declaração não é genérica
+nome da declaração esperado: "MyAnnotation", nome atual: declaration.getNameAsString()
+nome da declaração esperado: "MyAnnotationWithElements", nome atual: declaration.getNameAsString()
+nome da declaração esperado: "VoidVisitor", nome atual: declaration.getNameAsString()
+a declaração não é uma interface
+nome da declaração esperado: "AccessSpecifier", nome atual: declaration.getNameAsString()
+nome da declaração esperado: "AccessSpecifier", nome atual: enumDeclaration.getNameAsString()
+nome da declaração esperado: "PUBLIC", nome atual: declaration.getNameAsString()
+nome da declaração esperado: "CompilationUnit", nome atual: classDeclaration.getNameAsString()
+nome da declaração esperado: "CompilationUnit", nome atual: classDeclaration.getNameAsString()
+nome do método esperado: "getComments", nome atual: resolvedDeclaration.getName()
+número de parâmetros diferente de 0
+nome da declaração esperado: "CompilationUnit", nome atual: classDeclaration.getNameAsString()
+representação do método esperada: "bar(Optional.of(new Derived()))", representação atual: mces.get(0).toString()
+assinatura qualificada do método esperada: "Base.bar(java.util.Optional<Base>)", assinatura qualificada atual: mces.get(0).resolve().getQualifiedSignature()
+foo não deve ser nulo
+o resultado não foi bem-sucedido
+assinatura qualificada do método esperada: "com.github.javaparser.symbolsolver.testingclasses.UtilityClass.method(com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum)", assinatura qualificada atual: rmd.getQualifiedSignature()
+nome do valor esperado: "CONSTANT", nome atual: rvd.getName()
+tipo do valor esperado: "com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum", tipo atual: rvd.getType().describe()
+qualificação do método esperada: "A.method", qualificação atual: mce.resolve().getQualifiedName()
+assinatura qualificada do método esperada: "Test.setRunnable(java.lang.String, java.lang.Runnable)", assinatura qualificada atual: mce.get(0).resolve().getQualifiedSignature()
+assinatura qualificada do método esperada: "Test.getContext(Test)", assinatura qualificada atual: mce.get(1).resolve().getQualifiedSignature()
+assinatura qualificada do método esperada: "Test.getContext(Test)", assinatura qualificada atual: sig
+tipo de retorno esperado: "java.lang.String", tipo de retorno atual: exprs.get(0).calculateResolvedType().describe()
+tipo de retorno esperado: "java.lang.String", tipo de retorno atual: exprs.get(1).calculateResolvedType().describe()
+tipo de retorno esperado: "java.lang.String", tipo de retorno atual: exprs.get(2).calculateResolvedType().describe()
+tipo de retorno esperado: "float", tipo de retorno atual: exprs.get(3).calculateResolvedType().describe()
+tipo de retorno esperado: "double", tipo de retorno atual: exprs.get(4).calculateResolvedType().describe()
+tipo de retorno esperado: "int", tipo de retorno atual: exprs.get(5).calculateResolvedType().describe()
+tipo de retorno esperado: "long", tipo de retorno atual: exprs.get(6).calculateResolvedType().describe()
+tipo de retorno esperado: "long", tipo de retorno atual: exprs.get(7).calculateResolvedType().describe()
+tipo de retorno esperado: "int", tipo de retorno atual: exprs.get(8).calculateResolvedType().describe()
+tipo de retorno esperado: "long", tipo de retorno atual: exprs.get(9).calculateResolvedType().describe()
+tipo de retorno esperado: "long", tipo de retorno atual: exprs.get(10).calculateResolvedType().describe()
+tipo de retorno esperado: "int", tipo de retorno atual: exprs.get(11).calculateResolvedType().describe()
+tipo de retorno esperado: "int", tipo de retorno atual: exprs.get(12).calculateResolvedType().describe()
+tipo de retorno esperado: "int", tipo de retorno atual: exprs.get(13).calculateResolvedType().describe()
+assinatura esperada: "InnerClass(int)", assinatura atual: rcd.getSignature()
+assinatura esperada: "InnerClass(int)", assinatura atual: rcd.getSignature()
+assinatura esperada: "InnerClass(int)", assinatura atual: rcd.getSignature()
+tipo de retorno esperado: "void", tipo de retorno atual: (mce.calculateResolvedType().describe())
+tipo de retorno esperado: "java.util.concurrent.TimeUnit", tipo de retorno atual: (mce.getArgument(0).calculateResolvedType().describe())
+o método não foi resolvido
+javaParserFacade.solve(expression) não deve ser nulo
+javaParserFacade.convertToUsage(expression.getType()) não deve ser nulo
+o resultado não foi bem-sucedido
+tipo de retorno esperado: "D", tipo de retorno atual: javaParserFacade.solve(methodCallExprs.get(0)).getCorrespondingDeclaration().getReturnType().describe()
+tipo de retorno esperado: "D", tipo de retorno atual: javaParserFacade.solve(methodCallExprs.get(2)).getCorrespondingDeclaration().getReturnType().describe()
+tipo de retorno esperado: "void", tipo de retorno atual: javaParserFacade.solve(methodCallExprs.get(1)).getCorrespondingDeclaration().getReturnType().describe()
+tipo de retorno esperado: "D", tipo de retorno atual: javaParserFacade.solve(methodCallExprs.get(4)).getCorrespondingDeclaration().getReturnType().describe()
+nome esperado: "java.lang.Object", nome atual: a.getQualifiedName()
+o caminho qualificado esperado não corresponde ao resultado
+o tipo resolvido esperado não corresponde ao resultado
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido
+o resultado não foi bem-sucedido

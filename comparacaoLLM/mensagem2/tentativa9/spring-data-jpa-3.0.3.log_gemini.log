@@ -1,0 +1,7 @@
+O tamanho do array acessor.getValues() era esperado como 0, mas o tamanho atual é diferente.
+O objeto acessor.getParameters() era esperado como igual a parameters, mas é diferente.
+O repositório userRepository era esperado como não nulo, mas é nulo.
+O repositório roleRepository era esperado como não nulo, mas é nulo.
+O repositório auditableUserRepository era esperado como não nulo, mas é nulo.
+O objeto mappingContext era esperado como não nulo, mas é nulo.
+Era esperado que o conjunto beans não estivesse vazio, mas está vazio.
