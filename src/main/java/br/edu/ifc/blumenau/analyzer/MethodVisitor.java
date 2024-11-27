@@ -64,6 +64,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
 
         if (isAssertionSemDescricao) {
             numAssertSemDesc.incrementAndGet();
+//            System.out.println(methodCallExpr);
 //            System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
             if (numeroAsserts() > 1) {
                 numAssertionRoulette.incrementAndGet();
@@ -72,6 +73,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         } else {
             numAssertComDesc.incrementAndGet();
 //            System.out.println("Assert com mensagem: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
+//            System.out.println(methodCallExpr);
         }
 
         if (!metodosChamados.contains(ancestor)) {

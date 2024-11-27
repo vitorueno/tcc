@@ -34,6 +34,25 @@ public class Analyzer {
     private int contador;
     private Set<String> assertsJunit;
 
+    public boolean isShouldWriteToFile() {
+        return shouldWriteToFile;
+    }
+
+    public void setShouldWriteToFile(boolean shouldWriteToFile) {
+        this.shouldWriteToFile = shouldWriteToFile;
+    }
+
+    public boolean isShouldRefactor() {
+        return shouldRefactor;
+    }
+
+    public void setShouldRefactor(boolean shouldRefactor) {
+        this.shouldRefactor = shouldRefactor;
+    }
+
+    private boolean shouldRefactor = true;
+    private boolean shouldWriteToFile = true;
+
     private CombinedTypeSolver combinedTypeSolver;
     private JavaSymbolSolver symbolSolver;
 
@@ -58,7 +77,7 @@ public class Analyzer {
 
         Path projectDir = Paths.get(projectPath);
 
-        System.out.println("\nProjeto: " + projectPath + "\n");
+//        System.out.println("\nProjeto: " + projectPath + "\n");
 
         StaticJavaParser.getConfiguration().setAttributeComments(false);
 
@@ -71,10 +90,10 @@ public class Analyzer {
             e.printStackTrace();
         }
 
-        System.out.println("Total asserts: " + totalAsserts);
-        System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
-        System.out.println("Asserts com descrição: " + totalAssertsComDesc);
-        System.out.println("Assertion Roulette: " + totalAssertionRoulette);
+//        System.out.println("Total asserts: " + totalAsserts);
+//        System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
+//        System.out.println("Asserts com descrição: " + totalAssertsComDesc);
+//        System.out.println("Assertion Roulette: " + totalAssertionRoulette);
     }
 
 
@@ -100,6 +119,10 @@ public class Analyzer {
             MethodVisitor methodVisitor = new MethodVisitor(totalAsserts, totalAssertsSemDesc, totalAssertsComDesc, totalAssertionRoulette, metodosTesteChamados);
             compilationUnit.accept(methodVisitor, path);
 
+            if (!shouldRefactor) {
+                return;
+            }
+
             for (MethodDeclaration method: metodosTesteChamados) {
                 method.getBody().ifPresent(body -> {
                     refactorAsserts(body, assertImports);
@@ -107,7 +130,9 @@ public class Analyzer {
             }
 
 //            printMethodsAfterRefactor();
-            writeToFile(path, compilationUnit);
+            if (shouldWriteToFile) {
+                writeToFile(path, compilationUnit);
+            }
 
         } catch (IOException ignored) {
 
@@ -144,10 +169,22 @@ public class Analyzer {
             if (assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue())
                     || assertImports.get(nomeMetodo) != null && assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_4.getValue())) {
 
-                Expression param1 = methodCall.getArgument(0);
-                Expression param2 = (qtdParametros == 2) ? methodCall.getArgument(1) : null;
+                Expression param1 = null;
+                Expression param2 = null;
+
+                try {
+                    param1 = methodCall.getArgument(0);
+                    param2 = (qtdParametros == 2) ? methodCall.getArgument(1) : null;
+                } catch(Exception e) {
+                    System.out.println("");
+                }
+
+                assert param1 != null;
+                assert param2 != null;
 
                 Expression mensagemAssert = criarMensagemAssert(nomeMetodo, param2, param1, body, newStatements);
+                System.out.println(mensagemAssert);
+
                 MethodCallExpr novaChamada = new MethodCallExpr(nomeMetodo);
 
                 if (assertImports.get(nomeMetodo).equals(AssertOrigin.JUNIT_5.getValue()) && !nomeMetodo.equals(Junit5Asserts.ASSERT_ALL.getMethodName())) {
@@ -156,12 +193,16 @@ public class Analyzer {
                     novaChamada = refactorJunit4(novaChamada, param1, param2, mensagemAssert);
                 }
 
+//                System.out.println(novaChamada);
+
                 statements.addAll(i, newStatements);
                 stmt.replace(new ExpressionStmt(novaChamada));
                 newStatements.clear();
-            } else {
-                System.out.println("refatoração não suportada para método: " + nomeMetodo);
+//                System.out.println(methodCall);
             }
+//            else {
+////                System.out.println("refatoração não suportada para método: " + nomeMetodo);
+//            }
         }
 
         // Apply the new statements after the iteration is done
@@ -173,17 +214,38 @@ public class Analyzer {
 
     private MethodCallExpr refactorJunit4(MethodCallExpr newMethodCall, Expression param1, Expression param2, Expression mensagemAssert) {
         newMethodCall = newMethodCall.addArgument(mensagemAssert);
-        newMethodCall = newMethodCall.addArgument(param1);
+        if (param1 != null) {
+            try {
+                newMethodCall = newMethodCall.addArgument(param1.toString());
+            } catch(Exception e) {
+
+            }
+        }
+
         if (param2 != null) {
-            newMethodCall = newMethodCall.addArgument(param2);
+            try{
+                newMethodCall = newMethodCall.addArgument(param2.toString());
+            } catch (Exception e) {
+
+            }
         }
         return newMethodCall;
     }
 
     private MethodCallExpr refactorJunit5(MethodCallExpr newMethodCall, Expression param1, Expression param2, Expression mensagemAssert) {
-        newMethodCall = newMethodCall.addArgument(param1.toString());
+        if (param1 != null) {
+            try {
+                newMethodCall = newMethodCall.addArgument(param1.toString());
+            } catch(Exception e) {
+
+            }
+        }
         if (param2 != null) {
-            newMethodCall = newMethodCall.addArgument(param2.toString());
+            try {
+                newMethodCall = newMethodCall.addArgument(param2.toString());
+            } catch(Exception e) {
+
+            }
         }
         newMethodCall = newMethodCall.addArgument(mensagemAssert);
         return newMethodCall;
@@ -338,16 +400,16 @@ public class Analyzer {
         }
     }
 
-    private void printMethodsAfterRefactor() {
-        System.out.println("\nMétodos Após refactor: \n");
-        for (MethodDeclaration method: metodosTesteChamados) {
-            method.getBody().ifPresent(body -> {
-                for (Statement stmt : body.getStatements()) {
-                    System.out.println(stmt);
-                }
-            });
-        }
-    }
+//    private void printMethodsAfterRefactor() {
+////        System.out.println("\nMétodos Após refactor: \n");
+//        for (MethodDeclaration method: metodosTesteChamados) {
+//            method.getBody().ifPresent(body -> {
+//                for (Statement stmt : body.getStatements()) {
+//                    System.out.println(stmt);
+//                }
+//            });
+//        }
+//    }
 
     private void writeToFile(Path path, CompilationUnit compilationUnit) throws IOException {
         try (FileWriter writer = new FileWriter(path.toString())) {

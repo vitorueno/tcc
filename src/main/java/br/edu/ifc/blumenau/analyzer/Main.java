@@ -11,6 +11,8 @@ public class Main {
 //        System.out.println("projeto: " + repo);
 
         Analyzer analyzer = new Analyzer(repo);
+        analyzer.setShouldRefactor(true);
+        analyzer.setShouldWriteToFile(false);
         analyzer.run();
     }
 }
