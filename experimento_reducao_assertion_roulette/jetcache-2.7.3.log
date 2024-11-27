@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/jetcache-2.7.3
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jetcache-2.7.3
-
-Total asserts: 1049
-Asserts sem descrição: 1018
-Asserts com descrição: 31
-Assertion Roulette: 957
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jetcache-2.7.3
-
 chamada antiga: Assert.assertArrayEquals(buildKey("123"), buildKey(new String("123")))
 nova chamada: assertArrayEquals(buildKey("123"), buildKey(new String("123")), "Era esperado arrays iguais, mas " + result0 + " <buildKey('123')> é diferente de " + result1 + " <buildKey(new String('123'))>")
 chamada antiga: Assert.assertArrayEquals(buildKey(new byte[] { 1, 2, 3 }), buildKey(new byte[] { 1, 2, 3 }))
@@ -1433,3 +1422,9 @@ Total asserts: 1049
 Asserts sem descrição: 1018
 Asserts com descrição: 31
 Assertion Roulette: 957
+
+Após do refactor: 
+Total asserts: 1049
+Asserts sem descrição: 717
+Asserts com descrição: 332
+Assertion Roulette: 700

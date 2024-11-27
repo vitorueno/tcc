@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/simple-binary-encoding-1.27.0
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/simple-binary-encoding-1.27.0
-
-Total asserts: 937
-Asserts sem descrição: 896
-Asserts com descrição: 41
-Assertion Roulette: 850
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/simple-binary-encoding-1.27.0
-
 chamada antiga: assertEquals("{\n" + "    \"serialNumber\": 1234,\n" + "    \"modelYear\": 2013,\n" + "    \"available\": \"T\",\n" + "    \"code\": \"A\",\n" + "    \"someNumbers\": [0, 1, 2, 3, 4],\n" + "    \"vehicleCode\": \"ab\\\"def\",\n" + "    \"extras\": { \"sunRoof\": false, \"sportsPack\": true, \"cruiseControl\": true },\n" + "    \"engine\": \n" + "    {\n" + "        \"capacity\": 2000,\n" + "        \"numCylinders\": 4,\n" + "        \"maxRpm\": 9000,\n" + "        \"manufacturerCode\": \"123\",\n" + "        \"fuel\": \"Petrol\"\n" + "    },\n" + "    \"uuid\": [7, 3],\n" + "    \"cupHolderCount\": 5,\n" + "    \"fuelFigures\": [\n" + "    {\n" + "        \"speed\": 30,\n" + "        \"mpg\": 35.9\n" + "    },\n" + "    {\n" + "        \"speed\": 55,\n" + "        \"mpg\": 49.0\n" + "    },\n" + "    {\n" + "        \"speed\": 75,\n" + "        \"mpg\": 40.0\n" + "    }],\n" + "    \"performanceFigures\": [\n" + "    {\n" + "        \"octaneRating\": 95,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 4.0\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.5\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 12.2\n" + "        }]\n" + "    },\n" + "    {\n" + "        \"octaneRating\": 99,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 3.8\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.1\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 11.8\n" + "        }]\n" + "    }],\n" + "    \"manufacturer\": \"Honda\",\n" + "    \"model\": \"Civic VTi\",\n" + "    \"activationCode\": \"315\\\\8\"\n" + "}", result)
 nova chamada: assertEquals("{\n" + "    \"serialNumber\": 1234,\n" + "    \"modelYear\": 2013,\n" + "    \"available\": \"T\",\n" + "    \"code\": \"A\",\n" + "    \"someNumbers\": [0, 1, 2, 3, 4],\n" + "    \"vehicleCode\": \"ab\\\"def\",\n" + "    \"extras\": { \"sunRoof\": false, \"sportsPack\": true, \"cruiseControl\": true },\n" + "    \"engine\": \n" + "    {\n" + "        \"capacity\": 2000,\n" + "        \"numCylinders\": 4,\n" + "        \"maxRpm\": 9000,\n" + "        \"manufacturerCode\": \"123\",\n" + "        \"fuel\": \"Petrol\"\n" + "    },\n" + "    \"uuid\": [7, 3],\n" + "    \"cupHolderCount\": 5,\n" + "    \"fuelFigures\": [\n" + "    {\n" + "        \"speed\": 30,\n" + "        \"mpg\": 35.9\n" + "    },\n" + "    {\n" + "        \"speed\": 55,\n" + "        \"mpg\": 49.0\n" + "    },\n" + "    {\n" + "        \"speed\": 75,\n" + "        \"mpg\": 40.0\n" + "    }],\n" + "    \"performanceFigures\": [\n" + "    {\n" + "        \"octaneRating\": 95,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 4.0\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.5\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 12.2\n" + "        }]\n" + "    },\n" + "    {\n" + "        \"octaneRating\": 99,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 3.8\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.1\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 11.8\n" + "        }]\n" + "    }],\n" + "    \"manufacturer\": \"Honda\",\n" + "    \"model\": \"Civic VTi\",\n" + "    \"activationCode\": \"315\\\\8\"\n" + "}", result, "Era esperado valores iguais, mas  '{\n' + '    \'serialNumber\': 1234,\n' + '    \'modelYear\': 2013,\n' + '    \'available\': \'T\',\n' + '    \'code\': \'A\',\n' + '    \'someNumbers\': [0, 1, 2, 3, 4],\n' + '    \'vehicleCode\': \'ab\\\'def\',\n' + '    \'extras\': { \'sunRoof\': false, \'sportsPack\': true, \'cruiseControl\': true },\n' + '    \'engine\': \n' + '    {\n' + '        \'capacity\': 2000,\n' + '        \'numCylinders\': 4,\n' + '        \'maxRpm\': 9000,\n' + '        \'manufacturerCode\': \'123\',\n' + '        \'fuel\': \'Petrol\'\n' + '    },\n' + '    \'uuid\': [7, 3],\n' + '    \'cupHolderCount\': 5,\n' + '    \'fuelFigures\': [\n' + '    {\n' + '        \'speed\': 30,\n' + '        \'mpg\': 35.9\n' + '    },\n' + '    {\n' + '        \'speed\': 55,\n' + '        \'mpg\': 49.0\n' + '    },\n' + '    {\n' + '        \'speed\': 75,\n' + '        \'mpg\': 40.0\n' + '    }],\n' + '    \'performanceFigures\': [\n' + '    {\n' + '        \'octaneRating\': 95,\n' + '        \'acceleration\': [\n' + '        {\n' + '            \'mph\': 30,\n' + '            \'seconds\': 4.0\n' + '        },\n' + '        {\n' + '            \'mph\': 60,\n' + '            \'seconds\': 7.5\n' + '        },\n' + '        {\n' + '            \'mph\': 100,\n' + '            \'seconds\': 12.2\n' + '        }]\n' + '    },\n' + '    {\n' + '        \'octaneRating\': 99,\n' + '        \'acceleration\': [\n' + '        {\n' + '            \'mph\': 30,\n' + '            \'seconds\': 3.8\n' + '        },\n' + '        {\n' + '            \'mph\': 60,\n' + '            \'seconds\': 7.1\n' + '        },\n' + '        {\n' + '            \'mph\': 100,\n' + '            \'seconds\': 11.8\n' + '        }]\n' + '    }],\n' + '    \'manufacturer\': \'Honda\',\n' + '    \'model\': \'Civic VTi\',\n' + '    \'activationCode\': \'315\\\\8\'\n' + '}' é diferente de " + " result")
 chamada antiga: assertEquals("{\n" + "    \"login\": \"example\",\n" + "    \"encryptedPassword\": \"0b004061\"\n" + "}", result)
@@ -359,3 +348,9 @@ Total asserts: 937
 Asserts sem descrição: 896
 Asserts com descrição: 41
 Assertion Roulette: 850
+
+Após do refactor: 
+Total asserts: 937
+Asserts sem descrição: 744
+Asserts com descrição: 193
+Assertion Roulette: 721

@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/springdoc-openapi-2.0.2
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/springdoc-openapi-2.0.2
-
-Total asserts: 163
-Asserts sem descrição: 117
-Asserts com descrição: 46
-Assertion Roulette: 59
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/springdoc-openapi-2.0.2
-
 chamada antiga: Assertions.assertTrue(!result.contains("!<Type A>"))
 nova chamada: assertTrue(!result.contains("!<Type A>"), "Era esperado verdadeiro, mas o valor obtido é falso")
 chamada antiga: assertTrue(contentAsString.contains("Swagger UI"))
@@ -57,3 +46,9 @@ Total asserts: 163
 Asserts sem descrição: 117
 Asserts com descrição: 46
 Assertion Roulette: 59
+
+Após do refactor: 
+Total asserts: 163
+Asserts sem descrição: 99
+Asserts com descrição: 64
+Assertion Roulette: 52

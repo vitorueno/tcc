@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1
-
-Total asserts: 6158
-Asserts sem descrição: 5878
-Asserts com descrição: 261
-Assertion Roulette: 4499
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1
-
 chamada antiga: assertEquals("java.lang.Object", type.describe())
 nova chamada: assertEquals("java.lang.Object", type.describe(), "Era esperado valores iguais, mas  'java.lang.Object' é diferente de " + result0 + " <type.describe()>")
 chamada antiga: assertTimeoutPreemptively(Duration.ofMillis(1000L), () -> {
@@ -10277,3 +10266,9 @@ Total asserts: 6158
 Asserts sem descrição: 5878
 Asserts com descrição: 261
 Assertion Roulette: 4499
+
+Após do refactor: 
+Total asserts: 6159
+Asserts sem descrição: 1000
+Asserts com descrição: 5140
+Assertion Roulette: 600

@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/avro-release-1.11.1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/avro-release-1.11.1
-
-Total asserts: 2618
-Asserts sem descrição: 2215
-Asserts com descrição: 403
-Assertion Roulette: 1859
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/avro-release-1.11.1
-
 chamada antiga: assertEquals(jsonData, run(new DataFileReadTool(), sampleFile.getPath()))
 nova chamada: assertEquals("Era esperado valores iguais, mas  jsonData é diferente de " + result0 + " <run(new DataFileReadTool(), sampleFile.getPath())>", jsonData, run(new DataFileReadTool(), sampleFile.getPath()))
 chamada antiga: assertEquals(jsonData, run(new DataFileReadTool(), stdin, "-"))
@@ -3755,3 +3744,9 @@ Total asserts: 2618
 Asserts sem descrição: 2215
 Asserts com descrição: 403
 Assertion Roulette: 1859
+
+Após do refactor: 
+Total asserts: 2618
+Asserts sem descrição: 1036
+Asserts com descrição: 1582
+Assertion Roulette: 882

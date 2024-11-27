@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/OpenPDF-1.3.30
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/OpenPDF-1.3.30
-
-Total asserts: 363
-Asserts sem descrição: 239
-Asserts com descrição: 124
-Assertion Roulette: 177
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/OpenPDF-1.3.30
-
 chamada antiga: assertTrue(result.length > input.length)
 nova chamada: assertTrue(result.length > input.length, "Era esperado verdadeiro, mas o valor obtido é falso")
 chamada antiga: Assertions.assertEquals(2, countPages(target))
@@ -328,3 +317,9 @@ Total asserts: 363
 Asserts sem descrição: 239
 Asserts com descrição: 124
 Assertion Roulette: 177
+
+Após do refactor: 
+Total asserts: 363
+Asserts sem descrição: 197
+Asserts com descrição: 166
+Assertion Roulette: 145

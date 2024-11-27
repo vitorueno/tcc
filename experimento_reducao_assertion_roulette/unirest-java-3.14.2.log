@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/unirest-java-3.14.2
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/unirest-java-3.14.2
-
-Total asserts: 1043
-Asserts sem descrição: 964
-Asserts com descrição: 79
-Assertion Roulette: 680
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/unirest-java-3.14.2
-
 chamada antiga: assertEquals("Hey Ma", body)
 nova chamada: assertEquals("Hey Ma", body, "Era esperado valores iguais, mas  'Hey Ma' é diferente de " + " body")
 chamada antiga: assertNull(Unirest.post(path).asString().getBody())
@@ -1793,3 +1782,9 @@ Total asserts: 1043
 Asserts sem descrição: 964
 Asserts com descrição: 79
 Assertion Roulette: 680
+
+Após do refactor: 
+Total asserts: 1043
+Asserts sem descrição: 87
+Asserts com descrição: 956
+Assertion Roulette: 59

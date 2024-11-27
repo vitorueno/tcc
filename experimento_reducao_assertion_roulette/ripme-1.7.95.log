@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/ripme-1.7.95
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/ripme-1.7.95
-
-Total asserts: 134
-Asserts sem descrição: 126
-Asserts com descrição: 8
-Assertion Roulette: 56
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/ripme-1.7.95
-
 chamada antiga: assertEquals("test.test", fileName)
 nova chamada: assertEquals("test.test", fileName, "Era esperado valores iguais, mas  'test.test' é diferente de " + " fileName")
 chamada antiga: assertEquals("test", fileName)
@@ -41,3 +30,9 @@ Total asserts: 134
 Asserts sem descrição: 126
 Asserts com descrição: 8
 Assertion Roulette: 56
+
+Após do refactor: 
+Total asserts: 134
+Asserts sem descrição: 120
+Asserts com descrição: 14
+Assertion Roulette: 51

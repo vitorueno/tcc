@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/liquibase-4.19.1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/liquibase-4.19.1
-
-Total asserts: 1461
-Asserts sem descrição: 1302
-Asserts com descrição: 159
-Assertion Roulette: 1077
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/liquibase-4.19.1
-
 chamada antiga: assertNotNull(cdiLiquibase)
 nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", cdiLiquibase)
 chamada antiga: assertEquals(shouldBeRunning, cdiLiquibase.isInitialized())
@@ -2225,3 +2214,9 @@ Total asserts: 1461
 Asserts sem descrição: 1302
 Asserts com descrição: 159
 Assertion Roulette: 1077
+
+Após do refactor: 
+Total asserts: 1461
+Asserts sem descrição: 277
+Asserts com descrição: 1184
+Assertion Roulette: 203

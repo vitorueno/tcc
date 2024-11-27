@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/spring-batch-5.0.1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/spring-batch-5.0.1
-
-Total asserts: 7126
-Asserts sem descrição: 5974
-Asserts com descrição: 1152
-Assertion Roulette: 4934
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/spring-batch-5.0.1
-
 chamada antiga: assertEquals(trade.getIsin(), rs.getString(1))
 nova chamada: assertEquals(trade.getIsin(), rs.getString(1), "Era esperado valores iguais, mas " + result0 + " <trade.getIsin()> é diferente de " + result1 + " <rs.getString(1)>")
 chamada antiga: assertEquals(trade.getQuantity(), rs.getLong(2))
@@ -11487,3 +11476,9 @@ Total asserts: 7126
 Asserts sem descrição: 5974
 Asserts com descrição: 1152
 Assertion Roulette: 4934
+
+Após do refactor: 
+Total asserts: 7126
+Asserts sem descrição: 327
+Asserts com descrição: 6799
+Assertion Roulette: 267

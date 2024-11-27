@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/redisson-redisson-3.19.3
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/redisson-redisson-3.19.3
-
-Total asserts: 7589
-Asserts sem descrição: 7483
-Asserts com descrição: 106
-Assertion Roulette: 6623
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/redisson-redisson-3.19.3
-
 chamada antiga: Assertions.assertTrue(sync(list.add("1")))
 nova chamada: assertTrue(sync(list.add("1")), "Era esperado verdadeiro, mas " + result0 + " <sync(list.add('1'))> é falso")
 chamada antiga: Assertions.assertTrue(sync(list.add("2")))
@@ -2616,3 +2605,9 @@ Total asserts: 7589
 Asserts sem descrição: 7483
 Asserts com descrição: 106
 Assertion Roulette: 6623
+
+Após do refactor: 
+Total asserts: 7589
+Asserts sem descrição: 7236
+Asserts com descrição: 353
+Assertion Roulette: 6391

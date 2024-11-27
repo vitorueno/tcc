@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/simplify-1.3.0
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/simplify-1.3.0
-
-Total asserts: 444
-Asserts sem descrição: 418
-Asserts com descrição: 26
-Assertion Roulette: 318
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/simplify-1.3.0
-
 chamada antiga: assertEquals(expectedRegisterCount, actualRegisterCount)
 nova chamada: assertEquals(expectedRegisterCount, actualRegisterCount, "Era esperado valores iguais, mas  expectedRegisterCount é diferente de " + " actualRegisterCount")
 chamada antiga: assertArrayEquals(expectedLines, actualLines)
@@ -777,3 +766,9 @@ Total asserts: 444
 Asserts sem descrição: 418
 Asserts com descrição: 26
 Assertion Roulette: 318
+
+Após do refactor: 
+Total asserts: 444
+Asserts sem descrição: 39
+Asserts com descrição: 405
+Assertion Roulette: 29

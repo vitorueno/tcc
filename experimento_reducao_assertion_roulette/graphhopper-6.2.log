@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/graphhopper-6.2
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/graphhopper-6.2
-
-Total asserts: 6225
-Asserts sem descrição: 4304
-Asserts com descrição: 1920
-Assertion Roulette: 4124
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/graphhopper-6.2
-
 chamada antiga: assertTrue(impossibleAlternative.isImpossible())
 nova chamada: assertTrue(impossibleAlternative.isImpossible(), "Era esperado verdadeiro, mas " + result0 + " <impossibleAlternative.isImpossible()> é falso")
 chamada antiga: assertTrue(((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled)
@@ -7881,3 +7870,9 @@ Total asserts: 6225
 Asserts sem descrição: 4304
 Asserts com descrição: 1920
 Assertion Roulette: 4124
+
+Após do refactor: 
+Total asserts: 6228
+Asserts sem descrição: 737
+Asserts com descrição: 5490
+Assertion Roulette: 711

@@ -1,18 +1,13 @@
-Antes do refactor: 
-
 
 Projeto: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155
 
+Antes do refactor: 
 Total asserts: 583
 Asserts sem descrição: 563
 Asserts com descrição: 20
 Assertion Roulette: 472
 
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155
-
+Após do refactor: 
 Total asserts: 583
 Asserts sem descrição: 563
 Asserts com descrição: 20

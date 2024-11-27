@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/cucumber-jvm-7.11.1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/cucumber-jvm-7.11.1
-
-Total asserts: 2165
-Asserts sem descrição: 1769
-Asserts com descrição: 354
-Assertion Roulette: 1084
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/cucumber-jvm-7.11.1
-
 chamada antiga: assertEquals(n, belly.getCukes())
 nova chamada: assertEquals(n, belly.getCukes(), "Era esperado valores iguais, mas  n é diferente de " + result0 + " <belly.getCukes()>")
 chamada antiga: assertDoesNotThrow(factory::stop)
@@ -1139,3 +1128,9 @@ Total asserts: 2165
 Asserts sem descrição: 1769
 Asserts com descrição: 354
 Assertion Roulette: 1084
+
+Após do refactor: 
+Total asserts: 2165
+Asserts sem descrição: 1236
+Asserts com descrição: 887
+Assertion Roulette: 786

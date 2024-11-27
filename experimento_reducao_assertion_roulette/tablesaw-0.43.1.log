@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/tablesaw-0.43.1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/tablesaw-0.43.1
-
-Total asserts: 2899
-Asserts sem descrição: 2548
-Asserts com descrição: 351
-Assertion Roulette: 2159
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/tablesaw-0.43.1
-
 chamada antiga: assertEquals("<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>", output)
 nova chamada: assertEquals("<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>", output, "Era esperado valores iguais, mas  'table' + LINE_END + ' thead' + LINE_END + '  tr' + LINE_END + '   thv/th' + LINE_END + '   thv2/th' + LINE_END + '  /tr' + LINE_END + ' /thead' + LINE_END + ' tbody' + LINE_END + '  tr' + LINE_END + '   td1/td' + LINE_END + '   td1/td' + LINE_END + '  /tr' + LINE_END + '  tr' + LINE_END + '   td2/td' + LINE_END + '   td2/td' + LINE_END + '  /tr' + LINE_END + '  tr' + LINE_END + '   td/td' + LINE_END + '   td/td' + LINE_END + '  /tr' + LINE_END + ' /tbody' + LINE_END + '/table' é diferente de " + " output")
 chamada antiga: assertEquals("<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"odd\">" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>", output)
@@ -4779,3 +4768,9 @@ Total asserts: 2899
 Asserts sem descrição: 2548
 Asserts com descrição: 351
 Assertion Roulette: 2159
+
+Após do refactor: 
+Total asserts: 2899
+Asserts sem descrição: 203
+Asserts com descrição: 2696
+Assertion Roulette: 182

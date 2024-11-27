@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3
-
-Total asserts: 3255
-Asserts sem descrição: 3209
-Asserts com descrição: 46
-Assertion Roulette: 2850
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jsoup-jsoup-1.15.3
-
 chamada antiga: assertNotNull(files)
 nova chamada: assertNotNull(files, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertTrue(files.length > 10)
@@ -6207,3 +6196,9 @@ Total asserts: 3255
 Asserts sem descrição: 3209
 Asserts com descrição: 46
 Assertion Roulette: 2850
+
+Após do refactor: 
+Total asserts: 3255
+Asserts sem descrição: 226
+Asserts com descrição: 3029
+Assertion Roulette: 207

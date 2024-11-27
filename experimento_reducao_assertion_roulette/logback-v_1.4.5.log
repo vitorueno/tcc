@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/logback-v_1.4.5
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/logback-v_1.4.5
-
-Total asserts: 1835
-Asserts sem descrição: 1725
-Asserts com descrição: 110
-Assertion Roulette: 1281
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/logback-v_1.4.5
-
 chamada antiga: assertNotNull(consoleAppender)
 nova chamada: assertNotNull(consoleAppender, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertTrue(checker.isErrorFree(0))
@@ -2827,3 +2816,9 @@ Total asserts: 1835
 Asserts sem descrição: 1725
 Asserts com descrição: 110
 Assertion Roulette: 1281
+
+Após do refactor: 
+Total asserts: 1835
+Asserts sem descrição: 669
+Asserts com descrição: 1166
+Assertion Roulette: 549

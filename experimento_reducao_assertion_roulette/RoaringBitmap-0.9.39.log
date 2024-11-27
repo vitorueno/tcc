@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/RoaringBitmap-0.9.39
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/RoaringBitmap-0.9.39
-
-Total asserts: 6627
-Asserts sem descrição: 6406
-Asserts com descrição: 221
-Assertion Roulette: 5804
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/RoaringBitmap-0.9.39
-
 chamada antiga: assertFalse(RoaringBitmap.bitmapOf().stream().iterator().hasNext())
 nova chamada: assertFalse(RoaringBitmap.bitmapOf().stream().iterator().hasNext(), "Era esperado falso, mas " + result0 + " <RoaringBitmap.bitmapOf().stream().iterator().hasNext()> é verdadeiro ")
 chamada antiga: assertFalse(RoaringBitmap.bitmapOf().reverseStream().iterator().hasNext())
@@ -10079,3 +10068,9 @@ Total asserts: 6627
 Asserts sem descrição: 6406
 Asserts com descrição: 221
 Assertion Roulette: 5804
+
+Após do refactor: 
+Total asserts: 6647
+Asserts sem descrição: 2079
+Asserts com descrição: 4568
+Assertion Roulette: 1944

@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/Recaf-2.21.13
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/Recaf-2.21.13
-
-Total asserts: 589
-Asserts sem descrição: 582
-Asserts com descrição: 6
-Assertion Roulette: 509
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/Recaf-2.21.13
-
 chamada antiga: assertEquals("test/Person", graph.getCommon("test/Jedi", "test/Sith"))
 nova chamada: assertEquals("test/Person", graph.getCommon("test/Jedi", "test/Sith"), "Era esperado valores iguais, mas  'test/Person' é diferente de " + result0 + " <graph.getCommon('test/Jedi', 'test/Sith')>")
 chamada antiga: assertEquals("test/Person", graph.getCommon("test/Jedi", "test/Person"))
@@ -859,3 +848,9 @@ Total asserts: 589
 Asserts sem descrição: 582
 Asserts com descrição: 6
 Assertion Roulette: 509
+
+Após do refactor: 
+Total asserts: 589
+Asserts sem descrição: 161
+Asserts com descrição: 427
+Assertion Roulette: 121

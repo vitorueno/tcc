@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/spring-data-jpa-3.0.3
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/spring-data-jpa-3.0.3
-
-Total asserts: 1658
-Asserts sem descrição: 1658
-Asserts com descrição: 0
-Assertion Roulette: 1063
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/spring-data-jpa-3.0.3
-
 chamada antiga: Assertions.assertEquals(0, accessor.getValues().length)
 nova chamada: assertEquals("Era esperado valores iguais, mas  0 é diferente de " + " accessor.getValues().length", 0, accessor.getValues().length)
 chamada antiga: Assertions.assertEquals(parameters, accessor.getParameters())
@@ -31,3 +20,9 @@ Total asserts: 1658
 Asserts sem descrição: 1658
 Asserts com descrição: 0
 Assertion Roulette: 1063
+
+Após do refactor: 
+Total asserts: 1658
+Asserts sem descrição: 1653
+Asserts com descrição: 5
+Assertion Roulette: 1060

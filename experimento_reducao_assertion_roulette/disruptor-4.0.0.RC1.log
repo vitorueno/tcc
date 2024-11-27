@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/disruptor-4.0.0.RC1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/disruptor-4.0.0.RC1
-
-Total asserts: 290
-Asserts sem descrição: 218
-Asserts com descrição: 72
-Assertion Roulette: 148
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/disruptor-4.0.0.RC1
-
 chamada antiga: assertNotNull(eventHandlerGroup)
 nova chamada: assertNotNull(eventHandlerGroup, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertSame(testException, actualException)
@@ -183,3 +172,9 @@ Total asserts: 290
 Asserts sem descrição: 218
 Asserts com descrição: 72
 Assertion Roulette: 148
+
+Após do refactor: 
+Total asserts: 290
+Asserts sem descrição: 135
+Asserts com descrição: 155
+Assertion Roulette: 90

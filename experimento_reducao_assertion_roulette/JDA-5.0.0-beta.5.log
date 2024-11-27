@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/JDA-5.0.0-beta.5
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/JDA-5.0.0-beta.5
-
-Total asserts: 388
-Asserts sem descrição: 363
-Asserts com descrição: 24
-Assertion Roulette: 355
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/JDA-5.0.0-beta.5
-
 chamada antiga: Assertions.assertEquals(10, object.getInt("int", 0))
 nova chamada: assertEquals(10, object.getInt("int", 0), "Era esperado valores iguais, mas  10 é diferente de " + result0 + " <object.getInt('int', 0)>")
 chamada antiga: Assertions.assertEquals(100, object.getLong("long", 0))
@@ -619,3 +608,9 @@ Total asserts: 388
 Asserts sem descrição: 363
 Asserts com descrição: 24
 Assertion Roulette: 355
+
+Após do refactor: 
+Total asserts: 388
+Asserts sem descrição: 327
+Asserts com descrição: 60
+Assertion Roulette: 319

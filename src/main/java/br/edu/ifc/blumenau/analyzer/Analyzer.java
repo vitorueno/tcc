@@ -79,7 +79,32 @@ public class Analyzer {
 
         System.out.println("\nProjeto: " + projectPath + "\n");
 
+        System.out.println("Antes do refactor: ");
+
         StaticJavaParser.getConfiguration().setAttributeComments(false);
+
+        try {
+            Files.walk(projectDir)
+                    .filter(Files::isRegularFile)
+                    .filter(path -> path.toString().endsWith(".java"))
+                    .forEach(this::analyzeFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Total asserts: " + totalAsserts);
+        System.out.println("Asserts sem descrição: " + totalAssertsSemDesc);
+        System.out.println("Asserts com descrição: " + totalAssertsComDesc);
+        System.out.println("Assertion Roulette: " + totalAssertionRoulette);
+
+        setShouldRefactor(false);
+        setShouldWriteToFile(false);
+        totalAsserts.set(0);
+        totalAssertsSemDesc.set(0);
+        totalAssertsComDesc.set(0);
+        totalAssertionRoulette.set(0);
+
+        System.out.println("\nApós do refactor: ");
 
         try {
             Files.walk(projectDir)

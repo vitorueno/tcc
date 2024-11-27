@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/jodd-5.3.0
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jodd-5.3.0
-
-Total asserts: 4483
-Asserts sem descrição: 4382
-Asserts com descrição: 101
-Assertion Roulette: 4101
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jodd-5.3.0
-
 chamada antiga: assertEquals(1, jspFragment.count)
 nova chamada: assertEquals(1, jspFragment.count, "Era esperado valores iguais, mas  1 é diferente de " + " jspFragment.count")
 chamada antiga: assertEquals(1, jspFragment.count)
@@ -8239,3 +8228,9 @@ Total asserts: 4483
 Asserts sem descrição: 4382
 Asserts com descrição: 101
 Assertion Roulette: 4101
+
+Após do refactor: 
+Total asserts: 4483
+Asserts sem descrição: 330
+Asserts com descrição: 4153
+Assertion Roulette: 293

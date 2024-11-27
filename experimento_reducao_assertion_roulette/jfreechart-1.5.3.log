@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/jfreechart-1.5.3
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jfreechart-1.5.3
-
-Total asserts: 9471
-Asserts sem descrição: 8328
-Asserts com descrição: 1143
-Assertion Roulette: 7616
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jfreechart-1.5.3
-
 chamada antiga: assertNull(p1.getUnderlyingDataset())
 nova chamada: assertNull(p1.getUnderlyingDataset(), "Era esperado nulo, mas " + result0 + " <p1.getUnderlyingDataset()> não é nulo")
 chamada antiga: assertEquals(p1.getItemCount(), 0)
@@ -16051,3 +16040,9 @@ Total asserts: 9471
 Asserts sem descrição: 8328
 Asserts com descrição: 1143
 Assertion Roulette: 7616
+
+Após do refactor: 
+Total asserts: 9471
+Asserts sem descrição: 311
+Asserts com descrição: 9160
+Assertion Roulette: 258

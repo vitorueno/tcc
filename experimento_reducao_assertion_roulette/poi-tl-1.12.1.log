@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/poi-tl-1.12.1
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/poi-tl-1.12.1
-
-Total asserts: 424
-Asserts sem descrição: 416
-Asserts com descrição: 8
-Assertion Roulette: 379
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/poi-tl-1.12.1
-
 chamada antiga: assertEquals(typeArguments[0], TextRenderData.class)
 nova chamada: assertEquals(typeArguments[0], TextRenderData.class, "Era esperado valores iguais, mas  typeArguments[0] é diferente de " + " TextRenderData.class")
 chamada antiga: assertEquals(typeArguments[0], TextRenderData.class)
@@ -821,3 +810,9 @@ Total asserts: 424
 Asserts sem descrição: 416
 Asserts com descrição: 8
 Assertion Roulette: 379
+
+Após do refactor: 
+Total asserts: 424
+Asserts sem descrição: 15
+Asserts com descrição: 409
+Assertion Roulette: 13

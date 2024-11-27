@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/jasypt-spring-boot-jasypt-spring-boot-parent-3.0.5
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jasypt-spring-boot-jasypt-spring-boot-parent-3.0.5
-
-Total asserts: 68
-Asserts sem descrição: 62
-Asserts com descrição: 6
-Assertion Roulette: 20
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/jasypt-spring-boot-jasypt-spring-boot-parent-3.0.5
-
 chamada antiga: assertTrue(ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Iterable<ConfigurationPropertySource>>>() {
 }, EncryptableConfigurationPropertySourcesPropertySource.class))
 nova chamada: assertTrue(ClassUtils.isAssignable(new ParameterizedTypeReference<PropertySource<Iterable<ConfigurationPropertySource>>>() {
@@ -139,3 +128,9 @@ Total asserts: 68
 Asserts sem descrição: 62
 Asserts com descrição: 6
 Assertion Roulette: 20
+
+Após do refactor: 
+Total asserts: 68
+Asserts sem descrição: 5
+Asserts com descrição: 63
+Assertion Roulette: 4

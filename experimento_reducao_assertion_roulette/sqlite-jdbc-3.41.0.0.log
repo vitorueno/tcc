@@ -1,18 +1,13 @@
-Antes do refactor: 
-
 
 Projeto: /home/vitor-otto/opensource/sqlite-jdbc-3.41.0.0
 
+Antes do refactor: 
 Total asserts: 1891
 Asserts sem descrição: 1891
 Asserts com descrição: 0
 Assertion Roulette: 1840
 
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/sqlite-jdbc-3.41.0.0
-
+Após do refactor: 
 Total asserts: 1891
 Asserts sem descrição: 1891
 Asserts com descrição: 0

@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/thymeleaf-thymeleaf-3.1.1.RELEASE
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/thymeleaf-thymeleaf-3.1.1.RELEASE
-
-Total asserts: 5275
-Asserts sem descrição: 5249
-Asserts com descrição: 26
-Assertion Roulette: 4894
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/thymeleaf-thymeleaf-3.1.1.RELEASE
-
 chamada antiga: Assertions.assertTrue(executor.isAllOK())
 nova chamada: assertTrue(executor.isAllOK(), "Era esperado verdadeiro, mas " + result0 + " <executor.isAllOK()> é falso")
 chamada antiga: Assertions.assertTrue(executor.isAllOK())
@@ -1253,3 +1242,9 @@ Total asserts: 5275
 Asserts sem descrição: 5249
 Asserts com descrição: 26
 Assertion Roulette: 4894
+
+Após do refactor: 
+Total asserts: 5275
+Asserts sem descrição: 5088
+Asserts com descrição: 187
+Assertion Roulette: 4808

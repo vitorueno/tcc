@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2
-
-Total asserts: 5214
-Asserts sem descrição: 5208
-Asserts com descrição: 3
-Assertion Roulette: 4762
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2
-
 chamada antiga: Assertions.assertEquals("0", result.get("score"))
 nova chamada: assertEquals("0", result.get("score"), "Era esperado valores iguais, mas  '0' é diferente de " + result0 + " <result.get('score')>")
 chamada antiga: Assertions.assertNotNull(result.get("entity.0.fullValue"))
@@ -219,3 +208,9 @@ Total asserts: 5214
 Asserts sem descrição: 5208
 Asserts com descrição: 3
 Assertion Roulette: 4762
+
+Após do refactor: 
+Total asserts: 5214
+Asserts sem descrição: 5138
+Asserts com descrição: 73
+Assertion Roulette: 4694

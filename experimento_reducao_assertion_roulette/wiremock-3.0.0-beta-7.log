@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7
-
-Total asserts: 2948
-Asserts sem descrição: 2767
-Asserts com descrição: 181
-Assertion Roulette: 1896
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7
-
 chamada antiga: assertFalse(mappings.get(0).getRequest().getHeaders().containsKey("No"))
 nova chamada: assertFalse(mappings.get(0).getRequest().getHeaders().containsKey("No"), "Era esperado falso, mas " + result0 + " <mappings.get(0).getRequest().getHeaders().containsKey('No')> é verdadeiro ")
 chamada antiga: assertTrue(match.isExactMatch())
@@ -886,3 +875,9 @@ Total asserts: 2948
 Asserts sem descrição: 2767
 Asserts com descrição: 181
 Assertion Roulette: 1896
+
+Após do refactor: 
+Total asserts: 2948
+Asserts sem descrição: 2357
+Asserts com descrição: 591
+Assertion Roulette: 1626

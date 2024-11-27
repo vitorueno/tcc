@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/fastjson2-2.0.24
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/fastjson2-2.0.24
-
-Total asserts: 20392
-Asserts sem descrição: 18920
-Asserts com descrição: 1472
-Assertion Roulette: 16241
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/fastjson2-2.0.24
-
 chamada antiga: assertEquals("sun.misc.Unsafe", c.getCanonicalName())
 nova chamada: assertEquals("Era esperado valores iguais, mas  'sun.misc.Unsafe' é diferente de " + result0 + " <c.getCanonicalName()>", "sun.misc.Unsafe", c.getCanonicalName())
 chamada antiga: assertEquals(1, user.id)
@@ -28321,3 +28310,9 @@ Total asserts: 20392
 Asserts sem descrição: 18920
 Asserts com descrição: 1472
 Assertion Roulette: 16241
+
+Após do refactor: 
+Total asserts: 20392
+Asserts sem descrição: 5439
+Asserts com descrição: 14953
+Assertion Roulette: 4898

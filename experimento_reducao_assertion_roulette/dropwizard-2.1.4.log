@@ -1,18 +1,7 @@
+
+Projeto: /home/vitor-otto/opensource/dropwizard-2.1.4
+
 Antes do refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/dropwizard-2.1.4
-
-Total asserts: 4316
-Asserts sem descrição: 4313
-Asserts com descrição: 3
-Assertion Roulette: 3386
-
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/dropwizard-2.1.4
-
 chamada antiga: assertNotNull(factory.configureSslContextFactory(new SslContextFactory.Server()))
 nova chamada: assertNotNull(factory.configureSslContextFactory(new SslContextFactory.Server()), "Era esperado não nulo, mas " + result0 + " <factory.configureSslContextFactory(new SslContextFactory.Server())> é nulo")
 chamada antiga: Assertions.assertEquals(ConstraintViolationException.class, throwable.getClass())
@@ -73,3 +62,9 @@ Total asserts: 4316
 Asserts sem descrição: 4313
 Asserts com descrição: 3
 Assertion Roulette: 3386
+
+Após do refactor: 
+Total asserts: 4316
+Asserts sem descrição: 4289
+Asserts com descrição: 27
+Assertion Roulette: 3370

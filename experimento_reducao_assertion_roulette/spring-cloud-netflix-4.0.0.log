@@ -1,18 +1,13 @@
-Antes do refactor: 
-
 
 Projeto: /home/vitor-otto/opensource/spring-cloud-netflix-4.0.0
 
+Antes do refactor: 
 Total asserts: 344
 Asserts sem descrição: 342
 Asserts com descrição: 2
 Assertion Roulette: 237
 
-Após o refactor: 
-
-
-Projeto: /home/vitor-otto/opensource/spring-cloud-netflix-4.0.0
-
+Após do refactor: 
 Total asserts: 344
 Asserts sem descrição: 342
 Asserts com descrição: 2
