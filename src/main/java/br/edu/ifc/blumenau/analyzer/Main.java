@@ -15,11 +15,11 @@ public class Main {
 //        System.out.println("projeto: " + repo);
 
         Analyzer analyzer = new Analyzer(repo);
-        analyzer.setShouldRefactor(false);
+        analyzer.setShouldRefactor(true);
         if (shouldrRefactor.equals("true")) {
             analyzer.setShouldRefactor(true);
         }
-        analyzer.setShouldWriteToFile(false);
+        analyzer.setShouldWriteToFile(true);
         if (shouldWriteToFile.equals("true")) {
             analyzer.setShouldWriteToFile(true);
         }

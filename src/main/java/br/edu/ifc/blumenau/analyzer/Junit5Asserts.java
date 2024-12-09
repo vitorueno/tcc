@@ -5,7 +5,7 @@ public enum Junit5Asserts {
     ASSERT_ARRAY_EQUALS("assertArrayEquals"),
     ASSERT_EQUALS("assertEquals"),
     ASSERT_DOES_NOT_THROW("assertDoesNotThrow"),
-    ASSERT_FALSE("assert_False"),
+    ASSERT_FALSE("assertFalse"),
     ASSERT_ITERABLE_EQUALS("assertIterableEquals"),
     ASSERT_LINES_MATCH("assertLinesMatch"),
     ASSERT_NOT_EQUALS("assertNotEquals"),

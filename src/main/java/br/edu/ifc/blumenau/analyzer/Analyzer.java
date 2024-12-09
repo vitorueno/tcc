@@ -68,7 +68,6 @@ public class Analyzer {
         assertComUmParametro.add("assertNull");
         assertComUmParametro.add("assertNotNull");
         assertComUmParametro.add("assertDoesNotThrow");
-        assertComUmParametro.add("assertThrows");
 
         Dotenv dotenv = Dotenv.load();
         if (projectPath.isEmpty()) {
@@ -221,9 +220,9 @@ public class Analyzer {
                 statements.addAll(i, newStatements);
                 stmt.replace(new ExpressionStmt(novaChamada));
                 newStatements.clear();
-                System.out.println("chamada antiga: " + methodCall);
-
-                System.out.println("nova chamada: " + novaChamada);
+//                System.out.println("chamada antiga: " + methodCall);
+//
+//                System.out.println("nova chamada: " + novaChamada);
             }
 //            else {
 ////                System.out.println("refatoração não suportada para método: " + nomeMetodo);

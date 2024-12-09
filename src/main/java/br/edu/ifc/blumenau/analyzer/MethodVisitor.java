@@ -34,7 +34,6 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         assertComUmParametro.add("assertNull");
         assertComUmParametro.add("assertNotNull");
         assertComUmParametro.add("assertDoesNotThrow");
-        assertComUmParametro.add("assertThrows");
 
 
         assertsJunit = obterConjuntoAssertsJunit();
@@ -61,14 +60,23 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
             return;
         }
 
-        boolean isAssertionSemDescricao = qtdParametros < (assertComUmParametro.contains(nomeMetodo) ? 2 : 3);
+        boolean isAssertSemDescricao = false;
+        if (assertComUmParametro.contains(nomeMetodo)) {
+            isAssertSemDescricao = qtdParametros < 2;
+        }
+        else if (nomeMetodo.equals("fail")) {
+            isAssertSemDescricao = qtdParametros < 1;
+        }
+        else {
+            isAssertSemDescricao = qtdParametros < 3;
+        }
 
-        if (isAssertionSemDescricao) {
+        if (isAssertSemDescricao) {
             numAssertSemDesc.incrementAndGet();
 //            System.out.println(methodCallExpr);
 
-//            System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
-            if (numeroAsserts() > 1) {
+            System.out.println("Assert sem descrição: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
+            if (numeroAssertsDoMetodo() > 1) {
                 numAssertionRoulette.incrementAndGet();
 //                System.out.println("AssertionRoulette: " + path + " linha: " + numLinha + " Método: " + methodCallExpr);
             }
@@ -87,7 +95,7 @@ public class MethodVisitor extends VoidVisitorAdapter<Path> {
         return assertsJunit.contains(nomeAssert);
     }
 
-    private int numeroAsserts() {
+    private int numeroAssertsDoMetodo() {
         final int[] count = {0};
         ancestor.getBody().ifPresent(body -> {
             body.findAll(MethodCallExpr.class).forEach(methodCall -> {
