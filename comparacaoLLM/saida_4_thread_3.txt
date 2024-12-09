@@ -1,0 +1,37 @@
+
+==================Execução com 4 threads ==================
+
+tempo logback-v_1.4.5.log: 42.258607625961304
+tempo cucumber-jvm-7.11.1.log: 42.94851016998291
+tempo disruptor-4.0.0.RC1.log: 43.02520799636841
+tempo jetcache-2.7.3.log: 43.152488470077515
+tempo fastjson2-2.0.24.log: 41.538617849349976
+tempo liquibase-4.19.1.log: 41.74201726913452
+tempo tablesaw-0.43.1.log: 53.41624903678894
+tempo jasypt-spring-boot-jasypt-spring-boot-parent-3.0.5.log: 57.15846538543701
+tempo redisson-redisson-3.19.3.log: 41.68310236930847
+tempo RoaringBitmap-0.9.39.log: 41.69182324409485
+tempo unirest-java-3.14.2.log: 41.87001299858093
+tempo jsoup-jsoup-1.15.3.log: 43.950217485427856
+tempo avro-release-1.11.1.log: 44.66925930976868
+tempo spring-data-jpa-3.0.3.log: 28.141541719436646
+tempo javaparser-javaparser-parent-3.25.1.log: 48.428539514541626
+tempo wiremock-3.0.0-beta-7.log: 40.15289568901062
+tempo OpenPDF-1.3.30.log: 41.80048203468323
+tempo thymeleaf-thymeleaf-3.1.1.RELEASE.log: 41.62291359901428
+tempo spring-batch-5.0.1.log: 46.30966305732727
+tempo rsocket-java-1.1.3.log: 41.926087379455566
+tempo optaplanner-9.35.0.Beta2.log: 42.2437059879303
+tempo jodd-5.3.0.log: 40.77802658081055
+tempo JDA-5.0.0-beta.5.log: 42.17212224006653
+tempo simple-binary-encoding-1.27.0.log: 52.387200593948364
+tempo dropwizard-2.1.4.log: 41.075743675231934
+tempo jfreechart-1.5.3.log: 41.293567180633545
+tempo graphhopper-6.2.log: 46.24493718147278
+tempo poi-tl-1.12.1.log: 41.51377773284912
+tempo ripme-1.7.95.log: 42.17012906074524
+tempo springdoc-openapi-2.0.2.log: 41.9661750793457
+tempo Recaf-2.21.13.log: 42.429774045944214
+tempo simplify-1.3.0.log: 42.988831996917725
+Tempo medio por arquivo com 4 threads: 10.15
+Tempo total com 4 threads: 355.40
