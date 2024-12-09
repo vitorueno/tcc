@@ -184,9 +184,19 @@ public class Analyzer {
 
             int qtdParametros = methodCall.getArguments().size();
             String nomeMetodo = methodCall.getName().asString();
-            boolean isAssertionSemDescricao = qtdParametros < (assertComUmParametro.contains(nomeMetodo) ? 2 : 3);
 
-            if (!isAssertionSemDescricao) {
+            boolean isAssertSemDescricao = false;
+            if (assertComUmParametro.contains(nomeMetodo)) {
+                isAssertSemDescricao = qtdParametros < 2;
+            }
+            else if (nomeMetodo.equals("fail")) {
+                isAssertSemDescricao = qtdParametros < 1;
+            }
+            else {
+                isAssertSemDescricao = qtdParametros < 3;
+            }
+
+            if (!isAssertSemDescricao) {
                 continue;
             }
 
