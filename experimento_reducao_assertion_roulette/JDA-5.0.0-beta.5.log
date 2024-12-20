@@ -605,12 +605,12 @@ nova chamada: assertEquals("ASnowflake[Type]:AName(id=42, MetaKey=42)", new Enti
 chamada antiga: assertEquals("ASnowflake[Type]:AName(id=42, MetaKey1=Metadata1, MetaKey2=Metadata2)", new EntityString(new ASnowflake()).setName("AName").setType("Type").addMetadata("MetaKey1", "Metadata1").addMetadata("MetaKey2", "Metadata2").toString())
 nova chamada: assertEquals("ASnowflake[Type]:AName(id=42, MetaKey1=Metadata1, MetaKey2=Metadata2)", new EntityString(new ASnowflake()).setName("AName").setType("Type").addMetadata("MetaKey1", "Metadata1").addMetadata("MetaKey2", "Metadata2").toString(), "Era esperado valores iguais, mas  'ASnowflake[Type]:AName(id=42, MetaKey1=Metadata1, MetaKey2=Metadata2)' é diferente de " + result302 + " <new EntityString(new ASnowflake()).setName('AName').setType('Type').addMetadata('MetaKey1', 'Metadata1').addMetadata('MetaKey2', 'Metadata2').toString()>")
 Total asserts: 388
-Asserts sem descrição: 363
-Asserts com descrição: 24
-Assertion Roulette: 355
+Asserts sem descrição: 379
+Asserts com descrição: 8
+Assertion Roulette: 375
 
 Após do refactor: 
 Total asserts: 388
-Asserts sem descrição: 327
-Asserts com descrição: 60
-Assertion Roulette: 319
+Asserts sem descrição: 343
+Asserts com descrição: 44
+Assertion Roulette: 339

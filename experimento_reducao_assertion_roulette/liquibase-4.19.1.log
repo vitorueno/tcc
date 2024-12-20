@@ -982,8 +982,6 @@ chamada antiga: assertNotNull(o)
 nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", o)
 chamada antiga: assertNotNull(methodName)
 nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", methodName)
-chamada antiga: fail("Method '" + methodName + "' not found")
-nova chamada: fail("A execução falhou por uma causa deliberada", "Method '" + methodName + "' not found")
 chamada antiga: assertEquals("DECLARE @reccount integer", lines[lineNumber])
 nova chamada: assertEquals("Era esperado valores iguais, mas  'DECLARE @reccount integer' é diferente de " + " lines[lineNumber]", "DECLARE @reccount integer", lines[lineNumber])
 chamada antiga: assertEquals("SELECT @reccount = count(*) FROM mycatalog.myschema.mytable WHERE " + where, lines[lineNumber])
@@ -1004,14 +1002,10 @@ chamada antiga: assertTrue(lines[lineNumber].startsWith("UPDATE"))
 nova chamada: assertTrue("Era esperado verdadeiro, mas " + result443 + " <lines[lineNumber].startsWith('UPDATE')> é falso", lines[lineNumber].startsWith("UPDATE"))
 chamada antiga: assertEquals("END", lines[lineNumber])
 nova chamada: assertEquals("Era esperado valores iguais, mas  'END' é diferente de " + " lines[lineNumber]", "END", lines[lineNumber])
-chamada antiga: fail("A execução falhou por uma causa deliberada", "Method '" + methodName + "' not found")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada", "Method '" + methodName + "' not found")
 chamada antiga: Assert.assertNotNull(o)
 nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", o)
 chamada antiga: Assert.assertNotNull(methodName)
 nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nulo", methodName)
-chamada antiga: Assert.fail("Method '" + methodName + "' not found")
-nova chamada: fail("A execução falhou por uma causa deliberada", "Method '" + methodName + "' not found")
 chamada antiga: assertFalse(generatorUnderTest.validate(addPKColumn, new OracleDatabase(), new MockSqlGeneratorChain()).hasErrors())
 nova chamada: assertFalse("Era esperado falso, mas " + result444 + " <generatorUnderTest.validate(addPKColumn, new OracleDatabase(), new MockSqlGeneratorChain()).hasErrors()> é verdadeiro ", generatorUnderTest.validate(addPKColumn, new OracleDatabase(), new MockSqlGeneratorChain()).hasErrors())
 chamada antiga: assertFalse(generatorUnderTest.validate(addPKColumn, new H2Database(), new MockSqlGeneratorChain()).hasErrors())
@@ -1120,8 +1114,6 @@ chamada antiga: assertEquals("select text from syscomments where id = object_id(
 nova chamada: assertEquals("Era esperado valores iguais, mas  'select text from syscomments where id = object_id('OWNER.view_name') order by colid' é diferente de " + result478 + " <sql[0].toSql()>", "select text from syscomments where id = object_id('OWNER.view_name') order by colid", sql[0].toSql())
 chamada antiga: assertEquals("DELETE FROM DATABASECHANGELOG " + "WHERE ID = '1' " + "AND AUTHOR = 'a' " + "AND FILENAME = 'server_principals/BUILTIN$Administrators.xml'", sqls[0].toSql())
 nova chamada: assertEquals("Era esperado valores iguais, mas  'DELETE FROM DATABASECHANGELOG ' + 'WHERE ID = '1' ' + 'AND AUTHOR = 'a' ' + 'AND FILENAME = 'server_principals/BUILTIN$Administrators.xml'' é diferente de " + result479 + " <sqls[0].toSql()>", "DELETE FROM DATABASECHANGELOG " + "WHERE ID = '1' " + "AND AUTHOR = 'a' " + "AND FILENAME = 'server_principals/BUILTIN$Administrators.xml'", sqls[0].toSql())
-chamada antiga: fail("A execução falhou por uma causa deliberada", "Method '" + methodName + "' not found")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada", "Method '" + methodName + "' not found")
 chamada antiga: assertNotNull(SqlGeneratorFactory.getInstance())
 nova chamada: assertNotNull("Era esperado não nulo, mas " + result480 + " <SqlGeneratorFactory.getInstance()> é nulo", SqlGeneratorFactory.getInstance())
 chamada antiga: assertSame(SqlGeneratorFactory.getInstance(), SqlGeneratorFactory.getInstance())
@@ -1202,12 +1194,8 @@ chamada antiga: assertEquals(Boolean.TRUE, statement.getOnlyUpdate())
 nova chamada: assertEquals("Era esperado valores iguais, mas  Boolean.TRUE é diferente de " + result520 + " <statement.getOnlyUpdate()>", Boolean.TRUE, statement.getOnlyUpdate())
 chamada antiga: assertEquals(Boolean.FALSE, statement.getOnlyUpdate())
 nova chamada: assertEquals("Era esperado valores iguais, mas  Boolean.FALSE é diferente de " + result521 + " <statement.getOnlyUpdate()>", Boolean.FALSE, statement.getOnlyUpdate())
-chamada antiga: fail("did not find a generator")
-nova chamada: fail("A execução falhou por uma causa deliberada", "did not find a generator")
 chamada antiga: assertFalse(new UpdateExecutablePreparedStatement(database, "catalogName", "schemaName", "tableName", new ArrayList<ColumnConfig>(), changeSet, resourceAccessor).continueOnError())
 nova chamada: assertFalse("Era esperado falso, mas " + result522 + " <new UpdateExecutablePreparedStatement(database, 'catalogName', 'schemaName', 'tableName', new ArrayList<ColumnConfig>(), changeSet, resourceAccessor).continueOnError()> é verdadeiro ", new UpdateExecutablePreparedStatement(database, "catalogName", "schemaName", "tableName", new ArrayList<ColumnConfig>(), changeSet, resourceAccessor).continueOnError())
-chamada antiga: fail("A execução falhou por uma causa deliberada", "did not find a generator")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada", "did not find a generator")
 chamada antiga: assertNotEquals(java.sql.Types.NULL, stmt.getParamTypes().get(1).intValue())
 nova chamada: assertNotEquals("Era esperado valores diferentes, mas  java.sql.Types.NULL é igual a " + result523 + " <stmt.getParamTypes().get(1).intValue()>", java.sql.Types.NULL, stmt.getParamTypes().get(1).intValue())
 chamada antiga: assertEquals(java.sql.Types.DATE, stmt.getParamTypes().get(1).intValue())
@@ -2211,12 +2199,12 @@ nova chamada: assertEquals("Era esperado valores iguais, mas  'c' é diferente d
 chamada antiga: assertTrue(columns.get(2).getDescending())
 nova chamada: assertTrue("Era esperado verdadeiro, mas " + result995 + " <columns.get(2).getDescending()> é falso", columns.get(2).getDescending())
 Total asserts: 1461
-Asserts sem descrição: 1302
-Asserts com descrição: 159
-Assertion Roulette: 1077
+Asserts sem descrição: 1269
+Asserts com descrição: 192
+Assertion Roulette: 1056
 
 Após do refactor: 
 Total asserts: 1461
-Asserts sem descrição: 277
-Asserts com descrição: 1184
-Assertion Roulette: 203
+Asserts sem descrição: 244
+Asserts com descrição: 1217
+Assertion Roulette: 182

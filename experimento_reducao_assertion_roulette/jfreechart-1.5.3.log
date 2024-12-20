@@ -5362,8 +5362,14 @@ chamada antiga: assertTrue(d1.equals(d2))
 nova chamada: assertTrue(d1.equals(d2), "Era esperado verdadeiro, mas " + result2015 + " <d1.equals(d2)> é falso")
 chamada antiga: assertEquals(d1, d2)
 nova chamada: assertEquals(d1, d2, "Era esperado valores iguais, mas  d1 é diferente de " + " d2")
+chamada antiga: assertThrows(IndexOutOfBoundsException.class, () -> d.getValue(-1))
+nova chamada: assertThrows(IndexOutOfBoundsException.class, () -> d.getValue(-1), "Era esperado que a exceção  IndexOutOfBoundsException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IndexOutOfBoundsException.class, () -> d.getValue(0))
+nova chamada: assertThrows(IndexOutOfBoundsException.class, () -> d.getValue(0), "Era esperado que a exceção  IndexOutOfBoundsException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(1.0, d.getValue(0))
 nova chamada: assertEquals(1.0, d.getValue(0), "Era esperado valores iguais, mas  1.0 é diferente de " + result2016 + " <d.getValue(0)>")
+chamada antiga: assertThrows(IndexOutOfBoundsException.class, () -> d.getValue(1))
+nova chamada: assertThrows(IndexOutOfBoundsException.class, () -> d.getValue(1), "Era esperado que a exceção  IndexOutOfBoundsException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(g1, g2)
 nova chamada: assertEquals(g1, g2, "Era esperado valores iguais, mas  g1 é diferente de " + " g2")
 chamada antiga: assertTrue(d1 != d2)
@@ -16037,12 +16043,12 @@ nova chamada: assertEquals(true, l.flag, "Era esperado valores iguais, mas  true
 chamada antiga: assertNull(plot.getDataset())
 nova chamada: assertNull(plot.getDataset(), "Era esperado nulo, mas " + result5934 + " <plot.getDataset()> não é nulo")
 Total asserts: 9471
-Asserts sem descrição: 8328
-Asserts com descrição: 1143
-Assertion Roulette: 7616
+Asserts sem descrição: 8235
+Asserts com descrição: 1236
+Assertion Roulette: 7568
 
 Após do refactor: 
 Total asserts: 9471
-Asserts sem descrição: 311
-Asserts com descrição: 9160
-Assertion Roulette: 258
+Asserts sem descrição: 215
+Asserts com descrição: 9256
+Assertion Roulette: 207

@@ -4,6 +4,20 @@ Projeto: /home/vitor-otto/opensource/disruptor-4.0.0.RC1
 Antes do refactor: 
 chamada antiga: assertNotNull(eventHandlerGroup)
 nova chamada: assertNotNull(eventHandlerGroup, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> disruptor.after(createDelayedEventHandler()).handleEventsWith(createDelayedEventHandler()))
+nova chamada: assertThrows(IllegalArgumentException.class, () -> disruptor.after(createDelayedEventHandler()).handleEventsWith(createDelayedEventHandler()), "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    EvilEqualsEventHandler handler1 = new EvilEqualsEventHandler();
+    EvilEqualsEventHandler handler2 = new EvilEqualsEventHandler();
+    disruptor.handleEventsWith(handler1);
+    disruptor.after(handler2);
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    EvilEqualsEventHandler handler1 = new EvilEqualsEventHandler();
+    EvilEqualsEventHandler handler2 = new EvilEqualsEventHandler();
+    disruptor.handleEventsWith(handler1);
+    disruptor.after(handler2);
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertSame(testException, actualException)
 nova chamada: assertSame(testException, actualException, "Era esperado objetos iguais, mas  testException é diferente de " + " actualException")
 chamada antiga: assertSame(testException, actualException)
@@ -12,6 +26,44 @@ chamada antiga: assertSame(testException, actualException)
 nova chamada: assertSame(testException, actualException, "Era esperado objetos iguais, mas  testException é diferente de " + " actualException")
 chamada antiga: assertSame(testException, actualException)
 nova chamada: assertSame(testException, actualException, "Era esperado objetos iguais, mas  testException é diferente de " + " actualException")
+chamada antiga: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.start();
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.start();
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(TimeoutException.class, () -> {
+    final DelayedEventHandler delayedEventHandler = createDelayedEventHandler();
+    disruptor.handleEventsWith(delayedEventHandler);
+    publishEvent();
+    disruptor.shutdown(1, SECONDS);
+})
+nova chamada: assertThrows(TimeoutException.class, () -> {
+    final DelayedEventHandler delayedEventHandler = createDelayedEventHandler();
+    disruptor.handleEventsWith(delayedEventHandler);
+    publishEvent();
+    disruptor.shutdown(1, SECONDS);
+}, "Era esperado que a exceção  TimeoutException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> consumerRepository.getEventProcessorFor(new SleepingEventHandler()))
+nova chamada: assertThrows(IllegalArgumentException.class, () -> consumerRepository.getEventProcessorFor(new SleepingEventHandler()), "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(0, sequencer.next())
 nova chamada: assertEquals(0, sequencer.next(), "Era esperado valores iguais, mas  0 é diferente de " + result0 + " <sequencer.next()>")
 chamada antiga: assertEquals(3, sequencer.next(4))
@@ -28,6 +80,30 @@ chamada antiga: assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE))
 nova chamada: assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE), "Era esperado falso, mas " + result6 + " <sequencer.hasAvailableCapacity(BUFFER_SIZE)> é verdadeiro ")
 chamada antiga: assertFalse(sequencer.hasAvailableCapacity(1))
 nova chamada: assertFalse(sequencer.hasAvailableCapacity(1), "Era esperado falso, mas " + result7 + " <sequencer.hasAvailableCapacity(1)> é verdadeiro ")
+chamada antiga: assertThrows(InsufficientCapacityException.class, () -> {
+    sequencer.addGatingSequences(gatingSequence);
+    for (int i = 0; i < BUFFER_SIZE; i++) {
+        sequencer.next();
+    }
+    sequencer.tryNext();
+})
+nova chamada: assertThrows(InsufficientCapacityException.class, () -> {
+    sequencer.addGatingSequences(gatingSequence);
+    for (int i = 0; i < BUFFER_SIZE; i++) {
+        sequencer.next();
+    }
+    sequencer.tryNext();
+}, "Era esperado que a exceção  InsufficientCapacityException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(InsufficientCapacityException.class, sequencer::tryNext)
+nova chamada: assertThrows(InsufficientCapacityException.class, sequencer::tryNext, "Era esperado que a exceção  InsufficientCapacityException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> sequencer.next(-1))
+nova chamada: assertThrows(IllegalArgumentException.class, () -> sequencer.next(-1), "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> sequencer.next(0))
+nova chamada: assertThrows(IllegalArgumentException.class, () -> sequencer.next(0), "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(-1))
+nova chamada: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(-1), "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(0))
+nova chamada: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(0), "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertFalse(sequencer.isAvailable(seq))
 nova chamada: assertFalse(sequencer.isAvailable(seq), "Era esperado falso, mas " + result8 + " <sequencer.isAvailable(seq)> é verdadeiro ")
 chamada antiga: assertTrue(sequencer.isAvailable(seq))
@@ -36,6 +112,14 @@ chamada antiga: assertTrue(sequencer.isAvailable(seq))
 nova chamada: assertTrue(sequencer.isAvailable(seq), "Era esperado verdadeiro, mas " + result10 + " <sequencer.isAvailable(seq)> é falso")
 chamada antiga: assertFalse(sequencer.isAvailable(seq))
 nova chamada: assertFalse(sequencer.isAvailable(seq), "Era esperado falso, mas " + result11 + " <sequencer.isAvailable(seq)> é verdadeiro ")
+chamada antiga: assertThrows(NullPointerException.class, () -> {
+    final BatchEventProcessor<StubEvent> batchEventProcessor = new BatchEventProcessor<>(ringBuffer, sequenceBarrier, new ExceptionEventHandler());
+    batchEventProcessor.setExceptionHandler(null);
+})
+nova chamada: assertThrows(NullPointerException.class, () -> {
+    final BatchEventProcessor<StubEvent> batchEventProcessor = new BatchEventProcessor<>(ringBuffer, sequenceBarrier, new ExceptionEventHandler());
+    batchEventProcessor.setExceptionHandler(null);
+}, "Era esperado que a exceção  NullPointerException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(eventLatch.await(2, TimeUnit.SECONDS))
 nova chamada: assertTrue(eventLatch.await(2, TimeUnit.SECONDS), "Era esperado verdadeiro, mas " + result12 + " <eventLatch.await(2, TimeUnit.SECONDS)> é falso")
 chamada antiga: assertTrue(exceptionLatch.await(2, TimeUnit.SECONDS))
@@ -46,6 +130,8 @@ chamada antiga: assertTrue(h1.awaitStart(2, TimeUnit.SECONDS))
 nova chamada: assertTrue(h1.awaitStart(2, TimeUnit.SECONDS), "Era esperado verdadeiro, mas " + result15 + " <h1.awaitStart(2, TimeUnit.SECONDS)> é falso")
 chamada antiga: assertTrue(h1.awaitStop(2, TimeUnit.SECONDS))
 nova chamada: assertTrue(h1.awaitStop(2, TimeUnit.SECONDS), "Era esperado verdadeiro, mas " + result16 + " <h1.awaitStop(2, TimeUnit.SECONDS)> é falso")
+chamada antiga: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier))
+nova chamada: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier), "Era esperado que a exceção  TimeoutException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(timeWaiting >= theTimeout)
 nova chamada: assertTrue(timeWaiting >= theTimeout, "Era esperado verdadeiro, mas o valor obtido é falso")
 chamada antiga: assertEquals(10, sequence.addAndGet(10))
@@ -84,30 +170,844 @@ chamada antiga: assertEquals(expectedSequence, available)
 nova chamada: assertEquals(expectedSequence, available, "Era esperado valores iguais, mas  expectedSequence é diferente de " + " available")
 chamada antiga: assertFalse(ringBuffer.tryPublishEvent(StubEvent.TRANSLATOR, 3, "3"))
 nova chamada: assertFalse(ringBuffer.tryPublishEvent(StubEvent.TRANSLATOR, 3, "3"), "Era esperado falso, mas " + result30 + " <ringBuffer.tryPublishEvent(StubEvent.TRANSLATOR, 3, '3')> é verdadeiro ")
+chamada antiga: assertThrows(InsufficientCapacityException.class, ringBuffer::tryNext)
+nova chamada: assertThrows(InsufficientCapacityException.class, ringBuffer::tryNext, "Era esperado que a exceção  InsufficientCapacityException.class fosse lançada, mas não foi")
 chamada antiga: assertFalse(publisherComplete.get())
 nova chamada: assertFalse(publisherComplete.get(), "Era esperado falso, mas " + result31 + " <publisherComplete.get()> é verdadeiro ")
 chamada antiga: assertTrue(publisherComplete.get())
 nova chamada: assertTrue(publisherComplete.get(), "Era esperado verdadeiro, mas " + result32 + " <publisherComplete.get()> é falso")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translators))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translators), "Era esperado verdadeiro, mas " + result33 + " <ringBuffer.tryPublishEvents(translators)> é falso")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    final EventTranslator<Object[]> eventTranslator = new NoArgEventTranslator();
+    final EventTranslator<Object[]>[] translators = new EventTranslator[] { eventTranslator, eventTranslator, eventTranslator, eventTranslator, eventTranslator };
+    try {
+        ringBuffer.tryPublishEvents(translators);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    final EventTranslator<Object[]> eventTranslator = new NoArgEventTranslator();
+    final EventTranslator<Object[]>[] translators = new EventTranslator[] { eventTranslator, eventTranslator, eventTranslator, eventTranslator, eventTranslator };
+    try {
+        ringBuffer.tryPublishEvents(translators);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translators, 0, 1))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translators, 0, 1), "Era esperado verdadeiro, mas " + result34 + " <ringBuffer.tryPublishEvents(translators, 0, 1)> é falso")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translators, 1, 2))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translators, 1, 2), "Era esperado verdadeiro, mas " + result35 + " <ringBuffer.tryPublishEvents(translators, 1, 2)> é falso")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo" }))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo" }), "Era esperado verdadeiro, mas " + result36 + " <ringBuffer.tryPublishEvents(translator, new String[] { 'Foo', 'Foo' })> é falso")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Foo" }))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Foo" }), "Era esperado verdadeiro, mas " + result37 + " <ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { 'Foo', 'Foo' })> é falso")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo", "Foo", "Foo" }))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo", "Foo", "Foo" }), "Era esperado verdadeiro, mas " + result38 + " <ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { 'Foo', 'Foo', 'Foo' })> é falso")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" }, new String[] { "Baz", "Baz", "Baz", "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" }, new String[] { "Baz", "Baz", "Baz", "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Foo4", "Foo5" }, new String[] { "Bar3", "Bar4", "Bar5" }, new String[] { "Baz3", "Baz4", "Baz5" }))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Foo4", "Foo5" }, new String[] { "Bar3", "Bar4", "Bar5" }, new String[] { "Baz3", "Baz4", "Baz5" }), "Era esperado verdadeiro, mas " + result39 + " <ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { 'Foo3', 'Foo4', 'Foo5' }, new String[] { 'Bar3', 'Bar4', 'Bar5' }, new String[] { 'Baz3', 'Baz4', 'Baz5' })> é falso")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }), "Era esperado verdadeiro, mas " + result40 + " <ringBuffer.tryPublishEvents(translator, new String[] { 'Foo', 'Bar', 'Baz', 'Bam' }, new String[] { 'Foo', 'Bar', 'Baz', 'Bam' })> é falso")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorVararg<Object[]> translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorVararg<Object[]> translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }), "Era esperado verdadeiro, mas " + result41 + " <ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { 'Foo', 'Bar', 'Baz', 'Bam' }, new String[] { 'Foo', 'Bar', 'Baz', 'Bam' })> é falso")
 chamada antiga: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Bar3", "Baz3", "Bam3" }, new String[] { "Foo4", "Bar4", "Baz4", "Bam4" }, new String[] { "Foo5", "Bar5", "Baz5", "Bam5" }))
 nova chamada: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Bar3", "Baz3", "Bam3" }, new String[] { "Foo4", "Bar4", "Baz4", "Bam4" }, new String[] { "Foo5", "Bar5", "Baz5", "Bam5" }), "Era esperado verdadeiro, mas " + result42 + " <ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { 'Foo3', 'Bar3', 'Baz3', 'Bam3' }, new String[] { 'Foo4', 'Bar4', 'Baz4', 'Bam4' }, new String[] { 'Foo5', 'Bar5', 'Baz5', 'Bam5' })> é falso")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        assertFalse(ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }));
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        assertFalse(ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }));
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(ringBuffer.removeGatingSequence(sequenceThree))
 nova chamada: assertTrue(ringBuffer.removeGatingSequence(sequenceThree), "Era esperado verdadeiro, mas " + result43 + " <ringBuffer.removeGatingSequence(sequenceThree)> é falso")
 chamada antiga: assertEquals(Long.MAX_VALUE, sequenceGroup.get())
@@ -150,6 +1050,8 @@ chamada antiga: assertTrue(sequenceBarrier.isAlerted())
 nova chamada: assertTrue(sequenceBarrier.isAlerted(), "Era esperado verdadeiro, mas " + result65 + " <sequenceBarrier.isAlerted()> é falso")
 chamada antiga: assertFalse(sequenceBarrier.isAlerted())
 nova chamada: assertFalse(sequenceBarrier.isAlerted(), "Era esperado falso, mas " + result66 + " <sequenceBarrier.isAlerted()> é verdadeiro ")
+chamada antiga: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier))
+nova chamada: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier), "Era esperado que a exceção  TimeoutException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(timeWaiting >= theTimeout)
 nova chamada: assertTrue(timeWaiting >= theTimeout, "Era esperado verdadeiro, mas o valor obtido é falso")
 chamada antiga: assertEquals("not rewindable", exceptionHandled.get().getMessage())
@@ -169,12 +1071,12 @@ nova chamada: assertEquals(Long.MAX_VALUE, Util.getMinimumSequence(sequences), "
 chamada antiga: assertEquals(causeException, ex.getCause())
 nova chamada: assertEquals(causeException, ex.getCause(), "Era esperado valores iguais, mas  causeException é diferente de " + result70 + " <ex.getCause()>")
 Total asserts: 290
-Asserts sem descrição: 218
-Asserts com descrição: 72
-Assertion Roulette: 148
+Asserts sem descrição: 278
+Asserts com descrição: 12
+Assertion Roulette: 151
 
 Após do refactor: 
 Total asserts: 290
-Asserts sem descrição: 135
-Asserts com descrição: 155
+Asserts sem descrição: 134
+Asserts com descrição: 156
 Assertion Roulette: 90

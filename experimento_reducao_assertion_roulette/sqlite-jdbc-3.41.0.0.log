@@ -3,12 +3,12 @@ Projeto: /home/vitor-otto/opensource/sqlite-jdbc-3.41.0.0
 
 Antes do refactor: 
 Total asserts: 1891
-Asserts sem descrição: 1891
-Asserts com descrição: 0
-Assertion Roulette: 1840
+Asserts sem descrição: 1887
+Asserts com descrição: 4
+Assertion Roulette: 1837
 
 Após do refactor: 
 Total asserts: 1891
-Asserts sem descrição: 1891
-Asserts com descrição: 0
-Assertion Roulette: 1840
+Asserts sem descrição: 1887
+Asserts com descrição: 4
+Assertion Roulette: 1837

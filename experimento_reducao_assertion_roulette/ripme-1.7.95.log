@@ -27,12 +27,12 @@ nova chamada: assertTrue(ripper.pageContainsAlbums(url), "Era esperado verdadeir
 chamada antiga: Assertions.assertTrue(ripper.pageContainsAlbums(url2))
 nova chamada: assertTrue(ripper.pageContainsAlbums(url2), "Era esperado verdadeiro, mas " + result5 + " <ripper.pageContainsAlbums(url2)> é falso")
 Total asserts: 134
-Asserts sem descrição: 126
-Asserts com descrição: 8
-Assertion Roulette: 56
+Asserts sem descrição: 118
+Asserts com descrição: 16
+Assertion Roulette: 49
 
 Após do refactor: 
 Total asserts: 134
-Asserts sem descrição: 120
-Asserts com descrição: 14
-Assertion Roulette: 51
+Asserts sem descrição: 112
+Asserts com descrição: 22
+Assertion Roulette: 44

@@ -17,12 +17,12 @@ nova chamada: assertNotNull("Era esperado não nulo, mas  o valor obtido foi nul
 chamada antiga: assertFalse(beans.entrySet().isEmpty())
 nova chamada: assertFalse("Era esperado falso, mas " + result1 + " <beans.entrySet().isEmpty()> é verdadeiro ", beans.entrySet().isEmpty())
 Total asserts: 1658
-Asserts sem descrição: 1658
-Asserts com descrição: 0
+Asserts sem descrição: 1657
+Asserts com descrição: 1
 Assertion Roulette: 1063
 
 Após do refactor: 
 Total asserts: 1658
-Asserts sem descrição: 1653
-Asserts com descrição: 5
+Asserts sem descrição: 1652
+Asserts com descrição: 6
 Assertion Roulette: 1060

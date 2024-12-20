@@ -62,6 +62,8 @@ chamada antiga: assertEquals(renew.getElementTemplates().size(), 0)
 nova chamada: assertEquals(renew.getElementTemplates().size(), 0, "Era esperado valores iguais, mas " + result44 + " <renew.getElementTemplates().size()> é diferente de " + " 0")
 chamada antiga: assertEquals(renew.getElementTemplates().size(), 4)
 nova chamada: assertEquals(renew.getElementTemplates().size(), 4, "Era esperado valores iguais, mas " + result45 + " <renew.getElementTemplates().size()> é diferente de " + " 4")
+chamada antiga: assertThrows(RenderException.class, () -> XWPFTemplate.compile(resource, builder.build()).render(new HashMap<String, Object>()))
+nova chamada: assertThrows(RenderException.class, () -> XWPFTemplate.compile(resource, builder.build()).render(new HashMap<String, Object>()), "Era esperado que a exceção  RenderException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(template.getElementTemplates().size(), 3)
 nova chamada: assertEquals(template.getElementTemplates().size(), 3, "Era esperado valores iguais, mas " + result46 + " <template.getElementTemplates().size()> é diferente de " + " 3")
 chamada antiga: assertEquals(template.getElementTemplates().size(), 5)
@@ -798,6 +800,18 @@ chamada antiga: assertEquals("HiAAhttp://baidu.comhttp:deepoove.com", document.g
 nova chamada: assertEquals("HiAAhttp://baidu.comhttp:deepoove.com", document.getParagraphArray(0).getText(), "Era esperado valores iguais, mas  'HiAAhttp://baidu.comhttp:deepoove.com' é diferente de " + result418 + " <document.getParagraphArray(0).getText()>")
 chamada antiga: assertEquals(1, newDocument.getParagraphs().size())
 nova chamada: assertEquals(1, newDocument.getParagraphs().size(), "Era esperado valores iguais, mas  1 é diferente de " + result419 + " <newDocument.getParagraphs().size()>")
+chamada antiga: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.15-beta1", "3.16", func))
+nova chamada: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.15-beta1", "3.16", func), "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.15-beta1", "4.0.0", func))
+nova chamada: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.15-beta1", "4.0.0", func), "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.8", "4.0.0", func))
+nova chamada: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.8", "4.0.0", func), "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.8-beta1", "4.0.0", func))
+nova chamada: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.8-beta1", "4.0.0", func), "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.0.2-FINAL", "4.0.0", func))
+nova chamada: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.0.2-FINAL", "4.0.0", func), "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.16", "4.0.0", func))
+nova chamada: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.16", "4.0.0", func), "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals("11ff22", StyleUtils.toRgb("#1f2"))
 nova chamada: assertEquals("11ff22", StyleUtils.toRgb("#1f2"), "Era esperado valores iguais, mas  '11ff22' é diferente de " + result420 + " <StyleUtils.toRgb('#1f2')>")
 chamada antiga: assertEquals("01645a", StyleUtils.toRgb("rgb(1,100,90)"))
@@ -807,12 +821,12 @@ nova chamada: assertEquals("000000", StyleUtils.toRgb("black"), "Era esperado va
 chamada antiga: assertFalse(allCssStyles.isEmpty())
 nova chamada: assertFalse(allCssStyles.isEmpty(), "Era esperado falso, mas " + result423 + " <allCssStyles.isEmpty()> é verdadeiro ")
 Total asserts: 424
-Asserts sem descrição: 416
-Asserts com descrição: 8
-Assertion Roulette: 379
+Asserts sem descrição: 424
+Asserts com descrição: 0
+Assertion Roulette: 380
 
 Após do refactor: 
 Total asserts: 424
-Asserts sem descrição: 15
-Asserts com descrição: 409
-Assertion Roulette: 13
+Asserts sem descrição: 16
+Asserts com descrição: 408
+Assertion Roulette: 14

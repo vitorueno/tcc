@@ -22,6 +22,10 @@ chamada antiga: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(event.get
 nova chamada: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(event.getCreatedAt()).isEqualTo(Instant.ofEpochMilli(0)), "Era esperado que o tempo de execução " + result8 + " <Duration.ofSeconds(5L)> não fosse ultrapassado, mas foi")
 chamada antiga: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(task.getDuration()).isEqualTo(Duration.ofSeconds(0)))
 nova chamada: assertTimeout(Duration.ofSeconds(5L), () -> assertThat(task.getDuration()).isEqualTo(Duration.ofSeconds(0)), "Era esperado que o tempo de execução " + result9 + " <Duration.ofSeconds(5L)> não fosse ultrapassado, mas foi")
+chamada antiga: assertThrows(ProcessingException.class, httpHealthCheck::check)
+nova chamada: assertThrows(ProcessingException.class, httpHealthCheck::check, "Era esperado que a exceção  ProcessingException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> healthEnvironment.healthStateAggregator())
+nova chamada: assertThrows(IllegalStateException.class, () -> healthEnvironment.healthStateAggregator(), "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(requestContext.getSecurityContext().isSecure())
 nova chamada: assertTrue(requestContext.getSecurityContext().isSecure(), "Era esperado verdadeiro, mas " + result10 + " <requestContext.getSecurityContext().isSecure()> é falso")
 chamada antiga: assertEquals(http.getAdminContextPath(), environment.getAdminContext().getContextPath())
@@ -59,12 +63,12 @@ nova chamada: assertTrue(Optionals.toGuavaOptional(java.util.Optional.of("Foo"))
 chamada antiga: assertEquals(com.google.common.base.Optional.of("Foo"), Optionals.toGuavaOptional(java.util.Optional.of("Foo")))
 nova chamada: assertEquals(com.google.common.base.Optional.of("Foo"), Optionals.toGuavaOptional(java.util.Optional.of("Foo")), "Era esperado valores iguais, mas " + result33 + " <com.google.common.base.Optional.of('Foo')> é diferente de " + result34 + " <Optionals.toGuavaOptional(java.util.Optional.of('Foo'))>")
 Total asserts: 4316
-Asserts sem descrição: 4313
-Asserts com descrição: 3
-Assertion Roulette: 3386
+Asserts sem descrição: 4314
+Asserts com descrição: 2
+Assertion Roulette: 3385
 
 Após do refactor: 
 Total asserts: 4316
-Asserts sem descrição: 4289
-Asserts com descrição: 27
-Assertion Roulette: 3370
+Asserts sem descrição: 4288
+Asserts com descrição: 28
+Assertion Roulette: 3369

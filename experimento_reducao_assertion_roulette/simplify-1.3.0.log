@@ -378,8 +378,6 @@ chamada antiga: assertEquals("[" + CommonTypes.OBJECT, item.getType())
 nova chamada: assertEquals("[" + CommonTypes.OBJECT, item.getType(), "Era esperado valores iguais, mas  '[' + CommonTypes.OBJECT é diferente de " + result173 + " <item.getType()>")
 chamada antiga: assertEquals(expected, digraph)
 nova chamada: assertEquals(expected, digraph, "Era esperado valores iguais, mas  expected é diferente de " + " digraph")
-chamada antiga: fail("Not yet implemented")
-nova chamada: fail("Not yet implemented", "A execução falhou por uma causa deliberada")
 chamada antiga: assertEquals(handlerCodeAddress2, actual)
 nova chamada: assertEquals(handlerCodeAddress2, actual, "Era esperado valores iguais, mas  handlerCodeAddress2 é diferente de " + " actual")
 chamada antiga: assertEquals(handlerCodeAddress1, actual)
@@ -586,6 +584,8 @@ chamada antiga: assertEquals(EXPECTED_VALUE, value)
 nova chamada: assertEquals(EXPECTED_VALUE, value, "Era esperado valores iguais, mas  EXPECTED_VALUE é diferente de " + " value")
 chamada antiga: assertEquals("parentMethod", item.getValue())
 nova chamada: assertEquals("parentMethod", item.getValue(), "Era esperado valores iguais, mas  'parentMethod' é diferente de " + result255 + " <item.getValue()>")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> vm.execute(CLASS_NAME + "->" + methodName))
+nova chamada: assertThrows(IllegalArgumentException.class, () -> vm.execute(CLASS_NAME + "->" + methodName), "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertArrayEquals(expectedAddresses, actualAddresses)
 nova chamada: assertArrayEquals(expectedAddresses, actualAddresses, "Era esperado arrays iguais, mas  expectedAddresses é diferente de " + " actualAddresses")
 chamada antiga: assertEquals(exceptionClass, argument.getValue().getClass())
@@ -763,12 +763,12 @@ nova chamada: assertEquals(true, Utils.castToPrimitive(1, "Z"), "Era esperado va
 chamada antiga: assertEquals(false, Utils.castToPrimitive(0, "Ljava/lang/Boolean;"))
 nova chamada: assertEquals(false, Utils.castToPrimitive(0, "Ljava/lang/Boolean;"), "Era esperado valores iguais, mas  false é diferente de " + result322 + " <Utils.castToPrimitive(0, 'Ljava/lang/Boolean;')>")
 Total asserts: 444
-Asserts sem descrição: 418
-Asserts com descrição: 26
-Assertion Roulette: 318
+Asserts sem descrição: 423
+Asserts com descrição: 21
+Assertion Roulette: 323
 
 Após do refactor: 
 Total asserts: 444
-Asserts sem descrição: 39
-Asserts com descrição: 405
-Assertion Roulette: 29
+Asserts sem descrição: 43
+Asserts com descrição: 401
+Assertion Roulette: 34

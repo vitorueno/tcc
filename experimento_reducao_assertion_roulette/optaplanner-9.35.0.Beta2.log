@@ -84,8 +84,6 @@ chamada antiga: assertNotNull(solution)
 nova chamada: assertNotNull(solution, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertEquals(entityList.size(), solution.getEntityList().size())
 nova chamada: assertEquals(entityList.size(), solution.getEntityList().size(), "Era esperado valores iguais, mas " + result35 + " <entityList.size()> é diferente de " + result36 + " <solution.getEntityList().size()>")
-chamada antiga: fail("Build should fail")
-nova chamada: fail("Build should fail", "A execução falhou por uma causa deliberada")
 chamada antiga: assertNotNull(solverFactory)
 nova chamada: assertNotNull(solverFactory, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertNotNull(scoreManager)
@@ -156,8 +154,6 @@ chamada antiga: assertEquals(ConstraintStreamImplType.BAVET, solverConfig.getSco
 nova chamada: assertEquals(ConstraintStreamImplType.BAVET, solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType(), "Era esperado valores iguais, mas  ConstraintStreamImplType.BAVET é diferente de " + result61 + " <solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType()>")
 chamada antiga: assertNotNull(solverFactory)
 nova chamada: assertNotNull(solverFactory, "Era esperado não nulo, mas  o valor obtido foi nulo")
-chamada antiga: fail("Build should fail", "A execução falhou por uma causa deliberada")
-nova chamada: fail("Build should fail", "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
 chamada antiga: Assertions.assertEquals(ConstraintStreamImplType.DROOLS, ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType())
 nova chamada: assertEquals(ConstraintStreamImplType.DROOLS, ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType(), "Era esperado valores iguais, mas  ConstraintStreamImplType.DROOLS é diferente de " + result62 + " <((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType()>")
 chamada antiga: Assertions.assertEquals(!ConfigUtils.isNativeImage(), ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).isDroolsAlphaNetworkCompilationEnabled())
@@ -205,12 +201,12 @@ nova chamada: assertEquals("The following " + SolverBenchmarkConfig.class.getSim
 chamada antiga: Assertions.assertEquals("At least one of the properties quarkus.optaplanner.benchmark.solver.termination.spent-limit, quarkus.optaplanner.benchmark.solver.termination.best-score-limit, quarkus.optaplanner.benchmark.solver.termination.unimproved-spent-limit is required if termination is not configured in the inherited solver benchmark config and solverBenchmarkBluePrint is used.", exception.getMessage())
 nova chamada: assertEquals("At least one of the properties quarkus.optaplanner.benchmark.solver.termination.spent-limit, quarkus.optaplanner.benchmark.solver.termination.best-score-limit, quarkus.optaplanner.benchmark.solver.termination.unimproved-spent-limit is required if termination is not configured in the inherited solver benchmark config and solverBenchmarkBluePrint is used.", exception.getMessage(), "Era esperado valores iguais, mas  'At least one of the properties quarkus.optaplanner.benchmark.solver.termination.spent-limit, quarkus.optaplanner.benchmark.solver.termination.best-score-limit, quarkus.optaplanner.benchmark.solver.termination.unimproved-spent-limit is required if termination is not configured in the inherited solver benchmark config and solverBenchmarkBluePrint is used.' é diferente de " + result84 + " <exception.getMessage()>")
 Total asserts: 5214
-Asserts sem descrição: 5208
-Asserts com descrição: 3
-Assertion Roulette: 4762
+Asserts sem descrição: 5177
+Asserts com descrição: 34
+Assertion Roulette: 4742
 
 Após do refactor: 
 Total asserts: 5214
-Asserts sem descrição: 5138
-Asserts com descrição: 73
-Assertion Roulette: 4694
+Asserts sem descrição: 5107
+Asserts com descrição: 104
+Assertion Roulette: 4674

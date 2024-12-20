@@ -10,10 +10,10 @@ chamada antiga: assertTrue(match.isExactMatch())
 nova chamada: assertTrue(match.isExactMatch(), "Era esperado verdadeiro, mas " + result2 + " <match.isExactMatch()> é falso")
 chamada antiga: assertTrue(result)
 nova chamada: assertTrue(result, "Era esperado verdadeiro, mas o valor obtido é falso")
-chamada antiga: assertTrue(result)
-nova chamada: assertTrue(result, "Era esperado verdadeiro, mas o valor obtido é falso")
 chamada antiga: assertFalse(result)
 nova chamada: assertFalse(result, "Era esperado falso, mas o valor é verdadeiro")
+chamada antiga: assertTrue(result)
+nova chamada: assertTrue(result, "Era esperado verdadeiro, mas o valor obtido é falso")
 chamada antiga: assertTrue(pattern.isMatchAny())
 nova chamada: assertTrue(pattern.isMatchAny(), "Era esperado verdadeiro, mas " + result3 + " <pattern.isMatchAny()> é falso")
 chamada antiga: assertFalse(pattern.isMatchAll())
@@ -164,28 +164,28 @@ chamada antiga: assertTrue(pattern.match(actual).isExactMatch())
 nova chamada: assertTrue(pattern.match(actual).isExactMatch(), "Era esperado verdadeiro, mas " + result73 + " <pattern.match(actual).isExactMatch()> é falso")
 chamada antiga: assertTrue(pattern.isMatchAny())
 nova chamada: assertTrue(pattern.isMatchAny(), "Era esperado verdadeiro, mas " + result74 + " <pattern.isMatchAny()> é falso")
+chamada antiga: assertFalse(pattern.isMatchAll())
+nova chamada: assertFalse(pattern.isMatchAll(), "Era esperado falso, mas " + result75 + " <pattern.isMatchAll()> é verdadeiro ")
 chamada antiga: assertNull(pattern.getBodyPatterns())
-nova chamada: assertNull(pattern.getBodyPatterns(), "Era esperado nulo, mas " + result75 + " <pattern.getBodyPatterns()> não é nulo")
+nova chamada: assertNull(pattern.getBodyPatterns(), "Era esperado nulo, mas " + result76 + " <pattern.getBodyPatterns()> não é nulo")
 chamada antiga: assertTrue(pattern.isMatchAll())
-nova chamada: assertTrue(pattern.isMatchAll(), "Era esperado verdadeiro, mas " + result76 + " <pattern.isMatchAll()> é falso")
-chamada antiga: assertNull(pattern.getHeaders())
-nova chamada: assertNull(pattern.getHeaders(), "Era esperado nulo, mas " + result77 + " <pattern.getHeaders()> não é nulo")
-chamada antiga: assertTrue(pattern.isMatchAny())
-nova chamada: assertTrue(pattern.isMatchAny(), "Era esperado verdadeiro, mas " + result78 + " <pattern.isMatchAny()> é falso")
-chamada antiga: assertTrue(pattern.isMatchAny())
-nova chamada: assertTrue(pattern.isMatchAny(), "Era esperado verdadeiro, mas " + result79 + " <pattern.isMatchAny()> é falso")
-chamada antiga: assertEquals(pattern.getBodyPatterns().get(0).getExpected(), expectedBinary)
-nova chamada: assertEquals(pattern.getBodyPatterns().get(0).getExpected(), expectedBinary, "Era esperado valores iguais, mas " + result80 + " <pattern.getBodyPatterns().get(0).getExpected()> é diferente de " + " expectedBinary")
-chamada antiga: assertTrue(pattern.isMatchAll())
-nova chamada: assertTrue(pattern.isMatchAll(), "Era esperado verdadeiro, mas " + result81 + " <pattern.isMatchAll()> é falso")
-chamada antiga: assertFalse(pattern.isMatchAll())
-nova chamada: assertFalse(pattern.isMatchAll(), "Era esperado falso, mas " + result82 + " <pattern.isMatchAll()> é verdadeiro ")
+nova chamada: assertTrue(pattern.isMatchAll(), "Era esperado verdadeiro, mas " + result77 + " <pattern.isMatchAll()> é falso")
 chamada antiga: assertFalse(pattern.isMatchAny())
-nova chamada: assertFalse(pattern.isMatchAny(), "Era esperado falso, mas " + result83 + " <pattern.isMatchAny()> é verdadeiro ")
+nova chamada: assertFalse(pattern.isMatchAny(), "Era esperado falso, mas " + result78 + " <pattern.isMatchAny()> é verdadeiro ")
+chamada antiga: assertNull(pattern.getHeaders())
+nova chamada: assertNull(pattern.getHeaders(), "Era esperado nulo, mas " + result79 + " <pattern.getHeaders()> não é nulo")
+chamada antiga: assertTrue(pattern.isMatchAny())
+nova chamada: assertTrue(pattern.isMatchAny(), "Era esperado verdadeiro, mas " + result80 + " <pattern.isMatchAny()> é falso")
 chamada antiga: assertFalse(pattern.isMatchAll())
-nova chamada: assertFalse(pattern.isMatchAll(), "Era esperado falso, mas " + result84 + " <pattern.isMatchAll()> é verdadeiro ")
+nova chamada: assertFalse(pattern.isMatchAll(), "Era esperado falso, mas " + result81 + " <pattern.isMatchAll()> é verdadeiro ")
+chamada antiga: assertTrue(pattern.isMatchAny())
+nova chamada: assertTrue(pattern.isMatchAny(), "Era esperado verdadeiro, mas " + result82 + " <pattern.isMatchAny()> é falso")
 chamada antiga: assertFalse(pattern.isMatchAll())
-nova chamada: assertFalse(pattern.isMatchAll(), "Era esperado falso, mas " + result85 + " <pattern.isMatchAll()> é verdadeiro ")
+nova chamada: assertFalse(pattern.isMatchAll(), "Era esperado falso, mas " + result83 + " <pattern.isMatchAll()> é verdadeiro ")
+chamada antiga: assertEquals(pattern.getBodyPatterns().get(0).getExpected(), expectedBinary)
+nova chamada: assertEquals(pattern.getBodyPatterns().get(0).getExpected(), expectedBinary, "Era esperado valores iguais, mas " + result84 + " <pattern.getBodyPatterns().get(0).getExpected()> é diferente de " + " expectedBinary")
+chamada antiga: assertTrue(pattern.isMatchAll())
+nova chamada: assertTrue(pattern.isMatchAll(), "Era esperado verdadeiro, mas " + result85 + " <pattern.isMatchAll()> é falso")
 chamada antiga: assertFalse(pattern.isMatchAny())
 nova chamada: assertFalse(pattern.isMatchAny(), "Era esperado falso, mas " + result86 + " <pattern.isMatchAny()> é verdadeiro ")
 chamada antiga: assertTrue(matcher.match("2021-06-14T12:13:14Z").isExactMatch())
@@ -366,8 +366,8 @@ chamada antiga: assertTrue(urlPathPattern.match("/my/regex/path?one=not_looked_a
 nova chamada: assertTrue(urlPathPattern.match("/my/regex/path?one=not_looked_at").isExactMatch(), "Era esperado verdadeiro, mas " + result174 + " <urlPathPattern.match('/my/regex/path?one=not_looked_at').isExactMatch()> é falso")
 chamada antiga: assertFalse(urlPathPattern.match("/my/12345/path").isExactMatch())
 nova chamada: assertFalse(urlPathPattern.match("/my/12345/path").isExactMatch(), "Era esperado falso, mas " + result175 + " <urlPathPattern.match('/my/12345/path').isExactMatch()> é verdadeiro ")
-chamada antiga: assertTrue(match.isExactMatch())
-nova chamada: assertTrue(match.isExactMatch(), "Era esperado verdadeiro, mas " + result176 + " <match.isExactMatch()> é falso")
+chamada antiga: assertFalse(match.isExactMatch())
+nova chamada: assertFalse(match.isExactMatch(), "Era esperado falso, mas " + result176 + " <match.isExactMatch()> é verdadeiro ")
 chamada antiga: assertTrue(match.isExactMatch())
 nova chamada: assertTrue(match.isExactMatch(), "Era esperado verdadeiro, mas " + result177 + " <match.isExactMatch()> é falso")
 chamada antiga: assertTrue(match.isExactMatch())
@@ -380,14 +380,26 @@ chamada antiga: assertTrue(match.isExactMatch())
 nova chamada: assertTrue(match.isExactMatch(), "Era esperado verdadeiro, mas " + result181 + " <match.isExactMatch()> é falso")
 chamada antiga: assertTrue(match.isExactMatch())
 nova chamada: assertTrue(match.isExactMatch(), "Era esperado verdadeiro, mas " + result182 + " <match.isExactMatch()> é falso")
-chamada antiga: assertTrue(result.isExactMatch())
-nova chamada: assertTrue(result.isExactMatch(), "Era esperado verdadeiro, mas " + result183 + " <result.isExactMatch()> é falso")
-chamada antiga: assertTrue(result.isExactMatch())
-nova chamada: assertTrue(result.isExactMatch(), "Era esperado verdadeiro, mas " + result184 + " <result.isExactMatch()> é falso")
+chamada antiga: assertTrue(match.isExactMatch())
+nova chamada: assertTrue(match.isExactMatch(), "Era esperado verdadeiro, mas " + result183 + " <match.isExactMatch()> é falso")
 chamada antiga: assertFalse(match.isExactMatch())
-nova chamada: assertFalse(match.isExactMatch(), "Era esperado falso, mas " + result185 + " <match.isExactMatch()> é verdadeiro ")
-chamada antiga: assertFalse(match.isExactMatch())
-nova chamada: assertFalse(match.isExactMatch(), "Era esperado falso, mas " + result186 + " <match.isExactMatch()> é verdadeiro ")
+nova chamada: assertFalse(match.isExactMatch(), "Era esperado falso, mas " + result184 + " <match.isExactMatch()> é verdadeiro ")
+chamada antiga: assertThrows(JsonException.class, () -> {
+    Json.read("{                                      \n" + "    \"matchesJsonPath\": {              \n" + "        \"express\": \"$..thing\",      \n" + "        \"equalTo\": \"the value\"      \n" + "    }                                   \n" + "}", StringValuePattern.class);
+})
+nova chamada: assertThrows(JsonException.class, () -> {
+    Json.read("{                                      \n" + "    \"matchesJsonPath\": {              \n" + "        \"express\": \"$..thing\",      \n" + "        \"equalTo\": \"the value\"      \n" + "    }                                   \n" + "}", StringValuePattern.class);
+}, "Era esperado que a exceção  JsonException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(JsonException.class, () -> {
+    Json.read("{                                      \n" + "    \"matchesJsonPath\": {              \n" + "        \"expression\": \"$..thing\",   \n" + "        \"badOperator\": \"the value\"  \n" + "    }                                   \n" + "}", StringValuePattern.class);
+})
+nova chamada: assertThrows(JsonException.class, () -> {
+    Json.read("{                                      \n" + "    \"matchesJsonPath\": {              \n" + "        \"expression\": \"$..thing\",   \n" + "        \"badOperator\": \"the value\"  \n" + "    }                                   \n" + "}", StringValuePattern.class);
+}, "Era esperado que a exceção  JsonException.class fosse lançada, mas não foi")
+chamada antiga: assertTrue(result.isExactMatch())
+nova chamada: assertTrue(result.isExactMatch(), "Era esperado verdadeiro, mas " + result185 + " <result.isExactMatch()> é falso")
+chamada antiga: assertTrue(result.isExactMatch())
+nova chamada: assertTrue(result.isExactMatch(), "Era esperado verdadeiro, mas " + result186 + " <result.isExactMatch()> é falso")
 chamada antiga: assertEquals(200, statusCode)
 nova chamada: assertEquals(200, statusCode, "Era esperado valores iguais, mas  200 é diferente de " + " statusCode")
 chamada antiga: assertEquals(200, statusCode)
@@ -398,8 +410,44 @@ chamada antiga: assertEquals(200, statusCode)
 nova chamada: assertEquals(200, statusCode, "Era esperado valores iguais, mas  200 é diferente de " + " statusCode")
 chamada antiga: assertEquals(200, response.statusCode())
 nova chamada: assertEquals(200, response.statusCode(), "Era esperado valores iguais, mas  200 é diferente de " + result187 + " <response.statusCode()>")
+chamada antiga: assertThrows(NotRecordingException.class, WireMock::stopRecording)
+nova chamada: assertThrows(NotRecordingException.class, WireMock::stopRecording, "Era esperado que a exceção  NotRecordingException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotRecordingException.class, adminClient::stopStubRecording)
+nova chamada: assertThrows(NotRecordingException.class, adminClient::stopStubRecording, "Era esperado que a exceção  NotRecordingException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotRecordingException.class, proxyingService::stopRecording)
+nova chamada: assertThrows(NotRecordingException.class, proxyingService::stopRecording, "Era esperado que a exceção  NotRecordingException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(InvalidInputException.class, () -> {
+    startRecording(recordSpec());
+})
+nova chamada: assertThrows(InvalidInputException.class, () -> {
+    startRecording(recordSpec());
+}, "Era esperado que a exceção  InvalidInputException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(InvalidInputException.class, () -> {
+    proxyingService.startRecording(recordSpec());
+})
+nova chamada: assertThrows(InvalidInputException.class, () -> {
+    proxyingService.startRecording(recordSpec());
+}, "Era esperado que a exceção  InvalidInputException.class fosse lançada, mas não foi")
 chamada antiga: assertNull(httpConnector)
 nova chamada: assertNull(httpConnector, "Era esperado nulo, mas o valor obtido não é nulo")
+chamada antiga: assertThrows(Exception.class, () -> {
+    new CommandLineOptions("--port");
+})
+nova chamada: assertThrows(Exception.class, () -> {
+    new CommandLineOptions("--port");
+}, "Era esperado que a exceção  Exception.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(Exception.class, () -> {
+    new CommandLineOptions("--proxy-all");
+})
+nova chamada: assertThrows(Exception.class, () -> {
+    new CommandLineOptions("--proxy-all");
+}, "Era esperado que a exceção  Exception.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    new CommandLineOptions("--no-request-journal", "--record-mappings");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    new CommandLineOptions("--no-request-journal", "--record-mappings");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertSame(one, two)
 nova chamada: assertSame(one, two, "Era esperado objetos iguais, mas  one é diferente de " + " two")
 chamada antiga: assertFalse(options.getStores().getSettingsStore().get().getProxyPassThrough())
@@ -408,18 +456,252 @@ chamada antiga: assertTrue(options.getStores().getSettingsStore().get().getProxy
 nova chamada: assertTrue(options.getStores().getSettingsStore().get().getProxyPassThrough(), "Era esperado verdadeiro, mas " + result189 + " <options.getStores().getSettingsStore().get().getProxyPassThrough()> é falso")
 chamada antiga: assertTrue(options.getStores().getSettingsStore().get().getProxyPassThrough())
 nova chamada: assertTrue(options.getStores().getSettingsStore().get().getProxyPassThrough(), "Era esperado verdadeiro, mas " + result190 + " <options.getStores().getSettingsStore().get().getProxyPassThrough()> é falso")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings.fromString(":8090");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings.fromString(":8090");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requested")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requested")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requeste?query")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requeste?query")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requested/?query")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requested/?query")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlPathEqualTo("/this/got/requeste")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlPathEqualTo("/this/got/requeste")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlPathEqualTo("/this/got/requested/")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlPathEqualTo("/this/got/requested/")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlPathMatching("/(.*?)/got/")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlPathMatching("/(.*?)/got/")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlPathMatching("/got/.*")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlPathMatching("/got/.*")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlEqualTo("/this/did/not")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlEqualTo("/this/did/not")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.put("/to/modify", withHeader("Content-Type", "application/json"), withHeader("Encoding", "LATIN-1"));
+    verify(putRequestedFor(urlEqualTo("/to/modify")).withHeader("Content-Type", equalTo("application/json")).withHeader("Encoding", notMatching("LATIN-1")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.put("/to/modify", withHeader("Content-Type", "application/json"), withHeader("Encoding", "LATIN-1"));
+    verify(putRequestedFor(urlEqualTo("/to/modify")).withHeader("Content-Type", equalTo("application/json")).withHeader("Encoding", notMatching("LATIN-1")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> verify(postRequestedFor(urlEqualTo("/body/json")).withRequestBody(not(containing("Important value")))))
+nova chamada: assertThrows(VerificationException.class, () -> verify(postRequestedFor(urlEqualTo("/body/json")).withRequestBody(not(containing("Important value")))), "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/query?param=my-value");
+    verify(getRequestedFor(urlPathEqualTo("/query")).withQueryParam("param", equalTo("wrong-value")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/query?param=my-value");
+    verify(getRequestedFor(urlPathEqualTo("/query")).withQueryParam("param", equalTo("wrong-value")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/query");
+    verify(getRequestedFor(urlPathEqualTo("/query")).withQueryParam("param", equalTo("my-value")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/query");
+    verify(getRequestedFor(urlPathEqualTo("/query")).withQueryParam("param", equalTo("my-value")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/count/this");
+    testClient.get("/count/this");
+    testClient.get("/count/this");
+    WireMock.reset();
+    verify(getRequestedFor(urlEqualTo("/count/this")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/count/this");
+    testClient.get("/count/this");
+    testClient.get("/count/this");
+    WireMock.reset();
+    verify(getRequestedFor(urlEqualTo("/count/this")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(5);
+    verify(lessThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(5);
+    verify(lessThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(lessThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(lessThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(lessThanOrExactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(lessThanOrExactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(exactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(exactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(exactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(exactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(moreThanOrExactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(moreThanOrExactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(moreThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(moreThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(5);
+    verify(moreThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(5);
+    verify(moreThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.get("/without/another/header", withHeader("Content-Type", "application/json"));
+    verify(getRequestedFor(urlEqualTo("/without/another/header")).withoutHeader("Content-Type"));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.get("/without/another/header", withHeader("Content-Type", "application/json"));
+    verify(getRequestedFor(urlEqualTo("/without/another/header")).withoutHeader("Content-Type"));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    testClient.post("/no/body", new StringEntity("not absent"));
+    verify(postRequestedFor(urlEqualTo("/no/body")).withRequestBody(absent()));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    testClient.post("/no/body", new StringEntity("not absent"));
+    verify(postRequestedFor(urlEqualTo("/no/body")).withRequestBody(absent()));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(RequestJournalDisabledException.class, () -> {
+    verify(getRequestedFor(urlEqualTo("/whatever")));
+})
+nova chamada: assertThrows(RequestJournalDisabledException.class, () -> {
+    verify(getRequestedFor(urlEqualTo("/whatever")));
+}, "Era esperado que a exceção  RequestJournalDisabledException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(RequestJournalDisabledException.class, () -> {
+    findAll(getRequestedFor(urlEqualTo("/whatever")));
+})
+nova chamada: assertThrows(RequestJournalDisabledException.class, () -> {
+    findAll(getRequestedFor(urlEqualTo("/whatever")));
+}, "Era esperado que a exceção  RequestJournalDisabledException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(wm.listAllStubMappings().getMappings().isEmpty())
 nova chamada: assertTrue(wm.listAllStubMappings().getMappings().isEmpty(), "Era esperado verdadeiro, mas " + result191 + " <wm.listAllStubMappings().getMappings().isEmpty()> é falso")
 chamada antiga: assertTrue(wm.listAllStubMappings().getMappings().isEmpty())
 nova chamada: assertTrue(wm.listAllStubMappings().getMappings().isEmpty(), "Era esperado verdadeiro, mas " + result192 + " <wm.listAllStubMappings().getMappings().isEmpty()> é falso")
 chamada antiga: assertFalse(fetchedSettings.getProxyPassThrough())
 nova chamada: assertFalse(fetchedSettings.getProxyPassThrough(), "Era esperado falso, mas " + result193 + " <fetchedSettings.getProxyPassThrough()> é verdadeiro ")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    initialise(new BasicAuthenticator(new BasicCredentials("user1", "password1"), new BasicCredentials("user2", "password2")), new ClientBasicAuthenticator("user1", "password1"));
+    badClient = WireMock.create().port(server.port()).authenticator(new ClientBasicAuthenticator("user1", "wrong_password")).build();
+    badClient.getServeEvents();
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    initialise(new BasicAuthenticator(new BasicCredentials("user1", "password1"), new BasicCredentials("user2", "password2")), new ClientBasicAuthenticator("user1", "password1"));
+    badClient = WireMock.create().port(server.port()).authenticator(new ClientBasicAuthenticator("user1", "wrong_password")).build();
+    badClient.getServeEvents();
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(SocketTimeoutException.class, () -> {
+    stubFor(get(urlEqualTo("/delayed")).willReturn(aResponse().withStatus(200).withFixedDelay(LONGER_THAN_SOCKET_TIMEOUT)));
+    httpClient.execute(new HttpGet(wireMockRule.url("/delayed")));
+})
+nova chamada: assertThrows(SocketTimeoutException.class, () -> {
+    stubFor(get(urlEqualTo("/delayed")).willReturn(aResponse().withStatus(200).withFixedDelay(LONGER_THAN_SOCKET_TIMEOUT)));
+    httpClient.execute(new HttpGet(wireMockRule.url("/delayed")));
+}, "Era esperado que a exceção  SocketTimeoutException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(callSucceeded.get())
 nova chamada: assertTrue(callSucceeded.get(), "Era esperado verdadeiro, mas " + result194 + " <callSucceeded.get()> é falso")
 chamada antiga: assertTrue(callSucceeded.get())
 nova chamada: assertTrue(callSucceeded.get(), "Era esperado verdadeiro, mas " + result195 + " <callSucceeded.get()> é falso")
 chamada antiga: assertTrue(exception.getMessage().contains("Not listening on HTTP port. Either HTTP is not enabled or the WireMock server is stopped."))
 nova chamada: assertTrue(exception.getMessage().contains("Not listening on HTTP port. Either HTTP is not enabled or the WireMock server is stopped."), "Era esperado verdadeiro, mas " + result196 + " <exception.getMessage().contains('Not listening on HTTP port. Either HTTP is not enabled or the WireMock server is stopped.')> é falso")
+chamada antiga: assertThrows(Exception.class, () -> {
+    String testKeystorePath = Resources.getResource("bad-keystore").toString();
+    startServerWithKeystore(testKeystorePath);
+})
+nova chamada: assertThrows(Exception.class, () -> {
+    String testKeystorePath = Resources.getResource("bad-keystore").toString();
+    startServerWithKeystore(testKeystorePath);
+}, "Era esperado que a exceção  Exception.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(AdminException.class, () -> {
+    wm.register(get(urlPathMatching("/the/.*/one")).andMatching(new MyRequestMatcher()).willReturn(ok()));
+})
+nova chamada: assertThrows(AdminException.class, () -> {
+    wm.register(get(urlPathMatching("/the/.*/one")).andMatching(new MyRequestMatcher()).willReturn(ok()));
+}, "Era esperado que a exceção  AdminException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(loggedResponse.getBodyAsString(), "")
 nova chamada: assertEquals(loggedResponse.getBodyAsString(), "", "Era esperado valores iguais, mas " + result197 + " <loggedResponse.getBodyAsString()> é diferente de " + " ''")
 chamada antiga: assertTrue(loggedRequest.containsHeader("content-type"))
@@ -448,6 +730,10 @@ chamada antiga: assertEquals("test-param-2", req.queryParameter("test-param-2").
 nova chamada: assertEquals("test-param-2", req.queryParameter("test-param-2").key(), "Era esperado valores iguais, mas  'test-param-2' é diferente de " + result209 + " <req.queryParameter('test-param-2').key()>")
 chamada antiga: assertEquals("value-2", req.queryParameter("test-param-2").firstValue())
 nova chamada: assertEquals("value-2", req.queryParameter("test-param-2").firstValue(), "Era esperado valores iguais, mas  'value-2' é diferente de " + result210 + " <req.queryParameter('test-param-2').firstValue()>")
+chamada antiga: assertThrows(InvalidInputException.class, () -> stubFor(get(urlPathEqualTo("/stuff")).withPathParam("wrong", containing("things")).willReturn(ok())))
+nova chamada: assertThrows(InvalidInputException.class, () -> stubFor(get(urlPathEqualTo("/stuff")).withPathParam("wrong", containing("things")).willReturn(ok())), "Era esperado que a exceção  InvalidInputException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(InvalidInputException.class, () -> wm.stubFor(get(urlPathEqualTo("/stuff")).withPathParam("wrong", containing("things")).willReturn(ok())))
+nova chamada: assertThrows(InvalidInputException.class, () -> wm.stubFor(get(urlPathEqualTo("/stuff")).withPathParam("wrong", containing("things")).willReturn(ok())), "Era esperado que a exceção  InvalidInputException.class fosse lançada, mas não foi")
 chamada antiga: assertDoesNotThrow(() -> new DirectCallHttpServer(options, adminRequestHandler, stubRequestHandler))
 nova chamada: assertDoesNotThrow(() -> new DirectCallHttpServer(options, adminRequestHandler, stubRequestHandler), "Era esperado que nenhuma exceção fosse lançada, mas  () - new DirectCallHttpServer(options, adminRequestHandler, stubRequestHandler) foi lançada")
 chamada antiga: assertDoesNotThrow(server::start)
@@ -525,8 +811,6 @@ chamada antiga: assertEquals("default_alias", alias)
 nova chamada: assertEquals("default_alias", alias, "Era esperado valores iguais, mas  'default_alias' é diferente de " + " alias")
 chamada antiga: assertEquals("default_alias", alias)
 nova chamada: assertEquals("default_alias", alias, "Era esperado valores iguais, mas  'default_alias' é diferente de " + " alias")
-chamada antiga: fail("A execução falhou por uma causa deliberada")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
 chamada antiga: assertEquals(invalidCertForTrustManager1, thrown)
 nova chamada: assertEquals(invalidCertForTrustManager1, thrown, "Era esperado valores iguais, mas  invalidCertForTrustManager1 é diferente de " + " thrown")
 chamada antiga: assertEquals(invalidCertForTrustManager2, thrown)
@@ -535,6 +819,18 @@ chamada antiga: assertArrayEquals(new X509Certificate[] { cert1, cert2, cert3, c
 nova chamada: assertArrayEquals(new X509Certificate[] { cert1, cert2, cert3, cert4 }, acceptedIssuers, "Era esperado arrays iguais, mas  new X509Certificate[] { cert1, cert2, cert3, cert4 } é diferente de " + " acceptedIssuers")
 chamada antiga: assertArrayEquals(new X509Certificate[] { cert1, cert2, cert3, cert4 }, compositeTrustManager.getAcceptedIssuers())
 nova chamada: assertArrayEquals(new X509Certificate[] { cert1, cert2, cert3, cert4 }, compositeTrustManager.getAcceptedIssuers(), "Era esperado arrays iguais, mas  new X509Certificate[] { cert1, cert2, cert3, cert4 } é diferente de " + result224 + " <compositeTrustManager.getAcceptedIssuers()>")
+chamada antiga: assertThrows(IllegalStateException.class, () -> {
+    HttpHeader.absent("Something").firstValue();
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    HttpHeader.absent("Something").firstValue();
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> {
+    HttpHeader.absent("Something").values();
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    HttpHeader.absent("Something").values();
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals("Hello World", result)
 nova chamada: assertEquals("Hello World", result, "Era esperado valores iguais, mas  'Hello World' é diferente de " + " result")
 chamada antiga: assertEquals(response.getBodyAsString(), "Result")
@@ -543,96 +839,126 @@ chamada antiga: assertEquals(HTTP_INTERNAL_ERROR, response.getStatus())
 nova chamada: assertEquals(HTTP_INTERNAL_ERROR, response.getStatus(), "Era esperado valores iguais, mas  HTTP_INTERNAL_ERROR é diferente de " + result226 + " <response.getStatus()>")
 chamada antiga: assertEquals(response.getBodyAsString(), "Result")
 nova chamada: assertEquals(response.getBodyAsString(), "Result", "Era esperado valores iguais, mas " + result227 + " <response.getBodyAsString()> é diferente de " + " 'Result'")
-chamada antiga: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
+chamada antiga: assertThrows(SSLException.class, () -> client.execute(new HttpGet(server.url("/whatever"))))
+nova chamada: assertThrows(SSLException.class, () -> client.execute(new HttpGet(server.url("/whatever"))), "Era esperado que a exceção  SSLException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(encoding.isPresent())
 nova chamada: assertTrue(encoding.isPresent(), "Era esperado verdadeiro, mas " + result228 + " <encoding.isPresent()> é falso")
 chamada antiga: assertTrue(encoding.isPresent())
 nova chamada: assertTrue(encoding.isPresent(), "Era esperado verdadeiro, mas " + result229 + " <encoding.isPresent()> é falso")
-chamada antiga: assertTrue(encoding.isPresent())
-nova chamada: assertTrue(encoding.isPresent(), "Era esperado verdadeiro, mas " + result230 + " <encoding.isPresent()> é falso")
-chamada antiga: fail("WireMock did not shut down")
-nova chamada: fail("WireMock did not shut down", "A execução falhou por uma causa deliberada")
-chamada antiga: fail("WireMock did not shut down")
-nova chamada: fail("WireMock did not shut down", "A execução falhou por uma causa deliberada")
-chamada antiga: fail(String.format("Couldn't find a file under %s named like %s", directory.getPath(), namePart))
-nova chamada: fail(String.format("Couldn't find a file under %s named like %s", directory.getPath(), namePart), "A execução falhou por uma causa deliberada")
-chamada antiga: fail(String.format("Couldn't find a file under %s named like %s", directory.getPath(), namePart), "A execução falhou por uma causa deliberada")
-nova chamada: fail(String.format("Couldn't find a file under %s named like %s", directory.getPath(), namePart), "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
-chamada antiga: assertTrue(exception.getMessage().contains("No requests exactly matched. Most similar request was:"))
-nova chamada: assertTrue(exception.getMessage().contains("No requests exactly matched. Most similar request was:"), "Era esperado verdadeiro, mas " + result233 + " <exception.getMessage().contains('No requests exactly matched. Most similar request was:')> é falso")
-chamada antiga: assertNotNull(keyStore)
-nova chamada: assertNotNull(keyStore, "Era esperado não nulo, mas  o valor obtido foi nulo")
-chamada antiga: assertNotNull(keyStore)
-nova chamada: assertNotNull(keyStore, "Era esperado não nulo, mas  o valor obtido foi nulo")
-chamada antiga: assertNotNull(keyStore)
-nova chamada: assertNotNull(keyStore, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertFalse(header.encodingPart().isPresent())
-nova chamada: assertFalse(header.encodingPart().isPresent(), "Era esperado falso, mas " + result234 + " <header.encodingPart().isPresent()> é verdadeiro ")
+nova chamada: assertFalse(header.encodingPart().isPresent(), "Era esperado falso, mas " + result230 + " <header.encodingPart().isPresent()> é verdadeiro ")
+chamada antiga: assertTrue(encoding.isPresent())
+nova chamada: assertTrue(encoding.isPresent(), "Era esperado verdadeiro, mas " + result231 + " <encoding.isPresent()> é falso")
+chamada antiga: assertThrows(NullPointerException.class, () -> {
+    new MockRequestBuilder().withHeader("Content-Type", null).build();
+})
+nova chamada: assertThrows(NullPointerException.class, () -> {
+    new MockRequestBuilder().withHeader("Content-Type", null).build();
+}, "Era esperado que a exceção  NullPointerException.class fosse lançada, mas não foi")
+chamada antiga: assertTrue(exception.getMessage().contains("No requests exactly matched. Most similar request was:"))
+nova chamada: assertTrue(exception.getMessage().contains("No requests exactly matched. Most similar request was:"), "Era esperado verdadeiro, mas " + result232 + " <exception.getMessage().contains('No requests exactly matched. Most similar request was:')> é falso")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    new LimitAndOffsetPaginator<>(Collections.<Void>emptyList(), -1, 3);
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    new LimitAndOffsetPaginator<>(Collections.<Void>emptyList(), -1, 3);
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    new LimitAndOffsetPaginator<>(Collections.<Void>emptyList(), 0, -10);
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    new LimitAndOffsetPaginator<>(Collections.<Void>emptyList(), 0, -10);
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    DateTimeOffset.fromString("101");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    DateTimeOffset.fromString("101");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    DateTimeOffset.fromString("101 squillions");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    DateTimeOffset.fromString("101 squillions");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertNotNull(keyStore)
+nova chamada: assertNotNull(keyStore, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: assertNotNull(keyStore)
+nova chamada: assertNotNull(keyStore, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: assertNotNull(keyStore)
+nova chamada: assertNotNull(keyStore, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    KeyStoreSettings trustStoreSettings = new KeyStoreSettings("test-unknownstore", "", "jks");
+    trustStoreSettings.loadStore();
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    KeyStoreSettings trustStoreSettings = new KeyStoreSettings("test-unknownstore", "", "jks");
+    trustStoreSettings.loadStore();
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromExtension("txt"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("txt"), "Era esperado verdadeiro, mas " + result235 + " <ContentTypes.determineIsTextFromExtension('txt')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("txt"), "Era esperado verdadeiro, mas " + result233 + " <ContentTypes.determineIsTextFromExtension('txt')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromExtension("json"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("json"), "Era esperado verdadeiro, mas " + result236 + " <ContentTypes.determineIsTextFromExtension('json')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("json"), "Era esperado verdadeiro, mas " + result234 + " <ContentTypes.determineIsTextFromExtension('json')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromExtension("xml"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("xml"), "Era esperado verdadeiro, mas " + result237 + " <ContentTypes.determineIsTextFromExtension('xml')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("xml"), "Era esperado verdadeiro, mas " + result235 + " <ContentTypes.determineIsTextFromExtension('xml')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromExtension("html"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("html"), "Era esperado verdadeiro, mas " + result238 + " <ContentTypes.determineIsTextFromExtension('html')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("html"), "Era esperado verdadeiro, mas " + result236 + " <ContentTypes.determineIsTextFromExtension('html')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromExtension("htm"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("htm"), "Era esperado verdadeiro, mas " + result239 + " <ContentTypes.determineIsTextFromExtension('htm')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("htm"), "Era esperado verdadeiro, mas " + result237 + " <ContentTypes.determineIsTextFromExtension('htm')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromExtension("yaml"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("yaml"), "Era esperado verdadeiro, mas " + result240 + " <ContentTypes.determineIsTextFromExtension('yaml')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("yaml"), "Era esperado verdadeiro, mas " + result238 + " <ContentTypes.determineIsTextFromExtension('yaml')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromExtension("csv"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("csv"), "Era esperado verdadeiro, mas " + result241 + " <ContentTypes.determineIsTextFromExtension('csv')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromExtension("csv"), "Era esperado verdadeiro, mas " + result239 + " <ContentTypes.determineIsTextFromExtension('csv')> é falso")
 chamada antiga: assertFalse(ContentTypes.determineIsTextFromExtension("jpg"))
-nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension("jpg"), "Era esperado falso, mas " + result242 + " <ContentTypes.determineIsTextFromExtension('jpg')> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension("jpg"), "Era esperado falso, mas " + result240 + " <ContentTypes.determineIsTextFromExtension('jpg')> é verdadeiro ")
 chamada antiga: assertFalse(ContentTypes.determineIsTextFromExtension("png"))
-nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension("png"), "Era esperado falso, mas " + result243 + " <ContentTypes.determineIsTextFromExtension('png')> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension("png"), "Era esperado falso, mas " + result241 + " <ContentTypes.determineIsTextFromExtension('png')> é verdadeiro ")
 chamada antiga: assertFalse(ContentTypes.determineIsTextFromExtension(null))
-nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension(null), "Era esperado falso, mas " + result244 + " <ContentTypes.determineIsTextFromExtension(null)> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension(null), "Era esperado falso, mas " + result242 + " <ContentTypes.determineIsTextFromExtension(null)> é verdadeiro ")
 chamada antiga: assertFalse(ContentTypes.determineIsTextFromExtension(""))
-nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension(""), "Era esperado falso, mas " + result245 + " <ContentTypes.determineIsTextFromExtension('')> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsTextFromExtension(""), "Era esperado falso, mas " + result243 + " <ContentTypes.determineIsTextFromExtension('')> é verdadeiro ")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("text/plain"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/plain"), "Era esperado verdadeiro, mas " + result246 + " <ContentTypes.determineIsTextFromMimeType('text/plain')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/plain"), "Era esperado verdadeiro, mas " + result244 + " <ContentTypes.determineIsTextFromMimeType('text/plain')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("text/html"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/html"), "Era esperado verdadeiro, mas " + result247 + " <ContentTypes.determineIsTextFromMimeType('text/html')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/html"), "Era esperado verdadeiro, mas " + result245 + " <ContentTypes.determineIsTextFromMimeType('text/html')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("application/json"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/json"), "Era esperado verdadeiro, mas " + result248 + " <ContentTypes.determineIsTextFromMimeType('application/json')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/json"), "Era esperado verdadeiro, mas " + result246 + " <ContentTypes.determineIsTextFromMimeType('application/json')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("some-preamble; application/json"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("some-preamble; application/json"), "Era esperado verdadeiro, mas " + result249 + " <ContentTypes.determineIsTextFromMimeType('some-preamble; application/json')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("some-preamble; application/json"), "Era esperado verdadeiro, mas " + result247 + " <ContentTypes.determineIsTextFromMimeType('some-preamble; application/json')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("application/blah.something+json"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/blah.something+json"), "Era esperado verdadeiro, mas " + result250 + " <ContentTypes.determineIsTextFromMimeType('application/blah.something+json')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/blah.something+json"), "Era esperado verdadeiro, mas " + result248 + " <ContentTypes.determineIsTextFromMimeType('application/blah.something+json')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("application/xml"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/xml"), "Era esperado verdadeiro, mas " + result251 + " <ContentTypes.determineIsTextFromMimeType('application/xml')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/xml"), "Era esperado verdadeiro, mas " + result249 + " <ContentTypes.determineIsTextFromMimeType('application/xml')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("text/xml"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/xml"), "Era esperado verdadeiro, mas " + result252 + " <ContentTypes.determineIsTextFromMimeType('text/xml')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/xml"), "Era esperado verdadeiro, mas " + result250 + " <ContentTypes.determineIsTextFromMimeType('text/xml')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("text/xml; utf-8"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/xml; utf-8"), "Era esperado verdadeiro, mas " + result253 + " <ContentTypes.determineIsTextFromMimeType('text/xml; utf-8')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("text/xml; utf-8"), "Era esperado verdadeiro, mas " + result251 + " <ContentTypes.determineIsTextFromMimeType('text/xml; utf-8')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("application/csv"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/csv"), "Era esperado verdadeiro, mas " + result254 + " <ContentTypes.determineIsTextFromMimeType('application/csv')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/csv"), "Era esperado verdadeiro, mas " + result252 + " <ContentTypes.determineIsTextFromMimeType('application/csv')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsTextFromMimeType("application/x-www-form-urlencoded"))
-nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/x-www-form-urlencoded"), "Era esperado verdadeiro, mas " + result255 + " <ContentTypes.determineIsTextFromMimeType('application/x-www-form-urlencoded')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsTextFromMimeType("application/x-www-form-urlencoded"), "Era esperado verdadeiro, mas " + result253 + " <ContentTypes.determineIsTextFromMimeType('application/x-www-form-urlencoded')> é falso")
 chamada antiga: assertFalse(ContentTypes.determineIsTextFromMimeType("application/octet-stream"))
-nova chamada: assertFalse(ContentTypes.determineIsTextFromMimeType("application/octet-stream"), "Era esperado falso, mas " + result256 + " <ContentTypes.determineIsTextFromMimeType('application/octet-stream')> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsTextFromMimeType("application/octet-stream"), "Era esperado falso, mas " + result254 + " <ContentTypes.determineIsTextFromMimeType('application/octet-stream')> é verdadeiro ")
 chamada antiga: assertFalse(ContentTypes.determineIsTextFromMimeType("image/jpeg"))
-nova chamada: assertFalse(ContentTypes.determineIsTextFromMimeType("image/jpeg"), "Era esperado falso, mas " + result257 + " <ContentTypes.determineIsTextFromMimeType('image/jpeg')> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsTextFromMimeType("image/jpeg"), "Era esperado falso, mas " + result255 + " <ContentTypes.determineIsTextFromMimeType('image/jpeg')> é verdadeiro ")
 chamada antiga: assertFalse(ContentTypes.determineIsTextFromMimeType("application/pdf"))
-nova chamada: assertFalse(ContentTypes.determineIsTextFromMimeType("application/pdf"), "Era esperado falso, mas " + result258 + " <ContentTypes.determineIsTextFromMimeType('application/pdf')> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsTextFromMimeType("application/pdf"), "Era esperado falso, mas " + result256 + " <ContentTypes.determineIsTextFromMimeType('application/pdf')> é verdadeiro ")
 chamada antiga: assertTrue(ContentTypes.determineIsText("txt", "text/plain"))
-nova chamada: assertTrue(ContentTypes.determineIsText("txt", "text/plain"), "Era esperado verdadeiro, mas " + result259 + " <ContentTypes.determineIsText('txt', 'text/plain')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsText("txt", "text/plain"), "Era esperado verdadeiro, mas " + result257 + " <ContentTypes.determineIsText('txt', 'text/plain')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsText("xml", ""))
-nova chamada: assertTrue(ContentTypes.determineIsText("xml", ""), "Era esperado verdadeiro, mas " + result260 + " <ContentTypes.determineIsText('xml', '')> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsText("xml", ""), "Era esperado verdadeiro, mas " + result258 + " <ContentTypes.determineIsText('xml', '')> é falso")
 chamada antiga: assertTrue(ContentTypes.determineIsText("json", null))
-nova chamada: assertTrue(ContentTypes.determineIsText("json", null), "Era esperado verdadeiro, mas " + result261 + " <ContentTypes.determineIsText('json', null)> é falso")
+nova chamada: assertTrue(ContentTypes.determineIsText("json", null), "Era esperado verdadeiro, mas " + result259 + " <ContentTypes.determineIsText('json', null)> é falso")
 chamada antiga: assertFalse(ContentTypes.determineIsText("png", null))
-nova chamada: assertFalse(ContentTypes.determineIsText("png", null), "Era esperado falso, mas " + result262 + " <ContentTypes.determineIsText('png', null)> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsText("png", null), "Era esperado falso, mas " + result260 + " <ContentTypes.determineIsText('png', null)> é verdadeiro ")
 chamada antiga: assertFalse(ContentTypes.determineIsText(null, "image/jpeg"))
-nova chamada: assertFalse(ContentTypes.determineIsText(null, "image/jpeg"), "Era esperado falso, mas " + result263 + " <ContentTypes.determineIsText(null, 'image/jpeg')> é verdadeiro ")
+nova chamada: assertFalse(ContentTypes.determineIsText(null, "image/jpeg"), "Era esperado falso, mas " + result261 + " <ContentTypes.determineIsText(null, 'image/jpeg')> é verdadeiro ")
 chamada antiga: assertEquals("/home/bob/myfile.txt", path)
 nova chamada: assertEquals("/home/bob/myfile.txt", path, "Era esperado valores iguais, mas  '/home/bob/myfile.txt' é diferente de " + " path")
 chamada antiga: assertEquals(Paths.get("C:/Users/bob/myfile.txt"), path)
-nova chamada: assertEquals(Paths.get("C:/Users/bob/myfile.txt"), path, "Era esperado valores iguais, mas " + result264 + " <Paths.get('C:/Users/bob/myfile.txt')> é diferente de " + " path")
+nova chamada: assertEquals(Paths.get("C:/Users/bob/myfile.txt"), path, "Era esperado valores iguais, mas " + result262 + " <Paths.get('C:/Users/bob/myfile.txt')> é diferente de " + " path")
 chamada antiga: assertArrayEquals(empty, concat(empty, empty))
-nova chamada: assertArrayEquals(empty, concat(empty, empty), "Era esperado arrays iguais, mas  empty é diferente de " + result265 + " <concat(empty, empty)>")
+nova chamada: assertArrayEquals(empty, concat(empty, empty), "Era esperado arrays iguais, mas  empty é diferente de " + result263 + " <concat(empty, empty)>")
 chamada antiga: assertArrayEquals(new Integer[] { 1, 2 }, result)
 nova chamada: assertArrayEquals(new Integer[] { 1, 2 }, result, "Era esperado arrays iguais, mas  new Integer[] { 1, 2 } é diferente de " + " result")
 chamada antiga: assertArrayEquals(new Integer[] { 1, 2 }, result)
@@ -646,7 +972,7 @@ nova chamada: assertArrayEquals(new Integer[] { 1, 2, 3, 4 }, result, "Era esper
 chamada antiga: assertArrayEquals(new Integer[] { 1, 2, 3, 4 }, result)
 nova chamada: assertArrayEquals(new Integer[] { 1, 2, 3, 4 }, result, "Era esperado arrays iguais, mas  new Integer[] { 1, 2, 3, 4 } é diferente de " + " result")
 chamada antiga: assertArrayEquals(new Integer[] { null }, prepend(null, empty))
-nova chamada: assertArrayEquals(new Integer[] { null }, prepend(null, empty), "Era esperado arrays iguais, mas  new Integer[] { null } é diferente de " + result266 + " <prepend(null, empty)>")
+nova chamada: assertArrayEquals(new Integer[] { null }, prepend(null, empty), "Era esperado arrays iguais, mas  new Integer[] { null } é diferente de " + result264 + " <prepend(null, empty)>")
 chamada antiga: assertArrayEquals(new Integer[] { 1 }, result)
 nova chamada: assertArrayEquals(new Integer[] { 1 }, result, "Era esperado arrays iguais, mas  new Integer[] { 1 } é diferente de " + " result")
 chamada antiga: assertArrayEquals(new Integer[] { null, 1, 2 }, result)
@@ -657,70 +983,238 @@ chamada antiga: assertArrayEquals(new Integer[] { 1, 2, 3 }, result)
 nova chamada: assertArrayEquals(new Integer[] { 1, 2, 3 }, result, "Era esperado arrays iguais, mas  new Integer[] { 1, 2, 3 } é diferente de " + " result")
 chamada antiga: assertArrayEquals(new Integer[] { 1, 2, 3 }, result)
 nova chamada: assertArrayEquals(new Integer[] { 1, 2, 3 }, result, "Era esperado arrays iguais, mas  new Integer[] { 1, 2, 3 } é diferente de " + " result")
-chamada antiga: fail("WireMock did not shut down", "A execução falhou por uma causa deliberada")
-nova chamada: fail("WireMock did not shut down", "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
-chamada antiga: fail("WireMock did not shut down", "A execução falhou por uma causa deliberada")
-nova chamada: fail("WireMock did not shut down", "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
 chamada antiga: assertEquals(pair(Collections.<Number>emptyList(), Collections.<Integer>emptyList()), splitByType(input, Integer.class))
-nova chamada: assertEquals(pair(Collections.<Number>emptyList(), Collections.<Integer>emptyList()), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result267 + " <pair(Collections.<Number>emptyList(), Collections.<Integer>emptyList())> é diferente de " + result268 + " <splitByType(input, Integer.class)>")
+nova chamada: assertEquals(pair(Collections.<Number>emptyList(), Collections.<Integer>emptyList()), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result265 + " <pair(Collections.<Number>emptyList(), Collections.<Integer>emptyList())> é diferente de " + result266 + " <splitByType(input, Integer.class)>")
 chamada antiga: assertEquals(pair(singletonList(1L), Collections.<Integer>emptyList()), splitByType(input, Integer.class))
-nova chamada: assertEquals(pair(singletonList(1L), Collections.<Integer>emptyList()), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result269 + " <pair(singletonList(1L), Collections.<Integer>emptyList())> é diferente de " + result270 + " <splitByType(input, Integer.class)>")
+nova chamada: assertEquals(pair(singletonList(1L), Collections.<Integer>emptyList()), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result267 + " <pair(singletonList(1L), Collections.<Integer>emptyList())> é diferente de " + result268 + " <splitByType(input, Integer.class)>")
 chamada antiga: assertEquals(pair(Collections.<Number>emptyList(), singletonList(1)), splitByType(input, Integer.class))
-nova chamada: assertEquals(pair(Collections.<Number>emptyList(), singletonList(1)), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result271 + " <pair(Collections.<Number>emptyList(), singletonList(1))> é diferente de " + result272 + " <splitByType(input, Integer.class)>")
+nova chamada: assertEquals(pair(Collections.<Number>emptyList(), singletonList(1)), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result269 + " <pair(Collections.<Number>emptyList(), singletonList(1))> é diferente de " + result270 + " <splitByType(input, Integer.class)>")
 chamada antiga: assertEquals(pair(asList(1L, 2L, 3L), asList(1, 2, 3)), splitByType(input, Integer.class))
-nova chamada: assertEquals(pair(asList(1L, 2L, 3L), asList(1, 2, 3)), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result273 + " <pair(asList(1L, 2L, 3L), asList(1, 2, 3))> é diferente de " + result274 + " <splitByType(input, Integer.class)>")
+nova chamada: assertEquals(pair(asList(1L, 2L, 3L), asList(1, 2, 3)), splitByType(input, Integer.class), "Era esperado valores iguais, mas " + result271 + " <pair(asList(1L, 2L, 3L), asList(1, 2, 3))> é diferente de " + result272 + " <splitByType(input, Integer.class)>")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}");
+    template.parse("/things/stuff/11-22-33");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}");
+    template.parse("/things/stuff/11-22-33");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}/otherthings/{subId}");
+    template.render(new PathParams().add("id", "123"));
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}/otherthings/{subId}");
+    template.render(new PathParams().add("id", "123"));
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}/**");
+    template.render(new PathParams().add("id", "123"));
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}/**");
+    template.render(new PathParams().add("id", "123"));
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(PathTemplate.couldBePathTemplate("/things/{id}"))
-nova chamada: assertTrue(PathTemplate.couldBePathTemplate("/things/{id}"), "Era esperado verdadeiro, mas " + result275 + " <PathTemplate.couldBePathTemplate('/things/{id}')> é falso")
+nova chamada: assertTrue(PathTemplate.couldBePathTemplate("/things/{id}"), "Era esperado verdadeiro, mas " + result273 + " <PathTemplate.couldBePathTemplate('/things/{id}')> é falso")
 chamada antiga: assertTrue(PathTemplate.couldBePathTemplate("/things/**"))
-nova chamada: assertTrue(PathTemplate.couldBePathTemplate("/things/**"), "Era esperado verdadeiro, mas " + result276 + " <PathTemplate.couldBePathTemplate('/things/**')> é falso")
+nova chamada: assertTrue(PathTemplate.couldBePathTemplate("/things/**"), "Era esperado verdadeiro, mas " + result274 + " <PathTemplate.couldBePathTemplate('/things/**')> é falso")
 chamada antiga: assertTrue(PathTemplate.couldBePathTemplate("/things/{id}/stuff"))
-nova chamada: assertTrue(PathTemplate.couldBePathTemplate("/things/{id}/stuff"), "Era esperado verdadeiro, mas " + result277 + " <PathTemplate.couldBePathTemplate('/things/{id}/stuff')> é falso")
-chamada antiga: assertTrue(optional.isPresent())
-nova chamada: assertTrue(optional.isPresent(), "Era esperado verdadeiro, mas " + result278 + " <optional.isPresent()> é falso")
-chamada antiga: assertEquals(Integer.valueOf(number), optional.get())
-nova chamada: assertEquals(Integer.valueOf(number), optional.get(), "Era esperado valores iguais, mas " + result279 + " <Integer.valueOf(number)> é diferente de " + result280 + " <optional.get()>")
-chamada antiga: assertTrue(optional.isPresent())
-nova chamada: assertTrue(optional.isPresent(), "Era esperado verdadeiro, mas " + result281 + " <optional.isPresent()> é falso")
-chamada antiga: assertEquals(Long.valueOf(longNumber), optional.get())
-nova chamada: assertEquals(Long.valueOf(longNumber), optional.get(), "Era esperado valores iguais, mas " + result282 + " <Long.valueOf(longNumber)> é diferente de " + result283 + " <optional.get()>")
-chamada antiga: assertTrue(Limit.UNLIMITED.isUnlimited())
-nova chamada: assertTrue(Limit.UNLIMITED.isUnlimited(), "Era esperado verdadeiro, mas " + result284 + " <Limit.UNLIMITED.isUnlimited()> é falso")
-chamada antiga: assertEquals(3, proxyingService.getStubMappings().size())
-nova chamada: assertEquals(3, proxyingService.getStubMappings().size(), "Era esperado valores iguais, mas  3 é diferente de " + result285 + " <proxyingService.getStubMappings().size()>")
+nova chamada: assertTrue(PathTemplate.couldBePathTemplate("/things/{id}/stuff"), "Era esperado verdadeiro, mas " + result275 + " <PathTemplate.couldBePathTemplate('/things/{id}/stuff')> é falso")
 chamada antiga: assertFalse(PathTemplate.couldBePathTemplate("/things/in/path"))
-nova chamada: assertFalse(PathTemplate.couldBePathTemplate("/things/in/path"), "Era esperado falso, mas " + result286 + " <PathTemplate.couldBePathTemplate('/things/in/path')> é verdadeiro ")
+nova chamada: assertFalse(PathTemplate.couldBePathTemplate("/things/in/path"), "Era esperado falso, mas " + result276 + " <PathTemplate.couldBePathTemplate('/things/in/path')> é verdadeiro ")
 chamada antiga: assertFalse(PathTemplate.couldBePathTemplate("/thing"))
-nova chamada: assertFalse(PathTemplate.couldBePathTemplate("/thing"), "Era esperado falso, mas " + result287 + " <PathTemplate.couldBePathTemplate('/thing')> é verdadeiro ")
+nova chamada: assertFalse(PathTemplate.couldBePathTemplate("/thing"), "Era esperado falso, mas " + result277 + " <PathTemplate.couldBePathTemplate('/thing')> é verdadeiro ")
 chamada antiga: assertFalse(jettySettings.getAcceptors().isPresent())
-nova chamada: assertFalse(jettySettings.getAcceptors().isPresent(), "Era esperado falso, mas " + result288 + " <jettySettings.getAcceptors().isPresent()> é verdadeiro ")
+nova chamada: assertFalse(jettySettings.getAcceptors().isPresent(), "Era esperado falso, mas " + result278 + " <jettySettings.getAcceptors().isPresent()> é verdadeiro ")
 chamada antiga: assertFalse(jettySettings.getAcceptQueueSize().isPresent())
-nova chamada: assertFalse(jettySettings.getAcceptQueueSize().isPresent(), "Era esperado falso, mas " + result289 + " <jettySettings.getAcceptQueueSize().isPresent()> é verdadeiro ")
+nova chamada: assertFalse(jettySettings.getAcceptQueueSize().isPresent(), "Era esperado falso, mas " + result279 + " <jettySettings.getAcceptQueueSize().isPresent()> é verdadeiro ")
 chamada antiga: assertFalse(jettySettings.getRequestHeaderSize().isPresent())
-nova chamada: assertFalse(jettySettings.getRequestHeaderSize().isPresent(), "Era esperado falso, mas " + result290 + " <jettySettings.getRequestHeaderSize().isPresent()> é verdadeiro ")
+nova chamada: assertFalse(jettySettings.getRequestHeaderSize().isPresent(), "Era esperado falso, mas " + result280 + " <jettySettings.getRequestHeaderSize().isPresent()> é verdadeiro ")
 chamada antiga: assertFalse(jettySettings.getStopTimeout().isPresent())
-nova chamada: assertFalse(jettySettings.getStopTimeout().isPresent(), "Era esperado falso, mas " + result291 + " <jettySettings.getStopTimeout().isPresent()> é verdadeiro ")
+nova chamada: assertFalse(jettySettings.getStopTimeout().isPresent(), "Era esperado falso, mas " + result281 + " <jettySettings.getStopTimeout().isPresent()> é verdadeiro ")
 chamada antiga: assertFalse(jettySettings.getIdleTimeout().isPresent())
-nova chamada: assertFalse(jettySettings.getIdleTimeout().isPresent(), "Era esperado falso, mas " + result292 + " <jettySettings.getIdleTimeout().isPresent()> é verdadeiro ")
+nova chamada: assertFalse(jettySettings.getIdleTimeout().isPresent(), "Era esperado falso, mas " + result282 + " <jettySettings.getIdleTimeout().isPresent()> é verdadeiro ")
+chamada antiga: assertTrue(optional.isPresent())
+nova chamada: assertTrue(optional.isPresent(), "Era esperado verdadeiro, mas " + result283 + " <optional.isPresent()> é falso")
+chamada antiga: assertEquals(Integer.valueOf(number), optional.get())
+nova chamada: assertEquals(Integer.valueOf(number), optional.get(), "Era esperado valores iguais, mas " + result284 + " <Integer.valueOf(number)> é diferente de " + result285 + " <optional.get()>")
+chamada antiga: assertTrue(optional.isPresent())
+nova chamada: assertTrue(optional.isPresent(), "Era esperado verdadeiro, mas " + result286 + " <optional.isPresent()> é falso")
+chamada antiga: assertEquals(Long.valueOf(longNumber), optional.get())
+nova chamada: assertEquals(Long.valueOf(longNumber), optional.get(), "Era esperado valores iguais, mas " + result287 + " <Long.valueOf(longNumber)> é diferente de " + result288 + " <optional.get()>")
+chamada antiga: assertThrows(RuntimeException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/filesource/one");
+    fileSource.listFilesRecursively();
+})
+nova chamada: assertThrows(RuntimeException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/filesource/one");
+    fileSource.listFilesRecursively();
+}, "Era esperado que a exceção  RuntimeException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(RuntimeException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/filesource/one");
+    fileSource.writeTextFile("thing", "stuff");
+})
+nova chamada: assertThrows(RuntimeException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/filesource/one");
+    fileSource.writeTextFile("thing", "stuff");
+}, "Era esperado que a exceção  RuntimeException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/security-filesource/root");
+    fileSource.getBinaryFileNamed("../rootdir/file.json");
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/security-filesource/root");
+    fileSource.getBinaryFileNamed("../rootdir/file.json");
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.writeTextFile("..", "stuff");
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.writeTextFile("..", "stuff");
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.writeTextFile(badPath, "stuff");
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.writeTextFile(badPath, "stuff");
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.writeBinaryFile("..", "stuff".getBytes());
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.writeBinaryFile("..", "stuff".getBytes());
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.writeBinaryFile(badPath, "stuff".getBytes());
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.writeBinaryFile(badPath, "stuff".getBytes());
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.deleteFile(badPath);
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.deleteFile(badPath);
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.getBinaryFileNamed("../illegal.file");
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.getBinaryFileNamed("../illegal.file");
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.getTextFileNamed("../illegal.file");
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.getTextFileNamed("../illegal.file");
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = new File(ROOT_PATH, "../illegal.file").getCanonicalPath();
+    fileSource.getBinaryFileNamed(badPath);
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = new File(ROOT_PATH, "../illegal.file").getCanonicalPath();
+    fileSource.getBinaryFileNamed(badPath);
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = new File(ROOT_PATH, "../illegal.file").getCanonicalPath();
+    fileSource.getTextFileNamed(badPath);
+})
+nova chamada: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = new File(ROOT_PATH, "../illegal.file").getCanonicalPath();
+    fileSource.getTextFileNamed(badPath);
+}, "Era esperado que a exceção  NotAuthorisedException.class fosse lançada, mas não foi")
+chamada antiga: assertTrue(Limit.UNLIMITED.isUnlimited())
+nova chamada: assertTrue(Limit.UNLIMITED.isUnlimited(), "Era esperado verdadeiro, mas " + result289 + " <Limit.UNLIMITED.isUnlimited()> é falso")
+chamada antiga: assertThrows(UnsupportedOperationException.class, () -> {
+    fileSource.writeTextFile("filename", "filecontents");
+})
+nova chamada: assertThrows(UnsupportedOperationException.class, () -> {
+    fileSource.writeTextFile("filename", "filecontents");
+}, "Era esperado que a exceção  UnsupportedOperationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(UnsupportedOperationException.class, fileSource::createIfNecessary)
+nova chamada: assertThrows(UnsupportedOperationException.class, fileSource::createIfNecessary, "Era esperado que a exceção  UnsupportedOperationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString(PROXYVIA_URL + ":80a");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString(PROXYVIA_URL + ":80a");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString("https://" + PROXYVIA_URL_WITH_PORT);
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString("https://" + PROXYVIA_URL_WITH_PORT);
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString("ul:invalid:80");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString("ul:invalid:80");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertEquals(3, proxyingService.getStubMappings().size())
+nova chamada: assertEquals(3, proxyingService.getStubMappings().size(), "Era esperado valores iguais, mas  3 é diferente de " + result290 + " <proxyingService.getStubMappings().size()>")
 chamada antiga: assertFalse(wireMockConfiguration.getStores().getSettingsStore().get().getProxyPassThrough())
-nova chamada: assertFalse(wireMockConfiguration.getStores().getSettingsStore().get().getProxyPassThrough(), "Era esperado falso, mas " + result293 + " <wireMockConfiguration.getStores().getSettingsStore().get().getProxyPassThrough()> é verdadeiro ")
+nova chamada: assertFalse(wireMockConfiguration.getStores().getSettingsStore().get().getProxyPassThrough(), "Era esperado falso, mas " + result291 + " <wireMockConfiguration.getStores().getSettingsStore().get().getProxyPassThrough()> é verdadeiro ")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    get(urlEqualTo("/some/resource")).willReturn(aResponse()).inScenario(null);
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    get(urlEqualTo("/some/resource")).willReturn(aResponse()).inScenario(null);
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(ClientError.class, () -> resetScenario("non-exist"))
+nova chamada: assertThrows(ClientError.class, () -> resetScenario("non-exist"), "Era esperado que a exceção  ClientError.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(ClientError.class, () -> setScenarioState("set-me", "non-exist"))
+nova chamada: assertThrows(ClientError.class, () -> setScenarioState("set-me", "non-exist"), "Era esperado que a exceção  ClientError.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(stubMapping, result)
 nova chamada: assertEquals(stubMapping, result, "Era esperado valores iguais, mas  stubMapping é diferente de " + " result")
 chamada antiga: assertEquals(stubMapping, result)
 nova chamada: assertEquals(stubMapping, result, "Era esperado valores iguais, mas  stubMapping é diferente de " + " result")
 chamada antiga: assertEquals("/?transformed=nonglobal", result.getRequest().getUrl())
-nova chamada: assertEquals("/?transformed=nonglobal", result.getRequest().getUrl(), "Era esperado valores iguais, mas  '/?transformed=nonglobal' é diferente de " + result294 + " <result.getRequest().getUrl()>")
+nova chamada: assertEquals("/?transformed=nonglobal", result.getRequest().getUrl(), "Era esperado valores iguais, mas  '/?transformed=nonglobal' é diferente de " + result292 + " <result.getRequest().getUrl()>")
 chamada antiga: assertEquals("/?transformed=global", result.getRequest().getUrl())
-nova chamada: assertEquals("/?transformed=global", result.getRequest().getUrl(), "Era esperado valores iguais, mas  '/?transformed=global' é diferente de " + result295 + " <result.getRequest().getUrl()>")
+nova chamada: assertEquals("/?transformed=global", result.getRequest().getUrl(), "Era esperado valores iguais, mas  '/?transformed=global' é diferente de " + result293 + " <result.getRequest().getUrl()>")
 chamada antiga: assertEquals(FULL, SnapshotOutputFormatter.fromString(null))
-nova chamada: assertEquals(FULL, SnapshotOutputFormatter.fromString(null), "Era esperado valores iguais, mas  FULL é diferente de " + result296 + " <SnapshotOutputFormatter.fromString(null)>")
+nova chamada: assertEquals(FULL, SnapshotOutputFormatter.fromString(null), "Era esperado valores iguais, mas  FULL é diferente de " + result294 + " <SnapshotOutputFormatter.fromString(null)>")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    SnapshotOutputFormatter.fromString("invalid output format");
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    SnapshotOutputFormatter.fromString("invalid output format");
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(FULL, SnapshotOutputFormatter.fromString("full"))
-nova chamada: assertEquals(FULL, SnapshotOutputFormatter.fromString("full"), "Era esperado valores iguais, mas  FULL é diferente de " + result297 + " <SnapshotOutputFormatter.fromString('full')>")
+nova chamada: assertEquals(FULL, SnapshotOutputFormatter.fromString("full"), "Era esperado valores iguais, mas  FULL é diferente de " + result295 + " <SnapshotOutputFormatter.fromString('full')>")
 chamada antiga: assertEquals(IDS, SnapshotOutputFormatter.fromString("ids"))
-nova chamada: assertEquals(IDS, SnapshotOutputFormatter.fromString("ids"), "Era esperado valores iguais, mas  IDS é diferente de " + result298 + " <SnapshotOutputFormatter.fromString('ids')>")
+nova chamada: assertEquals(IDS, SnapshotOutputFormatter.fromString("ids"), "Era esperado valores iguais, mas  IDS é diferente de " + result296 + " <SnapshotOutputFormatter.fromString('ids')>")
 chamada antiga: assertEquals(expected.build(), new RequestPatternTransformer(null, null).apply(request).build())
-nova chamada: assertEquals(expected.build(), new RequestPatternTransformer(null, null).apply(request).build(), "Era esperado valores iguais, mas " + result299 + " <expected.build()> é diferente de " + result300 + " <new RequestPatternTransformer(null, null).apply(request).build()>")
+nova chamada: assertEquals(expected.build(), new RequestPatternTransformer(null, null).apply(request).build(), "Era esperado valores iguais, mas " + result297 + " <expected.build()> é diferente de " + result298 + " <new RequestPatternTransformer(null, null).apply(request).build()>")
 chamada antiga: assertEquals(expected.build(), new RequestPatternTransformer(headers, null).apply(request).build())
-nova chamada: assertEquals(expected.build(), new RequestPatternTransformer(headers, null).apply(request).build(), "Era esperado valores iguais, mas " + result301 + " <expected.build()> é diferente de " + result302 + " <new RequestPatternTransformer(headers, null).apply(request).build()>")
+nova chamada: assertEquals(expected.build(), new RequestPatternTransformer(headers, null).apply(request).build(), "Era esperado valores iguais, mas " + result299 + " <expected.build()> é diferente de " + result300 + " <new RequestPatternTransformer(headers, null).apply(request).build()>")
 chamada antiga: assertEquals(new ResponseDefinitionBodyMatcher(Long.MAX_VALUE, Long.MAX_VALUE), matcher)
 nova chamada: assertEquals(new ResponseDefinitionBodyMatcher(Long.MAX_VALUE, Long.MAX_VALUE), matcher, "Era esperado valores iguais, mas  new ResponseDefinitionBodyMatcher(Long.MAX_VALUE, Long.MAX_VALUE) é diferente de " + " matcher")
 chamada antiga: assertEquals(new ResponseDefinitionBodyMatcher(100, Long.MAX_VALUE), matcher)
@@ -728,63 +1222,63 @@ nova chamada: assertEquals(new ResponseDefinitionBodyMatcher(100, Long.MAX_VALUE
 chamada antiga: assertEquals(new ResponseDefinitionBodyMatcher(100, 10), matcher)
 nova chamada: assertEquals(new ResponseDefinitionBodyMatcher(100, 10), matcher, "Era esperado valores iguais, mas  new ResponseDefinitionBodyMatcher(100, 10) é diferente de " + " matcher")
 chamada antiga: assertFalse(matcher.match(new ResponseDefinition()).isExactMatch())
-nova chamada: assertFalse(matcher.match(new ResponseDefinition()).isExactMatch(), "Era esperado falso, mas " + result303 + " <matcher.match(new ResponseDefinition()).isExactMatch()> é verdadeiro ")
+nova chamada: assertFalse(matcher.match(new ResponseDefinition()).isExactMatch(), "Era esperado falso, mas " + result301 + " <matcher.match(new ResponseDefinition()).isExactMatch()> é verdadeiro ")
 chamada antiga: assertTrue(matcher.match(textResponseDefinition("a")).isExactMatch())
-nova chamada: assertTrue(matcher.match(textResponseDefinition("a")).isExactMatch(), "Era esperado verdadeiro, mas " + result304 + " <matcher.match(textResponseDefinition('a')).isExactMatch()> é falso")
+nova chamada: assertTrue(matcher.match(textResponseDefinition("a")).isExactMatch(), "Era esperado verdadeiro, mas " + result302 + " <matcher.match(textResponseDefinition('a')).isExactMatch()> é falso")
 chamada antiga: assertTrue(matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch())
-nova chamada: assertTrue(matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch(), "Era esperado verdadeiro, mas " + result305 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch()> é falso")
+nova chamada: assertTrue(matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch(), "Era esperado verdadeiro, mas " + result303 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch()> é falso")
 chamada antiga: assertFalse(matcher.match(textResponseDefinition("f")).isExactMatch())
-nova chamada: assertFalse(matcher.match(textResponseDefinition("f")).isExactMatch(), "Era esperado falso, mas " + result306 + " <matcher.match(textResponseDefinition('f')).isExactMatch()> é verdadeiro ")
+nova chamada: assertFalse(matcher.match(textResponseDefinition("f")).isExactMatch(), "Era esperado falso, mas " + result304 + " <matcher.match(textResponseDefinition('f')).isExactMatch()> é verdadeiro ")
 chamada antiga: assertFalse(matcher.match(textResponseDefinition("fo")).isExactMatch())
-nova chamada: assertFalse(matcher.match(textResponseDefinition("fo")).isExactMatch(), "Era esperado falso, mas " + result307 + " <matcher.match(textResponseDefinition('fo')).isExactMatch()> é verdadeiro ")
+nova chamada: assertFalse(matcher.match(textResponseDefinition("fo")).isExactMatch(), "Era esperado falso, mas " + result305 + " <matcher.match(textResponseDefinition('fo')).isExactMatch()> é verdadeiro ")
 chamada antiga: assertTrue(matcher.match(textResponseDefinition("foo")).isExactMatch())
-nova chamada: assertTrue(matcher.match(textResponseDefinition("foo")).isExactMatch(), "Era esperado verdadeiro, mas " + result308 + " <matcher.match(textResponseDefinition('foo')).isExactMatch()> é falso")
+nova chamada: assertTrue(matcher.match(textResponseDefinition("foo")).isExactMatch(), "Era esperado verdadeiro, mas " + result306 + " <matcher.match(textResponseDefinition('foo')).isExactMatch()> é falso")
 chamada antiga: assertFalse(matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch())
-nova chamada: assertFalse(matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch(), "Era esperado falso, mas " + result309 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch()> é verdadeiro ")
+nova chamada: assertFalse(matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch(), "Era esperado falso, mas " + result307 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1 })).isExactMatch()> é verdadeiro ")
 chamada antiga: assertFalse(matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc })).isExactMatch())
-nova chamada: assertFalse(matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc })).isExactMatch(), "Era esperado falso, mas " + result310 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc })).isExactMatch()> é verdadeiro ")
+nova chamada: assertFalse(matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc })).isExactMatch(), "Era esperado falso, mas " + result308 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc })).isExactMatch()> é verdadeiro ")
 chamada antiga: assertTrue(matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc, 0xf })).isExactMatch())
-nova chamada: assertTrue(matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc, 0xf })).isExactMatch(), "Era esperado verdadeiro, mas " + result311 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc, 0xf })).isExactMatch()> é falso")
+nova chamada: assertTrue(matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc, 0xf })).isExactMatch(), "Era esperado verdadeiro, mas " + result309 + " <matcher.match(binaryResponseDefinition(new byte[] { 0x1, 0xc, 0xf })).isExactMatch()> é falso")
 chamada antiga: assertEquals(responseDefinition().withStatus(401).build(), aTransformer().apply(response))
-nova chamada: assertEquals(responseDefinition().withStatus(401).build(), aTransformer().apply(response), "Era esperado valores iguais, mas " + result312 + " <responseDefinition().withStatus(401).build()> é diferente de " + result313 + " <aTransformer().apply(response)>")
+nova chamada: assertEquals(responseDefinition().withStatus(401).build(), aTransformer().apply(response), "Era esperado valores iguais, mas " + result310 + " <responseDefinition().withStatus(401).build()> é diferente de " + result311 + " <aTransformer().apply(response)>")
+chamada antiga: assertEquals(expected, aTransformer().apply(response))
+nova chamada: assertEquals(expected, aTransformer().apply(response), "Era esperado valores iguais, mas  expected é diferente de " + result312 + " <aTransformer().apply(response)>")
+chamada antiga: assertEquals(expected, aTransformer().apply(response))
+nova chamada: assertEquals(expected, aTransformer().apply(response), "Era esperado valores iguais, mas  expected é diferente de " + result313 + " <aTransformer().apply(response)>")
 chamada antiga: assertEquals(expected, aTransformer().apply(response))
 nova chamada: assertEquals(expected, aTransformer().apply(response), "Era esperado valores iguais, mas  expected é diferente de " + result314 + " <aTransformer().apply(response)>")
 chamada antiga: assertEquals(expected, aTransformer().apply(response))
 nova chamada: assertEquals(expected, aTransformer().apply(response), "Era esperado valores iguais, mas  expected é diferente de " + result315 + " <aTransformer().apply(response)>")
-chamada antiga: assertEquals(expected, aTransformer().apply(response))
-nova chamada: assertEquals(expected, aTransformer().apply(response), "Era esperado valores iguais, mas  expected é diferente de " + result316 + " <aTransformer().apply(response)>")
-chamada antiga: assertEquals(expected, aTransformer().apply(response))
-nova chamada: assertEquals(expected, aTransformer().apply(response), "Era esperado valores iguais, mas  expected é diferente de " + result317 + " <aTransformer().apply(response)>")
 chamada antiga: assertTrue(filters.apply(serveEvent))
-nova chamada: assertTrue(filters.apply(serveEvent), "Era esperado verdadeiro, mas " + result318 + " <filters.apply(serveEvent)> é falso")
+nova chamada: assertTrue(filters.apply(serveEvent), "Era esperado verdadeiro, mas " + result316 + " <filters.apply(serveEvent)> é falso")
 chamada antiga: assertTrue(filters.apply(serveEvent))
-nova chamada: assertTrue(filters.apply(serveEvent), "Era esperado verdadeiro, mas " + result319 + " <filters.apply(serveEvent)> é falso")
+nova chamada: assertTrue(filters.apply(serveEvent), "Era esperado verdadeiro, mas " + result317 + " <filters.apply(serveEvent)> é falso")
 chamada antiga: assertFalse(filters.apply(serveEvent))
-nova chamada: assertFalse(filters.apply(serveEvent), "Era esperado falso, mas " + result320 + " <filters.apply(serveEvent)> é verdadeiro ")
+nova chamada: assertFalse(filters.apply(serveEvent), "Era esperado falso, mas " + result318 + " <filters.apply(serveEvent)> é verdadeiro ")
 chamada antiga: assertTrue(filters.apply(proxiedServeEvent(request)))
-nova chamada: assertTrue(filters.apply(proxiedServeEvent(request)), "Era esperado verdadeiro, mas " + result321 + " <filters.apply(proxiedServeEvent(request))> é falso")
+nova chamada: assertTrue(filters.apply(proxiedServeEvent(request)), "Era esperado verdadeiro, mas " + result319 + " <filters.apply(proxiedServeEvent(request))> é falso")
 chamada antiga: assertTrue(filters.apply(proxiedServeEvent(request.url("/bar"))))
-nova chamada: assertTrue(filters.apply(proxiedServeEvent(request.url("/bar"))), "Era esperado verdadeiro, mas " + result322 + " <filters.apply(proxiedServeEvent(request.url('/bar')))> é falso")
+nova chamada: assertTrue(filters.apply(proxiedServeEvent(request.url("/bar"))), "Era esperado verdadeiro, mas " + result320 + " <filters.apply(proxiedServeEvent(request.url('/bar')))> é falso")
 chamada antiga: assertFalse(filters.apply(proxiedServeEvent(request.method(POST))))
-nova chamada: assertFalse(filters.apply(proxiedServeEvent(request.method(POST))), "Era esperado falso, mas " + result323 + " <filters.apply(proxiedServeEvent(request.method(POST)))> é verdadeiro ")
+nova chamada: assertFalse(filters.apply(proxiedServeEvent(request.method(POST))), "Era esperado falso, mas " + result321 + " <filters.apply(proxiedServeEvent(request.method(POST)))> é verdadeiro ")
 chamada antiga: assertTrue(filters.apply(proxiedServeEvent(ids.get(0))))
-nova chamada: assertTrue(filters.apply(proxiedServeEvent(ids.get(0))), "Era esperado verdadeiro, mas " + result324 + " <filters.apply(proxiedServeEvent(ids.get(0)))> é falso")
+nova chamada: assertTrue(filters.apply(proxiedServeEvent(ids.get(0))), "Era esperado verdadeiro, mas " + result322 + " <filters.apply(proxiedServeEvent(ids.get(0)))> é falso")
 chamada antiga: assertTrue(filters.apply(proxiedServeEvent(ids.get(1))))
-nova chamada: assertTrue(filters.apply(proxiedServeEvent(ids.get(1))), "Era esperado verdadeiro, mas " + result325 + " <filters.apply(proxiedServeEvent(ids.get(1)))> é falso")
+nova chamada: assertTrue(filters.apply(proxiedServeEvent(ids.get(1))), "Era esperado verdadeiro, mas " + result323 + " <filters.apply(proxiedServeEvent(ids.get(1)))> é falso")
 chamada antiga: assertFalse(filters.apply(proxiedServeEvent(UUID.fromString("00000000-0000-0000-0000-000000000002"))))
-nova chamada: assertFalse(filters.apply(proxiedServeEvent(UUID.fromString("00000000-0000-0000-0000-000000000002"))), "Era esperado falso, mas " + result326 + " <filters.apply(proxiedServeEvent(UUID.fromString('00000000-0000-0000-0000-000000000002')))> é verdadeiro ")
+nova chamada: assertFalse(filters.apply(proxiedServeEvent(UUID.fromString("00000000-0000-0000-0000-000000000002"))), "Era esperado falso, mas " + result324 + " <filters.apply(proxiedServeEvent(UUID.fromString('00000000-0000-0000-0000-000000000002')))> é verdadeiro ")
 chamada antiga: assertTrue(filters.apply(proxiedServeEvent(request)))
-nova chamada: assertTrue(filters.apply(proxiedServeEvent(request)), "Era esperado verdadeiro, mas " + result327 + " <filters.apply(proxiedServeEvent(request))> é falso")
+nova chamada: assertTrue(filters.apply(proxiedServeEvent(request)), "Era esperado verdadeiro, mas " + result325 + " <filters.apply(proxiedServeEvent(request))> é falso")
 chamada antiga: assertFalse(filters.apply(proxiedServeEvent(request.url("/bar"))))
-nova chamada: assertFalse(filters.apply(proxiedServeEvent(request.url("/bar"))), "Era esperado falso, mas " + result328 + " <filters.apply(proxiedServeEvent(request.url('/bar')))> é verdadeiro ")
+nova chamada: assertFalse(filters.apply(proxiedServeEvent(request.url("/bar"))), "Era esperado falso, mas " + result326 + " <filters.apply(proxiedServeEvent(request.url('/bar')))> é verdadeiro ")
 chamada antiga: assertFalse(filters.apply(proxiedServeEvent(request.method(POST))))
-nova chamada: assertFalse(filters.apply(proxiedServeEvent(request.method(POST))), "Era esperado falso, mas " + result329 + " <filters.apply(proxiedServeEvent(request.method(POST)))> é verdadeiro ")
+nova chamada: assertFalse(filters.apply(proxiedServeEvent(request.method(POST))), "Era esperado falso, mas " + result327 + " <filters.apply(proxiedServeEvent(request.method(POST)))> é verdadeiro ")
 chamada antiga: assertTrue(filters.apply(proxiedServeEvent(ids.get(0), request)))
-nova chamada: assertTrue(filters.apply(proxiedServeEvent(ids.get(0), request)), "Era esperado verdadeiro, mas " + result330 + " <filters.apply(proxiedServeEvent(ids.get(0), request))> é falso")
+nova chamada: assertTrue(filters.apply(proxiedServeEvent(ids.get(0), request)), "Era esperado verdadeiro, mas " + result328 + " <filters.apply(proxiedServeEvent(ids.get(0), request))> é falso")
 chamada antiga: assertFalse(filters.apply(proxiedServeEvent(UUID.fromString("00000000-0000-0000-0000-000000000002"), request)))
-nova chamada: assertFalse(filters.apply(proxiedServeEvent(UUID.fromString("00000000-0000-0000-0000-000000000002"), request)), "Era esperado falso, mas " + result331 + " <filters.apply(proxiedServeEvent(UUID.fromString('00000000-0000-0000-0000-000000000002'), request))> é verdadeiro ")
+nova chamada: assertFalse(filters.apply(proxiedServeEvent(UUID.fromString("00000000-0000-0000-0000-000000000002"), request)), "Era esperado falso, mas " + result329 + " <filters.apply(proxiedServeEvent(UUID.fromString('00000000-0000-0000-0000-000000000002'), request))> é verdadeiro ")
 chamada antiga: assertFalse(filters.apply(proxiedServeEvent(ids.get(0), request.method(POST))))
-nova chamada: assertFalse(filters.apply(proxiedServeEvent(ids.get(0), request.method(POST))), "Era esperado falso, mas " + result332 + " <filters.apply(proxiedServeEvent(ids.get(0), request.method(POST)))> é verdadeiro ")
+nova chamada: assertFalse(filters.apply(proxiedServeEvent(ids.get(0), request.method(POST))), "Era esperado falso, mas " + result330 + " <filters.apply(proxiedServeEvent(ids.get(0), request.method(POST)))> é verdadeiro ")
 chamada antiga: assertNotNull(output)
 nova chamada: assertNotNull(output, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertTrue(output.length() > 0)
@@ -796,7 +1290,7 @@ nova chamada: assertEquals("[ERROR: Access to TEST_VAR is denied]", value, "Era 
 chamada antiga: assertEquals("[ERROR: The key cannot be empty]", value)
 nova chamada: assertEquals("[ERROR: The key cannot be empty]", value, "Era esperado valores iguais, mas  '[ERROR: The key cannot be empty]' é diferente de " + " value")
 chamada antiga: assertEquals("aaa", System.getProperty("test.key"))
-nova chamada: assertEquals("aaa", System.getProperty("test.key"), "Era esperado valores iguais, mas  'aaa' é diferente de " + result333 + " <System.getProperty('test.key')>")
+nova chamada: assertEquals("aaa", System.getProperty("test.key"), "Era esperado valores iguais, mas  'aaa' é diferente de " + result331 + " <System.getProperty('test.key')>")
 chamada antiga: assertEquals("aaa", value)
 nova chamada: assertEquals("aaa", value, "Era esperado valores iguais, mas  'aaa' é diferente de " + " value")
 chamada antiga: assertEquals("[ERROR: Access to test.key is denied]", value)
@@ -804,23 +1298,29 @@ nova chamada: assertEquals("[ERROR: Access to test.key is denied]", value, "Era 
 chamada antiga: assertNull(output)
 nova chamada: assertNull(output, "Era esperado nulo, mas o valor obtido não é nulo")
 chamada antiga: assertTrue(authoriser.isPermitted("allowed_key_1"))
-nova chamada: assertTrue(authoriser.isPermitted("allowed_key_1"), "Era esperado verdadeiro, mas " + result334 + " <authoriser.isPermitted('allowed_key_1')> é falso")
+nova chamada: assertTrue(authoriser.isPermitted("allowed_key_1"), "Era esperado verdadeiro, mas " + result332 + " <authoriser.isPermitted('allowed_key_1')> é falso")
 chamada antiga: assertTrue(authoriser.isPermitted("ALLOWED_KEY_2"))
-nova chamada: assertTrue(authoriser.isPermitted("ALLOWED_KEY_2"), "Era esperado verdadeiro, mas " + result335 + " <authoriser.isPermitted('ALLOWED_KEY_2')> é falso")
+nova chamada: assertTrue(authoriser.isPermitted("ALLOWED_KEY_2"), "Era esperado verdadeiro, mas " + result333 + " <authoriser.isPermitted('ALLOWED_KEY_2')> é falso")
 chamada antiga: assertTrue(authoriser.isPermitted("permitted_key_3"))
-nova chamada: assertTrue(authoriser.isPermitted("permitted_key_3"), "Era esperado verdadeiro, mas " + result336 + " <authoriser.isPermitted('permitted_key_3')> é falso")
+nova chamada: assertTrue(authoriser.isPermitted("permitted_key_3"), "Era esperado verdadeiro, mas " + result334 + " <authoriser.isPermitted('permitted_key_3')> é falso")
 chamada antiga: assertFalse(authoriser.isPermitted("forbidden_key_1"))
-nova chamada: assertFalse(authoriser.isPermitted("forbidden_key_1"), "Era esperado falso, mas " + result337 + " <authoriser.isPermitted('forbidden_key_1')> é verdadeiro ")
+nova chamada: assertFalse(authoriser.isPermitted("forbidden_key_1"), "Era esperado falso, mas " + result335 + " <authoriser.isPermitted('forbidden_key_1')> é verdadeiro ")
 chamada antiga: assertFalse(authoriser.isPermitted("notallowed_key_2"))
-nova chamada: assertFalse(authoriser.isPermitted("notallowed_key_2"), "Era esperado falso, mas " + result338 + " <authoriser.isPermitted('notallowed_key_2')> é verdadeiro ")
+nova chamada: assertFalse(authoriser.isPermitted("notallowed_key_2"), "Era esperado falso, mas " + result336 + " <authoriser.isPermitted('notallowed_key_2')> é verdadeiro ")
 chamada antiga: assertFalse(authoriser.isPermitted("notpermitted_key_3"))
-nova chamada: assertFalse(authoriser.isPermitted("notpermitted_key_3"), "Era esperado falso, mas " + result339 + " <authoriser.isPermitted('notpermitted_key_3')> é verdadeiro ")
+nova chamada: assertFalse(authoriser.isPermitted("notpermitted_key_3"), "Era esperado falso, mas " + result337 + " <authoriser.isPermitted('notpermitted_key_3')> é verdadeiro ")
 chamada antiga: assertTrue(authoriser.isPermitted("wiremock_key_1"))
-nova chamada: assertTrue(authoriser.isPermitted("wiremock_key_1"), "Era esperado verdadeiro, mas " + result340 + " <authoriser.isPermitted('wiremock_key_1')> é falso")
+nova chamada: assertTrue(authoriser.isPermitted("wiremock_key_1"), "Era esperado verdadeiro, mas " + result338 + " <authoriser.isPermitted('wiremock_key_1')> é falso")
 chamada antiga: assertTrue(authoriser.isPermitted("wiremock.thing.2"))
-nova chamada: assertTrue(authoriser.isPermitted("wiremock.thing.2"), "Era esperado verdadeiro, mas " + result341 + " <authoriser.isPermitted('wiremock.thing.2')> é falso")
+nova chamada: assertTrue(authoriser.isPermitted("wiremock.thing.2"), "Era esperado verdadeiro, mas " + result339 + " <authoriser.isPermitted('wiremock.thing.2')> é falso")
 chamada antiga: assertFalse(authoriser.isPermitted("notallowed_key_2"))
-nova chamada: assertFalse(authoriser.isPermitted("notallowed_key_2"), "Era esperado falso, mas " + result342 + " <authoriser.isPermitted('notallowed_key_2')> é verdadeiro ")
+nova chamada: assertFalse(authoriser.isPermitted("notallowed_key_2"), "Era esperado falso, mas " + result340 + " <authoriser.isPermitted('notallowed_key_2')> é verdadeiro ")
+chamada antiga: assertThrows(IllegalArgumentException.class, () -> {
+    new WireMockServer(wireMockConfig().dynamicPort().extensions(ExampleTransformer.class, AnotherExampleTransformer.class));
+})
+nova chamada: assertThrows(IllegalArgumentException.class, () -> {
+    new WireMockServer(wireMockConfig().dynamicPort().extensions(ExampleTransformer.class, AnotherExampleTransformer.class));
+}, "Era esperado que a exceção  IllegalArgumentException.class fosse lançada, mas não foi")
 chamada antiga: assertNotNull(pojo)
 nova chamada: assertNotNull(pojo, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertNotNull(pojo)
@@ -828,29 +1328,63 @@ nova chamada: assertNotNull(pojo, "Era esperado não nulo, mas  o valor obtido f
 chamada antiga: assertNotNull(pojo)
 nova chamada: assertNotNull(pojo, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertTrue(response.equals(copiedResponse))
-nova chamada: assertTrue(response.equals(copiedResponse), "Era esperado verdadeiro, mas " + result343 + " <response.equals(copiedResponse)> é falso")
+nova chamada: assertTrue(response.equals(copiedResponse), "Era esperado verdadeiro, mas " + result341 + " <response.equals(copiedResponse)> é falso")
 chamada antiga: assertTrue(responseDefinition.specifiesBodyFile())
-nova chamada: assertTrue(responseDefinition.specifiesBodyFile(), "Era esperado verdadeiro, mas " + result344 + " <responseDefinition.specifiesBodyFile()> é falso")
+nova chamada: assertTrue(responseDefinition.specifiesBodyFile(), "Era esperado verdadeiro, mas " + result342 + " <responseDefinition.specifiesBodyFile()> é falso")
 chamada antiga: assertFalse(responseDefinition.specifiesBodyContent())
-nova chamada: assertFalse(responseDefinition.specifiesBodyContent(), "Era esperado falso, mas " + result345 + " <responseDefinition.specifiesBodyContent()> é verdadeiro ")
+nova chamada: assertFalse(responseDefinition.specifiesBodyContent(), "Era esperado falso, mas " + result343 + " <responseDefinition.specifiesBodyContent()> é verdadeiro ")
 chamada antiga: assertFalse(responseDefinition.specifiesBodyFile())
-nova chamada: assertFalse(responseDefinition.specifiesBodyFile(), "Era esperado falso, mas " + result346 + " <responseDefinition.specifiesBodyFile()> é verdadeiro ")
+nova chamada: assertFalse(responseDefinition.specifiesBodyFile(), "Era esperado falso, mas " + result344 + " <responseDefinition.specifiesBodyFile()> é verdadeiro ")
 chamada antiga: assertTrue(responseDefinition.specifiesBodyContent())
-nova chamada: assertTrue(responseDefinition.specifiesBodyContent(), "Era esperado verdadeiro, mas " + result347 + " <responseDefinition.specifiesBodyContent()> é falso")
+nova chamada: assertTrue(responseDefinition.specifiesBodyContent(), "Era esperado verdadeiro, mas " + result345 + " <responseDefinition.specifiesBodyContent()> é falso")
 chamada antiga: assertNull(response.content())
-nova chamada: assertNull(response.content(), "Era esperado nulo, mas " + result348 + " <response.content()> não é nulo")
+nova chamada: assertNull(response.content(), "Era esperado nulo, mas " + result346 + " <response.content()> não é nulo")
+chamada antiga: assertThrows(IllegalStateException.class, () -> {
+    createServer(wireMockConfig().port(Network.findFreePort())).port();
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    createServer(wireMockConfig().port(Network.findFreePort())).port();
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> {
+    createServer(wireMockConfig().httpsPort(Network.findFreePort())).httpsPort();
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    createServer(wireMockConfig().httpsPort(Network.findFreePort())).httpsPort();
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IllegalStateException.class, () -> {
+    WireMockServer wireMockServer = createServer(wireMockConfig().port(Network.findFreePort()));
+    wireMockServer.start();
+    wireMockServer.httpsPort();
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    WireMockServer wireMockServer = createServer(wireMockConfig().port(Network.findFreePort()));
+    wireMockServer.start();
+    wireMockServer.httpsPort();
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(IOException.class, () -> {
+    new WireMockServer(options().enableBrowserProxying(true).caKeystorePath(Files.createTempFile("notakeystore", "jks").toString()));
+})
+nova chamada: assertThrows(IOException.class, () -> {
+    new WireMockServer(options().enableBrowserProxying(true).caKeystorePath(Files.createTempFile("notakeystore", "jks").toString()));
+}, "Era esperado que a exceção  IOException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(FatalStartupException.class, new WireMockServer(options().enableBrowserProxying(true).caKeystorePath(emptyKeyStore().toString()))::start)
+nova chamada: assertThrows(FatalStartupException.class, new WireMockServer(options().enableBrowserProxying(true).caKeystorePath(emptyKeyStore().toString()))::start, "Era esperado que a exceção  FatalStartupException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals(200, certResponse.statusCode())
-nova chamada: assertEquals(200, certResponse.statusCode(), "Era esperado valores iguais, mas  200 é diferente de " + result349 + " <certResponse.statusCode()>")
+nova chamada: assertEquals(200, certResponse.statusCode(), "Era esperado valores iguais, mas  200 é diferente de " + result347 + " <certResponse.statusCode()>")
 chamada antiga: assertEquals("application/x-pem-file", certResponse.firstHeader("Content-Type"))
-nova chamada: assertEquals("application/x-pem-file", certResponse.firstHeader("Content-Type"), "Era esperado valores iguais, mas  'application/x-pem-file' é diferente de " + result350 + " <certResponse.firstHeader('Content-Type')>")
+nova chamada: assertEquals("application/x-pem-file", certResponse.firstHeader("Content-Type"), "Era esperado valores iguais, mas  'application/x-pem-file' é diferente de " + result348 + " <certResponse.firstHeader('Content-Type')>")
 chamada antiga: assertEquals(keyStore.getCertificateAuthority().certificateChain()[0], cert)
 nova chamada: assertEquals(keyStore.getCertificateAuthority().certificateChain()[0], cert, "Era esperado valores iguais, mas  keyStore.getCertificateAuthority().certificateChain()[0] é diferente de " + " cert")
 chamada antiga: assertNotNull(wmRuntimeInfo)
 nova chamada: assertNotNull(wmRuntimeInfo, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertNotNull(wmRuntimeInfo.getWireMock())
-nova chamada: assertNotNull(wmRuntimeInfo.getWireMock(), "Era esperado não nulo, mas " + result351 + " <wmRuntimeInfo.getWireMock()> é nulo")
+nova chamada: assertNotNull(wmRuntimeInfo.getWireMock(), "Era esperado não nulo, mas " + result349 + " <wmRuntimeInfo.getWireMock()> é nulo")
+chamada antiga: assertThrows(IllegalStateException.class, wmRuntimeInfo::getHttpsPort)
+nova chamada: assertThrows(IllegalStateException.class, wmRuntimeInfo::getHttpsPort, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
 chamada antiga: assertDoesNotThrow(wm1RuntimeInfo::getHttpsPort)
 nova chamada: assertDoesNotThrow(wm1RuntimeInfo::getHttpsPort, "Era esperado que nenhuma exceção fosse lançada, mas  wm1RuntimeInfo::getHttpsPort foi lançada")
+chamada antiga: assertThrows(VerificationException.class, () -> extension.afterEach(extensionContext))
+nova chamada: assertThrows(VerificationException.class, () -> extension.afterEach(extensionContext), "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
 chamada antiga: assertDoesNotThrow(() -> extension.afterEach(extensionContext))
 nova chamada: assertDoesNotThrow(() -> extension.afterEach(extensionContext), "Era esperado que nenhuma exceção fosse lançada, mas  () - extension.afterEach(extensionContext) foi lançada")
 chamada antiga: assertDoesNotThrow(wm1RuntimeInfo::getHttpsPort)
@@ -869,15 +1403,29 @@ chamada antiga: assertTrue(false)
 nova chamada: assertTrue(false, "Era esperado verdadeiro, mas o valor obtido é falso")
 chamada antiga: assertTrue(true)
 nova chamada: assertTrue(true, "Era esperado verdadeiro, mas o valor obtido é falso")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    verify(postRequestedFor(urlEqualTo("/verify/this")).withHeader("Content-Type", equalTo("text/xml")));
+    verify(3, postRequestedFor(urlEqualTo("/3/of/these")));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    verify(postRequestedFor(urlEqualTo("/verify/this")).withHeader("Content-Type", equalTo("text/xml")));
+    verify(3, postRequestedFor(urlEqualTo("/3/of/these")));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
+chamada antiga: assertThrows(VerificationException.class, () -> {
+    verify(putRequestedFor(urlEqualTo("/without/header")).withoutHeader("Content-Type"));
+})
+nova chamada: assertThrows(VerificationException.class, () -> {
+    verify(putRequestedFor(urlEqualTo("/without/header")).withoutHeader("Content-Type"));
+}, "Era esperado que a exceção  VerificationException.class fosse lançada, mas não foi")
 chamada antiga: assertEquals("body", retrievedBody)
 nova chamada: assertEquals("Era esperado valores iguais, mas  'body' é diferente de " + " retrievedBody", "body", retrievedBody)
 Total asserts: 2948
-Asserts sem descrição: 2767
-Asserts com descrição: 181
-Assertion Roulette: 1896
+Asserts sem descrição: 2837
+Asserts com descrição: 111
+Assertion Roulette: 1890
 
 Após do refactor: 
 Total asserts: 2948
-Asserts sem descrição: 2357
-Asserts com descrição: 591
-Assertion Roulette: 1626
+Asserts sem descrição: 2326
+Asserts com descrição: 622
+Assertion Roulette: 1604

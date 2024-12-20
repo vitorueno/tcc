@@ -263,8 +263,6 @@ chamada antiga: assertNotNull(listElse)
 nova chamada: assertNotNull(listElse, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: Assertions.assertFalse(condition.evaluate())
 nova chamada: assertFalse(condition.evaluate(), "Era esperado falso, mas " + result103 + " <condition.evaluate()> é verdadeiro ")
-chamada antiga: fail("A execução falhou por uma causa deliberada")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
 chamada antiga: assertTrue(jee.evaluate(event))
 nova chamada: assertTrue(jee.evaluate(event), "Era esperado verdadeiro, mas " + result104 + " <jee.evaluate(event)> é falso")
 chamada antiga: assertTrue(jee.evaluate(event))
@@ -357,8 +355,6 @@ chamada antiga: assertNull(inContextFoo)
 nova chamada: assertNull(inContextFoo, "Era esperado nulo, mas o valor obtido não é nulo")
 chamada antiga: assertNotNull(context.getProperty("CANONICAL_HOST_NAME"))
 nova chamada: assertNotNull(context.getProperty("CANONICAL_HOST_NAME"), "Era esperado não nulo, mas " + result133 + " <context.getProperty('CANONICAL_HOST_NAME')> é nulo")
-chamada antiga: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
 chamada antiga: Assertions.assertTrue(statusChecker.containsException(SAXParseException.class))
 nova chamada: assertTrue(statusChecker.containsException(SAXParseException.class), "Era esperado verdadeiro, mas " + result134 + " <statusChecker.containsException(SAXParseException.class)> é falso")
 chamada antiga: Assertions.assertTrue(f.exists())
@@ -917,8 +913,6 @@ chamada antiga: assertEquals(witnessList, tokenList)
 nova chamada: assertEquals(witnessList, tokenList, "Era esperado valores iguais, mas  witnessList é diferente de " + " tokenList")
 chamada antiga: assertEquals(witnessList, tokenList)
 nova chamada: assertEquals(witnessList, tokenList, "Era esperado valores iguais, mas  witnessList é diferente de " + " tokenList")
-chamada antiga: Assertions.fail("circular reference should have been caught input=" + input)
-nova chamada: fail("circular reference should have been caught input=" + input, "A execução falhou por uma causa deliberada")
 chamada antiga: assertEquals(witness, node)
 nova chamada: assertEquals(witness, node, "Era esperado valores iguais, mas  witness é diferente de " + " node")
 chamada antiga: assertEquals(witness, node)
@@ -1516,10 +1510,18 @@ chamada antiga: assertEquals(0, gate.getMask())
 nova chamada: assertEquals(0, gate.getMask(), "Era esperado valores iguais, mas  0 é diferente de " + result594 + " <gate.getMask()>")
 chamada antiga: assertFalse(gate.isTooSoon(currentTime))
 nova chamada: assertFalse(gate.isTooSoon(currentTime), "Era esperado falso, mas " + result595 + " <gate.isTooSoon(currentTime)> é verdadeiro ")
-chamada antiga: fail("circular reference should have been caught input=" + input, "A execução falhou por uma causa deliberada")
-nova chamada: fail("circular reference should have been caught input=" + input, "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
-chamada antiga: fail("A execução falhou por uma causa deliberada")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
+chamada antiga: Assertions.assertThrows(IllegalStateException.class, () -> {
+    sizeBasedTriggeringPolicy.setMaxFileSize(new FileSize(100));
+    sizeBasedTriggeringPolicy.start();
+    fwrp.setFileNamePattern(CoreTestConstants.OUTPUT_DIR_PREFIX + "sizeBased-test1.%i");
+    fwrp.start();
+})
+nova chamada: assertThrows(IllegalStateException.class, () -> {
+    sizeBasedTriggeringPolicy.setMaxFileSize(new FileSize(100));
+    sizeBasedTriggeringPolicy.start();
+    fwrp.setFileNamePattern(CoreTestConstants.OUTPUT_DIR_PREFIX + "sizeBased-test1.%i");
+    fwrp.start();
+}, "Era esperado que a exceção  IllegalStateException.class fosse lançada, mas não foi")
 chamada antiga: Assertions.assertEquals("html", ContentTypeUtil.getSubType(contextType))
 nova chamada: assertEquals("html", ContentTypeUtil.getSubType(contextType), "Era esperado valores iguais, mas  'html' é diferente de " + result596 + " <ContentTypeUtil.getSubType(contextType)>")
 chamada antiga: assertEquals(noSubst, result)
@@ -1570,10 +1572,6 @@ chamada antiga: assertEquals(expectedMessage, e.getMessage())
 nova chamada: assertEquals(expectedMessage, e.getMessage(), "Era esperado valores iguais, mas  expectedMessage é diferente de " + result608 + " <e.getMessage()>")
 chamada antiga: assertEquals(prefix + suffix, r)
 nova chamada: assertEquals(prefix + suffix, r, "Era esperado valores iguais, mas  prefix + suffix é diferente de " + " r")
-chamada antiga: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
-nova chamada: fail("A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
-chamada antiga: fail("Should aNot yet implemented")
-nova chamada: fail("Should aNot yet implemented", "A execução falhou por uma causa deliberada")
 chamada antiga: Assertions.assertEquals(expected - now, 478)
 nova chamada: assertEquals(expected - now, 478, "Era esperado valores iguais, mas  expected - now é diferente de " + " 478")
 chamada antiga: Assertions.assertEquals(expected, computed)
@@ -1678,20 +1676,30 @@ chamada antiga: Assertions.assertSame(ex, status.getThrowable())
 nova chamada: assertSame(ex, status.getThrowable(), "Era esperado objetos iguais, mas  ex é diferente de " + result642 + " <status.getThrowable()>")
 chamada antiga: Assertions.assertSame(client, visitor.getLastVisited())
 nova chamada: assertSame(client, visitor.getLastVisited(), "Era esperado objetos iguais, mas  client é diferente de " + result643 + " <visitor.getLastVisited()>")
-chamada antiga: fail("Should aNot yet implemented", "A execução falhou por uma causa deliberada")
-nova chamada: fail("Should aNot yet implemented", "A execução falhou por uma causa deliberada", "A execução falhou por uma causa deliberada")
+chamada antiga: Assertions.assertFalse(ContentTypeUtil.isTextual(contextType))
+nova chamada: assertFalse(ContentTypeUtil.isTextual(contextType), "Era esperado falso, mas " + result644 + " <ContentTypeUtil.isTextual(contextType)> é verdadeiro ")
+chamada antiga: Assertions.assertThrows(MalformedURLException.class, () -> {
+    LocationUtil.urlForResource(LocationUtil.CLASSPATH_SCHEME);
+})
+nova chamada: assertThrows(MalformedURLException.class, () -> {
+    LocationUtil.urlForResource(LocationUtil.CLASSPATH_SCHEME);
+}, "Era esperado que a exceção  MalformedURLException.class fosse lançada, mas não foi")
+chamada antiga: Assertions.assertThrows(MalformedURLException.class, () -> {
+    LocationUtil.urlForResource(LocationUtil.CLASSPATH_SCHEME + "/");
+})
+nova chamada: assertThrows(MalformedURLException.class, () -> {
+    LocationUtil.urlForResource(LocationUtil.CLASSPATH_SCHEME + "/");
+}, "Era esperado que a exceção  MalformedURLException.class fosse lançada, mas não foi")
 chamada antiga: assertTrue(mbl.exists("iBundle"))
-nova chamada: assertTrue(mbl.exists("iBundle"), "Era esperado verdadeiro, mas " + result644 + " <mbl.exists('iBundle')> é falso")
+nova chamada: assertTrue(mbl.exists("iBundle"), "Era esperado verdadeiro, mas " + result645 + " <mbl.exists('iBundle')> é falso")
 chamada antiga: assertEquals(0, fel.errorList.size())
-nova chamada: assertEquals(0, fel.errorList.size(), "Era esperado valores iguais, mas  0 é diferente de " + result645 + " <fel.errorList.size()>")
+nova chamada: assertEquals(0, fel.errorList.size(), "Era esperado valores iguais, mas  0 é diferente de " + result646 + " <fel.errorList.size()>")
 chamada antiga: assertEquals(0, tee.baos.size())
-nova chamada: assertEquals(0, tee.baos.size(), "Era esperado valores iguais, mas  0 é diferente de " + result646 + " <tee.baos.size()>")
+nova chamada: assertEquals(0, tee.baos.size(), "Era esperado valores iguais, mas  0 é diferente de " + result647 + " <tee.baos.size()>")
 chamada antiga: assertEquals(EVENT_COUNT.get(), events.size())
-nova chamada: assertEquals(EVENT_COUNT.get(), events.size(), "Era esperado valores iguais, mas " + result647 + " <EVENT_COUNT.get()> é diferente de " + result648 + " <events.size()>")
+nova chamada: assertEquals(EVENT_COUNT.get(), events.size(), "Era esperado valores iguais, mas " + result648 + " <EVENT_COUNT.get()> é diferente de " + result649 + " <events.size()>")
 chamada antiga: assertNotNull(la)
 nova chamada: assertNotNull(la, "Era esperado não nulo, mas  o valor obtido foi nulo")
-chamada antiga: Assertions.assertFalse(ContentTypeUtil.isTextual(contextType))
-nova chamada: assertFalse(ContentTypeUtil.isTextual(contextType), "Era esperado falso, mas " + result649 + " <ContentTypeUtil.isTextual(contextType)> é verdadeiro ")
 chamada antiga: assertNotNull(evalMap)
 nova chamada: assertNotNull(evalMap, "Era esperado não nulo, mas  o valor obtido foi nulo")
 chamada antiga: assertNotNull(evaluator)
@@ -2813,12 +2821,12 @@ nova chamada: assertEquals(cm, copy, "Era esperado valores iguais, mas  cm é di
 chamada antiga: assertEquals(cm, copy)
 nova chamada: assertEquals(cm, copy, "Era esperado valores iguais, mas  cm é diferente de " + " copy")
 Total asserts: 1835
-Asserts sem descrição: 1725
-Asserts com descrição: 110
-Assertion Roulette: 1281
+Asserts sem descrição: 1705
+Asserts com descrição: 130
+Assertion Roulette: 1269
 
 Após do refactor: 
 Total asserts: 1835
-Asserts sem descrição: 669
-Asserts com descrição: 1166
-Assertion Roulette: 549
+Asserts sem descrição: 647
+Asserts com descrição: 1188
+Assertion Roulette: 536

@@ -314,12 +314,12 @@ nova chamada: assertEquals("", list.get(2).get("Title"), "Era esperado valores i
 chamada antiga: Assertions.assertEquals(text, "Hier fetter Text")
 nova chamada: assertEquals(text, "Hier fetter Text", "Era esperado valores iguais, mas  text é diferente de " + " 'Hier fetter Text'")
 Total asserts: 363
-Asserts sem descrição: 239
-Asserts com descrição: 124
-Assertion Roulette: 177
+Asserts sem descrição: 244
+Asserts com descrição: 119
+Assertion Roulette: 180
 
 Após do refactor: 
 Total asserts: 363
-Asserts sem descrição: 197
-Asserts com descrição: 166
-Assertion Roulette: 145
+Asserts sem descrição: 202
+Asserts com descrição: 161
+Assertion Roulette: 148
