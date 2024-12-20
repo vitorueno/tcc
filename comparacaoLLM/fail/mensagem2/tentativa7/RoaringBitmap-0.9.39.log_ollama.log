@@ -1,0 +1,45 @@
+eram esperados valores iguais, mas False é diferente de RoaringBitmap.bitmapOf().stream().iterator().hasNext()
+eram esperados valores iguais, mas True é diferente de RoaringBitmap.bitmapOf().reverseStream().iterator().hasNext()
+assertEquals(1, esperado) mas 0 não é igual a iteratorCopy
+assertEquals(1, esperado) mas 0 não é igual a intIteratorCopy
+assertEquals(1, esperado) mas 3 não é igual a reverseIntIteratorCopy
+assertEquals(Listas.of(1, 2, 3), esperado) mas ImmutableList.of(1, 2, 3) não é igual para iteratorCopy
+assertEquals(Listas.of(1, 2, 3), esperado) mas ImmutableList.of(1, 2, 3) não é igual para intIteratorCopy
+assertEquals(Listas.deReverso([1, 2, 3]), esperado) mas ImmutableList.of(1, 2, 3) não é igual para reverseIntIteratorCopy
+assertEquals(1, esperado) mas 0 não é igual a bitmap.last()
+equals(1, esperado) mas 0 não é igual a bitmap.stream().max().getAsInt()
+Assertions.assertEquals(total, esperado) mas 0 não é igual a source.size()
+assertEquals(rb1, esperado) mas rb2 não é igual para Assertions.assertEquals
+assertNotEquals(rb1, esperado) mas rb2 não é igual para Assertions.assertEquals
+assertEquals(rb1, esperado) mas rb2 não é igual para Assertions.assertEquals
+Assertions.assertEquals(total, esperado) mas i não é igual para source.size()
+Assertions.assertEquals(select2, esperado) mas deserStreamOne.select(2) não é igual para select2
+Assertions.assertEquals(select2, esperado) mas deserBBOne.select(2) não é igual para select2
+assertFalse(map.getLongIterator().hasNext()) 
+assertEquals(0, esperado) mas map.getLongCardinality() não é igual a 1L
+assertTrue(map.isEmpty()) não é igual a 0 para Assertions.assertTrue
+assertFalse(map.contains(0)) não é igual a 0 para Assertions.assertEquals
+assertEquals(0, esperado) mas map.rankLong(Long.MIN_VALUE) não é igual a 1L
+assertEquals(0, esperado) mas map.rankLong(Long.MIN_VALUE + 1) não é igual a 1L
+assertEquals(0, esperado) mas map.rankLong(-1) não é igual a 1L
+assertEquals(0, esperado) mas map.rankLong(0) não é igual a 0L
+assertEquals(0, esperado) mas map.rankLong(1) não é igual a 0L
+assertEquals(0, esperado) mas map.rankLong(Long.MAX_VALUE - 1) não é igual a 2L
+assertEquals(0, esperado) mas map.rankLong(Long.MAX_VALUE) não é igual a 2L
+assertArrayEquals(new long[] { Long.MAX_VALUE }, esperado) não é igual para map.select(0)
+assertTrue(map.getLongIterator().hasNext()) 
+assertEquals(-1, esperado) mas iterator.next() não é igual a -1
+assertEquals(-1, esperado) mas map.select(0) não é igual para Assertions.assertEquals
+assertTrue(map.contains(-1)) não é igual a False
+assertFalse(iterator.hasNext()) 
+assertEquals(1, esperado) mas iterator.next() não é igual a 1
+assertEquals(1, esperado) mas map.getLongCardinality() não é igual a 2L
+assertFalse(map.isEmpty()) não é igual a True para Assertions.assertTrue
+assertEquals(0, esperado) mas map.rankLong(Long.MIN_VALUE) não é igual a 1L
+assertEquals(0, esperado) mas map.rankLong(Integer.MIN_VALUE - 1L) não é igual a 1L
+assertEquals(0, esperado) mas map.rankLong(-1) não é igual a 1L
+assertEquals(0, esperado) mas map.rankLong(0) não é igual a 0L
+assertEquals(0, esperado) mas map.rankLong(1) não é igual a 0L
+assertEquals(0, esperado) mas map.rankLong(Long.MAX_VALUE - 1) não é igual a 2L
+assertEquals(0, esperado) mas map.rankLong(Long.MAX_VALUE) não é igual a 1L
+assertArrayEquals(new long[] { Long.MIN_VALUE }, esperado) não é igual para map.select(0)

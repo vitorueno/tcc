@@ -1,0 +1,24 @@
+eram esperados valores iguais, mas a função add da classe calculator retornou 5
+eram esperados valores iguais, mas a função add da classe calculator retornou 7
+eram esperados valores iguais, mas a função add da classe calculator retornou 10
+
+esperado valor igual para "R1" e "C1", mas o valor de p1 retornou null
+esperado valor igual para "R1" e "C1", mas o valor de d1 retornou 1.1
+esperado valor igual para "C1", mas o valor de d1 retornou 0
+esperado valor igual para "C2", mas o valor de d1 retornou 2.2
+esperado valor igual para "C1", mas o valor de d1 retornou 0
+esperado valor igual para "C2", mas o valor de d1 retornou 1
+esperado valor igual para "XX", mas o valor de d1 retornou -1
+esperado valor igual 0, mas a posição da chave "C1" em d1 retornou 0
+esperado valor igual 1, mas a posição da chave "C2" em d1 retornou 1
+esperado valor igual -1, mas a posição da chave "XX" em d1 retornou -1
+esperado valor igual 1.0 para "R1" e "C1", mas o valor de d1 retornou 3.0
+esperado valor igual 2.0 para "R2" e "C1", mas o valor de d1 retornou 1.0
+esperado valor igual 0, mas a quantidade de linhas na matriz dA era 0
+esperado valor igual 0, mas a quantidade de linhas na matriz dB era 0
+esperado valor igual 0, mas a quantidade de colunas na matriz empty1 era 0
+esperado valor igual 0, mas a quantidade de colunas na matriz empty2 era 0
+esperado valor igual 0, mas o resultado da função equals para os objetos dA e dB foi false
+esperado valor igual 0, mas o resultado da função equals para os objetos empty1 e empty2 foi true
+esperado valor igual 99.9 para "Series 1" e "Category 2", mas o resultado da função startValue do objeto d1 foi 99.9
+esperado valor igual 99.9 para "Series 1" e "Category 2", mas o resultado da função endValue do objeto d1 foi 99.9

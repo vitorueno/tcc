@@ -1,0 +1,85 @@
+assertNotNull(files)
+assertOptionalNotNull(files) "Arquivo não pode ser nulo"
+assertTrue(files.length > 10)
+assertPositiveInt files.length "Quantidade de arquivos é negativa"
+
+assertNotNull(doc)
+assertOptionalNotNull(doc) "Documento não pode ser nulo"
+assertNotNull(xmlDoc)
+
+Validate.fail("Should not be reachable", "Falha anticipated")
+
+assertTrue(runner.isInterrupted())
+assertBoolean runner.isInterrupted() "Interrupção não foi registrada"
+
+assertTrue(body[0].length() > 0)
+assertPositiveInt body[0].length() "Tamanho do array é negativo"
+assertContains "<p>Are you still there?</p>", body[0]
+
+assertTrue(runner.isInterrupted())
+assertBoolean runner.isInterrupted() "Interrupção não foi registrada"
+
+assertEquals(0, body[0].length())
+assertZero body[0].length() "Tamanho do array é não nulo"
+
+assertTrue(threw)
+assertPositive boolean threw "Exceção não foi lançada"
+
+assertEquals(0, catcher.exceptionCount.get())
+assertZero catcher.exceptionCount.get() "Contador de exceções não foi atualizado corretamente"
+
+assertEquals(numThreads - 1, catcher.multiThreadExceptions.get())
+assertPositiveInt numThreads - 1 "Número de threads é negativo"
+assertEqual numThreads - 1, catcher.multiThreadExceptions.get() "Contador de exceções não foi atualizado corretamente"
+
+fail("Should not be reachable", "A execução falhou por uma causa deliberada")
+assertFailure "Exceção de falha esperada" "Exceção não foi lançada"
+
+assertEquals("Hello, World!", p.text())
+assertStringEquals "Hello, World!" p.text() "Texto do parágrafo é diferente"
+assertContains "Environment Variables", doc.title()
+
+assertEquals(404, res.statusCode())
+assertCode 404 res.statusCode()
+assertContains "Webserver Environment Variables", doc.title() "Título do documento não contém o esperado"
+
+assertEquals("POST", ihVal("Method", doc))
+assertStringEquals "POST" ihVal("Method", doc) "Valor de método é diferente"
+assertStringEquals "gzip", ihVal("Accept-Encoding", doc) "Valor de encoding é diferente"
+assertContains "auth=token", ihVal("Cookie", doc) "Valor do cookie não contém o esperado"
+
+assertEquals("度一下", ihVal("百", doc))
+assertStringEquals "度一下" ihVal("百", doc) "Valor da propriedade é diferente"
+assertStringEquals "Jsoup, Jonathan", ihVal("uname", doc) "Valor da propriedade é diferente"
+
+assertEquals("application/x-www-form-urlencoded; charset=UTF-8", ihVal("Content-Type", doc))
+assertStringEquals "application/x-www-form-urlencoded; charset=UTF-8" ihVal("Content-Type", doc) "Valor do content type é diferente"
+assertContains "boundary", ihVal("Content-Type", doc) "Valor do content type não contém o esperado"
+
+assertEquals("Jsoup, Jonathan", ihVal("uname", doc))
+assertStringEquals "Jsoup, Jonathan" ihVal("uname", doc) "Valor da propriedade é diferente"
+
+assertEquals("hello", ihVal("Random-Header-name", doc))
+assertStringEquals "hello" ihVal("Random-Header-name", doc) "Valor da propriedade é diferente"
+assertStringEquals "cross-site", ihVal("Sec-Fetch-Site", doc) "Valor do headers é diferente"
+assertStringEquals "cors", ihVal("Sec-Fetch-Directive", doc) "Valor do headers é diferente"
+
+assertEquals(0, res.cookies().size())
+assertZero res.cookies().size() "Tamanho do array de cookies é não nulo"
+
+assertEquals(echoUrl, doc.location())
+assertStringEquals echoUrl doc.location() "Localização do documento é diferente"
+assertContains "True", ihVal("Cookie: LetMeIn", doc) "Valor do cookie não contém o esperado"
+assertStringEquals "Yes", ihVal("Cookie: DoesItWork", doc) "Valor do cookie não contém o esperado"
+
+assertEquals(0, document.select("p").size())
+assertZero document.select("p").size() "Tamanho do array de parágrafos é não nulo"
+assertZero doc.select("p").size() "Tamanho do array de parágrafos é não nulo"
+
+assertEquals("Hello, World!", p.text())
+assertStringEquals "Hello, World!" p.text() "Texto do parágrafo é diferente"
+assertStringEquals "Something", document.title() "Título do documento é diferente"
+
+assertEquals(EchoServlet.Url, doc.location())
+assertStringEquals EchoServlet.Url doc.location() "Localização do documento é diferente"
+assertStringEquals HelloServlet.Url doc.location() "Localização do documento é diferente"

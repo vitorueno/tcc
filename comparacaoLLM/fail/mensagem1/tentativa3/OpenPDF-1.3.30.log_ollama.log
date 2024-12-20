@@ -1,0 +1,92 @@
+assertTrue(result.length > input.length)
+Parameters: "O valor do array de resultado é maior que o valor do array de entrada."
+
+Assertions.assertEquals(2, countPages(target))
+Parameters: "O valor esperado para a contagem de páginas é 2."
+
+Assertions.assertEquals(5, countPages(target))
+Parameters: "O valor esperado para a contagem de páginas é 5."
+
+Assertions.assertEquals(expected, color)
+Parameters: "O valor esperado para a cor é o esperado."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#f09"))
+Parameters: "O valor esperado para a cor RGB é #f09."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#F09"))
+Parameters: "O valor esperado para a cor RGB é #F09."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099"))
+Parameters: "O valor esperado para a cor RGB é #ff0099."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099"))
+Parameters: "O valor esperado para a cor RGB é #FF0099."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#f09a"))
+Parameters: "O valor esperado para a cor RGB é #f09a."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#F09A"))
+Parameters: "O valor esperado para a cor RGB é #F09A."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099"))
+Parameters: "O valor esperado para a cor RGB é #ff0099."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099"))
+Parameters: "O valor esperado para a cor RGB é #FF0099."
+
+Assertions.assertEquals(expected, WebColors.getRGBColor("#f09a"))
+Parameters: "O valor esperado para a cor RGB é #f09a."
+
+Assertions.assertEquals(52.0, footer.getTop())
+Parameters: "O valor esperado para a altura do rodapé é 52.0."
+
+Assertions.assertEquals(92.0, footerTop)
+Parameters: "O valor esperado para a altura do rodapé é 92.0."
+
+Assertions.assertEquals(60.0, imageBottom)
+Parameters: "O valor esperado para a altura da imagem é 60.0."
+
+Assertions.assertEquals(36.0, imageIndentLeft)
+Parameters: "O valor esperado para a indentação da imagem à esquerda é 36.0."
+
+Assertions.assertEquals(76.0, footerTop)
+Parameters: "O valor esperado para a altura do rodapé é 76.0."
+
+Assertions.assertEquals(44.0, imageBottom)
+Parameters: "O valor esperado para a altura da imagem é 44.0."
+
+Assertions.assertEquals(281.5, imageIndentLeft)
+Parameters: "O valor esperado para a indentação da imagem à esquerda é 281.5."
+
+assertEquals("lvi", getString(56))
+Parameters: "O valor esperado para a string é lvi."
+
+assertEquals("mmcmxcix", getString(2999))
+Parameters: "O valor esperado para a string é mmcmxcix."
+
+assertEquals("mmm", getString(3000))
+Parameters: "O valor esperado para a string é mmm."
+
+assertAll(() -> assertThat(getString(input), is(expected)), () -> assertThat(getString(input, false), is(expected.toUpperCase())))
+Parameters: "O valor esperado para a string é o esperado ou o esperado em letras maiúsculas."
+
+assertNotNull(image.getUrl())
+Parameters: "O valor esperado para a URL da imagem não é nulo."
+
+assertNotNull(image.getUrl())
+Parameters: "O valor esperado para a URL da imagem não é nulo."
+
+Assertions.assertEquals(1, names.size())
+Parameters: "O valor esperado para o tamanho do conjunto de nomes é 1."
+
+assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix())
+Parameters: "Os prefixos do conjunto de fontes não são iguais."
+
+assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix())
+Parameters: "Os prefixos do conjunto de fontes não são iguais."
+
+assertEquals(subsetPrefixOne, subsetPrefixTwo)
+Parameters: "Os prefixos dos conjuntos de sufixos são iguais."
+
+Assertions.assertTrue(comparePdf())
+Parameters: "O valor esperado para a comparação do PDF é verdadeiro."

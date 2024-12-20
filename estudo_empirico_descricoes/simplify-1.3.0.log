@@ -1,0 +1,40 @@
+
+Projeto: /home/vitor-otto/opensource/simplify-1.3.0
+
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/simplify/src/test/java/org/cf/simplify/ExecutionGraphManipulatorTest.java linha: 42 Método: assertEquals(exChildren.length, actualNodePile.size(), expectedOpcode.name + " @" + address + " node pile size")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/simplify/src/test/java/org/cf/simplify/ExecutionGraphManipulatorTest.java linha: 51 Método: assertEquals(exChildren[i].length, children.length, expectedOpcode.name + " @" + address + " children size")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/simplify/src/test/java/org/cf/simplify/ExecutionGraphManipulatorTest.java linha: 53 Método: assertEquals((int) exChildren[i][j][0], children[j].getLocation().getCodeAddress(), expectedOpcode.name + " @" + address + " child address")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/simplify/src/test/java/org/cf/simplify/ExecutionGraphManipulatorTest.java linha: 54 Método: assertEquals(exChildren[i][j][1], children[j].getOpcode(), expectedOpcode.name + " @" + address + " child opcode")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/configuration/ConfigurationTest.java linha: 97 Método: assertEquals(0, nonExistentClasses.size(), msg)
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/NewArrayOpTest.java linha: 33 Método: assertFalse(graph.wasAddressReached(1), "Should not reach next instruction in non-exception execution path")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/AGetOpTest.java linha: 30 Método: assertFalse(graph.wasAddressReached(2), "Should not reach next instruction in non-exception execution path")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/MoveOpTest.java linha: 39 Método: assertArrayEquals(addresses, new int[] { 1 }, "Should terminate when expected: " + Arrays.toString(addresses) + " == {1}")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/APutOpTest.java linha: 36 Método: assertFalse(graph.wasAddressReached(2), "Should not reach next instruction in non-exception execution path")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/InvokeOpTest.java linha: 253 Método: assertNull(consensus, "Consensus should be null")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/InvokeOpTest.java linha: 538 Método: assertThrows(RuntimeException.class, () -> {
+    VMTester.execute(CLASS_NAME, "invokeNonExistentMethod()V");
+})
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/SGetOpTest.java linha: 204 Método: assertThrows(RuntimeException.class, () -> {
+    VMTester.test(CLASS_NAME, "getStaticUnknownClassField()V", expected);
+})
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/CheckCastOpTest.java linha: 31 Método: assertFalse(graph.wasAddressReached(1), "Should not reach next instruction in non-exception execution path")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/opcode/ArrayLengthOpTest.java linha: 86 Método: assertFalse(graph.wasAddressReached(1), "Should not reach next instruction in non-exception execution path")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/dex/SmaliClassLoaderTest.java linha: 77 Método: assertThrows(NoClassDefFoundError.class, () -> {
+    Class<?> klazz = classLoader.loadClass(className);
+    klazz.getMethods();
+})
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/dex/SmaliClassLoaderTest.java linha: 207 Método: assertThrows(ClassNotFoundException.class, () -> classLoader.loadClass(nonExistentClassName))
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/dex/SmaliClassLoaderTest.java linha: 215 Método: assertThrows(ClassNotFoundException.class, () -> classLoader.loadClass(nonExistentClassName))
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/dex/SmaliClassLoaderTest.java linha: 223 Método: assertTrue(methodDescriptors.contains(objectMethod), "Must have method: " + objectMethod)
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/emulate/java_lang_reflect_Field_get_Test.java linha: 49 Método: assertNotNull(returnItem, "Emulated method should set return register")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/emulate/java_lang_reflect_Field_get_Test.java linha: 68 Método: assertEquals(1, exceptions.size(), "Should have one exception")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/TestMethodInheritance.java linha: 69 Método: assertThrows(IllegalArgumentException.class, () -> vm.execute(CLASS_NAME + "->" + methodName))
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/VMTester.java linha: 136 Método: assertNotNull(graph, "Graph is null. Failed to execute method.")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/VMTester.java linha: 264 Método: assertNotNull(consensusValue, "No consensus for value")
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/VMTester.java linha: 291 Método: assertArrayEquals((double[]) expectedValue, (double[]) consensusValue, 0.001)
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/smalivm/VMTester.java linha: 289 Método: assertArrayEquals((float[]) expectedValue, (float[]) consensusValue, 0.001F)
+Assert com mensagem: /home/vitor-otto/opensource/simplify-1.3.0/smalivm/src/test/java/org/cf/util/ClassNameUtilsTest.java linha: 130 Método: assertEquals(expected, actual, "class: " + className)
+Total asserts: 444
+Asserts sem descrição: 418
+Asserts com descrição: 26
+Assertion Roulette: 318

@@ -1,0 +1,100 @@
+A alternativa impossível deveria ser impossível, mas impossibleAlternative.isImpossible() retornou falso.
+A partida da primeira parada da primeira etapa da alternativa impossível deveria estar cancelada, mas  ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou falso.
+Era esperado que o tamanho de response.getAll() fosse 2, mas o tamanho atual é diferente.
+A alternativa impossível deveria ser impossível, mas impossibleAlternative.isImpossible() retornou falso.
+Era esperado que o tamanho de response.getAll() fosse 3, mas o tamanho atual é diferente.
+A alternativa impossível deveria ser impossível, mas impossibleAlternative.isImpossible() retornou falso.
+A chegada da segunda parada da primeira etapa da alternativa impossível deveria estar cancelada, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(1).arrivalCancelled retornou falso.
+Era esperado que o tamanho de response.getAll() fosse 2, mas o tamanho atual é diferente.
+A alternativa impossível deveria ser impossível, mas impossibleAlternative.isImpossible() retornou falso.
+A partida da terceira parada da primeira etapa da alternativa impossível deveria estar cancelada, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(2).departureCancelled retornou falso.
+Era esperado que o tamanho de response.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que ptLeg.trip_id fosse "EXTRA0", mas o valor atual é diferente.
+Era esperado que o tamanho de response.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de responseWithRealtimeUpdate.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de response.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de response.getAll() fosse 1, mas o tamanho atual é diferente.
+O último elemento de route.getAll() deveria ser impossível, mas route.getAll().get(route.getAll().size() - 1).isImpossible() retornou falso.
+Era esperado que o tamanho de response.getAll() fosse 2, mas o tamanho atual é diferente.
+A alternativa impossível deveria ser impossível, mas impossibleAlternative.isImpossible() retornou falso.
+Era esperado que o tamanho de response.getAll() fosse 2, mas o tamanho atual é diferente.
+A alternativa impossível deveria ser impossível, mas impossibleAlternative.isImpossible() retornou falso.
+Era esperado que o tamanho de response.getAll() fosse 1, mas o tamanho atual é diferente.
+A partida da primeira parada da primeira etapa da alternativa possível não deveria estar cancelada, mas ((Trip.PtLeg) possibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou verdadeiro.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+A rota não deveria estar vazia, mas route.getAll().isEmpty() retornou verdadeiro.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que a concatenação dos stop_id da firstLeg fosse "JUSTICE_COURT,MUSEUM", mas o valor atual é diferente.
+Era esperado que a concatenação dos stop_id da secondLeg fosse "EMSI,DADAN", mas o valor atual é diferente.
+Era esperado que o tempo de partida de transferLeg fosse 2007-01-01T10:00:00, mas o valor atual é diferente.
+Era esperado que o tempo de chegada de transferLeg fosse 2007-01-01T10:08:06.670, mas o valor atual é diferente.
+Era esperado que a geometria da segunda etapa da transitSolution fosse LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659), mas o valor atual é diferente.
+Era esperado que o tempo da transitSolution fosse 4500000L, mas o valor atual é diferente.
+Era esperado que o peso da rota da transitSolution fosse 4500000.0, mas o valor atual é diferente.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de transitSolution.getLegs() fosse 2, mas o tamanho atual é diferente.
+Era esperado que ptLeg1.route_id fosse "COURT2MUSEUM", mas o valor atual é diferente.
+Era esperado que ptLeg1.trip_id fosse "MUSEUM1", mas o valor atual é diferente.
+Era esperado que o stop_id da primeira parada de ptLeg1 fosse "JUSTICE_COURT", mas o valor atual é diferente.
+Era esperado que o stop_id da segunda parada de ptLeg1 fosse "MUSEUM", mas o valor atual é diferente.
+Era esperado que ptLeg2.route_id fosse "MUSEUM2AIRPORT", mas o valor atual é diferente.
+Era esperado que ptLeg2.trip_id fosse "MUSEUMAIRPORT1", mas o valor atual é diferente.
+Era esperado que o stop_id da primeira parada de ptLeg2 fosse "NEXT_TO_MUSEUM", mas o valor atual é diferente.
+Era esperado que o stop_id da segunda parada de ptLeg2 fosse "AIRPORT", mas o valor atual é diferente.
+Era esperado que a concatenação dos stop_id da primeira etapa de ptLegs fosse "NEXT_TO_MUSEUM,AIRPORT", mas o valor atual é diferente.
+Era esperado que a concatenação dos stop_id da segunda etapa de ptLegs fosse "BEATTY_AIRPORT,BULLFROG", mas o valor atual é diferente.
+Era esperado que o horário de chegada fosse "14:10", mas o valor atual é diferente.
+Era esperado que a duração entre o horário de partida mais cedo e o horário de chegada fosse 15_000_000 milissegundos, mas o valor atual é diferente.
+Era esperado que o peso da rota da transitSolution fosse 1.5E7, mas o valor atual é diferente.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tempo da transitSolution fosse 4500000L, mas o valor atual é diferente.
+Era esperado que o peso da rota da transitSolution fosse 4500000.0, mas o valor atual é diferente.
+Era esperado que a concatenação dos stop_id da primeira etapa da transitSolution fosse "JUSTICE_COURT,MUSEUM", mas o valor atual é diferente.
+Era esperado que o horário de partida fosse "10:00", mas o valor atual é diferente.
+Era esperado que a geometria da segunda etapa da transitSolution fosse LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659), mas o valor atual é diferente.
+Era esperado que o horário de chegada fosse "10:08:06.670", mas o valor atual é diferente.
+Era esperado que a concatenação dos stop_id da terceira etapa da transitSolution fosse "EMSI,DADAN", mas o valor atual é diferente.
+Era esperado que o tamanho de walkRoute.getLegs() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tempo da walkRoute fosse 486670, mas o valor atual é diferente.
+Era esperado que a geometria da primeira etapa da walkRoute fosse LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659), mas o valor atual é diferente.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+Era esperado que amount.getAmount().doubleValue() fosse maior que onlyFare.fare_attribute.price, mas a condição é falsa.
+Era esperado que cheapestFareWhereEveryLegGoesThroughAllZones fosse maior ou igual a cheapestFare, mas a condição é falsa.
+Era esperado que o tamanho de transfersToStop fosse 2, mas o tamanho atual é diferente.
+Era esperado que transfer.from_stop_id fosse "MUSEUM", mas o valor atual é diferente.
+Era esperado que transfer.to_stop_id fosse "NEXT_TO_MUSEUM", mas o valor atual é diferente.
+Era esperado que transfer.from_route_id fosse nulo, mas o valor atual é diferente.
+Era esperado que transfer.to_route_id fosse nulo, mas o valor atual é diferente.
+Era esperado que transfer.min_transfer_time fosse 600, mas o valor atual é diferente.
+Era esperado que withinStationTransfer.from_stop_id fosse "NEXT_TO_MUSEUM", mas o valor atual é diferente.
+Era esperado que withinStationTransfer.to_stop_id fosse "NEXT_TO_MUSEUM", mas o valor atual é diferente.
+Era esperado que withinStationTransfer.from_route_id fosse nulo, mas o valor atual é diferente.
+Era esperado que withinStationTransfer.to_route_id fosse nulo, mas o valor atual é diferente.
+Era esperado que o tamanho de transfersToStop fosse 5, mas o tamanho atual é diferente.
+Era esperado que transfersToStop.get(0).from_route_id fosse "AB", mas o valor atual é diferente.
+Era esperado que transfersToStop.get(1).from_route_id fosse "FUNNY_BLOCK_AB", mas o valor atual é diferente.
+Era esperado que transfersToStop.get(2).from_route_id fosse "STBA", mas o valor atual é diferente.
+Era esperado que transfersToStop.get(3).from_route_id fosse "AAMV", mas o valor atual é diferente.
+Era esperado que transfersToStop.get(4).from_route_id fosse "ABBFC", mas o valor atual é diferente.
+A rota não deveria conter erros, mas route.hasErrors() retornou verdadeiro.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de response.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que o tamanho de route.getAll() fosse 1, mas o tamanho atual é diferente.
+Era esperado que expectedDepartureTimes fosse igual a actualDepartureTimes, mas os valores são diferentes.
+Era esperado que expectedDepartureTimes fosse igual a actualDepartureTimes, mas os valores são diferentes.
+Era esperado que expectedDepartureTimes fosse igual a actualDepartureTimes, mas os valores são diferentes.
+Era esperado que route.getAll() estivesse vazio, mas a condição é falsa.
+Era esperado que route.getAll() estivesse vazio, mas a condição é falsa.
+Era esperado que ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id fosse "AB", mas o valor atual é diferente.
+Era esperado que ((Trip.PtLeg) mondayTrip.getLegs().get(0)).route_id fosse diferente de "AB", mas os valores são iguais.
+Era esperado que ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id fosse diferente de "AB", mas os valores são iguais.
+Era esperado que ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id fosse "AB", mas o valor atual é diferente.

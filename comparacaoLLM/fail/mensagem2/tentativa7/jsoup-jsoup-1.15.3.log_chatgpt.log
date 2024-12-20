@@ -1,0 +1,17 @@
+assertNotNull(files)  
+era esperado que 'files' não fosse nulo, porém o valor é nulo  
+
+assertTrue(files.length > 10)  
+era esperado que 'files.length' fosse maior que 10, mas não é  
+
+assertNotNull(doc)  
+era esperado que 'doc' não fosse nulo, porém o valor é nulo  
+
+assertTrue(doc.title().contains("Environment Variables"))  
+era esperado que o título de 'doc' contivesse "Environment Variables", mas não contém  
+
+assertTrue(threw)  
+era esperado que 'threw' fosse verdadeiro, porém é falso  
+
+assertEquals("hello", ihVal("Random-Header-name", doc))  
+era esperado que o valor de 'ihVal("Random-Header-name", doc)' fosse "hello", mas é diferente

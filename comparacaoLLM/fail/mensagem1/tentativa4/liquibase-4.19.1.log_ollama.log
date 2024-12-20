@@ -1,0 +1,11 @@
+assertNotNull(cdiLiquibase)
+assertEquals(shouldBeRunning, cdiLiquibase.isInitialized(), "Expectado que Liquibase estivesse inicializado")
+assertEquals(shouldBeRunning, cdiLiquibase.isUpdateSuccessful(), "Expectado que o update de Liquibase seja bem-sucedido")
+addAutoIncrement
+assertEquals("addColumn", node.getTagName(), "Expectado que o nome do elemento fosse 'addColumn'")
+TAB
+assertEquals(1, columns.getLength(), "Expectado que as colunas tivessem uma duração de 1 unidade")
+column
+assertEquals("NEWCOL", ((Element) columns.item(0)).getAttribute("name"), "Expectado que o nome da coluna fosse 'NEWCOL'")
+TYP
+assertEquals("DEF STRING", node.getAttribute("defaultValue"), "Expectado que o valor padrão da coluna fosse uma string")

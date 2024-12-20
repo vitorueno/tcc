@@ -1,0 +1,89 @@
+É impossível que a alternativa seja verdadeira.
+A partida do primeiro ponto de parada foi cancelada.
+O tamanho da lista é diferente de 2.
+É impossível que a alternativa seja verdadeira.
+O tamanho da lista é diferente de 3.
+É impossível que a alternativa seja verdadeira.
+A chegada do segundo ponto de parada foi cancelada.
+O tamanho da lista é diferente de 2.
+É impossível que a alternativa seja verdadeira.
+A partida do terceiro ponto de parada foi cancelada.
+O tamanho da lista é diferente de 1.
+O identificador da viagem é diferente de "EXTRA0".
+O tamanho da lista é diferente de 1.
+O tamanho da lista é diferente de 1.
+O tamanho da lista é diferente de 1.
+A última rota é impossível.
+O tamanho da lista é diferente de 2.
+É impossível que a alternativa seja verdadeira.
+O tamanho da lista é diferente de 2.
+É impossível que a alternativa seja verdadeira.
+O tamanho da lista é diferente de 1.
+A partida do primeiro ponto de parada não foi cancelada.
+A rota possui erros.
+A rota possui erros.
+A lista não está vazia.
+A rota possui erros.
+O tamanho da lista é diferente de 1.
+Os pontos de parada são "JUSTICE_COURT, MUSEUM".
+Os pontos de parada são "EMSI, DADAN".
+O horário de partida está incorreto.
+O horário entre a saída e a chegada está incorreto.
+A geometria da solução de transporte está incorreta.
+O tempo da solução de transporte está incorreto.
+O peso da rota da solução de transporte está incorreto.
+A rota possui erros.
+O tamanho da lista é diferente de 1.
+A rota possui erros.
+O tamanho da lista é diferente de 1.
+O tamanho da lista é diferente de 2.
+A rota é "COURT2MUSEUM".
+A viagem é "MUSEUM1".
+O ponto de parada 1 é "JUSTICE_COURT" e o ponto de parada 2 é "MUSEUM".
+A rota é "MUSEUM2AIRPORT".
+A viagem é "MUSEUMAIRPORT1".
+O ponto de parada 1 é "NEXT_TO_MUSEUM" e o ponto de parada 2 é "AIRPORT".
+Os pontos de parada são "NEXT_TO_MUSEUM, AIRPORT".
+Os pontos de parada são "BEATTY_AIRPORT, BULLFROG".
+O horário de chegada está incorreto.
+O peso da rota está incorreto.
+A rota possui erros.
+O tamanho da lista é diferente de 1.
+O tempo da solução de transporte está incorreto.
+O peso da rota da solução de transporte está incorreto.
+Os pontos de parada são "JUSTICE_COURT, MUSEUM".
+O horário de partida está incorreto.
+A geometria da solução de transporte está incorreta.
+O horário de chegada está incorreto.
+Os pontos de parada são "EMSI, DADAN".
+O tamanho da lista de pernas é diferente de 1.
+O tempo do percurso está incorreto.
+A geometria da linha está incorreta.
+A rota possui erros.
+O valor do montante é maior que o preço da tarifa.
+A tarifa mais barata que passa por todas as zonas é maior ou igual à tarifa mais barata.
+O tamanho da lista de transferências é diferente de 2.
+O ponto de partida da transferência é "MUSEUM".
+O ponto de chegada da transferência é "NEXT_TO_MUSEUM".
+O tempo mínimo de transferência é 600.
+O ponto de partida da transferência é "NEXT_TO_MUSEUM".
+O ponto de chegada da transferência é "NEXT_TO_MUSEUM".
+O ponto de partida da transferência é nulo.
+O ponto de chegada da transferência é nulo.
+O tamanho da lista de transferências é diferente de 5.
+O identificador da rota de partida é "AB".
+O identificador da rota de partida é "FUNNY_BLOCK_AB".
+O identificador da rota de partida é "STBA".
+O identificador da rota de partida é "AAMV".
+O identificador da rota de partida é "ABBFC".
+A rota possui erros.
+O tamanho da lista é diferente de 1.
+O tamanho da lista é diferente de 1.
+O tamanho da lista é diferente de 1.
+O tamanho da lista é diferente de 1.
+O tamanho da lista é diferente de 1.
+A rota está vazia.
+A rota está vazia.
+A rota não contém o identificador da rota "AB".
+A rota contém o identificador da rota "AB".
+A rota contém o identificador da rota "AB".

@@ -1,0 +1,43 @@
+Era esperado que os argumentos de tipo fossem iguais, mas typeArguments[0] é diferente de TextRenderData.class.  
+Era esperado que os textos fossem iguais, mas result.getText() é diferente de data.getText().  
+Era esperado que as larguras fossem iguais, mas result.getPictureStyle().getWidth() é diferente de data.getPictureStyle().getWidth().  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.SVG é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.svg")).  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.GIF é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.gif")).  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.PNG é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.png")).  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.JPEG é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.jpg")).  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.BMP é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.bmp")).  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.TIFF é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.tif")).  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.PNG é diferente de PictureType.suggestFileType(ByteUtils.getUrlByteArray("http://deepoove.com/images/icecream.png")).  
+Era esperado que os tipos de imagem fossem iguais, mas PictureType.SVG é diferente de PictureType.suggestFileType(ByteUtils.getUrlByteArray("http://deepoove.com/images/%E8%8C%84%E5%AD%90.svg")).  
+Era esperado que o tamanho da lista fosse 0, mas renew.getElementTemplates().size() é diferente de 0.  
+Era esperado que o tamanho da lista fosse 4, mas renew.getElementTemplates().size() é diferente de 4.  
+Era esperado que o tamanho da lista fosse 3, mas template.getElementTemplates().size() é diferente de 3.  
+Era esperado que o tamanho da lista fosse 5, mas template.getElementTemplates().size() é diferente de 5.  
+Era esperado que o tamanho da lista fosse 0, mas renew.getElementTemplates().size() é diferente de 0.  
+Os textos não coincidem: esperado "[hello, poi-tl]" mas obtido "hello, poi-tl".  
+Os textos não coincidem: esperado "[hello, , poi-tl]" mas obtido "[hello, , poi-tl]".  
+Os textos não coincidem: esperado "[hello, , ]" mas obtido "[hello, , ]".  
+Os textos não coincidem: esperado "[, , poi-tl]" mas obtido "[, , poi-tl]".  
+Os textos não coincidem: esperado "[, , , , ]" mas obtido "[, , , , ]".  
+Os textos não coincidem: esperado "[hi, , , , what, is, , , this]" mas obtido "[hi, , , , what, is, , this]".  
+Os textos não coincidem: esperado "[hi, , , , what, is, , this]" mas obtido "[hi, , , , what, is, , this]".  
+O texto esperado era "123" mas obtido "Sayi".  
+O texto esperado era "卅一" mas obtido "Sayi".  
+O texto esperado era "Sayi" mas obtido "卅一".  
+O texto esperado era "2018-10-01" mas obtido "卅一".  
+O texto esperado era "http://www.deepoove.com" mas obtido "2018-10-01".  
+O texto esperado era "2018-10-01" mas obtido "http://www.deepoove.com".  
+Era esperado que o número de imagens fosse 1, mas document.getAllPictures().size() é diferente de 1.  
+Era esperado que o número de tabelas fosse 1, mas document.getTables().size() é diferente de 1.  
+A causa da exceção não é uma ExpressionEvalException.  
+O texto esperado era "lowCase:poi-tlUpcase:POI-TL" mas obtido "lowCase:poi-tlUpcase:POI-TL".  
+O texto esperado era "这个字段为空" mas obtido "这个字段为空".  
+O texto esperado era "男" mas obtido "男".  
+O texto esperado era "2019-05-20 22:14:10" mas obtido "2019-05-20 22:14:10".  
+O texto esperado era "2019-05-20 10:14" mas obtido "2019-05-20 10:14".  
+O texto esperado era "88880000" mas obtido "88880000".  
+O texto esperado era "8888万元" mas obtido "8888万元".  
+O texto esperado era "阿黄" mas obtido "阿黄".  
+O texto esperado era "6" mas obtido "6".  
+O texto esperado era "阿蓝" mas obtido "阿蓝".  
+O padrão de regex não é igual a "abc-123".

@@ -1,0 +1,110 @@
+Assertions.assertEquals(10, object.getInt("int", 0))
+Assertions.assertThrows(Exception.class, () -> object.getInt("int", -1))
+
+Assertions.assertEquals(100, object.getLong("long", 0))
+Assertions.assertThrows(Exception.class, () -> object.getLong("long", -1))
+
+Assertions.assertEquals(true, object.getBoolean("boolean", false))
+Assertions.assertThrows(Exception.class, () -> object.getBoolean("boolean", true))
+
+Assertions.assertEquals("test", object.getString("string", null))
+Assertions.assertThrows(Exception.class, () -> object.getString("string", ""))
+
+Assertions.assertEquals(object.toMap(), symmetric.toMap())
+Assertions.assertThrows(Exception.class, () -> symmetric.toMap())
+
+Assertions.assertEquals("ABCDEF", markdown.compute("**A_B||C~~D__E`F`__~~||_**"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("**A_B||C~~D__E`F`__~~||_**"))
+
+Assertions.assertEquals("", markdown.compute(""))
+Assertions.assertDoesNotThrow(() -> markdown.compute(""))
+
+Assertions.assertEquals("Hello World ~~~~", markdown.compute("Hello World ~~~~"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("Hello World ~~~~"))
+
+Assertions.assertEquals("Hello World ~", markdown.compute("Hello World ~~~~~"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("Hello World ~~~~~"))
+
+Assertions.assertEquals("Hello", markdown.compute("**Hello**"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("**Hello"))
+
+Assertions.assertEquals("**Hello", markdown.compute("**Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("**Hello"))
+
+Assertions.assertEquals("\\**Hello*", markdown.compute("\\**Hello*"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("\\**Hello*"))
+
+Assertions.assertEquals("Hello", markdown.compute("*Hello*"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("*Hello*"))
+
+Assertions.assertEquals("_Hello_", markdown.compute("_Hello_"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("_Hello_"))
+
+Assertions.assertEquals("*Hello", markdown.compute("*Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("*Hello"))
+
+Assertions.assertEquals("_Hello", markdown.compute("_Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("_Hello"))
+
+Assertions.assertEquals("***Hello***", markdown.compute("***Hello***"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("***Hello***"))
+
+Assertions.assertEquals("***Hello", markdown.compute("***Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("***Hello"))
+
+Assertions.assertEquals("\\***Hello***", markdown.compute("\\***Hello***"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("\\***Hello***"))
+
+Assertions.assertEquals("__Hello__", markdown.compute("__Hello__"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("__Hello__"))
+
+Assertions.assertEquals("__Hello", markdown.compute("__Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("__Hello"))
+
+Assertions.assertEquals("~~Hello~~", markdown.compute("~~Hello~~"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("~~Hello~~"))
+
+Assertions.assertEquals("~~Hello", markdown.compute("~~Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("~~Hello"))
+
+Assertions.assertEquals("||Hello||", markdown.compute("||Hello||"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("||Hello||"))
+
+Assertions.assertEquals("||Hello", markdown.compute("||Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("||Hello"))
+
+Assertions.assertEquals("`Hello`", markdown.compute("`Hello`"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("`Hello`"))
+
+Assertions.assertEquals("`Hello", markdown.compute("`Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("`Hello"))
+
+Assertions.assertEquals("`Hello **World**`", markdown.compute("`Hello **World**`"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("`Hello **World**`"))
+
+Assertions.assertEquals("`Hello **World**", markdown.compute("`Hello **World**"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("`Hello **World`"))
+
+Assertions.assertEquals("``Hello``", markdown.compute("``Hello``"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("``Hello``"))
+
+Assertions.assertEquals("``Hello", markdown.compute("``Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("``Hello"))
+
+Assertions.assertEquals("``Hello **World**``", markdown.compute("``Hello **World**``"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("``Hello **World**``"))
+
+Assertions.assertEquals("``Hello **World**", markdown.compute("``Hello **World**"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("``Hello **World" ))
+
+Assertions.assertEquals("```Hello```", markdown.compute("```Hello```"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("```Hello```"))
+
+Assertions.assertEquals("```Hello", markdown.compute("```Hello"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("```Hello"))
+
+Assertions.assertEquals("```Hello **World**```", markdown.compute("```Hello **World**```"))
+Assertions.assertDoesNotThrow(() -> markdown.compute("```Hello **World**```"))
+
+Assertions.assertEquals("```Hello **World**", markdown.compute("```Hello **World**"))
+Assertions.assertThrows(Exception.class, () -> markdown.compute("```Hello **World" ))

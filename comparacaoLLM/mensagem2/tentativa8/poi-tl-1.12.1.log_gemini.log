@@ -1,0 +1,100 @@
+eram esperados valores iguais, mas typeArguments[0] é diferente de TextRenderData.class
+eram esperados valores iguais, mas typeArguments[0] é diferente de TextRenderData.class
+eram esperados valores iguais, mas result.getText() é diferente de data.getText()
+eram esperados valores iguais, mas ((HyperlinkTextRenderData) result).getUrl() é diferente de ((HyperlinkTextRenderData) data).getUrl()
+eram esperados valores iguais, mas result.getStyle().getColor() é diferente de data.getStyle().getColor()
+eram esperados valores iguais, mas result.getStyle().getUnderlinePatterns() é diferente de data.getStyle().getUnderlinePatterns()
+eram esperados valores iguais, mas result.getPictureStyle().getWidth() é diferente de data.getPictureStyle().getWidth()
+eram esperados valores iguais, mas result.getPictureStyle().getHeight() é diferente de data.getPictureStyle().getHeight()
+eram esperados valores iguais, mas result.getPictureType() é diferente de data.getPictureType()
+eram esperados valores iguais, mas result.getAltMeta() é diferente de data.getAltMeta()
+eram esperados valores iguais, mas result.getChartTitle() é diferente de data.getChartTitle()
+eram esperados arrays iguais, mas result.getCategories() é diferente de data.getCategories()
+eram esperados valores iguais, mas result.getSeriesDatas().get(0).getName() é diferente de data.getSeriesDatas().get(0).getName()
+eram esperados valores iguais, mas result.getSeriesDatas().get(0).getComboType() é diferente de data.getSeriesDatas().get(0).getComboType()
+eram esperados arrays iguais, mas result.getMergedDoc() é diferente de data.getMergedDoc()
+eram esperados valores iguais, mas result.getTableStyle().getWidth() é diferente de data.getTableStyle().getWidth()
+eram esperados valores iguais, mas result.getTableStyle().getAlign() é diferente de data.getTableStyle().getAlign()
+eram esperados valores iguais, mas contents2.size() é diferente de contents.size()
+eram esperados arrays iguais, mas result.getFormats().toArray() é diferente de data.getFormats().toArray()
+eram esperados valores iguais, mas result.getItems().get(1).getItem().getParagraphStyle().getGlyphStyle().getColor() é diferente de data.getItems().get(1).getItem().getParagraphStyle().getGlyphStyle().getColor()
+eram esperados valores iguais, mas PictureType.SVG é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.svg")))
+eram esperados valores iguais, mas PictureType.GIF é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.gif")))
+eram esperados valores iguais, mas PictureType.PNG é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.png")))
+eram esperados valores iguais, mas PictureType.JPEG é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.jpg")))
+eram esperados valores iguais, mas PictureType.BMP é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.bmp")))
+eram esperados valores iguais, mas PictureType.TIFF é diferente de PictureType.suggestFileType(ByteUtils.getLocalByteArray(new File("src/test/resources/picture/p.tif")))
+eram esperados valores iguais, mas PictureType.PNG é diferente de PictureType.suggestFileType(ByteUtils.getUrlByteArray("http://deepoove.com/images/icecream.png"))
+eram esperados valores iguais, mas PictureType.SVG é diferente de PictureType.suggestFileType(ByteUtils.getUrlByteArray("http://deepoove.com/images/%E8%8C%84%E5%AD%90.svg"))
+eram esperados valores iguais, mas renew.getElementTemplates().size() é diferente de 0
+eram esperados valores iguais, mas renew.getElementTemplates().size() é diferente de 4
+eram esperados valores iguais, mas template.getElementTemplates().size() é diferente de 3
+eram esperados valores iguais, mas template.getElementTemplates().size() é diferente de 5
+eram esperados valores iguais, mas renew.getElementTemplates().size() é diferente de 0
+eram esperados valores iguais, mas Arrays.toString(text.split(regexLine, -1)) é diferente de "[hello, poi-tl]"
+eram esperados valores iguais, mas Arrays.toString(text1.split(regexLine, -1)) é diferente de "[hello, , poi-tl]"
+eram esperados valores iguais, mas Arrays.toString(text2.split(regexLine, -1)) é diferente de "[hello, , ]"
+eram esperados valores iguais, mas Arrays.toString(text3.split(regexLine, -1)) é diferente de "[, , poi-tl]"
+eram esperados valores iguais, mas Arrays.toString(text4.split(regexLine, -1)) é diferente de "[, , , , ]"
+eram esperados valores iguais, mas Arrays.toString(text5.split(regexLine, -1)) é diferente de "[hi, , , , what, is, , , this]"
+eram esperados valores iguais, mas Arrays.toString(text7.split(regexLine, -1)) é diferente de "[hi, , , , what, is, , this]"
+eram esperados valores iguais, mas "123" é diferente de document.getParagraphArray(0).getText()
+eram esperados valores iguais, mas paragraph.getText() é diferente de "Sayi"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "卅一"
+era esperado null, mas o valor encontrado foi paragraph
+eram esperados valores iguais, mas document.getAllPictures().size() é diferente de 1
+eram esperados valores iguais, mas document.getTables().size() é diferente de 1
+era esperado que a causa da exceção fosse uma instância de ExpressionEvalException, mas foi encontrado:  exception.getCause()
+eram esperados valores iguais, mas paragraph.getText() é diferente de "Sayi"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "卅一"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "2018-10-01"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "http://www.deepoove.com"
+eram esperados valores iguais, mas document.getAllPictures().size() é diferente de 1
+eram esperados valores iguais, mas document.getTables().size() é diferente de 1
+eram esperados valores iguais, mas args.get("sea") é diferente de document.getParagraphArray(0).getText()
+eram esperados valores iguais, mas 1 é diferente de document.getAllPictures().size()
+eram esperados valores iguais, mas "面朝大海春暖花开" é diferente de document.getParagraphArray(2).getText()
+era esperado que o valor fosse diferente de null, mas foi encontrado: document.getParagraphArray(2).getNumID()
+eram esperados valores iguais, mas "今朝有酒今朝醉" é diferente de document.getParagraphArray(3).getText()
+era esperado que o valor fosse diferente de null, mas foi encontrado: document.getParagraphArray(3).getNumID()
+eram esperados valores iguais, mas document.getParagraphArray(2).getNumID() é diferente de document.getParagraphArray(3).getNumID()
+eram esperados valores iguais, mas "日落：日落山花红四海" é diferente de document.getTables().get(0).getRow(1).getCell(1).getText()
+eram esperados valores iguais, mas "123" é diferente de document.getParagraphArray(0).getText()
+eram esperados valores iguais, mas spelForMap.compute("['name']") é diferente de "Sayi"
+eram esperados valores iguais, mas spelForMap.compute("['data']['hello']") é diferente de "poi-tl"
+eram esperados valores iguais, mas spelForMap.compute("name") é diferente de "Sayi"
+eram esperados valores iguais, mas spelForMap.compute("data.hello") é diferente de "poi-tl"
+eram esperados valores iguais, mas spelForMap.compute("localDate.format(T(java.time.format.DateTimeFormatter).ofPattern('yyyy年MM月dd日'))") é diferente de "2021年03月08日"
+eram esperados valores iguais, mas spelForBean.compute("name") é diferente de "poi-tl"
+eram esperados valores iguais, mas spelForBean.compute("name == 'poi-tl'") é diferente de true
+eram esperados valores iguais, mas spelForBean.compute("name.toUpperCase()") é diferente de "POI-TL"
+eram esperados valores iguais, mas spelForBean.compute("empty?:'这个字段为空'") é diferente de "这个字段为空"
+eram esperados valores iguais, mas spelForBean.compute("sex ? '男' : '女'") é diferente de "男"
+eram esperados valores iguais, mas spelForBean.compute("new java.text.SimpleDateFormat('yyyy-MM-dd HH:mm:ss').format(time)") é diferente de "2019-05-20 22:14:10"
+eram esperados valores iguais, mas spelForBean.compute("new java.text.SimpleDateFormat('yyyy-MM-dd hh:mm').format(time)") é diferente de "2019-05-20 10:14"
+eram esperados valores iguais, mas spelForBean.compute("price") é diferente de 88880000L
+eram esperados valores iguais, mas spelForBean.compute("price + '元'") é diferente de "88880000元"
+eram esperados valores iguais, mas spelForBean.compute("price + '元' == '88880000元'") é diferente de true
+eram esperados valores iguais, mas spelForBean.compute("price/1000 + '千元'") é diferente de "88880千元"
+eram esperados valores iguais, mas spelForBean.compute("price/10000 + '万元'") é diferente de "8888万元"
+eram esperados valores iguais, mas spelForBean.compute("dogs[0].name") é diferente de "阿黄"
+eram esperados valores iguais, mas spelForBean.compute("dogs[1].age") é diferente de 6
+eram esperados valores iguais, mas spelForBean.compute("dogs[2].name") é diferente de "阿蓝"
+eram esperados valores iguais, mas spelForBean.compute("dogsArr[2].name") é diferente de "阿蓝"
+eram esperados valores iguais, mas spelForBean.compute("data['hello']") é diferente de "poi-tl"
+eram esperados valores iguais, mas spelForFunction.compute("#substringStaticMethod('spElFunction', 2)") é diferente de "ElFunction"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "poi-tl"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "lowCase:poi-tlUpcase:POI-TL"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "这个字段为空"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "男"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "2019-05-20 22:14:10"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "2019-05-20 10:14"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "88880000"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "8888万元"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "阿黄"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "6"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "阿蓝"
+eram esperados valores iguais, mas paragraph.getText() é diferente de "ElFunction"
+eram esperados valores iguais, mas Configure.DEFAULT_GRAMER_REGEX é diferente de config.getGrammerRegex()
+era esperado que os valores fossem diferentes, mas Configure.DEFAULT_GRAMER_REGEX é igual a config.getGrammerRegex()
+era esperado que o valor fosse falso, mas foi encontrado: pattern.matcher("abc-123").matches()

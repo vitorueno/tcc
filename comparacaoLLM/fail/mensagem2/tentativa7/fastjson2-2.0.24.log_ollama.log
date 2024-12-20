@@ -1,0 +1,41 @@
+Eravam esperados valores iguais, mas "sun.misc.Unsafe" é diferente de c.getCanonicalName()
+Eravam esperados valores iguais, mas 1 não é igual a user.id
+Eravam esperados valores iguais, mas "kraity" não é igual a user.name
+Eravam esperados valores iguais, mas 1 não é igual a user.id
+Eravam esperados valores iguais, mas "kraity" não é igual a user.name
+Eravam esperados valores iguais, mas 123 é diferente de bean.value
+Eravam esperados valores iguais, mas jsonFactory não é igual a objectMapper.getFactory()
+Eravam esperados valores iguais, mas 3 não é igual a products.size()
+Eravam esperados valores iguais, mas 1 não é igual a products.get(0).id
+Eravam esperados valores iguais, mas 2 não é igual a products.get(1).id
+Eravam esperados valores iguais, mas 3 não é igual a products.get(2).id
+Eravam esperados valores iguais, mas SerializationFeature.values().length > 0 não é verdadeiro
+Eravam esperados valores iguais, mas InvalidDefinitionException(null).getType() é nulo
+Eravam esperados valores iguais, mas "{\"time\":\"121314\"}" não é igual a str
+Eravam esperados valores iguais, mas bean.time não é igual a bean1.time
+Eravam esperados valores iguais, mas "{\"time\":\"121314\"}" não é igual a str
+Eravam esperados valores iguais, mas bean.time não é igual a bean1.time
+Eravam esperados valores iguais, mas "{\"time\":\"121314\"}" não é igual a str
+Eravam esperados valores iguais, mas bean.time não é igual a bean1.time
+Eravam esperados valores iguais, mas "{\"time\":\"121314\"}" não é igual a str
+Eravam esperados valores iguais, mas bean.time não é igual a bean1.time
+Eravam esperados valores iguais, mas "{"\"time\":\"121314\"}" não é igual a str
+Eravam esperados valores iguais, mas bean.data não é igual a bean1.data
+Eravam esperados valores iguais, mas instantCsv não é igual a writer.writeValueAsString(bean)
+Eravam esperados valores iguais, mas bean.data não é igual a bean1.data
+Eravam esperados valores iguais, mas instantCsv não é igual a str
+Eravam esperados valores iguais, mas bean.data não é igual a bean1.data
+Eravam esperados valores iguais, mas "value\n" não é igual a writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+Eravam esperados valores iguais, mas "\n" não é igual a writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+Eravam esperados valores iguais, mas (reader.readValue("value\n", TypeWithOptional.class).data).get().contains("value") não é verdadeiro
+Eravam esperados valores iguais, mas (reader.readValue("null\n", TypeWithOptional.class).data).get().contains("null") não é verdadeiro
+Eravam esperados valores iguais, mas instantCsv não é igual a str
+Eravam esperados valores iguais, mas bean.data não é igual a bean1.data
+Eravam esperados valores iguais, mas "value\n" não é igual a writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+Eravam esperados valores iguais, mas "\n" não é igual a writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+Eravam esperados valores iguais, mas (reader.readValue("\n", TypeWithOptional.class).data).isPresent() não é verdadeiro
+Eravam esperados valores iguais, mas arrayNode.elements().hasNext() não é verdadeiro
+Eravam esperados valores iguais, mas arrayNode.iterator().hasNext() não é verdadeiro
+Eravam esperados valores iguais, mas node.isBigInteger() não é verdadeiro
+Eravam esperados valores iguais, mas node.isBigDecimal() não é verdadeiro
+Eravam esperados valores iguais, mas node.isFloat() não é verdadeiro

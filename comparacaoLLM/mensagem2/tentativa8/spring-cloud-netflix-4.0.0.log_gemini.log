@@ -1,0 +1,28 @@
+```java
+ assertEquals(5, calculator.add(2, 3));
+ assertEquals("Hello, World!", greeting.getMessage());
+ assertTrue(customer.isActive());
+ assertFalse(file.isEmpty());
+ assertNotNull(user);
+ assertNull(optionalValue.orElse(null));
+ assertSame(object1, object2);
+ assertNotSame(list1, list2);
+ assertArrayEquals(expectedArray, actualArray);
+ assertThrows(IOException.class, () -> file.delete());
+```
+
+saídas:
+
+```
+eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+eram esperados valores iguais, mas "Hello, World!" é diferente de greeting.getMessage()
+era esperado true, mas customer.isActive() retornou false
+era esperado false, mas file.isEmpty() retornou true
+era esperado um valor não nulo, mas user é nulo
+era esperado um valor nulo, mas optionalValue.orElse(null) retornou um valor não nulo
+era esperado que object1 e object2 fossem a mesma referência, mas são diferentes.
+era esperado que list1 e list2 fossem referências diferentes, mas são iguais.
+eram esperados arrays iguais, mas expectedArray e actualArray são diferentes.
+era esperada uma exceção do tipo IOException, mas nenhuma exceção foi lançada.
+
+```

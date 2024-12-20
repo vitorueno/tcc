@@ -1,0 +1,75 @@
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), stdin, "-")
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--pretty", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema", "\"long\"", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--reader-schema-file", readerSchemaFile.getPath(), sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head=3", sampleFile.getPath())
+eram esperados valores iguais, mas expectedJson é diferente de run(new DataFileReadTool(), "--head", "5", sampleFile.getPath())
+eram esperados valores iguais, mas jsonData é diferente de run(new DataFileReadTool(), "--head=3000000000", sampleFile.getPath())
+eram esperados valores iguais, mas "\n" é diferente de run(new DataFileReadTool(), "--head=0", sampleFile.getPath())
+eram esperados valores iguais, mas "\n" é diferente de run(new DataFileReadTool(), "--head=-5", sampleFile.getPath())
+eram esperados valores iguais, mas schema.toString() + "\n" é diferente de run(new DataFileGetMetaTool(), sampleFile.getPath(), "--key", "avro.schema")
+eram esperados valores iguais, mas schema.toString() + "\n" é diferente de run(new DataFileGetSchemaTool(), sampleFile.getPath())
+eram esperados valores iguais, mas 0 é diferente de countRecords(outFile)
+eram esperados valores iguais, mas 5 é diferente de countRecords(outFile)
+esperado true, mas foi false
+eram esperados valores iguais, mas ""Warning: Found documentation comment at line 19, column 1. Ignoring previous one at line 1, column 1: \"" + "Licensed to the Apache Software Foundation (ASF) under one\n" + "or more contributor license agreements.  See the NOTICE file\n" + "distributed with this work for additional information\n" + "regarding copyright ownership.  The ASF licenses this file\n" + "to you under the Apache License, Version 2.0 (the\n" + "\"License\"); you may not use this file except in compliance\n" + "with the License.  You may obtain a copy of the License at\n\n" + "    https://www.apache.org/licenses/LICENSE-2.0\n\n" + "Unless required by applicable law or agreed to in writing, software\n" + "distributed under the License is distributed on an \"AS IS\" BASIS,\n" + "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n" + "See the License for the specific language governing permissions and\n" + "limitations under the License." + "\"\nDid you mean to use a multiline comment ( /* ... */ ) instead?" é diferente de warnings
+esperado true, mas foi false
+eram esperados valores iguais, mas 1 é diferente de returnCode
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas "220" + System.lineSeparator() é diferente de out.toString()
+eram esperados valores iguais, mas json é diferente de baos.toString(UTF8).replace("\r", "")
+eram esperados valores iguais, mas avro é diferente de baos.toString(UTF8)
+esperado true, mas foi false
+eram esperados valores iguais, mas 0 é diferente de nullOutputFile.length()
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas LIMIT_WITHIN_INPUT_BOUNDS é diferente de numRowsInFile(output)
+esperado org.apache.hadoop.io.compress.DefaultCodec, mas foi org.apache.hadoop.io.compress.GzipCodec
+eram esperados valores iguais, mas 1 é diferente de returnCode
+eram esperados valores iguais, mas 2 é diferente de returnCode
+eram esperados valores iguais, mas 3 é diferente de returnCode
+eram esperados valores iguais, mas 0 é diferente de returnCode
+eram esperados valores iguais, mas 0 é diferente de in.tell()
+eram esperados valores iguais, mas 0 é diferente de in.length()
+eram esperados valores iguais, mas 1 é diferente de bytes.length
+eram esperados valores iguais, mas 0 é diferente de bytes[0]
+eram esperados valores iguais, mas 0 é diferente de in.readInt()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas sentinel é diferente de in.readLong()
+eram esperados valores iguais, mas 0 é diferente de in.getRowCount()
+eram esperados valores iguais, mas 0 é diferente de in.getColumnCount()
+eram esperados valores iguais, mas 0 é diferente de in.getRowCount()
+eram esperados valores iguais, mas 1 é diferente de in.getColumnCount()
+eram esperados valores iguais, mas COUNT é diferente de in.getRowCount()
+eram esperados valores iguais, mas 1 é diferente de in.getColumnCount()
+eram esperados valores iguais, mas COUNT é diferente de count
+eram esperados valores iguais, mas COUNT é diferente de in.getRowCount()
+eram esperados valores iguais, mas 1 é diferente de in.getColumnCount()
+eram esperados valores iguais, mas COUNT é diferente de count
+eram esperados valores iguais, mas COUNT é diferente de in.getRowCount()
+eram esperados valores iguais, mas 1 é diferente de in.getColumnCount()
+eram esperados valores iguais, mas COUNT é diferente de count
+eram esperados valores iguais, mas COUNT é diferente de in.getRowCount()
+eram esperados valores iguais, mas 2 é diferente de in.getColumnCount()
+eram esperados valores iguais, mas COUNT é diferente de count
+eram esperados valores iguais, mas 0 é diferente de min
+esperado true, mas foi false
+esperado true, mas foi false
+esperado true, mas foi false
+eram esperados valores iguais, mas decompressedBuffer é diferente de inputByteBuffer
+eram esperados valores iguais, mas compressedSize é diferente de inputSize ou codec.equals("null")
+eram esperados valores iguais, mas decompressedBuffer é diferente de inputByteBuffer

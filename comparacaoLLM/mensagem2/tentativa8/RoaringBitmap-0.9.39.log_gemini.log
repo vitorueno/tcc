@@ -1,0 +1,100 @@
+Era esperado que o iterator não possuísse próximo elemento, mas possui.
+Era esperado que o iterator reverso não possuísse próximo elemento, mas possui.
+Era esperado que a cardinalidade do bitmap fosse igual ao tamanho do iteratorCopy, mas a cardinalidade é  `bitmap.getCardinality()` e o tamanho do iteratorCopy é `iteratorCopy.size()`.
+Era esperado que a cardinalidade do bitmap fosse igual ao tamanho do intIteratorCopy, mas a cardinalidade é `bitmap.getCardinality()` e o tamanho do intIteratorCopy é `intIteratorCopy.size()`.
+Era esperado que a cardinalidade do bitmap fosse igual ao tamanho do reverseIntIteratorCopy, mas a cardinalidade é `bitmap.getCardinality()` e o tamanho do reverseIntIteratorCopy é `reverseIntIteratorCopy.size()`.
+Era esperado que a lista de inteiros fosse igual ao iteratorCopy, mas a lista é `Ints.asList(data)` e o iteratorCopy é `iteratorCopy`.
+Era esperado que a lista de inteiros fosse igual ao intIteratorCopy, mas a lista é `Ints.asList(data)` e o intIteratorCopy é `intIteratorCopy`.
+Era esperado que a lista invertida de inteiros fosse igual ao reverseIntIteratorCopy, mas a lista é `Lists.reverse(Ints.asList(data))` e o reverseIntIteratorCopy é `reverseIntIteratorCopy`.
+Era esperado que a lista imutável fosse igual ao iteratorCopy, mas a lista é `ImmutableList.of(1, 2, 3)` e o iteratorCopy é `iteratorCopy`.
+Era esperado que a lista imutável fosse igual ao intIteratorCopy, mas a lista é `ImmutableList.of(1, 2, 3)` e o intIteratorCopy é `intIteratorCopy`.
+Era esperado que a lista imutável fosse igual ao reverseIntIteratorCopy, mas a lista é `ImmutableList.of(3, 2, 1)` e o reverseIntIteratorCopy é `reverseIntIteratorCopy`.
+Era esperado que o último elemento do bitmap fosse igual ao maior elemento do stream reverso, mas o último elemento é `bitmap.last()` e o maior elemento do stream reverso é `bitmap.reverseStream().max().getAsInt()`.
+Era esperado que o último elemento do bitmap fosse igual ao maior elemento do stream, mas o último elemento é `bitmap.last()` e o maior elemento do stream é `bitmap.stream().max().getAsInt()`.
+Era esperado que o total fosse igual ao tamanho da fonte, mas o total é `total` e o tamanho da fonte é `source.size()`.
+Era esperado que rb1 fosse igual a rb2, mas rb1 é `rb1` e rb2 é `rb2`.
+Era esperado que rb1 fosse diferente de rb2, mas rb1 é `rb1` e rb2 é `rb2`.
+Era esperado que rb1 fosse igual a rb2, mas rb1 é `rb1` e rb2 é `rb2`.
+Era esperado que o total fosse igual a i, mas o total é `total` e i é `i`.
+Era esperado que o tamanho da fonte fosse igual a i, mas o tamanho da fonte é `source.size()` e i é `i`.
+Era esperado que select2 fosse igual a seleção de 2 em deserStreamOne, mas select2 é `select2` e a seleção de 2 em deserStreamOne é `deserStreamOne.select(2)`.
+Era esperado que select2 fosse igual a seleção de 2 em deserBBOne, mas select2 é `select2` e a seleção de 2 em deserBBOne é `deserBBOne.select(2)`.
+Era esperado que o iterator de long não possuísse próximo elemento, mas possui.
+Era esperado que a cardinalidade de long fosse 0, mas é `map.getLongCardinality()`.
+Era esperado que o mapa estivesse vazio, mas não está.
+Era esperado que o mapa não contivesse 0, mas contém.
+Era esperado que o posto de Long.MIN_VALUE fosse 0, mas é `map.rankLong(Long.MIN_VALUE)`.
+Era esperado que o posto de Long.MIN_VALUE + 1 fosse 0, mas é `map.rankLong(Long.MIN_VALUE + 1)`.
+Era esperado que o posto de -1 fosse 0, mas é `map.rankLong(-1)`.
+Era esperado que o posto de 0 fosse 0, mas é `map.rankLong(0)`.
+Era esperado que o posto de 1 fosse 0, mas é `map.rankLong(1)`.
+Era esperado que o posto de Long.MAX_VALUE - 1 fosse 0, mas é `map.rankLong(Long.MAX_VALUE - 1)`.
+Era esperado que o posto de Long.MAX_VALUE fosse 0, mas é `map.rankLong(Long.MAX_VALUE)`.
+Era esperado que o iterator possuísse um próximo elemento, mas não possui.
+Era esperado que o próximo elemento do iterator fosse 0, mas é `iterator.next()`.
+Era esperado que a seleção de 0 fosse 0, mas é `map.select(0)`.
+Era esperado que o mapa contivesse 0, mas não contém.
+Era esperado que o iterator não possuísse próximo elemento, mas possui.
+Era esperado que a cardinalidade de long fosse 1, mas é `map.getLongCardinality()`.
+Era esperado que o mapa não estivesse vazio, mas está.
+Era esperado que o posto de Long.MIN_VALUE fosse 1, mas é `map.rankLong(Long.MIN_VALUE)`.
+Era esperado que o posto de Integer.MIN_VALUE - 1 fosse 1, mas é `map.rankLong(Integer.MIN_VALUE - 1L)`.
+Era esperado que o posto de -1 fosse 1, mas é `map.rankLong(-1)`.
+Era esperado que o posto de 0 fosse 1, mas é `map.rankLong(0)`.
+Era esperado que o posto de 1 fosse 1, mas é `map.rankLong(1)`.
+Era esperado que o posto de Integer.MAX_VALUE + 1 fosse 1, mas é `map.rankLong(Integer.MAX_VALUE + 1L)`.
+Era esperado que o posto de Long.MAX_VALUE fosse 1, mas é `map.rankLong(Long.MAX_VALUE)`.
+Era esperado que o iterator possuísse um próximo elemento, mas não possui.
+Era esperado que o próximo elemento do iterator fosse -1, mas é `iterator.next()`.
+Era esperado que a seleção de 0 fosse -1, mas é `map.select(0)`.
+Era esperado que o mapa contivesse -1, mas não contém.
+Era esperado que o iterator não possuísse próximo elemento, mas possui.
+Era esperado que a cardinalidade de long fosse 1, mas é `map.getLongCardinality()`.
+Era esperado que o mapa não estivesse vazio, mas está.
+Era esperado que o posto de Long.MIN_VALUE fosse 0, mas é `map.rankLong(Long.MIN_VALUE)`.
+Era esperado que o posto de Integer.MIN_VALUE - 1 fosse 0, mas é `map.rankLong(Integer.MIN_VALUE - 1L)`.
+Era esperado que o posto de 0 fosse 0, mas é `map.rankLong(0)`.
+Era esperado que o posto de 1 fosse 0, mas é `map.rankLong(1)`.
+Era esperado que o posto de Integer.MAX_VALUE + 1 fosse 0, mas é `map.rankLong(Integer.MAX_VALUE + 1L)`.
+Era esperado que o posto de Long.MAX_VALUE fosse 0, mas é `map.rankLong(Long.MAX_VALUE)`.
+Era esperado que o posto de -2 fosse 0, mas é `map.rankLong(-2)`.
+Era esperado que o posto de -1 fosse 1, mas é `map.rankLong(-1)`.
+Era esperado que o array de longs fosse igual a `{-1L}`, mas é `map.toArray()`.
+Era esperado que o iterator possuísse um próximo elemento, mas não possui.
+Era esperado que o próximo elemento do iterator fosse 123, mas é `iterator.next()`.
+Era esperado que a seleção de 0 fosse 123, mas é `map.select(0)`.
+Era esperado que o mapa contivesse 123, mas não contém.
+Era esperado que o iterator possuísse um próximo elemento, mas não possui.
+Era esperado que o próximo elemento do iterator fosse 234, mas é `iterator.next()`.
+Era esperado que a seleção de 1 fosse 234, mas é `map.select(1)`.
+Era esperado que o mapa contivesse 234, mas não contém.
+Era esperado que o iterator não possuísse próximo elemento, mas possui.
+Era esperado que o mapa não contivesse 345, mas contém.
+Era esperado que a cardinalidade de long fosse 2, mas é `map.getLongCardinality()`.
+Era esperado que o posto de 0 fosse 0, mas é `map.rankLong(0)`.
+Era esperado que o posto de 123 fosse 1, mas é `map.rankLong(123)`.
+Era esperado que o posto de 233 fosse 1, mas é `map.rankLong(233)`.
+Era esperado que o posto de 234 fosse 2, mas é `map.rankLong(234)`.
+Era esperado que o posto de 235 fosse 2, mas é `map.rankLong(235)`.
+Era esperado que o posto de Integer.MAX_VALUE + 1 fosse 2, mas é `map.rankLong(Integer.MAX_VALUE + 1L)`.
+Era esperado que o posto de Long.MAX_VALUE fosse 2, mas é `map.rankLong(Long.MAX_VALUE)`.
+Era esperado que o array de longs fosse igual a `{123L, 234L}`, mas é `map.toArray()`.
+Era esperado que a seleção de 0 fosse 0xFFFFFFFFL, mas é `map.select(0)`.
+Era esperado que o iterator de long possuísse um próximo elemento, mas não possui.
+Era esperado que o próximo elemento do iterator de long fosse 0, mas é `map.getLongIterator().next()`.
+Era esperado que o iterator possuísse um próximo elemento, mas não possui.
+Era esperado que o próximo elemento do iterator fosse Long.MAX_VALUE, mas é `iterator.next()`.
+Era esperado que a seleção de 0 fosse Long.MAX_VALUE, mas é `map.select(0)`.
+Era esperado que o iterator não possuísse próximo elemento, mas possui.
+Era esperado que a cardinalidade de long fosse 1, mas é `map.getLongCardinality()`.
+Era esperado que o posto de Long.MIN_VALUE fosse 1, mas é `map.rankLong(Long.MIN_VALUE)`.
+Era esperado que o posto de Long.MIN_VALUE + 1 fosse 1, mas é `map.rankLong(Long.MIN_VALUE + 1)`.
+Era esperado que o posto de -1 fosse 1, mas é `map.rankLong(-1)`.
+Era esperado que o posto de 0 fosse 0, mas é `map.rankLong(0)`.
+Era esperado que o posto de 1 fosse 0, mas é `map.rankLong(1)`.
+Era esperado que o posto de Long.MAX_VALUE - 1 fosse 0, mas é `map.rankLong(Long.MAX_VALUE - 1)`.
+Era esperado que o posto de Long.MAX_VALUE fosse 1, mas é `map.rankLong(Long.MAX_VALUE)`.
+Era esperado que o array de longs fosse igual a `{Long.MAX_VALUE}`, mas é `map.toArray()`.
+Era esperado que o iterator possuísse um próximo elemento, mas não possui.
+Era esperado que o próximo elemento do iterator fosse Long.MIN_VALUE, mas é `iterator.next()`.
+Era esperado que a seleção de 0 fosse Long.MIN_VALUE, mas é `map.select(0)`.

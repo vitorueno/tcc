@@ -1,0 +1,72 @@
+```python
+def criar_mensagens_de_erro(asserts):
+    mensagens = []
+    
+    for asserte in asserts:
+        if 'assertEquals' in asserte[0]:
+            valor_esperado, valor_retalhado = asserte[1]
+            mensagem = f'eram esperados valores iguais, mas {valor_esperado} é diferente de {asserte[0][2].replace("=", "").strip()}'
+        elif 'assertTrue' in asserte[0]:
+            valor_esperado, valor_retalhado = asserte[1]
+            mensagem = f'eram esperados valores iguais, mas {valor_retalhado} é diferente de {asserte[0][2].replace("=", "").strip()}'
+        elif 'assertEquals' in asserte[0]:
+            valor_esperado, valor_retalhado = asserte[1]
+            mensagem = f'eram esperados valores iguais, mas {valor_retalhado} é diferente de {asserte[0][2].replace("=", "").strip()}'
+        elif 'assertNot' in asserte[0]:
+            valor_esperado, valor_retalhado = asserte[1]
+            mensagem = f'eram esperados valores iguais, mas {valor_retalhado} é diferente de {valor_esperado}'
+        elif 'assertTrue' in asserte[0] and 'contains' in asserte[1]:
+            valor_esperado, valor_retalhado = asserte[2]
+            mensagem = f'eram esperados valores iguais, mas não contém "{valor_esperado}" em {asserte[0][2].replace("=", "").strip()}'
+        elif 'assertTrue' in asserte[0] and 'contains' not in asserte[1]:
+            valor_retalhado = asserte[1]
+            mensagem = f'eram esperados valores iguais, mas não contém "{valor_retalhado}" em {asserte[0][2].replace("=", "").strip()}'
+        elif 'transformedIndex' in asserte[0] and 'contains' in asserte[1]:
+            valor_esperado = asserte[2]
+            mensagem = f'eram esperados valores iguais, mas não contém "{valor_esperado}" em {asserte[0][2].replace("=", "").strip()}'
+        elif 'transformedIndex' in asserte[0] and 'contains' not in asserte[1]:
+            valor_retalhado = asserte[1]
+            mensagem = f'eram esperados valores iguais, mas não contém "{valor_retalhado}" em {asserte[0][2].replace("=", "").strip()}'
+        elif 'mvcResult' in asserte[0] and 'getResponse' in asserte[1]:
+            valor_esperado = asserte[2]
+            mensagem = f'eram esperados valores iguais, mas não contém "{valor_esperado}" em {asserte[0][2].replace("=", "").strip()}'
+        elif 'transformedIndex' in asserte[0] and 'contains' in asserte[1]:
+            valor_esperado = asserte[2]
+            mensagem = f'eram esperados valores iguais, mas não contém "{valor_esperado}" em {asserte[0][2].replace("=", "").strip()}'
+        elif 'transformedIndex' in asserte[0] and 'contains' not in asserte[1]:
+            valor_retalhado = asserte[1]
+            mensagem = f'eram esperados valores iguais, mas não contém "{valor_retalhado}" em {asserte[0][2].replace("=", "").strip()}'
+        
+        mensagens.append(mensagem)
+    
+    return mensagens
+
+# Exemplo de uso
+asserts = [
+    ('assertEquals(5, calculator.add(2, 3))',),
+    ('assertEquals(7, calculator.add(4, 2))',),
+    ('assertEquals(10, calculator.add(5, 5))',),
+    ('assertTrue(!result.contains("!<Type A>"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertEquals(expected, result)',),
+    ('assertTrue(result.contains("window.ui"))',),
+    ('assertEquals(expected, result.replace("\r", ""))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(transformedIndex.contains("window.ui"))',),
+    ('assertEquals("no-store", mvcResult.getResponse().getHeader("Cache-Control"))',),
+    ('assertEquals(this.getContent(fileName), transformedIndex.replace("\r", ""))',),
+    ('assertTrue(htmlResult.contains("window.ui"))',),
+    ('assertEquals(this.getContent(fileName), htmlResult.replace("\r", ""))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+    ('assertTrue(contentAsString.contains("Swagger UI"))',),
+]
+
+mensagens = criar_mensagens_de_erro(asserts)
+for mensagem in mensagens:
+    print(mensagem)

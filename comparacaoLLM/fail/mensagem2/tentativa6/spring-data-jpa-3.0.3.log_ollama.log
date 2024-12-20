@@ -1,0 +1,22 @@
+Aqui estão as mensagens de descrição de erro apropriadas para cada assert:
+
+1. Assertions.assertEquals(0, accessor.getValues().length)
+   - eram esperados valores iguais, mas 0 é diferente de accessor.getValues().length
+
+2. Assertions.assertEquals(parameters, accessor.getParameters())
+   - eram esperados valores iguais, mas os tipos são diferentes: parameters (expected) vs accessor.getParameters()
+
+3. assertNotNull(userRepository)
+   - não foi encontrado nenhum valor válido para userRepository
+
+4. assertNotNull(roleRepository)
+   - não foi encontrado nenhum valor válido para roleRepository
+
+5. assertNotNull(auditableUserRepository)
+   - não foi encontrado nenhum valor válido para auditableUserRepository
+
+6. assertNotNull(mappingContext)
+   - não foi encontrado nenhum valor válido para mappingContext
+
+7. assertFalse(beans.entrySet().isEmpty())
+   - encontrou valores iguais na listagem beans, mas o conjunto de entrada deveria estar vazio

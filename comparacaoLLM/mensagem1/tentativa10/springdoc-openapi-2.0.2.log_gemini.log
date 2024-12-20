@@ -1,0 +1,21 @@
+O resultado não deve conter "!<Type A>"
+O conteúdo deve conter "Swagger UI"
+O resultado esperado e o resultado obtido devem ser iguais.
+O resultado deve conter "window.ui"
+O resultado esperado e o resultado obtido (após remoção de "\r") devem ser iguais.
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+O índice transformado deve conter "window.ui"
+O cabeçalho "Cache-Control" deve ser "no-store"
+O conteúdo do arquivo e o índice transformado (após remoção de "\r") devem ser iguais.
+O resultado HTML deve conter "window.ui"
+O conteúdo do arquivo e o resultado HTML (após remoção de "\r") devem ser iguais.
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+O conteúdo deve conter "Swagger UI"
+

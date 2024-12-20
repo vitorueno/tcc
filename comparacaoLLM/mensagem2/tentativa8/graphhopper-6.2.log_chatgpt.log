@@ -1,0 +1,100 @@
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou falso
+eram esperados valores iguais a 2, mas response.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores iguais a 3, mas response.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(1).arrivalCancelled retornou falso
+eram esperados valores iguais a 2, mas response.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(2).departureCancelled retornou falso
+eram esperados valores iguais a 1, mas response.getAll().size() retornou outro valor
+eram esperados valores iguais a "EXTRA0", mas ptLeg.trip_id retornou outro valor
+eram esperados valores iguais a 1, mas response.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas responseWithRealtimeUpdate.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas response.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas response.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas route.getAll().get(route.getAll().size() - 1).isImpossible() retornou falso
+eram esperados valores iguais a 2, mas response.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores iguais a 2, mas response.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores iguais a 1, mas response.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas !((Trip.PtLeg) possibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou falso
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores verdadeiros, mas route.getAll().isEmpty() retornou verdadeiro
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a "JUSTICE_COURT,MUSEUM", mas firstLeg.stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) retornou outro valor
+eram esperados valores iguais a "EMSI,DADAN", mas secondLeg.stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) retornou outro valor
+eram esperados valores iguais a LocalDateTime.parse("2007-01-01T10:00:00").atZone(zoneId).toInstant(), mas transferLeg.getDepartureTime().toInstant() retornou outro valor
+eram esperados valores iguais a LocalDateTime.parse("2007-01-01T10:08:06.670").atZone(zoneId).toInstant(), mas transferLeg.getArrivalTime().toInstant() retornou outro valor
+eram esperados valores iguais a readWktLineString("LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)"), mas transitSolution.getLegs().get(1).geometry retornou outro valor
+eram esperados valores iguais a 4500000L, mas transitSolution.getTime() retornou outro valor
+eram esperados valores iguais a 4500000.0, mas transitSolution.getRouteWeight() retornou outro valor
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a 2, mas transitSolution.getLegs().size() retornou outro valor
+eram esperados valores iguais a "COURT2MUSEUM", mas ptLeg1.route_id retornou outro valor
+eram esperados valores iguais a "MUSEUM1", mas ptLeg1.trip_id retornou outro valor
+eram esperados valores iguais a "JUSTICE_COURT", mas ptLeg1.stops.get(0).stop_id retornou outro valor
+eram esperados valores iguais a "MUSEUM", mas ptLeg1.stops.get(1).stop_id retornou outro valor
+eram esperados valores iguais a "MUSEUM2AIRPORT", mas ptLeg2.route_id retornou outro valor
+eram esperados valores iguais a "MUSEUMAIRPORT1", mas ptLeg2.trip_id retornou outro valor
+eram esperados valores iguais a "NEXT_TO_MUSEUM", mas ptLeg2.stops.get(0).stop_id retornou outro valor
+eram esperados valores iguais a "AIRPORT", mas ptLeg2.stops.get(1).stop_id retornou outro valor
+eram esperados valores iguais a "NEXT_TO_MUSEUM,AIRPORT", mas ((Trip.PtLeg) ptLegs.get(0)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) retornou outro valor
+eram esperados valores iguais a "BEATTY_AIRPORT,BULLFROG", mas ((Trip.PtLeg) ptLegs.get(1)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) retornou outro valor
+eram esperados valores iguais a "14:10", mas LocalDateTime.ofInstant(arrivalTime, zoneId).toLocalTime().toString() retornou outro valor
+eram esperados valores iguais a 15_000_000, mas Duration.between(ghRequest.getEarliestDepartureTime(), arrivalTime).toMillis() retornou outro valor
+eram esperados valores iguais a 1.5E7, mas transitSolution.getRouteWeight() retornou outro valor
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a 4500000L, mas transitSolution.getTime() retornou outro valor
+eram esperados valores iguais a 4500000.0, mas transitSolution.getRouteWeight() retornou outro valor
+eram esperados valores iguais a "JUSTICE_COURT,MUSEUM", mas ((Trip.PtLeg) transitSolution.getLegs().get(0)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) retornou outro valor
+eram esperados valores iguais a "10:00", mas LocalDateTime.ofInstant(walkDepartureTime, zoneId).toLocalTime().toString() retornou outro valor
+eram esperados valores iguais a readWktLineString("LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)"), mas transitSolution.getLegs().get(1).geometry retornou outro valor
+eram esperados valores iguais a "10:08:06.670", mas LocalDateTime.ofInstant(walkArrivalTime, zoneId).toLocalTime().toString() retornou outro valor
+eram esperados valores iguais a "EMSI,DADAN", mas ((Trip.PtLeg) transitSolution.getLegs().get(2)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) retornou outro valor
+eram esperados valores iguais a 1, mas walkRoute.getLegs().size() retornou outro valor
+eram esperados valores iguais a 486670, mas walkRoute.getTime() retornou outro valor
+eram esperados valores iguais a readWktLineString("LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)"), mas walkRoute.getLegs().get(0).geometry retornou outro valor
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores verdadeiros, mas amount.getAmount().doubleValue() > onlyFare.fare_attribute.price retornou falso
+eram esperados valores verdadeiros, mas cheapestFareWhereEveryLegGoesThroughAllZones >= cheapestFare retornou falso
+eram esperados valores iguais a 2, mas transfersToStop.size() retornou outro valor
+eram esperados valores iguais a "MUSEUM", mas transfer.from_stop_id retornou outro valor
+eram esperados valores iguais a "NEXT_TO_MUSEUM", mas transfer.to_stop_id retornou outro valor
+era esperado um valor nulo, mas transfer.from_route_id retornou outro valor
+era esperado um valor nulo, mas transfer.to_route_id retornou outro valor
+eram esperados valores iguais a 600, mas transfer.min_transfer_time retornou outro valor
+eram esperados valores iguais a "NEXT_TO_MUSEUM", mas withinStationTransfer.from_stop_id retornou outro valor
+eram esperados valores iguais a "NEXT_TO_MUSEUM", mas withinStationTransfer.to_stop_id retornou outro valor
+era esperado um valor nulo, mas withinStationTransfer.from_route_id retornou outro valor
+era esperado um valor nulo, mas withinStationTransfer.to_route_id retornou outro valor
+eram esperados valores iguais a 5, mas transfersToStop.size() retornou outro valor
+eram esperados valores iguais a "AB", mas transfersToStop.get(0).from_route_id retornou outro valor
+eram esperados valores iguais a "FUNNY_BLOCK_AB", mas transfersToStop.get(1).from_route_id retornou outro valor
+eram esperados valores iguais a "STBA", mas transfersToStop.get(2).from_route_id retornou outro valor
+eram esperados valores iguais a "AAMV", mas transfersToStop.get(3).from_route_id retornou outro valor
+eram esperados valores iguais a "ABBFC", mas transfersToStop.get(4).from_route_id retornou outro valor
+eram esperados valores verdadeiros, mas !route.hasErrors() retornou falso
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas response.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a 1, mas route.getAll().size() retornou outro valor
+eram esperados valores iguais a expectedDepartureTimes, mas actualDepartureTimes retornou outro valor
+eram esperados valores iguais a expectedDepartureTimes, mas actualDepartureTimes retornou outro valor
+eram esperados valores iguais a expectedDepartureTimes, mas actualDepartureTimes retornou outro valor
+eram esperados valores verdadeiros, mas route.getAll().isEmpty() retornou falso
+eram esperados valores verdadeiros, mas route.getAll().isEmpty() retornou falso
+eram esperados valores iguais a "AB", mas ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id retornou outro valor
+eram esperados valores diferentes de "AB", mas ((Trip.PtLeg) mondayTrip.getLegs().get(0)).route_id retornou "AB"
+eram esperados valores diferentes de "AB", mas ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id retornou "AB"
+eram esperados valores iguais a "AB", mas ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id retornou outro valor

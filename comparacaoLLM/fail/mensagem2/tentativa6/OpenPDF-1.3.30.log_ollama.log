@@ -1,0 +1,24 @@
+eram esperados valores iguais, mas 52.0 não é igual a footer.getTop()
+eram esperados valores iguais, mas 92.0 não é igual a footerTop
+eram esperados valores iguais, mas 60.0 não é igual a imageBottom
+eram esperados valores iguais, mas 36.0 não é igual a imageIndentLeft
+eram esperados valores iguais, mas 76.0 não é igual a footerTop
+eram esperados valores iguais, mas 44.0 não é igual a imageBottom
+eram esperados valores iguais, mas 527.0 não é igual a imageIndentRight
+eram esperados valores iguais, mas 76.0 não é igual a footerTop
+eram esperados valores iguais, mas 44.0 não é igual a imageBottom
+eram esperados valores iguais, mas 281.5 não é igual a imageIndentLeft
+eram esperados valores iguais, mas 76.0 não é igual a footerTop
+eram esperados valores iguais, mas 44.0 não é igual a imageBottom
+eram esperados valores iguais, mas "lvi" não é igual a getString(56)
+eram esperados valores iguais, mas "mmcmxcix" não é igual a getString(2999)
+eram esperados valores iguais, mas "mmm" não é igual a getString(3000)
+eram esperados valores iguais, mas a String expected não é igual à String upperCaseExpected upperCase(expected)
+eram esperados valores iguais, mas image.getUrl() não é igual a null
+eram esperados valores iguais, mas font.createSubsetPrefix() não é igual a null
+eram esperados valores iguais, mas font.createSubsetPrefix() não é igual a font.createSubsetPrefix()
+eram esperados valores iguais, mas subsetPrefixOne não é igual a subsetPrefixTwo
+eram esperados valores iguais, mas comparePdf() não é igual a true
+eram esperados valores iguais, mas a String largeStr não está dentro do tempo limite de 10 segundos
+eram esperados valores iguais, mas a Table table não tem mais células para adicionar
+eram esperados valores iguais, mas a String largeStr não está completamente formada

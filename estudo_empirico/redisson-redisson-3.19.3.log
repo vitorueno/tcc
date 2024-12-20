@@ -1,0 +1,41 @@
+
+Projeto: /home/vitor-otto/opensource/redisson-redisson-3.19.3
+
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 276 Método: Assertions.assertTrue(firstTTL >= 29900 && firstTTL <= 30100, "Expected 30000 +/- 100 but was " + firstTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 281 Método: Assertions.assertTrue(secondTTL >= 34900 && secondTTL <= 35100, "Expected 35000 +/- 100 but was " + secondTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 286 Método: Assertions.assertTrue(thirdTTL >= 39900 && thirdTTL <= 40100, "Expected 40000 +/- 100 but was " + thirdTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 291 Método: Assertions.assertTrue(fourthTTL >= 44900 && fourthTTL <= 45100, "Expected 45000 +/- 100 but was " + fourthTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 299 Método: Assertions.assertTrue(firstTTL >= 29900 && firstTTL <= 30100, "Expected 30000 +/- 100 but was " + firstTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 304 Método: Assertions.assertTrue(thirdTTL >= 34700 && thirdTTL <= 35300, "Expected 35000 +/- 300 but was " + thirdTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 309 Método: Assertions.assertTrue(fourthTTL >= 39900 && fourthTTL <= 40100, "Expected 40000 +/- 100 but was " + fourthTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 323 Método: Assertions.assertTrue(thirdTTL >= 29700 && thirdTTL <= 30300, "Expected 30000 +/- 300 but was " + thirdTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 327 Método: Assertions.assertTrue(fourthTTL >= 34900 && fourthTTL <= 35100, "Expected 35000 +/- 100 but was " + fourthTTL)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 433 Método: Assertions.assertTrue(diff > 4900 && diff < 5100, "Expected 5000 +/- 100 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 435 Método: Assertions.assertTrue(diff > 4900 && diff < 5100, "Expected 5000 +/- 100 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 440 Método: Assertions.assertTrue(diff > 4900 && diff < 5100, "Expected 5000 +/- 100 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 480 Método: Assertions.assertTrue(diff > 190 && diff < 210, "Expected 200 +/- 10 but was " + diff)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonFairLockTest.java linha: 576 Método: Assertions.assertFalse(epiry > leaseTimeSeconds + 60 * 5 * (i + 1), "It would take more than " + (leaseTimeSeconds + 60 * 5 * (i + 1)) + "s to get the lock!")
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1501 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1502 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1520 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1521 Método: Assertions.assertEquals(1d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1538 Método: Assertions.assertEquals(1d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1539 Método: Assertions.assertEquals(2d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1556 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1557 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1568 Método: Assertions.assertEquals(12, (double) res, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetTest.java linha: 1570 Método: Assertions.assertEquals(12, (double) score, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTwoLockedThread.java linha: 72 Método: Assertions.assertTrue(current - millis >= 500, "current=" + current + ", millis=" + millis)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonTwoLockedThread.java linha: 142 Método: Assertions.assertTrue((current - millis) >= 1000, "current=" + current + ", millis=" + millis)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 312 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 313 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 324 Método: Assertions.assertEquals(12, (double) res, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/rx/RedissonScoredSortedSetRxTest.java linha: 326 Método: Assertions.assertEquals(12, (double) score, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 311 Método: Assertions.assertEquals(2d, a[0].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 312 Método: Assertions.assertEquals(3d, a[1].getScore(), 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 323 Método: Assertions.assertEquals(12, (double) res, 0)
+Assert com mensagem: /home/vitor-otto/opensource/redisson-redisson-3.19.3/redisson/src/test/java/org/redisson/RedissonScoredSortedSetReactiveTest.java linha: 325 Método: Assertions.assertEquals(12, (double) score, 0)
+Total asserts: 7589
+Asserts sem descrição: 7555
+Asserts com descrição: 34
+Assertion Roulette: 6637

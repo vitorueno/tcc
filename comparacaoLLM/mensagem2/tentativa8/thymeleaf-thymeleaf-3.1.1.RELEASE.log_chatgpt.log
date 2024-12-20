@@ -1,0 +1,95 @@
+eram esperados valores verdadeiros, mas o executor.isAllOK() retornou falso
+eram esperados valores verdadeiros, mas o executor.isAllOK() retornou falso
+eram esperados valores iguais, mas o valor esperado é diferente de ResourceUtils.normalize(result)
+eram esperados valores iguais, mas o valor esperado é diferente de ResourceUtils.normalize(result)
+eram esperados valores iguais, mas o valor esperado é diferente de ResourceUtils.normalize(result)
+eram esperados valores iguais, mas expected1 é diferente de result1
+eram esperados valores iguais, mas expected2 é diferente de result2
+eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue)
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextTrue)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextFalse)
+eram esperados valores iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextTrue)
+o lazyTrue não foi inicializado
+eram esperados valores iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextFalse)
+os objetos rr01 e rr03 não são os mesmos
+os objetos rr02 e rr04 não são os mesmos
+eram esperados valores iguais, mas "/[ref='abc' or data-ref='abc' or fragment='abc' or data-fragment='abc' or fragment^='abc(' or data-fragment^='abc(' or fragment^='abc (' or data-fragment^='abc (']" é diferente de result01
+os objetos result01 e result02 não são os mesmos
+eram esperados valores iguais, mas "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" é diferente de result03
+os objetos result03 e result04 não são os mesmos
+eram esperados valores iguais, mas "/[q:ref='abc' or data-q-ref='abc' or q:fragment='abc' or data-q-fragment='abc' or q:fragment^='abc(' or data-q-fragment^='abc(' or q:fragment^='abc (' or data-q-fragment^='abc (']" é diferente de result05
+os objetos result05 e result06 não são os mesmos
+eram esperados valores iguais, mas "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" é diferente de result07
+os objetos result07 e result08 não são os mesmos
+os objetos rr01 e rr03 não são os mesmos
+os objetos rr02 e rr04 não são os mesmos
+eram esperados valores iguais, mas "/[ref='abc' or fragment='abc' or fragment^='abc(' or fragment^='abc (']" é diferente de result01
+os objetos result01 e result02 não são os mesmos
+eram esperados valores iguais, mas "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" é diferente de result03
+os objetos result03 e result04 não são os mesmos
+eram esperados valores iguais, mas "/[q:ref='abc' or q:fragment='abc' or q:fragment^='abc(' or q:fragment^='abc (']" é diferente de result05
+os objetos result05 e result06 não são os mesmos
+eram esperados valores iguais, mas "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" é diferente de result07
+os objetos result07 e result08 não são os mesmos
+o resourcesFolderURL é nulo
+o resourcesFolder não é um diretório
+eram esperados valores iguais, mas o resultado esperado é diferente de decoupledTemplateLogic.toString()
+eram esperados valores iguais, mas o valor esperado é diferente de ResourceUtils.normalize(result)
+eram esperados valores iguais, mas 1 é diferente do tamanho de templateResolvers
+o nome do templateResolver não é "org.thymeleaf.templateresolver.StringTemplateResolver"
+eram esperados valores iguais, mas 1 é diferente do tamanho de templateResolvers
+o nome do templateResolver não é "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver"
+eram esperados valores iguais, mas 1 é diferente do tamanho de templateResolvers
+o nome do templateResolver não é "org.thymeleaf.templateresolver.FileTemplateResolver"
+eram esperados valores iguais, mas 2 é diferente do tamanho de templateResolvers
+o primeiro nome do templateResolver não é "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e o segundo nome não é "org.thymeleaf.templateresolver.FileTemplateResolver"
+eram esperados valores iguais, mas 2 é diferente do tamanho de templateResolvers
+o primeiro nome do templateResolver não é "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e o segundo nome não é "org.thymeleaf.templateresolver.FileTemplateResolver"
+eram esperados valores iguais, mas 2 é diferente do tamanho de templateResolvers
+o primeiro nome do templateResolver não é "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e o segundo nome não é "org.thymeleaf.templateresolver.FileTemplateResolver"
+o valor retornado por Template_ENGINE.process("Hello [[#{something}]]", context) não é igual a "Hello ??something_en??"
+o valor retornado por Template_ENGINE.process("Hello [[23+35]]", context) não é igual a "Hello 58"
+eram esperados valores iguais, mas 2 é diferente do tamanho de templateResolvers
+o primeiro nome do templateResolver não é "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e o segundo nome não é "org.thymeleaf.templateresolver.DefaultTemplateResolver"
+o valor retornado por Template_ENGINE.process("nonexisting", context) não é igual a "<p>something</p>"
+eram esperados valores iguais, mas 2 é diferente do tamanho de templateResolvers
+o primeiro nome do templateResolver não é "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver" e o segundo nome não é "org.thymeleaf.templateresolver.DefaultTemplateResolver"
+o valor retornado por Template_ENGINE.process("nonexisting", context) não é igual a "<p>this value</p>"
+o valor retornado por Template_ENGINE.process("<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>", context) não é igual a "<div>some text <p><p>inserted!</p></p> other text</div>"
+o templateResolver.tempCalled é falso
+o templateResolver.fragCalled é falso
+o valor retornado é diferente de EXPECTED_OUTPUT
+o templateResolver.tempCalled é falso
+o templateResolver.fragCalled é falso
+o valor retornado é diferente de EXPECTED_OUTPUT
+o templateResolver.tempCalled é falso
+o templateResolver.fragCalled é falso
+o valor retornado é diferente de EXPECTED_OUTPUT
+o resultado de TemplateResourceUtils.computeRelativeLocation("/", "/") é diferente de "/"
+o resultado de TemplateResourceUtils.computeRelativeLocation("/", "something") é diferente de "/something"
+o resultado de TemplateResourceUtils.computeRelativeLocation("/something", "/") é diferente de "/"
+o resultado de TemplateResourceUtils.computeRelativeLocation("something", "/") é diferente de "/"

@@ -1,0 +1,461 @@
+
+Projeto: /home/vitor-otto/opensource/OpenPDF-1.3.30
+
+Antes do refactor: 
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/text/SwingExamplesTest.java linha: 21 Método: fail("Test " + JTable2Pdf.class.getName() + " failed: " + e.getCause())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/toolbox/plugins/watermarker/WatermarkerTest.java linha: 33 Método: assertTrue(result.length > input.length)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/tools/ConcatPdfTest.java linha: 32 Método: Assertions.assertEquals(2, countPages(target))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/tools/ConcatPdfTest.java linha: 49 Método: Assertions.assertEquals(5, countPages(target))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/examples/objects/bookmarks/PageLabels.java linha: 72 Método: assertThat(pageLabels)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/examples/objects/bookmarks/PageLabels.java linha: 73 Método: assertThat(Arrays.asList(pageLabels))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/examples/objects/bookmarks/PageLabels.java linha: 75 Método: assertThat(pageLabelFormats)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/examples/objects/bookmarks/PageLabels.java linha: 76 Método: assertThat(pageLabelFormats)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/examples/objects/images/AwtImage.java linha: 75 Método: assertNotEquals(0, outputStream.size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/examples/fonts/styles/ExtraStyles.java linha: 67 Método: assertNotEquals(0, baos.size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/pdf-toolbox/src/test/java/com/lowagie/examples/general/HelloWorldPdf.java linha: 70 Método: assertNotEquals(0, baos.size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/org/librepdf/openpdf/independent/NumberOfPagesTest.java linha: 34 Método: Assertions.assertThat(pagesWritten)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/StandardFontsTest.java linha: 64 Método: assertThat(standardFonts)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/StandardFontsTest.java linha: 82 Método: assertNotNull(font)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/StandardFontsTest.java linha: 99 Método: softly.assertAll()
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/EmbeddedImageTest.java linha: 31 Método: assertThat(elements)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/EmbeddedImageTest.java linha: 32 Método: assertThat(elements.get(0).type())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/EmbeddedImageTest.java linha: 33 Método: assertThat(elements.get(0).getChunks())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/EmbeddedImageTest.java linha: 34 Método: assertThat(elements.get(0).getChunks().get(0).type())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/EmbeddedImageTest.java linha: 36 Método: assertThat(chunk.getImage().isJpeg())
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/HtmlParserTest.java linha: 115 Método: fail(() -> html + " resulted in " + e)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/HtmlParserTest.java linha: 112 Método: assertNotNull(doc1, () -> html + " was not parsed successfully")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 15 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    WebColors.getRGBColor(null);
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 22 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    WebColors.getRGBColor("");
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 29 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    WebColors.getRGBColor(" ");
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 39 Método: Assertions.assertEquals(expected, color)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 46 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#f09"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 47 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#F09"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 48 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 49 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 56 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#f09a"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 57 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#F09A"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 58 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099aa"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 59 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099aa"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 64 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    WebColors.getRGBColor("#");
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 67 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    WebColors.getRGBColor("#ab");
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 70 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> {
+    WebColors.getRGBColor("#zzz");
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 78 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 79 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 84 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(100%,0%,60%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 85 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(100%, 0%, 60%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 91 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 97 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153, 1)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 98 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153, 100%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 99 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153 / 1)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 100 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153 / 100%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 103 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255, 0, 153, 0.6)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 104 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255, 0, 153, 60%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 105 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255 0 153 / 0.6)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 106 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255 0 153 / 60%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 111 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255, 0, 153, 1)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 112 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255, 0, 153, 100%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 113 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255 0 153 / 1)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 114 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255 0 153 / 100%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 117 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255, 0, 153, 0.6)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 118 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255, 0, 153, 60%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 119 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255 0 153 / 0.6)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 120 Método: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255 0 153 / 60%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 126 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153.0)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 127 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153.6, 1)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 128 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(2.55e2, .1e0, 1.53e2, +.1e3%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 134 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270,60%,70%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 135 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 136 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 137 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270deg, 60%, 70%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 138 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(4.71239rad, 60%, 70%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 139 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(.75turn, 60%, 70%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 146 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%, .15)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 147 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%, 15%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 148 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70% / .15)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 149 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70% / 15%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 158 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270, 60%, 70%, .15)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 159 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270, 60%, 70%, 15%)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 160 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270 60% 70% / .15)"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/WebColorsTest.java linha: 161 Método: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270 60% 70% / 15%)"))
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/HTMLTableTest.java linha: 46 Método: fail(() -> html + " resulted in " + e)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/HTMLTableTest.java linha: 43 Método: assertNotNull(doc, () -> html + " was not parsed successfully")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/SAXmyHtmlHandlerTest.java linha: 47 Método: fail(() -> is + " resulted in " + e)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/SAXmyHtmlHandlerTest.java linha: 45 Método: assertNotNull(doc1, () -> is + " was not parsed successfully")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/html/simpleparser/FactoryPropertiesTest.java linha: 24 Método: Assertions.assertThat(h.get("leading"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 44 Método: assertEquals(3, actualHeaderFooter.getChunks().size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 45 Método: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 46 Método: assertEquals("0", actualHeaderFooter.getChunks().get(1).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 47 Método: assertEquals("after", actualHeaderFooter.getChunks().get(2).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 58 Método: assertEquals(2, actualHeaderFooter.getChunks().size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 59 Método: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 60 Método: assertEquals("0", actualHeaderFooter.getChunks().get(1).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 71 Método: assertEquals(1, actualHeaderFooter.getChunks().size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 72 Método: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 90 Método: assertEquals(6, actualHeaderFooter.getChunks().size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 91 Método: assertNotEquals("\n", actualHeaderFooter.getChunks().get(5).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 92 Método: assertEquals("1 1.1 1.2 ", actualHeaderFooter.getChunks().get(0).toString())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/HeaderFooterTest.java linha: 93 Método: assertEquals("1.4 ", actualHeaderFooter.getChunks().get(5).toString())
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/xml/simpleparser/SimpleXMLParserTest.java linha: 78 Método: Assertions.assertEquals(euro, str, "text content in " + charset)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/xml/simpleparser/SimpleXMLParserTest.java linha: 84 Método: Assertions.assertTrue(called, "was not called")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 26 Método: Assertions.assertEquals(52.0, footer.getTop())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 50 Método: Assertions.assertEquals(92.0, footerTop)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 51 Método: Assertions.assertEquals(60.0, imageBottom)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 52 Método: Assertions.assertEquals(36.0, imageIndentLeft)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 76 Método: Assertions.assertEquals(76.0, footerTop)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 77 Método: Assertions.assertEquals(44.0, imageBottom)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 78 Método: Assertions.assertEquals(527.0, imageIndentRight)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 104 Método: Assertions.assertEquals(76.0, footerTop)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 105 Método: Assertions.assertEquals(44.0, imageBottom)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 106 Método: Assertions.assertEquals(281.5, imageIndentLeft)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 134 Método: Assertions.assertEquals(76.0, footerTop)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 135 Método: Assertions.assertEquals(44.0, imageBottom)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/FooterImageTest.java linha: 136 Método: Assertions.assertEquals(281.5, imageIndentLeft)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/error_messages/MessageLocalizationPtTest.java linha: 26 Método: Assertions.assertThat(message)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/error_messages/MessageLocalizationNlTest.java linha: 26 Método: Assertions.assertThat(message)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/error_messages/MessageLocalizationTest.java linha: 26 Método: Assertions.assertThat(message)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanNumberFactoryTest.java linha: 22 Método: assertNotNull(getString(i))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanNumberFactoryTest.java linha: 31 Método: assertEquals("lvi", getString(56))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanNumberFactoryTest.java linha: 32 Método: assertEquals("mmcmxcix", getString(2999))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanNumberFactoryTest.java linha: 33 Método: assertEquals("mmm", getString(3000))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanNumberFactoryTest.java linha: 66 Método: assertThat(getString(input), is(expected))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanNumberFactoryTest.java linha: 67 Método: assertThat(getString(input, false), is(expected.toUpperCase()))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanNumberFactoryTest.java linha: 65 Método: assertAll(() -> assertThat(getString(input), is(expected)), () -> assertThat(getString(input, false), is(expected.toUpperCase())))
+
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/RomanAlphabetFactoryTest.java linha: 13 Método: assertNotNull(getString(i))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/factories/GreekAlphabetFactoryTest.java linha: 13 Método: assertNotNull(getString(i))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/ImageTest.java linha: 12 Método: assertNotNull(image.getUrl())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/ImageTest.java linha: 18 Método: assertNotNull(image.getUrl())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/DocumentTest.java linha: 15 Método: assertThat(versionInCode)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfTestBaseTest.java linha: 28 Método: Assertions.assertNotNull(bytes, "There should be some PDF-bytes there.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfTestBaseTest.java linha: 30 Método: Assertions.assertEquals(header, "%PDF-", "This is no PDF.")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/ProcSetTest.java linha: 24 Método: Assertions.assertNull(reader.getPageN(1).getAsDict(PdfName.RESOURCES).get(PdfName.PROCSET))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/AcroFieldsTest.java linha: 37 Método: Assertions.assertEquals(1, names.size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/AcroFieldsTest.java linha: 40 Método: Assertions.assertFalse(fields.signatureCoversWholeDocument(signName))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/AcroFieldsTest.java linha: 54 Método: assertTimeoutPreemptively(ofMillis(500), () -> {
+    reader.getAcroFields();
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PRAcroFormTest.java linha: 16 Método: assertTimeoutPreemptively(ofMillis(500), () -> {
+    reader.getAcroForm();
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SubsetPrefixCreationTest.java linha: 23 Método: assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SubsetPrefixCreationTest.java linha: 29 Método: assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SubsetPrefixCreationTest.java linha: 41 Método: assertEquals(subsetPrefixOne, subsetPrefixTwo)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/BarcodeMacroPDF417Test.java linha: 31 Método: Assertions.assertTrue(comparePdf())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 58 Método: assertFalse(Arrays.equals(expectedDigestPreClose, sha256))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 66 Método: assertArrayEquals(result, resultClose)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 72 Método: assertFalse(Arrays.equals(expectedDigestClose, sha256Close))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 81 Método: assertNotNull(reader)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 127 Método: assertArrayEquals(expectedDigestPreClose, sha256)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 135 Método: assertArrayEquals(result, resultClose)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 141 Método: assertArrayEquals(expectedDigestClose, sha256Close)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfProtectedDocumentTest.java linha: 150 Método: assertNotNull(reader)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/GlyphListTest.java linha: 22 Método: assertEquals(glyph, GlyphList.nameToUnicode(GlyphList.unicodeToName(glyph))[0])
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfSignatureRangeTest.java linha: 37 Método: assertTrue(r.getAcroFields().signatureCoversWholeDocument("Signature1"), "file size: " + pdf.length)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocument536Test.java linha: 42 Método: assertThat(extractor.getTextFromPage(1))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocument536Test.java linha: 44 Método: assertThat(extractor.getTextFromPage(2))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/StandardDecryptionTest.java linha: 21 Método: Assertions.assertNotNull(result)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/StandardDecryptionTest.java linha: 22 Método: Assertions.assertEquals(result.length, 0)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/ProducerTest.java linha: 40 Método: Assertions.assertEquals(expected, actual)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/ProducerTest.java linha: 53 Método: Assertions.assertTrue(sData.contains("(LibreOffice 6.0; modified using OpenPDF"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 49 Método: org.assertj.core.api.Assertions.assertThat(producer)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 74 Método: Assertions.assertEquals(Document.getVersion(), r.getInfo().get("Producer"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 76 Método: Assertions.assertEquals(AUTHOR_NAME, r.getInfo().get("Author"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 77 Método: Assertions.assertEquals(TITLE, r.getInfo().get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 87 Método: Assertions.assertNull(r.getInfo().get("Producer"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 88 Método: Assertions.assertNull(r.getInfo().get("Author"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 89 Método: Assertions.assertNull(r.getInfo().get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 90 Método: Assertions.assertNull(r.getInfo().get("Subject"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 93 Método: Assertions.assertFalse(dataString.contains("This example explains how to add metadata."))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 100 Método: Assertions.assertNull(r.getInfo().get("Producer"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 101 Método: Assertions.assertNull(r.getInfo().get("Author"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 102 Método: Assertions.assertNull(r.getInfo().get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 103 Método: Assertions.assertNull(r.getInfo().get("Subject"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 117 Método: Assertions.assertEquals(Document.getVersion(), r.getInfo().get("Producer"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 118 Método: Assertions.assertEquals("Author1", r.getInfo().get("Author"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 119 Método: Assertions.assertEquals("Title2", r.getInfo().get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 120 Método: Assertions.assertEquals("Subject3", r.getInfo().get("Subject"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 128 Método: Assertions.assertNull(r.getInfo().get("Producer"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 129 Método: Assertions.assertNull(r.getInfo().get("Author"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 130 Método: Assertions.assertNull(r.getInfo().get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 131 Método: Assertions.assertNull(r.getInfo().get("Subject"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 134 Método: Assertions.assertFalse(dataString.contains("This example explains how to add metadata."))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 156 Método: Assertions.assertNull(r.getInfo().get("Producer"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 157 Método: Assertions.assertNull(r.getInfo().get("Author"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 158 Método: Assertions.assertNull(r.getInfo().get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 159 Método: Assertions.assertNull(r.getInfo().get("Subject"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 164 Método: Assertions.assertFalse(dataString.contains("Bruno Lowagie"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 165 Método: Assertions.assertFalse(dataString.contains(" 1.2.12.SNAPSHOT"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 168 Método: Assertions.assertFalse(metadataString.contains("Bruno Lowagie"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 169 Método: Assertions.assertFalse(metadataString.contains(" 1.2.12.SNAPSHOT"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/metadata/CleanMetaDataTest.java linha: 170 Método: Assertions.assertTrue(metadataString.contains("<pdf:Producer></pdf:Producer>"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/table/TableEndlessTest.java linha: 24 Método: assertTimeout(ofSeconds(10), () -> {
+    Document document = new Document(PageSize.A4);
+    PdfWriter writer = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get("test.pdf")));
+    Table table = new Table(2);
+    Cell cell1 = new Cell("any text");
+    cell1.setVerticalAlignment(VerticalAlignment.BOTTOM);
+    table.addCell(cell1);
+    StringBuilder largeStr = new StringBuilder();
+    for (int i = 0; i < 45; i++) {
+        largeStr.append(String.format("this is to test-> row %d\n", i));
+    }
+    Cell cell2 = new Cell(new Phrase(largeStr.toString()));
+    table.addCell(cell2);
+    document.open();
+    document.add(table);
+    document.close();
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/table/TableEndlessTest.java linha: 48 Método: assertTimeout(ofSeconds(10), () -> {
+    Document document = new Document(PageSize.A4);
+    PdfWriter writer = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get("test.pdf")));
+    Table table = new Table(2);
+    Cell cell1 = new Cell("any text\nany text\nany text");
+    cell1.setVerticalAlignment(VerticalAlignment.CENTER);
+    table.addCell(cell1);
+    StringBuilder largeStr = new StringBuilder();
+    for (int i = 0; i < 86; i++) {
+        largeStr.append(String.format("this is to test-> row %d\n", i));
+    }
+    Cell cell2 = new Cell(new Phrase(largeStr.toString()));
+    table.addCell(cell2);
+    document.open();
+    document.add(table);
+    document.close();
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/table/TableElementsAlignmentTest.java linha: 36 Método: assertEquals(alignmentId, alignment.getId())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/table/TableElementsAlignmentTest.java linha: 47 Método: assertEquals(alignmentId, alignment.getId())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/table/TableElementsAlignmentTest.java linha: 57 Método: assertEquals(alignmentId, alignment.getId())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/TabTest.java linha: 31 Método: Assertions.assertEquals(pdfTextExtractor.getTextFromPage(1), "data\ttable")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfStamperImpTest.java linha: 20 Método: Assertions.assertThat(layers)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfStamperImpTest.java linha: 31 Método: Assertions.assertThat(layers)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/FontSelectorTest.java linha: 30 Método: Assertions.assertEquals(pdfTextExtractor.getTextFromPage(1), "ΧαίρετεGreek -")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfNameTreeTest.java linha: 20 Método: assertEquals(1, tree.size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfNameTreeTest.java linha: 21 Método: assertEquals(pdfBoolean, tree.get(keyName))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 43 Método: assertThat(getString("HelloWorldMeta.pdf", 5), is(emptyString()))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 48 Método: assertThat(getString("HelloWorldMeta.pdf", 0), is(emptyString()))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 63 Método: Assertions.assertEquals("✧❒❅❅❋", pdfTextExtractor.getTextFromPage(1))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 79 Método: Assertions.assertEquals("ετε", pdfTextExtractor.getTextFromPage(1))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 85 Método: assertNotNull(result)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 89 Método: assertTrue(result.contains("2. This is chapter 2"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 90 Método: assertTrue(result.contains("watermark-concatenate"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 102 Método: assertThat(extracted, is("trunked"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 115 Método: assertThat(extracted, is("Phrase begin. Phrase End."))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 133 Método: assertThat(extracted, equalToCompressingWhiteSpace(expected))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 134 Método: assertThat(extracted, not(containsString("  ")))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/parser/PdfTextExtractorTest.java linha: 149 Método: assertThat(extracted, is("One Two Three"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/CrossReferenceTableEncodingTest.java linha: 26 Método: assertThat(actual)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/CrossReferenceTableEncodingTest.java linha: 37 Método: assertThat(expected)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/AdvanceTypographyTest.java linha: 32 Método: assertArrayEquals(expectedOutput, str.toCharArray())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/AdvanceTypographyTest.java linha: 47 Método: assertArrayEquals(expectedOutput, str.toCharArray())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/AdvanceTypographyTest.java linha: 64 Método: assertArrayEquals(expectedOutput, str.toCharArray())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 67 Método: assertEquals(font.getStyle(), style)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 88 Método: assertTrue(p.test(font), "Style " + style)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 100 Método: assertEquals(style, font.getCombinedStyle(), "Total style should be the given style: " + style)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 101 Método: assertEquals(font.getBaseFontStyle(), style ^ font.getCalculatedStyle(), "Styles should not repeat in" + " Font and BaseFont.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 98 Método: assertEquals(style, font.getStyle(), "Style: " + style)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 114 Método: assertThat(font.getStyle())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 115 Método: assertThat(font.getCalculatedStyle())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 116 Método: assertThat(font.getBaseFontStyle())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 117 Método: assertThat(font.getCombinedStyle())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/fonts/FontTest.java linha: 163 Método: assertTrue(FileUtils.contentEquals(original, current))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocumentTest.java linha: 37 Método: assertThat(result.getRows().size(), equalTo(1))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocumentTest.java linha: 40 Método: assertThat(cells.length, equalTo(1))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocumentTest.java linha: 42 Método: assertThat(getCellElements(result).size(), equalTo(5))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocumentTest.java linha: 44 Método: assertThat(getCellElements(result).get(0).getChunks().toString(), equalTo(paragraph1.toString()))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocumentTest.java linha: 45 Método: assertThat(getCellElements(result).get(2), equalTo(table))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfDocumentTest.java linha: 47 Método: assertThat(getCellElements(result).get(3).getChunks().toString(), equalTo(paragraph2.toString()))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SimpleBookmarkTest.java linha: 19 Método: assertNotNull(list)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SimpleBookmarkTest.java linha: 20 Método: assertEquals(3, list.size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SimpleBookmarkTest.java linha: 28 Método: assertNotNull(list)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SimpleBookmarkTest.java linha: 29 Método: assertEquals(3, list.size())
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SimpleBookmarkTest.java linha: 30 Método: assertEquals("ABC", list.get(0).get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SimpleBookmarkTest.java linha: 31 Método: assertEquals("", list.get(1).get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SimpleBookmarkTest.java linha: 32 Método: assertEquals("", list.get(2).get("Title"))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/SingleParagraphTest.java linha: 38 Método: Assertions.assertEquals(text, "Hier fetter Text")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 86 Método: assertTrue(entry1.compareTo(entry2) < 0)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 91 Método: assertTrue(entry1.compareTo(entry2) > 0)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 96 Método: assertEquals(entry1.compareTo(entry2), 0)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 103 Método: assertNotEquals(entry1, entry2)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 108 Método: assertNotEquals(entry1, entry2)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 113 Método: assertEquals(entry1, entry2)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 119 Método: assertEquals(new PdfCrossReference(offset, 0).hashCode(), offset)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 145 Método: assertNotNull(bytes)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 146 Método: assertEquals(bytes.length, CROSS_REFERENCE_ENTRY_LENGTH)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/core/document/PdfCrossReferenceTest.java linha: 148 Método: assertTrue(CROSS_REFERENCE_FORMAT.test(stringRepresentation))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/TableRowSpanEvenSplitTest.java linha: 31 Método: Assertions.assertEquals(0, heightRow1 - heightRow2)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/TableRowSpanEvenSplitTest.java linha: 32 Método: Assertions.assertEquals(0, heightRow3 - heightRow2)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/TableRowSpanEvenSplitTest.java linha: 55 Método: Assertions.assertEquals(0, heightRow2 - heightRow3)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/TableRowSpanEvenSplitTest.java linha: 56 Método: Assertions.assertNotEquals(0, heightRow1 - heightRow2)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfCopyTest.java linha: 17 Método: Assertions.assertDoesNotThrow(this::pdfCopyTest)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfSmartCopyTest.java linha: 28 Método: Assertions.assertTimeout(Duration.ofSeconds(5), () -> {
+    File out = new File("target/test-classes/pdfsmartocy-" + count + ".pdf");
+    out.getParentFile().mkdirs();
+    Document document = new Document();
+    FileOutputStream outputStream = new FileOutputStream(out);
+    PdfCopy copy = new PdfSmartCopy(document, outputStream);
+    document.open();
+    PdfReader reader = new PdfReader(orig.getAbsolutePath());
+    int n = reader.getNumberOfPages();
+    for (int currentPage = 1; currentPage <= n; currentPage++) {
+        PdfImportedPage page = copy.getImportedPage(reader, currentPage);
+        copy.addPage(page);
+    }
+    copy.freeReader(reader);
+    reader.close();
+    document.close();
+    copy.close();
+})
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/TextExtractTest.java linha: 14 Método: Assertions.assertEquals("Hello World", pdfTextExtractor.getTextFromPage(1))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/TextExtractTest.java linha: 21 Método: Assertions.assertEquals("Hello World", pdfTextExtractor.getTextFromPage(1))
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfSignatureAppearanceTest.java linha: 58 Método: assertArrayEquals(expectedDigestPreClose, sha256)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfSignatureAppearanceTest.java linha: 70 Método: assertArrayEquals(expectedDigestClose, sha256Close)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfSignatureAppearanceTest.java linha: 111 Método: assertArrayEquals(expectedDigestPreClose, sha256)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/PdfSignatureAppearanceTest.java linha: 123 Método: assertArrayEquals(expectedDigestClose, sha256Close)
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 59 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 60 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 61 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 62 Método: Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 83 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 84 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 85 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 86 Método: Assertions.assertEquals("Demo   Name   Signature   Date  Elizabeth Schultz (Apr 24, 2018) Elizabeth Schultz Apr 24, 2018 Elizabeth Schultz Sue Northrop (Apr 24, 2018) Apr 24, 2018 Sue Northrop", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 108 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 109 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 110 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 111 Método: Assertions.assertEquals("Potato", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 132 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 133 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 134 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 135 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 156 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 157 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 158 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 159 Método: Assertions.assertEquals("Hello, world!\n Goodbye, world!", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 180 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 181 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 182 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 183 Método: Assertions.assertEquals("Potato", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 206 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 207 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 208 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 209 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 230 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 231 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 232 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 233 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 254 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 255 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 256 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 257 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 281 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 282 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 283 Método: Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 278 Método: Assertions.assertThrows(InvalidPdfException.class, () -> {
+    try (InputStream resource = getClass().getResourceAsStream("/issue375/enc-XI-R6,V5,U=attachment,encrypted-attachments.pdf")) {
+        PdfReader pdfReader = new PdfReader(resource, "attachment".getBytes());
+        Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.");
+        Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages");
+        Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1");
+        pdfReader.close();
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 305 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 306 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 307 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 308 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 329 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 330 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 331 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 332 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 353 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 354 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 355 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 356 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 377 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 378 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 379 Método: Assertions.assertEquals(30, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 380 Método: Assertions.assertEquals("Potato 0", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 401 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 402 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 403 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 404 Método: Assertions.assertEquals("", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 425 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 426 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 427 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 428 Método: Assertions.assertEquals("Issue 6010", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 449 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 450 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 451 Método: Assertions.assertEquals(10, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 452 Método: Assertions.assertEquals("Sample PDF Document\n" + " Robert Maron\n" + " Grzegorz Grudzi´ nski\n" + " February 20, 1999", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 476 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 477 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 478 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 479 Método: Assertions.assertEquals("Mu PD F  a lightweight PDF and XPS viewer", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 500 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 501 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 502 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 503 Método: Assertions.assertEquals("Mu PD F  a lightweight PDF and XPS viewer", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 527 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 528 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 529 Método: Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 524 Método: Assertions.assertThrows(BadPasswordException.class, () -> {
+    try (InputStream resource = getClass().getResourceAsStream("/issue375/nontrivial-crypt-filter.pdf")) {
+        PdfReader pdfReader = new PdfReader(resource);
+        Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.");
+        Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages");
+        Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1");
+        pdfReader.close();
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 551 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 552 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 553 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 554 Método: Assertions.assertEquals("", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 575 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 576 Método: Assertions.assertFalse(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report limited permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 577 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 602 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 603 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 604 Método: Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 599 Método: Assertions.assertThrows(BadPasswordException.class, () -> {
+    try (InputStream resource = getClass().getResourceAsStream("/issue375/unfilterable-with-crypt.pdf")) {
+        PdfReader pdfReader = new PdfReader(resource);
+        Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.");
+        Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages");
+        Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1");
+        pdfReader.close();
+    }
+})
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 628 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 629 Método: Assertions.assertTrue(isOwnerPasswordUsed(pdfReader), "PdfReader fails to report full permissions.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 630 Método: Assertions.assertEquals(2, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/DecryptAES256R6Test.java linha: 631 Método: Assertions.assertTrue(new PdfTextExtractor(pdfReader).getTextFromPage(1).startsWith("THIS IS A TEST"), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 45 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 46 Método: Assertions.assertTrue(pdfReader.isOpenedWithFullPermissions(), "PdfReader fails to recognize password as owner password.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 47 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 48 Método: Assertions.assertEquals("Some test content", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 53 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 54 Método: Assertions.assertFalse(pdfReader.isOpenedWithFullPermissions(), "PdfReader fails to recognize password as user password.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 55 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 56 Método: Assertions.assertEquals("Some test content", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 83 Método: Assertions.assertTrue(pdfReader.isEncrypted(), "PdfReader fails to report test file to be encrypted.")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 84 Método: Assertions.assertEquals(1, pdfReader.getNumberOfPages(), "PdfReader fails to report the correct number of pages")
+Assert com mensagem: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/EncryptAES256R6Test.java linha: 85 Método: Assertions.assertEquals("TEST", new PdfTextExtractor(pdfReader).getTextFromPage(1), "Wrong text extracted from page 1")
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/LayoutProcessor534Test.java linha: 53 Método: assertThat(textFromPage)
+Assert sem descrição: /home/vitor-otto/opensource/OpenPDF-1.3.30/openpdf/src/test/java/com/lowagie/text/pdf/LayoutProcessor534Test.java linha: 95 Método: assertThat(extractor.getTextFromPage(1))
+Total asserts: 363
+Asserts sem descrição: 244
+Asserts com descrição: 119
+Assertion Roulette: 180

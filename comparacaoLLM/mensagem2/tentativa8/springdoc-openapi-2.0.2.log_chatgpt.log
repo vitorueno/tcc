@@ -1,0 +1,20 @@
+eram esperados valores verdadeiros, mas a expressão result.contains("!<Type A>") é falsa
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores iguais, mas o valor esperado é diferente de result
+eram esperados valores verdadeiros, mas result não contém "window.ui"
+eram esperados valores iguais, mas o valor esperado é diferente de result.replace("\r", "")
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas transformedIndex não contém "window.ui"
+eram esperados valores iguais, mas "no-store" é diferente de mvcResult.getResponse().getHeader("Cache-Control")
+eram esperados valores iguais, mas o conteúdo do arquivo fileName é diferente de transformedIndex.replace("\r", "")
+eram esperados valores verdadeiros, mas htmlResult não contém "window.ui"
+eram esperados valores iguais, mas o conteúdo do arquivo fileName é diferente de htmlResult.replace("\r", "")
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"
+eram esperados valores verdadeiros, mas contentAsString não contém "Swagger UI"

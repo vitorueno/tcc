@@ -1,0 +1,100 @@
+O resultado da execução de run(new DataFileReadTool(), sampleFile.getPath())  não é igual ao jsonData esperado.
+O resultado da execução de run(new DataFileReadTool(), stdin, "-") não é igual ao jsonData esperado.
+O resultado da execução de run(new DataFileReadTool(), "--pretty", sampleFile.getPath()) não é igual ao jsonData esperado.
+O resultado da execução de run(new DataFileReadTool(), "--reader-schema", "\"long\"", sampleFile.getPath()) não é igual ao jsonData esperado.
+O resultado da execução de run(new DataFileReadTool(), "--reader-schema-file", readerSchemaFile.getPath(), sampleFile.getPath()) não é igual ao jsonData esperado.
+O resultado da execução de run(new DataFileReadTool(), "--head", sampleFile.getPath()) não é igual ao expectedJson esperado.
+O resultado da execução de run(new DataFileReadTool(), "--head=3", sampleFile.getPath()) não é igual ao expectedJson esperado.
+O resultado da execução de run(new DataFileReadTool(), "--head", "5", sampleFile.getPath()) não é igual ao expectedJson esperado.
+O resultado da execução de run(new DataFileReadTool(), "--head=3000000000", sampleFile.getPath()) não é igual ao jsonData esperado.
+O resultado da execução de run(new DataFileReadTool(), "--head=0", sampleFile.getPath()) não é igual a "\n".
+O resultado da execução de run(new DataFileReadTool(), "--head=-5", sampleFile.getPath()) não é igual a "\n".
+O resultado da execução de run(new DataFileGetMetaTool(), sampleFile.getPath(), "--key", "avro.schema") não é igual a schema.toString() + "\n".
+O resultado da execução de run(new DataFileGetSchemaTool(), sampleFile.getPath()) não é igual a schema.toString() + "\n".
+O número de registros em outFile é diferente de 0.
+O número de registros em outFile é diferente de 5.
+A string baos.toString() não contém "Compression codec (default: null)".
+O conteúdo do arquivo protocol é diferente do conteúdo do arquivo outfile.
+A variável warnings não contém a mensagem de aviso esperada.
+A string err.toString() não contém "Need count (--count)".
+A string err.toString() não contém "Compression codec (default: deflate)".
+O valor de i é diferente de COUNT.
+O tamanho de WordCountUtil.COUNTS é diferente de numWords.
+O tamanho do array files é diferente de 4.
+A variável warnings não contém a mensagem de aviso esperada.
+O código de retorno é diferente de 1.
+O código de retorno é diferente de 0.
+A saída de out.toString() não é igual a "220" + System.lineSeparator().
+A string baos.toString(UTF8).replace("\r", "") não é igual a json.
+A string baos.toString(UTF8) não é igual a avro.
+A string baos.toString() não contém "Compression codec (default: deflate)".
+O iterador r ainda possui elementos.
+O tamanho do arquivo defaultOutputFile é diferente do tamanho do arquivo nullOutputFile.
+O código de retorno é diferente de 0.
+O número de linhas em output é diferente de LIMIT_WITHIN_INPUT_BOUNDS.
+O código de retorno é diferente de 0.
+O número de linhas em output é diferente de LIMIT_WITHIN_INPUT_BOUNDS.
+O código de retorno é diferente de 0.
+O número de linhas em output é diferente de LIMIT_WITHIN_INPUT_BOUNDS.
+O código de retorno é diferente de 0.
+O número de linhas em output é diferente de ROWS_IN_INPUT_FILES - OFFSET.
+O código de retorno é diferente de 0.
+O código de retorno é diferente de 0.
+O código de retorno é diferente de 0.
+O código de retorno é diferente de 0.
+O código de retorno é diferente de 0.
+baos1.toString("UTF-8").replace("\r", "") não termina com "hello\t{\"greeting\":\"Hi!\"}\n".
+baos2.toString("UTF-8").replace("\r", "") não é igual a "\"Hello!\"\n".
+codec.toString() não é igual a String.format("zstandard[%d]", level).
+O código de retorno é diferente de 0.
+O número de linhas em output é diferente de ROWS_IN_INPUT_FILES * 3.
+O código de retorno é diferente de 0.
+O número de linhas em output é diferente de ROWS_IN_INPUT_FILES * 3.
+O código de retorno é diferente de 0.
+O número de linhas em output é diferente de ROWS_IN_INPUT_FILES * 3.
+As classes dos codecs de input1 e output são diferentes.
+O código de retorno é diferente de 1.
+O código de retorno é diferente de 2.
+O código de retorno é diferente de 3.
+O código de retorno é diferente de 0.
+O valor de in.tell() é diferente de 0.
+O valor de in.length() é diferente de 0.
+O tamanho do array bytes é diferente de 1.
+O valor de bytes[0] é diferente de 0.
+O valor de in.readInt() é diferente de 0.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.readLong() é diferente de sentinel.
+O valor de in.getRowCount() é diferente de 0.
+O valor de in.getColumnCount() é diferente de 0.
+O valor de in.getRowCount() é diferente de 0.
+O valor de in.getColumnCount() é diferente de 1.
+O valor de in.getRowCount() é diferente de COUNT.
+O valor de in.getColumnCount() é diferente de 1.
+O valor de count é diferente de COUNT.
+O valor de in.getRowCount() é diferente de COUNT.
+O valor de in.getColumnCount() é diferente de 1.
+O valor de count é diferente de COUNT.
+O valor de in.getRowCount() é diferente de COUNT.
+O valor de in.getColumnCount() é diferente de 1.
+O valor de count é diferente de COUNT.
+O valor de in.getRowCount() é diferente de COUNT.
+O valor de in.getColumnCount() é diferente de 2.
+O valor de count é diferente de COUNT.
+O valor de min é diferente de 0.
+O valor de max não é maior que 1024 * 32.
+O valor de average não é maior que 16.0f.
+O valor de average não é menor que 64.0f.
+O valor de compressedSize não é maior que 0.
+O valor de compressedSize não é menor que inputSize ou codec não é igual a "null".
+Os buffers decompressedBuffer e inputByteBuffer são diferentes.
+O valor de compressedSize não é maior que 0.
+Os buffers decompressedBuffer e inputByteBuffer são diferentes.

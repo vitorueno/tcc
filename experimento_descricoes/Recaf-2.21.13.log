@@ -1,0 +1,13 @@
+
+Projeto: /home/vitor-otto/opensource/Recaf-2.21.13
+
+Assert com mensagem: /home/vitor-otto/opensource/Recaf-2.21.13/src/test/java/me/coley/recaf/JavadocsTest.java linha: 54 Método: assertNotNull(base.getClassDocs(name), name + " was null")
+Assert com mensagem: /home/vitor-otto/opensource/Recaf-2.21.13/src/test/java/me/coley/recaf/ResourceInputTest.java linha: 109 Método: assertThrows(IOException.class, () -> new UrlResource(url))
+Assert com mensagem: /home/vitor-otto/opensource/Recaf-2.21.13/src/test/java/me/coley/recaf/ResourceInputTest.java linha: 118 Método: assertThrows(IOException.class, () -> new ClassResource(path))
+Assert com mensagem: /home/vitor-otto/opensource/Recaf-2.21.13/src/test/java/me/coley/recaf/ResourceInputTest.java linha: 123 Método: assertThrows(IOException.class, () -> new MavenResource("does", "not", "exist"))
+Assert com mensagem: /home/vitor-otto/opensource/Recaf-2.21.13/src/test/java/me/coley/recaf/SourceCodeTest.java linha: 268 Método: assertThrows(IOException.class, () -> resource.setClassSources(Paths.get("Does/Not/Exist")))
+Assert com mensagem: /home/vitor-otto/opensource/Recaf-2.21.13/src/test/java/me/coley/recaf/SourceCodeTest.java linha: 284 Método: assertThrows(IOException.class, () -> resource.setClassSources(source))
+Total asserts: 589
+Asserts sem descrição: 582
+Asserts com descrição: 6
+Assertion Roulette: 509

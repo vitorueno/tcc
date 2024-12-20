@@ -1,0 +1,87 @@
+eram esperados "java.lang.Object", mas o resultado foi type.describe()
+o teste excedeu o tempo limite
+o resultado deveria ser true
+eram esperados valores iguais, mas "a" é diferente de fd.get().getVariable(0).getInitializer().get().asStringLiteralExpr().getValue()
+eram esperados valores iguais, mas "X.A.bar" é diferente de mce.resolve().getQualifiedName()
+eram esperados "java.lang.Runnable", mas o resultado foi resolved.getParam(0).getType().describe()
+o resultado deveria ser false
+eram esperados "MyAnnotation", mas o resultado foi declaration.getNameAsString()
+eram esperados "MyAnnotationWithElements", mas o resultado foi declaration.getNameAsString()
+eram esperados "VoidVisitor", mas o resultado foi declaration.getNameAsString()
+o resultado deveria ser true
+eram esperados "AccessSpecifier", mas o resultado foi declaration.getNameAsString()
+eram esperados "AccessSpecifier", mas o resultado foi enumDeclaration.getNameAsString()
+eram esperados "PUBLIC", mas o resultado foi declaration.getNameAsString()
+eram esperados "CompilationUnit", mas o resultado foi classDeclaration.getNameAsString()
+eram esperados "CompilationUnit", mas o resultado foi classDeclaration.getNameAsString()
+eram esperados "getComments", mas o resultado foi resolvedDeclaration.getName()
+eram esperados 0, mas o resultado foi resolvedDeclaration.getNumberOfParams()
+eram esperados "CompilationUnit", mas o resultado foi classDeclaration.getNameAsString()
+eram esperados "bar(Optional.of(new Derived()))", mas o resultado foi mces.get(0).toString()
+eram esperados "Base.bar(java.util.Optional<Base>)", mas o resultado foi mces.get(0).resolve().getQualifiedSignature()
+foo não deveria ser nulo
+o resultado deveria ser true
+eram esperados "com.github.javaparser.symbolsolver.testingclasses.UtilityClass.method(com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum)", mas o resultado foi rmd.getQualifiedSignature()
+eram esperados "CONSTANT", mas o resultado foi rvd.getName()
+eram esperados "com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum", mas o resultado foi rvd.getType().describe()
+eram esperados "A.method", mas o resultado foi mce.resolve().getQualifiedName()
+eram esperados "Test.setRunnable(java.lang.String, java.lang.Runnable)", mas o resultado foi mce.get(0).resolve().getQualifiedSignature()
+eram esperados "Test.getContext(Test)", mas o resultado foi mce.get(1).resolve().getQualifiedSignature()
+eram esperados "Test.getContext(Test)", mas o resultado foi sig
+eram esperados "java.lang.String", mas o resultado foi exprs.get(0).calculateResolvedType().describe()
+eram esperados "java.lang.String", mas o resultado foi exprs.get(1).calculateResolvedType().describe()
+eram esperados "java.lang.String", mas o resultado foi exprs.get(2).calculateResolvedType().describe()
+eram esperados "float", mas o resultado foi exprs.get(3).calculateResolvedType().describe()
+eram esperados "double", mas o resultado foi exprs.get(4).calculateResolvedType().describe()
+eram esperados "int", mas o resultado foi exprs.get(5).calculateResolvedType().describe()
+eram esperados "long", mas o resultado foi exprs.get(6).calculateResolvedType().describe()
+eram esperados "long", mas o resultado foi exprs.get(7).calculateResolvedType().describe()
+eram esperados "int", mas o resultado foi exprs.get(8).calculateResolvedType().describe()
+eram esperados "long", mas o resultado foi exprs.get(9).calculateResolvedType().describe()
+eram esperados "long", mas o resultado foi exprs.get(10).calculateResolvedType().describe()
+eram esperados "int", mas o resultado foi exprs.get(11).calculateResolvedType().describe()
+eram esperados "int", mas o resultado foi exprs.get(12).calculateResolvedType().describe()
+eram esperados "int", mas o resultado foi exprs.get(13).calculateResolvedType().describe()
+eram esperados "InnerClass(int)", mas o resultado foi rcd.getSignature()
+eram esperados "InnerClass(int)", mas o resultado foi rcd.getSignature()
+eram esperados "InnerClass(int)", mas o resultado foi rcd.getSignature()
+eram esperados "void", mas o resultado foi (mce.calculateResolvedType().describe())
+eram esperados "java.util.concurrent.TimeUnit", mas o resultado foi (mce.getArgument(0).calculateResolvedType().describe())
+o método deveria estar resolvido
+javaParserFacade.solve(expression) não deveria ser nulo
+javaParserFacade.convertToUsage(expression.getType()) não deveria ser nulo
+o resultado deveria ser true
+eram esperados "D", mas o resultado foi a.getQualifiedName()
+eram esperados qName, mas o resultado foi resultsQualifiedName.get(expr.toString())
+eram esperados resolvedType, mas o resultado foi resultsResolvedType.get(expr.toString())
+o resultado deveria ser true
+o resultado deveria ser true
+o resultado deveria ser true
+eram esperados "int", mas o resultado foi resolve.getType().describe()
+eram esperados "Test1.Test2", mas o resultado foi oce.get(0).calculateResolvedType().describe()
+eram esperados "Test1.Test3", mas o resultado foi oce.get(1).calculateResolvedType().describe()
+methodType deveria estar presente
+eram esperados "java.util.ArrayList", mas o resultado foi resolvedType
+eram esperados "foo(new Object[5])", mas o resultado foi mce.toString()
+eram esperados "TestClass2.foo(java.lang.Object)", mas o resultado foi mce.resolve().getQualifiedSignature()
+eram esperados "void", mas o resultado foi mce.calculateResolvedType().describe()
+fae não deveria estar presente
+eram esperados "foo.bar.BinaryExpr.Operator", mas o resultado foi fae.get().resolve().getType().describe()
+eram esperados "OR", mas o resultado foi fae.get().resolve().getName()
+fae deveria estar presente
+eram esperados "foo.bar.BinaryExpr.Operator", mas o resultado foi fae.get().resolve().getType().describe()
+eram esperados "AND", mas o resultado foi fae.get().resolve().getName()
+fae deveria estar presente
+eram esperados "foo.bar.BinaryExpr.Operator", mas o resultado foi fae.get().resolve().getType().describe()
+eram esperados "OR", mas o resultado foi fae.get().resolve().getName()
+fae deveria estar presente
+eram esperados "foo.bar.BinaryExpr.Operator", mas o resultado foi fae.get().resolve().getType().describe()
+eram esperados "AND", mas o resultado foi fae.get().resolve().getName()
+o resultado deveria ser true
+eram esperados NameLogic.syntacticClassificationAccordingToContext(nameNode), mas o resultado foi syntacticClassification
+eram esperados NameLogic.classifyReference(nameNode, typeSolver), mas o resultado foi nameCategory
+eram esperados NameLogic.syntacticClassificationAccordingToContext(nameNode), mas o resultado foi nameCategory
+eram esperados NameLogic.classifyRole(nameNode), mas o resultado foi nameRole
+o resultado deveria ser true
+o resultado deveria ser true
+eram esperados false, mas o resultado foi NameLogic.isAName(cu)

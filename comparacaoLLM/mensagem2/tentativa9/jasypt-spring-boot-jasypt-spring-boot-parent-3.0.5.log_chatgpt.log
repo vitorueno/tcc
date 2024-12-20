@@ -1,0 +1,56 @@
+eram esperados valores verdadeiros, mas o resultado foi falso
+eram esperados valores falsos, mas o resultado foi verdadeiro
+eram esperados valores verdadeiros, mas o resultado foi falso
+eram esperados valores falsos, mas o resultado foi verdadeiro
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse incluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+era esperado que a propriedade 'some.property' fosse excluída
+os valores 'decrypted' e 'message' são diferentes
+os valores 'decrypted' e 'message' são diferentes
+os valores 'decrypted' e 'message' são diferentes
+os valores 'decrypted' e 'message' são diferentes
+os valores 'decrypted' e 'message' são diferentes
+os valores 'decrypted' e 'message' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+os valores 'message' e 'decrypted' são diferentes
+o objeto obtido é nulo
+o objeto obtido é nulo
+o valor retornado de 'myProperties.getFooString()' é diferente de 'test1'
+o valor retornado de 'myProperties.getBarString()' é diferente de 'test2'
+a lista 'myProperties.getFooList()' é nula
+o valor retornado de 'myProperties.getFooList().toString()' é diferente de '[a1, b1]'
+a lista 'myProperties.getBarList()' é nula
+o valor retornado de 'myProperties.getBarList().toString()' é diferente de '[a2, b2]'
+o mapa de strings 'myProperties.getStringMap()' é nulo
+o valor retornado de 'myProperties.getStringMap().toString()' é diferente de '{k1=v1}'
+o mapa de listas 'myProperties.getListMap()' é nulo
+o valor retornado de 'myProperties.getListMap().toString()' é diferente de '{k2=[v2]}'

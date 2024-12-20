@@ -1,0 +1,67 @@
+eram esperados valores nulos, mas p1.getUnderlyingDataset() retornou um valor
+eram esperados valores iguais, mas p1.getItemCount() é diferente de 0
+era esperado que p1.getKeys() estivesse vazio, mas não estava
+eram esperados valores nulos, mas p1.getValue("R1") retornou um valor
+eram esperados valores iguais, mas d1.getValue("C1") é diferente de 1.1
+eram esperados valores iguais, mas d1.getValue("C2") é diferente de 2.2
+eram esperados valores iguais, mas d1.getKey(0) é diferente de "C1"
+eram esperados valores iguais, mas d1.getKey(1) é diferente de "C2"
+eram esperados valores iguais, mas 0 é diferente de d1.getIndex("C1")
+eram esperados valores iguais, mas 1 é diferente de d1.getIndex("C2")
+eram esperados valores iguais, mas -1 é diferente de d1.getIndex("XX")
+era esperado que pass fosse verdadeiro, mas não era
+era esperado que d1.equals(d2) fosse verdadeiro, mas não era
+eram esperados valores iguais, mas d1 é diferente de d2
+eram esperados valores iguais, mas d1.getUnderlyingDataset() é diferente de d2.getUnderlyingDataset()
+eram esperados valores iguais, mas d1.getExtractType() é diferente de d2.getExtractType()
+eram esperados valores iguais, mas d1.getExtractIndex() é diferente de d2.getExtractIndex()
+eram esperados valores iguais, mas 1.0 é diferente de d.getValue("R1", "C1")
+era esperado que pass fosse verdadeiro, mas não era
+era esperado que pass fosse verdadeiro, mas não era
+era esperado que pass fosse verdadeiro, mas não era
+eram esperados valores iguais, mas 3.0 é diferente de d.getValue("R1", "C1")
+eram esperados valores iguais, mas 2.0 é diferente de d.getValue("R2", "C1")
+era esperado que pass fosse verdadeiro, mas não era
+era esperado que pass fosse verdadeiro, mas não era
+era esperado que d.getRowCount() fosse igual a 0, mas não era
+era esperado que d.getRowCount() fosse igual a 1, mas não era
+era esperado que d.getRowCount() fosse igual a 2, mas não era
+era esperado que d.getRowCount() fosse igual a 2, mas não era
+era esperado que d.getRowCount() fosse igual a 2, mas não era
+era esperado que d.getColumnCount() fosse igual a 0, mas não era
+era esperado que d.getColumnCount() fosse igual a 1, mas não era
+era esperado que d.getColumnCount() fosse igual a 2, mas não era
+era esperado que d.getColumnCount() fosse igual a 2, mas não era
+era esperado que d.getColumnCount() fosse igual a 2, mas não era
+era esperado que d1.equals(d2) fosse verdadeiro, mas não era
+era esperado que d2.equals(d1) fosse verdadeiro, mas não era
+eram esperados valores diferentes, mas d1 é igual a d2
+era esperado que d1.equals(d2) fosse falso, mas não era
+era esperado que d1.equals(d2) fosse verdadeiro, mas não era
+era esperado que d1.equals(d2) fosse verdadeiro, mas não era
+eram esperados valores iguais, mas d1 é diferente de d2
+eram esperados valores iguais, mas d1.getStartValue("Series 1", "Category 1") é diferente de 0.1
+eram esperados valores iguais, mas d1.getStartValue("Series 1", "Category 2") é diferente de 0.2
+eram esperados valores iguais, mas d1.getStartValue("Series 1", "Category 3") é diferente de 0.3
+eram esperados valores iguais, mas d1.getStartValue("Series 2", "Category 1") é diferente de 0.3
+eram esperados valores iguais, mas d1.getStartValue("Series 2", "Category 2") é diferente de 0.4
+eram esperados valores iguais, mas d1.getStartValue("Series 2", "Category 3") é diferente de 0.5
+eram esperados valores iguais, mas d1.getEndValue("Series 1", "Category 1") é diferente de 0.5
+eram esperados valores iguais, mas d1.getEndValue("Series 1", "Category 2") é diferente de 0.6
+eram esperados valores iguais, mas d1.getEndValue("Series 1", "Category 3") é diferente de 0.7
+eram esperados valores iguais, mas d1.getEndValue("Series 2", "Category 1") é diferente de 0.7
+eram esperados valores iguais, mas d1.getEndValue("Series 2", "Category 2") é diferente de 0.8
+eram esperados valores iguais, mas d1.getEndValue("Series 2", "Category 3") é diferente de 0.9
+era esperado que pass fosse verdadeiro, mas não era
+era esperado que pass fosse verdadeiro, mas não era
+eram esperados valores iguais, mas dA é diferente de dB
+eram esperados valores iguais, mas dB é diferente de dA
+eram esperados valores iguais, mas empty1 é diferente de empty2
+eram esperados valores iguais, mas d1 é diferente de d2
+era esperado que d1.equals(d2) fosse falso, mas não era
+era esperado que d1.equals(d2) fosse verdadeiro, mas não era
+eram esperados valores iguais, mas 99.9 é diferente de d1.getStartValue("Series 1", "Category 2")
+era esperado que pass fosse verdadeiro, mas não era
+era esperado que pass fosse verdadeiro, mas não era
+eram esperados valores iguais, mas 99.9 é diferente de d1.getEndValue("Series 1", "Category 2")
+era esperado que pass fosse verdadeiro, mas não era

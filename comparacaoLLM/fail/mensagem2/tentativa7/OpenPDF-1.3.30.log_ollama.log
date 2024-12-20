@@ -1,0 +1,66 @@
+eram esperados valores iguais, mas 52 é diferente de footer.getTop()
+eram esperados valores iguais, mas 92 não é igual a footerTop
+eram esperados valores iguais, mas 60 é diferente de imageBottom
+eram esperados valores iguais, mas 36 não é igual a imageIndentLeft
+eram esperados valores iguais, mas 76 é diferente de footerTop
+eram esperados valores iguais, mas 44 não é igual a imageBottom
+eram esperados valores iguais, mas 281.5 é diferente de imageIndentLeft
+eram esperados valores iguais, mas 76 é igual a footerTop
+eram esperados valores iguais, mas 44 não é igual a imageBottom
+eram esperados valores iguais, mas 281.5 é igual a imageIndentLeft
+eram esperados valores iguais, mas "lvi" não é igual a getString(56)
+eram esperados valores iguais, mas "mmcmxcix" não é igual a getString(2999)
+eram esperados valores iguais, mas "mmm" não é igual a getString(3000)
+eram esperados valores iguais, mas "lvi" não é igual a expected
+eram esperados valores iguais, mas "MMCMXCIX" é igual a expected.toUpperCase()
+eram esperados valores iguais, mas null não é igual a image.getUrl()
+eram esperados valores iguais, mas null não é igual a image.getUrl()
+eram esperados valores iguais, mas 1 não é igual a names.size()
+eram esperados valores iguais, mas false não é igual a font.createSubsetPrefix()
+eram esperados valores iguais, mas false não é igual a font.createSubsetPrefix()
+eram esperados valores iguais, mas true não é igual a subsetPrefixOne
+eram esperados valores iguais, mas false não é igual a subsetPrefixTwo
+eram esperados valores iguais, mas true não é igual a comparePdf()
+eram esperados valores iguais, mas uma exceção foi lançada dentro do tempo limite de 10 segundos para test.pdf
+eram esperados valores iguais, mas "any text" não é igual a cell1.getVerticalAlignment()
+eram esperados valores iguais, mas "bottom" não é igual a cell1.getVerticalAlignment()
+eram esperados valores iguais, mas null não é igual a table.getCell(0)
+eram esperados valores iguais, mas 2 não é igual a table.getRows().size()
+eram esperados valores iguais, mas "" não é igual a largeStr
+eram esperados valores iguais, mas "this is to test-> row 45\n" não é igual a largeStr
+eram esperados valores iguais, mas 3 não é igual a actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "before" não é igual a actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas "0" não é igual a actualHeaderFooter.getChunks().get(1).toString()
+eram esperados valores iguais, mas "after" não é igual a actualHeaderFooter.getChunks().get(2).toString()
+eram esperados valores iguais, mas 2 não é igual a actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "before" não é igual a actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas "0" não é igual a actualHeaderFooter.getChunks().get(1).toString()
+eram esperados valores iguais, mas 1 não é igual a actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "before" não é igual a actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas 6 não é igual a actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "\n" não é igual a actualHeaderFooter.getChunks().get(5).toString()
+eram esperados valores iguais, mas "1 1.1 1.2 " não é igual a actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas "1.4 " não é igual a actualHeaderFooter.getChunks().get(5).toString()
+eram esperados valores iguais, mas 52 não é igual a footer.getTop()
+eram esperados valores iguais, mas 92 não é igual a footerTop
+eram esperados valores iguais, mas 60 não é igual a imageBottom
+eram esperados valores iguais, mas 36 não é igual a imageIndentLeft
+eram esperados valores iguais, mas 76 não é igual a footerTop
+eram esperados valores iguais, mas 44 não é igual a imageBottom
+eram esperados valores iguais, mas 281.5 não é igual a imageIndentLeft
+eram esperados valores iguais, mas 76 não é igual a footerTop
+eram esperados valores iguais, mas 44 não é igual a imageBottom
+eram esperados valores iguais, mas 281.5 não é igual a imageIndentLeft
+eram esperados valores iguais, mas "lvi" não é igual a getString(56)
+eram esperados valores iguais, mas "mmcmxcix" não é igual a getString(2999)
+eram esperados valores iguais, mas "mmm" não é igual a getString(3000)
+eram esperados valores iguais, mas "lvi" não é igual a expected
+eram esperados valores iguais, mas "MMCMXCIX" é igual a expected.toUpperCase()
+eram esperados valores iguais, mas null não é igual a image.getUrl()
+eram esperados valores iguais, mas null não é igual a image.getUrl()
+eram esperados valores iguais, mas 1 não é igual a names.size()
+eram esperados valores iguais, mas false não é igual a font.createSubsetPrefix()
+eram esperados valores iguais, mas false não é igual a font.createSubsetPrefix()
+eram esperados valores iguais, mas true não é igual a subsetPrefixOne
+eram esperados valores iguais, mas false não é igual a subsetPrefixTwo
+eram esperados valores iguais, mas true não é igual a comparePdf()

@@ -1,0 +1,32 @@
+eram esperados valores iguais, mas 0 é diferente de UnreflectionStrategy.getGetOpcode("I", true)
+eram esperados valores iguais, mas 4 é diferente de calculator.add(2, 3)
+eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+
+eram esperados valores iguais, mas 0 é igual a UnreflectionStrategy.getGetOpcode("I", true)
+eram esperados valores iguais, mas "I" é igual a UnreflectionStrategy.getGetOpcode("Z", false)
+eram esperados valores iguais, mas "B" é igual a UnreflectionStrategy.getGetOpcode("B", false)
+eram esperados valores iguais, mas "C" é igual a UnreflectionStrategy.getGetOpcode("C", false)
+eram esperados valores iguais, mas "Ljava/lang/Object;" é igual a UnreflectionStrategy.getGetOpcode("S", true)
+eram esperados valores iguais, mas 0x0 é igual a UnreflectionStrategy.getGetOpcode("S", true)
+eram esperados valores iguais, mas 0 é igual a UnreflectionStrategy.getGetOpcode("J", false)
+eram esperados valores iguais, mas 0x0 é igual a UnreflectionStrategy.getGetOpcode("D", false)
+eram esperados valores iguais, mas "I" é igual a UnreflectionStrategy.getGetOpcode("I", true)
+
+eram esperados valores iguais, mas 7 é igual a calculator.add(4, 2)
+eram esperados valores iguais, mas 10 é igual a calculator.add(5, 5)
+
+eram esperados valores iguais, mas "Ljava/lang/Class;" é igual a UnreflectionStrategy.getGetOpcode("I", true)
+eram esperados valores iguais, mas "Ljava/lang/Integer;->MAX_VALUE:I" é igual a UnreflectionStrategy.getGetOpcode("S", false)
+eram esperados valores iguais, mas 0x0 é igual a UnreflectionStrategy.getGetOpcode("D", false)
+
+eram esperados valores iguais, mas "return-void" é igual a manipulator.getOp().getChildren()[1]
+eram esperados valores iguais, mas 2 são iguais a childState.getRegistersAssigned()
+eram esperados valores iguais, mas 3 são iguais a grandchildState.getRegistersAssigned()
+eram esperados valores iguais, mas 0 são iguais a manipulator.getTryBlocks().size()
+
+eram esperados valores iguais, mas "cmp-long r0, r2, r4" é igual a op.toString()
+eram esperados valores iguais, mas cmpValue.getClass() é igual a setItem.getValue().getValue().getClass()
+eram esperados valores iguais, mas CMP_TYPE é igual a setItem.getValue().getType()
+eram esperados valores iguais, mas 2 são iguais a cmpValue
+eram esperados valores iguais, mas CMP_TYPE é igual a setItem.getValue().getType()

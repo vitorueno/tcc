@@ -1,0 +1,88 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. assertEquals(expectedRegisterCount, actualRegisterCount)
+eram esperados valores iguais, mas a quantidade de registros é diferente (expected = {X}, actual = {Y})
+
+2. assertArrayEquals(expectedLines, actualLines)
+eram esperados valores iguais, mas as linhas são diferentes (expected = [X], actual = [Y])
+
+3. assertEquals(Opcode.IGET, UnreflectionStrategy.getGetOpcode("I", isStatic))
+O operador GET não foi encontrado para o tipo "I" com flag de estática
+
+4. assertEquals(Opcode.IGET_BOOLEAN, UnreflectionStrategy.getGetOpcode("Z", isStatic))
+O operador GET BOOLEAN não foi encontrado para o tipo "Z" com flag de estática
+
+5. assertEquals(Opcode.IGET_BYTE, UnreflectionStrategy.getGetOpcode("B", isStatic))
+O operador GET BYTE não foi encontrado para o tipo "B" com flag de estática
+
+6. assertEquals(Opcode.IGET_CHAR, UnreflectionStrategy.getGetOpcode("C", isStatic))
+O operador GET CHAR não foi encontrado para o tipo "C" com flag de estática
+
+7. assertEquals(Opcode.IGET_OBJECT, UnreflectionStrategy.getGetOpcode("Ljava/lang/Object;", isStatic))
+O operador GET OBJECT não foi encontrado para o tipo "Ljava/lang/Object;" com flag de estática
+
+8. assertEquals(Opcode.IGET_SHORT, UnreflectionStrategy.getGetOpcode("S", isStatic))
+O operador GET SHORT não foi encontrado para o tipo "S" com flag de estática
+
+9. assertEquals(Opcode.IGET_WIDE, UnreflectionStrategy.getGetOpcode("J", isStatic))
+O operador GET WIDE não foi encontrado para o tipo "J" com flag de estática
+
+10. assertEquals(Opcode.IGET_WIDE, UnreflectionStrategy.getGetOpcode("D", isStatic))
+O operador GET WIDE não foi encontrado para o tipo "D" com flag de estática
+
+11. assertEquals(SGET, UnreflectionStrategy.getGetOpcode("I", isStatic))
+O operador SGET não foi encontrado para o tipo "I" com flag de estática
+
+12. assertEquals(Opcode.SGET_BOOLEAN, UnreflectionStrategy.getGetOpcode("Z", isStatic))
+O operador SGET BOOLEAN não foi encontrado para o tipo "Z" com flag de estática
+
+13. assertEquals(Opcode.SGET_BYTE, UnreflectionStrategy.getGetOpcode("B", isStatic))
+O operador SGET BYTE não foi encontrado para o tipo "B" com flag de estática
+
+14. assertEquals(Opcode.SGET_CHAR, UnreflectionStrategy.getGetOpcode("C", isStatic))
+O operador SGET CHAR não foi encontrado para o tipo "C" com flag de estática
+
+15. assertEquals(Opcode.SGET_OBJECT, UnreflectionStrategy.getGetOpcode("Ljava/lang/Object;", isStatic))
+O operador SGET OBJECT não foi encontrado para o tipo "Ljava/lang/Object;" com flag de estática
+
+16. assertEquals(Opcode.SGET_SHORT, UnreflectionStrategy.getGetOpcode("S", isStatic))
+O operador SGET SHORT não foi encontrado para o tipo "S" com flag de estática
+
+17. assertEquals(Opcode.INVOKE_DIRECT, instruction.getOpcode())
+O operador INVOKE DIRECT não foi encontrado na instrução
+
+18. assertEquals(expected, found)
+Um valor esperado não é igual ao encontrado (expected = X, found = Y)
+
+19. assertEquals(expectedInstr.getOpcode(), actualInstr.getOpcode())
+Os operadores INSTR não são iguais (expected = X, actual = Y)
+
+20. assertEquals(0, template.getChildren().size())
+O template tem crianças
+
+21. assertNotNull(template.getOp().getChildren())
+Não há crianças para o operador do template
+
+22. assertEquals(template.getOp(), node.getOp())
+Os operadores do template e da node não são iguais
+
+23. assertEquals(1, children.size())
+A criança tem um filho
+
+24. assertEquals(1, childLocations.length)
+A criança tem um local de destino
+
+25. assertArrayEquals(expectedAddresses, actualAddresses)
+As endereços são diferentes (expected = [X], actual = [Y])
+
+26. assertArrayEquals(new int[] { 0 }, parentState.getRegistersAssigned())
+A quantidade de registros alocados pelo pai não é igual a 0
+
+27. assertArrayEquals(new int[] { 2 }, childState.getRegistersAssigned())
+A quantidade de registros alocados pela criança não é igual a 2
+
+28. assertArrayEquals(new int[] { 3 }, grandchildState.getRegistersAssigned())
+A quantidade de registros alocados pelo net-irmão da criança não é igual a 3
+
+29. assertEquals(2, manipulator.getTryBlocks().size())
+O número de blocos tentativos não é igual a 2

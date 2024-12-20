@@ -1,0 +1,41 @@
+eram esperados valores iguais, mas "test/Person" é diferente de graph.getCommon("test/Jedi", "test/Sith")
+eram esperados valores iguais, mas "test/Person" é igual a graph.getCommon("test/Jedi", "test/Person")
+eram esperados valores iguais, mas "test/Person" é igual a graph.getCommon("test/Person", "test/Person")
+esperado tamanho 1, mas contou 0 elementos com nome className em hierarchy
+verifique se "test/Yoda" é uma biblioteca com método toString
+verifique se "test/Yoda" está vinculado à classe "Greetings" com o método say
+eram esperados resultados iguais, mas encontrou 0 elementos diferentes entre results e expected
+esperado tamanho 1, mas encontrou 20 elementos no conjunto mappings
+eram esperados resultados iguais, mas encontrou 1 elemento diferente entre difference e collections.emptySet()
+verifique se o proprietário do vertex "Start" é igual a "main"
+verifique se o nome do vertex "Start" é igual a "main"
+verifique se a descrição do vertex "Start" é igual a "([Ljava/lang/String;)V"
+verifique se o conjunto result.getDifference() está vazio
+eram esperados resultados iguais, mas encontrou 1 elemento diferente entre results e 1
+esperado tamanho 0, mas encontrou 2 elementos no conjunto fields com nome "i" e tipo "int"
+verifique se a descrição do campo "i" é igual a ""
+verifique se o módulo do campo "i" é igual a "protected"
+verifique se o módulo final do campo "i" é igual a "final"
+verifique se o nome do método "evaluate" é igual a "evaluate"
+verifique se o retorno do método "evaluate" é igual a "Evaluates an expression as a level deeper than the current one in the expression tree,"
+verifique se o módulo do método "evaluate" é igual a "protected"
+verifique se o módulo final do método "evaluate" é igual a "final"
+verifique se a descrição do retorno do método "evaluate" é igual a "Evaluated result."
+verifique se o nome do parâmetro "expression" é igual a "expression"
+verifique se a descrição do parâmetro "expression" é igual a "Some math expression."
+verifique se o nome do método "accept" é igual a "accept"
+verifique se o retorno do método "accept" é igual a "double"
+verifique se a descrição do método "accept" é igual a ""
+verifique se o módulo do método "accept" é igual a "public"
+verifique se o módulo abstrato do método "accept" é igual a "abstract"
+verifique se a descrição do retorno do método "accept" é igual a "Evaluated result."
+verifique se o nome do parâmetro "expression" é igual a "expression"
+verifique se a descrição do parâmetro "expression" é igual a "Some math expression."
+verifique se há 2 elementos no conjunto inheritance
+verifique se o classe "calc/Calculator" é herdado de "java/lang/Object"
+verifique se há 0 subclasse na classe "calc/Calculator"
+verifique se o método "evaluate" da classe "calc/Calculator" está renomeado para "doEvaluate"
+verifique se o nome do node é igual a "Scanner"
+verifique se o node é um tipo de classe ou interface
+verifique se o nome do node como string é igual a "Scanner"
+verifique se o node é um declarador de variável

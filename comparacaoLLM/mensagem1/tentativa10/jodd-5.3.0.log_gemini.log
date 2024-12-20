@@ -1,0 +1,101 @@
+`jspFragment.count deve ser 1, mas foi:`
+`jspFragment.count deve ser 1, mas foi:`
+`jspFragment.count deve ser 2, mas foi:`
+`jspFragment.count deve ser 3, mas foi:`
+`jspFragment.count deve ser 2, mas foi:`
+`jspFragment.count deve ser 6, mas foi:`
+`jspContext.getAttribute("s") não deve ser nulo, mas foi:`
+`s não deve ser nulo, mas foi:`
+`s.getCount() deve ser igual a count, mas foi:`
+`s.getValue() deve ser igual a count - 1, mas foi:`
+`s.getIndex() deve ser igual a count - 1, mas foi:`
+`s.getModulus() deve ser igual a count % s.getModulusValue(), mas foi:`
+`cthr.getMimeType() deve ser "text/html", mas foi:`
+`cthr.getEncoding() deve ser "utf-8", mas foi:`
+`cthr.getMimeType() deve ser "text/html", mas foi:`
+`cthr.getEncoding() deve ser nulo, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser false, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser false, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser false, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser false, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser true, mas foi:`
+`gzipFilter.isGzipEligible(servletRequest) deve ser false, mas foi:`
+`string deve ser "OneTwo", mas foi:`
+`string deve ser "OneTwo123", mas foi:`
+`wrappedResponse.getBufferSize() deve ser 5, mas foi:`
+`new String(bytes) deve ser "first", mas foi:`
+`new String(bytes) deve ser "first173WOW", mas foi:`
+`new String(bytes) deve ser "first173WOWYYZ", mas foi:`
+`form1(form) deve ser igual a result, mas foi:`
+`form("") deve ser "", mas foi:`
+`form("<form></form>") deve ser "<form></form>", mas foi:`
+`form("<input type='text'/>") deve ser "<input type=\"text\"/>", mas foi:`
+`form("<input type='text'></input>") deve ser "<input type=\"text\"></input>", mas foi:`
+`form("<input type='text'> </input>") deve ser "<input type=\"text\"> </input>", mas foi:`
+`form("<input type='text'> </input") deve ser "<input type=\"text\"> ", mas foi:`
+`form("<input type='text'>") deve ser "<input type=\"text\">", mas foi:`
+`form("<input type=''>") deve ser "<input type=\"\">", mas foi:`
+`form("<input tYpE='text'>") deve ser "<input tYpE=\"text\">", mas foi:`
+`form("<input  type=\"text\"  />") deve ser "<input type=\"text\"/>", mas foi:`
+`form("<input type='textx' name='foo'/>") deve ser "<input type=\"textx\" name=\"foo\"/>", mas foi:`
+`form("<input type='text' name='foo'/>") deve ser "<input type=\"text\" name=\"foo\" value=\"*foo*\"/>", mas foi:`
+`form("<input tYpE='text' nAmE='foo'/>") deve ser "<input tYpE=\"text\" nAmE=\"foo\" value=\"*foo*\"/>", mas foi:`
+`form("<input type  =  'text'  name = 'foo'/>") deve ser "<input type=\"text\" name=\"foo\" value=\"*foo*\"/>", mas foi:`
+`form("<input type  =  'text'  name = '\"foo'/>") deve ser "<input type=\"text\" name=\"&quot;foo\" value=\"*&quot;foo*\"/>", mas foi:`
+`form("<input name='foo' type='text' />") deve ser "<input name=\"foo\" type=\"text\" value=\"*foo*\"/>", mas foi:`
+`form("<input type='hidden' name='foo'/>") deve ser "<input type=\"hidden\" name=\"foo\" value=\"*foo*\"/>", mas foi:`
+`form("<input type='password' name='foo'/>") deve ser "<input type=\"password\" name=\"foo\" value=\"*foo*\"/>", mas foi:`
+`form("<input type='image' name='foo'/>") deve ser "<input type=\"image\" name=\"foo\" value=\"*foo*\"/>", mas foi:`
+`form("<input type='checkbox' name='foo' value='not'/>") deve ser "<input type=\"checkbox\" name=\"foo\" value=\"not\"/>", mas foi:`
+`form("<input type='checkbox' name='foo' value='*foo*'/>") deve ser "<input type=\"checkbox\" name=\"foo\" value=\"*foo*\" checked/>", mas foi:`
+`form("<input type='radio' name='foo' value='not'/>") deve ser "<input type=\"radio\" name=\"foo\" value=\"not\"/>", mas foi:`
+`form("<input type='radio' name='foo' value='*foo*'/>") deve ser "<input type=\"radio\" name=\"foo\" value=\"*foo*\" checked/>", mas foi:`
+`form("<textarea name='foo'></textarea>") deve ser "<textarea name=\"foo\">*foo*</textarea>", mas foi:`
+`form2("<textarea name='foo'></textarea>") deve ser "<textarea name=\"foo\">*\"foo*</textarea>", mas foi:`
+`form("<select name='foo'><option value='1'/><option value='2'></option><option value='*foo*'/></select>") deve ser "<select name=\"foo\"><option value=\"1\"/><option value=\"2\"></option><option value=\"*foo*\" selected/></select>", mas foi:`
+`form("<form><input type='hidden' name='logTime>='></form>") deve ser "<form><input type=\"hidden\" name=\"logTime>=\" value=\"*logTime>=*\"></form>", mas foi:`
+`populatedForm deve ser "<input type=\"text\" name=\"cc\" id=\"cc1\" value=\"a@b.c\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc2\" value=\"c@d.e\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc3\" value=\"e@f.g\"/>", mas foi:`
+`response.bodyText().trim() deve ser TEXT_RESULT, mas foi:`
+`response.bodyText().trim() deve ser TEXT_RESULT, mas foi:`
+`response.bodyText().trim() deve ser TEXT_RESULT, mas foi:`
+`response.bodyText().trim() deve ser TEXT_RESULT, mas foi:`
+`response.bodyText().trim() deve ser "<input type=\"text\" name=\"cc\" id=\"cc1\" value=\"one\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc2\" value=\"two\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc3\"/>", mas foi:`
+`p[2] deve ser " three ", mas foi:`
+`p[1] não deve ser nulo, mas foi:`
+`p[3] deve ser nulo, mas foi:`
+`p[1] deve ser nulo, mas foi:`
+`p[3] deve ser nulo, mas foi:`
+`p[0] deve ser nulo, mas foi:`
+`p[1] deve ser nulo, mas foi:`
+`p[2] não deve ser nulo, mas foi:`
+`vtor não deve ser nulo, mas foi:`
+`vtor.severity deve ser 1, mas foi:`
+`vtor.isValidateAllProfilesByDefault() deve ser true, mas foi:`
+`vtor.getViolations() deve ser nulo, mas foi:`
+`vtor.getViolations().size() deve ser 2, mas foi:`
+`vtor.getViolations().get(0) deve ser violation1, mas foi:`
+`vtor.getViolations().get(1) deve ser violation2, mas foi:`
+`vtor.getViolations().size() deve ser 2, mas foi:`
+`vtor.enabledProfiles deve ser nulo, mas foi:`
+`vtor.enabledProfiles.size() deve ser 1, mas foi:`
+`vtor.enabledProfiles.size() deve ser 1, mas foi:`
+`vtor.enabledProfiles deve ser nulo, mas foi:`
+`vtor.enabledProfiles.size() deve ser 2, mas foi:`
+`vtor.enabledProfiles.size() deve ser 2, mas foi:`
+`violations.size() deve ser 1, mas foi:`
+`validate deve ser nulo, mas foi:`
+`violations.size() deve ser 1, mas foi:`
+`violations.get(0).getCheck().getProfiles()[0] deve ser "profil1", mas foi:`
+`violations.size() deve ser 1, mas foi:`
+`violations.get(0).getCheck() deve ser ch1, mas foi:`
+`vtor.matchProfiles(new String[] { "testProfile" }) deve ser true, mas foi:`
+`vtor.matchProfiles(null) deve ser true, mas foi:`
+

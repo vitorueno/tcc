@@ -1,0 +1,74 @@
+eram esperados valores iguais, mas "0" é diferente de result.get("score")
+o resultado não deveria ser nulo
+o resultado não deveria ser nulo
+solverConfig não deveria ser nulo
+eram esperados valores iguais, mas DomainAccessType.GIZMO é diferente de solverConfig.getDomainAccessType()
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de solverConfig.getSolutionClass()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de solverConfig.getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass()
+eram esperados valores iguais, mas 3L é diferente de solverConfig.getTerminationConfig().getSecondsSpentLimit().longValue()
+solverFactory não deveria ser nulo
+o solver deve ser construído corretamente
+solverConfig não deveria ser nulo
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de solverConfig.getSolutionClass()
+eram esperados valores iguais, mas DomainAccessType.GIZMO é diferente de solverConfig.getDomainAccessType()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de solverConfig.getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass()
+eram esperados valores iguais, mas 2L é diferente de solverConfig.getTerminationConfig().getSecondsSpentLimit().longValue()
+solverFactory não deveria ser nulo
+o solver deve ser construído corretamente
+eram esperados valores iguais, mas EnvironmentMode.FULL_ASSERT é diferente de solverConfig.getEnvironmentMode()
+o daemon deveria ser verdadeiro
+eram esperados valores iguais, mas "2" é diferente de solverConfig.getMoveThreadCount()
+eram esperados valores iguais, mas DomainAccessType.REFLECTION é diferente de solverConfig.getDomainAccessType()
+eram esperados valores iguais, mas null é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType()
+solverFactory não deveria ser nulo
+eram esperados valores iguais, mas 4 horas é diferente de solverConfig.getTerminationConfig().getSpentLimit()
+eram esperados valores iguais, mas 5 horas é diferente de solverConfig.getTerminationConfig().getUnimprovedSpentLimit()
+eram esperados valores iguais, mas 0hard/0soft é diferente de solverConfig.getTerminationConfig().getBestScoreLimit()
+solverConfig não deveria ser nulo
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de solverConfig.getSolutionClass()
+eram esperados valores iguais, mas DomainAccessType.GIZMO é diferente de solverConfig.getDomainAccessType()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de solverConfig.getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass()
+o limite de segundos gastos não deveria ser configurado
+solverFactory não deveria ser nulo
+o solver deve ser construído corretamente
+solution não deveria ser nulo
+eram esperados valores iguais, mas "secondsSpentLimit=2" é diferente de resp
+eram esperados valores iguais, mas "secondsSpentLimit=9" é diferente de resp
+solution não deveria ser nulo
+o tamanho da lista de entidades está incorreto
+a execução deveria falhar
+solverFactory não deveria ser nulo
+scoreManager não deveria ser nulo
+os objetos deveriam ser os mesmos
+solverManager não deveria ser nulo
+os objetos deveriam ser os mesmos
+solução e pontuação não deveriam ser nulos
+a pontuação da solução deveria ser maior ou igual a zero
+o resultado deveria ser "Extra Data"
+eram esperados valores iguais, mas BAVET é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType()
+solverFactory não deveria ser nulo
+a execução deveria falhar por uma causa deliberada
+ConstraintStreamImplType deveria ser DROOLS
+a compilação da rede alfa do Drools não deveria estar ativada
+eram esperados valores iguais, mas BAVET é diferente de constraintVerifier.getConstraintStreamImplType()
+ConfigUtils.isNativeImage() deveria ser falso
+Assertions.assertEquals falhou: o diretório de resultados do benchmark não é um diretório
+Assertions.assertEquals falhou: o caminho de resultados do benchmark não é um arquivo regular
+Assertions.assertEquals falhou: a propriedade succeeded do benchmark do solucionador é falsa
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de solverConfig.getSolutionClass()
+eram esperados valores iguais, mas 2 é diferente de solverConfig.getEntityClassList().size()
+a lista de entidades deveria conter TestdataQuarkusEntity.class
+a lista de entidades deveria conter TestdataQuarkusOtherEntity.class
+eram esperados valores iguais, mas 5 é diferente de plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getTerminationConfig().getMillisecondsSpentLimit()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de childBenchmarkConfig.getSolverConfig().getSolutionClass()
+a lista de entidades não deveria estar configurada
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de childBenchmarkConfig.getSolverConfig().getConstraintProviderClass()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de childBenchmarkConfig.getSolverConfig().getSolutionClass()
+a lista de entidades não deveria estar configurada
+eram esperados valores iguais, mas 2 é diferente de plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(0).getSolverConfig().getPhaseConfigList().size()
+eram esperados valores iguais, mas 3 é diferente de plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(1).getSolverConfig().getPhaseConfigList().size()
+mensagem de exceção personalizada.

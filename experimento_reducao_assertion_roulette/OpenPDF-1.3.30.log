@@ -1,0 +1,325 @@
+
+Projeto: /home/vitor-otto/opensource/OpenPDF-1.3.30
+
+Antes do refactor: 
+chamada antiga: assertTrue(result.length > input.length)
+nova chamada: assertTrue(result.length > input.length, "Era esperado verdadeiro, mas o valor obtido é falso")
+chamada antiga: Assertions.assertEquals(2, countPages(target))
+nova chamada: assertEquals(2, countPages(target), "Era esperado valores iguais, mas  2 é diferente de " + result0 + " <countPages(target)>")
+chamada antiga: Assertions.assertEquals(5, countPages(target))
+nova chamada: assertEquals(5, countPages(target), "Era esperado valores iguais, mas  5 é diferente de " + result1 + " <countPages(target)>")
+chamada antiga: Assertions.assertEquals(expected, color)
+nova chamada: assertEquals(expected, color, "Era esperado valores iguais, mas  expected é diferente de " + " color")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#f09"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#f09"), "Era esperado valores iguais, mas  expected é diferente de " + result2 + " <WebColors.getRGBColor('#f09')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#F09"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#F09"), "Era esperado valores iguais, mas  expected é diferente de " + result3 + " <WebColors.getRGBColor('#F09')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#ff0099"), "Era esperado valores iguais, mas  expected é diferente de " + result4 + " <WebColors.getRGBColor('#ff0099')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#FF0099"), "Era esperado valores iguais, mas  expected é diferente de " + result5 + " <WebColors.getRGBColor('#FF0099')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#f09a"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#f09a"), "Era esperado valores iguais, mas  expected é diferente de " + result6 + " <WebColors.getRGBColor('#f09a')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#F09A"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#F09A"), "Era esperado valores iguais, mas  expected é diferente de " + result7 + " <WebColors.getRGBColor('#F09A')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#ff0099aa"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#ff0099aa"), "Era esperado valores iguais, mas  expected é diferente de " + result8 + " <WebColors.getRGBColor('#ff0099aa')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("#FF0099aa"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("#FF0099aa"), "Era esperado valores iguais, mas  expected é diferente de " + result9 + " <WebColors.getRGBColor('#FF0099aa')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"), "Era esperado valores iguais, mas  expected é diferente de " + result10 + " <WebColors.getRGBColor('rgb(255,0,153)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153)"), "Era esperado valores iguais, mas  expected é diferente de " + result11 + " <WebColors.getRGBColor('rgb(255, 0, 153)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(100%,0%,60%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(100%,0%,60%)"), "Era esperado valores iguais, mas  expected é diferente de " + result12 + " <WebColors.getRGBColor('rgb(100%,0%,60%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(100%, 0%, 60%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(100%, 0%, 60%)"), "Era esperado valores iguais, mas  expected é diferente de " + result13 + " <WebColors.getRGBColor('rgb(100%, 0%, 60%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153)"), "Era esperado valores iguais, mas  expected é diferente de " + result14 + " <WebColors.getRGBColor('rgb(255 0 153)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153, 1)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153, 1)"), "Era esperado valores iguais, mas  expected é diferente de " + result15 + " <WebColors.getRGBColor('rgb(255, 0, 153, 1)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153, 100%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153, 100%)"), "Era esperado valores iguais, mas  expected é diferente de " + result16 + " <WebColors.getRGBColor('rgb(255, 0, 153, 100%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153 / 1)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153 / 1)"), "Era esperado valores iguais, mas  expected é diferente de " + result17 + " <WebColors.getRGBColor('rgb(255 0 153 / 1)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153 / 100%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255 0 153 / 100%)"), "Era esperado valores iguais, mas  expected é diferente de " + result18 + " <WebColors.getRGBColor('rgb(255 0 153 / 100%)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255, 0, 153, 0.6)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgb(255, 0, 153, 0.6)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result19 + " <WebColors.getRGBColor('rgb(255, 0, 153, 0.6)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255, 0, 153, 60%)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgb(255, 0, 153, 60%)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result20 + " <WebColors.getRGBColor('rgb(255, 0, 153, 60%)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255 0 153 / 0.6)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgb(255 0 153 / 0.6)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result21 + " <WebColors.getRGBColor('rgb(255 0 153 / 0.6)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgb(255 0 153 / 60%)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgb(255 0 153 / 60%)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result22 + " <WebColors.getRGBColor('rgb(255 0 153 / 60%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255, 0, 153, 1)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgba(255, 0, 153, 1)"), "Era esperado valores iguais, mas  expected é diferente de " + result23 + " <WebColors.getRGBColor('rgba(255, 0, 153, 1)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255, 0, 153, 100%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgba(255, 0, 153, 100%)"), "Era esperado valores iguais, mas  expected é diferente de " + result24 + " <WebColors.getRGBColor('rgba(255, 0, 153, 100%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255 0 153 / 1)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgba(255 0 153 / 1)"), "Era esperado valores iguais, mas  expected é diferente de " + result25 + " <WebColors.getRGBColor('rgba(255 0 153 / 1)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgba(255 0 153 / 100%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgba(255 0 153 / 100%)"), "Era esperado valores iguais, mas  expected é diferente de " + result26 + " <WebColors.getRGBColor('rgba(255 0 153 / 100%)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255, 0, 153, 0.6)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgba(255, 0, 153, 0.6)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result27 + " <WebColors.getRGBColor('rgba(255, 0, 153, 0.6)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255, 0, 153, 60%)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgba(255, 0, 153, 60%)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result28 + " <WebColors.getRGBColor('rgba(255, 0, 153, 60%)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255 0 153 / 0.6)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgba(255 0 153 / 0.6)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result29 + " <WebColors.getRGBColor('rgba(255 0 153 / 0.6)')>")
+chamada antiga: Assertions.assertEquals(expected2, WebColors.getRGBColor("rgba(255 0 153 / 60%)"))
+nova chamada: assertEquals(expected2, WebColors.getRGBColor("rgba(255 0 153 / 60%)"), "Era esperado valores iguais, mas  expected2 é diferente de " + result30 + " <WebColors.getRGBColor('rgba(255 0 153 / 60%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153.0)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153.0)"), "Era esperado valores iguais, mas  expected é diferente de " + result31 + " <WebColors.getRGBColor('rgb(255, 0, 153.0)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153.6, 1)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(255, 0, 153.6, 1)"), "Era esperado valores iguais, mas  expected é diferente de " + result32 + " <WebColors.getRGBColor('rgb(255, 0, 153.6, 1)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("rgb(2.55e2, .1e0, 1.53e2, +.1e3%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("rgb(2.55e2, .1e0, 1.53e2, +.1e3%)"), "Era esperado valores iguais, mas  expected é diferente de " + result33 + " <WebColors.getRGBColor('rgb(2.55e2, .1e0, 1.53e2, +.1e3%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270,60%,70%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270,60%,70%)"), "Era esperado valores iguais, mas  expected é diferente de " + result34 + " <WebColors.getRGBColor('hsl(270,60%,70%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%)"), "Era esperado valores iguais, mas  expected é diferente de " + result35 + " <WebColors.getRGBColor('hsl(270, 60%, 70%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70%)"), "Era esperado valores iguais, mas  expected é diferente de " + result36 + " <WebColors.getRGBColor('hsl(270 60% 70%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270deg, 60%, 70%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270deg, 60%, 70%)"), "Era esperado valores iguais, mas  expected é diferente de " + result37 + " <WebColors.getRGBColor('hsl(270deg, 60%, 70%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(4.71239rad, 60%, 70%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(4.71239rad, 60%, 70%)"), "Era esperado valores iguais, mas  expected é diferente de " + result38 + " <WebColors.getRGBColor('hsl(4.71239rad, 60%, 70%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(.75turn, 60%, 70%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(.75turn, 60%, 70%)"), "Era esperado valores iguais, mas  expected é diferente de " + result39 + " <WebColors.getRGBColor('hsl(.75turn, 60%, 70%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%, .15)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%, .15)"), "Era esperado valores iguais, mas  expected é diferente de " + result40 + " <WebColors.getRGBColor('hsl(270, 60%, 70%, .15)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%, 15%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270, 60%, 70%, 15%)"), "Era esperado valores iguais, mas  expected é diferente de " + result41 + " <WebColors.getRGBColor('hsl(270, 60%, 70%, 15%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70% / .15)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70% / .15)"), "Era esperado valores iguais, mas  expected é diferente de " + result42 + " <WebColors.getRGBColor('hsl(270 60% 70% / .15)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70% / 15%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsl(270 60% 70% / 15%)"), "Era esperado valores iguais, mas  expected é diferente de " + result43 + " <WebColors.getRGBColor('hsl(270 60% 70% / 15%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270, 60%, 70%, .15)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsla(270, 60%, 70%, .15)"), "Era esperado valores iguais, mas  expected é diferente de " + result44 + " <WebColors.getRGBColor('hsla(270, 60%, 70%, .15)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270, 60%, 70%, 15%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsla(270, 60%, 70%, 15%)"), "Era esperado valores iguais, mas  expected é diferente de " + result45 + " <WebColors.getRGBColor('hsla(270, 60%, 70%, 15%)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270 60% 70% / .15)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsla(270 60% 70% / .15)"), "Era esperado valores iguais, mas  expected é diferente de " + result46 + " <WebColors.getRGBColor('hsla(270 60% 70% / .15)')>")
+chamada antiga: Assertions.assertEquals(expected, WebColors.getRGBColor("hsla(270 60% 70% / 15%)"))
+nova chamada: assertEquals(expected, WebColors.getRGBColor("hsla(270 60% 70% / 15%)"), "Era esperado valores iguais, mas  expected é diferente de " + result47 + " <WebColors.getRGBColor('hsla(270 60% 70% / 15%)')>")
+chamada antiga: assertEquals(3, actualHeaderFooter.getChunks().size())
+nova chamada: assertEquals(3, actualHeaderFooter.getChunks().size(), "Era esperado valores iguais, mas  3 é diferente de " + result48 + " <actualHeaderFooter.getChunks().size()>")
+chamada antiga: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString())
+nova chamada: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString(), "Era esperado valores iguais, mas  'before' é diferente de " + result49 + " <actualHeaderFooter.getChunks().get(0).toString()>")
+chamada antiga: assertEquals("0", actualHeaderFooter.getChunks().get(1).toString())
+nova chamada: assertEquals("0", actualHeaderFooter.getChunks().get(1).toString(), "Era esperado valores iguais, mas  '0' é diferente de " + result50 + " <actualHeaderFooter.getChunks().get(1).toString()>")
+chamada antiga: assertEquals("after", actualHeaderFooter.getChunks().get(2).toString())
+nova chamada: assertEquals("after", actualHeaderFooter.getChunks().get(2).toString(), "Era esperado valores iguais, mas  'after' é diferente de " + result51 + " <actualHeaderFooter.getChunks().get(2).toString()>")
+chamada antiga: assertEquals(2, actualHeaderFooter.getChunks().size())
+nova chamada: assertEquals(2, actualHeaderFooter.getChunks().size(), "Era esperado valores iguais, mas  2 é diferente de " + result52 + " <actualHeaderFooter.getChunks().size()>")
+chamada antiga: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString())
+nova chamada: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString(), "Era esperado valores iguais, mas  'before' é diferente de " + result53 + " <actualHeaderFooter.getChunks().get(0).toString()>")
+chamada antiga: assertEquals("0", actualHeaderFooter.getChunks().get(1).toString())
+nova chamada: assertEquals("0", actualHeaderFooter.getChunks().get(1).toString(), "Era esperado valores iguais, mas  '0' é diferente de " + result54 + " <actualHeaderFooter.getChunks().get(1).toString()>")
+chamada antiga: assertEquals(1, actualHeaderFooter.getChunks().size())
+nova chamada: assertEquals(1, actualHeaderFooter.getChunks().size(), "Era esperado valores iguais, mas  1 é diferente de " + result55 + " <actualHeaderFooter.getChunks().size()>")
+chamada antiga: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString())
+nova chamada: assertEquals("before", actualHeaderFooter.getChunks().get(0).toString(), "Era esperado valores iguais, mas  'before' é diferente de " + result56 + " <actualHeaderFooter.getChunks().get(0).toString()>")
+chamada antiga: assertEquals(6, actualHeaderFooter.getChunks().size())
+nova chamada: assertEquals(6, actualHeaderFooter.getChunks().size(), "Era esperado valores iguais, mas  6 é diferente de " + result57 + " <actualHeaderFooter.getChunks().size()>")
+chamada antiga: assertNotEquals("\n", actualHeaderFooter.getChunks().get(5).toString())
+nova chamada: assertNotEquals("\n", actualHeaderFooter.getChunks().get(5).toString(), "Era esperado valores diferentes, mas  '\n' é igual a " + result58 + " <actualHeaderFooter.getChunks().get(5).toString()>")
+chamada antiga: assertEquals("1 1.1 1.2 ", actualHeaderFooter.getChunks().get(0).toString())
+nova chamada: assertEquals("1 1.1 1.2 ", actualHeaderFooter.getChunks().get(0).toString(), "Era esperado valores iguais, mas  '1 1.1 1.2 ' é diferente de " + result59 + " <actualHeaderFooter.getChunks().get(0).toString()>")
+chamada antiga: assertEquals("1.4 ", actualHeaderFooter.getChunks().get(5).toString())
+nova chamada: assertEquals("1.4 ", actualHeaderFooter.getChunks().get(5).toString(), "Era esperado valores iguais, mas  '1.4 ' é diferente de " + result60 + " <actualHeaderFooter.getChunks().get(5).toString()>")
+
+chamada antiga: softly.assertAll()
+nova chamada: assertAll("Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou")
+chamada antiga: Assertions.assertEquals(52.0, footer.getTop())
+nova chamada: assertEquals(52.0, footer.getTop(), "Era esperado valores iguais, mas  52.0 é diferente de " + result61 + " <footer.getTop()>")
+chamada antiga: Assertions.assertEquals(92.0, footerTop)
+nova chamada: assertEquals(92.0, footerTop, "Era esperado valores iguais, mas  92.0 é diferente de " + " footerTop")
+chamada antiga: Assertions.assertEquals(60.0, imageBottom)
+nova chamada: assertEquals(60.0, imageBottom, "Era esperado valores iguais, mas  60.0 é diferente de " + " imageBottom")
+chamada antiga: Assertions.assertEquals(36.0, imageIndentLeft)
+nova chamada: assertEquals(36.0, imageIndentLeft, "Era esperado valores iguais, mas  36.0 é diferente de " + " imageIndentLeft")
+chamada antiga: Assertions.assertEquals(76.0, footerTop)
+nova chamada: assertEquals(76.0, footerTop, "Era esperado valores iguais, mas  76.0 é diferente de " + " footerTop")
+chamada antiga: Assertions.assertEquals(44.0, imageBottom)
+nova chamada: assertEquals(44.0, imageBottom, "Era esperado valores iguais, mas  44.0 é diferente de " + " imageBottom")
+chamada antiga: Assertions.assertEquals(527.0, imageIndentRight)
+nova chamada: assertEquals(527.0, imageIndentRight, "Era esperado valores iguais, mas  527.0 é diferente de " + " imageIndentRight")
+chamada antiga: Assertions.assertEquals(76.0, footerTop)
+nova chamada: assertEquals(76.0, footerTop, "Era esperado valores iguais, mas  76.0 é diferente de " + " footerTop")
+chamada antiga: Assertions.assertEquals(44.0, imageBottom)
+nova chamada: assertEquals(44.0, imageBottom, "Era esperado valores iguais, mas  44.0 é diferente de " + " imageBottom")
+chamada antiga: Assertions.assertEquals(281.5, imageIndentLeft)
+nova chamada: assertEquals(281.5, imageIndentLeft, "Era esperado valores iguais, mas  281.5 é diferente de " + " imageIndentLeft")
+chamada antiga: Assertions.assertEquals(76.0, footerTop)
+nova chamada: assertEquals(76.0, footerTop, "Era esperado valores iguais, mas  76.0 é diferente de " + " footerTop")
+chamada antiga: Assertions.assertEquals(44.0, imageBottom)
+nova chamada: assertEquals(44.0, imageBottom, "Era esperado valores iguais, mas  44.0 é diferente de " + " imageBottom")
+chamada antiga: Assertions.assertEquals(281.5, imageIndentLeft)
+nova chamada: assertEquals(281.5, imageIndentLeft, "Era esperado valores iguais, mas  281.5 é diferente de " + " imageIndentLeft")
+chamada antiga: assertEquals("lvi", getString(56))
+nova chamada: assertEquals("lvi", getString(56), "Era esperado valores iguais, mas  'lvi' é diferente de " + result62 + " <getString(56)>")
+chamada antiga: assertEquals("mmcmxcix", getString(2999))
+nova chamada: assertEquals("mmcmxcix", getString(2999), "Era esperado valores iguais, mas  'mmcmxcix' é diferente de " + result63 + " <getString(2999)>")
+chamada antiga: assertEquals("mmm", getString(3000))
+nova chamada: assertEquals("mmm", getString(3000), "Era esperado valores iguais, mas  'mmm' é diferente de " + result64 + " <getString(3000)>")
+chamada antiga: assertAll(() -> assertThat(getString(input), is(expected)), () -> assertThat(getString(input, false), is(expected.toUpperCase())))
+nova chamada: assertAll("Era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou", () -> assertThat(getString(input), is(expected)), () -> assertThat(getString(input, false), is(expected.toUpperCase())))
+chamada antiga: assertNotNull(image.getUrl())
+nova chamada: assertNotNull(image.getUrl(), "Era esperado não nulo, mas " + result65 + " <image.getUrl()> é nulo")
+chamada antiga: assertNotNull(image.getUrl())
+nova chamada: assertNotNull(image.getUrl(), "Era esperado não nulo, mas " + result66 + " <image.getUrl()> é nulo")
+chamada antiga: Assertions.assertEquals(1, names.size())
+nova chamada: assertEquals(1, names.size(), "Era esperado valores iguais, mas  1 é diferente de " + result67 + " <names.size()>")
+chamada antiga: assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix())
+nova chamada: assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix(), "Era esperado valores diferentes, mas " + result68 + " <font.createSubsetPrefix()> é igual a " + result69 + " <font.createSubsetPrefix()>")
+chamada antiga: assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix())
+nova chamada: assertNotEquals(font.createSubsetPrefix(), font.createSubsetPrefix(), "Era esperado valores diferentes, mas " + result70 + " <font.createSubsetPrefix()> é igual a " + result71 + " <font.createSubsetPrefix()>")
+chamada antiga: assertEquals(subsetPrefixOne, subsetPrefixTwo)
+nova chamada: assertEquals(subsetPrefixOne, subsetPrefixTwo, "Era esperado valores iguais, mas  subsetPrefixOne é diferente de " + " subsetPrefixTwo")
+chamada antiga: Assertions.assertTrue(comparePdf())
+nova chamada: assertTrue(comparePdf(), "Era esperado verdadeiro, mas " + result72 + " <comparePdf()> é falso")
+chamada antiga: assertTimeout(ofSeconds(10), () -> {
+    Document document = new Document(PageSize.A4);
+    PdfWriter writer = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get("test.pdf")));
+    Table table = new Table(2);
+    Cell cell1 = new Cell("any text");
+    cell1.setVerticalAlignment(VerticalAlignment.BOTTOM);
+    table.addCell(cell1);
+    StringBuilder largeStr = new StringBuilder();
+    for (int i = 0; i < 45; i++) {
+        largeStr.append(String.format("this is to test-> row %d\n", i));
+    }
+    Cell cell2 = new Cell(new Phrase(largeStr.toString()));
+    table.addCell(cell2);
+    document.open();
+    document.add(table);
+    document.close();
+})
+nova chamada: assertTimeout(ofSeconds(10), () -> {
+    Document document = new Document(PageSize.A4);
+    PdfWriter writer = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get("test.pdf")));
+    Table table = new Table(2);
+    Cell cell1 = new Cell("any text");
+    cell1.setVerticalAlignment(VerticalAlignment.BOTTOM);
+    table.addCell(cell1);
+    StringBuilder largeStr = new StringBuilder();
+    for (int i = 0; i < 45; i++) {
+        largeStr.append(String.format("this is to test-> row %d\n", i));
+    }
+    Cell cell2 = new Cell(new Phrase(largeStr.toString()));
+    table.addCell(cell2);
+    document.open();
+    document.add(table);
+    document.close();
+}, "Era esperado que o tempo de execução " + result73 + " <ofSeconds(10)> não fosse ultrapassado, mas foi")
+chamada antiga: assertTimeout(ofSeconds(10), () -> {
+    Document document = new Document(PageSize.A4);
+    PdfWriter writer = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get("test.pdf")));
+    Table table = new Table(2);
+    Cell cell1 = new Cell("any text\nany text\nany text");
+    cell1.setVerticalAlignment(VerticalAlignment.CENTER);
+    table.addCell(cell1);
+    StringBuilder largeStr = new StringBuilder();
+    for (int i = 0; i < 86; i++) {
+        largeStr.append(String.format("this is to test-> row %d\n", i));
+    }
+    Cell cell2 = new Cell(new Phrase(largeStr.toString()));
+    table.addCell(cell2);
+    document.open();
+    document.add(table);
+    document.close();
+})
+nova chamada: assertTimeout(ofSeconds(10), () -> {
+    Document document = new Document(PageSize.A4);
+    PdfWriter writer = PdfWriter.getInstance(document, Files.newOutputStream(Paths.get("test.pdf")));
+    Table table = new Table(2);
+    Cell cell1 = new Cell("any text\nany text\nany text");
+    cell1.setVerticalAlignment(VerticalAlignment.CENTER);
+    table.addCell(cell1);
+    StringBuilder largeStr = new StringBuilder();
+    for (int i = 0; i < 86; i++) {
+        largeStr.append(String.format("this is to test-> row %d\n", i));
+    }
+    Cell cell2 = new Cell(new Phrase(largeStr.toString()));
+    table.addCell(cell2);
+    document.open();
+    document.add(table);
+    document.close();
+}, "Era esperado que o tempo de execução " + result74 + " <ofSeconds(10)> não fosse ultrapassado, mas foi")
+chamada antiga: Assertions.assertEquals(result.length, 0)
+nova chamada: assertEquals(result.length, 0, "Era esperado valores iguais, mas  result.length é diferente de " + " 0")
+chamada antiga: Assertions.assertEquals(expected, actual)
+nova chamada: assertEquals(expected, actual, "Era esperado valores iguais, mas  expected é diferente de " + " actual")
+chamada antiga: Assertions.assertEquals(Document.getVersion(), r.getInfo().get("Producer"))
+nova chamada: assertEquals(Document.getVersion(), r.getInfo().get("Producer"), "Era esperado valores iguais, mas " + result75 + " <Document.getVersion()> é diferente de " + result76 + " <r.getInfo().get('Producer')>")
+chamada antiga: Assertions.assertEquals(AUTHOR_NAME, r.getInfo().get("Author"))
+nova chamada: assertEquals(AUTHOR_NAME, r.getInfo().get("Author"), "Era esperado valores iguais, mas  AUTHOR_NAME é diferente de " + result77 + " <r.getInfo().get('Author')>")
+chamada antiga: Assertions.assertEquals(TITLE, r.getInfo().get("Title"))
+nova chamada: assertEquals(TITLE, r.getInfo().get("Title"), "Era esperado valores iguais, mas  TITLE é diferente de " + result78 + " <r.getInfo().get('Title')>")
+chamada antiga: Assertions.assertEquals(Document.getVersion(), r.getInfo().get("Producer"))
+nova chamada: assertEquals(Document.getVersion(), r.getInfo().get("Producer"), "Era esperado valores iguais, mas " + result79 + " <Document.getVersion()> é diferente de " + result80 + " <r.getInfo().get('Producer')>")
+chamada antiga: Assertions.assertEquals("Author1", r.getInfo().get("Author"))
+nova chamada: assertEquals("Author1", r.getInfo().get("Author"), "Era esperado valores iguais, mas  'Author1' é diferente de " + result81 + " <r.getInfo().get('Author')>")
+chamada antiga: Assertions.assertEquals("Title2", r.getInfo().get("Title"))
+nova chamada: assertEquals("Title2", r.getInfo().get("Title"), "Era esperado valores iguais, mas  'Title2' é diferente de " + result82 + " <r.getInfo().get('Title')>")
+chamada antiga: Assertions.assertEquals("Subject3", r.getInfo().get("Subject"))
+nova chamada: assertEquals("Subject3", r.getInfo().get("Subject"), "Era esperado valores iguais, mas  'Subject3' é diferente de " + result83 + " <r.getInfo().get('Subject')>")
+chamada antiga: Assertions.assertEquals(pdfTextExtractor.getTextFromPage(1), "data\ttable")
+nova chamada: assertEquals(pdfTextExtractor.getTextFromPage(1), "data\ttable", "Era esperado valores iguais, mas " + result84 + " <pdfTextExtractor.getTextFromPage(1)> é diferente de " + " 'data\ttable'")
+chamada antiga: Assertions.assertEquals(pdfTextExtractor.getTextFromPage(1), "ΧαίρετεGreek -")
+nova chamada: assertEquals(pdfTextExtractor.getTextFromPage(1), "ΧαίρετεGreek -", "Era esperado valores iguais, mas " + result85 + " <pdfTextExtractor.getTextFromPage(1)> é diferente de " + " 'ΧαίρετεGreek -'")
+chamada antiga: assertEquals(1, tree.size())
+nova chamada: assertEquals(1, tree.size(), "Era esperado valores iguais, mas  1 é diferente de " + result86 + " <tree.size()>")
+chamada antiga: assertEquals(pdfBoolean, tree.get(keyName))
+nova chamada: assertEquals(pdfBoolean, tree.get(keyName), "Era esperado valores iguais, mas  pdfBoolean é diferente de " + result87 + " <tree.get(keyName)>")
+chamada antiga: Assertions.assertNotNull(result)
+nova chamada: assertNotNull(result, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: Assertions.assertTrue(sData.contains("(LibreOffice 6.0; modified using OpenPDF"))
+nova chamada: assertTrue(sData.contains("(LibreOffice 6.0; modified using OpenPDF"), "Era esperado verdadeiro, mas " + result88 + " <sData.contains('(LibreOffice 6.0; modified using OpenPDF')> é falso")
+chamada antiga: assertNotNull(result)
+nova chamada: assertNotNull(result, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: assertTrue(result.contains("2. This is chapter 2"))
+nova chamada: assertTrue(result.contains("2. This is chapter 2"), "Era esperado verdadeiro, mas " + result89 + " <result.contains('2. This is chapter 2')> é falso")
+chamada antiga: assertTrue(result.contains("watermark-concatenate"))
+nova chamada: assertTrue(result.contains("watermark-concatenate"), "Era esperado verdadeiro, mas " + result90 + " <result.contains('watermark-concatenate')> é falso")
+chamada antiga: assertArrayEquals(expectedOutput, str.toCharArray())
+nova chamada: assertArrayEquals(expectedOutput, str.toCharArray(), "Era esperado arrays iguais, mas  expectedOutput é diferente de " + result91 + " <str.toCharArray()>")
+chamada antiga: assertArrayEquals(expectedOutput, str.toCharArray())
+nova chamada: assertArrayEquals(expectedOutput, str.toCharArray(), "Era esperado arrays iguais, mas  expectedOutput é diferente de " + result92 + " <str.toCharArray()>")
+chamada antiga: assertArrayEquals(expectedOutput, str.toCharArray())
+nova chamada: assertArrayEquals(expectedOutput, str.toCharArray(), "Era esperado arrays iguais, mas  expectedOutput é diferente de " + result93 + " <str.toCharArray()>")
+chamada antiga: Assertions.assertEquals("✧❒❅❅❋", pdfTextExtractor.getTextFromPage(1))
+nova chamada: assertEquals("✧❒❅❅❋", pdfTextExtractor.getTextFromPage(1), "Era esperado valores iguais, mas  '✧❒❅❅❋' é diferente de " + result94 + " <pdfTextExtractor.getTextFromPage(1)>")
+chamada antiga: Assertions.assertEquals("ετε", pdfTextExtractor.getTextFromPage(1))
+nova chamada: assertEquals("ετε", pdfTextExtractor.getTextFromPage(1), "Era esperado valores iguais, mas  'ετε' é diferente de " + result95 + " <pdfTextExtractor.getTextFromPage(1)>")
+chamada antiga: assertEquals(font.getStyle(), style)
+nova chamada: assertEquals(font.getStyle(), style, "Era esperado valores iguais, mas " + result96 + " <font.getStyle()> é diferente de " + " style")
+chamada antiga: assertTrue(FileUtils.contentEquals(original, current))
+nova chamada: assertTrue(FileUtils.contentEquals(original, current), "Era esperado verdadeiro, mas " + result97 + " <FileUtils.contentEquals(original, current)> é falso")
+chamada antiga: assertNotNull(list)
+nova chamada: assertNotNull(list, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: assertEquals(3, list.size())
+nova chamada: assertEquals(3, list.size(), "Era esperado valores iguais, mas  3 é diferente de " + result98 + " <list.size()>")
+chamada antiga: assertNotNull(list)
+nova chamada: assertNotNull(list, "Era esperado não nulo, mas  o valor obtido foi nulo")
+chamada antiga: assertEquals(3, list.size())
+nova chamada: assertEquals(3, list.size(), "Era esperado valores iguais, mas  3 é diferente de " + result99 + " <list.size()>")
+chamada antiga: assertEquals("ABC", list.get(0).get("Title"))
+nova chamada: assertEquals("ABC", list.get(0).get("Title"), "Era esperado valores iguais, mas  'ABC' é diferente de " + result100 + " <list.get(0).get('Title')>")
+chamada antiga: assertEquals("", list.get(1).get("Title"))
+nova chamada: assertEquals("", list.get(1).get("Title"), "Era esperado valores iguais, mas  '' é diferente de " + result101 + " <list.get(1).get('Title')>")
+chamada antiga: assertEquals("", list.get(2).get("Title"))
+nova chamada: assertEquals("", list.get(2).get("Title"), "Era esperado valores iguais, mas  '' é diferente de " + result102 + " <list.get(2).get('Title')>")
+chamada antiga: Assertions.assertEquals(text, "Hier fetter Text")
+nova chamada: assertEquals(text, "Hier fetter Text", "Era esperado valores iguais, mas  text é diferente de " + " 'Hier fetter Text'")
+Total asserts: 363
+Asserts sem descrição: 244
+Asserts com descrição: 119
+Assertion Roulette: 180
+
+Após do refactor: 
+Total asserts: 363
+Asserts sem descrição: 202
+Asserts com descrição: 161
+Assertion Roulette: 148

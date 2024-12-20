@@ -1,0 +1,10 @@
+Aquela é uma lista de mensagens de descrição de erro para os asserts. 
+
+1. assertEquals(5, calculator.add(2, 3))
+eram esperados valores iguais, mas 5 não é igual a calculator.add(2, 3)
+
+2. assertEquals(7, calculator.add(4, 2))
+eram esperados valores iguais, mas 7 não é igual a calculator.add(4, 2)
+
+3. assertEquals(10, calculator.add(5, 5))
+eram esperados valores iguais, mas 10 não é igual a calculator.add(5, 5)

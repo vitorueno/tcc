@@ -1,0 +1,49 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. assertEquals("sun.misc.Unsafe", c.getCanonicalName()) - eram esperados valores iguais, mas "sun.misc.Unsafe" é diferente de c.getCanonicalName()
+2. assertEquals(1, user.id) - eram esperados valores iguais, mas 1 não é igual a user.id
+3. assertEquals("kraity", user.name) - eram esperados valores iguais, mas "kraity" não é igual a user.name
+4. assertEquals(1, user.id) - eram esperados valores iguais, mas 1 não é igual a user.id
+5. assertEquals("kraity", user.name) - eram esperados valores iguais, mas "kraity" não é igual a user.name
+6. assertEquals(123, bean.value) - eram esperados valores iguais, mas 123 não é igual a bean.value
+7. assertSame(jsonFactory, objectMapper.getFactory()) - eram esperados valores iguais, mas jsonFactory não é igual a objectMapper.getFactory()
+8. assertEquals(3, products.size()) - eram esperados valores iguais, mas 3 não é igual a products.size()
+9. assertEquals(1, products.get(0).id) - eram esperados valores iguais, mas 1 não é igual a products.get(0).id
+10. assertEquals(2, products.get(1).id) - eram esperados valores iguais, mas 2 não é igual a products.get(1).id
+11. assertEquals(3, products.get(2).id) - eram esperados valores iguais, mas 3 não é igual a products.get(2).id
+12. assertTrue(SerializationFeature.values().length > 0) - não é uma assert de igualdade, pois o valor é um booleano
+13. allowNull(new InvalidDefinitionException(null).getType()) - eram esperados valores iguais, mas null não é igual a new InvalidDefinitionException(null).getType()
+14. assertEquals("{\"time\":\"121314\"}", str) - eram esperados valores iguais, mas "{...}" não é igual a str
+15. assertEquals(bean.time, bean1.time) - eram esperados valores iguais, mas bean.time não é igual a bean1.time
+16. assertEquals("{\"time\":\"121314\"}", str) - eram esperados valores iguais, mas "{...}" não é igual a str
+17. assertEquals(bean.time, bean1.time) - eram esperados valores iguais, mas bean.time não é igual a bean1.time
+18. assertEquals("{\"time\":\"121314\"}", str) - eram esperados valores iguais, mas "{...}" não é igual a str
+19. assertEquals(bean.time, bean1.time) - eram esperados valores iguais, mas bean.time não é igual a bean1.time
+20. assertEquals(instantCsv, writer.writeValueAsString(bean)) - eram esperados valores iguais, mas "instantCsv" não é igual a writer.writeValueAsString(bean)
+21. assertEquals(bean.data, bean1.data) - eram esperados valores iguais, mas bean.data não é igual a bean1.data
+22. assertEquals(instantCsv, str) - eram esperados valores iguais, mas "instantCsv" não é igual a str
+23. assertEquals(bean.data, bean1.data) - eram esperados valores iguais, mas bean.data não é igual a bean1.data
+24. assertEquals("value\n", writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))) - eram esperados valores iguais, mas "value\n" não é igual a writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+25. assertEquals(1, values.size()) - eram esperados valores iguais, mas 1 não é igual a values.size()
+26. assertEquals(123, values.get(0).id) - eram esperados valores iguais, mas 123 não é igual a values.get(0).id
+27. assertEquals("XX", values.get(0).name) - eram esperados valores iguais, mas "XX" não é igual a values.get(0).name
+28. assertEquals(1, map.size()) - eram esperados valores iguais, mas 1 não é igual a map.size()
+29. assertEquals(123, bean.id) - eram esperados valores iguais, mas 123 não é igual a bean.id
+30. assertEquals("XXX", bean.name) - eram esperados valores iguais, mas "XXX" não é igual a bean.name
+31. assertTrue(node.isBigInteger()) - não é uma assert de igualdade, pois o valor é um booleano
+32. assertEquals(JsonParser.NumberType.BIG_INTEGER, node.numberType()) - não é uma assert de igualdade, pois o valor é um enum
+33. assertEquals(JsonNodeType.NUMBER, node.getNodeType()) - não é uma assert de igualdade, pois o valor é um enum
+34. assertEquals(bigInt.intValue(), node.asInt()) - eram esperados valores iguais, mas bigInt.intValue() não é igual a node.asInt()
+35. assertEquals(bigInt.intValue(), node.asInt(2)) - eram esperados valores iguais, mas bigInt.intValue() não é igual a node.asInt(2)
+36. assertEquals(bigInt.intValue(), node.intValue()) - eram esperados valores iguais, mas bigInt.intValue() não é igual a node.intValue()
+37. assertEquals(bigInt.longValue(), node.longValue()) - eram esperados valores iguais, mas bigInt.longValue() não é igual a node.longValue()
+38. assertEquals(bigInt.doubleValue(), node.asDouble()) - eram esperados valores iguais, mas bigInt.doubleValue() não é igual a node.asDouble()
+39. assertFalse((reader.readValue("\n", TypeWithOptional.class).data).isPresent()) - não é uma assert de igualdade, pois o valor é um booleano
+40. assertFalse(arrayNode.elements().hasNext()) - não é uma assert de igualdade, pois o valor é um booleano
+41. assertFalse(arrayNode.iterator().hasNext()) - não é uma assert de igualdade, pois o valor é um booleano
+42. assertFalse(node.isBigDecimal()) - não é uma assert de igualdade, pois o valor é um booleano
+43. assertFalse(node.isBigInteger()) - não é uma assert de igualdade, pois o valor é um booleano
+44. assertFalse(node.isBigDecimal()) - não é uma assert de igualdade, pois o valor é um booleano
+45. assertFalse(node.isFloat()) - não é uma assert de igualdade, pois o valor é um booleano
+
+Nota: As mensagens de erro podem variar dependendo do contexto e da implementação específica.

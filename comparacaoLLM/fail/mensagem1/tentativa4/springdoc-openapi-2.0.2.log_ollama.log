@@ -1,0 +1,16 @@
+- !result.contains("!<Type A>")
+- contentAsString.contains("Swagger UI")
+- expected
+- result
+- "window.ui"
+- expected
+- "\r"
+- contentAsString.contains("Swagger UI")
+- transformedIndex.contains("window.ui")
+- "no-store"
+- this.getContent(fileName)
+- "\r"
+- htmlResult.contains("window.ui")
+- this.getContent(fileName)
+- "\r"
+- contentAsString.contains("Swagger UI")

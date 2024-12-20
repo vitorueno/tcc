@@ -1,0 +1,83 @@
+A streamId esperada era 2, mas foi obtida 1
+A streamId esperada era 4, mas foi obtida 1
+A streamId esperada era 6, mas foi obtida 1
+O resultado esperado era falso
+O resultado esperado era falso
+O resultado esperado era verdadeiro
+O resultado esperado era falso
+O resultado esperado era verdadeiro
+O resultado esperado era falso
+O resultado esperado era falso
+O resultado esperado era verdadeiro
+O resultado esperado era falso
+O resultado esperado era falso
+O resultado esperado era verdadeiro
+O resultado esperado era falso
+O resultado esperado era falso
+O resultado esperado era verdadeiro
+O resultado esperado era falso
+O resultado esperado era verdadeiro
+A streamId esperada era 2147483646, mas foi obtida 1
+A streamId esperada era 2, mas foi obtida 1
+A streamId esperada era 4, mas foi obtida 1
+A streamId esperada era 2147483647, mas foi obtida 1
+A streamId esperada era 1, mas foi obtida 1
+A streamId esperada era 3, mas foi obtida 1
+A streamId esperada era 1, mas foi obtida 1
+A streamId esperada era 3, mas foi obtida 1
+A streamId esperada era 7, mas foi obtida 1
+A streamId esperada era 11, mas foi obtida 1
+O cliente não irá honrar o lease
+O intervalo de keep alive esperado era 30000, mas foi obtido 1
+A vida útil máxima de keep alive esperada era 30000, mas foi obtida 1
+O tipo de metadados esperado era 0, mas foi obtido 1
+O tipo de dados esperado era 0, mas foi obtido 1
+Os metadados estão ausentes
+O metadado não é nulo
+Os metadados são diferentes
+Os dados são diferentes
+Os metadados não são nulos
+O comprimento dos metadados é 0
+Os dados são diferentes
+Os metadados estão ausentes
+O metadado não é nulo
+O comprimento dos metadados é 0
+Os dados são diferentes
+O hexdump esperado era 00000b000000012c000000020164, mas foi obtido 1
+O ttl esperado era 5, mas foi obtido 1
+O número de requisições esperado era 5, mas foi obtido 1
+Os metadados esperados são diferentes
+O ttl esperado era 5, mas foi obtido 1
+O número de requisições esperado era 5, mas foi obtido 1
+O hexdump esperado era 00000a00000001200000000005, mas foi obtido 1
+Os flags esperados são diferentes
+O tipo de frame esperado é diferente
+Os flags esperados são diferentes
+O tipo de frame esperado é diferente
+Os metadados estão presentes
+O metadado não é nulo
+O tipo estendido esperado era 1, mas foi obtido 1
+Os metadados esperados são diferentes
+Os dados esperados são diferentes
+O tipo estendido esperado era 1, mas foi obtido 1
+O metadado não é nulo
+Os dados são diferentes
+Os metadados estão presentes
+O tipo estendido esperado era 1, mas foi obtido 1
+Os metadados esperados são diferentes
+Os dados esperados são diferentes
+Os dados esperados são diferentes
+O metadado é nulo
+Os dados são diferentes
+Os metadados esperados são diferentes
+Os dados esperados são diferentes
+Os dados esperados são diferentes
+O metadado é nulo
+Os dados esperados são diferentes
+Os metadados são diferentes
+O hexdump esperado é diferente
+O hexdump esperado é diferente
+O hexdump esperado é diferente
+Os metadados estão presentes
+Os dados esperados são diferentes
+Os dados esperados são diferentes

@@ -1,0 +1,75 @@
+eram esperados valores iguais, mas 2 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 6 é diferente de s.nextStreamId(map)
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(1) é verdadeira
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(3) é verdadeira
+o valor esperado era verdadeiro, mas a condição s.isBeforeOrCurrent(1) é falsa
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(3) é verdadeira
+o valor esperado era verdadeiro, mas a condição s.isBeforeOrCurrent(3) é falsa
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(-1) é verdadeira
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(0) é verdadeira
+o valor esperado era verdadeiro, mas a condição s.isBeforeOrCurrent(2) é falsa
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(2) é verdadeira
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(4) é verdadeira
+o valor esperado era verdadeiro, mas a condição s.isBeforeOrCurrent(2) é falsa
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(4) é verdadeira
+o valor esperado era verdadeiro, mas a condição s.isBeforeOrCurrent(4) é falsa
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(-2) é verdadeira
+o valor esperado era falso, mas a condição s.isBeforeOrCurrent(0) é verdadeira
+o valor esperado era verdadeiro, mas a condição s.isBeforeOrCurrent(1) é falsa
+eram esperados valores iguais, mas 2147483646 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 2 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 2147483647 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 1 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 3 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 1 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 3 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 7 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 11 é diferente de s.nextStreamId(map)
+a condição setupPayload.willClientHonorLease() era esperada verdadeira, mas retornou falsa
+eram esperados valores iguais, mas KEEP_ALIVE_INTERVAL é diferente de setupPayload.keepAliveInterval()
+eram esperados valores iguais, mas KEEP_ALIVE_MAX_LIFETIME é diferente de setupPayload.keepAliveMaxLifetime()
+eram esperados valores iguais, mas METADATA_TYPE é diferente de SetupFrameCodec.metadataMimeType(frame)
+eram esperados valores iguais, mas DATA_TYPE é diferente de SetupFrameCodec.dataMimeType(frame)
+a condição setupPayload.hasMetadata() era esperada verdadeira, mas retornou falsa
+o valor esperado não era nulo, mas setupPayload.metadata() é nulo
+eram esperados valores iguais, mas payload.metadata() é diferente de setupPayload.metadata()
+eram esperados valores iguais, mas payload.data() é diferente de setupPayload.data()
+o valor esperado não era nulo, mas setupPayload.metadata() é nulo
+o tamanho esperado era 0, mas setupPayload.metadata().readableBytes() é diferente de 0
+eram esperados valores iguais, mas payload.data() é diferente de setupPayload.data()
+a condição setupPayload.hasMetadata() era esperada verdadeira, mas retornou falsa
+o valor esperado não era nulo, mas setupPayload.metadata() é nulo
+o tamanho esperado era 0, mas setupPayload.metadata().readableBytes() é diferente de 0
+eram esperados valores iguais, mas 00000b000000012c000000020164 é diferente de ByteBufUtil.hexDump(frame)
+eram esperados valores iguais, mas ttl é diferente de LeaseFrameCodec.ttl(lease)
+eram esperados valores iguais, mas numRequests é diferente de LeaseFrameCodec.numRequests(lease)
+eram esperados valores iguais, mas metadata é diferente de LeaseFrameCodec.metadata(lease)
+eram esperados valores iguais, mas ttl é diferente de LeaseFrameCodec.ttl(lease)
+eram esperados valores iguais, mas numRequests é diferente de LeaseFrameCodec.numRequests(lease)
+eram esperados valores iguais, mas 00000a00000001200000000005 é diferente de ByteBufUtil.hexDump(frame)
+eram esperados valores iguais, mas flags é diferente de FrameHeaderCodec.flags(header)
+eram esperados valores iguais, mas frameType é diferente de FrameHeaderCodec.frameType(header)
+eram esperados valores iguais, mas flags é diferente de FrameHeaderCodec.flags(header)
+eram esperados valores iguais, mas frameType é diferente de FrameHeaderCodec.frameType(header)
+a condição FrameHeaderCodec.hasMetadata(lease) era esperada verdadeira, mas retornou falsa
+o valor esperado não era nulo, mas LeaseFrameCodec.metadata(lease) é nulo
+a condição FrameHeaderCodec.hasMetadata(extension) era esperada verdadeira, mas retornou falsa
+eram esperados valores iguais, mas extendedType é diferente de ExtensionFrameCodec.extendedType(extension)
+eram esperados valores iguais, mas metadata é diferente de ExtensionFrameCodec.metadata(extension)
+eram esperados valores iguais, mas data é diferente de ExtensionFrameCodec.data(extension)
+eram esperados valores iguais, mas extendedType é diferente de ExtensionFrameCodec.extendedType(extension)
+o valor esperado não era nulo, mas ExtensionFrameCodec.metadata(extension) é nulo
+eram esperados valores iguais, mas data é diferente de ExtensionFrameCodec.data(extension)
+a condição FrameHeaderCodec.hasMetadata(extension) era esperada verdadeira, mas retornou falsa
+eram esperados valores iguais, mas extendedType é diferente de ExtensionFrameCodec.extendedType(extension)
+eram esperados valores iguais, mas metadata é diferente de ExtensionFrameCodec.metadata(extension)
+eram esperados valores iguais, mas 0 é diferente de ExtensionFrameCodec.data(extension).readableBytes()
+eram esperados valores iguais, mas d é diferente de data
+eram esperados valores iguais, mas md é diferente de metadata
+eram esperados valores iguais, mas d é diferente de data
+o valor esperado não era nulo, mas metadata é nulo
+o tamanho esperado era 0, mas data.readableBytes() é diferente de 0
+eram esperados valores iguais, mas md é diferente de metadata
+o valor esperado não era nulo, mas data é nulo

@@ -1,0 +1,100 @@
+O valor esperado era 1, mas o valor atual de jspFragment.count é diferente.
+O valor esperado era 1, mas o valor atual de jspFragment.count é diferente.
+O valor esperado era 2, mas o valor atual de jspFragment.count é diferente.
+O valor esperado era 3, mas o valor atual de jspFragment.count é diferente.
+O valor esperado era 2, mas o valor atual de jspFragment.count é diferente.
+O valor esperado era 6, mas o valor atual de jspFragment.count é diferente.
+Era esperado nulo, mas jspContext.getAttribute("s") retornou um valor diferente de nulo.
+Era esperado um valor diferente de nulo, mas s é nulo.
+O valor esperado de count é diferente do valor retornado por s.getCount().
+O valor esperado de count - 1 é diferente do valor retornado por s.getValue().
+O valor esperado de count - 1 é diferente do valor retornado por s.getIndex().
+O valor esperado de count % s.getModulusValue() é diferente do valor retornado por s.getModulus().
+O valor esperado era "text/html", mas o valor retornado por cthr.getMimeType() é diferente.
+O valor esperado era "utf-8", mas o valor retornado por cthr.getEncoding() é diferente.
+O valor esperado era "text/html", mas o valor retornado por cthr.getMimeType() é diferente.
+Era esperado nulo, mas cthr.getEncoding() retornou um valor diferente de nulo.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado false, mas gzipFilter.isGzipEligible(servletRequest) retornou true.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado false, mas gzipFilter.isGzipEligible(servletRequest) retornou true.
+Era esperado false, mas gzipFilter.isGzipEligible(servletRequest) retornou true.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado false, mas gzipFilter.isGzipEligible(servletRequest) retornou true.
+Era esperado true, mas gzipFilter.isGzipEligible(servletRequest) retornou false.
+Era esperado false, mas gzipFilter.isGzipEligible(servletRequest) retornou true.
+O valor esperado era "OneTwo", mas o valor atual de string é diferente.
+O valor esperado era "OneTwo123", mas o valor atual de string é diferente.
+O valor esperado era 5, mas o valor retornado por wrappedResponse.getBufferSize() é diferente.
+O valor esperado era "first", mas o valor de new String(bytes) é diferente.
+O valor esperado era "first173WOW", mas o valor de new String(bytes) é diferente.
+O valor esperado era "first173WOWYYZ", mas o valor de new String(bytes) é diferente.
+O valor esperado de result é diferente do valor retornado por form1(form).
+O valor esperado era "", mas o valor retornado por form("") é diferente.
+O valor esperado era "<form></form>", mas o valor retornado por form("<form></form>") é diferente.
+O valor esperado era "<input type=\"text\"/>", mas o valor retornado por form("<input type='text'/>") é diferente.
+O valor esperado era "<input type=\"text\"></input>", mas o valor retornado por form("<input type='text'></input>") é diferente.
+O valor esperado era "<input type=\"text\"> </input>", mas o valor retornado por form("<input type='text'> </input>") é diferente.
+O valor esperado era "<input type=\"text\"> ", mas o valor retornado por form("<input type='text'> </input") é diferente.
+O valor esperado era "<input type=\"text\">", mas o valor retornado por form("<input type='text'>") é diferente.
+O valor esperado era "<input type=\"\">", mas o valor retornado por form("<input type=''>") é diferente.
+O valor esperado era "<input tYpE=\"text\">", mas o valor retornado por form("<input tYpE='text'>") é diferente.
+O valor esperado era "<input type=\"text\"/>", mas o valor retornado por form("<input  type=\"text\"  />") é diferente.
+O valor esperado era "<input type=\"textx\" name=\"foo\"/>", mas o valor retornado por form("<input type='textx' name='foo'/>") é diferente.
+O valor esperado era "<input type=\"text\" name=\"foo\" value=\"*foo*\"/>", mas o valor retornado por form("<input type='text' name='foo'/>") é diferente.
+O valor esperado era "<input tYpE=\"text\" nAmE=\"foo\" value=\"*foo*\"/>", mas o valor retornado por form("<input tYpE='text' nAmE='foo'/>") é diferente.
+O valor esperado era "<input type=\"text\" name=\"foo\" value=\"*foo*\"/>", mas o valor retornado por form("<input type  =  'text'  name = 'foo'/>") é diferente.
+O valor esperado era "<input type=\"text\" name=\"&quot;foo\" value=\"*&quot;foo*\"/>", mas o valor retornado por form("<input type  =  'text'  name = '\"foo'/>") é diferente.
+O valor esperado era "<input name=\"foo\" type=\"text\" value=\"*foo*\"/>", mas o valor retornado por form("<input name='foo' type='text' />") é diferente.
+O valor esperado era "<input type=\"hidden\" name=\"foo\" value=\"*foo*\"/>", mas o valor retornado por form("<input type='hidden' name='foo'/>") é diferente.
+O valor esperado era "<input type=\"password\" name=\"foo\" value=\"*foo*\"/>", mas o valor retornado por form("<input type='password' name='foo'/>") é diferente.
+O valor esperado era "<input type=\"image\" name=\"foo\" value=\"*foo*\"/>", mas o valor retornado por form("<input type='image' name='foo'/>") é diferente.
+O valor esperado era "<input type=\"checkbox\" name=\"foo\" value=\"not\"/>", mas o valor retornado por form("<input type='checkbox' name='foo' value='not'/>") é diferente.
+O valor esperado era "<input type=\"checkbox\" name=\"foo\" value=\"*foo*\" checked/>", mas o valor retornado por form("<input type='checkbox' name='foo' value='*foo*'/>") é diferente.
+O valor esperado era "<input type=\"radio\" name=\"foo\" value=\"not\"/>", mas o valor retornado por form("<input type='radio' name='foo' value='not'/>") é diferente.
+O valor esperado era "<input type=\"radio\" name=\"foo\" value=\"*foo*\" checked/>", mas o valor retornado por form("<input type='radio' name='foo' value='*foo*'/>") é diferente.
+O valor esperado era "<textarea name=\"foo\">*foo*</textarea>", mas o valor retornado por form("<textarea name='foo'></textarea>") é diferente.
+O valor esperado era "<textarea name=\"foo\">*\"foo*</textarea>", mas o valor retornado por form2("<textarea name='foo'></textarea>") é diferente.
+O valor esperado era "<select name=\"foo\"><option value=\"1\"/><option value=\"2\"></option><option value=\"*foo*\" selected/></select>", mas o valor retornado por form("<select name='foo'><option value='1'/><option value='2'></option><option value='*foo*'/></select>") é diferente.
+O valor esperado era "<form><input type=\"hidden\" name=\"logTime>=\" value=\"*logTime>=*\"></form>", mas o valor retornado por form("<form><input type='hidden' name='logTime>='></form>") é diferente.
+O valor esperado era "<input type=\"text\" name=\"cc\" id=\"cc1\" value=\"a@b.c\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc2\" value=\"c@d.e\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc3\" value=\"e@f.g\"/>", mas o valor atual de populatedForm é diferente.
+O valor esperado era TEXT_RESULT, mas o valor de response.bodyText().trim() é diferente.
+O valor esperado era TEXT_RESULT, mas o valor de response.bodyText().trim() é diferente.
+O valor esperado era TEXT_RESULT, mas o valor de response.bodyText().trim() é diferente.
+O valor esperado era TEXT_RESULT, mas o valor de response.bodyText().trim() é diferente.
+O valor esperado era "<input type=\"text\" name=\"cc\" id=\"cc1\" value=\"one\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc2\" value=\"two\"/>\n" + "<input type=\"text\" name=\"cc\" id=\"cc3\"/>", mas o valor de response.bodyText().trim() é diferente.
+O valor esperado era " three ", mas o valor de p[2] é diferente.
+Era esperado um valor diferente de nulo, mas p[1] é nulo.
+Era esperado nulo, mas p[3] retornou um valor diferente de nulo.
+Era esperado um valor diferente de nulo, mas p[1] é nulo.
+Era esperado nulo, mas p[3] retornou um valor diferente de nulo.
+Era esperado nulo, mas p[0] retornou um valor diferente de nulo.
+Era esperado um valor diferente de nulo, mas p[1] é nulo.
+Era esperado um valor diferente de nulo, mas p[2] é nulo.
+Era esperado um valor diferente de nulo, mas vtor é nulo.
+O valor esperado era 1, mas o valor atual de vtor.severity é diferente.
+Era esperado true, mas vtor.isValidateAllProfilesByDefault() retornou false.
+Era esperado nulo, mas vtor.getViolations() retornou um valor diferente de nulo.
+O valor esperado era 2, mas o tamanho de vtor.getViolations() é diferente.
+O valor esperado de violation1 é diferente do valor de vtor.getViolations().get(0).
+O valor esperado de violation2 é diferente do valor de vtor.getViolations().get(1).
+O valor esperado era 2, mas o tamanho de vtor.getViolations() é diferente.
+Era esperado nulo, mas vtor.enabledProfiles retornou um valor diferente de nulo.
+O valor esperado era 1, mas o tamanho de vtor.enabledProfiles é diferente.
+O valor esperado era 1, mas o tamanho de vtor.enabledProfiles é diferente.
+Era esperado nulo, mas vtor.enabledProfiles retornou um valor diferente de nulo.
+O valor esperado era 2, mas o tamanho de vtor.enabledProfiles é diferente.
+O valor esperado era 2, mas o tamanho de vtor.enabledProfiles é diferente.
+O valor esperado era 1, mas o tamanho de violations é diferente.
+Era esperado nulo, mas validate retornou um valor diferente de nulo.
+O valor esperado era 1, mas o tamanho de violations é diferente.
+O valor esperado era "profil1", mas o valor de violations.get(0).getCheck().getProfiles()[0] é diferente.
+O valor esperado era 1, mas o tamanho de violations é diferente.
+O valor esperado de ch1 é diferente do valor de violations.get(0).getCheck().
+Era esperado true, mas vtor.matchProfiles(new String[] { "testProfile" }) retornou false.
+Era esperado true, mas vtor.matchProfiles(null) retornou false.

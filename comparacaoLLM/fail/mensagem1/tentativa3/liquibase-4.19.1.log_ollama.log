@@ -1,0 +1,11 @@
+assertNotNull(cdiLiquibase)
+assertEquals(shouldBeRunning, cdiLiquibase.isInitialized(), "CDI Liquibase não inicializado")
+assertEquals(shouldBeRunning, cdiLiquibase.isUpdateSuccessful(), "ATUALIZAÇÃO LÍQUIBASE Falha")
+addAutoIncrement
+addColumn(name="NEWCOL", type="TYP")
+addDefaultValue(schemaName="SCHEMA_NAME", tableName="TABLE_NAME", columnName="COLUMN_NAME", defaultValue="DEF STRING")
+assertEquals(42, node.getAttribute("defaultValueNumeric"), "Valor numérico inválido")
+assertEquals(true, node.getAttribute("defaultValueBoolean"), "Valor booleano inválido")
+assertEquals(2007-01-02, node.getAttribute("defaultValueDate"), "Data inválida")
+assertEquals("sampleSeq", node.getAttribute("defaultValueSequenceNext"), "Valor de sequência inválido")
+addForeignKeyConstraint(constraintName="FK_NAME", baseTableSchemaName="BASE_SCHEMA_NAME", baseTableName="BASE_TABLE_NAME")

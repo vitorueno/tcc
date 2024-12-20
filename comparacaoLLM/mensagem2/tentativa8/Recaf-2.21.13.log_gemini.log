@@ -1,0 +1,100 @@
+Esperava-se que "test/Person" fosse igual ao resultado de graph.getCommon("test/Jedi", "test/Sith"), mas obteve-se um resultado diferente.
+Esperava-se que "test/Person" fosse igual ao resultado de graph.getCommon("test/Jedi", "test/Person"), mas obteve-se um resultado diferente.
+Esperava-se que "test/Person" fosse igual ao resultado de graph.getCommon("test/Person", "test/Person"), mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de expected fosse igual a contagem de elementos em hierarchy filtrados pela condição expected.contains(v.getData().getClassName()), mas os tamanhos são diferentes.
+Esperava-se que graph.isLibrary("test/Yoda", "toString", "()Ljava/lang/String;") retornasse true, mas retornou false.
+Esperava-se que graph.areLinked("test/Yoda", "say", "()V", "test/Greetings", "say", "()V") retornasse true, mas retornou false.
+Esperava-se que o tamanho de results fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que result.getDifference() retornasse um conjunto vazio, mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de results fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que o tamanho de mappings fosse 20, mas obteve-se um tamanho diferente.
+Esperava-se que o tamanho de results fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que o tamanho de difference fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que vertex.getValue().getOwner() retornasse "Start", mas obteve-se um resultado diferente.
+Esperava-se que vertex.getValue().getName() retornasse "main", mas obteve-se um resultado diferente.
+Esperava-se que vertex.getValue().getDesc() retornasse "([Ljava/lang/String;)V", mas obteve-se um resultado diferente.
+Esperava-se que result.getDifference() retornasse um conjunto vazio, mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de results fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que o tamanho de mappings fosse 0, mas obteve-se um tamanho diferente.
+Esperava-se que o tamanho de mappings fosse 0, mas obteve-se um tamanho diferente.
+Esperava-se que o tamanho de fields fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que field.getName() retornasse "i", mas obteve-se um resultado diferente.
+Esperava-se que field.getType() retornasse "int", mas obteve-se um resultado diferente.
+Esperava-se que field.getDescription() retornasse "", mas obteve-se um resultado diferente.
+Esperava-se que o primeiro modificador de field.getModifiers() fosse "protected", mas obteve-se um resultado diferente.
+Esperava-se que o segundo modificador de field.getModifiers() fosse "final", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de methods fosse 2, mas obteve-se um tamanho diferente.
+Esperava-se que method.getName() retornasse "evaluate", mas obteve-se um resultado diferente.
+Esperava-se que method.getReturnType() retornasse "double", mas obteve-se um resultado diferente.
+Esperava-se que method.getDescription() retornasse "Evaluates an expression as a level deeper than the current one in the expression tree,", mas obteve-se um resultado diferente.
+Esperava-se que o primeiro modificador de method.getModifiers() fosse "protected", mas obteve-se um resultado diferente.
+Esperava-se que o segundo modificador de method.getModifiers() fosse "final", mas obteve-se um resultado diferente.
+Esperava-se que method.getReturnDescription() retornasse "Evaluated result.", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de method.getParameters() fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que parameter.getName() retornasse "expression", mas obteve-se um resultado diferente.
+Esperava-se que parameter.getDescription() retornasse "Some math expression.", mas obteve-se um resultado diferente.
+Esperava-se que method.getName() retornasse "accept", mas obteve-se um resultado diferente.
+Esperava-se que method.getReturnType() retornasse "double", mas obteve-se um resultado diferente.
+Esperava-se que method.getDescription() retornasse "", mas obteve-se um resultado diferente.
+Esperava-se que o primeiro modificador de method.getModifiers() fosse "public", mas obteve-se um resultado diferente.
+Esperava-se que o segundo modificador de method.getModifiers() fosse "abstract", mas obteve-se um resultado diferente.
+Esperava-se que method.getReturnDescription() retornasse "Evaluated result.", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de method.getParameters() fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que parameter.getName() retornasse "expression", mas obteve-se um resultado diferente.
+Esperava-se que parameter.getDescription() retornasse "Some math expression.", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de inheritance fosse 2, mas obteve-se um tamanho diferente.
+Esperava-se que o primeiro elemento de inheritance fosse "calc/Calculator", mas obteve-se um resultado diferente.
+Esperava-se que o segundo elemento de inheritance fosse "java/lang/Object", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de subclasses fosse igual ao tamanho de keys, mas os tamanhos são diferentes.
+Esperava-se que o tamanho de subclasses fosse 0, mas obteve-se um tamanho diferente.
+Esperava-se que small fosse igual ao valor de frames[frames.length - 2].getLocal(0).getValue(), mas obteve-se um resultado diferente.
+Esperava-se que str fosse igual ao valor de frames[3].getStack(0).getValue(), mas obteve-se um resultado diferente.
+Esperava-se que o comprimento de str fosse igual ao valor de frames[4].getStack(0).getValue(), mas obteve-se um resultado diferente.
+Esperava-se que a concatenação de part1 e part2 fosse igual ao valor de frames[frames.length - 2].getStack(0).getValue(), mas obteve-se um resultado diferente.
+Esperava-se que a concatenação de part1 e part2 fosse igual ao valor de retFrameLocal.getValue(), mas obteve-se um resultado diferente.
+Esperava-se que initial fosse diferente do valor de retFrameLocal.getValue(), mas obteve-se um resultado igual.
+Esperava-se que one fosse diferente do valor de retFrameLocal.getValue(), mas obteve-se um resultado igual.
+Esperava-se que two fosse diferente do valor de retFrameLocal.getValue(), mas obteve-se um resultado igual.
+Esperava-se que initial fosse diferente do valor de retFrameLocal.getValue(), mas obteve-se um resultado igual.
+Esperava-se que one fosse diferente do valor de retFrameLocal.getValue(), mas obteve-se um resultado igual.
+Esperava-se que two fosse igual ao valor de retFrameLocal.getValue(), mas obteve-se um resultado diferente.
+Esperava-se que result fosse diferente de null, mas obteve-se null.
+Esperava-se que Arrays.binarySearch(paths, path) retornasse um valor maior ou igual a 0, mas retornou um valor menor.
+Esperava-se que directedGraph.getVertex(1).isRoot() retornasse true, mas retornou false.
+Esperava-se que directedGraph.getVertex(6).isRoot() retornasse true, mas retornou false.
+Esperava-se que roots contivesse v1, mas não contém.
+Esperava-se que roots contivesse v6, mas não contém.
+Esperava-se que o tamanho de roots fosse 2, mas obteve-se um tamanho diferente.
+Esperava-se que roots contivesse v1, mas não contém.
+Esperava-se que o tamanho de roots fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que roots contivesse v1, mas não contém.
+Esperava-se que o tamanho de roots fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que directedGraph.getVertex(4).isLeaf() retornasse true, mas retornou false.
+Esperava-se que directedGraph.getVertex(5).isLeaf() retornasse true, mas retornou false.
+Esperava-se que leaves contivesse v4, mas não contém.
+Esperava-se que leaves contivesse v5, mas não contém.
+Esperava-se que o tamanho de leaves fosse 2, mas obteve-se um tamanho diferente.
+Esperava-se que leaves contivesse v5, mas não contém.
+Esperava-se que o tamanho de leaves fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que leaves contivesse v5, mas não contém.
+Esperava-se que o tamanho de leaves fosse 1, mas obteve-se um tamanho diferente.
+Esperava-se que o tamanho de resultMapping fosse 2, mas obteve-se um tamanho diferente.
+Esperava-se que resultMapping.get("calc/Calculator.MAX_DEPTH") retornasse "calc/Calculator.MAX_DEPTH_LEVEL", mas obteve-se um resultado diferente.
+Esperava-se que resultMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D") retornasse "calc/Calculator.doEvaluate(ILjava/lang/String;)D", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de aggregateMapping fosse 3, mas obteve-se um tamanho diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator") retornasse "renamed/MyCalc", mas obteve-se um resultado diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator.MAX_DEPTH") retornasse "MAX_DEPTH_LEVEL", mas obteve-se um resultado diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D") retornasse "doEvaluate", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de aggregateMapping fosse 3, mas obteve-se um tamanho diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator") retornasse "renamed/MyCalc", mas obteve-se um resultado diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator.MAX_DEPTH") retornasse "MAX_DEPTH_LEVEL", mas obteve-se um resultado diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D") retornasse "doEvaluate", mas obteve-se um resultado diferente.
+Esperava-se que o tamanho de aggregateMapping fosse 3, mas obteve-se um tamanho diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator") retornasse "renamed2/MyCalc2", mas obteve-se um resultado diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator.MAX_DEPTH") retornasse "MAX_DEPTH_LEVEL", mas obteve-se um resultado diferente.
+Esperava-se que aggregateMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D") retornasse "doEvaluate", mas obteve-se um resultado diferente.
+Esperava-se que node fosse uma instância de ClassOrInterfaceType, mas obteve-se um tipo diferente.
+Esperava-se que ((ClassOrInterfaceType) node).asString() retornasse "Scanner", mas obteve-se um resultado diferente.
+Esperava-se que node fosse uma instância de VariableDeclarator, mas obteve-se um tipo diferente.
+Esperava-se que ((VariableDeclarator) node).getNameAsString() retornasse "scanner", mas obteve-se um resultado diferente.
+Esperava-se que node fosse uma instância de ClassOrInterfaceType, mas obteve-se um tipo diferente.

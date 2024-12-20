@@ -1,0 +1,87 @@
+Valor esperado é 1, mas o valor obtido foi diferente de 1
+Valor esperado é 1, mas o valor obtido foi diferente de 1
+Valor esperado é 2, mas o valor obtido foi diferente de 2
+Valor esperado é 3, mas o valor obtido foi diferente de 3
+Valor esperado é 2, mas o valor obtido foi diferente de 2
+Valor esperado é 6, mas o valor obtido foi diferente de 6
+O atributo "s" não era esperado como nulo
+O objeto "s" era esperado como não nulo
+O valor esperado é diferente do valor do contador
+O valor esperado é diferente do valor do contador - 1
+O valor esperado é diferente do índice do contador - 1
+O resultado esperado não corresponde ao valor do contador modulado
+O tipo de mídia esperado é diferente do tipo de mídia obtido
+O tipo de codificação esperado é diferente da codificação obtida
+O tipo de mídia esperado é diferente do tipo de mídia obtido
+A codificação não era esperada como nula
+O filtro de gzip não é elegível
+O filtro de gzip é elegível
+O filtro de gzip não é elegível
+O filtro de gzip não é elegível
+O filtro de gzip não é elegível
+O filtro de gzip não é elegível
+O filtro de gzip é elegível
+O filtro de gzip é elegível
+O filtro de gzip não é elegível
+O filtro de gzip não é elegível
+O filtro de gzip não é elegível
+O filtro de gzip é elegível
+O filtro de gzip não é elegível
+O filtro de gzip é elegível
+Os valores não correspondem
+Os valores não correspondem
+O tamanho do buffer é diferente de 5
+A string esperada não corresponde aos bytes convertidos
+A string esperada não corresponde aos bytes convertidos
+A string esperada não corresponde aos bytes convertidos
+O resultado do formulário está incorreto
+O resultado do formulário está incorreto
+O resultado do formulário está incorreto
+O resultado do formulário está incorreto
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O formulário não foi preenchido corretamente
+O texto do corpo da resposta não está correto
+O texto do corpo da resposta não está correto
+O texto do corpo da resposta não está correto
+O texto do corpo da resposta não está correto
+O texto do corpo da resposta não está correto
+O segundo elemento do array não é nulo
+O terceiro elemento do array não é nulo
+O segundo elemento do array não é nulo
+O terceiro elemento do array não é nulo
+O primeiro elemento do array não é nulo
+O segundo elemento do array não é nulo
+O terceiro elemento do array é nulo
+O terceiro elemento do array não é nulo
+O objeto "vtor" não é nulo
+O nível de severidade não é 1
+A validação de todos os perfis por padrão não está habilitada
+Não há violações
+O tamanho das violações é diferente de 2
+As violações não estão vazias
+Os perfis habilitados são diferentes de nulo
+O tamanho dos perfis habilitados é diferente de 1
+O tamanho dos perfis habilitados é diferente de 1
+Os perfis habilitados não estão vazios
+O tamanho dos perfis habilitados é diferente de 2
+O tamanho dos perfis habilitados é diferente de 2
+O tamanho das violações é diferente de 1
+A validação não é nula
+O tamanho das violações é diferente de 1
+O perfil "profil1" não corresponde ao perfil esperado
+O tamanho das violações é diferente de 1
+A verificação não corresponde à primeira checagem
+Os perfis não correspondem
+Os perfis não correspondem

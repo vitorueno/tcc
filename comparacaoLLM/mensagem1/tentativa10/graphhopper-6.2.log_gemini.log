@@ -1,0 +1,101 @@
+`impossibleAlternative.isImpossible() deve retornar true`
+`A propriedade departureCancelled da primeira parada da primeira perna deve ser true`
+`O tamanho da resposta deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`O tamanho da resposta deve ser 3`
+`impossibleAlternative.isImpossible() deve retornar true`
+`A propriedade arrivalCancelled da segunda parada da primeira perna deve ser true`
+`O tamanho da resposta deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`A propriedade departureCancelled da terceira parada da primeira perna deve ser true`
+`O tamanho da resposta deve ser 1`
+`O trip_id da perna deve ser EXTRA0`
+`O tamanho da resposta deve ser 1`
+`O tamanho da resposta com atualização em tempo real deve ser 1`
+`O tamanho da resposta deve ser 1`
+`O tamanho da resposta deve ser 1`
+`A última rota deve ser impossível`
+`O tamanho da resposta deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`O tamanho da resposta deve ser 2`
+`impossibleAlternative.isImpossible() deve retornar true`
+`O tamanho da resposta deve ser 1`
+`A propriedade departureCancelled da primeira parada da primeira perna deve ser false`
+`A rota não deve conter erros`
+`A rota não deve conter erros`
+`A rota não deve estar vazia`
+`A rota não deve conter erros`
+`O tamanho da rota deve ser 1`
+`Os IDs das paradas da primeira perna devem ser JUSTICE_COURT,MUSEUM`
+`Os IDs das paradas da segunda perna devem ser EMSI,DADAN`
+`O horário de partida da perna de transferência deve ser 2007-01-01T10:00:00`
+`O horário de chegada da perna de transferência deve ser 2007-01-01T10:08:06.670`
+`A geometria da segunda perna deve ser LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)`
+`O tempo da solução de trânsito deve ser 4500000L`
+`O peso da rota da solução de trânsito deve ser 4500000.0`
+`A rota não deve conter erros`
+`O tamanho da rota deve ser 1`
+`A rota não deve conter erros`
+`O tamanho da rota deve ser 1`
+`O número de pernas da solução de trânsito deve ser 2`
+`O route_id da primeira perna deve ser COURT2MUSEUM`
+`O trip_id da primeira perna deve ser MUSEUM1`
+`O stop_id da primeira parada da primeira perna deve ser JUSTICE_COURT`
+`O stop_id da segunda parada da primeira perna deve ser MUSEUM`
+`O route_id da segunda perna deve ser MUSEUM2AIRPORT`
+`O trip_id da segunda perna deve ser MUSEUMAIRPORT1`
+`O stop_id da primeira parada da segunda perna deve ser NEXT_TO_MUSEUM`
+`O stop_id da segunda parada da segunda perna deve ser AIRPORT`
+`Os IDs das paradas da primeira perna devem ser NEXT_TO_MUSEUM,AIRPORT`
+`Os IDs das paradas da segunda perna devem ser BEATTY_AIRPORT,BULLFROG`
+`O horário de chegada deve ser 14:10`
+`A duração entre o horário de partida mais cedo e o horário de chegada deve ser 15000000 milissegundos`
+`O peso da rota da solução de trânsito deve ser 1.5E7`
+`A rota não deve conter erros`
+`O tamanho da rota deve ser 1`
+`O tempo da solução de trânsito deve ser 4500000L`
+`O peso da rota da solução de trânsito deve ser 4500000.0`
+`Os IDs das paradas da primeira perna devem ser JUSTICE_COURT,MUSEUM`
+`O horário de partida a pé deve ser 10:00`
+`A geometria da segunda perna deve ser LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)`
+`O horário de chegada a pé deve ser 10:08:06.670`
+`Os IDs das paradas da terceira perna devem ser EMSI,DADAN`
+`O número de pernas da rota a pé deve ser 1`
+`O tempo da rota a pé deve ser 486670`
+`A geometria da primeira perna da rota a pé deve ser LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659)`
+`A rota não deve conter erros`
+`O valor do amount deve ser maior que o preço da tarifa`
+`A tarifa mais barata onde cada perna passa por todas as zonas deve ser maior ou igual à tarifa mais barata`
+`O número de transferências para a parada deve ser 2`
+`O from_stop_id da transferência deve ser MUSEUM`
+`O to_stop_id da transferência deve ser NEXT_TO_MUSEUM`
+`O from_route_id da transferência deve ser nulo`
+`O to_route_id da transferência deve ser nulo`
+`O tempo mínimo de transferência deve ser 600`
+`O from_stop_id da transferência dentro da estação deve ser NEXT_TO_MUSEUM`
+`O to_stop_id da transferência dentro da estação deve ser NEXT_TO_MUSEUM`
+`O from_route_id da transferência dentro da estação deve ser nulo`
+`O to_route_id da transferência dentro da estação deve ser nulo`
+`O número de transferências para a parada deve ser 5`
+`O from_route_id da primeira transferência deve ser AB`
+`O from_route_id da segunda transferência deve ser FUNNY_BLOCK_AB`
+`O from_route_id da terceira transferência deve ser STBA`
+`O from_route_id da quarta transferência deve ser AAMV`
+`O from_route_id da quinta transferência deve ser ABBFC`
+`A rota não deve conter erros`
+`O tamanho da rota deve ser 1`
+`O tamanho da rota deve ser 1`
+`O tamanho da rota deve ser 1`
+`O tamanho da resposta deve ser 1`
+`O tamanho da rota deve ser 1`
+`O tamanho da rota deve ser 1`
+`Os horários de partida esperados devem ser iguais aos horários de partida reais`
+`Os horários de partida esperados devem ser iguais aos horários de partida reais`
+`Os horários de partida esperados devem ser iguais aos horários de partida reais`
+`A rota deve estar vazia`
+`A rota deve estar vazia`
+`O route_id da segunda perna da viagem de segunda-feira deve ser AB`
+`O route_id da primeira perna da viagem de segunda-feira não deve ser AB`
+`O route_id da segunda perna da viagem de segunda-feira não deve ser AB`
+`O route_id da segunda perna da viagem de segunda-feira deve ser AB`
+

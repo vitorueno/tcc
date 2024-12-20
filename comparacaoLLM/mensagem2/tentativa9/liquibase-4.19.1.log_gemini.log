@@ -1,0 +1,100 @@
+cdiLiquibase não deve ser nulo.
+O valor de cdiLiquibase.isInitialized() deveria ser  'shouldBeRunning', mas é diferente.
+O valor de cdiLiquibase.isUpdateSuccessful() deveria ser 'shouldBeRunning', mas é diferente.
+O tamanho de liquibaseSchemas ('liquibaseSchemas.size()') deveria ser igual ao tamanho de resolved ('resolved.size()'), mas são diferentes.
+O tamanho de previous deveria ser 9, mas é diferente.
+O tamanho de schemes ('schemes.size()') deveria ser igual ao tamanho de resolved ('resolved.size()'), mas são diferentes.
+O tamanho de previous deveria ser 16, mas é diferente.
+O tamanho de liquibaseSchemas ('liquibaseSchemas.size()') deveria ser igual ao tamanho de resolved ('resolved.size()'), mas são diferentes.
+O tamanho de resolved deveria ser 7, mas é diferente.
+O tamanho de locations deveria ser 1, mas é diferente.
+O valor de mojo.changeLogDirectory deveria ser igual a dirLocation, mas são diferentes.
+mojo não deve ser nulo.
+O valor de mojo.getOutputDirectory() deveria ser "target/liquibase/myOutputDirectory", mas é diferente.
+O valor de databaseDataType.getType() deveria ser "TIMESTAMP_NTZ", mas é diferente.
+O valor de databaseDataType.toSql() deveria ser "TIMESTAMP_NTZ", mas é diferente.
+databaseDataType.isAutoIncrement() deveria ser falso, mas é verdadeiro.
+O tamanho de aliases deveria ser 2, mas é diferente.
+A lista aliases deveria conter "datetime", mas não contém.
+A lista aliases deveria conter "java.sql.Types.DATETIME", mas não contém.
+O nome da classe de liquibaseDataType deveria ser "liquibase.datatype.core.TimestampNTZTypeSnowflake", mas é diferente.
+timestampNTZType.supports(snowflakeDatabase) deveria ser verdadeiro, mas é falso.
+timestampNTZType.supports(new PostgresDatabase()) deveria ser falso, mas é verdadeiro.
+O valor de timestampNTZType.getPriority() deveria ser PRIORITY_DATABASE, mas é diferente.
+O valor de timestampNTZType.getMinParameters(snowflakeDatabase) deveria ser 0, mas é diferente.
+O valor de timestampNTZType.getMinParameters(snowflakeDatabase) deveria ser 0, mas é diferente.
+O valor de database.getShortName() deveria ser "snowflake", mas é diferente.
+O valor de database.getDefaultDatabaseProductName() deveria ser "Snowflake", mas é diferente.
+database.getDefaultPort() não deve ser nulo.
+O valor de database.getCurrentDateTimeFunction() deveria ser "current_timestamp::timestamp_ntz", mas é diferente.
+O valor de database.getPriority() deveria ser PRIORITY_DATABASE, mas é diferente.
+database.supportsInitiallyDeferrableColumns() deveria ser falso, mas é verdadeiro.
+database.supportsDropTableCascadeConstraints() deveria ser verdadeiro, mas é falso.
+database.isCorrectDatabaseImplementation(jdbcConnection) deveria ser verdadeiro, mas é falso.
+O valor de database.getDefaultDriver("jdbc:snowflake:") deveria ser "net.snowflake.client.jdbc.SnowflakeDriver", mas é diferente.
+database.getDefaultDriver("jdbc:wrong-name:") não deve ser nulo.
+database.supportsSchemas() deveria ser verdadeiro, mas é falso.
+database.supportsCatalogs() deveria ser verdadeiro, mas é falso.
+database.supportsCatalogInObjectName(null) deveria ser falso, mas é verdadeiro.
+database.supportsSequences() deveria ser verdadeiro, mas é falso.
+O valor de database.getDatabaseChangeLogTableName() deveria ser "DATABASECHANGELOG", mas é diferente.
+O valor de database.getDatabaseChangeLogLockTableName() deveria ser "DATABASECHANGELOGLOCK", mas é diferente.
+database.supportsTablespaces() deveria ser falso, mas é verdadeiro.
+database.supportsAutoIncrement() deveria ser verdadeiro, mas é falso.
+O valor de database.getAutoIncrementClause() deveria ser "AUTOINCREMENT", mas é diferente.
+O valor de database.getAutoIncrementClause(null, null, null, null) deveria ser "AUTOINCREMENT (1, 1)", mas é diferente.
+O valor de database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("1"), null, null) deveria ser "AUTOINCREMENT (1, 1)", mas é diferente.
+O valor de database.getAutoIncrementClause(new BigInteger("7"), new BigInteger("1"), null, null) deveria ser "AUTOINCREMENT (7, 1)", mas é diferente.
+O valor de database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("7"), null, null) deveria ser "AUTOINCREMENT (1, 7)", mas é diferente.
+O valor de database.getAutoIncrementClause(new BigInteger("7"), null, null, null) deveria ser "AUTOINCREMENT (7, 1)", mas é diferente.
+O valor de database.getAutoIncrementClause(null, new BigInteger("7"), null, null) deveria ser "AUTOINCREMENT (1, 7)", mas é diferente.
+database.generateAutoIncrementStartWith(new BigInteger("1")) deveria ser verdadeiro, mas é falso.
+database.generateAutoIncrementBy(new BigInteger("1")) deveria ser verdadeiro, mas é falso.
+database.supportsRestrictForeignKeys() deveria ser verdadeiro, mas é falso.
+database.isReservedWord("table") deveria ser verdadeiro, mas é falso.
+database.getDefaultCatalogName() não deve ser nulo.
+database.getDefaultSchemaName() não deve ser nulo.
+database.getJdbcCatalogName(new CatalogAndSchema(null, null)) não deve ser nulo.
+database.getJdbcSchemaName(new CatalogAndSchema(null, null)) não deve ser nulo.
+O tamanho de pk.getColumnNamesAsList() deveria ser 1, mas é diferente.
+O tamanho de pk.getColumnNamesAsList() deveria ser 2, mas é diferente.
+O primeiro elemento de pk.getColumnNamesAsList() deveria ser "id1", mas é diferente.
+O segundo elemento de pk.getColumnNamesAsList() deveria ser "id2", mas é diferente.
+O tamanho de pk.getColumnNamesAsList() deveria ser 2, mas é diferente.
+O primeiro elemento de pk.getColumnNamesAsList() deveria ser "id1", mas é diferente.
+O segundo elemento de pk.getColumnNamesAsList() deveria ser "id2", mas é diferente.
+ChangeLogSerializerFactory.getInstance() não deve ser nulo.
+ChangeLogSerializerFactory.getInstance() e ChangeLogSerializerFactory.getInstance() deveriam ser a mesma instância.
+O tamanho de ChangeLogSerializerFactory.getInstance().getSerializers() deveria ser 0, mas é diferente.
+O tamanho de ChangeLogSerializerFactory.getInstance().getSerializers() deveria ser 1, mas é diferente.
+O tamanho de factory.getSerializers() deveria ser 0, mas é diferente.
+O tamanho de factory.getSerializers() deveria ser 2, mas é diferente.
+O tamanho de factory.getSerializers() deveria ser 1, mas é diferente.
+instance1 e ChangeLogSerializerFactory.getInstance() deveriam ser instâncias diferentes.
+O tamanho de serializers deveria ser 6, mas é diferente.
+serializer não deve ser nulo.
+O tipo de serializer deveria ser XMLChangeLogSerializer.class, mas é diferente.
+O tamanho de ChangeLogSerializerFactory.getInstance().getSerializers("xml") deveria ser 1, mas é diferente.
+factory.getSerializer("xml") e highestPriority deveriam ser a mesma instância.
+O tamanho de factory.getSerializers().get("xml") deveria ser 3, mas é diferente.
+O valor de serializedJson deveria ser "{\"changeSet\": {\"id\": \"1\",\"author\": \"nvoxland\",\"ignore\": true,\"objectQuotingStrategy\": \"LEGACY\",\"preconditions\": {      \"preConditions\": {\"nestedPreconditions\": [{\"preConditions\": {\"onError\": \"WARN\",\"onFail\": \"CONTINUE\",\"onSqlOutput\": \"TEST\"}}],\"onError\": \"CONTINUE\",\"onFail\": \"MARK_RAN\",\"onSqlOutput\": \"FAIL\"}},\"runInTransaction\": false,\"runOrder\": \"last\",\"changes\": [{        \"addColumn\": {\"catalogName\": \"cat\",\"columns\": [{\"column\": {\"defaultValueNumeric\": 3,\"name\": \"col1\"}},{\"column\": {\"defaultValueComputed\": \"NOW()\",\"name\": \"col2\"}},{\"column\": {\"defaultValueBoolean\": true,\"name\": \"col3\"}},{\"column\": {\"defaultValueDate\": \"1970-01-01T00:00:00\",\"name\": \"col2\"}},{\"column\": {\"defaultValueSequenceNext\": \"seq_me\",\"name\": \"col2\"}}]}}]}}", mas é diferente.
+O valor de node.getTagName() deveria ser "addAutoIncrement", mas é diferente.
+O valor de node.getTagName() deveria ser "addColumn", mas é diferente.
+O valor de node.getAttribute("tableName") deveria ser "TAB", mas é diferente.
+O valor de columns.getLength() deveria ser 1, mas é diferente.
+O valor de ((Element) columns.item(0)).getTagName() deveria ser "column", mas é diferente.
+O valor de ((Element) columns.item(0)).getAttribute("name") deveria ser "NEWCOL", mas é diferente.
+O valor de ((Element) columns.item(0)).getAttribute("type") deveria ser "TYP", mas é diferente.
+O valor de node.getTagName() deveria ser "addDefaultValue", mas é diferente.
+O valor de node.getAttribute("schemaName") deveria ser "SCHEMA_NAME", mas é diferente.
+O valor de node.getAttribute("tableName") deveria ser "TABLE_NAME", mas é diferente.
+O valor de node.getAttribute("columnName") deveria ser "COLUMN_NAME", mas é diferente.
+O valor de node.getAttribute("defaultValue") deveria ser "DEF STRING", mas é diferente.
+O valor de node.getAttribute("defaultValueNumeric") deveria ser "42", mas é diferente.
+O valor de node.getAttribute("defaultValueBoolean") deveria ser "true", mas é diferente.
+O valor de node.getAttribute("defaultValueDate") deveria ser "2007-01-02", mas é diferente.
+O valor de node.getAttribute("defaultValueSequenceNext") deveria ser "sampleSeq", mas é diferente.
+O valor de node.getTagName() deveria ser "addForeignKeyConstraint", mas é diferente.
+O valor de node.getAttribute("constraintName") deveria ser "FK_NAME", mas é diferente.
+O valor de node.getAttribute("baseTableSchemaName") deveria ser "BASE_SCHEMA_NAME", mas é diferente.
+O valor de node.getAttribute("baseTableName") deveria ser "BASE_TABLE_NAME", mas é diferente.

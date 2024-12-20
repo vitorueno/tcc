@@ -1,0 +1,9 @@
+1. AssertionError: !result.contains("!<Type A>")
+2. AssertionError: contentAsString does not contain "Swagger UI"
+3. AssertionError: expected != result
+4. AssertionError: contentAsString does not contain "window.ui"
+5. AssertionError: transformedIndex does not contain "window.ui"
+6. AssertionError: Cache-Control header does not match "no-store"
+7. AssertionError: this.getContent(fileName) != transformedIndex.replace("\r", "")
+8. AssertionError: htmlResult does not contain "window.ui"
+9. AssertionError: contentAsString does not contain "Swagger UI"

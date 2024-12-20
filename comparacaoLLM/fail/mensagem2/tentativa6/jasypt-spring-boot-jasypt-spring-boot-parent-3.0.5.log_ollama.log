@@ -1,0 +1,17 @@
+Erros de assert:
+
+- Eram esperados valores iguais, mas `calculator.add(2, 3)` é diferente de 5.
+- Eram esperados valores iguais, mas `calculator.add(4, 2)` é diferente de 7.
+- Eram esperados valores iguais, mas `calculator.add(5, 5)` não é igual a 10.
+- Os tipos de `ParameterizedTypeReference` esperados não coincidem com o tipo real de `EncryptableConfigurationPropertySourcesPropertySource`.
+- A função `filter.shouldInclude(source, "some.property")` deve retornar `true` para todos os elementos listados.
+- A função `filter.shouldInclude(source, "some.property")` não deve retornar `false` para nenhum elemento listado.
+- Os tipos de `ParameterizedTypeReference` não coincidem com o tipo real de `EncryptableMapPropertySourceWrapper`.
+- A função `filter.shouldInclude(source, "some.property")` deve retornar `true` para todos os elementos listados.
+- A função `filter.shouldInclude(source, "some.property")` não deve retornar `false` para nenhum elemento listado.
+- Os valores decifraos e mensagens são iguais, mas o valor esperado é diferente do valor recebido.
+- Os tipos de `ParameterizedTypeReference` não coincidem com o tipo real de `EnableEncryptablePropertiesBeanFactoryPostProcessor`.
+- A classe `myProperties.getFooString()` ou `myProperties.getBarString()` deve retornar "test1" ou "test2".
+- As listas de propriedades devem ser não nulas e ter os valores esperados.
+- Os mapas devem ser não nulos e ter as chaves e valores esperados.
+- A função `EnableEncryptablePropertiesBeanFactoryPostProcessor` deve retornar uma instância não nula.

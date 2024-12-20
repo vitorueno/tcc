@@ -1,0 +1,28 @@
+eram esperados valores não nulos, mas null foi retornado ao configurar o SslContextFactory
+eram esperadas exceções do tipo ConstraintViolationException, mas foi lançada uma exceção de tipo diferente
+eram esperados mapas iguais, mas os mapas são diferentes: esperado {color=orange}, mas foi retornado {response}
+eram esperados mapas iguais, mas os mapas são diferentes: esperado {message=stuff!}, mas foi retornado {response}
+esperava-se que a lista de entidades não estivesse vazia, mas estava vazia
+eram esperados valores iguais, mas o tamanho da lista é diferente: esperado 4, mas foi retornado {findEntityClassesFromDirectory.size()}
+esperava-se que a lista de entidades não estivesse vazia, mas estava vazia
+eram esperados valores iguais, mas o tamanho da lista é diferente: esperado 8, mas foi retornado {findEntityClassesFromDirectory.size()}
+o tempo de execução excedeu 5 segundos ao verificar se o evento foi criado no instante 0
+o tempo de execução excedeu 5 segundos ao verificar se a duração da tarefa é de 0 segundos
+esperava-se que o contexto de segurança estivesse ativo, mas não estava
+os contextos de administração são diferentes: esperado {http.getAdminContextPath()}, mas foi retornado {environment.getAdminContext().getContextPath()}
+os contextos de aplicação são diferentes: esperado {http.getApplicationContextPath()}, mas foi retornado {environment.getApplicationContext().getContextPath()}
+os contextos de administração são diferentes: esperado {http.getAdminContextPath()}, mas foi retornado {environment.getAdminContext().getContextPath()}
+os contextos de aplicação são diferentes: esperado {http.getApplicationContextPath()}, mas foi retornado {environment.getApplicationContext().getContextPath()}
+o código de status retornado não corresponde ao esperado para o método GET: esperado 200, mas foi retornado {getResponseStatusForRequestMethod("GET", false)}
+o código de status retornado não corresponde ao esperado para o método POST: esperado 200, mas foi retornado {getResponseStatusForRequestMethod("POST", true)}
+o código de status retornado não corresponde ao esperado para o método PUT: esperado 405, mas foi retornado {getResponseStatusForRequestMethod("PUT", true)}
+o código de status retornado não corresponde ao esperado para o método DELETE: esperado 405, mas foi retornado {getResponseStatusForRequestMethod("DELETE", false)}
+o código de status retornado não corresponde ao esperado para o método TRACE: esperado 405, mas foi retornado {getResponseStatusForRequestMethod("TRACE", false)}
+os objetos de invocação são diferentes
+o código de status não corresponde ao esperado: esperado 400, mas foi retornado {reponse.getStatus()}
+a opção do Guava Optional está presente quando deveria estar ausente
+a opção do Guava Optional está ausente quando deveria estar presente: Foo
+os Optionals do Guava e Java são diferentes: esperado Optional[Foo], mas foi retornado {Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo"))}
+a opção do Java Optional está presente quando deveria estar ausente
+a opção do Java Optional está ausente quando deveria estar presente: Foo
+os Optionals do Guava e Java são diferentes: esperado Optional[Foo], mas foi retornado {Optionals.toGuavaOptional(java.util.Optional.of("Foo"))}

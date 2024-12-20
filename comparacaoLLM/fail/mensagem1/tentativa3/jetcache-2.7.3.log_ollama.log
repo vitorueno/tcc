@@ -1,0 +1,58 @@
+- buildKey("123").shouldThrow(() -> {
+    throw new AssertionError("Expected value is not '123'");
+  })
+- buildKey(new byte[] { 1, 2, 3 }).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not [1, 2, 3]");
+  })
+- buildKey(123).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not 123");
+  })
+- buildKey(123L).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not 123L");
+  })
+- buildKey(true).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not true");
+  })
+- buildKey(new Date(123)).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not a Date object");
+  })
+- buildKey(c1).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not c1");
+  })
+- assertArrayEquals(byteKey, c.buildKey(byteKey)).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not byteKey");
+  })
+- assertArrayEquals(strKey.getBytes(), c.buildKey(strKey)).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not strKey.getBytes()");
+  })
+- assertArrayEquals(strKey.getBytes(), c.buildKey(strKey.getBytes())).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not strKey.getBytes()");
+  })
+- assertArrayEquals(convertedKey.getBytes(), c.buildKey(byteKey)).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not convertedKey.getBytes()");
+  })
+- assertArrayEquals(convertedKey.getBytes(), c.buildKey(strKey)).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not convertedKey.getBytes()");
+  })
+- assertArrayEquals(convertedKey.getBytes(), c.buildKey("long long long str")).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not convertedKey.getBytes()");
+  })
+- assertArrayEquals(convertedKey.getBytes(), c.buildKey(1)).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not convertedKey.getBytes()");
+  })
+- assertArrayEquals(bean1, bean2).shouldThrow(() -> {
+    throw new AssertionError("Expected value is not bean1");
+  })
+- assertSame(c, c2)
+- CacheResultCode.NOT_EXISTS.shouldEqual(cache.GET("BASE_K1").getResultCode())
+- CacheResultCode.SUCCESS.shouldEqual(cache.PUT("BASE_K1", "V1", 10, TimeUnit.SECONDS).getResultCode())
+- CacheResultCode.SUCCESS.shouldEqual(cache.GET("BASE_K1").getResultCode())
+- "V1".shouldBeSame(cache.GET("BASE_K1").getValue())
+- CacheResultCode.SUCCESS.shouldEqual(cache.PUT("BASE_K1", "V2", 10, TimeUnit.SECONDS).getResultCode())
+- "V2".shouldBeSame(cache.GET("BASE_K1").getValue())
+- CacheResultCode.SUCCESS.shouldEqual(cache.REMOVE("BASE_K1").getResultCode())
+- CacheResultCode.NOT_EXISTS.shouldEqual(cache.GET("BASE_K1").getResultCode())
+- r shouldn't be null
+- r.isSuccess().shouldBeTrue()
+- r.getValues().get(k1).isSuccess().shouldBeTrue()
+- "V1".shouldBeSame(r.getValues().get(k1).getValue())

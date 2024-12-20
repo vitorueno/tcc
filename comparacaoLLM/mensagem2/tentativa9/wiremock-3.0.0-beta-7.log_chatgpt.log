@@ -1,0 +1,100 @@
+eram esperados valores falsos, mas mappings.get(0).getRequest().getHeaders().containsKey("No") é verdadeiro
+eram esperados valores verdadeiros, mas match.isExactMatch() é falso
+eram esperados valores verdadeiros, mas match.isExactMatch() é falso
+eram esperados valores verdadeiros, mas result é falso
+eram esperados valores verdadeiros, mas result é falso
+eram esperados valores falsos, mas result é verdadeiro
+eram esperados valores verdadeiros, mas pattern.isMatchAny() é falso
+eram esperados valores falsos, mas pattern.isMatchAll() é verdadeiro
+eram esperados valores verdadeiros, mas pattern.isMatchAny() é falso
+eram esperados valores falsos, mas pattern.isMatchAll() é verdadeiro
+eram esperados valores verdadeiros, mas pattern.isMatchAll() é falso
+eram esperados valores falsos, mas pattern.isMatchAny() é verdadeiro
+eram esperados valores nulos, mas pattern não é nulo
+eram esperados valores verdadeiros, mas matcher.match("2022-06-14T12:13:14Z").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("2020-06-14T12:13:14Z").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2022-06-14T12:13:14").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("2020-06-14T12:13:14").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2022-06-14T12:13:14Z").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("2020-06-14T12:13:14Z").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2021-07-01T23:59:59").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("2021-06-01T15:15:15").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match(good.toString()).isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match(bad.toString()).isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match(good.toString()).isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match(bad.toString()).isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matcher.match(null).isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match(good.toString()).isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match(bad.toString()).isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2021-01-01T00:00:00Z").isExactMatch() é falso
+eram esperados valores verdadeiros, mas matcher.match("2021-01-01T00:00:00").isExactMatch() é falso
+eram esperados valores verdadeiros, mas matcher.match("2022-06-01T11:22:33Z").isExactMatch() é falso
+eram esperados valores verdadeiros, mas matcher.match("2019-06-01T11:22:33Z").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("2020-06-01T11:22:33Z").isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas WireMock.notContaining("thing").match("otherstuff").isExactMatch() é falso
+eram esperados valores verdadeiros, mas WireMock.notContaining("thing").match(null).isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas WireMock.containing("thing").match("mythings").isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas pattern.match("<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n" + "<things>\n" + "    <thing characteristic=\"tepid\"/>\n" + "    <thing characteristic=\"tedious\"/>\n" + "</things>").isExactMatch() é falso
+eram esperados valores verdadeiros, mas pattern.match("<things><thing characteristic=\"tepid\"/><thing characteristic=\"tedious\"/></things>").isExactMatch() é falso
+eram esperados valores falsos, mas matchResult.isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas match.isExactMatch() é falso
+eram esperados valores verdadeiros, mas match.isExactMatch() é falso
+eram esperados valores falsos, mas pattern.match("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n" + "    <soap:Body>\n" + "        <stuff xmlns=\"https://example.com/the-wrong-namespace\">\n" + "            <things />\n" + "        </stuff>\n" + "    </soap:Body>\n" + "</soap:Envelope>\n").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas pattern.match("<my-attribs two=\"2\" one=\"1\" three=\"3\"/>").isExactMatch() é falso
+eram esperados valores verdadeiros, mas pattern.match("<my-elements>\n" + "    <two />\n" + "    <three />\n" + "    <one />\n" + "</my-elements>").isExactMatch() é falso
+eram esperados valores verdadeiros, mas pattern.match(xmlWithDtdThatCannotBeFetched).isExactMatch() é falso
+eram esperados valores nulos, mas equalToXmlPattern.getPlaceholderOpeningDelimiterRegex() não é nulo
+eram esperados valores nulos, mas equalToXmlPattern.getPlaceholderClosingDelimiterRegex() não é nulo
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores verdadeiros, mas stringValuePattern é uma instância de EqualToXmlPattern
+eram esperados valores verdadeiros, mas stringValuePattern é uma instância de EqualToXmlPattern
+eram esperados valores iguais, mas enablePlaceholders é diferente de equalToXmlPattern.isEnablePlaceholders()
+eram esperados valores iguais, mas placeholderOpeningDelimiterRegex é diferente de equalToXmlPattern.getPlaceholderOpeningDelimiterRegex()
+eram esperados valores iguais, mas placeholderClosingDelimiterRegex é diferente de equalToXmlPattern.getPlaceholderClosingDelimiterRegex()
+eram esperados valores verdadeiros, mas matchResult.isExactMatch() é falso
+eram esperados valores verdadeiros, mas pattern.match(actual).isExactMatch() é falso
+eram esperados valores verdadeiros, mas pattern.isMatchAny() é falso
+eram esperados valores nulos, mas pattern.getBodyPatterns() não é nulo
+eram esperados valores verdadeiros, mas pattern.isMatchAll() é falso
+eram esperados valores nulos, mas pattern.getHeaders() não é nulo
+eram esperados valores verdadeiros, mas pattern.isMatchAny() é falso
+eram esperados valores verdadeiros, mas pattern.isMatchAny() é falso
+eram esperados valores iguais, mas pattern.getBodyPatterns().get(0).getExpected() é diferente de expectedBinary
+eram esperados valores verdadeiros, mas pattern.isMatchAll() é falso
+eram esperados valores falsos, mas pattern.isMatchAll() é verdadeiro
+eram esperados valores falsos, mas pattern.isMatchAny() é verdadeiro
+eram esperados valores falsos, mas pattern.isMatchAll() é verdadeiro
+eram esperados valores falsos, mas pattern.isMatchAll() é verdadeiro
+eram esperados valores falsos, mas pattern.isMatchAny() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2021-06-14T12:13:14Z").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("1921-06-14T12:13:14Z").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2021-06-24T12:40:27Z").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("2021-06-24T13:40:27Z").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2021-06-14T12:13:14").isExactMatch() é falso
+eram esperados valores falsos, mas matcher.match("1921-06-14T12:13:14").isExactMatch() é verdadeiro
+eram esperados valores verdadeiros, mas matcher.match("2021-06-14T12:13:14Z").isExactMatch() é falso

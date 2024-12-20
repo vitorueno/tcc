@@ -1,0 +1,100 @@
+eram esperados valores iguais, mas "test/Person" é diferente de graph.getCommon("test/Jedi", "test/Sith")
+eram esperados valores iguais, mas "test/Person" é diferente de graph.getCommon("test/Jedi", "test/Person")
+eram esperados valores iguais, mas "test/Person" é diferente de graph.getCommon("test/Person", "test/Person")
+eram esperados valores iguais, mas expected.size() é diferente de hierarchy.stream().filter(v -> expected.contains(v.getData().getClassName())).count()
+esperava-se verdadeiro, mas graph.isLibrary("test/Yoda", "toString", "()Ljava/lang/String;") foi falso
+esperava-se verdadeiro, mas graph.areLinked("test/Yoda", "say", "()V", "test/Greetings", "say", "()V") foi falso
+eram esperados valores iguais, mas 1 é diferente de results.size()
+eram esperados valores iguais, mas Collections.emptySet() é diferente de result.getDifference()
+eram esperados valores iguais, mas 1 é diferente de results.size()
+eram esperados valores iguais, mas 20 é diferente de mappings.size()
+eram esperados valores iguais, mas 1 é diferente de results.size()
+eram esperados valores iguais, mas 1 é diferente de difference.size()
+eram esperados valores iguais, mas "Start" é diferente de vertex.getValue().getOwner()
+eram esperados valores iguais, mas "main" é diferente de vertex.getValue().getName()
+eram esperados valores iguais, mas "([Ljava/lang/String;)V" é diferente de vertex.getValue().getDesc()
+eram esperados valores iguais, mas Collections.emptySet() é diferente de result.getDifference()
+eram esperados valores iguais, mas 1 é diferente de results.size()
+eram esperados valores iguais, mas 0 é diferente de mappings.size()
+eram esperados valores iguais, mas 0 é diferente de mappings.size()
+eram esperados valores iguais, mas 1 é diferente de fields.size()
+eram esperados valores iguais, mas "i" é diferente de field.getName()
+eram esperados valores iguais, mas "int" é diferente de field.getType()
+eram esperados valores iguais, mas "" é diferente de field.getDescription()
+eram esperados valores iguais, mas "protected" é diferente de field.getModifiers().get(0)
+eram esperados valores iguais, mas "final" é diferente de field.getModifiers().get(1)
+eram esperados valores iguais, mas 2 é diferente de methods.size()
+eram esperados valores iguais, mas "evaluate" é diferente de method.getName()
+eram esperados valores iguais, mas "double" é diferente de method.getReturnType()
+eram esperados valores iguais, mas "Evaluates an expression as a level deeper than the current one in the expression tree," é diferente de method.getDescription()
+eram esperados valores iguais, mas "protected" é diferente de method.getModifiers().get(0)
+eram esperados valores iguais, mas "final" é diferente de method.getModifiers().get(1)
+eram esperados valores iguais, mas "Evaluated result." é diferente de method.getReturnDescription()
+eram esperados valores iguais, mas 1 é diferente de method.getParameters().size()
+eram esperados valores iguais, mas "expression" é diferente de parameter.getName()
+eram esperados valores iguais, mas "Some math expression." é diferente de parameter.getDescription()
+eram esperados valores iguais, mas "accept" é diferente de method.getName()
+eram esperados valores iguais, mas "double" é diferente de method.getReturnType()
+eram esperados valores iguais, mas "" é diferente de method.getDescription()
+eram esperados valores iguais, mas "public" é diferente de method.getModifiers().get(0)
+eram esperados valores iguais, mas "abstract" é diferente de method.getModifiers().get(1)
+eram esperados valores iguais, mas "Evaluated result." é diferente de method.getReturnDescription()
+eram esperados valores iguais, mas 1 é diferente de method.getParameters().size()
+eram esperados valores iguais, mas "expression" é diferente de parameter.getName()
+eram esperados valores iguais, mas "Some math expression." é diferente de parameter.getDescription()
+eram esperados valores iguais, mas 2 é diferente de inheritance.size()
+eram esperados valores iguais, mas "calc/Calculator" é diferente de inheritance.get(0)
+eram esperados valores iguais, mas "java/lang/Object" é diferente de inheritance.get(1)
+eram esperados valores iguais, mas keys.length é diferente de subclasses.size()
+eram esperados valores iguais, mas 0 é diferente de subclasses.size()
+eram esperados valores iguais, mas small é diferente de frames[frames.length - 2].getLocal(0).getValue()
+eram esperados valores iguais, mas str é diferente de frames[3].getStack(0).getValue()
+eram esperados valores iguais, mas str.length() é diferente de frames[4].getStack(0).getValue()
+eram esperados valores iguais, mas part1 + part2 é diferente de frames[frames.length - 2].getStack(0).getValue()
+eram esperados valores iguais, mas part1 + part2 é diferente de retFrameLocal.getValue()
+eram esperados valores diferentes, mas initial é igual a retFrameLocal.getValue()
+eram esperados valores diferentes, mas one é igual a retFrameLocal.getValue()
+eram esperados valores diferentes, mas two é igual a retFrameLocal.getValue()
+eram esperados valores diferentes, mas initial é igual a retFrameLocal.getValue()
+eram esperados valores diferentes, mas one é igual a retFrameLocal.getValue()
+eram esperados valores iguais, mas two é diferente de retFrameLocal.getValue()
+esperava-se não nulo, mas result foi nulo
+esperava-se verdadeiro, mas Arrays.binarySearch(paths, path) foi falso
+esperava-se verdadeiro, mas directedGraph.getVertex(1).isRoot() foi falso
+esperava-se verdadeiro, mas directedGraph.getVertex(6).isRoot() foi falso
+esperava-se verdadeiro, mas roots.contains(v1) foi falso
+esperava-se verdadeiro, mas roots.contains(v6) foi falso
+eram esperados valores iguais, mas 2 é diferente de roots.size()
+esperava-se verdadeiro, mas roots.contains(v1) foi falso
+eram esperados valores iguais, mas 1 é diferente de roots.size()
+esperava-se verdadeiro, mas roots.contains(v1) foi falso
+eram esperados valores iguais, mas 1 é diferente de roots.size()
+esperava-se verdadeiro, mas directedGraph.getVertex(4).isLeaf() foi falso
+esperava-se verdadeiro, mas directedGraph.getVertex(5).isLeaf() foi falso
+esperava-se verdadeiro, mas leaves.contains(v4) foi falso
+esperava-se verdadeiro, mas leaves.contains(v5) foi falso
+eram esperados valores iguais, mas 2 é diferente de leaves.size()
+esperava-se verdadeiro, mas leaves.contains(v5) foi falso
+eram esperados valores iguais, mas 1 é diferente de leaves.size()
+esperava-se verdadeiro, mas leaves.contains(v5) foi falso
+eram esperados valores iguais, mas 1 é diferente de leaves.size()
+eram esperados valores iguais, mas 2 é diferente de resultMapping.size()
+eram esperados valores iguais, mas "calc/Calculator.MAX_DEPTH_LEVEL" é diferente de resultMapping.get("calc/Calculator.MAX_DEPTH")
+eram esperados valores iguais, mas "calc/Calculator.doEvaluate(ILjava/lang/String;)D" é diferente de resultMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D")
+eram esperados valores iguais, mas 3 é diferente de aggregateMapping.size()
+eram esperados valores iguais, mas "renamed/MyCalc" é diferente de aggregateMapping.get("calc/Calculator")
+eram esperados valores iguais, mas "MAX_DEPTH_LEVEL" é diferente de aggregateMapping.get("calc/Calculator.MAX_DEPTH")
+eram esperados valores iguais, mas "doEvaluate" é diferente de aggregateMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D")
+eram esperados valores iguais, mas 3 é diferente de aggregateMapping.size()
+eram esperados valores iguais, mas "renamed/MyCalc" é diferente de aggregateMapping.get("calc/Calculator")
+eram esperados valores iguais, mas "MAX_DEPTH_LEVEL" é diferente de aggregateMapping.get("calc/Calculator.MAX_DEPTH")
+eram esperados valores iguais, mas "doEvaluate" é diferente de aggregateMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D")
+eram esperados valores iguais, mas 3 é diferente de aggregateMapping.size()
+eram esperados valores iguais, mas "renamed2/MyCalc2" é diferente de aggregateMapping.get("calc/Calculator")
+eram esperados valores iguais, mas "MAX_DEPTH_LEVEL" é diferente de aggregateMapping.get("calc/Calculator.MAX_DEPTH")
+eram esperados valores iguais, mas "doEvaluate" é diferente de aggregateMapping.get("calc/Calculator.evaluate(ILjava/lang/String;)D")
+eram esperados valores diferentes, mas node não é uma instância de ClassOrInterfaceType
+eram esperados valores iguais, mas "Scanner" é diferente de ((ClassOrInterfaceType) node).asString()
+eram esperados valores diferentes, mas node não é uma instância de VariableDeclarator
+eram esperados valores iguais, mas "scanner" é diferente de ((VariableDeclarator) node).getNameAsString()
+eram esperados valores diferentes, mas node não é uma instância de ClassOrInterfaceType

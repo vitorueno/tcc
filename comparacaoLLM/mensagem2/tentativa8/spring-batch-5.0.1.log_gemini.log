@@ -1,0 +1,100 @@
+O valor de trade.getIsin() era esperado como igual ao valor em rs.getString(1), mas são diferentes.
+O valor de trade.getQuantity() era esperado como igual ao valor em rs.getLong(2), mas são diferentes.
+O valor de trade.getPrice() era esperado como igual ao valor em rs.getBigDecimal(3), mas são diferentes.
+O valor de trade.getCustomer() era esperado como igual ao valor em rs.getString(4), mas são diferentes.
+O valor de activeRow era esperado como igual ao tamanho de trades, mas são diferentes.
+O tamanho de customers era esperado como igual ao valor de activeRow, mas são diferentes.
+O valor de customer.getName() era esperado como igual ao valor em rs.getString(1), mas são diferentes.
+O valor de BatchStatus.COMPLETED era esperado como igual ao status de execution, mas são diferentes.
+A diferença entre after e before era esperada como igual ao valor de readCount do primeiro elemento do iterador de stepExecutions de execution, mas são diferentes.
+O valor de BatchStatus.COMPLETED era esperado como igual ao status de jobExecution, mas são diferentes.
+O valor "yes" era esperado como igual ao valor da chave "done" no ExecutionContext de jobExecution, mas são diferentes.
+O valor "foo" era esperado, mas o valor encontrado foi diferente.
+O valor "foo2" era esperado, mas o valor encontrado foi diferente.
+O valor 3 era esperado como igual ao valor de integerValue.intValue(), mas são diferentes.
+A soma de before com 5 era esperada como igual ao valor de after, mas são diferentes.
+O valor de trade.getIsin() era esperado como igual ao valor em rs.getString(1), mas são diferentes.
+O valor de trade.getQuantity() era esperado como igual ao valor em rs.getLong(2), mas são diferentes.
+O valor de trade.getPrice() era esperado como igual ao valor em rs.getBigDecimal(3), mas são diferentes.
+O valor de trade.getCustomer() era esperado como igual ao valor em rs.getString(4), mas são diferentes.
+O valor de EXPECTED_OUTPUT_FILE era esperado como igual ao valor de output, mas são diferentes.
+A soma de itemGenerator.getLimit() com 2 era esperada como igual ao valor de itemProcessor.getCounter(), mas são diferentes.
+A soma de itemGenerator.getLimit() com 2 era esperada como igual ao valor de itemProcessor.getCounter(), mas são diferentes.
+O valor de customer.getName() era esperado como igual ao valor em rs.getString(1), mas são diferentes.
+O valor "4" era esperado como igual ao valor de step1Execution.get("READ_COUNT").toString(), mas são diferentes.
+O valor "1" era esperado como igual ao valor de step1Execution.get("FILTER_COUNT").toString(), mas são diferentes.
+O valor "3" era esperado como igual ao valor de step1Execution.get("WRITE_COUNT").toString(), mas são diferentes.
+O código de retorno de ExitStatus.COMPLETED era esperado como igual ao código de retorno do ExitStatus de jobExecution, mas são diferentes.
+O valor 4 era esperado como igual ao tamanho de jobExecution.getStepExecutions(), mas são diferentes.
+O valor de BatchStatus.COMPLETED era esperado como igual ao status de jobExecution, mas são diferentes.
+O tamanho de inputs era esperado como igual ao tamanho de outputs, mas são diferentes.
+Era esperado que itemCount fosse maior que 0, mas não é.
+O valor de BatchStatus.COMPLETED era esperado como igual ao status de jobExecution, mas são diferentes.
+O valor de BatchStatus.COMPLETED era esperado como igual ao status de jobExecution, mas são diferentes.
+O valor de expected era esperado como igual ao valor de count, mas são diferentes.
+O valor de BatchStatus.COMPLETED era esperado como igual ao status de jobExecution, mas são diferentes.
+O valor de first era esperado como igual ao valor de writeCount do primeiro elemento do iterador de stepExecutions de jobExecution, mas são diferentes.
+O valor de BatchStatus.COMPLETED era esperado como igual ao status de jobExecution, mas são diferentes.
+O valor de second era esperado como igual ao valor de writeCount do primeiro elemento do iterador de stepExecutions de jobExecution, mas são diferentes.
+Era esperado que personService.getReturnedCount() fosse maior que 0, mas não é.
+O valor de personService.getReturnedCount() era esperado como igual ao valor de personService.getReceivedCount(), mas são diferentes.
+O valor de rs.getString("PLAYER_ID") era esperado como igual a "AKFJDL00", mas são diferentes.
+O valor de rs.getString("LAST_NAME") era esperado como igual a "Doe", mas são diferentes.
+O valor de rs.getString("FIRST_NAME") era esperado como igual a "John", mas são diferentes.
+O valor de rs.getString("POS") era esperado como igual a "QB", mas são diferentes.
+O valor de rs.getInt("YEAR_OF_BIRTH") era esperado como igual a 1975, mas são diferentes.
+O valor de rs.getInt("YEAR_DRAFTED") era esperado como igual a 1998, mas são diferentes.
+O valor de tempGame era esperado como igual ao valor de game, mas são diferentes.
+O valor de summary era esperado como igual ao valor de testSummary, mas são diferentes.
+O valor de customerFieldSet era esperado como igual ao valor de fs, mas são diferentes.
+O valor de customerAddLine era esperado como igual ao valor de customerTokenizer.getTokenizedLine(), mas são diferentes.
+O valor de customerFieldSet era esperado como igual ao valor de fs, mas são diferentes.
+O valor de customerAddLine era esperado como igual ao valor de customerTokenizer.getTokenizedLine(), mas são diferentes.
+O valor de customerFieldSet era esperado como igual ao valor de fs, mas são diferentes.
+O valor de customerAddLine era esperado como igual ao valor de customerTokenizer.getTokenizedLine(), mas são diferentes.
+O valor de customerUpdate era esperado como igual ao valor de processor.process(customerUpdate), mas são diferentes.
+O valor de customerUpdate era esperado como igual ao valor de processor.process(customerUpdate), mas são diferentes.
+O valor 95 era esperado como igual ao valor de rs.getLong("credit"), mas são diferentes.
+O valor "testCustomer" era esperado como igual ao valor de rs.getString("CUSTOMER"), mas são diferentes.
+O valor de new BigDecimal(Double.toString(99.69)) era esperado como igual ao valor de rs.getBigDecimal("PRICE"), mas são diferentes.
+O valor 5 era esperado como igual ao valor de rs.getLong("QUANTITY"), mas são diferentes.
+O valor de oldCredit.add(CustomerCreditIncreaseProcessor.FIXED_AMOUNT) era esperado como igual ao valor de credit do resultado de tested.process(customerCredit), mas são diferentes.
+O valor "testCustomerName" era esperado como igual ao nome de customerDebit, mas são diferentes.
+O valor de new BigDecimal("123.0") era esperado como igual ao valor de debit de customerDebit, mas são diferentes.
+Era esperado que reader.read() retornasse null, mas retornou um valor diferente.
+O valor de limit era esperado como igual ao valor de counter, mas são diferentes.
+O valor de counter era esperado como igual ao valor de reader.getCounter(), mas são diferentes.
+O valor de trade1 era esperado como igual ao valor de trade1Clone, mas são diferentes.
+Era esperado que trade1 fosse diferente de trade2, mas são iguais.
+O valor 3 era esperado como igual ao tamanho de lines, mas são diferentes.
+Era esperado que provider.read() retornasse null, mas retornou um valor diferente.
+As linhas de inputFile eram esperadas como iguais às linhas de outputFile, mas são diferentes.
+As linhas de inputFile eram esperadas como iguais às linhas de outputFile, mas são diferentes.
+Era esperado que AggregateItem.getFooter().isFooter() retornasse true, mas retornou false.
+Era esperado que AggregateItem.getHeader().isHeader() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "BEGIN" })).isHeader() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "FOO" })).isHeader() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "END" })).isFooter() retornasse true, mas retornou false.
+Era esperado que mapper.mapFieldSet(new DefaultFieldSet(new String[] { "FOO" })).isFooter() retornasse true, mas retornou false.
+O valor "foo" era esperado como igual ao valor de item de mapper.mapFieldSet(new DefaultFieldSet(new String[] { "FOO" })), mas são diferentes.
+Era esperado que result não fosse null, mas é null.
+O valor de o era esperado como igual ao valor de order, mas são diferentes.
+O valor de o.getCustomer() era esperado como igual ao valor de customer, mas são diferentes.
+O valor de o.getBillingAddress() era esperado como igual ao valor de billing, mas são diferentes.
+O valor de o.getShippingAddress() era esperado como igual ao valor de shipping, mas são diferentes.
+O valor de o.getBilling() era esperado como igual ao valor de billingInfo, mas são diferentes.
+O valor de o.getShipping() era esperado como igual ao valor de shippingInfo, mas são diferentes.
+O valor 3 era esperado como igual ao tamanho de o.getLineItems(), mas são diferentes.
+Era esperado que provider.read() retornasse null, mas retornou um valor diferente.
+Era esperado que orderValidator.supports(Order.class) retornasse true, mas retornou false.
+O valor 1 era esperado como igual ao tamanho de errors.getAllErrors(), mas são diferentes.
+O valor "Incorrect type" era esperado como igual ao código do primeiro erro em errors.getAllErrors(), mas são diferentes.
+O valor 0 era esperado como igual ao tamanho de errors.getAllErrors(), mas são diferentes.
+O valor 3 era esperado como igual ao tamanho de errors.getAllErrors(), mas são diferentes.
+O valor "error.order.id" era esperado como igual ao código do erro de campo "orderId" em errors, mas são diferentes.
+O valor "error.order.date.future" era esperado como igual ao código do erro de campo "orderDate" em errors, mas são diferentes.
+O valor "error.order.lines.badcount" era esperado como igual ao código do erro de campo "totalLines" em errors, mas são diferentes.
+O valor 2 era esperado como igual ao tamanho de errors.getAllErrors(), mas são diferentes.
+O valor "error.order.id" era esperado como igual ao código do erro de campo "orderId" em errors, mas são diferentes.
+O valor "error.order.lines.badcount" era esperado como igual ao código do erro de campo "totalLines" em errors, mas são diferentes.
+O valor 0 era esperado como igual ao tamanho de errors.getAllErrors(), mas são diferentes.

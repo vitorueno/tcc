@@ -1,0 +1,66 @@
+eram esperados valores iguais, mas 2 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 6 é diferente de s.nextStreamId(map)
+
+O valor de entrada para o primeiro assert não é igual ao esperado.
+O valor de entrada para o segundo assert não é igual ao esperado.
+O valor de entrada para o terceiro assert não é igual ao esperado.
+
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(1)
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(3)
+O valor é verdadeiro em s.isBeforeOrCurrent(1) mas falso em s.isBeforeOrCurrent(3).
+
+eram esperados valores iguais, mas True é diferente de s.isBeforeOrCurrent(1)
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(3)
+O valor é verdadeiro em s.isBeforeOrCurrent(3) mas falso em s.isBeforeOrCurrent(1).
+
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(-1)
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(0)
+O valor é verdadeiro em s.isBeforeOrCurrent(2) mas falso em s.isBeforeOrCurrent(-1).
+
+eram esperados valores iguais, mas True é diferente de s.isBeforeOrCurrent(1)
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(0)
+O valor é verdadeiro em s.isBeforeOrCurrent(2) mas falso em s.isBeforeOrCurrent(-2).
+
+eram esperados valores iguais, mas 2147483646 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 2 é diferente de s.nextStreamId(map)
+O valor de entrada para o primeiro assert não é igual ao esperado.
+
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 6 é diferente de s.nextStreamId(map)
+O valor de entrada para o segundo e terceiro asserts não é igual ao esperado.
+
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(1)
+eram esperados valores iguais, mas True é diferente de s.isBeforeOrCurrent(3)
+O valor é verdadeiro em s.isBeforeOrCurrent(1) mas falso em s.isBeforeOrCurrent(3).
+
+eram esperados valores iguais, mas False é diferente de s.isBeforeOrCurrent(-1)
+eram esperados valores iguais, mas True é diferente de s.isBeforeOrCurrent(2)
+O valor é verdadeiro em s.isBeforeOrCurrent(2) mas falso em s.isBeforeOrCurrent(-2).
+
+eram esperados valores iguais, mas False é diferente de setupPayload.willClientHonorLease()
+eram esperados valores iguais, mas 2147483646 é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+
+O valor da função willClientHonorLease() não é igual ao esperado.
+O valor de entrada para o primeiro assert não é igual ao esperado.
+
+eram esperados valores iguais, mas 0 é diferente de setupPayload.keepAliveInterval()
+eram esperados valores iguais, mas KEEP_ALIVE_INTERVAL é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+
+O valor do intervalo de manutenção não é igual ao esperado.
+O valor de entrada para o primeiro assert não é igual ao esperado.
+
+eram esperados valores iguais, mas 0 é diferente de setupPayload.keepAliveInterval()
+eram esperados valores iguais, mas KEEP_ALIVE_INTERVAL é diferente de s.nextStreamId(map)
+eram esperados valores iguais, mas 4 é diferente de s.nextStreamId(map)
+
+O valor do intervalo de manutenção não é igual ao esperado.
+O valor de entrada para o primeiro assert não é igual ao esperado.
+
+eram esperados valores iguais, mas Long.MAX_VALUE é diferente de actualRequest
+eram esperados valores iguais, mas 42L é diferente de actualRequest
+
+O valor do request máximo não é igual ao esperado.
+O valor do request não é igual ao esperado.

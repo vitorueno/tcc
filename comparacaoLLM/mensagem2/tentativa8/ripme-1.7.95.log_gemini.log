@@ -1,0 +1,12 @@
+eram esperados valores iguais, mas "test.test" é diferente de fileName
+eram esperados valores iguais, mas "test" é diferente de fileName
+eram esperados valores iguais, mas "Object" é diferente de fileName
+eram esperados valores iguais, mas "file.png" é diferente de fileName
+eram esperados valores iguais, mas "file." é diferente de fileName
+eram esperados valores iguais, mas "test" é diferente de new String(Base64.decode("dGVzdA=="))
+a asserção assertTrue falhou: o objeto ripper.findJSONObjectContainingPhotoId("-45984105_457345201", new JSONObject(json)) não é similar a new JSONObject(responseJson)
+a asserção assertTrue falhou: "https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150" não é igual a doc.location(), ignorando o case
+a asserção assertTrue falhou: "https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300" não é igual a doc.location(), ignorando o case
+a asserção assertTrue falhou: ripper.getGID(new URL("https://hitomi.la/galleries/975973.html")) não é igual a "975973"
+a asserção assertTrue falhou: ripper.pageContainsAlbums(url) retornou falso
+a asserção assertTrue falhou: ripper.pageContainsAlbums(url2) retornou falso

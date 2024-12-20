@@ -1,0 +1,90 @@
+eram esperados valores iguais, mas "sun.misc.Unsafe" é diferente de c.getCanonicalName()
+eram esperados valores iguais, mas 1 é diferente de user.id
+eram esperados valores iguais, mas "kraity" é diferente de user.name
+eram esperados valores iguais, mas 1 é diferente de user.id
+eram esperados valores iguais, mas "kraity" é diferente de user.name
+eram esperados valores iguais, mas 123 é diferente de bean.value
+eram esperados objetos iguais, mas jsonFactory é diferente de objectMapper.getFactory()
+eram esperados valores iguais, mas 3 é diferente de products.size()
+eram esperados valores iguais, mas 1 é diferente de products.get(0).id
+eram esperados valores iguais, mas 2 é diferente de products.get(1).id
+eram esperados valores iguais, mas 3 é diferente de products.get(2).id
+a condição esperada foi falsa
+era esperado um valor nulo, mas new InvalidDefinitionException(null).getType() não é nulo
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas "{\"time\":\"121314\"}" é diferente de str
+eram esperados valores iguais, mas bean.time é diferente de bean1.time
+eram esperados valores iguais, mas instantCsv é diferente de writer.writeValueAsString(bean)
+eram esperados valores iguais, mas bean.data é diferente de bean1.data
+eram esperados valores iguais, mas instantCsv é diferente de str
+eram esperados valores iguais, mas bean.data é diferente de bean1.data
+eram esperados valores iguais, mas "value\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+eram esperados valores iguais, mas "\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+a condição esperada foi falsa
+a condição esperada foi falsa
+eram esperados valores iguais, mas instantCsv é diferente de str
+eram esperados valores iguais, mas bean.data é diferente de bean1.data
+eram esperados valores iguais, mas "value\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.of("value")))
+eram esperados valores iguais, mas "\n" é diferente de writer.writeValueAsString(new TypeWithOptional(Optional.empty()))
+a condição esperada foi falsa
+a condição esperada foi falsa
+a condição esperada foi falsa
+eram esperados valores diferentes de nulo
+eram esperados valores iguais, mas 123 é diferente de entry.getJobResult().id
+eram esperados valores iguais, mas 123 é diferente de bean.id
+eram esperados valores iguais, mas 123 é diferente de bean1.id
+eram esperados valores iguais, mas 123 é diferente de bean2.id
+eram esperados valores iguais, mas 123 é diferente de bean3.id
+eram esperados valores iguais, mas MapperFeature.USE_ANNOTATIONS.getMask() é diferente de MapperFeature.USE_ANNOTATIONS.getLongMask()
+a condição esperada foi falsa
+a condição esperada foi falsa
+eram esperados valores iguais, mas "{\"color\":\"yellow\",\"type\":\"renault\"}" é diferente de json
+eram esperados valores iguais, mas car.color é diferente de car1.color
+eram esperados valores iguais, mas car.type é diferente de car1.type
+eram esperados valores iguais, mas "Black" é diferente de map.get("color")
+eram esperados valores iguais, mas bean.id é diferente de node.get("id").asInt()
+eram esperados valores iguais, mas bean.name é diferente de node.get("name").asText()
+eram esperados valores iguais, mas 123 é diferente de mapper.readTree(new ByteArrayInputStream(str.getBytes())).get("id").asInt()
+eram esperados valores iguais, mas 123 é diferente de mapper.readTree(new StringReader(str)).get("id").asInt()
+eram esperados valores iguais, mas 123 é diferente de mapper.readTree(str).get("id").asInt()
+eram esperados valores iguais, mas 123 é diferente de ((JsonNode) mapper.readTree(mapper.factory.createParser(str))).get("id").asInt()
+eram esperados valores nulos, mas arrayNode.get(0) não é nulo
+eram esperados valores iguais, mas JsonNodeType.ARRAY é diferente de arrayNode.getNodeType()
+eram esperados valores iguais, mas "{\"id\":101}" é diferente de str
+eram esperados valores iguais, mas "{\"id\":101,\"name\":null}" é diferente de str
+eram esperados valores iguais, mas "{\"bean_id\":1001}" é diferente de str
+eram esperados valores iguais, mas bean.id é diferente de bean1.id
+eram esperados valores iguais, mas str é diferente de new String(bytes, StandardCharsets.UTF_8)
+eram esperados valores iguais, mas bean.id é diferente de bean2.id
+eram esperados valores iguais, mas bean.id é diferente de bean3.id
+eram esperados valores iguais, mas "{\"bean_id\":1001}" é diferente de str
+eram esperados valores iguais, mas expected é diferente de carJson
+eram esperados valores iguais, mas expected é diferente de new String(byteOut.toByteArray(), StandardCharsets.UTF_8)
+eram esperados valores iguais, mas expected é diferente de strWriter.toString()
+eram esperados valores iguais, mas car.type é diferente de car1.type
+eram esperados valores diferentes de nulo
+eram esperados valores iguais, mas "Black" é diferente de car.getColor()
+eram esperados valores diferentes de nulo
+eram esperados valores iguais, mas "red" é diferente de car.color
+eram esperados valores diferentes de nulo
+eram esperados valores iguais, mas 1 é diferente de values.size()
+eram esperados valores iguais, mas 123 é diferente de values.get(0).id
+eram esperados valores iguais, mas "XX" é diferente de values.get(0).name
+eram esperados valores iguais, mas 1 é diferente de values.size()
+eram esperados valores iguais, mas 123 é diferente de values.get(0).id
+eram esperados valores iguais, mas "XX" é diferente de values.get(0).name
+eram esperados valores iguais, mas 1 é diferente de map.size()
+eram esperados valores iguais, mas 123 é diferente de bean.id
+eram esperados valores iguais, mas "XXX" é diferente de bean.name
+a condição esperada foi falsa
+a condição esperada foi falsa
+a condição esperada foi falsa
+a condição esperada foi falsa
+a condição esperada foi falsa

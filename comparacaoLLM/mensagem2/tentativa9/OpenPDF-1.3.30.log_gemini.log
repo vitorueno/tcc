@@ -1,0 +1,88 @@
+O tamanho de `result` (result.length) era esperado ser maior que o tamanho de `input` (input.length).
+O número de páginas esperado era 2, mas `countPages(target)` retornou um valor diferente.
+O número de páginas esperado era 5, mas `countPages(target)` retornou um valor diferente.
+O valor esperado era `expected`, mas `color` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#f09")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#F09")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#ff0099")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#FF0099")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#f09a")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#F09A")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#ff0099aa")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("#FF0099aa")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255,0,153)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255, 0, 153)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(100%,0%,60%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(100%, 0%, 60%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255 0 153)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255, 0, 153, 1)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255, 0, 153, 100%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255 0 153 / 1)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255 0 153 / 100%)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgb(255, 0, 153, 0.6)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgb(255, 0, 153, 60%)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgb(255 0 153 / 0.6)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgb(255 0 153 / 60%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgba(255, 0, 153, 1)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgba(255, 0, 153, 100%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgba(255 0 153 / 1)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgba(255 0 153 / 100%)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgba(255, 0, 153, 0.6)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgba(255, 0, 153, 60%)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgba(255 0 153 / 0.6)")` retornou um valor diferente.
+O valor esperado era `expected2`, mas `WebColors.getRGBColor("rgba(255 0 153 / 60%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255, 0, 153.0)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(255, 0, 153.6, 1)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("rgb(2.55e2, .1e0, 1.53e2, +.1e3%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270,60%,70%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270, 60%, 70%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270 60% 70%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270deg, 60%, 70%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(4.71239rad, 60%, 70%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(.75turn, 60%, 70%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270, 60%, 70%, .15)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270, 60%, 70%, 15%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270 60% 70% / .15)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsl(270 60% 70% / 15%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsla(270, 60%, 70%, .15)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsla(270, 60%, 70%, 15%)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsla(270 60% 70% / .15)")` retornou um valor diferente.
+O valor esperado era `expected`, mas `WebColors.getRGBColor("hsla(270 60% 70% / 15%)")` retornou um valor diferente.
+O tamanho esperado era 3, mas o tamanho de `actualHeaderFooter.getChunks()` é diferente.
+O valor esperado era "before", mas `actualHeaderFooter.getChunks().get(0).toString()` retornou um valor diferente.
+O valor esperado era "0", mas `actualHeaderFooter.getChunks().get(1).toString()` retornou um valor diferente.
+O valor esperado era "after", mas `actualHeaderFooter.getChunks().get(2).toString()` retornou um valor diferente.
+O tamanho esperado era 2, mas o tamanho de `actualHeaderFooter.getChunks()` é diferente.
+O valor esperado era "before", mas `actualHeaderFooter.getChunks().get(0).toString()` retornou um valor diferente.
+O valor esperado era "0", mas `actualHeaderFooter.getChunks().get(1).toString()` retornou um valor diferente.
+O tamanho esperado era 1, mas o tamanho de `actualHeaderFooter.getChunks()` é diferente.
+O valor esperado era "before", mas `actualHeaderFooter.getChunks().get(0).toString()` retornou um valor diferente.
+O tamanho esperado era 6, mas o tamanho de `actualHeaderFooter.getChunks()` é diferente.
+Era esperado que `actualHeaderFooter.getChunks().get(5).toString()` fosse diferente de "\n".
+O valor esperado era "1 1.1 1.2 ", mas `actualHeaderFooter.getChunks().get(0).toString()` retornou um valor diferente.
+O valor esperado era "1.4 ", mas `actualHeaderFooter.getChunks().get(5).toString()` retornou um valor diferente.
+O valor esperado de `footer.getTop()` era 52.0.
+O valor esperado de `footerTop` era 92.0.
+O valor esperado de `imageBottom` era 60.0.
+O valor esperado de `imageIndentLeft` era 36.0.
+O valor esperado de `footerTop` era 76.0.
+O valor esperado de `imageBottom` era 44.0.
+O valor esperado de `imageIndentRight` era 527.0.
+O valor esperado de `footerTop` era 76.0.
+O valor esperado de `imageBottom` era 44.0.
+O valor esperado de `imageIndentLeft` era 281.5.
+O valor esperado de `footerTop` era 76.0.
+O valor esperado de `imageBottom` era 44.0.
+O valor esperado de `imageIndentLeft` era 281.5.
+O valor esperado para getString(56) era "lvi".
+O valor esperado para getString(2999) era "mmcmxcix".
+O valor esperado para getString(3000) era "mmm".
+Era esperado que getString(input) fosse igual a expected e getString(input, false) fosse igual a expected.toUpperCase()
+Era esperado que `image.getUrl()` não fosse nulo.
+Era esperado que `image.getUrl()` não fosse nulo.
+O tamanho esperado de `names` era 1.
+Era esperado que `font.createSubsetPrefix()` fosse diferente de `font.createSubsetPrefix()`.
+Era esperado que `font.createSubsetPrefix()` fosse diferente de `font.createSubsetPrefix()`.
+Era esperado que `subsetPrefixOne` fosse igual a `subsetPrefixTwo`.
+Era esperado que `comparePdf()` retornasse true.
+A execução do código dentro do bloco `assertTimeout` era esperada para completar em menos de 10 segundos.

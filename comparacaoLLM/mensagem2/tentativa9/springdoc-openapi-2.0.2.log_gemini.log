@@ -1,0 +1,20 @@
+`Assertions.assertTrue(!result.contains("!<Type A>"))`:  O resultado não deveria conter "!&lt;Type A&gt;", mas contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string  `contentAsString` deveria conter "Swagger UI", mas não contém.
+`Assertions.assertEquals(expected, result)`: O valor esperado era  `expected`, mas o valor obtido foi `result`.
+`assertTrue(result.contains("window.ui"))`: A string `result` deveria conter "window.ui", mas não contém.
+`assertEquals(expected, result.replace("\r", ""))`: O valor esperado era `expected`, mas o valor obtido (após a remoção de "\r") foi `result.replace("\r", "")`.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(transformedIndex.contains("window.ui"))`: A string `transformedIndex` deveria conter "window.ui", mas não contém.
+`assertEquals("no-store", mvcResult.getResponse().getHeader("Cache-Control"))`: O valor esperado para o cabeçalho "Cache-Control" era "no-store", mas o valor obtido foi `mvcResult.getResponse().getHeader("Cache-Control")`.
+`assertEquals(this.getContent(fileName), transformedIndex.replace("\r", ""))`: O valor esperado (obtido de `this.getContent(fileName)`) era diferente do valor obtido (após a remoção de "\r") `transformedIndex.replace("\r", "")`.
+`assertTrue(htmlResult.contains("window.ui"))`: A string `htmlResult` deveria conter "window.ui", mas não contém.
+`assertEquals(this.getContent(fileName), htmlResult.replace("\r", ""))`: O valor esperado (obtido de `this.getContent(fileName)`) era diferente do valor obtido (após a remoção de "\r") `htmlResult.replace("\r", "")`.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.
+`assertTrue(contentAsString.contains("Swagger UI"))`: A string `contentAsString` deveria conter "Swagger UI", mas não contém.

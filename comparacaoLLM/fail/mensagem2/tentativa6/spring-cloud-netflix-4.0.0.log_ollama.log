@@ -1,0 +1,41 @@
+```java
+String mensagemAssert1 = "eram esperados valores iguais, mas " + expected + " é diferente de " + methodName;
+
+String mensagemAssert2 = "eram esperados valores iguais, mas " + expected + " é diferente de " + methodName;
+```
+
+Se você quiser um formato mais abrangente para todos os asserts e seus parâmetros, pode definir uma classe para isso:
+
+```java
+public class AssertMessage {
+    private String method_name;
+    private int expected;
+    private Object actual;
+
+    public AssertMessage(String methodName, int expected, Object actual) {
+        this.method_name = methodName;
+        this.expected = expected;
+        this.actual = actual;
+    }
+
+    @Override
+    public String toString() {
+        return "eram esperados valores iguais, mas " + expected + " é diferente de " + methodName;
+    }
+}
+```
+
+E usar essa classe para criar as mensagens:
+
+```java
+AssertMessage message1 = new AssertMessage("calculator.add(2, 3)", 5, calculator.add(2, 3));
+String mensagem1 = message1.toString();
+
+AssertMessage message2 = new AssertMessage("calculator.add(4, 2)", 7, calculator.add(4, 2));
+String mensagem2 = message2.toString();
+
+AssertMessage message3 = new AssertMessage("calculator.add(5, 5)", 10, calculator.add(5, 5));
+String mensagem3 = message3.toString();
+```
+
+Espero que isso ajude!

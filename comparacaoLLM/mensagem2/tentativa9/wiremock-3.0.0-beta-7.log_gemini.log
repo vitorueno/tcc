@@ -1,0 +1,100 @@
+assertFalse(mappings.get(0).getRequest().getHeaders().containsKey("No")) -> Esperava-se que o cabeçalho "No" não estivesse presente, mas ele foi encontrado.
+assertTrue(match.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertTrue(match.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertTrue(result) -> Esperava-se que o resultado fosse verdadeiro, mas foi falso.
+assertTrue(result) -> Esperava-se que o resultado fosse verdadeiro, mas foi falso.
+assertFalse(result) -> Esperava-se que o resultado fosse falso, mas foi verdadeiro.
+assertTrue(pattern.isMatchAny()) -> Esperava-se que o padrão correspondesse a pelo menos um elemento, mas não correspondeu a nenhum.
+assertFalse(pattern.isMatchAll()) -> Esperava-se que o padrão não correspondesse a todos os elementos, mas correspondeu a todos.
+assertTrue(pattern.isMatchAny()) -> Esperava-se que o padrão correspondesse a pelo menos um elemento, mas não correspondeu a nenhum.
+assertFalse(pattern.isMatchAll()) -> Esperava-se que o padrão não correspondesse a todos os elementos, mas correspondeu a todos.
+assertTrue(pattern.isMatchAll()) -> Esperava-se que o padrão correspondesse a todos os elementos, mas não correspondeu a todos.
+assertFalse(pattern.isMatchAny()) -> Esperava-se que o padrão não correspondesse a nenhum elemento, mas correspondeu a pelo menos um.
+assertNull(pattern) -> Esperava-se que o padrão fosse nulo, mas não era.
+assertTrue(matcher.match("2022-06-14T12:13:14Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2022-06-14T12:13:14Z", mas nenhuma foi encontrada.
+assertFalse(matcher.match("2020-06-14T12:13:14Z").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "2020-06-14T12:13:14Z", mas uma foi encontrada.
+assertTrue(matcher.match("2022-06-14T12:13:14").isExactMatch()) -> Esperava-se uma correspondência exata para "2022-06-14T12:13:14", mas nenhuma foi encontrada.
+assertFalse(matcher.match("2020-06-14T12:13:14").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "2020-06-14T12:13:14", mas uma foi encontrada.
+assertTrue(matcher.match("2022-06-14T12:13:14Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2022-06-14T12:13:14Z", mas nenhuma foi encontrada.
+assertFalse(matcher.match("2020-06-14T12:13:14Z").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "2020-06-14T12:13:14Z", mas uma foi encontrada.
+assertTrue(matcher.match("2021-07-01T23:59:59").isExactMatch()) -> Esperava-se uma correspondência exata para "2021-07-01T23:59:59", mas nenhuma foi encontrada.
+assertFalse(matcher.match("2021-06-01T15:15:15").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "2021-06-01T15:15:15", mas uma foi encontrada.
+assertTrue(matcher.match(good.toString()).isExactMatch()) -> Esperava-se uma correspondência exata para good.toString(), mas nenhuma foi encontrada.
+assertFalse(matcher.match(bad.toString()).isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para bad.toString(), mas uma foi encontrada.
+assertTrue(matcher.match(good.toString()).isExactMatch()) -> Esperava-se uma correspondência exata para good.toString(), mas nenhuma foi encontrada.
+assertFalse(matcher.match(bad.toString()).isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para bad.toString(), mas uma foi encontrada.
+assertFalse(matcher.match(null).isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para null, mas uma foi encontrada.
+assertTrue(matcher.match(good.toString()).isExactMatch()) -> Esperava-se uma correspondência exata para good.toString(), mas nenhuma foi encontrada.
+assertFalse(matcher.match(bad.toString()).isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para bad.toString(), mas uma foi encontrada.
+assertTrue(matcher.match("2021-01-01T00:00:00Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2021-01-01T00:00:00Z", mas nenhuma foi encontrada.
+assertTrue(matcher.match("2021-01-01T00:00:00").isExactMatch()) -> Esperava-se uma correspondência exata para "2021-01-01T00:00:00", mas nenhuma foi encontrada.
+assertTrue(matcher.match("2022-06-01T11:22:33Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2022-06-01T11:22:33Z", mas nenhuma foi encontrada.
+assertTrue(matcher.match("2019-06-01T11:22:33Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2019-06-01T11:22:33Z", mas nenhuma foi encontrada.
+assertFalse(matcher.match("2020-06-01T11:22:33Z").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "2020-06-01T11:22:33Z", mas uma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(WireMock.notContaining("thing").match("otherstuff").isExactMatch()) -> Esperava-se uma correspondência exata para "otherstuff" sem "thing", mas nenhuma foi encontrada.
+assertTrue(WireMock.notContaining("thing").match(null).isExactMatch()) -> Esperava-se uma correspondência exata para null sem "thing", mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(WireMock.containing("thing").match("mythings").isExactMatch()) -> Esperava-se uma correspondência exata para "mythings" contendo "thing", mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(pattern.match("<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n" + "<things>\n" + "    <thing characteristic=\"tepid\"/>\n" + "    <thing characteristic=\"tedious\"/>\n" + "</things>").isExactMatch()) -> Esperava-se uma correspondência exata para o XML fornecido, mas nenhuma foi encontrada.
+assertTrue(pattern.match("<things><thing characteristic=\"tepid\"/><thing characteristic=\"tedious\"/></things>").isExactMatch()) -> Esperava-se uma correspondência exata para o XML fornecido, mas nenhuma foi encontrada.
+assertFalse(matchResult.isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata, mas uma foi encontrada.
+assertTrue(match.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertTrue(match.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertFalse(pattern.match("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n" + "    <soap:Body>\n" + "        <stuff xmlns=\"https://example.com/the-wrong-namespace\">\n" + "            <things />\n" + "        </stuff>\n" + "    </soap:Body>\n" + "</soap:Envelope>\n").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para o XML fornecido, mas uma foi encontrada.
+assertTrue(pattern.match("<my-attribs two=\"2\" one=\"1\" three=\"3\"/>").isExactMatch()) -> Esperava-se uma correspondência exata para o XML fornecido, mas nenhuma foi encontrada.
+assertTrue(pattern.match("<my-elements>\n" + "    <two />\n" + "    <three />\n" + "    <one />\n" + "</my-elements>").isExactMatch()) -> Esperava-se uma correspondência exata para o XML fornecido, mas nenhuma foi encontrada.
+assertTrue(pattern.match(xmlWithDtdThatCannotBeFetched).isExactMatch()) -> Esperava-se uma correspondência exata para xmlWithDtdThatCannotBeFetched, mas nenhuma foi encontrada.
+assertNull(equalToXmlPattern.getPlaceholderOpeningDelimiterRegex()) -> Esperava-se que o delimitador de abertura do placeholder fosse nulo, mas não era.
+assertNull(equalToXmlPattern.getPlaceholderClosingDelimiterRegex()) -> Esperava-se que o delimitador de fechamento do placeholder fosse nulo, mas não era.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertTrue(stringValuePattern instanceof EqualToXmlPattern) -> Esperava-se que stringValuePattern fosse uma instância de EqualToXmlPattern, mas não era.
+assertTrue(stringValuePattern instanceof EqualToXmlPattern) -> Esperava-se que stringValuePattern fosse uma instância de EqualToXmlPattern, mas não era.
+assertEquals(enablePlaceholders, equalToXmlPattern.isEnablePlaceholders()) -> Esperava-se que enablePlaceholders fosse igual a equalToXmlPattern.isEnablePlaceholders(), mas não era.
+assertEquals(placeholderOpeningDelimiterRegex, equalToXmlPattern.getPlaceholderOpeningDelimiterRegex()) -> Esperava-se que placeholderOpeningDelimiterRegex fosse igual a equalToXmlPattern.getPlaceholderOpeningDelimiterRegex(), mas não era.
+assertEquals(placeholderClosingDelimiterRegex, equalToXmlPattern.getPlaceholderClosingDelimiterRegex()) -> Esperava-se que placeholderClosingDelimiterRegex fosse igual a equalToXmlPattern.getPlaceholderClosingDelimiterRegex(), mas não era.
+assertTrue(matchResult.isExactMatch()) -> Esperava-se uma correspondência exata, mas nenhuma foi encontrada.
+assertTrue(pattern.match(actual).isExactMatch()) -> Esperava-se uma correspondência exata para actual, mas nenhuma foi encontrada.
+assertTrue(pattern.isMatchAny()) -> Esperava-se que o padrão correspondesse a pelo menos um elemento, mas não correspondeu a nenhum.
+assertNull(pattern.getBodyPatterns()) -> Esperava-se que pattern.getBodyPatterns() fosse nulo, mas não era.
+assertTrue(pattern.isMatchAll()) -> Esperava-se que o padrão correspondesse a todos os elementos, mas não correspondeu a todos.
+assertNull(pattern.getHeaders()) -> Esperava-se que pattern.getHeaders() fosse nulo, mas não era.
+assertTrue(pattern.isMatchAny()) -> Esperava-se que o padrão correspondesse a pelo menos um elemento, mas não correspondeu a nenhum.
+assertTrue(pattern.isMatchAny()) -> Esperava-se que o padrão correspondesse a pelo menos um elemento, mas não correspondeu a nenhum.
+assertEquals(pattern.getBodyPatterns().get(0).getExpected(), expectedBinary) -> Esperava-se que pattern.getBodyPatterns().get(0).getExpected() fosse igual a expectedBinary, mas não era.
+assertTrue(pattern.isMatchAll()) -> Esperava-se que o padrão correspondesse a todos os elementos, mas não correspondeu a todos.
+assertFalse(pattern.isMatchAll()) -> Esperava-se que o padrão não correspondesse a todos os elementos, mas correspondeu a todos.
+assertFalse(pattern.isMatchAny()) -> Esperava-se que o padrão não correspondesse a nenhum elemento, mas correspondeu a pelo menos um.
+assertFalse(pattern.isMatchAll()) -> Esperava-se que o padrão não correspondesse a todos os elementos, mas correspondeu a todos.
+assertFalse(pattern.isMatchAll()) -> Esperava-se que o padrão não correspondesse a todos os elementos, mas correspondeu a todos.
+assertFalse(pattern.isMatchAny()) -> Esperava-se que o padrão não correspondesse a nenhum elemento, mas correspondeu a pelo menos um.
+assertTrue(matcher.match("2021-06-14T12:13:14Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2021-06-14T12:13:14Z", mas nenhuma foi encontrada.
+assertFalse(matcher.match("1921-06-14T12:13:14Z").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "1921-06-14T12:13:14Z", mas uma foi encontrada.
+assertTrue(matcher.match("2021-06-24T12:40:27Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2021-06-24T12:40:27Z", mas nenhuma foi encontrada.
+assertFalse(matcher.match("2021-06-24T13:40:27Z").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "2021-06-24T13:40:27Z", mas uma foi encontrada.
+assertTrue(matcher.match("2021-06-14T12:13:14").isExactMatch()) -> Esperava-se uma correspondência exata para "2021-06-14T12:13:14", mas nenhuma foi encontrada.
+assertFalse(matcher.match("1921-06-14T12:13:14").isExactMatch()) -> Esperava-se que não houvesse uma correspondência exata para "1921-06-14T12:13:14", mas uma foi encontrada.
+assertTrue(matcher.match("2021-06-14T12:13:14Z").isExactMatch()) -> Esperava-se uma correspondência exata para "2021-06-14T12:13:14Z", mas nenhuma foi encontrada.

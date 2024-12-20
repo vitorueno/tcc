@@ -1,0 +1,10 @@
+
+Projeto: /home/vitor-otto/opensource/dropwizard-2.1.4
+
+Assert com mensagem: /home/vitor-otto/opensource/dropwizard-2.1.4/dropwizard-testing/src/test/java/io/dropwizard/testing/junit5/DAOTestExtensionTest.java linha: 46 Método: Assertions.assertThrows(ConstraintViolationException.class, () -> daoTestExtension.inTransaction(() -> persist(new TestEntity(null))))
+Assert com mensagem: /home/vitor-otto/opensource/dropwizard-2.1.4/dropwizard-health/src/test/java/io/dropwizard/health/check/http/HttpHealthCheckTest.java linha: 78 Método: assertThrows(ProcessingException.class, httpHealthCheck::check)
+Assert com mensagem: /home/vitor-otto/opensource/dropwizard-2.1.4/dropwizard-health/src/test/java/io/dropwizard/health/HealthEnvironmentTest.java linha: 29 Método: assertThrows(IllegalStateException.class, () -> healthEnvironment.healthStateAggregator())
+Total asserts: 4316
+Asserts sem descrição: 4313
+Asserts com descrição: 3
+Assertion Roulette: 3386

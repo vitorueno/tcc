@@ -1,0 +1,93 @@
+assertFalse(RoaringBitmap.bitmapOf().stream().iterator().hasNext(), "nenhum elemento no bitmap")
+assertFalse(RoaringBitmap.bitmapOf().reverseStream().iterator().hasNext(), "nenhum elemento no bitmap inverso")
+
+assertEquals(bitmap.getCardinality(), iteratorCopy.size(), "elementos inesperados no iterator")
+assertEquals(bitmap.getCardinality(), intIteratorCopy.size(), "elementos inesperados no iterator de integer")
+assertEquals(bitmap.getCardinality(), reverseIntIteratorCopy.size(), "elementos inesperados no iterator de integer inverso")
+
+assertEquals(Ints.asList(data), iteratorCopy, "lista de dados incompleta")
+assertEquals(Ints.asList(data), intIteratorCopy, "lista de dados incompleta")
+assertEquals(Lists.reverse(Ints.asList(data)), reverseIntIteratorCopy, "lista de dados incompleta e invertida")
+
+assertEquals(ImmutableList.of(1, 2, 3), iteratorCopy, "lista de dados incompleta")
+assertEquals(ImmutableList.of(1, 2, 3), intIteratorCopy, "lista de dados incompleta")
+assertEquals(ImmutableList.of(3, 2, 1), reverseIntIteratorCopy, "lista de dados invertida")
+
+assertEquals(bitmap.last(), bitmap.reverseStream().max().getAsInt(), "mais um elemento do que existe no bitmap")
+assertEquals(bitmap.last(), bitmap.stream().max().getAsInt(), "mais um elemento do que existe no bitmap")
+
+Assertions.assertEquals(total, source.size(), "tamanho diferente do que esperado")
+assertEquals(rb1, rb2)
+assertNotEquals(rb1, rb2)
+
+Assertions.assertEquals(total, i, "tamanho diferente do que esperado")
+Assertions.assertEquals(source.size(), i, "tamanho diferente do que esperado")
+Assertions.assertEquals(select2, deserStreamOne.select(2))
+Assertions.assertEquals(select2, deserBBOne.select(2))
+
+assertFalse(map.getLongIterator().hasNext(), "elementos no iterator de long")
+
+assertEquals(0, map.getLongCardinality(), "elementos do bitmap de long")
+assertTrue(map.isEmpty())
+
+assertFalse(map.contains(0), "elemento 0 existe no bitmap")
+
+assertEquals(0, map.rankLong(Long.MIN_VALUE), "valor de rank incompleto")
+assertEquals(0, map.rankLong(Long.MIN_VALUE + 1), "valor de rank incompleto")
+assertEquals(0, map.rankLong(-1), "valor de rank incompleto")
+assertEquals(0, map.rankLong(0), "valor de rank incompleto")
+assertEquals(0, map.rankLong(1), "valor de rank incompleto")
+
+assertEquals(0, map.rankLong(Long.MAX_VALUE - 1), "valor de rank incompleto")
+assertEquals(0, map.rankLong(Long.MAX_VALUE), "valor de rank incompleto")
+
+assertArrayEquals(new long[] { 0L }, map.toArray(), "elementos do bitmap incompletos")
+
+assertTrue(iterator.hasNext())
+assertEquals(0, iterator.next())
+
+assertEquals(0, map.select(0), "valor selectado incompleto")
+
+assertTrue(map.contains(0))
+
+assertFalse(iterator.hasNext())
+
+assertEquals(1, map.getLongCardinality(), "elementos do bitmap de long")
+assertFalse(map.isEmpty())
+
+assertEquals(0, map.rankLong(Long.MIN_VALUE), "valor de rank incompleto")
+assertEquals(0, map.rankLong(Integer.MIN_VALUE - 1L), "valor de rank incompleto")
+assertEquals(0, map.rankLong(-1), "valor de rank incompleto")
+assertEquals(0, map.rankLong(0), "valor de rank incompleto")
+assertEquals(0, map.rankLong(1), "valor de rank incompleto")
+
+assertEquals(0, map.rankLong(Integer.MAX_VALUE + 1L), "valor de rank incompleto")
+assertEquals(0, map.rankLong(Long.MAX_VALUE), "valor de rank incompleto")
+
+assertArrayEquals(new long[] { -1L }, map.toArray(), "elementos do bitmap invertidos incompletos")
+
+assertTrue(iterator.hasNext())
+assertEquals(-1, iterator.next())
+
+assertEquals(-1, map.select(0), "valor selectado incompleto")
+
+assertTrue(map.contains(-1))
+
+assertFalse(iterator.hasNext())
+
+assertEquals(1, map.getLongCardinality(), "elementos do bitmap de long")
+assertFalse(map.isEmpty())
+
+assertEquals(0, map.rankLong(Long.MIN_VALUE), "valor de rank incompleto")
+assertEquals(0, map.rankLong(Integer.MIN_VALUE - 1L), "valor de rank incompleto")
+assertEquals(0, map.rankLong(-1), "valor de rank incompleto")
+assertEquals(0, map.rankLong(0), "valor de rank incompleto")
+assertEquals(0, map.rankLong(1), "valor de rank incompleto")
+
+assertEquals(0, map.rankLong(Long.MAX_VALUE - 1), "valor de rank incompleto")
+assertEquals(1, map.rankLong(Long.MAX_VALUE), "valor de rank incompleto")
+
+assertArrayEquals(new long[] { Long.MIN_VALUE }, map.toArray(), "elementos do bitmap invertidos incompletos")
+
+assertTrue(iterator.hasNext())
+assertEquals(Long.MIN_VALUE, iterator.next())

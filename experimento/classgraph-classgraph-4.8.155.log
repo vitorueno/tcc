@@ -1,0 +1,23 @@
+
+Projeto: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155
+
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 51 Método: assertTrue(paths.remove(classesDir), "Classpath should have contained " + classesDir + ": " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 52 Método: assertTrue(paths.remove(Paths.get(getJreRtJarPath())), "Classpath should have contained system jars: " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 54 Método: assertEquals(0, paths.size(), "Classpath should have no other entries: " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 81 Método: assertTrue(paths.remove(classesDir), "Classpath should have contained " + classesDir + ": " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 82 Método: assertTrue(paths.remove(Paths.get(getJreRtJarPath())), "Classpath should have contained system jars: " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 84 Método: assertEquals(0, paths.size(), "Classpath should have no other entries: " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 109 Método: assertNotNull(moduleFinder, "ModuleFinder should be non-null")
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 110 Método: assertTrue(moduleFinder.getSystemModuleRefs().size() > 0, "ModuleFinder should have found system modules")
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 116 Método: assertTrue(paths.remove(classesDir), "Classpath should have contained " + classesDir + ": " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 117 Método: assertEquals(0, paths.size(), "Classpath should have no other entries: " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 142 Método: assertNotNull(moduleFinder, "ModuleFinder should be non-null")
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 143 Método: assertTrue(moduleFinder.getSystemModuleRefs().size() > 0, "ModuleFinder should have found system modules")
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 149 Método: assertTrue(paths.remove(classesDir), "Classpath should have contained " + classesDir + ": " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/nonapi/io/github/classgraph/classpath/ClasspathFinderTest.java linha: 150 Método: assertEquals(0, paths.size(), "Classpath should have no other entries: " + paths)
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/io/github/classgraph/issues/issue600/Issue600Test.java linha: 31 Método: assertFalse(resources.isEmpty(), "Test is meaningless without resources to open.")
+Assert com mensagem: /home/vitor-otto/opensource/classgraph-classgraph-4.8.155/src/test/java/io/github/classgraph/issues/issue600/Issue600Test.java linha: 45 Método: assertFalse(resources.isEmpty(), "Test is meaningless without resources to open.")
+Total asserts: 583
+Asserts sem descrição: 567
+Asserts com descrição: 16
+Assertion Roulette: 474

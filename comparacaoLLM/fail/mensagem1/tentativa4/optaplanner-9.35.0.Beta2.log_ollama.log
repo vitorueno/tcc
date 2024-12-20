@@ -1,0 +1,59 @@
+Assertions.assertEquals("0", result.get("score"))
+Assertions.assertNotNullMessage(result.get("entity.0.fullValue"), "Entity 0 full value must be present")
+Assertions.assertNotNullMessage(result.get("entity.1.fullValue"), "Entity 1 full value must be present")
+assertNotNullMessage(solverConfig, "Solver configuration cannot be null")
+assertEquals(DomainAccessType.GIZMO, solverConfig.getDomainAccessType(), "Domain access type must be GIZMO")
+assertEquals(TestdataQuarkusSolution.class, solverConfig.getSolutionClass(), "Solution class must be TestdataQuarkusSolution")
+assertEquals(Collections.singletonList(TestdataQuarkusEntity.class), solverConfig.getEntityClassList(), "Entity class list must contain TestdataQuarkusEntity")
+assertEquals(TestdataQuarkusConstraintProvider.class, solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass(), "Constraint provider class must be TestdataQuarkusConstraintProvider")
+assertEquals(3L, solverConfig.getTerminationConfig().getSecondsSpentLimit().longValue(), "Seconds spent limit must be 3")
+
+assertNotNullMessage(solverFactory, "Solver factory cannot be null")
+assertNotNullMessage(solverFactory.buildSolver(), "Building solver failed")
+assertNotNullMessage(solverConfig, "Solver configuration cannot be null")
+assertEquals(TestdataQuarkusSolution.class, solverConfig.getSolutionClass(), "Solution class must be TestdataQuarkusSolution")
+assertEquals(Collections.singletonList(TestdataQuarkusEntity.class), solverConfig.getEntityClassList(), "Entity class list must contain TestdataQuarkusEntity")
+assertEquals(TestdataQuarkusConstraintProvider.class, solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass(), "Constraint provider class must be TestdataQuarkusConstraintProvider")
+
+assertNotNullMessage(solverFactory, "Solver factory cannot be null")
+assertSame(((DefaultSolverFactory<TestdataQuarkusSolution>) solverFactory).getScoreDirectorFactory(), ((DefaultSolutionManager<TestdataQuarkusSolution, SimpleScore>) solutionManager).getScoreDirectorFactory(), "Score director factory must match")
+
+assertNotNullMessage(solverManager, "Solver manager cannot be null")
+assertSame(solverFactory, ((DefaultSolverManager<TestdataQuarkusSolution, Long>) solverManager).getSolverFactory(), "Solver factory must match")
+
+assertNotNullMessage(scoreManager, "Score manager cannot be null")
+assertNotNullMessage(solution, "Solution cannot be null")
+assertTrueMessage(solution.getScore().score() >= 0, "Solution score must be non-negative")
+
+assertEquals("Extra Data", solution.getExtraData())
+assertEquals(ConstraintStreamImplType.BAVET, solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType(), "Constraint stream implementation type must be BAVET")
+
+failMessage("Build should fail", "A execução falhou por uma causa deliberada")
+
+Assertions.assertEquals(ConstraintStreamImplType.DROOLS, ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType())
+Assertions.assertFalse(((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).isDroolsAlphaNetworkCompilationEnabled())
+
+assertNotNullMessage(benchmarkResultDirectory, "Benchmark result directory cannot be null")
+assertNotNullMessage(Files.isDirectory(benchmarkResultDirectoryPath), "Benchmark result directory is not a directory")
+
+assertNotNullMessage(Files.isRegularFile(benchmarkResultPath), "Benchmark result file is not a regular file")
+
+Assertions.assertTrue(xmlPath.getBoolean("plannerBenchmarkResult.solverBenchmarkResult.singleBenchmarkResult.subSingleBenchmarkResult.succeeded"), "Planner benchmark result must be successful")
+
+assertNotNullMessage(solverConfig, "Solver configuration cannot be null")
+assertNotNullMessage(solverConfig.getEntityClassList(), "Entity class list must contain at least one entity")
+
+Assertions.assertEquals(5, plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getTerminationConfig().getMillisecondsSpentLimit())
+Assertions.assertEquals(List.of(TestdataQuarkusEntity.class), plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getEntityClassList())
+
+assertNotNullMessage(childBenchmarkConfig.getSolverConfig(), "Child benchmark solver configuration cannot be null")
+assertNullMessage(childBenchmarkConfig.getSolverConfig().getEntityClassList(), "Child benchmark entity class list must not be present")
+
+Assertions.assertEquals(TestdataQuarkusConstraintProvider.class, childBenchmarkConfig.getSolverConfig().getScoreDirectorFactoryConfig().getConstraintProviderClass())
+Assertions.assertEquals(TestdataQuarkusConstraintProvider.class, childBenchmarkConfig.getSolverConfig().getSolutionClass())
+
+assertNotNullMessage(plannerBenchmarkConfig.getSolverBenchmarkConfigList(), "Planner benchmark config solver must not be null")
+assertEquals(2, plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(0).getSolverConfig().getPhaseConfigList().size())
+assertEquals(3, plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(1).getSolverConfig().getPhaseConfigList().size())
+
+Assertions.assertEquals("The following " + SolverBenchmarkConfig.class.getSimpleName() + " do not " + "have termination configured: [First Fit and Local Search without Termination]. " + "At least one of the properties " + "quarkus.optaplanner.benchmark.solver.termination.spent-limit, " + "quarkus.optaplanner.benchmark.solver.termination.best-score-limit, " + "quarkus.optaplanner.benchmark.solver.termination.unimproved-spent-limit " + "is required if termination is not configured in a solver benchmark and the " + "inherited solver benchmark config.", exception.getMessage())

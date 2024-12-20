@@ -1,0 +1,72 @@
+eram esperados valores iguais, mas "Hey Ma" é diferente de body
+era esperado um valor nulo, mas o resultado não é nulo
+eram esperados valores iguais, mas "bar" é diferente de Unirest.post(path).body("foo").asString().getBody()
+eram esperados valores iguais, mas null é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas 400 é diferente de res.getStatus()
+eram esperados valores iguais, mas "wtf" é diferente de res.getStatusText()
+eram esperados valores iguais, mas "boo" é diferente de res.getBody()
+eram esperados valores iguais, mas "Hi" é diferente de Unirest.get(otherPath).asString().getBody()
+eram esperados valores iguais, mas "Hey Buddy" é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas "Yeaaaah Buddy" é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas "Call Result" é diferente de response.getBody()
+os objetos não são os mesmos
+eram esperados valores iguais, mas "two" é diferente de result
+eram esperados valores iguais, mas "Boo!" é diferente de err.say
+eram esperados valores iguais, mas "cool" é diferente de result
+a condição esperada não foi atendida
+eram esperados valores iguais, mas "http://localhost/get/cheese/passed?fruit=apples" é diferente de sum.getUrl()
+eram esperados valores iguais, mas "http://localhost/get/{params}/passed" é diferente de sum.getRawPath()
+eram esperados valores iguais, mas HttpMethod.GET é diferente de sum.getHttpMethod()
+eram esperados valores iguais, mas BAD_REQUEST é diferente de response.getStatus()
+eram esperados valores iguais, mas "oh noes" é diferente de response.getStatusText()
+eram esperados valores iguais, mas BAD_REQUEST é diferente de response.getStatus()
+eram esperados valores iguais, mas "" é diferente de response.getStatusText()
+eram esperados valores iguais, mas "Hello World" é diferente de Unirest.get(path).asString().getBody()
+eram esperados valores iguais, mas "Hello World" é diferente de new String(body)
+eram esperados valores iguais, mas "apple" é diferente de Unirest.get(path).asJson().getBody().getObject().getString("fruit")
+eram esperados valores iguais, mas "apple" é diferente de Unirest.get(path).asJson().getBody().getObject().getString("fruit")
+eram esperados valores iguais, mas "apple" é diferente de pojo.fruit
+eram esperados valores iguais, mas "derp" é diferente de pojo
+eram esperados valores iguais, mas "derp" é diferente de pojo
+eram esperados valores iguais, mas "foo" é diferente de rez.getBody()
+eram esperados valores iguais, mas "grover" é diferente de rez.getHeaders().getFirst("monster")
+eram esperados valores iguais, mas null é diferente de rez.getBody()
+eram esperados valores iguais, mas "grover" é diferente de rez.getHeaders().getFirst("monster")
+eram esperados valores iguais, mas 400 é diferente de httpResponse.getStatus()
+eram esperados valores iguais, mas "Bad Request" é diferente de httpResponse.getBody()
+eram esperados valores iguais, mas 400 é diferente de httpResponse.getStatus()
+eram esperados valores iguais, mas "howdy" é diferente de httpResponse.getBody().getObject().getString("message")
+eram esperados valores iguais, mas 400 é diferente de httpResponse.getStatus()
+eram esperados valores iguais, mas "Pears" é diferente de httpResponse.getBody().fruit
+os objetos não são os mesmos
+os objetos não são os mesmos
+a condição esperada não foi atendida
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de response
+eram esperados valores iguais, mas 200 é diferente de Unirest.get(url).asEmpty().getStatus()
+eram esperados valores iguais, mas s é diferente de message
+eram esperados valores iguais, mas "{\"message\":\"boom!\"}" é diferente de e
+era esperado um valor nulo, mas o resultado não é nulo
+era esperado um valor nulo, mas error.merp não é nulo
+eram esperados valores iguais, mas "{\"message\":\"boom!\"}" é diferente de request.getParsingError().get().getOriginalBody()
+a condição esperada não foi atendida
+eram esperados valores iguais, mas "boom!" é diferente de e.getMessage()
+eram esperados valores iguais, mas "java.io.IOException: Something horrible happened" é diferente de ex.getMessage()
+eram esperados valores iguais, mas 200 é diferente de response.getStatusLine().getStatusCode()
+a condição esperada não foi atendida
+a condição esperada não foi atendida
+a condição esperada não foi atendida
+os objetos são os mesmos
+os objetos não são os mesmos
+os objetos não são os mesmos
+a condição esperada não foi atendida
+a condição esperada não foi atendida
+os objetos são os mesmos
+a condição esperada não foi atendida
+eram esperados valores diferentes, mas 1 é igual a request.getHeaders().size()
+eram esperados valores diferentes, mas "Marco" é igual a request.getHeaders().get("name").get(0)
+eram esperados valores diferentes, mas "Marco" é igual a request.getHeaders().get("NAme").get(0)
+eram esperados valores diferentes, mas "Marco" é igual a request.getHeaders().get("Name").get(0)

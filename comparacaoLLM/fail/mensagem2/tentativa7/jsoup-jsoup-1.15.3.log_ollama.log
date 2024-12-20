@@ -1,0 +1,51 @@
+1. eram esperados valores iguais, mas 5 é diferente de calculator.add(2, 3)
+2. eram esperados valores iguais, mas 7 é diferente de calculator.add(4, 2)
+3. eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+
+4. Não foi encontrado null, espera um valor
+5. Tamanho esperado é maior que 10, mas é igual a 11: files
+6. Não foi encontrado null, espera um valor
+7. Tamanho esperado é maior que 10, mas é igual a 12: files
+8. Não foi encontrado null, espera um valor
+9. Tamanho esperado é maior que 10, mas é igual a 13: files
+10. Não foi encontrado null, espera um valor
+11. Erro ao executar runner.isInterrupted()
+12. A string contém menos de uma palavra, espera mais de uma palavra: body[0]
+13. A string não contém o substring especificado, espera que contenha '<p>Are you still there?': body[0]
+14. Erro ao executar runner.isInterrupted()
+15. A string está vazia, espera que contenha caracteres: body[0]
+16. Não foi lançado um exceção, espera que seja lançada: threw
+17. O texto é igual a "outatime", espera que seja igual a "outatime": h1.text()
+18. Não foi lançado uma exceção, espera que seja lançada: threw
+19. A quantidade de exceções lancadas é 0, espera que seja maior que 0: catcher.exceptionCount.get()
+20. O número de exceções multithread é igual a numThreads - 1, espera que seja igual a numThreads - 2: catcher.multiThreadExceptions.get()
+21. Não foi lançado uma exceção, espera que seja lançada: threw
+22. Fail com mensagem "Should not be reachable", espera que o teste não falhe.
+23. O texto é igual a "Hello, World!", espera que seja igual a "Hello, World!": p.text()
+24. A string contém texto que corresponde à expressão esperada "Environment Variables", espera que contenha mesmo a palavra: doc.title().contains("Environment Variables")
+25. Não foi lançado uma exceção, espera que seja lançada: threw
+26. O texto é igual a "Webserver Environment Variables", espera que seja igual a "Webserver Environment Variables": doc.title()
+27. O valor do parâmetro "Method" é igual a "POST", espera que seja igual a "Method": ihVal("Method", doc)
+28. O valor do parâmetro "Accept-Encoding" é igual a "gzip", espera que seja igual a "gzip": ihVal("Accept-Encoding", doc)
+29. O valor do parâmetro "Cookie" é igual a "auth=token", espera que seja igual a "auth=token": ihVal("Cookie", doc)
+30. O valor do parâmetro "uname" está igual a "Jsoup, Jonathan Hyatt", espera que seja igual a "surname=Soup,firstname=Jay":
+  - nome = "firstname=surname=fullname=Jay Soup"
+  - cookie = "token=asdfg123; uid=jhy"
+31. O número de cookies é igual a 0, espera que seja maior que 0: res.cookies().size()
+32. O valor da propriedade "Location" está igual a "http://localhost:8080/EchoServlet/Url", espera que seja igual a "echoUrl": doc.location()
+33. O texto contém o substring especificado, espera que contenha mesmo substring: body.contains("Environment")
+34. O tamanho do bytes é maior que 100, espera que seja maior que 101: bytes.length > 100
+35. A string contém texto que corresponde à expressão esperada "Environment", espera que contenha mesmo a palavra: doc.title().contains("Environment")
+36. O valor do cookie é igual a "token=asdfg123; uid=jhy", espera que seja igual a "token=asdfg123; uid=jhy": ihVal("Cookie", doc)
+37. O número de cookies é igual a 0, espera que seja maior que 0: res.cookies().size()
+38. A string está igual à palavra esperada "Hello, World!", espera que seja igual a "Hello, World!": doc.selectFirst("p").text()
+39. A quantidade de documentos é igual a 1, espera que seja igual a 2: document.title() == 'Something'
+40. O número de parágrafos dentro do título da documentação é igual a 0, espera que seja igual a 1: document.select("p").size()
+41. O tamanho do doc é igual a 0, espera que seja igual a 12: doc.select("p").size() == 0
+42. O texto é igual à palavra esperada "Hello, World!", espera que seja igual a "Hello, World!": p.text()
+43. A URL está igual ao valor esperado "http://localhost:8080/HelloServlet/Url", espera que seja igual à Url: doc.location() == HelloServlet.Url
+44. Não foi lançado uma exceção, espera que seja lançada: threw
+45. A URL está igual ao valor esperado "EchoServlet/Url", espera que seja igual à Url: EchoServlet.Url
+46. O método é igual a "GET", espera que seja igual a "Method": ihVal("Method", doc)
+47. Não foi encontrado null, espera um valor: ihVal("Hello", doc) == None
+48. A URL está igual ao valor esperado "http://localhost:8080/EchoServlet/Url", espera que seja igual à Url: EchoServlet.Url

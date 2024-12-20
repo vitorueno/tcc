@@ -1,0 +1,101 @@
+`cdiLiquibase não deve ser nulo`
+`cdiLiquibase.isInitialized() deveria ser ${shouldBeRunning}`
+`cdiLiquibase.isUpdateSuccessful() deveria ser ${shouldBeRunning}`
+`liquibaseSchemas e resolved deveriam ter o mesmo tamanho`
+`previous deveria ter tamanho 9`
+`schemes e resolved deveriam ter o mesmo tamanho`
+`previous deveria ter tamanho 16`
+`liquibaseSchemas e resolved deveriam ter o mesmo tamanho`
+`resolved deveria ter tamanho 7`
+`locations deveria ter tamanho 1`
+`mojo.changeLogDirectory deveria ser igual a dirLocation`
+`mojo não deve ser nulo`
+`mojo.getOutputDirectory() deveria ser "target/liquibase/myOutputDirectory"`
+`databaseDataType.getType() deveria ser "TIMESTAMP_NTZ"`
+`databaseDataType.toSql() deveria ser "TIMESTAMP_NTZ"`
+`databaseDataType.isAutoIncrement() deveria ser falso`
+`aliases deveria ter tamanho 2`
+`aliases deveria conter "datetime"`
+`aliases deveria conter "java.sql.Types.DATETIME"`
+`liquibaseDataType.getClass().getName() deveria ser "liquibase.datatype.core.TimestampNTZTypeSnowflake"`
+`timestampNTZType deveria suportar snowflakeDatabase`
+`timestampNTZType não deveria suportar PostgresDatabase`
+`timestampNTZType.getPriority() deveria ser PRIORITY_DATABASE`
+`timestampNTZType.getMinParameters(snowflakeDatabase) deveria ser 0`
+`timestampNTZType.getMinParameters(snowflakeDatabase) deveria ser 0`
+`database.getShortName() deveria ser "snowflake"`
+`database.getDefaultDatabaseProductName() deveria ser "Snowflake"`
+`database.getDefaultPort() deveria ser nulo`
+`database.getCurrentDateTimeFunction() deveria ser "current_timestamp::timestamp_ntz"`
+`database.getPriority() deveria ser PRIORITY_DATABASE`
+`database.supportsInitiallyDeferrableColumns() deveria ser falso`
+`database.supportsDropTableCascadeConstraints() deveria ser verdadeiro`
+`database.isCorrectDatabaseImplementation(jdbcConnection) deveria ser verdadeiro`
+`database.getDefaultDriver("jdbc:snowflake:") deveria ser "net.snowflake.client.jdbc.SnowflakeDriver"`
+`database.getDefaultDriver("jdbc:wrong-name:") deveria ser nulo`
+`database.supportsSchemas() deveria ser verdadeiro`
+`database.supportsCatalogs() deveria ser verdadeiro`
+`database.supportsCatalogInObjectName(null) deveria ser falso`
+`database.supportsSequences() deveria ser verdadeiro`
+`database.getDatabaseChangeLogTableName() deveria ser "DATABASECHANGELOG"`
+`database.getDatabaseChangeLogLockTableName() deveria ser "DATABASECHANGELOGLOCK"`
+`database.supportsTablespaces() deveria ser falso`
+`database.supportsAutoIncrement() deveria ser verdadeiro`
+`database.getAutoIncrementClause() deveria ser "AUTOINCREMENT"`
+`database.getAutoIncrementClause(null, null, null, null) deveria ser "AUTOINCREMENT (1, 1)"`
+`database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("1"), null, null) deveria ser "AUTOINCREMENT (1, 1)"`
+`database.getAutoIncrementClause(new BigInteger("7"), new BigInteger("1"), null, null) deveria ser "AUTOINCREMENT (7, 1)"`
+`database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("7"), null, null) deveria ser "AUTOINCREMENT (1, 7)"`
+`database.getAutoIncrementClause(new BigInteger("7"), null, null, null) deveria ser "AUTOINCREMENT (7, 1)"`
+`database.getAutoIncrementClause(null, new BigInteger("7"), null, null) deveria ser "AUTOINCREMENT (1, 7)"`
+`database.generateAutoIncrementStartWith(new BigInteger("1")) deveria ser verdadeiro`
+`database.generateAutoIncrementBy(new BigInteger("1")) deveria ser verdadeiro`
+`database.supportsRestrictForeignKeys() deveria ser verdadeiro`
+`database.isReservedWord("table") deveria ser verdadeiro`
+`database.getDefaultCatalogName() deveria ser nulo`
+`database.getDefaultSchemaName() deveria ser nulo`
+`database.getJdbcCatalogName(new CatalogAndSchema(null, null)) deveria ser nulo`
+`database.getJdbcSchemaName(new CatalogAndSchema(null, null)) deveria ser nulo`
+`pk.getColumnNamesAsList().size() deveria ser 1`
+`pk.getColumnNamesAsList().size() deveria ser 2`
+`pk.getColumnNamesAsList().get(0) deveria ser "id1"`
+`pk.getColumnNamesAsList().get(1) deveria ser "id2"`
+`pk.getColumnNamesAsList().size() deveria ser 2`
+`pk.getColumnNamesAsList().get(0) deveria ser "id1"`
+`pk.getColumnNamesAsList().get(1) deveria ser "id2"`
+`ChangeLogSerializerFactory.getInstance() não deve ser nulo`
+`ChangeLogSerializerFactory.getInstance() deveria ser o mesmo objeto`
+`ChangeLogSerializerFactory.getInstance().getSerializers().size() deveria ser 0`
+`ChangeLogSerializerFactory.getInstance().getSerializers().size() deveria ser 1`
+`factory.getSerializers().size() deveria ser 0`
+`factory.getSerializers().size() deveria ser 2`
+`factory.getSerializers().size() deveria ser 1`
+`instance1 e ChangeLogSerializerFactory.getInstance() não deveriam ser o mesmo objeto`
+`serializers.size() deveria ser 6`
+`serializer não deve ser nulo`
+`serializer deveria ser uma instância de XMLChangeLogSerializer.class`
+`ChangeLogSerializerFactory.getInstance().getSerializers("xml").size() deveria ser 1`
+`factory.getSerializer("xml") deveria ser highestPriority`
+`factory.getSerializers().get("xml").size() deveria ser 3`
+`serializedJson deveria ser igual a "{\\n  \\\"changeSet\\\": {\\n    \\\"id\\\": \\\"1\\\",\\n    \\\"author\\\": \\\"nvoxland\\\",\\n    \\\"ignore\\\": true,\\n    \\\"objectQuotingStrategy\\\": \\\"LEGACY\\\",\\n    \\\"preconditions\\\": {\\n      \\\"preConditions\\\": {\\n        \\\"nestedPreconditions\\\": [\\n          {\\n            \\\"preConditions\\\": {\\n              \\\"onError\\\": \\\"WARN\\\",\\n              \\\"onFail\\\": \\\"CONTINUE\\\",\\n              \\\"onSqlOutput\\\": \\\"TEST\\\"\\n            }\\n          }\\n        ]\\n        ,\\n        \\\"onError\\\": \\\"CONTINUE\\\",\\n        \\\"onFail\\\": \\\"MARK_RAN\\\",\\n        \\\"onSqlOutput\\\": \\\"FAIL\\\"\\n      }\\n    },\\n    \\\"runInTransaction\\\": false,\\n    \\\"runOrder\\\": \\\"last\\\",\\n    \\\"changes\\\": [\\n      {\\n        \\\"addColumn\\\": {\\n          \\\"catalogName\\\": \\\"cat\\\",\\n          \\\"columns\\\": [\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueNumeric\\\": 3,\\n                \\\"name\\\": \\\"col1\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueComputed\\\": \\\"NOW()\\\",\\n                \\\"name\\\": \\\"col2\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueBoolean\\\": true,\\n                \\\"name\\\": \\\"col3\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueDate\\\": \\\"1970-01-01T00:00:00\\\",\\n                \\\"name\\\": \\\"col2\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueSequenceNext\\\": \\\"seq_me\\\",\\n                \\\"name\\\": \\\"col2\\\"\\n              }\\n            }\\n          ]\\n          \\n        }\\n      }\\n    ]\\n    \\n  }\\n}\\n`
+`node.getTagName() deveria ser "addAutoIncrement"`
+`node.getTagName() deveria ser "addColumn"`
+`node.getAttribute("tableName") deveria ser "TAB"`
+`columns.getLength() deveria ser 1`
+`((Element) columns.item(0)).getTagName() deveria ser "column"`
+`((Element) columns.item(0)).getAttribute("name") deveria ser "NEWCOL"`
+`((Element) columns.item(0)).getAttribute("type") deveria ser "TYP"`
+`node.getTagName() deveria ser "addDefaultValue"`
+`node.getAttribute("schemaName") deveria ser "SCHEMA_NAME"`
+`node.getAttribute("tableName") deveria ser "TABLE_NAME"`
+`node.getAttribute("columnName") deveria ser "COLUMN_NAME"`
+`node.getAttribute("defaultValue") deveria ser "DEF STRING"`
+`node.getAttribute("defaultValueNumeric") deveria ser "42"`
+`node.getAttribute("defaultValueBoolean") deveria ser "true"`
+`node.getAttribute("defaultValueDate") deveria ser "2007-01-02"`
+`node.getAttribute("defaultValueSequenceNext") deveria ser "sampleSeq"`
+`node.getTagName() deveria ser "addForeignKeyConstraint"`
+`node.getAttribute("constraintName") deveria ser "FK_NAME"`
+`node.getAttribute("baseTableSchemaName") deveria ser "BASE_SCHEMA_NAME"`
+`node.getAttribute("baseTableName") deveria ser "BASE_TABLE_NAME"`
+

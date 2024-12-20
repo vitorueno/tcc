@@ -1,0 +1,49 @@
+*NotNull(eventHandlerGroup) - Não pode ser null.
+*Same(testException, actualException) - Os objetos são iguais.
+*Same(testException, actualException) - Os objetos são iguais.
+*Same(testException, actualException) - Os objetos são iguais.
+*Same(testException, actualException) - Os objetos são iguais.
+*AssertEquals(0, sequencer.next()) - O valor esperado é 0.
+*AssertEquals(3, sequencer.next(4)) - O valor esperado é 3.
+*AssertTrue(sequencer.hasAvailableCapacity(1)) - É verdadeiro.
+*AssertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE)) - É verdadeiro.
+*AssertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE + 1)) - Não é verdadeiro.
+*AssertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE - 1)) - É verdadeiro.
+*AssertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE)) - Não é verdadeiro.
+*AssertFalse(sequencer.hasAvailableCapacity(1)) - Não é verdadeiro.
+*AssertFalse(sequencer.isAvailable(seq)) - Não é verdadeiro.
+*AssertTrue(sequencer.isAvailable(seq)) - É verdadeiro.
+*AssertTrue(sequencer.isAvailable(seq)) - É verdadeiro.
+*AssertTrue(sequencer.isAvailable(seq)) - É verdadeiro.
+*AssertFalse(sequencer.isAvailable(seq)) - Não é verdadeiro.
+*AssertTrue(eventLatch.await(2, TimeUnit.SECONDS)) - É verdadeiro.
+*AssertTrue(exceptionLatch.await(2, TimeUnit.SECONDS)) - É verdadeiro.
+*AssertEquals(Arrays.asList(3L, 2L, 1L), batchSizes) - Os valores são iguais.
+*AssertTrue(h1.awaitStart(2, TimeUnit.SECONDS)) - É verdadeiro.
+*AssertTrue(h1.awaitStop(2, TimeUnit.SECONDS)) - É verdadeiro.
+*AssertTrue(timeWaiting >= theTimeout) - É verdadeiro.
+*AssertEquals(10, sequence.addAndGet(10)) - O valor esperado é 10.
+*AssertEquals(10, sequence.get()) - O valor esperado é 10.
+*AssertEquals(1, sequence.incrementAndGet()) - O valor esperado é 2.
+*AssertEquals(1, sequence.get()) - O valor esperado é 2.
+*AssertEquals(0, sequence.getAndAdd(1)) - O valor esperado é 1.
+*AssertEquals(1, sequence.get()) - O valor esperado é 2.
+*AssertEquals(-1L, batchEventProcessor.getSequence().get()) - O valor esperado é -1.
+*AssertEquals(0L, batchEventProcessor.getSequence().get()) - O valor esperado é 0.
+*AssertEquals(0L, batchEventProcessor.getSequence().get()) - O valor esperado é 0.
+*AssertEquals(TEST_VALUE, event.getTestString()) - Os valores são iguais.
+*AssertEquals(SingleProducerSequencer.INITIAL_CURSOR_VALUE, ringBuffer.getCursor()) - Os valores são iguais.
+*AssertEquals(0, sequence) - O valor esperado é 0.
+*AssertEquals(expectedEvent, event) - Os valores são iguais.
+*AssertEquals(0L, ringBuffer.getCursor()) - O valor esperado é 0.
+*AssertEquals(expectedEvent, messages.get().get(0)) - Os valores são iguais.
+*AssertEquals(expectedSequence, available) - Os valores são iguais.
+*AssertEquals(expectedSequence, available) - Os valores são iguais.
+*AssertFalse(ringBuffer.tryPublishEvent(StubEvent.TRANSLATOR, 3, "3")) - Não é verdadeiro.
+*AssertTrue(publisherComplete.get()) - É verdadeiro.
+*AssertTrue(publisherComplete.get()) - É verdadeiro.
+*AssertTrue(ringBuffer.tryPublishEvents(translators)) - É verdadeiro.
+*AssertTrue(ringBuffer.tryPublishEvents(translators)) - É verdadeiro.
+*AssertEquals(3L, Util.getMinimumSequence(sequences)) - O valor esperado é 3.
+*AssertEquals(Long.MAX_VALUE, Util.getMinimumSequence(sequences)) - O valor esperado é Long.MAX_VALUE.
+*AssertEquals(causeException, ex.getCause()) - Os valores são iguais.

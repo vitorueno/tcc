@@ -1,0 +1,59 @@
+assertArrayEquals(buildKey("123"), buildKey(new String("123")), "Chaves não coincidem")
+buildKey(new byte[] { 1, 2, 3 }), buildKey(new byte[] { 1, 2, 3 })
+buildKey(123), buildKey(123)
+buildKey(123L), buildKey(123L)
+buildKey(true), buildKey(true)
+buildKey(new Date(123)), buildKey(new Date(123))
+buildKey(c1), buildKey(c2)
+assertArrayEquals(byteKey, c.buildKey(byteKey), "Chave não coincidem")
+assertArrayEquals(strKey.getBytes(), c.buildKey(strKey), "Valor não coincidem")
+assertArrayEquals(byteKey, c.buildKey(byteKey), "Chave não coincidem")
+assertArrayEquals(strKey.getBytes(), c.buildKey(strKey.getBytes()), "Valor não coincidem")
+assertArrayEquals(convertedKey.getBytes(), c.buildKey(byteKey), "Chave não coincidem")
+assertArrayEquals(convertedKey.getBytes(), c.buildKey(strKey), "Valor não coincidem")
+assertArrayEquals(convertedKey.getBytes(), c.buildKey("long long long str"), "Valor não coincidem")
+assertArrayEquals(convertedKey.getBytes(), c.buildKey(1), "Chave não coincidem")
+assertArrayEquals(strKey.getBytes(), c.buildKey(strKey.getBytes()), "Valor não coincidem")
+assertArrayEquals(strKey.getBytes(), c.buildKey(strKey.getBytes()), "Valor não coincidem")
+assertArrayEquals(strKey.getBytes(), c.buildKey(strKey.getBytes()), "Valor não coincidem")
+Assert.assertEquals(target.count(), target.count(), "Contadores iguais")
+Assert.assertNotEquals(service.notCachedCount(), service.notCachedCount(), "Contadores diferentes")
+Assert.assertEquals(service.countWithAnnoOnClass(), service.countWithAnnoOnClass(), "Contadores iguais")
+Assert.assertEquals(service.countWithAnnoOnInterface(), service.countWithAnnoOnInterface(), "Contadores iguais")
+Assert.assertNotEquals(service.enableCacheWithNoCacheCount(bean), service.enableCacheWithNoCacheCount(bean), "Configurações diferentes")
+assertSame(c, c2, "Objetos idênticos")
+
+CacheResultCode.NOT_EXISTS, cache.GET("BASE_K1").getResultCode(), "Código de resultado inválido"
+CacheResultCode.SUCCESS, cache.PUT("BASE_K1", "V1", 10, TimeUnit.SECONDS).getResultCode(), "Código de resultado válido"
+CacheResultCode.SUCCESS, cache.GET("BASE_K1").getResultCode(), "Código de resultado inválido"
+"V1", cache.GET("BASE_K1").getValue(), "Valor inválido"
+CacheResultCode.SUCCESS, cache.PUT("BASE_K1", "V2", 10, TimeUnit.SECONDS).getResultCode(), "Código de resultado válido"
+"V2", cache.GET("BASE_K1").getValue(), "Valor inválido"
+CacheResultCode.SUCCESS, cache.REMOVE("BASE_K1").getResultCode(), "Código de resultado inválido"
+CacheResultCode.NOT_EXISTS, cache.GET("BASE_K1").getResultCode(), "Código de resultado inválido"
+
+CacheResultCode.FAIL, cache.GET(null).getResultCode(), "Código de resultado inválido"
+CacheResult MSG_ILLEGAL_ARGUMENT, cache.GET(null).getMessage(), "Mensagem inválida"
+assertNull(cache.get(null), "Valor inválido")
+CacheResultCode.FAIL, cache.GET_ALL(null).getResultCode(), "Código de resultado inválido"
+CacheResult MSG_ILLEGAL_ARGUMENT, cache.GET_ALL(null).getMessage(), "Mensagem inválida"
+assertNull(cache.getAll(null), "Valor inválido")
+
+CacheResultCode.FAIL, cache.PUT(null, "V1").getResultCode(), "Código de resultado inválido"
+CacheResult MSG_ILLEGAL_ARGUMENT, cache.PUT(null, "V1").getMessage(), "Mensagem inválida"
+CacheResultCode.FAIL, cache.PUT(null, "V1", 1, TimeUnit.SECONDS).getResultCode(), "Código de resultado inválido"
+CacheResult MSG_ILLEGAL_ARGUMENT, cache.PUT(null, "V1", 1, TimeUnit.SECONDS).getMessage(), "Mensagem inválida"
+assertNull(cache.putAll(null), "Valor inválido")
+
+CacheResultCode.FAIL, cache.PUT_ALL(null, 1, TimeUnit.SECONDS).getResultCode(), "Código de resultado inválido"
+CacheResult MSG_ILLEGAL_ARGUMENT, cache.PUT_ALL(null, 1, TimeUnit.SECONDS).getMessage(), "Mensagem inválida"
+
+CacheResultCode.FAIL, cache.REMOVE(null).getResultCode(), "Código de resultado inválido"
+CacheResult MSG_ILLEGAL_ARGUMENT, cache.REMOVE(null).getMessage(), "Mensagem inválida"
+assertNull(cache.removeAll(null), "Valor inválido")
+
+assertNull(cache.tryLock(null, 1, TimeUnit.SECONDS), "Valor inválido")
+assertTrue(r.isSuccess(), "Resultado inválido")
+assertEquals(3, r.getValues().size(), "Tamanho inválido")
+assertTrue(r.getValues().get(k1).isSuccess(), "Sucesso inválido")
+assertEquals("V1", r.getValues().get(k1).getValue(), "Valor inválido")

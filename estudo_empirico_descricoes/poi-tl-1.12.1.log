@@ -1,0 +1,15 @@
+
+Projeto: /home/vitor-otto/opensource/poi-tl-1.12.1
+
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/config/ConfigureTest.java linha: 110 Método: assertThrows(RenderException.class, () -> XWPFTemplate.compile(resource, builder.build()).render(new HashMap<String, Object>()))
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/config/ConfigELTest.java linha: 79 Método: assertThrows(RenderException.class, () -> template.render(model))
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/util/PreconditionsTest.java linha: 27 Método: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.15-beta1", "3.16", func))
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/util/PreconditionsTest.java linha: 32 Método: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.15-beta1", "4.0.0", func))
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/util/PreconditionsTest.java linha: 38 Método: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.8", "4.0.0", func))
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/util/PreconditionsTest.java linha: 43 Método: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.8-beta1", "4.0.0", func))
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/util/PreconditionsTest.java linha: 48 Método: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.0.2-FINAL", "4.0.0", func))
+Assert com mensagem: /home/vitor-otto/opensource/poi-tl-1.12.1/poi-tl/src/test/java/com/deepoove/poi/tl/util/PreconditionsTest.java linha: 54 Método: assertThrows(IllegalStateException.class, () -> Preconditions.checkMinimumVersion("3.16", "4.0.0", func))
+Total asserts: 424
+Asserts sem descrição: 416
+Asserts com descrição: 8
+Assertion Roulette: 379

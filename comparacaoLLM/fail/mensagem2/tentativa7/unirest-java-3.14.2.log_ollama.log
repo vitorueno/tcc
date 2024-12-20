@@ -1,0 +1,27 @@
+1. Eram esperados valores iguais, mas "Hey Ma" não é igual a Unirest.post(path).asString().getBody()
+2. Não foram encontrados valores para comparar, mas o corpo da resposta foi nulo: Unirest.post(path).asString().getBody() == null
+3. Os valores esperados e reais não coincidem, mas "bar" não é igual a Unirest.post(path).body("foo").asString().getBody()
+4. Não foram encontrados valores para comparar, mas o corpo da resposta foi nulo: Unirest.get(path).asString().getBody() == null
+5. A resposta do servidor deu status 400, mas o valor esperado era "wtf" em vez de res.getStatusText() == "wtf"
+6. Os valores esperados e reais não coincidem, mas "boo" não é igual a Unirest.get(path).asString().getBody()
+7. Os valores esperados e reais não coincidem, mas "Hi" não é igual a Unirest.get(otherPath).asString().getBody()
+8. Os valores esperados e reais não coincidem, mas "Hey Buddy" não é igual a Unirest.get(path).asString().getBody()
+9. Os valores esperados e reais não coincidem, mas "Yeaaaah Buddy" não é igual a Unirest.get(path).asString().getBody()
+10. A resposta do servidor deu status 400, mas o valor esperado era "Call Result" em vez de response.getBody() == "Call Result"
+11. Os valores esperados e reais não coincidem, mas response != interceptor.response
+12. Os valores esperados e reais não coincidem, mas "two" não é igual a sum.getUrl()
+13. Os valores esperados e reais não coincidem, mas "http://localhost/get/cheese/passed?fruit=apples" não é igual a sum.getRawPath()
+14. O método de requisição esperado era GET, mas o valor real foi HttpMethod.GET em vez de sum.getHttpMethod() == HttpMethod.GET
+15. A resposta do servidor deu status 400, mas o valor esperado era "http://localhost/get/cheese/passed" em vez de response.getStatus()
+16. Os valores esperados e reais não coincidem, mas "oh noes" não é igual a response.getStatusText()
+17. Os valores esperados e reais não coincidem, mas BAD_REQUEST != response.getStatus()
+18. O valor esperado era uma string vazia, mas a resposta do servidor deu status 400 em vez de "" == response.getStatusText()
+19. Os valores esperados e reais não coincidem, mas "Hello World" não é igual a Unirest.get(path).asString().getBody() ou new String(body)
+20. Os valores esperados e reais não coincidem, mas "apple" não é igual a Unirest.get(path).asJson().getBody().getObject().getString("fruit") ou Unirest.get(path).asJson().getBody().getObject().getString("fruit")
+21. Os valores esperados e reais não coincidem, mas "derp" não é igual a pojo.fruit ou pojo
+22. Os valores esperados e reais não coincidem, mas "foo" não é igual a rez.getBody() ou rez.getHeaders().getFirst("monster")
+23. A resposta do servidor deu status 400, mas o valor esperado era 200 em vez de result.getStatus()
+24. Os valores esperados e reais não coincidem, mas "Howdy Ho!" não é igual a result.getBody() ou "Howdy Ho!" == result.getBody()
+25. Os valores esperados e reais não coincidem, mas request.getHeaders().size() != 1
+26. Os valores esperados e reais não coincidem, mas Marco não é igual a request.getHeaders().get("name").get(0) ou request.getHeaders().get("NAme").get(0) ou request.getHeaders().get("Name").get(0)
+27. O valor esperado era 1, mas o valor real foi 0 em vez de Assertions.assertEquals(1, request.getHeaders().size())

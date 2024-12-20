@@ -1,0 +1,77 @@
+O valor esperado não deve ser nulo
+O valor esperado deve ser verdadeiro
+O valor esperado deve ser nulo
+O valor esperado deve ser verdadeiro
+O valor esperado deve ser nulo
+O valor esperado não deve ser nulo
+O tamanho da lista deve ser 1
+O tamanho da lista deve ser 1
+O valor esperado não deve ser nulo
+O tamanho da lista de strings deve ser 1
+A primeira string na lista de strings deve começar com "testMethod"
+O valor esperado não deve ser nulo
+Os mapas de headers devem ser iguais
+Os valores para a chave "x" nos mapas de headers devem ser iguais
+Os valores para a chave "headerName1" nos mapas de headers devem ser iguais
+Os tamanhos dos mapas de headers devem ser iguais
+O comprimento do conteúdo deve ser igual ao padrão
+O status da resposta deve ser igual ao padrão
+O conteúdo da requisição deve ser igual ao padrão
+O conteúdo da resposta deve ser igual ao padrão
+O atributo "testKey" deve ser igual ao padrão
+O valor da chave "testKey" no evento deve ser "ORIGINAL"
+O valor para a chave 'key' deve ser igual a 'val'
+O valor para a chave 'key' nos headers da requisição deve ser igual a 'val'
+O valor para o parâmetro 'key' na requisição deve ser igual a 'val'
+O valor da chave 'key' no evento deve ser igual a 'val'
+O valor da chave 'key' nos headers da requisição deve ser igual a 'val'
+O valor do primeiro parâmetro 'key' na requisição deve ser igual a 'val'
+O último valor na contagem diária deve ser 0
+O último valor na contagem diária deve ser 0
+O último valor na contagem diária deve ser 1
+O último valor na contagem diária deve ser 2
+O último valor na contagem diária deve ser 2
+O último valor na contagem diária deve ser 4
+O resultado deve ser "hello world"
+O resultado deve ser "hello world"
+O host remoto deve ser "127.0.0.1"
+O nome do servidor deve ser "localhost"
+O evaluator deve avaliar 'ae' como verdadeiro
+O evaluator deve avaliar 'ae' como verdadeiro
+O comprimento do conteúdo deve ser igual ao tamanho da resposta
+A data formatada deve ser "21/Oct/2022:21:30:20 +1100"
+A data formatada deve ser igual a 'result'
+A porta local deve ser convertida para string
+O host remoto da requisição deve ser igual a 'result'
+O endereço remoto da requisição deve ser igual a 'result'
+O usuário remoto da requisição deve ser igual a 'result'
+O atributo 'testKey' na requisição deve ser igual a 'result'
+O valor do cookie deve ser igual a 'result'
+O header 'headerName1' na requisição deve ser igual a 'result'
+O método da requisição deve ser igual a 'result'
+O protocolo da requisição deve ser igual a 'result'
+A URI da requisição deve ser igual a 'result'
+O valor esperado deve ser igual a 'result'
+O header 'headerName1' na requisição deve ser igual a 'result'
+O nome do servidor na requisição deve ser igual a 'result'
+O status do servidor deve ser convertido para string
+O tamanho do conjunto de chaves deve ser 3
+O conjunto de chaves deve ser igual ao conjunto esperado
+O tamanho da lista de logs deve ser igual ao esperado
+O evaluator não deve avaliar 'ae' como falso
+O evaluator deve avaliar 'ae' como verdadeiro
+O evaluator deve avaliar 'ae' como verdadeiro
+O array de bytes esperado deve ser igual ao array de bytes resultante
+
+A condição não deve ser nula
+A condição deve ser avaliada como verdadeira
+A condição não deve ser nula
+O valor esperado deve ser verdadeiro
+O valor esperado deve ser verdadeiro
+A propriedade de sistema não deve ser nula
+A propriedade dinâmica do contexto não deve ser nula
+A propriedade dinâmica do contexto não deve ser nula
+A propriedade dinâmica do contexto não deve ser nula
+A propriedade dinâmica do contexto não deve ser nula
+O appender de arquivo não deve ser nulo
+O appender de console não deve ser nulo

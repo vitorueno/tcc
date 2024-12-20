@@ -104,7 +104,7 @@ local.properties
 *.class
 
 # Log file
-*.log
+#*.log
 
 # BlueJ files
 *.ctxt
@@ -200,3 +200,12 @@ README.html
 *.iml
 .idea
 .exercism
+
+
+### project specific
+*.env
+output.java
+.env/
+env/
+.venv/
+venv/

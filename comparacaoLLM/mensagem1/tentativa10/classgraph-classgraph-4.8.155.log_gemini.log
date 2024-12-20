@@ -1,0 +1,19 @@
+* **assertEquals(valorEsperado, valorAtual):** "Valores diferentes! Esperado: {valorEsperado}, Atual: {valorAtual}"
+
+* **assertNotEquals(valorEsperado, valorAtual):** "Valores iguais inesperadamente! Valor: {valorEsperado}"
+
+* **assertTrue(condicao):** "Condição falsa! Detalhes: {condicao}"
+
+* **assertFalse(condicao):** "Condição verdadeira inesperadamente! Detalhes: {condicao}"
+
+* **assertNull(objeto):** "Objeto não nulo! Objeto: {objeto}"
+
+* **assertNotNull(objeto):** "Objeto nulo inesperadamente!"
+
+* **assertSame(objetoEsperado, objetoAtual):** "Objetos diferentes, mas esperados iguais! Esperado: {objetoEsperado}, Atual: {objetoAtual}"
+
+* **assertNotSame(objetoEsperado, objetoAtual):** "Objetos são o mesmo objeto inesperadamente! Objeto: {objetoEsperado}"
+
+* **assertThat(valorAtual, valorEsperado):** "Valor diferente do esperado. Valor atual: {valorAtual}, Valor esperado: {valorEsperado}"
+
+* **fail():** "Teste falhou!"

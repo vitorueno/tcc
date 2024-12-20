@@ -1,0 +1,100 @@
+eram esperados valores iguais, mas o comprimento de result não é maior que o comprimento de input
+eram esperados valores iguais, mas 2 é diferente de countPages(target)
+eram esperados valores iguais, mas 5 é diferente de countPages(target)
+eram esperados valores iguais, mas expected é diferente de color
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#f09")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#F09")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#ff0099")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#FF0099")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#f09a")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#F09A")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#ff0099aa")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("#FF0099aa")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255,0,153)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255, 0, 153)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(100%,0%,60%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(100%, 0%, 60%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255 0 153)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255, 0, 153, 1)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255, 0, 153, 100%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255 0 153 / 1)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255 0 153 / 100%)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgb(255, 0, 153, 0.6)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgb(255, 0, 153, 60%)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgb(255 0 153 / 0.6)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgb(255 0 153 / 60%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgba(255, 0, 153, 1)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgba(255, 0, 153, 100%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgba(255 0 153 / 1)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgba(255 0 153 / 100%)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgba(255, 0, 153, 0.6)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgba(255, 0, 153, 60%)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgba(255 0 153 / 0.6)")
+eram esperados valores iguais, mas expected2 é diferente de WebColors.getRGBColor("rgba(255 0 153 / 60%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255, 0, 153.0)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(255, 0, 153.6, 1)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("rgb(2.55e2, .1e0, 1.53e2, +.1e3%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270,60%,70%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270, 60%, 70%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270 60% 70%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270deg, 60%, 70%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(4.71239rad, 60%, 70%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(.75turn, 60%, 70%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270, 60%, 70%, .15)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270, 60%, 70%, 15%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270 60% 70% / .15)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsl(270 60% 70% / 15%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsla(270, 60%, 70%, .15)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsla(270, 60%, 70%, 15%)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsla(270 60% 70% / .15)")
+eram esperados valores iguais, mas expected é diferente de WebColors.getRGBColor("hsla(270 60% 70% / 15%)")
+eram esperados valores iguais, mas 3 é diferente de actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "before" é diferente de actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas "0" é diferente de actualHeaderFooter.getChunks().get(1).toString()
+eram esperados valores iguais, mas "after" é diferente de actualHeaderFooter.getChunks().get(2).toString()
+eram esperados valores iguais, mas 2 é diferente de actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "before" é diferente de actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas "0" é diferente de actualHeaderFooter.getChunks().get(1).toString()
+eram esperados valores iguais, mas 1 é diferente de actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "before" é diferente de actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas 6 é diferente de actualHeaderFooter.getChunks().size()
+eram esperados valores iguais, mas "\n" é diferente de actualHeaderFooter.getChunks().get(5).toString()
+eram esperados valores iguais, mas "1 1.1 1.2 " é diferente de actualHeaderFooter.getChunks().get(0).toString()
+eram esperados valores iguais, mas "1.4 " é diferente de actualHeaderFooter.getChunks().get(5).toString()
+os valores não são nulos
+os valores não são nulos
+eram esperados valores iguais, mas 1 é diferente de names.size()
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais
+os valores não são iguais

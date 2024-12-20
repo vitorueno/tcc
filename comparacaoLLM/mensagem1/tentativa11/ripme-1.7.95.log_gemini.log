@@ -1,0 +1,13 @@
+O nome do arquivo deveria ser 'test.test', mas era diferente.
+O nome do arquivo deveria ser 'test', mas era diferente.
+O nome do arquivo deveria ser 'Object', mas era diferente.
+O nome do arquivo deveria ser 'file.png', mas era diferente.
+O nome do arquivo deveria ser 'file.', mas era diferente.
+A string decodificada de Base64 deveria ser 'test', mas era diferente.
+O JSONObject extraído deveria ser similar ao JSONObject de resposta.
+A URL esperada não corresponde à URL obtida.
+A URL esperada não corresponde à URL obtida.
+O GID extraído deveria ser '975973', mas era diferente.
+A página deveria conter álbuns, mas não continha.
+A página deveria conter álbuns, mas não continha.
+

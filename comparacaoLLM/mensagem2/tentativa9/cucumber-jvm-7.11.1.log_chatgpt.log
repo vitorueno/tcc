@@ -1,0 +1,88 @@
+eram esperados valores iguais, mas n é diferente de belly.getCukes()
+esperava-se que não ocorresse uma exceção ao parar a fábrica, mas ocorreu uma exceção
+esperava-se que não ocorresse uma exceção ao iniciar a fábrica, mas ocorreu uma exceção
+esperava-se que não ocorresse uma exceção ao parar a fábrica, mas ocorreu uma exceção
+todos os asserts falharam
+o resultado esperado era verdadeiro, mas foi falso
+o resultado esperado era falso, mas foi verdadeiro
+o resultado esperado era falso, mas foi verdadeiro
+o resultado esperado era verdadeiro, mas foi falso
+o resultado esperado era verdadeiro, mas foi falso
+o resultado esperado era falso, mas foi verdadeiro
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional[com.example.Examples@2], java.util.Optional[com.example.Example@3]], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional[com.example.Examples@2], java.util.Optional[com.example.Example@4]], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional[com.example.Examples@3], java.util.Optional[com.example.Example@5]], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional[com.example.Examples@4], java.util.Optional[com.example.Example@6]], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional[com.example.Examples@2], java.util.Optional.empty], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional[com.example.Examples@5]], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional[com.example.Examples@6]], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Outline@1], java.util.Optional.empty], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional.empty], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional.empty], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional[com.example.Example@1]], mas o valor real é: Optional.empty
+os valores são diferentes, era esperado: [java.util.Optional.empty], mas o valor real é: Optional.empty
+o objeto é nulo
+os tamanhos dos arrays são diferentes, era esperado 5, mas o tamanho real é 0
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+era esperado que todos os testes deste grupo passassem, mas pelo menos um falhou
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+os valores são diferentes
+esperava-se que o resultado de 'predicate.test(pickle)' fosse verdadeiro, mas foi falso

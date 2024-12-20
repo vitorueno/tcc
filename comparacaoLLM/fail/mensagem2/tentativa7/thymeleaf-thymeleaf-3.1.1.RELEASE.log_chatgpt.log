@@ -1,0 +1,100 @@
+Era esperado que todos estivessem OK, mas o resultado foi falso
+Era esperado que todos estivessem OK, mas o resultado foi falso
+Era esperado que o valor esperado fosse igual a ResourceUtils.normalize(result), mas não foi
+Era esperado que o valor esperado fosse igual a ResourceUtils.normalize(result), mas não foi
+Era esperado que o valor esperado fosse igual a ResourceUtils.normalize(result), mas não foi
+Era esperado que expected1 fosse igual a result1, mas não foi
+Era esperado que expected2 fosse igual a result2, mas não foi
+Era esperado que "<Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hey, Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hey, Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hey, Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hey, Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue), mas não foi
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextTrue), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextFalse), mas não foi
+Era esperado que "<Hello there!>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextTrue), mas não foi
+lazyTrue não foi inicializado como esperado
+Era esperado que "<>" fosse igual a TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextFalse), mas não foi
+rr01 deveria ser o mesmo que rr03, mas não era
+rr02 deveria ser o mesmo que rr04, mas não era
+Era esperado "/[ref='abc' or data-ref='abc' or fragment='abc' or data-fragment='abc' or fragment^='abc(' or data-fragment^='abc(' or fragment^='abc (' or data-fragment^='abc (']" mas o resultado foi result01
+result01 deveria ser o mesmo que result02, mas não era
+Era esperado "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" mas o resultado foi result03
+result03 deveria ser o mesmo que result04, mas não era
+Era esperado "/[q:ref='abc' or data-q-ref='abc' or q:fragment='abc' or data-q-fragment='abc' or q:fragment^='abc(' or data-q-fragment^='abc(' or q:fragment^='abc (' or data-q-fragment^='abc (']" mas o resultado foi result05
+result05 deveria ser o mesmo que result06, mas não era
+Era esperado "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" mas o resultado foi result07
+result07 deveria ser o mesmo que result08, mas não era
+rr01 deveria ser o mesmo que rr03, mas não era
+rr02 deveria ser o mesmo que rr04, mas não era
+Era esperado "/[ref='abc' or fragment='abc' or fragment^='abc(' or fragment^='abc (']" mas o resultado foi result01
+result01 deveria ser o mesmo que result02, mas não era
+Era esperado "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" mas o resultado foi result03
+result03 deveria ser o mesmo que result04, mas não era
+Era esperado "/[q:ref='abc' or q:fragment='abc' or q:fragment^='abc(' or q:fragment^='abc (']" mas o resultado foi result05
+result05 deveria ser o mesmo que result06, mas não era
+Era esperado "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" mas o resultado foi result07
+result07 deveria ser o mesmo que result08, mas não era
+resourcesFolderURL não deveria ser nulo
+resourcesFolder deveria ser um diretório
+Era esperado que expectedResult fosse igual a decoupledTemplateLogic.toString(), mas não era
+Era esperado que ResourceUtils.normalize(expected) fosse igual a ResourceUtils.normalize(result), mas não era
+Era esperado 1, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.StringTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado 1, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado 1, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.FileTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado 2, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado "org.thymeleaf.templateresolver.FileTemplateResolver", mas o nome do templateResolvers[1] era diferente
+Era esperado 2, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado "org.thymeleaf.templateresolver.FileTemplateResolver", mas o nome do templateResolvers[1] era diferente
+Era esperado 2, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado "org.thymeleaf.templateresolver.FileTemplateResolver", mas o nome do templateResolvers[1] era diferente
+Era esperado "Hello ??something_en??", mas o resultado foi diferente
+Era esperado "Hello 58", mas o resultado foi diferente
+Era esperado 2, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado "org.thymeleaf.templateresolver.DefaultTemplateResolver", mas o nome do templateResolvers[1] era diferente
+Era esperado "<p>something</p>", mas o resultado foi diferente
+Era esperado 2, mas o tamanho de templateResolvers era diferente
+Era esperado "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas o nome do templateResolvers[0] era diferente
+Era esperado "org.thymeleaf.templateresolver.DefaultTemplateResolver", mas o nome do templateResolvers[1] era diferente
+Era esperado "<p>this value</p>", mas o resultado foi diferente
+Era esperado "<div>some text <p><p>inserted!</p></p> other text</div>", mas o resultado foi diferente
+templateResolver.tempCalled não foi chamado como esperado
+templateResolver.fragCalled não foi chamado como esperado
+Era esperado EXPECTED_OUTPUT, mas o output foi diferente
+templateResolver.tempCalled não foi chamado como esperado
+templateResolver.fragCalled não foi chamado como esperado
+Era esperado EXPECTED_OUTPUT, mas o output foi diferente
+templateResolver.tempCalled não foi chamado como esperado
+templateResolver.fragCalled não foi chamado como esperado
+Era esperado EXPECTED_OUTPUT, mas o output foi diferente
+Era esperado "/", mas o resultado foi diferente
+Era esperado "/something", mas o resultado foi diferente
+Era esperado "/", mas o resultado foi diferente
+Era esperado "/", mas o resultado foi diferente

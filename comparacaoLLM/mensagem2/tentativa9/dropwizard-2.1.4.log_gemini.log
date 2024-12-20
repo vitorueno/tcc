@@ -1,0 +1,28 @@
+Era esperado um valor não nulo, mas factory.configureSslContextFactory(new SslContextFactory.Server()) retornou nulo.
+Era esperado ConstraintViolationException, mas o tipo da exceção throwable é diferente.
+Era esperado o mapa {color=orange}, mas o valor de response é diferente.
+Era esperado o mapa {message=stuff!}, mas o valor de response é diferente.
+Era esperado que findEntityClassesFromDirectory não estivesse vazio, mas está vazio.
+Era esperado que findEntityClassesFromDirectory contivesse 4 elementos, mas contém um número diferente.
+Era esperado que findEntityClassesFromDirectory não estivesse vazio, mas está vazio.
+Era esperado que findEntityClassesFromDirectory contivesse 8 elementos, mas contém um número diferente.
+O assert dentro do timeout falhou: event.getCreatedAt() não é igual a Instant.ofEpochMilli(0).
+O assert dentro do timeout falhou: task.getDuration() não é igual a Duration.ofSeconds(0).
+Era esperado que requestContext.getSecurityContext().isSecure() retornasse true, mas retornou false.
+Era esperado que http.getAdminContextPath() fosse igual a environment.getAdminContext().getContextPath(), mas são diferentes.
+Era esperado que http.getApplicationContextPath() fosse igual a environment.getApplicationContext().getContextPath(), mas são diferentes.
+Era esperado que http.getAdminContextPath() fosse igual a environment.getAdminContext().getContextPath(), mas são diferentes.
+Era esperado que http.getApplicationContextPath() fosse igual a environment.getApplicationContext().getContextPath(), mas são diferentes.
+Era esperado o código de status OK_STATUS_CODE para o método GET com false, mas obteve um código diferente.
+Era esperado o código de status OK_STATUS_CODE para o método POST com true, mas obteve um código diferente.
+Era esperado o código de status DISALLOWED_STATUS_CODE para o método PUT com true, mas obteve um código diferente.
+Era esperado o código de status DISALLOWED_STATUS_CODE para o método DELETE com false, mas obteve um código diferente.
+Era esperado o código de status DISALLOWED_STATUS_CODE para o método TRACE com false, mas obteve um código diferente.
+Era esperado que inv e test.getInvocable() referenciavam o mesmo objeto, mas referenciam objetos diferentes.
+Era esperado o código de status Response.Status.BAD_REQUEST.getStatusCode(), mas o status de reponse é diferente.
+Era esperado que Optionals.fromGuavaOptional(com.google.common.base.Optional.absent()) não estivesse presente, mas está presente.
+Era esperado que Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")) estivesse presente, mas não está.
+Era esperado java.util.Optional.of("Foo"), mas Optionals.fromGuavaOptional(com.google.common.base.Optional.of("Foo")) retornou um valor diferente.
+Era esperado que Optionals.toGuavaOptional(java.util.Optional.empty()) não estivesse presente, mas está presente.
+Era esperado que Optionals.toGuavaOptional(java.util.Optional.of("Foo")) estivesse presente, mas não está.
+Era esperado com.google.common.base.Optional.of("Foo"), mas Optionals.toGuavaOptional(java.util.Optional.of("Foo")) retornou um valor diferente.

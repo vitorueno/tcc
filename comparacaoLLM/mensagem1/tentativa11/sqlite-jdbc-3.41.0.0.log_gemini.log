@@ -1,0 +1,21 @@
+* `assertEquals(valorEsperado, valorAtual)`: "Falha na asserção de igualdade: Valor esperado <valorEsperado>, valor atual <valorAtual>."
+
+* `assertNotEquals(valorEsperado, valorAtual)`: "Falha na asserção de desigualdade: Os valores são iguais, esperado diferente."
+
+* `assertTrue(condicao)`: "Falha na asserção de verdadeiro: A condição é falsa."
+
+* `assertFalse(condicao)`: "Falha na asserção de falso: A condição é verdadeira."
+
+* `assertNull(objeto)`: "Falha na asserção de nulo: O objeto não é nulo."
+
+* `assertNotNull(objeto)`: "Falha na asserção de não nulo: O objeto é nulo."
+
+* `assertSame(objetoEsperado, objetoAtual)`: "Falha na asserção de mesma referência: Os objetos não são a mesma referência."
+
+* `assertNotSame(objetoEsperado, objetoAtual)`: "Falha na asserção de referências diferentes: Os objetos são a mesma referência."
+
+* `assertArrayEquals(arrayEsperado, arrayAtual)`: "Falha na asserção de igualdade de arrays: Arrays diferentes."
+
+* `assertEquals(valorEsperado, valorAtual, delta)`: "Falha na asserção de igualdade com delta: Valor esperado <valorEsperado>, valor atual <valorAtual>, diferença maior que <delta>."
+
+

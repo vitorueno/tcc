@@ -1,0 +1,100 @@
+Esperava-se que executor.isAllOK() retornasse true, mas retornou false.
+Esperava-se que executor.isAllOK() retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas <expected> é diferente de ResourceUtils.normalize(result).
+Esperava-se que os valores fossem iguais, mas <expected> é diferente de ResourceUtils.normalize(result).
+Esperava-se que os valores fossem iguais, mas <expected> é diferente de ResourceUtils.normalize(result).
+Esperava-se que os valores fossem iguais, mas <expected1> é diferente de <result1>.
+Esperava-se que os valores fossem iguais, mas <expected2> é diferente de <result2>.
+Esperava-se que os valores fossem iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC1, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC2, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hey, Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC3, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextTrue).
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC4, contextFalse).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextTrue).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC9, contextFalse).
+Esperava-se que os valores fossem iguais, mas "<Hello there!>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextTrue).
+Esperava-se que lazyTrue.initialized retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas "<>" é diferente de TEMPLATE_ENGINE.process(TEMPLATE_SPEC10, contextFalse).
+Esperava-se que rr01 e rr03 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que rr02 e rr04 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[ref='abc' or data-ref='abc' or fragment='abc' or data-fragment='abc' or fragment^='abc(' or data-fragment^='abc(' or fragment^='abc (' or data-fragment^='abc (']" é diferente de <result01>.
+Esperava-se que result01 e result02 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" é diferente de <result03>.
+Esperava-se que result03 e result04 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[q:ref='abc' or data-q-ref='abc' or q:fragment='abc' or data-q-fragment='abc' or q:fragment^='abc(' or data-q-fragment^='abc(' or q:fragment^='abc (' or data-q-fragment^='abc (']" é diferente de <result05>.
+Esperava-se que result05 e result06 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[th:ref='abc' or data-th-ref='abc' or th:fragment='abc' or data-th-fragment='abc' or th:fragment^='abc(' or data-th-fragment^='abc(' or th:fragment^='abc (' or data-th-fragment^='abc (']" é diferente de <result07>.
+Esperava-se que result07 e result08 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que rr01 e rr03 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que rr02 e rr04 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[ref='abc' or fragment='abc' or fragment^='abc(' or fragment^='abc (']" é diferente de <result01>.
+Esperava-se que result01 e result02 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" é diferente de <result03>.
+Esperava-se que result03 e result04 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[q:ref='abc' or q:fragment='abc' or q:fragment^='abc(' or q:fragment^='abc (']" é diferente de <result05>.
+Esperava-se que result05 e result06 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que os valores fossem iguais, mas "/[th:ref='abc' or th:fragment='abc' or th:fragment^='abc(' or th:fragment^='abc (']" é diferente de <result07>.
+Esperava-se que result07 e result08 fossem o mesmo objeto, mas são objetos diferentes.
+Esperava-se que resourcesFolderURL não fosse nulo, mas é nulo.
+Esperava-se que resourcesFolder.isDirectory() retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas <expectedResult> é diferente de decoupledTemplateLogic.toString().
+Esperava-se que os valores fossem iguais, mas ResourceUtils.normalize(expected) é diferente de ResourceUtils.normalize(result).
+Esperava-se que o tamanho de templateResolvers fosse 1, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.StringTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o tamanho de templateResolvers fosse 1, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o tamanho de templateResolvers fosse 1, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o tamanho de templateResolvers fosse 2, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o nome do elemento em templateResolvers na posição 1 fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é "<templateResolvers.get(1).getName()>".
+Esperava-se que o tamanho de templateResolvers fosse 2, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o nome do elemento em templateResolvers na posição 1 fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é "<templateResolvers.get(1).getName()>".
+Esperava-se que o tamanho de templateResolvers fosse 2, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o nome do elemento em templateResolvers na posição 1 fosse "org.thymeleaf.templateresolver.FileTemplateResolver", mas é "<templateResolvers.get(1).getName()>".
+Esperava-se que os valores fossem iguais, mas "Hello ??something_en?? " é diferente de templateEngine.process("Hello [[#{something}]]", context).
+Esperava-se que os valores fossem iguais, mas "Hello 58" é diferente de templateEngine.process("Hello [[23+35]]", context).
+Esperava-se que o tamanho de templateResolvers fosse 2, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o nome do elemento em templateResolvers na posição 1 fosse "org.thymeleaf.templateresolver.DefaultTemplateResolver", mas é "<templateResolvers.get(1).getName()>".
+Esperava-se que os valores fossem iguais, mas "<p>something</p>" é diferente de templateEngine.process("nonexisting", context).
+Esperava-se que o tamanho de templateResolvers fosse 2, mas é <templateResolvers.size()>.
+Esperava-se que o nome do elemento em templateResolvers na posição 0 fosse "org.thymeleaf.templateresolver.ClassLoaderTemplateResolver", mas é "<templateResolvers.get(0).getName()>".
+Esperava-se que o nome do elemento em templateResolvers na posição 1 fosse "org.thymeleaf.templateresolver.DefaultTemplateResolver", mas é "<templateResolvers.get(1).getName()>".
+Esperava-se que os valores fossem iguais, mas "<p>this value</p>" é diferente de templateEngine.process("nonexisting", context).
+Esperava-se que os valores fossem iguais, mas "<div>some text <p><p>inserted!</p></p> other text</div>" é diferente de templateEngine.process("<div>some text <p th:insert=\"nonexisting\">...</p> other text</div>", context).
+Esperava-se que templateResolver.tempCalled retornasse true, mas retornou false.
+Esperava-se que templateResolver.fragCalled retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas <EXPECTED_OUTPUT> é diferente de <output>.
+Esperava-se que templateResolver.tempCalled retornasse true, mas retornou false.
+Esperava-se que templateResolver.fragCalled retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas <EXPECTED_OUTPUT> é diferente de <output>.
+Esperava-se que templateResolver.tempCalled retornasse true, mas retornou false.
+Esperava-se que templateResolver.fragCalled retornasse true, mas retornou false.
+Esperava-se que os valores fossem iguais, mas <EXPECTED_OUTPUT> é diferente de <output>.
+Esperava-se que os valores fossem iguais, mas "/" é diferente de TemplateResourceUtils.computeRelativeLocation("/", "/").
+Esperava-se que os valores fossem iguais, mas "/something" é diferente de TemplateResourceUtils.computeRelativeLocation("/", "something").
+Esperava-se que os valores fossem iguais, mas "/" é diferente de TemplateResourceUtils.computeRelativeLocation("/something", "/").
+Esperava-se que os valores fossem iguais, mas "/" é diferente de TemplateResourceUtils.computeRelativeLocation("something", "/").

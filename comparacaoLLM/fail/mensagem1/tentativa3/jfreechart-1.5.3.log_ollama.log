@@ -1,0 +1,58 @@
+assertNull(p1.getUnderlyingDataset(), "O objeto p1 não possui um dataset submetido")
+assertEquals(p1.getItemCount(), 0, "O objeto p1 deve conter apenas uma iteração")
+assertTrue(p1.getKeys().isEmpty(), "O objeto p1 não deve conter chaves")
+
+assertNull(p1.getValue("R1"), "O valor 'R1' não está presente no objeto p1")
+
+assertEquals(d1.getValue("C1"), 1.1, "O valor de 'C1' da instância d1 deve ser igual a 1.1")
+assertEquals(d1.getValue("C2"), 2.2, "O valor de 'C2' da instância d1 deve ser igual a 2.2")
+
+assertEquals(d1.getKey(0), "C1", "A chave do índice 0 da instância d1 deve ser igual a 'C1'")
+assertEquals(d1.getKey(1), "C2", "A chave do índice 1 da instância d1 deve ser igual a 'C2'")
+
+assertEquals(0, d1.getIndex("C1"), "O índice de 'C1' na instância d1 deve ser igual a 0")
+assertEquals(1, d1.getIndex("C2"), "O índice de 'C2' na instância d1 deve ser igual a 1")
+
+assertEquals(-1, d1.getIndex("XX"), "O índice de 'XX' na instância d1 deve ser igual a -1")
+
+assertTrue(pass, "A condição passou sem problemas")
+assertTrue(d1.equals(d2), "As duas instâncias não são iguais")
+
+assertEquals(d1, d2, "As duas instâncias não são iguais")
+
+assertEquals(d1.getUnderlyingDataset(), d2.getUnderlyingDataset(), "Os datasets das instâncias d1 e d2 não são iguais")
+
+assertEquals(d1.getExtractType(), d2.getExtractType(), "Os tipos de extração das instâncias d1 e d2 não são iguais")
+assertEquals(d1.getExtractIndex(), d2.getExtractIndex(), "Os índices de extração das instâncias d1 e d2 não são iguais")
+
+assertEquals(1.0, d.getValue("R1", "C1"), "O valor de 'R1' e 'C1' na instância d não é igual a 1.0")
+assertTrue(pass, "A condição passou sem problemas")
+
+assertTrue(pass, "A condição passou sem problemas")
+assertTrue(pass, "A condição passou sem problemas")
+
+assertEquals(3.0, d.getValue("R1", "C1"), "O valor de 'R1' e 'C1' na instância d não é igual a 3.0")
+assertEquals(2.0, d.getValue("R2", "C1"), "O valor de 'R2' e 'C1' na instância d não é igual a 2.0")
+
+assertTrue(pass, "A condição passou sem problemas")
+assertTrue(pass, "A condição passou sem problemas")
+
+assertTrue(d.getRowCount() == 0, "A quantidade de linhas da instância d deve ser igual a 0")
+assertTrue(d.getRowCount() == 1, "A quantidade de linhas da instância d não é igual a 1")
+assertTrue(d.getRowCount() == 2, "A quantidade de linhas da instância d não é igual a 2")
+
+assertTrue(d.getRowCount() == 2, "A quantidade de linhas da instância d não é igual a 2")
+assertTrue(d.getRowCount() == 2, "A quantidade de linhas da instância d não é igual a 2")
+assertTrue(d.getRowCount() == 2, "A quantidade de linhas da instância d não é igual a 2")
+
+assertTrue(d.getColumnCount() == 0, "A quantidade de colunas da instância d deve ser igual a 0")
+assertTrue(d.getColumnCount() == 1, "A quantidade de colunas da instância d não é igual a 1")
+assertTrue(d.getColumnCount() == 2, "A quantidade de colunas da instância d não é igual a 2")
+
+assertTrue(d.getColumnCount() == 2, "A quantidade de colunas da instância d não é igual a 2")
+assertTrue(d.getColumnCount() == 2, "A quantidade de colunas da instância d não é igual a 2")
+assertTrue(d.getColumnCount() == 2, "A quantidade de colunas da instância d não é igual a 2")
+
+assertEquals(99.9, d1.getStartValue("Series 1", "Category 2"), "O valor de 'Series 1' e 'Category 2' na instância d1 não é igual a 99.9")
+assertTrue(pass, "A condição passou sem problemas")
+assertTrue(pass, "A condição passou sem problemas")

@@ -1,0 +1,16 @@
+
+Projeto: /home/vitor-otto/opensource/disruptor-4.0.0.RC1
+
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 92 Método: assertFalse(disruptor.hasStarted(), "Should only be set to started after start is called")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 96 Método: assertTrue(disruptor.hasStarted(), "Should be set to started after start is called")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 611 Método: assertEquals(0, barrierSequences.length, "Should not have had any barrier sequences")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 631 Método: assertSame(1, barrierSequences.length, "Should have had a barrier sequence")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 679 Método: assertTrue(actualPublicationCount >= expectedPublicationCount, msg)
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 738 Método: assertTrue(released, "Batch handler did not receive entries: " + countDownLatch.getCount())
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 136 Método: assertTrue(seen1, "Included eventProcessor 1")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 137 Método: assertTrue(seen2, "Included eventProcessor 2")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/stubs/StubThreadFactory.java linha: 87 Método: assertFalse(thread.isAlive(), "Failed to stop thread: " + thread)
+Total asserts: 290
+Asserts sem descrição: 281
+Asserts com descrição: 9
+Assertion Roulette: 152

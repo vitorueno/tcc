@@ -1,0 +1,92 @@
+O tipo retornado pelo método describe() deveria ser "java.lang.Object".
+A execução do código dentro do assertTimeoutPreemptively() deveria levar menos de 1000 milissegundos e o tamanho da lista de métodos deveria ser 1.
+O tipo calculado deveria ser "java.lang.String".
+O nome do valor deveria ser "AFIELD".
+O valor do inicializador deveria ser "a".
+O nome qualificado deveria ser "X.A.bar".
+O tipo do parâmetro deveria ser "java.lang.Runnable".
+O resolved não deveria ser genérico.
+O nome da declaração deveria ser "MyAnnotation".
+O nome da declaração deveria ser "MyAnnotationWithElements".
+O nome da declaração deveria ser "VoidVisitor".
+A declaração deveria ser uma interface.
+O nome da declaração deveria ser "AccessSpecifier".
+O nome da declaração deveria ser "AccessSpecifier".
+O nome da declaração deveria ser "PUBLIC".
+O nome da classe deveria ser "CompilationUnit".
+O nome da classe deveria ser "CompilationUnit".
+O nome do método deveria ser "getComments".
+O número de parâmetros deveria ser 0.
+O nome da classe deveria ser "CompilationUnit".
+A representação em string do método deveria ser "bar(Optional.of(new Derived()))".
+A assinatura qualificada do método resolvido deveria ser "Base.bar(java.util.Optional<Base>)".
+O objeto foo não deveria ser nulo.
+O resultado da análise deveria ser bem-sucedido.
+A assinatura qualificada do método deveria ser "com.github.javaparser.symbolsolver.testingclasses.UtilityClass.method(com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum)".
+O nome da variável resolvida deveria ser "CONSTANT".
+O tipo da variável resolvida deveria ser "com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum".
+O nome qualificado do método deveria ser "A.method".
+A assinatura qualificada do método deveria ser "Test.setRunnable(java.lang.String, java.lang.Runnable)".
+A assinatura qualificada do método deveria ser "Test.getContext(Test)".
+A assinatura deveria ser "Test.getContext(Test)".
+O tipo calculado da expressão deveria ser "java.lang.String".
+O tipo calculado da expressão deveria ser "java.lang.String".
+O tipo calculado da expressão deveria ser "java.lang.String".
+O tipo calculado da expressão deveria ser "float".
+O tipo calculado da expressão deveria ser "double".
+O tipo calculado da expressão deveria ser "int".
+O tipo calculado da expressão deveria ser "long".
+O tipo calculado da expressão deveria ser "long".
+O tipo calculado da expressão deveria ser "int".
+O tipo calculado da expressão deveria ser "long".
+O tipo calculado da expressão deveria ser "long".
+O tipo calculado da expressão deveria ser "int".
+O tipo calculado da expressão deveria ser "int".
+O tipo calculado da expressão deveria ser "int".
+A assinatura do método deveria ser "InnerClass(int)".
+A assinatura do método deveria ser "InnerClass(int)".
+A assinatura do método deveria ser "InnerClass(int)".
+O tipo calculado do método deveria ser "void".
+O tipo calculado do argumento deveria ser "java.util.concurrent.TimeUnit".
+O método deveria estar resolvido.
+O resultado da análise não deve ser nulo.
+A conversão para uso não deve ser nula.
+O resultado da análise deveria ser bem-sucedido.
+O tipo de retorno da declaração correspondente deveria ser "D".
+O tipo de retorno da declaração correspondente deveria ser "D".
+O tipo de retorno da declaração correspondente deveria ser "void".
+O tipo de retorno da declaração correspondente deveria ser "D".
+O nome qualificado deveria ser "java.lang.Object".
+O nome qualificado deveria ser igual ao esperado.
+O tipo resolvido deveria ser igual ao esperado.
+O resultado da análise deveria ser bem-sucedido.
+O resultado da análise deveria conter um valor.
+O tipo resolvido deveria ser "int".
+O tipo calculado deveria ser "Test1.Test2".
+O tipo calculado deveria ser "Test1.Test3".
+O tipo do método deveria estar presente.
+O tipo resolvido deveria ser "java.util.ArrayList".
+A representação em string do método deveria ser "foo(new Object[5])".
+A assinatura qualificada do método resolvido deveria ser "TestClass2.foo(java.lang.Object)".
+O tipo calculado do método deveria ser "void".
+O resultado da análise deveria estar presente.
+O tipo resolvido deveria ser "foo.bar.BinaryExpr.Operator".
+O nome resolvido deveria ser "OR".
+O resultado da análise deveria estar presente.
+O tipo resolvido deveria ser "foo.bar.BinaryExpr.Operator".
+O nome resolvido deveria ser "AND".
+O resultado da análise deveria estar presente.
+O tipo resolvido deveria ser "foo.bar.BinaryExpr.Operator".
+O nome resolvido deveria ser "OR".
+O resultado da análise deveria estar presente.
+O tipo resolvido deveria ser "foo.bar.BinaryExpr.Operator".
+O nome resolvido deveria ser "AND".
+O resultado da análise deveria ser bem-sucedido.
+A classificação sintática deveria ser igual à esperada.
+A categoria do nome deveria ser igual à esperada.
+A classificação sintática deveria ser igual à esperada.
+O papel do nome deveria ser igual ao esperado.
+O nó deveria ser um nome simples.
+O nó deveria ser um nome qualificado.
+O nó não deveria ser um nome.
+

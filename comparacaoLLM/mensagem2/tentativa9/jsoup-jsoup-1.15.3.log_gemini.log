@@ -1,0 +1,100 @@
+A variável files não deveria ser nula.
+O tamanho de files deveria ser maior que 10, mas é igual a [tamanho de files].
+A variável files não deveria ser nula.
+O tamanho de files deveria ser maior que 10, mas é igual a [tamanho de files].
+A variável doc não deveria ser nula.
+A variável doc não deveria ser nula.
+A variável xmlDoc não deveria ser nula.
+A variável doc não deveria ser nula.
+A variável doc não deveria ser nula.
+O código alcançou uma seção que não deveria ser alcançada.
+O runner deveria estar interrompido, mas não está.
+O tamanho do primeiro elemento de body deveria ser maior que 0, mas é igual a [tamanho do body[0]].
+O primeiro elemento de body deveria conter "<p>Are you still there?</p>", mas não contém.
+O runner deveria estar interrompido, mas não está.
+Era esperado o tamanho 0 para body[0], mas o tamanho é [tamanho de body[0]].
+A variável threw deveria ser verdadeira, mas é falsa.
+Era esperado o texto "outatime" para h1, mas o texto é "[texto de h1]".
+Era esperado o texto "outatime" para h1, mas o texto é "[texto de h1]".
+Era esperado 0 para catcher.exceptionCount.get(), mas o valor é [valor de catcher.exceptionCount.get()].
+Era esperado [numThreads - 1] para catcher.multiThreadExceptions.get(), mas o valor é [valor de catcher.multiThreadExceptions.get()].
+Era esperado [numThreads - 1] para catcher.exceptionCount.get(), mas o valor é [valor de catcher.exceptionCount.get()].
+A execução falhou por uma causa deliberada.
+Era esperado o texto "Hello, World!" para p, mas o texto é "[texto de p]".
+O título de doc deveria conter "Environment Variables", mas não contém.
+O título de doc deveria conter "Environment Variables", mas não contém.
+A variável threw deveria ser verdadeira, mas é falsa.
+A variável threw deveria ser verdadeira, mas é falsa.
+Era esperado o código de status 404, mas o código é [código de status de res].
+Era esperado o título "Webserver Environment Variables" para doc, mas o título é "[título de doc]".
+Era esperado "POST" para o valor do cabeçalho "Method" em doc, mas o valor é "[valor do cabeçalho Method]".
+Era esperado "gzip" para o valor do cabeçalho "Accept-Encoding" em doc, mas o valor é "[valor do cabeçalho Accept-Encoding]".
+Era esperado "auth=token" para o valor do cabeçalho "Cookie" em doc, mas o valor é "[valor do cabeçalho Cookie]".
+Era esperado "度一下" para o valor do cabeçalho "百" em doc, mas o valor é "[valor do cabeçalho 百]".
+Era esperado "Jsoup, Jonathan" para o valor do cabeçalho "uname" em doc, mas o valor é "[valor do cabeçalho uname]".
+Era esperado "application/x-www-form-urlencoded; charset=UTF-8" para o valor do cabeçalho "Content-Type" em doc, mas o valor é "[valor do cabeçalho Content-Type]".
+Era esperado que o valor do cabeçalho "Content-Type" em doc contivesse "multipart/form-data", mas não contém.
+Era esperado que o valor do cabeçalho "Content-Type" em doc contivesse "boundary", mas não contém.
+Era esperado "Jsoup, Jonathan" para o valor do cabeçalho "uname" em doc, mas o valor é "[valor do cabeçalho uname]".
+Era esperado "度一下" para o valor do cabeçalho "百" em doc, mas o valor é "[valor do cabeçalho 百]".
+Era esperado "hello" para o valor do cabeçalho "Random-Header-name" em doc, mas o valor é "[valor do cabeçalho Random-Header-name]".
+Era esperado "cross-site" para o valor do cabeçalho "Sec-Fetch-Site" em doc, mas o valor é "[valor do cabeçalho Sec-Fetch-Site]".
+Era esperado "cors" para o valor do cabeçalho "Sec-Fetch-Mode" em doc, mas o valor é "[valor do cabeçalho Sec-Fetch-Mode]".
+Era esperado "hello" para o valor do cabeçalho "Random-Header-name" em doc, mas o valor é "[valor do cabeçalho Random-Header-name]".
+Era esperado "cross-site" para o valor do cabeçalho "Sec-Fetch-Site" em doc, mas o valor é "[valor do cabeçalho Sec-Fetch-Site]".
+Era esperado "cors" para o valor do cabeçalho "Sec-Fetch-Mode" em doc, mas o valor é "[valor do cabeçalho Sec-Fetch-Mode]".
+Era esperado "POST" para o valor do cabeçalho "Method" em doc, mas o valor é "[valor do cabeçalho Method]".
+Era esperado "application/json" para o valor do cabeçalho "Content-Type" em doc, mas o valor é "[valor do cabeçalho Content-Type]".
+Era esperado "foo=true" para o valor do cabeçalho "Query String" em doc, mas o valor é "[valor do cabeçalho Query String]".
+Era esperado "[body]" para o valor do cabeçalho "Post Data" em doc, mas o valor é "[valor do cabeçalho Post Data]".
+Era esperado "POST" para o valor do cabeçalho "Method" em doc, mas o valor é "[valor do cabeçalho Method]".
+Era esperado "application/json" para o valor do cabeçalho "Content-Type" em doc, mas o valor é "[valor do cabeçalho Content-Type]".
+Era esperado "[body]" para o valor do cabeçalho "Post Data" em doc, mas o valor é "[valor do cabeçalho Post Data]".
+Era esperado "POST" para o valor do cabeçalho "Method" em doc, mas o valor é "[valor do cabeçalho Method]".
+Era esperado "text/plain" para o valor do cabeçalho "Content-Type" em doc, mas o valor é "[valor do cabeçalho Content-Type]".
+Era esperado "[body]" para o valor do cabeçalho "Post Data" em doc, mas o valor é "[valor do cabeçalho Post Data]".
+Era esperado "POST" para o valor do cabeçalho "Method" em doc, mas o valor é "[valor do cabeçalho Method]".
+Era esperado "uname=Jsoup&uname=Jonathan&%E7%99%BE=%E5%BA%A6%E4%B8%80%E4%B8%8B" para o valor do cabeçalho "Query String" em doc, mas o valor é "[valor do cabeçalho Query String]".
+Era esperado "[body]" para o valor do cabeçalho "Post Data" em doc, mas o valor é "[valor do cabeçalho Post Data]".
+Era esperado "what=the&what=about+%26+me%3F" para o valor do cabeçalho "Query String" em doc, mas o valor é "[valor do cabeçalho Query String]".
+Era esperado "the, about & me?" para o valor do cabeçalho "what" em doc, mas o valor é "[valor do cabeçalho what]".
+Era esperado "Mozilla" para o valor do cabeçalho "User-Agent" em doc, mas o valor é "[valor do cabeçalho User-Agent]".
+Era esperado "http://example.com" para o valor do cabeçalho "Referer" em doc, mas o valor é "[valor do cabeçalho Referer]".
+Era esperado "PUT" para o valor do cabeçalho "Method" em doc, mas o valor é "[valor do cabeçalho Method]".
+Era esperado "gzip" para o valor do cabeçalho "Accept-Encoding" em doc, mas o valor é "[valor do cabeçalho Accept-Encoding]".
+Era esperado "auth=token" para o valor do cabeçalho "Cookie" em doc, mas o valor é "[valor do cabeçalho Cookie]".
+Era esperado "4" para o valor do cabeçalho "Parts" em res, mas o valor é "[valor do cabeçalho Parts]".
+Era esperado "application/octet-stream" para o valor do cabeçalho "Part secondPart ContentType" em res, mas o valor é "[valor do cabeçalho Part secondPart ContentType]".
+Era esperado "secondPart" para o valor do cabeçalho "Part secondPart Name" em res, mas o valor é "[valor do cabeçalho Part secondPart Name]".
+Era esperado "google-ipod.html.gz" para o valor do cabeçalho "Part secondPart Filename" em res, mas o valor é "[valor do cabeçalho Part secondPart Filename]".
+Era esperado "12212" para o valor do cabeçalho "Part secondPart Size" em res, mas o valor é "[valor do cabeçalho Part secondPart Size]".
+Era esperado "image/jpeg" para o valor do cabeçalho "Part firstPart ContentType" em res, mas o valor é "[valor do cabeçalho Part firstPart ContentType]".
+Era esperado "firstPart" para o valor do cabeçalho "Part firstPart Name" em res, mas o valor é "[valor do cabeçalho Part firstPart Name]".
+Era esperado "thumb.jpg" para o valor do cabeçalho "Part firstPart Filename" em res, mas o valor é "[valor do cabeçalho Part firstPart Filename]".
+Era esperado "1052" para o valor do cabeçalho "Part firstPart Size" em res, mas o valor é "[valor do cabeçalho Part firstPart Size]".
+Era esperado "Jay" para o valor do cabeçalho "firstname" em res, mas o valor é "[valor do cabeçalho firstname]".
+Era esperado "Soup" para o valor do cabeçalho "surname" em res, mas o valor é "[valor do cabeçalho surname]".
+O título de doc deveria conter "Environment", mas não contém.
+O título de doc2 deveria conter "Environment", mas não contém.
+A variável body deveria conter "Environment", mas não contém.
+O tamanho de bytes deveria ser maior que 100, mas é igual a [tamanho de bytes].
+O título de doc deveria conter "Environment", mas não contém.
+Era esperado "asdfg123" para o valor do cookie "token", mas o valor é "[valor do cookie token]".
+Era esperado "jhy" para o valor do cookie "uid", mas o valor é "[valor do cookie uid]".
+Era esperado "token=asdfg123; uid=jhy" para o valor do cabeçalho "Cookie" em doc, mas o valor é "[valor do cabeçalho Cookie]".
+Era esperado 0 cookies em res, mas há [número de cookies em res].
+Era esperado "[echoUrl]" para a localização de doc, mas a localização é "[localização de doc]".
+Era esperado "True" para o valor do cookie "LetMeIn" em doc, mas o valor é "[valor do cookie LetMeIn]".
+Era esperado "Yes" para o valor do cookie "DoesItWork" em doc, mas o valor é "[valor do cookie DoesItWork]".
+Era esperado "deflate" para o valor do cabeçalho "Content-Encoding" em res, mas o valor é "[valor do cabeçalho Content-Encoding]".
+Era esperado "Hello, World!" para o texto do primeiro elemento p em doc, mas o texto é "[texto do primeiro elemento p]".
+Era esperado "Something" para o título de document, mas o título é "[título de document]".
+Era esperado 0 parágrafos em document, mas há [número de parágrafos em document].
+Era esperado 0 parágrafos em doc, mas há [número de parágrafos em doc].
+Era esperado "Hello, World!" para o texto de p, mas o texto é "[texto de p]".
+Era esperado "[HelloServlet.Url]" para a localização de doc, mas a localização é "[localização de doc]".
+A variável threw deveria ser verdadeira, mas é falsa.
+Era esperado "[EchoServlet.Url]" para a localização de doc, mas a localização é "[localização de doc]".
+Era esperado "GET" para o valor do cabeçalho "Method" em doc, mas o valor é "[valor do cabeçalho Method]".
+O valor do cabeçalho "Hello" em doc deveria ser nulo.
+Era esperado "[EchoServlet.Url]" para a localização de doc, mas a localização é "[localização de doc]".

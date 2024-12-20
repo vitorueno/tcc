@@ -1,0 +1,100 @@
+Esperava-se que o nome canônico fosse "sun.misc.Unsafe", mas obteve-se: c.getCanonicalName()
+Esperava-se que o id do usuário fosse 1, mas obteve-se: user.id
+Esperava-se que o nome do usuário fosse "kraity", mas obteve-se: user.name
+Esperava-se que o id do usuário fosse 1, mas obteve-se: user.id
+Esperava-se que o nome do usuário fosse "kraity", mas obteve-se: user.name
+Esperava-se que o valor do bean fosse 123, mas obteve-se: bean.value
+Esperava-se que as referências fossem idênticas, mas jsonFactory é diferente de objectMapper.getFactory()
+Esperava-se que o tamanho de products fosse 3, mas obteve-se: products.size()
+Esperava-se que o id do primeiro produto fosse 1, mas obteve-se: products.get(0).id
+Esperava-se que o id do segundo produto fosse 2, mas obteve-se: products.get(1).id
+Esperava-se que o id do terceiro produto fosse 3, mas obteve-se: products.get(2).id
+Esperava-se que o comprimento de SerializationFeature.values() fosse maior que 0, mas não foi.
+Esperava-se que o tipo de new InvalidDefinitionException(null) fosse nulo, mas obteve-se: new InvalidDefinitionException(null).getType()
+Esperava-se que a string fosse "{\time:\"121314\"}", mas obteve-se: str
+Esperava-se que bean.time fosse igual a bean1.time, mas não foi.
+Esperava-se que a string fosse "{\time:\"121314\"}", mas obteve-se: str
+Esperava-se que bean.time fosse igual a bean1.time, mas não foi.
+Esperava-se que a string fosse "{\time:\"121314\"}", mas obteve-se: str
+Esperava-se que bean.time fosse igual a bean1.time, mas não foi.
+Esperava-se que a string fosse "{\time:\"121314\"}", mas obteve-se: str
+Esperava-se que bean.time fosse igual a bean1.time, mas não foi.
+Esperava-se que a string fosse "{\time:\"121314\"}", mas obteve-se: str
+Esperava-se que bean.time fosse igual a bean1.time, mas não foi.
+Esperava-se que writer.writeValueAsString(bean) fosse igual a instantCsv, mas não foi.
+Esperava-se que bean.data fosse igual a bean1.data, mas não foi.
+Esperava-se que instantCsv fosse igual a str, mas não foi.
+Esperava-se que bean.data fosse igual a bean1.data, mas não foi.
+Esperava-se que writer.writeValueAsString(new TypeWithOptional(Optional.of("value"))) fosse igual a "value\n", mas não foi.
+Esperava-se que writer.writeValueAsString(new TypeWithOptional(Optional.empty())) fosse igual a "\n", mas não foi.
+Esperava-se que (reader.readValue("value\n", TypeWithOptional.class).data).get() contivesse "value", mas não contém.
+Esperava-se que (reader.readValue("null\n", TypeWithOptional.class).data).get() contivesse "null", mas não contém.
+Esperava-se que instantCsv fosse igual a str, mas não foi.
+Esperava-se que bean.data fosse igual a bean1.data, mas não foi.
+Esperava-se que writer.writeValueAsString(new TypeWithOptional(Optional.of("value"))) fosse igual a "value\n", mas não foi.
+Esperava-se que writer.writeValueAsString(new TypeWithOptional(Optional.empty())) fosse igual a "\n", mas não foi.
+Esperava-se que (reader.readValue("value\n", TypeWithOptional.class).data).get() contivesse "value", mas não contém.
+Esperava-se que (reader.readValue("null\n", TypeWithOptional.class).data).get() contivesse "null", mas não contém.
+Esperava-se que (reader.readValue("\n", TypeWithOptional.class).data).get() estivesse vazio, mas não está.
+Esperava-se que entry não fosse nulo, mas obteve-se nulo.
+Esperava-se que o id do resultado do trabalho fosse 123, mas obteve-se: entry.getJobResult().id
+Esperava-se que o id do bean fosse 123, mas obteve-se: bean.id
+Esperava-se que o id do bean1 fosse 123, mas obteve-se: bean1.id
+Esperava-se que o id do bean2 fosse 123, mas obteve-se: bean2.id
+Esperava-se que o id do bean3 fosse 123, mas obteve-se: bean3.id
+Esperava-se que MapperFeature.USE_ANNOTATIONS.getMask() fosse igual a MapperFeature.USE_ANNOTATIONS.getLongMask(), mas não foi.
+Esperava-se que MapperFeature.USE_ANNOTATIONS.enabledIn(MapperFeature.USE_ANNOTATIONS.getMask()) fosse verdadeiro, mas não foi.
+Esperava-se que MapperFeature.USE_ANNOTATIONS.enabledIn(MapperFeature.USE_ANNOTATIONS.getLongMask()) fosse verdadeiro, mas não foi.
+Esperava-se que json fosse igual a "{\color:\"yellow\",\"type\":\"renault\"}", mas obteve-se: json
+Esperava-se que car.color fosse igual a car1.color, mas não foi.
+Esperava-se que car.type fosse igual a car1.type, mas não foi.
+Esperava-se que o valor associado à chave "color" no mapa fosse "Black", mas obteve-se: map.get("color")
+Esperava-se que bean.id fosse igual a node.get("id").asInt(), mas não foi.
+Esperava-se que bean.name fosse igual a node.get("name").asText(), mas não foi.
+Esperava-se que mapper.readTree(new ByteArrayInputStream(str.getBytes())).get("id").asInt() fosse 123, mas não foi.
+Esperava-se que mapper.readTree(new StringReader(str)).get("id").asInt() fosse 123, mas não foi.
+Esperava-se que mapper.readTree(str).get("id").asInt() fosse 123, mas não foi.
+Esperava-se que ((JsonNode) mapper.readTree(mapper.factory.createParser(str))).get("id").asInt() fosse 123, mas não foi.
+Esperava-se que arrayNode.get(0) fosse nulo, mas não foi.
+Esperava-se que o tipo de nó de arrayNode fosse ARRAY, mas obteve-se: arrayNode.getNodeType()
+Esperava-se que a string fosse "{\id:101}", mas obteve-se: str
+Esperava-se que a string fosse "{\id:101,\name:null}", mas obteve-se: str
+Esperava-se que a string fosse "{\bean_id:1001}", mas obteve-se: str
+Esperava-se que bean.id fosse igual a bean1.id, mas não foi.
+Esperava-se que str fosse igual a new String(bytes, StandardCharsets.UTF_8), mas não foi.
+Esperava-se que bean.id fosse igual a bean2.id, mas não foi.
+Esperava-se que bean.id fosse igual a bean3.id, mas não foi.
+Esperava-se que a string fosse "{\bean_id:1001}", mas obteve-se: str
+Esperava-se que expected fosse igual a carJson, mas não foi.
+Esperava-se que expected fosse igual a new String(byteOut.toByteArray(), StandardCharsets.UTF_8), mas não foi.
+Esperava-se que expected fosse igual a strWriter.toString(), mas não foi.
+Esperava-se que car.type fosse igual a car1.type, mas não foi.
+Esperava-se que car não fosse nulo, mas obteve-se nulo.
+Esperava-se que car.getColor() fosse igual a "Black", mas obteve-se: car.getColor()
+Esperava-se que car não fosse nulo, mas obteve-se nulo.
+Esperava-se que car.color fosse igual a "red", mas obteve-se: car.color
+Esperava-se que javaType não fosse nulo, mas obteve-se nulo.
+Esperava-se que o tamanho de values fosse 1, mas obteve-se: values.size()
+Esperava-se que o id do primeiro elemento de values fosse 123, mas obteve-se: values.get(0).id
+Esperava-se que o nome do primeiro elemento de values fosse "XX", mas obteve-se: values.get(0).name
+Esperava-se que o tamanho de values fosse 1, mas obteve-se: values.size()
+Esperava-se que o id do primeiro elemento de values fosse 123, mas obteve-se: values.get(0).id
+Esperava-se que o nome do primeiro elemento de values fosse "XX", mas obteve-se: values.get(0).name
+Esperava-se que o tamanho do mapa fosse 1, mas obteve-se: map.size()
+Esperava-se que o id do bean fosse 123, mas obteve-se: bean.id
+Esperava-se que o nome do bean fosse "XXX", mas obteve-se: bean.name
+Esperava-se que node fosse um BigInteger, mas não é.
+Esperava-se que o tipo numérico de node fosse BIG_INTEGER, mas obteve-se: node.numberType()
+Esperava-se que o tipo de nó de node fosse NUMBER, mas obteve-se: node.getNodeType()
+Esperava-se que node.asInt() fosse igual a bigInt.intValue(), mas não foi.
+Esperava-se que node.asInt(2) fosse igual a bigInt.intValue(), mas não foi.
+Esperava-se que node.intValue() fosse igual a bigInt.intValue(), mas não foi.
+Esperava-se que node.longValue() fosse igual a bigInt.longValue(), mas não foi.
+Esperava-se que node.asDouble() fosse igual a bigInt.doubleValue(), mas não foi.
+Esperava-se que (reader.readValue("\n", TypeWithOptional.class).data) não estivesse presente, mas está.
+Esperava-se que arrayNode.elements().hasNext() fosse falso, mas é verdadeiro.
+Esperava-se que arrayNode.iterator().hasNext() fosse falso, mas é verdadeiro.
+Esperava-se que node não fosse um BigDecimal, mas é.
+Esperava-se que node não fosse um BigInteger, mas é.
+Esperava-se que node não fosse um BigDecimal, mas é.
+Esperava-se que node não fosse um Float, mas é.

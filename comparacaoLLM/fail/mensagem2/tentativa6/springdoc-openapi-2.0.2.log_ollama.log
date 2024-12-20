@@ -1,0 +1,37 @@
+Claro, aqui estão as mensagens de descrição de erro para cada assert:
+
+1. `Assertions.assertTrue(!result.contains("!<Type A>"))`:
+   Erro de negação inconsistente: Esperado que o valor não contivesse uma certa string, mas o valor real contém essa string.
+
+2. `assertTrue(contentAsString.contains("Swagger UI"))` (duas vezes):
+    Verificação falha de conteúdo: O conteúdo do string não contém a string esperada "Swagger UI".
+
+3. `Assertions.assertEquals(expected, result)`:
+   Ação de igualdade falhou: Esperado que um valor seja igual a outro, mas os valores são diferentes.
+
+4. `assertTrue(result.contains("window.ui"))`:
+    Verificação falha de conteúdo: O valor não contém a string esperada "window.ui".
+
+5. `assertEquals(expected, result.replace("\r", ""))`:
+   Ação de igualdade falhou após correção: Esperado que um valor seja igual a outro após remover uma caractere específico, mas os valores são diferentes.
+
+6. `assertTrue(contentAsString.contains("Swagger UI"))` (duas vezes):
+    Verificação falha de conteúdo: O conteúdo do string não contém a string esperada "Swagger UI".
+
+7. `assertTrue(transformedIndex.contains("window.ui"))`:
+   Verificação falha de conteúdo: O valor não contém a string esperada "window.ui".
+
+8. `assertEquals("no-store", mvcResult.getResponse().getHeader("Cache-Control"))`:
+   Ação de igualdade falhou: Esperado que um valor seja igual a outro, mas os valores são diferentes.
+
+9. `assertTrue(htmlResult.contains("window.ui"))`:
+    Verificação falha de conteúdo: O conteúdo do string não contém a string esperada "window.ui".
+
+10. `assertEquals(this.getContent(fileName), transformedIndex.replace("\r", ""))`:
+    Ação de igualdade falhou após correção: Esperado que um valor seja igual a outro após remover uma caractere específico, mas os valores são diferentes.
+
+11. `assertTrue(contentAsString.contains("Swagger UI"))` (duas vezes):
+   Verificação falha de conteúdo: O conteúdo do string não contém a string esperada "Swagger UI".
+
+12. `assertTrue(contentAsString.contains("Swagger UI"))` (duas vezes):
+    Verificação falha de conteúdo: O conteúdo do string não contém a string esperada "Swagger UI".

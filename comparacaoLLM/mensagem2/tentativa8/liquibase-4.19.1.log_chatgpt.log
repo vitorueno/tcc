@@ -1,0 +1,99 @@
+eram esperados valores não nulos, mas cdiLiquibase é nulo
+eram esperados valores iguais, mas shouldBeRunning é diferente de cdiLiquibase.isInitialized()
+eram esperados valores iguais, mas shouldBeRunning é diferente de cdiLiquibase.isUpdateSuccessful()
+eram esperados valores iguais, mas liquibaseSchemas.size() é diferente de resolved.size()
+eram esperados valores iguais, mas 9 é diferente de previous.size()
+eram esperados valores iguais, mas schemes.size() é diferente de resolved.size()
+eram esperados valores iguais, mas 16 é diferente de previous.size()
+eram esperados valores iguais, mas liquibaseSchemas.size() é diferente de resolved.size()
+eram esperados valores iguais, mas 7 é diferente de resolved.size()
+eram esperados valores iguais, mas 1 é diferente de locations.size()
+eram esperados valores iguais, mas mojo.changeLogDirectory é diferente de dirLocation
+eram esperados valores iguais, mas "target/liquibase/myOutputDirectory" é diferente de mojo.getOutputDirectory()
+eram esperados valores iguais, mas "TIMESTAMP_NTZ" é diferente de databaseDataType.getType()
+eram esperados valores iguais, mas "TIMESTAMP_NTZ" é diferente de databaseDataType.toSql()
+eram esperados valores falsos, mas databaseDataType.isAutoIncrement() é verdadeiro
+eram esperados valores iguais, mas 2 é diferente de aliases.length
+eram esperados valores verdadeiros, mas Arrays.asList(aliases) não contém "datetime"
+eram esperados valores verdadeiros, mas Arrays.asList(aliases) não contém "java.sql.Types.DATETIME"
+eram esperados valores iguais, mas "liquibase.datatype.core.TimestampNTZTypeSnowflake" é diferente de liquibaseDataType.getClass().getName()
+eram esperados valores verdadeiros, mas timestampNTZType.supports(snowflakeDatabase) é falso
+eram esperados valores falsos, mas timestampNTZType.supports(new PostgresDatabase()) é verdadeiro
+eram esperados valores iguais, mas PRIORITY_DATABASE é diferente de timestampNTZType.getPriority()
+eram esperados valores iguais, mas 0 é diferente de timestampNTZType.getMinParameters(snowflakeDatabase)
+eram esperados valores iguais, mas 0 é diferente de timestampNTZType.getMinParameters(snowflakeDatabase)
+eram esperados valores iguais, mas "snowflake" é diferente de database.getShortName()
+eram esperados valores iguais, mas "Snowflake" é diferente de database.getDefaultDatabaseProductName()
+eram esperados valores nulos, mas database.getDefaultPort() não é nulo
+eram esperados valores iguais, mas "current_timestamp::timestamp_ntz" é diferente de database.getCurrentDateTimeFunction()
+eram esperados valores iguais, mas PRIORITY_DATABASE é diferente de database.getPriority()
+eram esperados valores falsos, mas database.supportsInitiallyDeferrableColumns() é verdadeiro
+eram esperados valores verdadeiros, mas database.supportsDropTableCascadeConstraints() é falso
+eram esperados valores verdadeiros, mas database.isCorrectDatabaseImplementation(jdbcConnection) é falso
+eram esperados valores iguais, mas "net.snowflake.client.jdbc.SnowflakeDriver" é diferente de database.getDefaultDriver("jdbc:snowflake:")
+eram esperados valores nulos, mas database.getDefaultDriver("jdbc:wrong-name:") não é nulo
+eram esperados valores verdadeiros, mas database.supportsSchemas() é falso
+eram esperados valores verdadeiros, mas database.supportsCatalogs() é falso
+eram esperados valores falsos, mas database.supportsCatalogInObjectName(null) é verdadeiro
+eram esperados valores verdadeiros, mas database.supportsSequences() é falso
+eram esperados valores iguais, mas "DATABASECHANGELOG" é diferente de database.getDatabaseChangeLogTableName()
+eram esperados valores iguais, mas "DATABASECHANGELOGLOCK" é diferente de database.getDatabaseChangeLogLockTableName()
+eram esperados valores falsos, mas database.supportsTablespaces() é verdadeiro
+eram esperados valores verdadeiros, mas database.supportsAutoIncrement() é falso
+eram esperados valores iguais, mas "AUTOINCREMENT" é diferente de database.getAutoIncrementClause()
+eram esperados valores iguais, mas "AUTOINCREMENT (1, 1)" é diferente de database.getAutoIncrementClause(null, null, null, null)
+eram esperados valores iguais, mas "AUTOINCREMENT (1, 1)" é diferente de database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("1"), null, null)
+eram esperados valores iguais, mas "AUTOINCREMENT (7, 1)" é diferente de database.getAutoIncrementClause(new BigInteger("7"), new BigInteger("1"), null, null)
+eram esperados valores iguais, mas "AUTOINCREMENT (1, 7)" é diferente de database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("7"), null, null)
+eram esperados valores iguais, mas "AUTOINCREMENT (7, 1)" é diferente de database.getAutoIncrementClause(new BigInteger("7"), null, null, null)
+eram esperados valores iguais, mas "AUTOINCREMENT (1, 7)" é diferente de database.getAutoIncrementClause(null, new BigInteger("7"), null, null)
+eram esperados valores verdadeiros, mas database.generateAutoIncrementStartWith(new BigInteger("1")) é falso
+eram esperados valores verdadeiros, mas database.generateAutoIncrementBy(new BigInteger("1")) é falso
+eram esperados valores verdadeiros, mas database.supportsRestrictForeignKeys() é falso
+eram esperados valores verdadeiros, mas database.isReservedWord("table") é falso
+eram esperados valores nulos, mas database.getDefaultCatalogName() não é nulo
+eram esperados valores nulos, mas database.getDefaultSchemaName() não é nulo
+eram esperados valores nulos, mas database.getJdbcCatalogName(new CatalogAndSchema(null, null)) não é nulo
+eram esperados valores nulos, mas database.getJdbcSchemaName(new CatalogAndSchema(null, null)) não é nulo
+eram esperados valores iguais, mas 1 é diferente de pk.getColumnNamesAsList().size()
+eram esperados valores iguais, mas 2 é diferente de pk.getColumnNamesAsList().size()
+eram esperados valores iguais, mas "id1" é diferente de pk.getColumnNamesAsList().get(0)
+eram esperados valores iguais, mas "id2" é diferente de pk.getColumnNamesAsList().get(1)
+eram esperados valores iguais, mas 2 é diferente de pk.getColumnNamesAsList().size()
+eram esperados valores iguais, mas "id1" é diferente de pk.getColumnNamesAsList().get(0)
+eram esperados valores iguais, mas "id2" é diferente de pk.getColumnNamesAsList().get(1)
+eram esperados valores não nulos, mas ChangeLogSerializerFactory.getInstance() é nulo
+eram esperados valores iguais, mas ChangeLogSerializerFactory.getInstance() é diferente de ChangeLogSerializerFactory.getInstance()
+eram esperados valores iguais, mas 0 é diferente de ChangeLogSerializerFactory.getInstance().getSerializers().size()
+eram esperados valores iguais, mas 1 é diferente de ChangeLogSerializerFactory.getInstance().getSerializers().size()
+eram esperados valores iguais, mas 0 é diferente de factory.getSerializers().size()
+eram esperados valores iguais, mas 2 é diferente de factory.getSerializers().size()
+eram esperados valores iguais, mas 1 é diferente de factory.getSerializers().size()
+eram esperados valores diferentes, mas instance1 e ChangeLogSerializerFactory.getInstance() são iguais
+eram esperados valores iguais, mas 6 é diferente de serializers.size()
+eram esperados valores não nulos, mas serializer é nulo
+eram esperados valores iguais, mas XMLChangeLogSerializer.class é diferente de serializer.getClass()
+eram esperados valores iguais, mas 1 é diferente de ChangeLogSerializerFactory.getInstance().getSerializers("xml").size()
+eram esperados valores iguais, mas highestPriority é diferente de factory.getSerializer("xml")
+eram esperados valores iguais, mas 3 é diferente de factory.getSerializers().get("xml").size()
+eram esperados valores iguais, mas "{\n" + "  \"changeSet\": {\n" + "    \"id\": \"1\",\n" + "    \"author\": \"nvoxland\",\n" + "    \"ignore\": true,\n" + "    \"objectQuotingStrategy\": \"LEGACY\",\n" + "    \"preconditions\": {\n" + "      \"preConditions\": {\n" + "        \"nestedPreconditions\": [\n" + "          {\n" + "            \"preConditions\": {\n" + "              \"onError\": \"WARN\",\n" + "              \"onFail\": \"CONTINUE\",\n" + "              \"onSqlOutput\": \"TEST\"\n" + "            }\n" + "          }\n" + "        ]\n" + "        ,\n" + "        \"onError\": \"CONTINUE\",\n" + "        \"onFail\": \"MARK_RAN\",\n" + "        \"onSqlOutput\": \"FAIL\"\n" + "      }\n" + "    },\n" + "    \"runInTransaction\": false,\n" + "    \"runOrder\": \"last\",\n" + "    \"changes\": [\n" + "      {\n" + "        \"addColumn\": {\n" + "          \"catalogName\": \"cat\",\n" + "          \"columns\": [\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueNumeric\": 3,\n" + "                \"name\": \"col1\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueComputed\": \"NOW()\",\n" + "                \"name\": \"col2\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueBoolean\": true,\n" + "                \"name\": \"col3\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueDate\": \"1970-01-01T00:00:00\",\n" + "                \"name\": \"col2\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueSequenceNext\": \"seq_me\",\n" + "                \"name\": \"col2\"\n" + "              }\n" + "            }\n" + "          ]\n" + "          \n" + "        }\n" + "      }\n" + "    ]\n" + "    \n" + "  }\n" + "}\n" é diferente de serializedJson
+eram esperados valores iguais, mas "addAutoIncrement" é diferente de node.getTagName()
+eram esperados valores iguais, mas "addColumn" é diferente de node.getTagName()
+eram esperados valores iguais, mas "TAB" é diferente de node.getAttribute("tableName")
+eram esperados valores iguais, mas 1 é diferente de columns.getLength()
+eram esperados valores iguais, mas "column" é diferente de ((Element) columns.item(0)).getTagName()
+eram esperados valores iguais, mas "NEWCOL" é diferente de ((Element) columns.item(0)).getAttribute("name")
+eram esperados valores iguais, mas "TYP" é diferente de ((Element) columns.item(0)).getAttribute("type")
+eram esperados valores iguais, mas "addDefaultValue" é diferente de node.getTagName()
+eram esperados valores iguais, mas "SCHEMA_NAME" é diferente de node.getAttribute("schemaName")
+eram esperados valores iguais, mas "TABLE_NAME" é diferente de node.getAttribute("tableName")
+eram esperados valores iguais, mas "COLUMN_NAME" é diferente de node.getAttribute("columnName")
+eram esperados valores iguais, mas "DEF STRING" é diferente de node.getAttribute("defaultValue")
+eram esperados valores iguais, mas "42" é diferente de node.getAttribute("defaultValueNumeric")
+eram esperados valores iguais, mas "true" é diferente de node.getAttribute("defaultValueBoolean")
+eram esperados valores iguais, mas "2007-01-02" é diferente de node.getAttribute("defaultValueDate")
+eram esperados valores iguais, mas "sampleSeq" é diferente de node.getAttribute("defaultValueSequenceNext")
+eram esperados valores iguais, mas "addForeignKeyConstraint" é diferente de node.getTagName()
+eram esperados valores iguais, mas "FK_NAME" é diferente de node.getAttribute("constraintName")
+eram esperados valores iguais, mas "BASE_SCHEMA_NAME" é diferente de node.getAttribute("baseTableSchemaName")
+eram esperados valores iguais, mas "BASE_TABLE_NAME" é diferente de node.getAttribute("baseTableName")

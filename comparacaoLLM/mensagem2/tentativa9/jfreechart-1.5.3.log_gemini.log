@@ -1,0 +1,100 @@
+Era esperado nulo, mas p1.getUnderlyingDataset() retornou um valor diferente de nulo.
+Era esperado 0, mas p1.getItemCount() retornou um valor diferente.
+Era esperado que p1.getKeys() estivesse vazio, mas não está.
+Era esperado nulo, mas p1.getValue("R1") retornou um valor diferente de nulo.
+Era esperado 1.1, mas d1.getValue("C1") retornou um valor diferente.
+Era esperado 2.2, mas d1.getValue("C2") retornou um valor diferente.
+Era esperado "C1", mas d1.getKey(0) retornou um valor diferente.
+Era esperado "C2", mas d1.getKey(1) retornou um valor diferente.
+Era esperado 0, mas d1.getIndex("C1") retornou um valor diferente.
+Era esperado 1, mas d1.getIndex("C2") retornou um valor diferente.
+Era esperado -1, mas d1.getIndex("XX") retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado que d1.getUnderlyingDataset() fosse igual a d2.getUnderlyingDataset(), mas não são iguais.
+Era esperado que d1.getExtractType() fosse igual a d2.getExtractType(), mas não são iguais.
+Era esperado que d1.getExtractIndex() fosse igual a d2.getExtractIndex(), mas não são iguais.
+Era esperado 1.0, mas d.getValue("R1", "C1") retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado 3.0, mas d.getValue("R1", "C1") retornou um valor diferente.
+Era esperado 2.0, mas d.getValue("R2", "C1") retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado que d.getRowCount() seja igual a 0, mas é diferente.
+Era esperado que d.getRowCount() seja igual a 1, mas é diferente.
+Era esperado que d.getRowCount() seja igual a 2, mas é diferente.
+Era esperado que d.getRowCount() seja igual a 2, mas é diferente.
+Era esperado que d.getRowCount() seja igual a 2, mas é diferente.
+Era esperado que d.getColumnCount() seja igual a 0, mas é diferente.
+Era esperado que d.getColumnCount() seja igual a 1, mas é diferente.
+Era esperado que d.getColumnCount() seja igual a 2, mas é diferente.
+Era esperado que d.getColumnCount() seja igual a 2, mas é diferente.
+Era esperado que d.getColumnCount() seja igual a 2, mas é diferente.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado que d2 fosse igual a d1, mas não são iguais.
+Era esperado false, mas d1.equals(d2) retornou true.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado false, mas d1.equals(d2) retornou true.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado nulo, mas d1.getValue("R1", "C1") retornou um valor diferente de nulo.
+Era esperado 1.0, mas d1.getValue("R2", "C1") retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado 0, mas d.getRowCount() retornou um valor diferente.
+Era esperado 0, mas d.getColumnCount() retornou um valor diferente.
+Era esperado 2.0, mas d.getValue(0, 0) retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas d1 != d2 retornou false.
+Era esperado true, mas d1.getClass() == d2.getClass() retornou false.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado true, mas d1 != d2 retornou false.
+Era esperado true, mas d1.getClass() == d2.getClass() retornou false.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado false, mas d1.equals(d2) retornou true.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado true, mas d instanceof PublicCloneable retornou false.
+Era esperado 2, mas d.getColumnCount() retornou um valor diferente.
+Era esperado 1, mas d.getColumnCount() retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado 2, mas d.getRowCount() retornou um valor diferente.
+Era esperado 1, mas d.getRowCount() retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado 0.1, mas d.getStartValue("Series 1", "Category 1") retornou um valor diferente.
+Era esperado 0.2, mas d.getStartValue("Series 1", "Category 2") retornou um valor diferente.
+Era esperado 0.3, mas d.getStartValue("Series 1", "Category 3") retornou um valor diferente.
+Era esperado 0.3, mas d.getStartValue("Series 2", "Category 1") retornou um valor diferente.
+Era esperado 0.4, mas d.getStartValue("Series 2", "Category 2") retornou um valor diferente.
+Era esperado 0.5, mas d.getStartValue("Series 2", "Category 3") retornou um valor diferente.
+Era esperado 0.5, mas d.getEndValue("Series 1", "Category 1") retornou um valor diferente.
+Era esperado 0.6, mas d.getEndValue("Series 1", "Category 2") retornou um valor diferente.
+Era esperado 0.7, mas d.getEndValue("Series 1", "Category 3") retornou um valor diferente.
+Era esperado 0.7, mas d.getEndValue("Series 2", "Category 1") retornou um valor diferente.
+Era esperado 0.8, mas d.getEndValue("Series 2", "Category 2") retornou um valor diferente.
+Era esperado 0.9, mas d.getEndValue("Series 2", "Category 3") retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado 2, mas d.getRowCount() retornou um valor diferente.
+Era esperado 3, mas d.getColumnCount() retornou um valor diferente.
+Era esperado que dA fosse igual a dB, mas não são iguais.
+Era esperado que dB fosse igual a dA, mas não são iguais.
+Era esperado que empty1 fosse igual a empty2, mas não são iguais.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado true, mas d1 != d2 retornou false.
+Era esperado true, mas d1.getClass() == d2.getClass() retornou false.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado false, mas d1.equals(d2) retornou true.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado true, mas d1 != d2 retornou false.
+Era esperado true, mas d1.getClass() == d2.getClass() retornou false.
+Era esperado que d1 fosse igual a d2, mas não são iguais.
+Era esperado 99.9, mas d1.getStartValue("Series 1", "Category 2") retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado true, mas a condição 'pass' é falsa.
+Era esperado 99.9, mas d1.getEndValue("Series 1", "Category 2") retornou um valor diferente.
+Era esperado true, mas a condição 'pass' é falsa.

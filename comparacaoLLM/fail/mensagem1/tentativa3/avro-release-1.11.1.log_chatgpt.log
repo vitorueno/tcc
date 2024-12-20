@@ -1,0 +1,173 @@
+"Os dados JSON não são iguais ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados."
+
+"Os dados JSON não são iguais ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com entrada padrão."
+
+"Os dados JSON não são iguais ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com opção --pretty."
+
+"Os dados JSON não são iguais ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --reader-schema definida como \"long\"."
+
+"Os dados JSON não são iguais ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --reader-schema-file e arquivo de esquema de leitura fornecidos."
+
+"O JSON esperado não é igual ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --head."
+
+"O JSON esperado não é igual ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --head=3."
+
+"O JSON esperado não é igual ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --head=5."
+
+"Os dados JSON não são iguais ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --head=3000000000."
+
+"A string de nova linha não é igual ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --head=0."
+
+"A string de nova linha não é igual ao resultado retornado ao executar a ferramenta de leitura de arquivo de dados com a opção --head=-5."
+
+"O esquema retornado não é igual ao resultado esperado ao executar a ferramenta de obtenção de metadados de arquivo de dados."
+
+"O esquema retornado não é igual ao resultado esperado ao executar a ferramenta de obtenção de esquema de arquivo de dados."
+
+"O número de registros no arquivo de saída não é igual a 0."
+
+"O número de registros no arquivo de saída não é igual a 5."
+
+"A string contendo 'Compression codec (default: null)' não foi encontrada no resultado."
+
+"O conteúdo do arquivo de protocolo não é igual ao conteúdo do arquivo de saída."
+
+"Aviso: Comentário de documentação encontrado na linha 19, coluna 1. Ignorando comentário anterior na linha 1, coluna 1."
+
+"Erro: É necessário fornecer a contagem (--count)."
+
+"Erro: Compression codec (default: deflate) não foi encontrado."
+
+"O valor de COUNT não é igual a i."
+
+"O tamanho da lista de contagens de palavras não é igual ao número de palavras."
+
+"O número de arquivos não é igual a 4."
+
+"Aviso: Comentário de documentação encontrado na linha 19, coluna 1. Ignorando comentário anterior na linha 1, coluna 1."
+
+"O código de retorno não é igual a 1."
+
+"O código de retorno não é igual a 0."
+
+"A string '220' com nova linha não é igual ao conteúdo da saída."
+
+"O JSON não é igual ao conteúdo do ByteArrayOutputStream."
+
+"O Avro não é igual ao conteúdo do ByteArrayOutputStream."
+
+"O conteúdo do ByteArrayOutputStream não contém 'Compression codec (default: deflate)'."
+
+"O iterador não possui próximo elemento."
+
+"O comprimento do arquivo de saída padrão não é igual ao comprimento do arquivo de saída nulo."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O código de retorno não é igual a 0."
+
+"O número de linhas no arquivo de saída está fora dos limites do arquivo de entrada."
+
+"O codec de compressão não é igual ao codec de compressão de saída."
+
+"O código de retorno não é igual a 1."
+
+"O código de retorno não é igual a 2."
+
+"O código de retorno não é igual a 3."
+
+"O código de retorno não é igual a 0."
+
+"A posição atual no fluxo de entrada não é 0."
+
+"O comprimento do fluxo de entrada não é 0."
+
+"O array de bytes possui comprimento diferente de 1."
+
+"O primeiro elemento do array de bytes não é 0."
+
+"O inteiro lido do fluxo de entrada não é 0."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O longo lido do fluxo de entrada não é igual ao valor esperado."
+
+"O número de linhas no fluxo de entrada não é 0."
+
+"O número de colunas no fluxo de entrada não é 0."
+
+"O número de linhas no fluxo de entrada não é 0."
+
+"O número de colunas no fluxo de entrada não é 1."
+
+"O número de linhas no fluxo de entrada não é igual a COUNT."
+
+"O número de colunas no fluxo de entrada não é 1."
+
+"O número de linhas no fluxo de entrada não é igual a COUNT."
+
+"O número de colunas no fluxo de entrada não é 1."
+
+"O número de linhas no fluxo de entrada não é igual a COUNT."
+
+"O número de colunas no fluxo de entrada não é 2."
+
+"O valor mínimo não é 0."
+
+"O valor máximo não é maior que 32KB."
+
+"A média não está entre 16.0 e 64.0."
+
+"O tamanho comprimido é maior que 0."
+
+"O tamanho comprimido é menor que o tamanho de entrada ou o codec é 'null'."
+
+"O buffer descomprimido não é igual ao buffer de entrada."

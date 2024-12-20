@@ -1,0 +1,4 @@
+eram esperados valores iguais, mas 10 é diferente de calculator.add(5, 5)
+eram esperados valores iguais, mas 25 é diferente de calculator.multiply(5, 5)
+os valores esperados são diferentes, 100 não é igual a calculator.square(10)
+a condição de verdadeiro não foi atendida para calculator.isPositive(-5)

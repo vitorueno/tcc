@@ -1,0 +1,199 @@
+`assertNotNull(cdiLiquibase)`: cdiLiquibase era esperado como não nulo, mas era nulo.
+
+`assertEquals(shouldBeRunning, cdiLiquibase.isInitialized())`: era esperado que cdiLiquibase.isInitialized() retornasse  `shouldBeRunning`, mas retornou um valor diferente.
+
+`assertEquals(shouldBeRunning, cdiLiquibase.isUpdateSuccessful())`: era esperado que cdiLiquibase.isUpdateSuccessful() retornasse `shouldBeRunning`, mas retornou um valor diferente.
+
+`assertEquals(liquibaseSchemas.size(), resolved.size())`: era esperado que o tamanho de `liquibaseSchemas` fosse igual ao tamanho de `resolved`, mas os tamanhos eram diferentes.
+
+`Assert.assertEquals(9, previous.size())`: era esperado que o tamanho de `previous` fosse 9, mas era diferente.
+
+`assertEquals(schemes.size(), resolved.size())`: era esperado que o tamanho de `schemes` fosse igual ao tamanho de `resolved`, mas os tamanhos eram diferentes.
+
+`Assert.assertEquals(16, previous.size())`: era esperado que o tamanho de `previous` fosse 16, mas era diferente.
+
+`assertEquals(liquibaseSchemas.size(), resolved.size())`: era esperado que o tamanho de `liquibaseSchemas` fosse igual ao tamanho de `resolved`, mas os tamanhos eram diferentes.
+
+`Assert.assertEquals(7, resolved.size())`: era esperado que o tamanho de `resolved` fosse 7, mas era diferente.
+
+`Assert.assertEquals(1, locations.size())`: era esperado que o tamanho de `locations` fosse 1, mas era diferente.
+
+`Assert.assertEquals(mojo.changeLogDirectory, dirLocation)`: era esperado que `mojo.changeLogDirectory` fosse igual a `dirLocation`, mas eram diferentes.
+
+`assertNotNull(mojo)`: `mojo` era esperado como não nulo, mas era nulo.
+
+`assertEquals("target/liquibase/myOutputDirectory", mojo.getOutputDirectory())`: era esperado que `mojo.getOutputDirectory()` retornasse "target/liquibase/myOutputDirectory", mas retornou um valor diferente.
+
+`assertEquals("TIMESTAMP_NTZ", databaseDataType.getType())`: era esperado que `databaseDataType.getType()` retornasse "TIMESTAMP_NTZ", mas retornou um valor diferente.
+
+`assertEquals("TIMESTAMP_NTZ", databaseDataType.toSql())`: era esperado que `databaseDataType.toSql()` retornasse "TIMESTAMP_NTZ", mas retornou um valor diferente.
+
+`assertFalse(databaseDataType.isAutoIncrement())`: era esperado que `databaseDataType.isAutoIncrement()` retornasse falso, mas retornou verdadeiro.
+
+`assertEquals(2, aliases.length)`: era esperado que o tamanho de `aliases` fosse 2, mas era diferente.
+
+`assertTrue(Arrays.asList(aliases).contains("datetime"))`: era esperado que a lista `aliases` contivesse "datetime", mas não continha.
+
+`assertTrue(Arrays.asList(aliases).contains("java.sql.Types.DATETIME"))`: era esperado que a lista `aliases` contivesse "java.sql.Types.DATETIME", mas não continha.
+
+`assertEquals("liquibase.datatype.core.TimestampNTZTypeSnowflake", liquibaseDataType.getClass().getName())`: era esperado que o nome da classe de `liquibaseDataType` fosse "liquibase.datatype.core.TimestampNTZTypeSnowflake", mas era diferente.
+
+`assertTrue(timestampNTZType.supports(snowflakeDatabase))`: era esperado que `timestampNTZType.supports(snowflakeDatabase)` retornasse verdadeiro, mas retornou falso.
+
+`assertFalse(timestampNTZType.supports(new PostgresDatabase()))`: era esperado que `timestampNTZType.supports(new PostgresDatabase())` retornasse falso, mas retornou verdadeiro.
+
+`assertEquals(PRIORITY_DATABASE, timestampNTZType.getPriority())`: era esperado que `timestampNTZType.getPriority()` retornasse `PRIORITY_DATABASE`, mas retornou um valor diferente.
+
+`assertEquals(0, timestampNTZType.getMinParameters(snowflakeDatabase))`: era esperado que `timestampNTZType.getMinParameters(snowflakeDatabase)` retornasse 0, mas retornou um valor diferente.
+
+`assertEquals(0, timestampNTZType.getMinParameters(snowflakeDatabase))`: era esperado que `timestampNTZType.getMinParameters(snowflakeDatabase)` retornasse 0, mas retornou um valor diferente.
+
+`assertEquals("snowflake", database.getShortName())`: era esperado que `database.getShortName()` retornasse "snowflake", mas retornou um valor diferente.
+
+`assertEquals("Snowflake", database.getDefaultDatabaseProductName())`: era esperado que `database.getDefaultDatabaseProductName()` retornasse "Snowflake", mas retornou um valor diferente.
+
+`assertNull(database.getDefaultPort())`: era esperado que `database.getDefaultPort()` fosse nulo, mas não era.
+
+`assertEquals("current_timestamp::timestamp_ntz", database.getCurrentDateTimeFunction())`: era esperado que `database.getCurrentDateTimeFunction()` retornasse "current_timestamp::timestamp_ntz", mas retornou um valor diferente.
+
+`assertEquals(PRIORITY_DATABASE, database.getPriority())`: era esperado que `database.getPriority()` retornasse `PRIORITY_DATABASE`, mas retornou um valor diferente.
+
+`assertFalse(database.supportsInitiallyDeferrableColumns())`: era esperado que `database.supportsInitiallyDeferrableColumns()` retornasse falso, mas retornou verdadeiro.
+
+`assertTrue(database.supportsDropTableCascadeConstraints())`: era esperado que `database.supportsDropTableCascadeConstraints()` retornasse verdadeiro, mas retornou falso.
+
+`assertTrue(database.isCorrectDatabaseImplementation(jdbcConnection))`: era esperado que `database.isCorrectDatabaseImplementation(jdbcConnection)` retornasse verdadeiro, mas retornou falso.
+
+`assertEquals("net.snowflake.client.jdbc.SnowflakeDriver", database.getDefaultDriver("jdbc:snowflake:"))`: era esperado que `database.getDefaultDriver("jdbc:snowflake:")` retornasse "net.snowflake.client.jdbc.SnowflakeDriver", mas retornou um valor diferente.
+
+`assertNull(database.getDefaultDriver("jdbc:wrong-name:"))`: era esperado que `database.getDefaultDriver("jdbc:wrong-name:")` fosse nulo, mas não era.
+
+`assertTrue(database.supportsSchemas())`: era esperado que `database.supportsSchemas()` retornasse verdadeiro, mas retornou falso.
+
+`assertTrue(database.supportsCatalogs())`: era esperado que `database.supportsCatalogs()` retornasse verdadeiro, mas retornou falso.
+
+`assertFalse(database.supportsCatalogInObjectName(null))`: era esperado que `database.supportsCatalogInObjectName(null)` retornasse falso, mas retornou verdadeiro.
+
+`assertTrue(database.supportsSequences())`: era esperado que `database.supportsSequences()` retornasse verdadeiro, mas retornou falso.
+
+`assertEquals("DATABASECHANGELOG", database.getDatabaseChangeLogTableName())`: era esperado que `database.getDatabaseChangeLogTableName()` retornasse "DATABASECHANGELOG", mas retornou um valor diferente.
+
+`assertEquals("DATABASECHANGELOGLOCK", database.getDatabaseChangeLogLockTableName())`: era esperado que `database.getDatabaseChangeLogLockTableName()` retornasse "DATABASECHANGELOGLOCK", mas retornou um valor diferente.
+
+`assertFalse(database.supportsTablespaces())`: era esperado que `database.supportsTablespaces()` retornasse falso, mas retornou verdadeiro.
+
+`assertTrue(database.supportsAutoIncrement())`: era esperado que `database.supportsAutoIncrement()` retornasse verdadeiro, mas retornou falso.
+
+`assertEquals("AUTOINCREMENT", database.getAutoIncrementClause())`: era esperado que `database.getAutoIncrementClause()` retornasse "AUTOINCREMENT", mas retornou um valor diferente.
+
+`assertEquals("AUTOINCREMENT (1, 1)", database.getAutoIncrementClause(null, null, null, null))`: era esperado que `database.getAutoIncrementClause(null, null, null, null)` retornasse "AUTOINCREMENT (1, 1)", mas retornou um valor diferente.
+
+`assertEquals("AUTOINCREMENT (1, 1)", database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("1"), null, null))`: era esperado que `database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("1"), null, null)` retornasse "AUTOINCREMENT (1, 1)", mas retornou um valor diferente.
+
+`assertEquals("AUTOINCREMENT (7, 1)", database.getAutoIncrementClause(new BigInteger("7"), new BigInteger("1"), null, null))`: era esperado que `database.getAutoIncrementClause(new BigInteger("7"), new BigInteger("1"), null, null)` retornasse "AUTOINCREMENT (7, 1)", mas retornou um valor diferente.
+
+`assertEquals("AUTOINCREMENT (1, 7)", database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("7"), null, null))`: era esperado que `database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("7"), null, null)` retornasse "AUTOINCREMENT (1, 7)", mas retornou um valor diferente.
+
+`assertEquals("AUTOINCREMENT (7, 1)", database.getAutoIncrementClause(new BigInteger("7"), null, null, null))`: era esperado que `database.getAutoIncrementClause(new BigInteger("7"), null, null, null)` retornasse "AUTOINCREMENT (7, 1)", mas retornou um valor diferente.
+
+`assertEquals("AUTOINCREMENT (1, 7)", database.getAutoIncrementClause(null, new BigInteger("7"), null, null))`: era esperado que `database.getAutoIncrementClause(null, new BigInteger("7"), null, null)` retornasse "AUTOINCREMENT (1, 7)", mas retornou um valor diferente.
+
+`assertTrue(database.generateAutoIncrementStartWith(new BigInteger("1")))`: era esperado que `database.generateAutoIncrementStartWith(new BigInteger("1"))` retornasse verdadeiro, mas retornou falso.
+
+`assertTrue(database.generateAutoIncrementBy(new BigInteger("1")))`: era esperado que `database.generateAutoIncrementBy(new BigInteger("1"))` retornasse verdadeiro, mas retornou falso.
+
+`assertTrue(database.supportsRestrictForeignKeys())`: era esperado que `database.supportsRestrictForeignKeys()` retornasse verdadeiro, mas retornou falso.
+
+`assertTrue(database.isReservedWord("table"))`: era esperado que `database.isReservedWord("table")` retornasse verdadeiro, mas retornou falso.
+
+`assertNull(database.getDefaultCatalogName())`: era esperado que `database.getDefaultCatalogName()` fosse nulo, mas não era.
+
+`assertNull(database.getDefaultSchemaName())`: era esperado que `database.getDefaultSchemaName()` fosse nulo, mas não era.
+
+`assertNull(database.getJdbcCatalogName(new CatalogAndSchema(null, null)))`: era esperado que `database.getJdbcCatalogName(new CatalogAndSchema(null, null))` fosse nulo, mas não era.
+
+`assertNull(database.getJdbcSchemaName(new CatalogAndSchema(null, null)))`: era esperado que `database.getJdbcSchemaName(new CatalogAndSchema(null, null))` fosse nulo, mas não era.
+
+`assertEquals(1, pk.getColumnNamesAsList().size())`: era esperado que o tamanho de `pk.getColumnNamesAsList()` fosse 1, mas era diferente.
+
+`assertEquals(2, pk.getColumnNamesAsList().size())`: era esperado que o tamanho de `pk.getColumnNamesAsList()` fosse 2, mas era diferente.
+
+`assertEquals("id1", pk.getColumnNamesAsList().get(0))`: era esperado que o primeiro elemento de `pk.getColumnNamesAsList()` fosse "id1", mas era diferente.
+
+`assertEquals("id2", pk.getColumnNamesAsList().get(1))`: era esperado que o segundo elemento de `pk.getColumnNamesAsList()` fosse "id2", mas era diferente.
+
+`assertEquals(2, pk.getColumnNamesAsList().size())`: era esperado que o tamanho de `pk.getColumnNamesAsList()` fosse 2, mas era diferente.
+
+`assertEquals("id1", pk.getColumnNamesAsList().get(0))`: era esperado que o primeiro elemento de `pk.getColumnNamesAsList()` fosse "id1", mas era diferente.
+
+`assertEquals("id2", pk.getColumnNamesAsList().get(1))`: era esperado que o segundo elemento de `pk.getColumnNamesAsList()` fosse "id2", mas era diferente.
+
+`assertNotNull(ChangeLogSerializerFactory.getInstance())`: era esperado que `ChangeLogSerializerFactory.getInstance()` não fosse nulo, mas era nulo.
+
+`assertSame(ChangeLogSerializerFactory.getInstance(), ChangeLogSerializerFactory.getInstance())`: era esperado que as duas instâncias de `ChangeLogSerializerFactory.getInstance()` fossem as mesmas, mas eram diferentes.
+
+`assertEquals(0, ChangeLogSerializerFactory.getInstance().getSerializers().size())`: era esperado que o tamanho de `ChangeLogSerializerFactory.getInstance().getSerializers()` fosse 0, mas era diferente.
+
+`assertEquals(1, ChangeLogSerializerFactory.getInstance().getSerializers().size())`: era esperado que o tamanho de `ChangeLogSerializerFactory.getInstance().getSerializers()` fosse 1, mas era diferente.
+
+`assertEquals(0, factory.getSerializers().size())`: era esperado que o tamanho de `factory.getSerializers()` fosse 0, mas era diferente.
+
+`assertEquals(2, factory.getSerializers().size())`: era esperado que o tamanho de `factory.getSerializers()` fosse 2, mas era diferente.
+
+`assertEquals(1, factory.getSerializers().size())`: era esperado que o tamanho de `factory.getSerializers()` fosse 1, mas era diferente.
+
+`assertNotSame(instance1, ChangeLogSerializerFactory.getInstance())`: era esperado que `instance1` e `ChangeLogSerializerFactory.getInstance()` fossem diferentes, mas eram iguais.
+
+`assertEquals(6, serializers.size())`: era esperado que o tamanho de `serializers` fosse 6, mas era diferente.
+
+`assertNotNull(serializer)`: era esperado que `serializer` não fosse nulo, mas era nulo.
+
+`assertSame(XMLChangeLogSerializer.class, serializer.getClass())`: era esperado que a classe de `serializer` fosse `XMLChangeLogSerializer.class`, mas era diferente.
+
+`assertEquals(1, ChangeLogSerializerFactory.getInstance().getSerializers("xml").size())`: era esperado que o tamanho de `ChangeLogSerializerFactory.getInstance().getSerializers("xml")` fosse 1, mas era diferente.
+
+`assertSame(highestPriority, factory.getSerializer("xml"))`: era esperado que `highestPriority` e `factory.getSerializer("xml")` fossem os mesmos, mas eram diferentes.
+
+`assertEquals(3, factory.getSerializers().get("xml").size())`: era esperado que o tamanho de `factory.getSerializers().get("xml")` fosse 3, mas era diferente.
+
+`assertEquals("{\n" + "  \"changeSet\": {\n" + "    \"id\": \"1\",\n" + "    \"author\": \"nvoxland\",\n" + "    \"ignore\": true,\n" + "    \"objectQuotingStrategy\": \"LEGACY\",\n" + "    \"preconditions\": {\n" + "      \"preConditions\": {\n" + "        \"nestedPreconditions\": [\n" + "          {\n" + "            \"preConditions\": {\n" + "              \"onError\": \"WARN\",\n" + "              \"onFail\": \"CONTINUE\",\n" + "              \"onSqlOutput\": \"TEST\"\n" + "            }\n" + "          }\n" + "        ]\n" + "        ,\n" + "        \"onError\": \"CONTINUE\",\n" + "        \"onFail\": \"MARK_RAN\",\n" + "        \"onSqlOutput\": \"FAIL\"\n" + "      }\n" + "    },\n" + "    \"runInTransaction\": false,\n" + "    \"runOrder\": \"last\",\n" + "    \"changes\": [\n" + "      {\n" + "        \"addColumn\": {\n" + "          \"catalogName\": \"cat\",\n" + "          \"columns\": [\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueNumeric\": 3,\n" + "                \"name\": \"col1\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueComputed\": \"NOW()\",\n" + "                \"name\": \"col2\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueBoolean\": true,\n" + "                \"name\": \"col3\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueDate\": \"1970-01-01T00:00:00\",\n" + "                \"name\": \"col2\"\n" + "              }\n" + "            },\n" + "            {\n" + "              \"column\": {\n" + "                \"defaultValueSequenceNext\": \"seq_me\",\n" + "                \"name\": \"col2\"\n" + "              }\n" + "            }\n" + "          ]\n" + "          \n" + "        }\n" + "      }\n" + "    ]\n" + "    \n" + "  }\n" + "}\n", serializedJson)`: era esperado que `serializedJson` fosse igual à string esperada, mas era diferente.
+
+`assertEquals("addAutoIncrement", node.getTagName())`: era esperado que `node.getTagName()` retornasse "addAutoIncrement", mas retornou um valor diferente.
+
+`assertEquals("addColumn", node.getTagName())`: era esperado que `node.getTagName()` retornasse "addColumn", mas retornou um valor diferente.
+
+`assertEquals("TAB", node.getAttribute("tableName"))`: era esperado que `node.getAttribute("tableName")` retornasse "TAB", mas retornou um valor diferente.
+
+`assertEquals(1, columns.getLength())`: era esperado que `columns.getLength()` retornasse 1, mas retornou um valor diferente.
+
+`assertEquals("column", ((Element) columns.item(0)).getTagName())`: era esperado que `((Element) columns.item(0)).getTagName()` retornasse "column", mas retornou um valor diferente.
+
+`assertEquals("NEWCOL", ((Element) columns.item(0)).getAttribute("name"))`: era esperado que `((Element) columns.item(0)).getAttribute("name")` retornasse "NEWCOL", mas retornou um valor diferente.
+
+`assertEquals("TYP", ((Element) columns.item(0)).getAttribute("type"))`: era esperado que `((Element) columns.item(0)).getAttribute("type")` retornasse "TYP", mas retornou um valor diferente.
+
+`assertEquals("addDefaultValue", node.getTagName())`: era esperado que `node.getTagName()` retornasse "addDefaultValue", mas retornou um valor diferente.
+
+`assertEquals("SCHEMA_NAME", node.getAttribute("schemaName"))`: era esperado que `node.getAttribute("schemaName")` retornasse "SCHEMA_NAME", mas retornou um valor diferente.
+
+`assertEquals("TABLE_NAME", node.getAttribute("tableName"))`: era esperado que `node.getAttribute("tableName")` retornasse "TABLE_NAME", mas retornou um valor diferente.
+
+`assertEquals("COLUMN_NAME", node.getAttribute("columnName"))`: era esperado que `node.getAttribute("columnName")` retornasse "COLUMN_NAME", mas retornou um valor diferente.
+
+`assertEquals("DEF STRING", node.getAttribute("defaultValue"))`: era esperado que `node.getAttribute("defaultValue")` retornasse "DEF STRING", mas retornou um valor diferente.
+
+`assertEquals("42", node.getAttribute("defaultValueNumeric"))`: era esperado que `node.getAttribute("defaultValueNumeric")` retornasse "42", mas retornou um valor diferente.
+
+`assertEquals("true", node.getAttribute("defaultValueBoolean"))`: era esperado que `node.getAttribute("defaultValueBoolean")` retornasse "true", mas retornou um valor diferente.
+
+`assertEquals("2007-01-02", node.getAttribute("defaultValueDate"))`: era esperado que `node.getAttribute("defaultValueDate")` retornasse "2007-01-02", mas retornou um valor diferente.
+
+`assertEquals("sampleSeq", node.getAttribute("defaultValueSequenceNext"))`: era esperado que `node.getAttribute("defaultValueSequenceNext")` retornasse "sampleSeq", mas retornou um valor diferente.
+
+`assertEquals("addForeignKeyConstraint", node.getTagName())`: era esperado que `node.getTagName()` retornasse "addForeignKeyConstraint", mas retornou um valor diferente.
+
+`assertEquals("FK_NAME", node.getAttribute("constraintName"))`: era esperado que `node.getAttribute("constraintName")` retornasse "FK_NAME", mas retornou um valor diferente.
+
+`assertEquals("BASE_SCHEMA_NAME", node.getAttribute("baseTableSchemaName"))`: era esperado que `node.getAttribute("baseTableSchemaName")` retornasse "BASE_SCHEMA_NAME", mas retornou um valor diferente.
+
+`assertEquals("BASE_TABLE_NAME", node.getAttribute("baseTableName"))`: era esperado que `node.getAttribute("baseTableName")` retornasse "BASE_TABLE_NAME", mas retornou um valor diferente.

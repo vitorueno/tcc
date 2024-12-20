@@ -1,0 +1,80 @@
+eram esperados valores não nulos, mas consoleAppender é nulo
+era esperado um valor verdadeiro, mas o resultado da verificação de erro de checker.isErrorFree(0) é falso
+eram esperados valores nulos, mas consoleAppender não é nulo
+era esperado um valor verdadeiro, mas o resultado da verificação de erro de checker.isErrorFree(0) é falso
+eram esperados valores nulos, mas consoleAppender não é nulo
+eram esperados valores não nulos, mas listAppender é nulo
+era esperado um valor verdadeiro, mas o resultado da verificação de erro de checker.isErrorFree(0) é falso
+eram esperados valores não nulos, mas listAppender é nulo
+eram esperados 1 elementos na lista, mas listAppender.list.size() retorna 0
+eram esperados 1 elementos na lista, mas listAppender.list.size() retorna 0
+eram esperados valores não nulos, mas ae é nulo
+o primeiro elemento da lista de strings não começa com "testMethod"
+eram esperados valores não nulos, mas o objeto é nulo
+os mapas de cabeçalho de resposta são diferentes
+os valores para a chave "x" nos mapas de cabeçalho de resposta são diferentes
+os valores para a chave "headerName1" nos mapas de cabeçalho de resposta são diferentes
+os tamanhos dos mapas de cabeçalho de resposta são diferentes
+os comprimentos de conteúdo são diferentes
+os códigos de status são diferentes
+os conteúdos da requisição são diferentes
+os conteúdos da resposta são diferentes
+os valores para a chave "testKey" nos atributos são diferentes
+o atributo "testKey" é diferente de "ORIGINAL"
+o valor para a chave key nos atributos é diferente de val
+o valor para a chave key nos cabeçalhos da requisição é diferente de val
+o valor para o parâmetro key na requisição é diferente de val
+o valor para a chave key nos atributos é diferente de val
+o valor para a chave key nos cabeçalhos da requisição é diferente de val
+o valor para o parâmetro key na requisição é diferente de val
+o último contador é diferente de 0
+o último contador é diferente de 0
+o último contador é diferente de 1
+o último contador é diferente de 2
+o último contador é diferente de 2
+o último contador é diferente de 4
+o resultado é diferente de "hello world"
+o resultado é diferente de "hello world"
+o endereço do host remoto é diferente de "127.0.0.1"
+o nome do servidor é diferente de "localhost"
+a avaliação do evento falhou
+a avaliação do evento falhou
+o comprimento do conteúdo do adaptador do servidor é diferente de result
+a formatação da data do evento é diferente de result
+a data formatada é diferente de "21/Oct/2022:21:30:20 +1100"
+a formatação da data do evento é diferente de result
+a porta local é diferente de result
+o host remoto da requisição é diferente de result
+o endereço remoto da requisição é diferente de result
+o usuário remoto da requisição é diferente de result
+o valor do atributo "testKey" na requisição é diferente de result
+o valor do cookie é diferente de result
+o cabeçalho "headerName1" na requisição é diferente de result
+o método da requisição é diferente de result
+o protocolo da requisição é diferente de result
+o URI da requisição é diferente de result
+o resultado esperado é diferente de result
+o cabeçalho "headerName1" na requisição é diferente de result
+o nome do servidor na requisição é diferente de result
+o código de status do adaptador do servidor é diferente de result
+o conjunto de chaves tem tamanho diferente de 3
+os conjuntos de chaves são diferentes
+o tamanho da listaAppender.list é diferente de expectedCount
+a avaliação do evento falhou
+a avaliação do evento falhou
+a avaliação do evento falhou
+era esperado um valor não nulo, mas valve.getScheduledExecutorService() é nulo
+os arrays de bytes são diferentes
+a execução falhou
+era esperado um valor não nulo, mas condition é nulo
+era esperado um valor verdadeiro, mas a avaliação de condition falhou
+era esperado um valor não nulo, mas condition é nulo
+era esperado um valor verdadeiro, mas o resultado da verificação de erro de checker.isErrorFree(0) é falso
+era esperado um valor verdadeiro, mas o resultado da verificação de erro de checker.isErrorFree(0) é falso
+era esperado um valor nulo, mas System.getProperty(sysKey) não é nulo
+era esperado um valor nulo, mas context.getProperty(dynaKey) não é nulo
+era esperado um valor não nulo, mas context.getProperty(dynaKey) é nulo
+era esperado um valor nulo, mas context.getProperty(dynaKey) não é nulo
+era esperado um valor nulo, mas context.getProperty(dynaKey) não é nulo
+era esperado um valor não nulo, mas fileAppender é nulo
+era esperado um valor não nulo, mas consoleAppender é nulo

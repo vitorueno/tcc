@@ -1,0 +1,14 @@
+
+Projeto: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2
+
+Assert com mensagem: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2/optaplanner-quarkus-integration/optaplanner-quarkus/drl-integration-test/src/test/java/org/optaplanner/quarkus/drl/it/OptaPlannerTestResourceTest.java linha: 33 Método: Assertions.assertNotEquals(result.get("entity.0.fullValue"), result.get("entity.1.fullValue"), "Both entities have the same value. Maybe property reactive is set to ALWAYS?")
+Assert com mensagem: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2/optaplanner-quarkus-integration/optaplanner-quarkus-benchmark/deployment/src/test/java/org/optaplanner/benchmark/quarkus/OptaPlannerBenchmarkProcessorMissingSpentLimitPerBenchmarkTest.java linha: 34 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    new OptaPlannerBenchmarkRecorder().benchmarkConfigSupplier(benchmarkConfig).get();
+})
+Assert com mensagem: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2/optaplanner-quarkus-integration/optaplanner-quarkus-benchmark/deployment/src/test/java/org/optaplanner/benchmark/quarkus/OptaPlannerBenchmarkProcessorMissingSpentLimitTest.java linha: 28 Método: Assertions.assertThrows(IllegalStateException.class, () -> {
+    new OptaPlannerBenchmarkRecorder().benchmarkConfigSupplier(new PlannerBenchmarkConfig()).get();
+})
+Total asserts: 5214
+Asserts sem descrição: 5208
+Asserts com descrição: 3
+Assertion Roulette: 4762

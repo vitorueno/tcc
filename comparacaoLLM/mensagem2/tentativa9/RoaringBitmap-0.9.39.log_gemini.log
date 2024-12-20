@@ -1,0 +1,100 @@
+Era esperado que o iterator não contivesse elementos, mas hasNext() retornou true.
+Era esperado que o iterator reverso não contivesse elementos, mas hasNext() retornou true.
+Era esperado que o tamanho do bitmap e do iterator fossem iguais, mas o tamanho do bitmap é diferente do tamanho do iterator.
+Era esperado que o tamanho do bitmap e do iterator fossem iguais, mas o tamanho do bitmap é diferente do tamanho do iterator.
+Era esperado que o tamanho do bitmap e do iterator reverso fossem iguais, mas o tamanho do bitmap é diferente do tamanho do iterator reverso.
+Era esperado que a lista de inteiros e o iterator fossem iguais, mas a lista de inteiros é diferente do iterator.
+Era esperado que a lista de inteiros e o iterator fossem iguais, mas a lista de inteiros é diferente do iterator.
+Era esperado que a lista de inteiros invertida e o iterator reverso fossem iguais, mas a lista de inteiros invertida é diferente do iterator reverso.
+Era esperado que as listas fossem iguais, mas ImmutableList.of(1, 2, 3) é diferente do iterator.
+Era esperado que as listas fossem iguais, mas ImmutableList.of(1, 2, 3) é diferente do iterator.
+Era esperado que as listas fossem iguais, mas ImmutableList.of(3, 2, 1) é diferente do iterator reverso.
+Era esperado que o último elemento do bitmap fosse igual ao maior elemento do stream reverso, mas o último elemento do bitmap é diferente do maior elemento do stream reverso.
+Era esperado que o último elemento do bitmap fosse igual ao maior elemento do stream, mas o último elemento do bitmap é diferente do maior elemento do stream.
+Era esperado que o total fosse igual ao tamanho da fonte, mas o total é diferente do tamanho da fonte.
+Era esperado que os bitmaps rb1 e rb2 fossem iguais, mas rb1 é diferente de rb2.
+Era esperado que os bitmaps rb1 e rb2 fossem diferentes, mas rb1 é igual a rb2.
+Era esperado que os bitmaps rb1 e rb2 fossem iguais, mas rb1 é diferente de rb2.
+Era esperado que o total fosse igual a i, mas o total é diferente de i.
+Era esperado que o tamanho da fonte fosse igual a i, mas o tamanho da fonte é diferente de i.
+Era esperado que select2 fosse igual ao resultado de deserStreamOne.select(2), mas select2 é diferente do resultado.
+Era esperado que select2 fosse igual ao resultado de deserBBOne.select(2), mas select2 é diferente do resultado.
+Era esperado que o iterator de Long não contivesse elementos, mas hasNext() retornou true.
+Era esperado que a cardinalidade de Long fosse 0, mas a cardinalidade de Long é diferente de 0.
+Era esperado que o map estivesse vazio, mas o map não está vazio.
+Era esperado que o map não contivesse 0, mas o map contém 0.
+Era esperado que o rankLong(Long.MIN_VALUE) fosse 0, mas o rankLong(Long.MIN_VALUE) é diferente de 0.
+Era esperado que o rankLong(Long.MIN_VALUE + 1) fosse 0, mas o rankLong(Long.MIN_VALUE + 1) é diferente de 0.
+Era esperado que o rankLong(-1) fosse 0, mas o rankLong(-1) é diferente de 0.
+Era esperado que o rankLong(0) fosse 0, mas o rankLong(0) é diferente de 0.
+Era esperado que o rankLong(1) fosse 0, mas o rankLong(1) é diferente de 0.
+Era esperado que o rankLong(Long.MAX_VALUE - 1) fosse 0, mas o rankLong(Long.MAX_VALUE - 1) é diferente de 0.
+Era esperado que o rankLong(Long.MAX_VALUE) fosse 0, mas o rankLong(Long.MAX_VALUE) é diferente de 0.
+Era esperado que o iterator contivesse elementos, mas hasNext() retornou false.
+Era esperado que o próximo elemento do iterator fosse 0, mas o próximo elemento é diferente de 0.
+Era esperado que map.select(0) retornasse 0, mas retornou um valor diferente.
+Era esperado que o map contivesse 0, mas o map não contém 0.
+Era esperado que o iterator não contivesse elementos, mas hasNext() retornou true.
+Era esperado que a cardinalidade de Long fosse 1, mas a cardinalidade de Long é diferente de 1.
+Era esperado que o map não estivesse vazio, mas o map está vazio.
+Era esperado que o rankLong(Long.MIN_VALUE) fosse 1, mas o rankLong(Long.MIN_VALUE) é diferente de 1.
+Era esperado que o rankLong(Integer.MIN_VALUE - 1L) fosse 1, mas o rankLong(Integer.MIN_VALUE - 1L) é diferente de 1.
+Era esperado que o rankLong(-1) fosse 1, mas o rankLong(-1) é diferente de 1.
+Era esperado que o rankLong(0) fosse 1, mas o rankLong(0) é diferente de 1.
+Era esperado que o rankLong(1) fosse 1, mas o rankLong(1) é diferente de 1.
+Era esperado que o rankLong(Integer.MAX_VALUE + 1L) fosse 1, mas o rankLong(Integer.MAX_VALUE + 1L) é diferente de 1.
+Era esperado que o rankLong(Long.MAX_VALUE) fosse 1, mas o rankLong(Long.MAX_VALUE) é diferente de 1.
+Era esperado que o iterator contivesse elementos, mas hasNext() retornou false.
+Era esperado que o próximo elemento do iterator fosse -1, mas o próximo elemento é diferente de -1.
+Era esperado que map.select(0) retornasse -1, mas retornou um valor diferente.
+Era esperado que o map contivesse -1, mas o map não contém -1.
+Era esperado que o iterator não contivesse elementos, mas hasNext() retornou true.
+Era esperado que a cardinalidade de Long fosse 1, mas a cardinalidade de Long é diferente de 1.
+Era esperado que o map não estivesse vazio, mas o map está vazio.
+Era esperado que o rankLong(Long.MIN_VALUE) fosse 0, mas o rankLong(Long.MIN_VALUE) é diferente de 0.
+Era esperado que o rankLong(Integer.MIN_VALUE - 1L) fosse 0, mas o rankLong(Integer.MIN_VALUE - 1L) é diferente de 0.
+Era esperado que o rankLong(0) fosse 0, mas o rankLong(0) é diferente de 0.
+Era esperado que o rankLong(1) fosse 0, mas o rankLong(1) é diferente de 0.
+Era esperado que o rankLong(Integer.MAX_VALUE + 1L) fosse 0, mas o rankLong(Integer.MAX_VALUE + 1L) é diferente de 0.
+Era esperado que o rankLong(Long.MAX_VALUE) fosse 0, mas o rankLong(Long.MAX_VALUE) é diferente de 0.
+Era esperado que o rankLong(-2) fosse 0, mas o rankLong(-2) é diferente de 0.
+Era esperado que o rankLong(-1) fosse 1, mas o rankLong(-1) é diferente de 1.
+Era esperado que o array de longs fosse igual a {-1L}, mas é diferente.
+Era esperado que o iterator contivesse elementos, mas hasNext() retornou false.
+Era esperado que o próximo elemento do iterator fosse 123, mas o próximo elemento é diferente de 123.
+Era esperado que map.select(0) retornasse 123, mas retornou um valor diferente.
+Era esperado que o map contivesse 123, mas o map não contém 123.
+Era esperado que o iterator contivesse elementos, mas hasNext() retornou false.
+Era esperado que o próximo elemento do iterator fosse 234, mas o próximo elemento é diferente de 234.
+Era esperado que map.select(1) retornasse 234, mas retornou um valor diferente.
+Era esperado que o map contivesse 234, mas o map não contém 234.
+Era esperado que o iterator não contivesse elementos, mas hasNext() retornou true.
+Era esperado que o map não contivesse 345, mas o map contém 345.
+Era esperado que a cardinalidade de Long fosse 2, mas a cardinalidade de Long é diferente de 2.
+Era esperado que o rankLong(0) fosse 0, mas o rankLong(0) é diferente de 0.
+Era esperado que o rankLong(123) fosse 1, mas o rankLong(123) é diferente de 1.
+Era esperado que o rankLong(233) fosse 1, mas o rankLong(233) é diferente de 1.
+Era esperado que o rankLong(234) fosse 2, mas o rankLong(234) é diferente de 2.
+Era esperado que o rankLong(235) fosse 2, mas o rankLong(235) é diferente de 2.
+Era esperado que o rankLong(Integer.MAX_VALUE + 1L) fosse 2, mas o rankLong(Integer.MAX_VALUE + 1L) é diferente de 2.
+Era esperado que o rankLong(Long.MAX_VALUE) fosse 2, mas o rankLong(Long.MAX_VALUE) é diferente de 2.
+Era esperado que o array de longs fosse igual a {123L, 234L}, mas é diferente.
+Era esperado que map.select(0) retornasse 0xFFFFFFFFL, mas retornou um valor diferente.
+Era esperado que o iterator de Long contivesse elementos, mas hasNext() retornou false.
+Era esperado que o próximo elemento do iterator de Long fosse 0, mas o próximo elemento é diferente de 0.
+Era esperado que o iterator contivesse elementos, mas hasNext() retornou false.
+Era esperado que o próximo elemento do iterator fosse Long.MAX_VALUE, mas o próximo elemento é diferente de Long.MAX_VALUE.
+Era esperado que map.select(0) retornasse Long.MAX_VALUE, mas retornou um valor diferente.
+Era esperado que o iterator não contivesse elementos, mas hasNext() retornou true.
+Era esperado que a cardinalidade de Long fosse 1, mas a cardinalidade de Long é diferente de 1.
+Era esperado que o rankLong(Long.MIN_VALUE) fosse 1, mas o rankLong(Long.MIN_VALUE) é diferente de 1.
+Era esperado que o rankLong(Long.MIN_VALUE + 1) fosse 1, mas o rankLong(Long.MIN_VALUE + 1) é diferente de 1.
+Era esperado que o rankLong(-1) fosse 1, mas o rankLong(-1) é diferente de 1.
+Era esperado que o rankLong(0) fosse 0, mas o rankLong(0) é diferente de 0.
+Era esperado que o rankLong(1) fosse 0, mas o rankLong(1) é diferente de 0.
+Era esperado que o rankLong(Long.MAX_VALUE - 1) fosse 0, mas o rankLong(Long.MAX_VALUE - 1) é diferente de 0.
+Era esperado que o rankLong(Long.MAX_VALUE) fosse 1, mas o rankLong(Long.MAX_VALUE) é diferente de 1.
+Era esperado que o array de longs fosse igual a {Long.MAX_VALUE}, mas é diferente.
+Era esperado que o iterator contivesse elementos, mas hasNext() retornou false.
+Era esperado que o próximo elemento do iterator fosse Long.MIN_VALUE, mas o próximo elemento é diferente de Long.MIN_VALUE.
+Era esperado que map.select(0) retornasse Long.MIN_VALUE, mas retornou um valor diferente.

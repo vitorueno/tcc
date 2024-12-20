@@ -1,0 +1,100 @@
+A string "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr>" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" era esperada, mas a string obtida foi diferente.
+A string "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>v</th>" + LINE_END + "   <th>v2</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td>1</td>" + LINE_END + "   <td>1</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"odd\">" + LINE_END + "   <td>2</td>" + LINE_END + "   <td>2</td>" + LINE_END + "  </tr>" + LINE_END + "  <tr class=\"even\">" + LINE_END + "   <td></td>" + LINE_END + "   <td></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" era esperada, mas a string obtida foi diferente.
+A string "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td><p>foo</p></td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" era esperada, mas a string obtida foi diferente.
+A string "<table>" + LINE_END + " <thead>" + LINE_END + "  <tr>" + LINE_END + "   <th>data</th>" + LINE_END + "  </tr>" + LINE_END + " </thead>" + LINE_END + " <tbody>" + LINE_END + "  <tr>" + LINE_END + "   <td>&lt;p&gt;foo&lt;/p&gt;</td>" + LINE_END + "  </tr>" + LINE_END + " </tbody>" + LINE_END + "</table>" era esperada, mas a string obtida foi diferente.
+A string json era esperada, mas a string obtida em writer.toString() foi diferente.
+A string json era esperada, mas a string obtida em writer.toString() foi diferente.
+A string json era esperada, mas a string obtida foi diferente.
+Era esperado o valor 2, mas o número de colunas da tabela é diferente.
+Era esperado o valor 3, mas o número de linhas da tabela é diferente.
+Era esperado o nome da coluna "Date", mas o nome obtido foi diferente.
+Era esperado o nome da coluna "Value", mas o nome obtido foi diferente.
+Era esperado o tipo de coluna ColumnType.LONG, mas o tipo obtido foi diferente.
+Era esperado o valor 1453438800000L, mas o valor obtido na coluna "Date" foi diferente.
+Era esperado o valor 2, mas o número de colunas da tabela é diferente.
+Era esperado o valor 3, mas o número de linhas da tabela é diferente.
+Era esperado o tipo de coluna ColumnType.LONG, mas o tipo obtido foi diferente.
+Era esperado o valor 2, mas o número de colunas da tabela é diferente.
+Era esperado o valor 3, mas o número de linhas da tabela é diferente.
+Era esperado o nome da coluna "a", mas o nome obtido foi diferente.
+Era esperado o nome da coluna "b.c", mas o nome obtido foi diferente.
+Era esperado o tipo de coluna ColumnType.LONG, mas o tipo obtido foi diferente.
+Era esperado o tipo de coluna ColumnType.INTEGER, mas o tipo obtido foi diferente.
+A lista da coluna "A" esperada é diferente da lista obtida.
+A lista da coluna "B" esperada é diferente da lista obtida.
+A lista da coluna "C" esperada é diferente da lista obtida.
+O array de tipos de coluna esperado [INSTANT, DOUBLE] é diferente do array obtido.
+O array de tipos de coluna esperado [STRING, STRING] é diferente do array obtido.
+Era esperado um valor diferente de nulo para trace.asJavascript(1).
+Era esperado o título "x title", mas o título obtido foi diferente.
+Era esperado um valor diferente de nulo para Scatter3DPlot.create("3D plot", data, "x", "y", "z").
+Era esperado que a string html contivesse "https://cdn.plot.ly/plotly-latest.min.js", mas não foi encontrado.
+Era esperado que a string html contivesse a localização especificada, mas não foi encontrado.
+Era esperado um valor diferente de nulo para trace.asJavascript(1).
+Era esperado um valor diferente de nulo para a figura.
+Era esperado um valor diferente de nulo para o trace.
+Era esperado o valor xAxis, mas o valor obtido em traceBuilder.xAxis foi diferente.
+Era esperado o valor yAxis, mas o valor obtido em traceBuilder.yAxis foi diferente.
+Era esperado o JavaScript, mas o JavaScript obtido em Up.upBuilder(1, 2, 3).build().asJavascript() foi diferente.
+Era esperado o JavaScript, mas o JavaScript obtido em Eye.eyeBuilder(1, 2, 3).build().asJavascript() foi diferente.
+Era esperado o JavaScript, mas o JavaScript obtido em Center.centerBuilder(1, 2, 3).build().asJavascript() foi diferente.
+Era esperada a string "    <script>" + LINE_END + "        var target_target = document.getElementById('target');" + LINE_END + "        " + LINE_END + "var trace0 =" + LINE_END + "{" + LINE_END + "x: [\"1.0\",\"2.0\",\"3.0\",\"4.0\",\"5.0\"]," + LINE_END + "y: [\"1.0\",\"4.0\",\"9.0\",\"16.0\",\"25.0\"]," + LINE_END + "mode: 'markers'," + LINE_END + "xaxis: 'x'," + LINE_END + "yaxis: 'y'," + LINE_END + "type: 'scatter'," + LINE_END + "name: ''," + LINE_END + "};" + LINE_END + "" + LINE_END + "        var data = [ trace0];" + LINE_END + "Plotly.newPlot(target_target, data);            </script>" + LINE_END, mas a string obtida em figure.asJavascript(divName) foi diferente.
+Era esperada a string "    <script>" + LINE_END + "        var target_target = document.getElementById('target');" + LINE_END + "        var layout = {" + LINE_END + "    title: 'A test title'," + LINE_END + "    height: 450," + LINE_END + "    width: 700," + LINE_END + "    showlegend: true," + LINE_END + "    margin: {" + LINE_END + "  \"autoexpand\" : true," + LINE_END + "  \"b\" : 80," + LINE_END + "  \"l\" : 200," + LINE_END + "  \"pad\" : 0," + LINE_END + "  \"r\" : 80," + LINE_END + "  \"t\" : 200" + LINE_END + "}," + LINE_END + "    xaxis: {" + LINE_END + "    title: 'x Axis 1'," + LINE_END + "        titlefont: {" + LINE_END + "  \"color\" : \"red\"," + LINE_END + "  \"family\" : \"arial\"," + LINE_END + "  \"size\" : 8" + LINE_END + "}," + LINE_END + "    }," + LINE_END + "" + LINE_END + "" + LINE_END + "};" + LINE_END + "" + LINE_END + "var trace0 =" + LINE_END + "{" + LINE_END + "x: [\"1.0\",\"2.0\",\"3.0\",\"4.0\",\"5.0\"]," + LINE_END + "y: [\"1.0\",\"4.0\",\"9.0\",\"16.0\",\"25.0\"]," + LINE_END + "mode: 'markers'," + LINE_END + "xaxis: 'x'," + LINE_END + "yaxis: 'y'," + LINE_END + "type: 'scatter'," + LINE_END + "name: ''," + LINE_END + "};" + LINE_END + "" + LINE_END + "        var data = [ trace0];" + LINE_END + "Plotly.newPlot(target_target, data, layout);            </script>" + LINE_END, mas a string obtida em figure.asJavascript(divName) foi diferente.
+Era esperado o layout, mas o layout obtido em figure.getLayout() foi diferente.
+Era esperado que a string obtida em String.valueOf(figure.getContext().get("figure")) contivesse o título, mas não foi encontrado.
+Era esperado que a string obtida em increasing.asJavascript() contivesse "line", mas não foi encontrado.
+Era esperado que a string obtida em increasing.asJavascript() contivesse "color", mas não foi encontrado.
+Era esperado que a string obtida em increasing.asJavascript() contivesse "width", mas não foi encontrado.
+Era esperado que a string obtida em increasing.asJavascript() contivesse "fillcolor", mas não foi encontrado.
+Era esperado que a string obtida em line.asJavascript() contivesse "color", mas não foi encontrado.
+Era esperado que a string obtida em line.asJavascript() contivesse "width", mas não foi encontrado.
+Era esperado um valor diferente de nulo para trace.asJavascript(1).
+Era esperado um valor diferente de nulo para a figura.
+Era esperado um valor diferente de nulo para a figura.
+Era esperado um valor diferente de nulo para o trace.
+Era esperada a string "[\"Hello\\\\\"]", mas a string obtida em s2 foi diferente.
+Era esperado um valor diferente de nulo para a figura.
+Era esperado que a string html não contivesse customTemplateString, mas foi encontrado.
+Era esperado que o índice do último '/' em path fosse maior ou igual a 0.
+Era esperado que a string html contivesse customTemplateString, mas não foi encontrado.
+Era esperado que a string obtida em x.asJavascript() contivesse "color", mas não foi encontrado.
+Era esperado que a string obtida em x.asJavascript() contivesse "symbol", mas não foi encontrado.
+Era esperado que a string obtida em x.asJavascript() contivesse "size", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "rows", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "columns", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "rows", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "xAxis", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "rows", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "columns", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "roworder", mas não foi encontrado.
+Era esperado que a string obtida em asJavascript contivesse "pattern", mas não foi encontrado.
+Era esperado que metadata1 fosse igual a copy, mas são diferentes.
+Era esperado que o nome da tabela em table1 fosse igual ao nome da tabela em metadata.getTableName(), mas são diferentes.
+Era esperado que o número de linhas em table1 fosse igual ao número de linhas em metadata.getRowCount(), mas são diferentes.
+Era esperado que os nomes das colunas em table1 fossem iguais aos nomes das colunas em metadata.columnNames(), mas são diferentes.
+Era esperado o tipo de compressão SNAPPY, mas o tipo obtido foi diferente.
+Era esperado que metadata1 fosse igual a copy, mas são diferentes.
+Era esperado que o nome da tabela em table1 fosse igual ao nome da tabela em metadata1.getTableName(), mas são diferentes.
+Era esperado que o número de linhas em table1 fosse igual ao número de linhas em metadata1.getRowCount(), mas são diferentes.
+Era esperado a versão 2, mas a versão obtida foi diferente.
+Era esperado que o número de colunas em table1 fosse igual ao número de colunas em metadata1.columnCount(), mas são diferentes.
+Era esperado que a forma de table1 fosse igual a forma de metadata1.shape(), mas são diferentes.
+Era esperado que os nomes das colunas em table1 fossem iguais aos nomes das colunas em metadata1.columnNames(), mas são diferentes.
+Era esperado que a estrutura de table1 fosse igual a estrutura de metadata1.structure(), mas são diferentes.
+Era esperado que o número de colunas em table fosse igual ao número de colunas em t, mas são diferentes.
+Era esperado que o número de linhas em table fosse igual ao número de linhas em t, mas são diferentes.
+Era esperado que o número de colunas em table fosse igual ao número de colunas em t, mas são diferentes.
+Era esperado que o número de linhas em table fosse igual ao número de linhas em t, mas são diferentes.
+Era esperado que o nome da tabela em table fosse igual ao nome da tabela em t, mas são diferentes.
+Era esperado que o número de linhas em table fosse igual ao número de linhas em t, mas são diferentes.
+Era esperado que o número de colunas em table fosse igual ao número de colunas em t, mas são diferentes.
+Era esperado um valor diferente de nulo para a tabela.
+Era esperado um valor diferente de nulo para a tabela.
+Era esperado que o número de colunas da tabela fosse maior que 0.
+Era esperado que a tabela estivesse vazia, mas não está.
+Era esperado um valor diferente de nulo para a tabela.
+Era esperado que o número de linhas em intsOnly fosse igual ao número de linhas em table, mas são diferentes.
+Era esperado um valor diferente de nulo para a tabela.
+Era esperado que o número de linhas em intsAndStrings fosse igual ao número de linhas em table, mas são diferentes.
+Era esperado que o tamanho da coluna 1 fosse maior que 0.
+Era esperado o tipo de coluna TEXT, mas o tipo obtido foi diferente.

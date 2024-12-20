@@ -1,0 +1,38 @@
+
+Projeto: /home/vitor-otto/opensource/ripme-1.7.95
+
+Antes do refactor: 
+chamada antiga: assertEquals("test.test", fileName)
+nova chamada: assertEquals("test.test", fileName, "Era esperado valores iguais, mas  'test.test' é diferente de " + " fileName")
+chamada antiga: assertEquals("test", fileName)
+nova chamada: assertEquals("test", fileName, "Era esperado valores iguais, mas  'test' é diferente de " + " fileName")
+chamada antiga: assertEquals("Object", fileName)
+nova chamada: assertEquals("Object", fileName, "Era esperado valores iguais, mas  'Object' é diferente de " + " fileName")
+chamada antiga: assertEquals("file.png", fileName)
+nova chamada: assertEquals("file.png", fileName, "Era esperado valores iguais, mas  'file.png' é diferente de " + " fileName")
+chamada antiga: assertEquals("file.", fileName)
+nova chamada: assertEquals("file.", fileName, "Era esperado valores iguais, mas  'file.' é diferente de " + " fileName")
+chamada antiga: assertEquals("test", new String(Base64.decode("dGVzdA==")))
+nova chamada: assertEquals("test", new String(Base64.decode("dGVzdA==")), "Era esperado valores iguais, mas  'test' é diferente de " + " new String(Base64.decode('dGVzdA=='))")
+chamada antiga: Assertions.assertTrue(ripper.findJSONObjectContainingPhotoId("-45984105_457345201", new JSONObject(json)).similar(new JSONObject(responseJson)))
+nova chamada: assertTrue(ripper.findJSONObjectContainingPhotoId("-45984105_457345201", new JSONObject(json)).similar(new JSONObject(responseJson)), "Era esperado verdadeiro, mas " + result0 + " <ripper.findJSONObjectContainingPhotoId('-45984105_457345201', new JSONObject(json)).similar(new JSONObject(responseJson))> é falso")
+chamada antiga: Assertions.assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150".equalsIgnoreCase(doc.location()))
+nova chamada: assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150".equalsIgnoreCase(doc.location()), "Era esperado verdadeiro, mas " + result1 + " <'https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150'.equalsIgnoreCase(doc.location())> é falso")
+chamada antiga: Assertions.assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300".equalsIgnoreCase(doc.location()))
+nova chamada: assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300".equalsIgnoreCase(doc.location()), "Era esperado verdadeiro, mas " + result2 + " <'https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300'.equalsIgnoreCase(doc.location())> é falso")
+chamada antiga: Assertions.assertTrue(ripper.getGID(new URL("https://hitomi.la/galleries/975973.html")).equals("975973"))
+nova chamada: assertTrue(ripper.getGID(new URL("https://hitomi.la/galleries/975973.html")).equals("975973"), "Era esperado verdadeiro, mas " + result3 + " <ripper.getGID(new URL('https://hitomi.la/galleries/975973.html')).equals('975973')> é falso")
+chamada antiga: Assertions.assertTrue(ripper.pageContainsAlbums(url))
+nova chamada: assertTrue(ripper.pageContainsAlbums(url), "Era esperado verdadeiro, mas " + result4 + " <ripper.pageContainsAlbums(url)> é falso")
+chamada antiga: Assertions.assertTrue(ripper.pageContainsAlbums(url2))
+nova chamada: assertTrue(ripper.pageContainsAlbums(url2), "Era esperado verdadeiro, mas " + result5 + " <ripper.pageContainsAlbums(url2)> é falso")
+Total asserts: 134
+Asserts sem descrição: 118
+Asserts com descrição: 16
+Assertion Roulette: 49
+
+Após do refactor: 
+Total asserts: 134
+Asserts sem descrição: 112
+Asserts com descrição: 22
+Assertion Roulette: 44

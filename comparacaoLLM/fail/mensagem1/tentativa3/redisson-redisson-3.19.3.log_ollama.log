@@ -1,0 +1,78 @@
+Assertions.assertTrue(sync(list.add("1")), "Elemento não adicionado ao list")
+Assertions.assertTrue(sync(list.add("2")), "Elemento não adicionado ao list")
+Assertions.assertTrue(sync(list.add("3")), "Elemento não adicionado ao list")
+Assertions.assertTrue(sync(list.add("4")), "Elemento não adicionado ao list")
+Assertions.assertTrue(sync(list.add("5")), "Elemento não adicionado ao list")
+
+Assertions.assertEquals(true, sync(list2.addAll(list.iterator())), "Ação de adição falhou")
+Assertions.assertEquals(5, sync(list2.size()).intValue(), "Tamanho do conjunto inválido")
+
+Assertions.assertTrue(sync(set.add("a")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("b")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("c")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("d")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("e")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("f")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("g")), "Elemento não adicionado ao conjunto")
+
+Assertions.assertEquals(0, sync(set.removeRangeTail("z", false)), "Remocão falhou")
+Assertions.assertEquals(4, sync(set.removeRangeTail("c", false)), "Remocão falhou")
+Assertions.assertEquals(1, sync(set.removeRangeTail("c", true)), "Remocção parcial falhou")
+
+Assertions.assertEquals(2, sync(set.removeRangeHead("c", false)), "Remocão falhou")
+Assertions.assertEquals(1, (int) sync(set.removeRangeHead("c", true)), "Remocão parcial falhou")
+
+Assertions.assertEquals(5, sync(set.removeRange("aaa", true, "g", false)), "Remocão falhou")
+
+Assertions.assertTrue(sync(set.add("a")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("b")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("c")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("d")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("e")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("f")), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(sync(set.add("g")), "Elemento não adicionado ao conjunto")
+
+Assertions.assertEquals(5, (int) sync(set.count("b", true, "f", true)), "Contagem falhou")
+Assertions.assertEquals(3, (int) sync(set.count("b", false, "f", false)), "Contagem falhou")
+Assertions.assertEquals("1", iter.next(), "Extração falhou")
+
+Assertions.assertEquals("4", iter.next(), "Extração falhou")
+Assertions.assertEquals(4, iteration, "Valor não válido")
+Assertions.assertEquals(0, list.size(), "Tamanho do list inválido")
+Assertions.assertTrue(list.isEmpty(), "Lista não vazia")
+
+Assertions.assertEquals(0, setCopy.size(), "Tamanho do conjunto inválido")
+Assertions.assertTrue(setRes, "Conjunto não verificado")
+Assertions.assertTrue(set.add(1), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(2), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(3), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(4), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(5), "Elemento não adicionado ao conjunto")
+
+Assertions.assertTrue(setRes3, "Conjunto não verificado")
+Assertions.assertTrue(set.add(2), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(3), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(1), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(4), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(10), "Elemento não adicionado ao conjunto")
+Assertions.assertTrue(set.add(5), "Elemento não adicionado ao conjunto")
+
+Assertions.assertEquals(sb.getLng(), toIterator(set.iterator()).next().getLng(), "Valor não válido")
+
+Assertions.assertTrue(sync(set.remove(1)), "Remocão falhou")
+Assertions.assertEquals(0, setCopy.size(), "Tamanho do conjunto inválido")
+Assertions.assertTrue(sync(set.retainAll(Arrays.asList(1, 2))), "Conjunto não verificado")
+
+Assertions.assertEquals(2, sync(set.size()).intValue(), "Tamanho do conjunto inválido")
+Assertions.assertTrue(sync(set.containsAll(Collections.emptyList())), "Elemento ausente")
+
+Assertions.assertTrue(sync(set.containsAll(Arrays.asList(30, 11)))), "Elemento ausente")
+Assertions.assertTrue(sync(set.contains(new TestObject("2", "3"))), "Elemento ausente")
+Assertions.assertTrue(sync(set.contains(new TestObject("1", "2"))), "Elemento ausente")
+
+Assertions.assertEquals(4, sync(set.size()).intValue(), "Tamanho do conjunto inválido")
+Assertions.assertEquals(5, sync(set.size()).intValue(), "Tamanho do conjunto inválido")
+Assertions.assertTrue(sync(set.retainAll(Collections.<Integer>emptyList())), "Conjunto não verificado")
+
+Assertions.assertEquals(0, sync(set.size()).intValue(), "Tamanho do conjunto inválido")
+Assertions.assertTrue(sync(set.move("otherSet", 1)), "Remocão falhou")

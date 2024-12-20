@@ -1,0 +1,52 @@
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou falso
+eram esperados valores iguais, mas 2 é diferente de response.getAll().size()
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores iguais, mas 3 é diferente de response.getAll().size()
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(1).arrivalCancelled retornou falso
+eram esperados valores iguais, mas 2 é diferente de response.getAll().size()
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(2).departureCancelled retornou falso
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores iguais, mas EXTRA0 é diferente de ptLeg.trip_id
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de responseWithRealtimeUpdate.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores verdadeiros, mas route.getAll().get(route.getAll().size() - 1).isImpossible() retornou falso
+eram esperados valores iguais, mas 2 é diferente de response.getAll().size()
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores iguais, mas 2 é diferente de response.getAll().size()
+eram esperados valores verdadeiros, mas impossibleAlternative.isImpossible() retornou falso
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores verdadeiros, mas ((Trip.PtLeg) possibleAlternative.getLegs().get(0)).stops.get(0).departureCancelled retornou falso
+eram esperados valores verdadeiros, mas route.hasErrors() retornou falso
+eram esperados valores verdadeiros, mas route.hasErrors() retornou falso
+eram esperados valores verdadeiros, mas route.getAll().isEmpty() retornou falso
+eram esperados valores verdadeiros, mas route.hasErrors() retornou falso
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores iguais, mas JUSTICE_COURT,MUSEUM é diferente de firstLeg.stops.stream().map(s -> s.stop_id).collect(Collectors.joining(","))
+eram esperados valores iguais, mas EMSI,DADAN é diferente de secondLeg.stops.stream().map(s -> s.stop_id).collect(Collectors.joining(","))
+eram esperados valores iguais, mas 2007-01-01T10:00:00Z é diferente de transferLeg.getDepartureTime().toInstant()
+eram esperados valores iguais, mas 2007-01-01T10:08:06.670Z é diferente de transferLeg.getArrivalTime().toInstant()
+eram esperados valores iguais, mas LINESTRING (-116.76164 36.906093, -116.761812 36.905928, -116.76217 36.905659) é diferente de transitSolution.getLegs().get(1).geometry
+eram esperados valores iguais, mas 4500000 é diferente de transitSolution.getTime()
+eram esperados valores iguais, mas 4500000.0 é diferente de transitSolution.getRouteWeight()
+eram esperados valores verdadeiros, mas route.hasErrors() retornou falso
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores verdadeiros, mas route.hasErrors() retornou falso
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de response.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores iguais, mas 1 é diferente de route.getAll().size()
+eram esperados valores iguais, mas expectedDepartureTimes é diferente de actualDepartureTimes
+eram esperados valores iguais, mas expectedDepartureTimes é diferente de actualDepartureTimes
+eram esperados valores iguais, mas expectedDepartureTimes é diferente de actualDepartureTimes
+eram esperados valores verdadeiros, mas route.getAll().isEmpty() retornou falso
+eram esperados valores verdadeiros, mas route.getAll().isEmpty() retornou falso
+eram esperados valores iguais, mas AB é diferente de ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id
+eram esperados valores diferentes, mas AB é igual a ((Trip.PtLeg) mondayTrip.getLegs().get(0)).route_id
+eram esperados valores diferentes, mas AB é igual a ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id
+eram esperados valores iguais, mas AB é diferente de ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id

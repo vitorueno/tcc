@@ -1,0 +1,56 @@
+eram esperados valores verdadeiros, mas a expressão é falsa
+eram esperados valores falsos, mas a expressão é verdadeira
+eram esperados valores verdadeiros, mas a expressão é falsa
+eram esperados valores falsos, mas a expressão é verdadeira
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" deveria estar incluída, mas não foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+a propriedade "some.property" não deveria estar incluída, mas foi encontrada
+os valores são diferentes: esperado=decrypted, atual=message
+os valores são diferentes: esperado=decrypted, atual=message
+os valores são diferentes: esperado=decrypted, atual=message
+os valores são diferentes: esperado=decrypted, atual=message
+os valores são diferentes: esperado=decrypted, atual=message
+os valores são diferentes: esperado=decrypted, atual=message
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+os valores são diferentes: esperado=message, atual=decrypted
+o bean EnableEncryptablePropertiesBeanFactoryPostProcessor não pode ser nulo
+o bean EnableEncryptablePropertiesBeanFactoryPostProcessor não pode ser nulo
+o valor esperado é "test1", mas o valor atual é diferente
+o valor esperado é "test2", mas o valor atual é diferente
+a lista não pode ser nula
+a lista não contém os elementos esperados: esperado=[a1, b1], atual=[]
+a lista não pode ser nula
+a lista não contém os elementos esperados: esperado=[a2, b2], atual=[]
+o mapa não pode ser nulo
+o mapa não contém os elementos esperados: esperado={k1=v1}, atual={}
+o mapa não pode ser nulo
+o mapa não contém os elementos esperados: esperado={k2=[v2]}, atual={}

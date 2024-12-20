@@ -1,0 +1,20 @@
+A variável result contém "! <Type A>", o que era esperado que não ocorresse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+O valor esperado é diferente do valor resultante.
+A variável result não contém "window.ui", mas era esperado que contivesse.
+O valor esperado é diferente do valor de result após a remoção dos caracteres de retorno de carro.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável transformedIndex não contém "window.ui", mas era esperado que contivesse.
+O cabeçalho "Cache-Control" da resposta HTTP não é "no-store", mas era esperado que fosse.
+O conteúdo do arquivo fileName é diferente do conteúdo de transformedIndex após a remoção dos caracteres de retorno de carro.
+A variável htmlResult não contém "window.ui", mas era esperado que contivesse.
+O conteúdo do arquivo fileName é diferente do conteúdo de htmlResult após a remoção dos caracteres de retorno de carro.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.
+A variável contentAsString não contém "Swagger UI", mas era esperado que contivesse.

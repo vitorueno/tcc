@@ -1,0 +1,94 @@
+Bem-vindo ao meu catálogo de mensagens de erro de asserts! Aqui estão as mensagens apropriadas para cada assert:
+
+1. assertEquals(trade.getIsin(), rs.getString(1))
+eram esperados valores iguais, mas "testCustomer" não é igual à trade.getIsin()
+
+2. assertEquals(trade.getQuantity(), rs.getLong(2))
+eram esperados valores iguais, mas 5 não é igual à trade.getQuantity()
+
+3. assertEquals(trade.getPrice(), rs.getBigDecimal(3))
+eram esperados valores iguais, mas "123.0" não é igual à trade.getPrice()
+
+4. assertEquals(trade.getCustomer(), rs.getString(4))
+eram esperados valores iguais, mas "testCustomerName" não é igual à trade.getCustomer()
+
+5. assertEquals(activeRow, trades.size())
+eram esperados valores iguais, mas 1 não é igual a activeRow
+
+6. assertEquals(customers.size(), activeRow)
+eram esperados valores iguais, mas 2 não é igual a customers.size()
+
+7. assertEquals(customer.getName(), rs.getString(1))
+eram esperados valores iguais, mas "Doe" não é igual à customer.getName()
+
+8. assertEquals(BatchStatus.COMPLETED, execution.getStatus())
+eram esperados valores iguais, mas BatchStatus.COMPLETED é igual a BatchStatus.COMPLETED
+
+9. assertEquals(after - before, execution.getStepExecutions().iterator().next().getReadCount())
+eram esperados valores iguais, mas 10 não é igual a after - before
+
+10. assertEquals(BatchStatus.COMPLETED, jobExecution.getStatus())
+eram esperados valores iguais, mas BatchStatus.COMPLETED é igual a BatchStatus.COMPLETADO
+
+11. assertEquals("yes", jobExecution.getExecutionContext().getString("done"))
+eram esperados valores iguais, mas "foo" não é igual a "yes"
+
+12. assertEquals("foo", value)
+eram esperados valores iguais, mas "bar" não é igual à value
+
+13. assertEquals("foo2", strValue)
+eram esperados valores iguais, mas "baz" não é igual à strValue
+
+14. assertEquals(3, integerValue.intValue())
+eram esperados valores iguais, mas 5 não é igual à integerValue.intValue()
+
+15. assertEquals(before + 5, after)
+eram esperados valores iguais, mas before + 5 não é igual a after
+
+16. assertEquals(trade.getIsin(), rs.getString(1))
+eram esperados valores iguais, mas "testCustomer" não é igual à trade.getIsin()
+
+17. assertEquals(trade.getQuantity(), rs.getLong(2))
+eram esperados valores iguais, mas 5 não é igual à trade.getQuantity()
+
+18. assertEquals(trade.getPrice(), rs.getBigDecimal(3))
+eram esperados valores iguais, mas "123.0" não é igual à trade.getPrice()
+
+19. assertEquals(trade.getCustomer(), rs.getString(4))
+eram esperados valores iguais, mas "testCustomerName" não é igual à trade.getCustomer()
+
+20. assertEquals(EXPECTED_OUTPUT_FILE, output)
+eram esperados valores iguais, mas "output.txt" não é igual a EXPECTED_OUTPUT_FILE
+
+21. assertEquals(itemGenerator.getLimit(), 10)
+eram esperados valores iguais, mas 15 não é igual à itemGenerator.getLimit()
+
+22. assertEquals(errors.getAllErrors().size(), 1)
+eram esperados valores iguais, mas 2 não é igual a errors.getAllErrors().size()
+
+23. assertEquals("Incorrect type", errors.getAllErrors().get(0).getCode())
+eram esperados valores iguais, mas "InvalidType" não é igual à errors.getAllErrors().get(0).getCode()
+
+24. assertEquals(0, errors.getAllErrors().size())
+eram esperados valores iguais, mas 1 não é igual a errors.getAllErrors().size()
+
+25. assertEquals(3, errors.getAllErrors().size())
+eram esperados valores iguais, mas 2 não é igual a errors.getAllErrors().size()
+
+26. assertEquals("error.order.id", errors.getFieldError("orderId").getCode())
+eram esperados valores iguais, mas "InvalidField" não é igual à errors.getFieldError("orderId").getCode()
+
+27. assertEquals("error.order.lines.badcount", errors.getFieldError("totalLines").getCode())
+eram esperados valores iguais, mas "InvalidField" não é igual à errors.getFieldError("totalLines").getCode()
+
+28. assertEquals(0, errors.getAllErrors().size())
+eram esperados valores iguais, mas 1 não é igual a errors.getAllErrors().size()
+
+29. assertEquals(3, errors.getAllErrors().size())
+eram esperados valores iguais, mas 2 não é igual a errors.getAllErrors().size()
+
+30. assertEquals("error.order.id", errors.getFieldError("orderId").getCode())
+eram esperados valores iguais, mas "InvalidField" não é igual à errors.getFieldError("orderId").getCode()
+
+31. assertEquals("error.order.lines.badcount", errors.getFieldError("totalLines").getCode())
+eram esperados valores iguais, mas "InvalidField" não é igual à errors.getFieldError("totalLines").getCode()

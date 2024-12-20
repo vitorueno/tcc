@@ -1,0 +1,92 @@
+O tipo retornado não é java.lang.Object.
+O código não compila dentro do tempo limite de 1000 milissegundos ou a verificação de sucesso ou a presença do resultado falhou ou a lista de tipos de referência está vazia ou o método esperado não foi encontrado ou o número de métodos não é 1.
+O tipo calculado não é java.lang.String.
+O nome da variável não é AFIELD.
+O valor do literal de string não é "a".
+O nome qualificado não é X.A.bar.
+O tipo do parâmetro não é java.lang.Runnable.
+O método não é genérico.
+O nome da declaração não é MyAnnotation.
+O nome da declaração não é MyAnnotationWithElements.
+O nome da declaração não é VoidVisitor.
+A declaração não é uma interface.
+O nome da declaração não é AccessSpecifier.
+O nome da declaração não é AccessSpecifier.
+O nome da declaração não é PUBLIC.
+O nome da classe não é CompilationUnit.
+O nome da classe não é CompilationUnit.
+O nome do método resolvido não é getComments.
+O número de parâmetros não é 0.
+O nome da classe não é CompilationUnit.
+A representação em string do método não é bar(Optional.of(new Derived())).
+A assinatura qualificada resolvida não é Base.bar(java.util.Optional<Base>).
+O objeto foo é nulo.
+O resultado do parsing não foi bem-sucedido.
+A assinatura qualificada do método resolvido não é com.github.javaparser.symbolsolver.testingclasses.UtilityClass.method(com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum).
+O nome da variável resolvida não é CONSTANT.
+O tipo da variável resolvida não é com.github.javaparser.symbolsolver.testingclasses.SomeClass.InnerEnum.
+O nome qualificado não é A.method.
+A assinatura qualificada do método resolvido não é Test.setRunnable(java.lang.String, java.lang.Runnable).
+A assinatura qualificada do método resolvido não é Test.getContext(Test).
+A assinatura não é Test.getContext(Test).
+O tipo calculado não é java.lang.String.
+O tipo calculado não é java.lang.String.
+O tipo calculado não é java.lang.String.
+O tipo calculado não é float.
+O tipo calculado não é double.
+O tipo calculado não é int.
+O tipo calculado não é long.
+O tipo calculado não é long.
+O tipo calculado não é int.
+O tipo calculado não é long.
+O tipo calculado não é long.
+O tipo calculado não é int.
+O tipo calculado não é int.
+O tipo calculado não é int.
+A assinatura não é InnerClass(int).
+A assinatura não é InnerClass(int).
+A assinatura não é InnerClass(int).
+O tipo calculado não é void.
+O tipo calculado do argumento não é java.util.concurrent.TimeUnit.
+O método não foi resolvido.
+O resultado da resolução é nulo.
+A conversão para uso é nula.
+O resultado do parsing não foi bem-sucedido.
+O tipo de retorno não é D.
+O tipo de retorno não é D.
+O tipo de retorno não é void.
+O tipo de retorno não é D.
+O nome qualificado não é java.lang.Object.
+O nome qualificado não corresponde ao esperado.
+O tipo resolvido não corresponde ao esperado.
+O resultado do parsing não foi bem-sucedido.
+O resultado do parsing está ausente.
+O tipo não é int.
+O tipo calculado não é Test1.Test2.
+O tipo calculado não é Test1.Test3.
+O tipo está ausente.
+O tipo resolvido não é java.util.ArrayList.
+A representação em string do método não é foo(new Object[5]).
+A assinatura qualificada resolvida não é TestClass2.foo(java.lang.Object).
+O tipo calculado não é void.
+O resultado está ausente.
+O tipo resolvido não é foo.bar.BinaryExpr.Operator.
+O nome não é OR.
+O resultado está ausente.
+O tipo resolvido não é foo.bar.BinaryExpr.Operator.
+O nome não é AND.
+O resultado está ausente.
+O tipo resolvido não é foo.bar.BinaryExpr.Operator.
+O nome não é OR.
+O resultado está ausente.
+O tipo resolvido não é foo.bar.BinaryExpr.Operator.
+O nome não é AND.
+O resultado do parsing não foi bem-sucedido.
+A classificação sintática não corresponde à esperada.
+A categoria do nome não corresponde à esperada.
+A classificação sintática não corresponde à esperada.
+O papel do nome não corresponde ao esperado.
+O nó não é um nome simples.
+O nó não é um nome qualificado.
+O nó é um nome.
+

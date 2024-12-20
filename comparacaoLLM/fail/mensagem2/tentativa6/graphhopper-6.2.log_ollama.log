@@ -1,0 +1,23 @@
+eram esperados valores iguais, mas calculator.add(2, 3) = 5
+eram esperados valores iguais, mas calculator.add(4, 2) = 7
+eram esperados valores iguais, mas calculator.add(5, 5) = 10
+
+um valor é diferente de expected, mas impossibleAlternative.getLegs().get(0).stops.get(0).departureCancelled = true
+um valor é diferente de expected, mas response.getAll().size() = 2
+um valor é diferente de expected, mas ((Trip.PtLeg) impossibleAlternative.getLegs().get(0)).stops.get(1).arrivalCancelled = true
+um valor é diferente de expected, mas response.getAll().size() = 1
+um valor é diferente de expected, mas ptLeg.trip_id = "EXTRA0"
+um valor é diferente de expected, mas ((Trip.PtLeg) ptLegs.get(0)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) = "NEXT_TO_MUSEUM,AIRPORT"
+um valor é diferente de expected, mas transitSolution.getRouteWeight() = 1.5E7
+um valor é diferente de expected, mas ((Trip.PtLeg) transitSolution.getLegs().get(0)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) = "JUSTICE_COURT,MUSEUM"
+um valor é diferente de expected, mas walkDepartureTime.toLocalTime() = 10:00
+um valor é diferente de expected, mas ((Trip.PtLeg) transitSolution.getLegs().get(2)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) = "EMSI,DADAN"
+um valor é diferente de expected, mas walkRoute.getLegs().size() = 1
+um valor é maior que o esperado, mas amount.getAmount().doubleValue() > onlyFare.fare_attribute.price
+um valor é menor ou igual ao esperado, mas cheapestFareWhereEveryLegGoesThroughAllZones >= cheapestFare
+uma lista não está vazia, mas transfersToStop.size() = 2
+uma string é diferente de o esperada, mas transfer.from_stop_id = "MUSEUM"
+uma string é diferente de o esperada, mas ((Trip.PtLeg) withinStationTransfer.getLegs().get(0)).stops.stream().map(s -> s.stop_id).collect(Collectors.joining(",")) = "NEXT_TO_MUSEUM,NEXT_TO_MUSEUM"
+uma lista não está vazia, mas route.getAll().size() = 1
+uma string é diferente de o esperada, mas ((Trip.PtLeg) mondayTrip.getLegs().get(0)).route_id != "AB"
+uma string é diferente de o esperada, mas ((Trip.PtLeg) mondayTrip.getLegs().get(1)).route_id != "AB"

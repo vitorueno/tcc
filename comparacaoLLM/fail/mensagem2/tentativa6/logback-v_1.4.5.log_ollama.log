@@ -1,0 +1,28 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. `assertNotNull(consoleAppender)`
+eram esperados valores iguais, mas null não é igual a consoleAppender
+
+2. `assertTrue(checker.isErrorFree(0))`
+Erros não foram encontrados, mas é esperado que haja erros
+
+3. `assertNull(consoleAppender)`
+eram esperados valores iguais, mas null é diferente de consoleAppender
+
+4. `assertNull(context.getProperty(dynaKey))`
+eram esperados valores iguais, mas null é diferente de context.getProperty(dynaKey)
+
+5. `assertNotNull(context.getProperty(dynaKey))`
+eram esperados valores iguais, mas null não é igual a context.getProperty(dynaKey)
+
+6. `assertNull(context.getProperty(dynaKey))`
+eram esperados valores iguais, mas null é diferente de context.getProperty(dynaKey)
+
+7. `assertNull(System.getProperty(sysKey))`
+eram esperados valores iguais, mas null não é igual a System.getProperty(sysKey)
+
+8. `assertNotNull(fileAppender)`
+eram esperados valores iguais, mas null não é igual a fileAppender
+
+9. `assertNotNull(consoleAppender)`
+eram esperados valores iguais, mas null não é igual a consoleAppender

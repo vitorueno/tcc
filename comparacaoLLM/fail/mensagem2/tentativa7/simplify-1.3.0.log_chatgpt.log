@@ -1,0 +1,68 @@
+eram esperados valores iguais, mas o número de registros esperado é diferente do número de registros atual
+eram esperados arrays iguais, mas os arrays esperado e atual são diferentes
+eram esperados valores iguais, mas Opcode.IGET é diferente de UnreflectionStrategy.getGetOpcode("I", isStatic)
+eram esperados valores iguais, mas Opcode.IGET_BOOLEAN é diferente de UnreflectionStrategy.getGetOpcode("Z", isStatic)
+eram esperados valores iguais, mas Opcode.IGET_BYTE é diferente de UnreflectionStrategy.getGetOpcode("B", isStatic)
+eram esperados valores iguais, mas Opcode.IGET_CHAR é diferente de UnreflectionStrategy.getGetOpcode("C", isStatic)
+eram esperados valores iguais, mas Opcode.IGET_OBJECT é diferente de UnreflectionStrategy.getGetOpcode("Ljava/lang/Object;", isStatic)
+eram esperados valores iguais, mas Opcode.IGET_SHORT é diferente de UnreflectionStrategy.getGetOpcode("S", isStatic)
+eram esperados valores iguais, mas Opcode.IGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("J", isStatic)
+eram esperados valores iguais, mas Opcode.IGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("D", isStatic)
+eram esperados valores iguais, mas Opcode.SGET é diferente de UnreflectionStrategy.getGetOpcode("I", isStatic)
+eram esperados valores iguais, mas Opcode.SGET_BOOLEAN é diferente de UnreflectionStrategy.getGetOpcode("Z", isStatic)
+eram esperados valores iguais, mas Opcode.SGET_BYTE é diferente de UnreflectionStrategy.getGetOpcode("B", isStatic)
+eram esperados valores iguais, mas Opcode.SGET_CHAR é diferente de UnreflectionStrategy.getGetOpcode("C", isStatic)
+eram esperados valores iguais, mas Opcode.SGET_OBJECT é diferente de UnreflectionStrategy.getGetOpcode("Ljava/lang/Object;", isStatic)
+eram esperados valores iguais, mas Opcode.SGET_SHORT é diferente de UnreflectionStrategy.getGetOpcode("S", isStatic)
+eram esperados valores iguais, mas Opcode.SGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("J", isStatic)
+eram esperados valores iguais, mas Opcode.SGET_WIDE é diferente de UnreflectionStrategy.getGetOpcode("D", isStatic)
+eram esperados valores iguais, mas o opcode esperado é diferente do opcode atual
+as mudanças não foram realizadas como esperado
+eram esperados valores iguais, mas a representação em Smali antes e depois é diferente
+eram esperados valores iguais, mas o opcode esperado é diferente do opcode atual
+eram esperados valores iguais, mas o registrador A esperado é diferente do registrador A atual
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados arrays iguais, mas os arrays de endereços esperado e atual são diferentes
+eram esperados valores iguais, mas a representação do opcode esperado é diferente do opcode atual
+eram esperados valores iguais, mas o registrador A esperado é diferente do registrador A atual
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados arrays iguais, mas os arrays de endereços esperado e atual são diferentes
+eram esperados valores iguais, mas a representação do opcode esperado é diferente do opcode atual
+eram esperados valores iguais, mas o registrador A esperado é diferente do registrador A atual
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados arrays iguais, mas os arrays de endereços esperado e atual são diferentes
+eram esperados valores iguais, mas a representação do opcode esperado é diferente do opcode atual
+eram esperados valores iguais, mas o registrador A esperado é diferente do registrador A atual
+eram esperados valores iguais, mas o nome da classe esperado é diferente do nome da classe atual
+eram esperados valores iguais, mas o valor esperado é diferente do valor encontrado
+eram esperados valores iguais, mas o opcode esperado é diferente do opcode atual
+o arquivo de saída não foi encontrado
+o arquivo de saída não foi encontrado
+o número de filhos do template é diferente do esperado
+o nó de operação do template não possui filhos
+os nós de operação do template e do nó são diferentes
+o número de filhos é diferente do esperado
+o número de localizações dos filhos é diferente do esperado
+o nó filho não possui o nó pai
+o contexto do nó filho não possui o contexto pai
+a localização da operação do filho é diferente da localização do nó
+a localização da operação do filho é diferente da localização do nó
+os arrays de endereços esperado e atual são diferentes
+o número de registradores atribuídos pelo estado pai é diferente do esperado
+o número de registradores atribuídos pelo estado filho é diferente do esperado
+o número de registradores atribuídos pelo estado neto é diferente do esperado
+o manipulador possui um número de blocos de try diferente do esperado
+o manipulador não possui blocos de try
+o valor de consenso é diferente do esperado
+o valor de consenso é diferente do esperado
+o valor de consenso é diferente do esperado
+o número de labels da localização da instrução é diferente do esperado
+o número de labels da localização da instrução é diferente do esperado
+a configuração não é imutável para "Ljava/lang/String;"
+a configuração é imutável para "[Ljava/lang/String;"
+a configuração é imutável para "Ljava/lang/StringBuilder;"
+o tipo de comparação é diferente do esperado
+a operação de comparação é diferente do esperado
+o tipo de comparação é diferente do esperado
+o valor de comparação é diferente do esperado
+o tipo de comparação é diferente do esperado

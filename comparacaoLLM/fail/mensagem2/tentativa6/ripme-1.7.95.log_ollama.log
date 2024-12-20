@@ -1,0 +1,14 @@
+Aqui estão as mensagens de descrição de erro para cada assert:
+
+1. assertEquals("test.test", fileName) - Valores esperados não coincidem, o valor "test.test" é diferente do esperado.
+2. assertEquals("test", fileName) - Valores esperados não coincidem, o valor "test" é diferente do esperado.
+3. assertEquals("Object", fileName) - Erro ao tratamento de objetos, o valor "Object" não pode ser comparado com outros valores.
+4. assertEquals("file.png", fileName) - Valores esperados não coincidem, o valor "file.png" é diferente do esperado.
+5. assertEquals("file.", fileName) - Valores esperados não coincidem, o valor "file." é diferente do esperado.
+6. assertEquals("test", new String(Base64.decode("dGVzdA=="))) - Valor base62 codificado não foi decodificado corretamente.
+7. Assertions.assertTrue(ripper.findJSONObjectContainingPhotoId("-45984105_457345201", new JSONObject(json)).similar(new JSONObject(responseJson))) - Erro ao encontrar o objeto com ID de foto.
+8. Assertions.assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=150".equalsIgnoreCase(doc.location())) - Valores esperados não coincidem, a string não é igual à localização do documento.
+9. Assertions.assertTrue("https://napi.redgifs.com/v1/gfycats/search?search_text=little%20caprice&count=150&start=300".equalsIgnoreCase(doc.location())) - Valores esperados não coincidem, a string não é igual à localização do documento.
+10. Assertions.assertTrue(ripper.getGID(new URL("https://hitomi.la/galleries/975973.html")).equals("975973")) - Erro ao obter o ID de GID do URL.
+11. Assertions.assertTrue(ripper.pageContainsAlbums(url)) - Erro ao verificar se a página contém álbuns.
+12. Assertions.assertTrue(ripper.pageContainsAlbums(url2)) - Erro ao verificar se a página contém álbuns.

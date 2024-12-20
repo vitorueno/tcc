@@ -1,0 +1,141 @@
+NotNull
+Unexpectedly null value: consoleAppender
+
+true
+Unexpectedly false value: checker.isErrorFree(0)
+
+null
+Unexpectedly non-null value: consoleAppender
+
+not null
+Unexpectedly null value: listAppender
+
+true
+Unexpectedly false value: checker.isErrorFree(0)
+
+null
+Unexpectedly non-null value: aecustomizeHeaderMap()
+assertEquals 2 parameters, listAppender.list.size()
+
+assertEquals
+Unexpectedly different values, listAppender.strList.get(0).startsWith("testMethod")
+
+not null
+Unexpectedly null value: o
+
+customizedHeaderMap() 
+Expected Header name to be 'x' but found headerName1 
+
+customizedHeaderMap() 
+Expecting 3 headers, actual is 'headerName1'
+
+contentLength() expected 4 bytes but received 0
+
+status code not as expected
+
+CONTENT_STRING not equal to dummy content string
+requestContent() expected dummy content but got actual value
+
+responseContent() expected dummy response string but got actual value
+
+attribute testKey equal to ORIGINAL 
+expected attribute name "testKey" not found, key is "testKey"
+
+getAttribute(key) 
+Expected val but got unexpected value
+
+getRequestHeader(key)
+Expected val but got unexpected value
+
+getRequestParameter(key)[0] Expected val but got unexpected value
+
+requestsHeader(key).getName() expected value 'headerName1' but got actual value
+
+requestsAttribute("testKey") equal to dummy response value
+attribute value not as expected
+
+serverAdapter().getContentLength() expected 2 bytes but received unexpected value
+
+cachingDateFormatter not returning expected date
+
+cachingDateFormatter not returning expected date
+
+localPort() Expected 5678 but got unexpected value
+
+remoteHost() expected "127.0.0.1" but found unexpected host
+
+serverName() expected "localhost" but got actual server name
+
+evaluate() Expected true but got unexpected value
+
+statusCode() expected 200 but received unexpected status code
+
+size() of keySet Expected 3, Actual is witnessSet
+
+listAppender.list.size() Expected 2, Actual is expectedCount
+
+filter not filtering correctly 
+
+filter not extracting the correct list
+filter not extracting the correct filter name
+
+filter not computing activation correctly 
+filter computation should be true for somehost but is false
+
+filter computation should be true for a and null but is false
+
+filter computation should be true for a and b but is false
+
+filter computation should be true for b and c but is false
+
+filter computation should be true for a and a but is false
+
+filter computation should be true for a and b but is true
+
+filter computation should be true for b and c but is true
+
+filter not extracting the correct filter name 
+filter not computing activation correctly for null 
+
+filter not filtering correctly, 
+Unexpected value from filter
+filter not extracting the correct list, 
+Unexpected value from filter 
+
+filter extraction should return ['a', 'b']
+extractNameList("a")
+
+filter extraction should return ['a', 'b']
+extractNameList("a, b")
+
+filter extraction should return ['a', 'b']
+extractNameList("a; b")
+
+filter extraction should return ['a', 'b', 'c']
+extractNameList("a; b, c")
+
+activation('somehost')
+computeActivation('somehost', "", "")
+
+activation('somehost')
+computeActivation('somehost', null, null)
+
+activation('a')
+computeActivation('a', "a", null)
+computeActivation('a', "a, b", null)
+
+activation('a')
+computeActivation('a', "b", null)
+computeActivation('a', "b, c", null)
+
+activation('a')
+computeActivation('a', "a", "a")
+computeActivation('a', "a", "b")
+
+activation('a')
+computeActivation('a', "b", "a")
+computeActivation('a', "b", "b")
+
+bytesToByteArray()
+ Not the expected output
+expectedBytes not equal to actual bytes

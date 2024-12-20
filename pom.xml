@@ -51,6 +51,13 @@
             <artifactId>java-dotenv</artifactId>
             <version>5.2.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.javaparser</groupId>
+            <artifactId>javaparser-symbol-solver-core</artifactId>
+            <version>3.24.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>

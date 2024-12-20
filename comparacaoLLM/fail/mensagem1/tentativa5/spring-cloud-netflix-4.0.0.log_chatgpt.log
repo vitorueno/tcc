@@ -1,0 +1,17 @@
+Mensagem de descrição de erro para o assert.assertEquals:
+"Os valores não são iguais"
+
+Mensagem de descrição de erro para o assert.assertTrue:
+"A condição não é verdadeira"
+
+Mensagem de descrição de erro para o assert.assertFalse:
+"A condição não é falsa"
+
+Mensagem de descrição de erro para o assert.assertNotNull:
+"O valor é nulo"
+
+Mensagem de descrição de erro para o assert.assertNull:
+"O valor não é nulo"
+
+Mensagem de descrição de erro para o assert.assertNotEquals:
+"Os valores são iguais"

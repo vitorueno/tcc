@@ -1,0 +1,101 @@
+`cdiLiquibase não deve ser nulo`
+`cdiLiquibase.isInitialized() deve ser igual a shouldBeRunning`
+`cdiLiquibase.isUpdateSuccessful() deve ser igual a shouldBeRunning`
+`liquibaseSchemas.size() deve ser igual a resolved.size()`
+`previous.size() deve ser igual a 9`
+`schemes.size() deve ser igual a resolved.size()`
+`previous.size() deve ser igual a 16`
+`liquibaseSchemas.size() deve ser igual a resolved.size()`
+`resolved.size() deve ser igual a 7`
+`locations.size() deve ser igual a 1`
+`mojo.changeLogDirectory deve ser igual a dirLocation`
+`mojo não deve ser nulo`
+`mojo.getOutputDirectory() deve ser igual a "target/liquibase/myOutputDirectory"`
+`databaseDataType.getType() deve ser igual a "TIMESTAMP_NTZ"`
+`databaseDataType.toSql() deve ser igual a "TIMESTAMP_NTZ"`
+`databaseDataType.isAutoIncrement() deve ser falso`
+`aliases.length deve ser igual a 2`
+`aliases deve conter "datetime"`
+`aliases deve conter "java.sql.Types.DATETIME"`
+`liquibaseDataType.getClass().getName() deve ser igual a "liquibase.datatype.core.TimestampNTZTypeSnowflake"`
+`timestampNTZType.supports(snowflakeDatabase) deve ser verdadeiro`
+`timestampNTZType.supports(new PostgresDatabase()) deve ser falso`
+`timestampNTZType.getPriority() deve ser igual a PRIORITY_DATABASE`
+`timestampNTZType.getMinParameters(snowflakeDatabase) deve ser igual a 0`
+`timestampNTZType.getMinParameters(snowflakeDatabase) deve ser igual a 0`
+`database.getShortName() deve ser igual a "snowflake"`
+`database.getDefaultDatabaseProductName() deve ser igual a "Snowflake"`
+`database.getDefaultPort() deve ser nulo`
+`database.getCurrentDateTimeFunction() deve ser igual a "current_timestamp::timestamp_ntz"`
+`database.getPriority() deve ser igual a PRIORITY_DATABASE`
+`database.supportsInitiallyDeferrableColumns() deve ser falso`
+`database.supportsDropTableCascadeConstraints() deve ser verdadeiro`
+`database.isCorrectDatabaseImplementation(jdbcConnection) deve ser verdadeiro`
+`database.getDefaultDriver("jdbc:snowflake:") deve ser igual a "net.snowflake.client.jdbc.SnowflakeDriver"`
+`database.getDefaultDriver("jdbc:wrong-name:") deve ser nulo`
+`database.supportsSchemas() deve ser verdadeiro`
+`database.supportsCatalogs() deve ser verdadeiro`
+`database.supportsCatalogInObjectName(null) deve ser falso`
+`database.supportsSequences() deve ser verdadeiro`
+`database.getDatabaseChangeLogTableName() deve ser igual a "DATABASECHANGELOG"`
+`database.getDatabaseChangeLogLockTableName() deve ser igual a "DATABASECHANGELOGLOCK"`
+`database.supportsTablespaces() deve ser falso`
+`database.supportsAutoIncrement() deve ser verdadeiro`
+`database.getAutoIncrementClause() deve ser igual a "AUTOINCREMENT"`
+`database.getAutoIncrementClause(null, null, null, null) deve ser igual a "AUTOINCREMENT (1, 1)"`
+`database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("1"), null, null) deve ser igual a "AUTOINCREMENT (1, 1)"`
+`database.getAutoIncrementClause(new BigInteger("7"), new BigInteger("1"), null, null) deve ser igual a "AUTOINCREMENT (7, 1)"`
+`database.getAutoIncrementClause(new BigInteger("1"), new BigInteger("7"), null, null) deve ser igual a "AUTOINCREMENT (1, 7)"`
+`database.getAutoIncrementClause(new BigInteger("7"), null, null, null) deve ser igual a "AUTOINCREMENT (7, 1)"`
+`database.getAutoIncrementClause(null, new BigInteger("7"), null, null) deve ser igual a "AUTOINCREMENT (1, 7)"`
+`database.generateAutoIncrementStartWith(new BigInteger("1")) deve ser verdadeiro`
+`database.generateAutoIncrementBy(new BigInteger("1")) deve ser verdadeiro`
+`database.supportsRestrictForeignKeys() deve ser verdadeiro`
+`database.isReservedWord("table") deve ser verdadeiro`
+`database.getDefaultCatalogName() deve ser nulo`
+`database.getDefaultSchemaName() deve ser nulo`
+`database.getJdbcCatalogName(new CatalogAndSchema(null, null)) deve ser nulo`
+`database.getJdbcSchemaName(new CatalogAndSchema(null, null)) deve ser nulo`
+`pk.getColumnNamesAsList().size() deve ser igual a 1`
+`pk.getColumnNamesAsList().size() deve ser igual a 2`
+`pk.getColumnNamesAsList().get(0) deve ser igual a "id1"`
+`pk.getColumnNamesAsList().get(1) deve ser igual a "id2"`
+`pk.getColumnNamesAsList().size() deve ser igual a 2`
+`pk.getColumnNamesAsList().get(0) deve ser igual a "id1"`
+`pk.getColumnNamesAsList().get(1) deve ser igual a "id2"`
+`ChangeLogSerializerFactory.getInstance() não deve ser nulo`
+`ChangeLogSerializerFactory.getInstance() deve ser o mesmo que ChangeLogSerializerFactory.getInstance()`
+`ChangeLogSerializerFactory.getInstance().getSerializers().size() deve ser igual a 0`
+`ChangeLogSerializerFactory.getInstance().getSerializers().size() deve ser igual a 1`
+`factory.getSerializers().size() deve ser igual a 0`
+`factory.getSerializers().size() deve ser igual a 2`
+`factory.getSerializers().size() deve ser igual a 1`
+`instance1 não deve ser o mesmo que ChangeLogSerializerFactory.getInstance()`
+`serializers.size() deve ser igual a 6`
+`serializer não deve ser nulo`
+`serializer.getClass() deve ser igual a XMLChangeLogSerializer.class`
+`ChangeLogSerializerFactory.getInstance().getSerializers("xml").size() deve ser igual a 1`
+`factory.getSerializer("xml") deve ser o mesmo que highestPriority`
+`factory.getSerializers().get("xml").size() deve ser igual a 3`
+`serializedJson deve ser igual a "{\\n  \\\"changeSet\\\": {\\n    \\\"id\\\": \\\"1\\\",\\n    \\\"author\\\": \\\"nvoxland\\\",\\n    \\\"ignore\\\": true,\\n    \\\"objectQuotingStrategy\\\": \\\"LEGACY\\\",\\n    \\\"preconditions\\\": {\\n      \\\"preConditions\\\": {\\n        \\\"nestedPreconditions\\\": [\\n          {\\n            \\\"preConditions\\\": {\\n              \\\"onError\\\": \\\"WARN\\\",\\n              \\\"onFail\\\": \\\"CONTINUE\\\",\\n              \\\"onSqlOutput\\\": \\\"TEST\\\"\\n            }\\n          }\\n        ]\\n        ,\\n        \\\"onError\\\": \\\"CONTINUE\\\",\\n        \\\"onFail\\\": \\\"MARK_RAN\\\",\\n        \\\"onSqlOutput\\\": \\\"FAIL\\\"\\n      }\\n    },\\n    \\\"runInTransaction\\\": false,\\n    \\\"runOrder\\\": \\\"last\\\",\\n    \\\"changes\\\": [\\n      {\\n        \\\"addColumn\\\": {\\n          \\\"catalogName\\\": \\\"cat\\\",\\n          \\\"columns\\\": [\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueNumeric\\\": 3,\\n                \\\"name\\\": \\\"col1\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueComputed\\\": \\\"NOW()\\\",\\n                \\\"name\\\": \\\"col2\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueBoolean\\\": true,\\n                \\\"name\\\": \\\"col3\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueDate\\\": \\\"1970-01-01T00:00:00\\\",\\n                \\\"name\\\": \\\"col2\\\"\\n              }\\n            },\\n            {\\n              \\\"column\\\": {\\n                \\\"defaultValueSequenceNext\\\": \\\"seq_me\\\",\\n                \\\"name\\\": \\\"col2\\\"\\n              }\\n            }\\n          ]\\n          \\n        }\\n      }\\n    ]\\n    \\n  }\\n}\\n`
+`node.getTagName() deve ser igual a "addAutoIncrement"`
+`node.getTagName() deve ser igual a "addColumn"`
+`node.getAttribute("tableName") deve ser igual a "TAB"`
+`columns.getLength() deve ser igual a 1`
+`((Element) columns.item(0)).getTagName() deve ser igual a "column"`
+`((Element) columns.item(0)).getAttribute("name") deve ser igual a "NEWCOL"`
+`((Element) columns.item(0)).getAttribute("type") deve ser igual a "TYP"`
+`node.getTagName() deve ser igual a "addDefaultValue"`
+`node.getAttribute("schemaName") deve ser igual a "SCHEMA_NAME"`
+`node.getAttribute("tableName") deve ser igual a "TABLE_NAME"`
+`node.getAttribute("columnName") deve ser igual a "COLUMN_NAME"`
+`node.getAttribute("defaultValue") deve ser igual a "DEF STRING"`
+`node.getAttribute("defaultValueNumeric") deve ser igual a "42"`
+`node.getAttribute("defaultValueBoolean") deve ser igual a "true"`
+`node.getAttribute("defaultValueDate") deve ser igual a "2007-01-02"`
+`node.getAttribute("defaultValueSequenceNext") deve ser igual a "sampleSeq"`
+`node.getTagName() deve ser igual a "addForeignKeyConstraint"`
+`node.getAttribute("constraintName") deve ser igual a "FK_NAME"`
+`node.getAttribute("baseTableSchemaName") deve ser igual a "BASE_SCHEMA_NAME"`
+`node.getAttribute("baseTableName") deve ser igual a "BASE_TABLE_NAME"`
+

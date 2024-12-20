@@ -1,0 +1,97 @@
+A contagem de registros esperada e a contagem de registros atual são diferentes.
+As linhas esperadas e as linhas atuais são diferentes.
+O opcode GET esperado e o opcode GET atual são diferentes.
+O opcode GET_BOOLEAN esperado e o opcode GET_BOOLEAN atual são diferentes.
+O opcode GET_BYTE esperado e o opcode GET_BYTE atual são diferentes.
+O opcode GET_CHAR esperado e o opcode GET_CHAR atual são diferentes.
+O opcode GET_OBJECT esperado e o opcode GET_OBJECT atual são diferentes.
+O opcode GET_SHORT esperado e o opcode GET_SHORT atual são diferentes.
+O opcode GET_WIDE esperado e o opcode GET_WIDE atual são diferentes.
+O opcode GET_WIDE esperado e o opcode GET_WIDE atual são diferentes.
+O opcode SGET esperado e o opcode SGET atual são diferentes.
+O opcode SGET_BOOLEAN esperado e o opcode SGET_BOOLEAN atual são diferentes.
+O opcode SGET_BYTE esperado e o opcode SGET_BYTE atual são diferentes.
+O opcode SGET_CHAR esperado e o opcode SGET_CHAR atual são diferentes.
+O opcode SGET_OBJECT esperado e o opcode SGET_OBJECT atual são diferentes.
+O opcode SGET_SHORT esperado e o opcode SGET_SHORT atual são diferentes.
+O opcode SGET_WIDE esperado e o opcode SGET_WIDE atual são diferentes.
+O opcode SGET_WIDE esperado e o opcode SGET_WIDE atual são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+Esperava-se que `changesMade` fosse falso.
+O código Smali antes e depois da manipulação são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+O offset de código esperado e o offset de código atual são diferentes.
+O descritor de método esperado e o descritor de método atual são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+O registrador A esperado e o registrador A atual são diferentes.
+O nome da classe esperado e o nome da classe atual são diferentes.
+Os endereços esperados e os endereços atuais são diferentes.
+A operação esperada e a operação atual são diferentes.
+Os endereços esperados e os endereços atuais são diferentes.
+A operação esperada e a operação atual são diferentes.
+A operação esperada e a operação atual são diferentes.
+A operação esperada e a operação atual são diferentes.
+Os endereços esperados e os endereços atuais são diferentes.
+A operação esperada e a operação atual são diferentes.
+A operação esperada e a operação atual são diferentes.
+A operação esperada e a operação atual são diferentes.
+A operação esperada e a operação atual são diferentes.
+A operação esperada e a operação atual são diferentes.
+O descritor de método esperado e o descritor de método atual são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+O registrador A esperado e o registrador A atual são diferentes.
+A constante esperada e a constante atual são diferentes.
+A classe de instrução esperada e a classe de instrução atual são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+O registrador A esperado e o registrador A atual são diferentes.
+O nome da classe esperado e o nome da classe atual são diferentes.
+A classe de instrução esperada e a classe de instrução atual são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+O registrador A esperado e o registrador A atual são diferentes.
+O nome da classe esperado e o nome da classe atual são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+O tamanho esperado e o tamanho encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O valor esperado e o valor encontrado são diferentes.
+O opcode esperado e o opcode atual são diferentes.
+Esperava-se que o arquivo existisse.
+Esperava-se que o arquivo existisse.
+O tamanho esperado e o tamanho atual são diferentes.
+Esperava-se que o nó não fosse nulo.
+Os nós esperados e os nós atuais são diferentes.
+O tamanho esperado e o tamanho atual são diferentes.
+O tamanho esperado e o tamanho atual são diferentes.
+O nó pai esperado e o nó pai atual são diferentes.
+O contexto esperado e o contexto atual são diferentes.
+A localização esperada e a localização atual são diferentes.
+A localização esperada e a localização atual são diferentes.
+Os endereços esperados e os endereços atuais são diferentes.
+Os registradores atribuídos esperados e os registradores atribuídos atuais são diferentes.
+Os registradores atribuídos esperados e os registradores atribuídos atuais são diferentes.
+Os registradores atribuídos esperados e os registradores atribuídos atuais são diferentes.
+O tamanho esperado e o tamanho atual são diferentes.
+O tamanho esperado e o tamanho atual são diferentes.
+O valor esperado e o valor atual são diferentes.
+O valor esperado e o valor atual são diferentes.
+O valor esperado e o valor atual são diferentes.
+O tamanho esperado e o tamanho atual são diferentes.
+O tamanho esperado e o tamanho atual são diferentes.
+Esperava-se que a configuração fosse imutável.
+Esperava-se que a configuração não fosse imutável.
+Esperava-se que a configuração não fosse imutável.
+A classe esperada e a classe atual são diferentes.
+O tipo esperado e o tipo atual são diferentes.
+A operação esperada e a operação atual são diferentes.
+A classe esperada e a classe atual são diferentes.
+O tipo esperado e o tipo atual são diferentes.
+O valor esperado e o valor atual são diferentes.
+O tipo esperado e o tipo atual são diferentes.
+

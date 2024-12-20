@@ -1,0 +1,89 @@
+eram esperados valores iguais, mas "0" é diferente de result.get("score")
+result.get("entity.0.fullValue") não deveria ser nulo
+result.get("entity.1.fullValue") não deveria ser nulo
+solverConfig não deveria ser nulo
+eram esperados valores iguais, mas DomainAccessType.GIZMO é diferente de solverConfig.getDomainAccessType()
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de solverConfig.getSolutionClass()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de solverConfig.getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass()
+eram esperados valores iguais, mas 3L é diferente de solverConfig.getTerminationConfig().getSecondsSpentLimit().longValue()
+solverFactory não deveria ser nulo
+solverFactory.buildSolver() não deveria ser nulo
+solverConfig não deveria ser nulo
+eram esperados valores iguais, mas DomainAccessType.GIZMO é diferente de solverConfig.getDomainAccessType()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de solverConfig.getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass()
+eram esperados valores iguais, mas 2L é diferente de solverConfig.getTerminationConfig().getSecondsSpentLimit().longValue()
+solverFactory não deveria ser nulo
+solverFactory.buildSolver() não deveria ser nulo
+eram esperados valores iguais, mas EnvironmentMode.FULL_ASSERT é diferente de solverConfig.getEnvironmentMode()
+solverConfig.getDaemon() deveria ser verdadeiro
+eram esperados valores iguais, mas "2" é diferente de solverConfig.getMoveThreadCount()
+eram esperados valores iguais, mas DomainAccessType.REFLECTION é diferente de solverConfig.getDomainAccessType()
+solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType() deveria ser nulo
+solverFactory não deveria ser nulo
+eram esperados valores iguais, mas Duration.ofHours(4) é diferente de solverConfig.getTerminationConfig().getSpentLimit()
+eram esperados valores iguais, mas Duration.ofHours(5) é diferente de solverConfig.getTerminationConfig().getUnimprovedSpentLimit()
+eram esperados valores iguais, mas SimpleScore.of(0).toString() é diferente de solverConfig.getTerminationConfig().getBestScoreLimit()
+solverConfig não deveria ser nulo
+eram esperados valores iguais, mas DomainAccessType.GIZMO é diferente de solverConfig.getDomainAccessType()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de solverConfig.getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass()
+solverConfig.getTerminationConfig().getSecondsSpentLimit() deveria ser nulo
+solverFactory não deveria ser nulo
+solverFactory.buildSolver() não deveria ser nulo
+eram esperados valores iguais, mas solution.score.score() é diferente de 0
+eram esperados valores iguais, mas "7" é diferente de solverConfigProperties.get("termination.bestScoreLimit")
+eram esperados valores iguais, mas "3" é diferente de solverConfigProperties.get("moveThreadCount")
+eram esperados valores iguais, mas "10" é diferente de solverManagerProperties.get("parallelSolverCount")
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintProviderClass()
+solverFactory.buildSolver() não deveria ser nulo
+eram esperados valores iguais, mas [CONSTRAINTS_DRL] é diferente de solverConfig.getScoreDirectorFactoryConfig().getScoreDrlList()
+solverFactory.buildSolver() não deveria ser nulo
+eram esperados valores iguais, mas ["constraints.drl"] é diferente de solverConfig.getScoreDirectorFactoryConfig().getScoreDrlList()
+solverFactory.buildSolver() não deveria ser nulo
+solverFactory não deveria ser nulo
+eram esperados valores iguais, mas ((DefaultSolverFactory<TestdataQuarkusSolution>) solverFactory).getScoreDirectorFactory() é diferente de ((DefaultSolutionManager<TestdataQuarkusSolution, SimpleScore>) solutionManager).getScoreDirectorFactory()
+solverManager não deveria ser nulo
+eram esperados valores iguais, mas solverFactory é diferente de ((DefaultSolverManager<TestdataQuarkusSolution, Long>) solverManager).getSolverFactory()
+solution não deveria ser nulo
+eram esperados valores iguais, mas solution.getPlanningEntityProperty().testGetIntVariable() é diferente de 1
+eram esperados valores iguais, mas "A" é diferente de solution.getPlanningEntityProperty().testGetStringVariable()
+solverFactory não deveria ser nulo
+eram esperados valores iguais, mas ((DefaultSolverFactory<TestdataQuarkusSolution>) solverFactory).getScoreDirectorFactory() é diferente de ((DefaultSolutionManager<TestdataQuarkusSolution, SimpleScore>) solutionManager).getScoreDirectorFactory()
+solverManager não deveria ser nulo
+eram esperados valores iguais, mas solverFactory é diferente de ((DefaultSolverManager<TestdataQuarkusSolution, Long>) solverManager).getSolverFactory()
+solutionManager não deveria ser nulo
+solution não deveria ser nulo
+solution.getScore().score() deveria ser maior ou igual a 0
+eram esperados valores iguais, mas "Extra Data" é diferente de solution.getExtraData()
+eram esperados valores iguais, mas ConstraintStreamImplType.BAVET é diferente de solverConfig.getScoreDirectorFactoryConfig().getConstraintStreamImplType()
+solverFactory não deveria ser nulo
+falha esperada: Build should fail
+resp deveria ser igual a "secondsSpentLimit=2"
+resp deveria ser igual a "secondsSpentLimit=9"
+solution não deveria ser nulo
+eram esperados valores iguais, mas entityList.size() é diferente de solution.getEntityList().size()
+falha esperada: Build should fail, A execução falhou por uma causa deliberada
+ConstraintStreamImplType.DROOLS deveria ser igual a ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType()
+((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).isDroolsAlphaNetworkCompilationEnabled() deveria ser igual a !ConfigUtils.isNativeImage()
+ConstraintStreamImplType.BAVET deveria ser igual a ((DefaultConstraintVerifier<?, ?, ?>) constraintVerifier).getConstraintStreamImplType()
+benchmarkResultDirectory não deveria ser nulo
+benchmarkResultPath deveria ser um diretório
+benchmarkResultPath deveria ser um arquivo regular
+plannerBenchmarkResult.solverBenchmarkResult.singleBenchmarkResult.subSingleBenchmarkResult.succeeded deveria ser verdadeiro
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de solverConfig.getSolutionClass()
+solverConfig.getEntityClassList() deveria ter tamanho 2
+solverConfig.getEntityClassList() deveria conter TestdataQuarkusEntity.class
+solverConfig.getEntityClassList() deveria conter TestdataQuarkusOtherEntity.class
+eram esperados valores iguais, mas 5 é diferente de plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getTerminationConfig().getMillisecondsSpentLimit()
+eram esperados valores iguais, mas [TestdataQuarkusEntity.class] é diferente de plannerBenchmarkConfig.getInheritedSolverBenchmarkConfig().getSolverConfig().getEntityClassList()
+eram esperados valores iguais, mas TestdataQuarkusSolution.class é diferente de childBenchmarkConfig.getSolverConfig().getSolutionClass()
+childBenchmarkConfig.getSolverConfig().getEntityClassList() deveria ser nulo
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de childBenchmarkConfig.getSolverConfig().getConstraintProviderClass()
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de childBenchmarkConfig.getSolverConfig().getSolutionClass()
+childBenchmarkConfig.getSolverConfig().getEntityClassList() deveria ser nulo
+eram esperados valores iguais, mas TestdataQuarkusConstraintProvider.class é diferente de childBenchmarkConfig.getSolverConfig().getConstraintProviderClass()
+eram esperados valores iguais, mas 2 é diferente de plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(0).getSolverConfig().getPhaseConfigList().size()
+eram esperados valores iguais, mas 3 é diferente de plannerBenchmarkConfig.getSolverBenchmarkConfigList().get(1).getSolverConfig().getPhaseConfigList().size()
+exception.getMessage() deveria ser igual a "The following SolverBenchmarkConfig do not have termination configured: [First Fit and Local Search without Termination]. At least one of the properties quarkus.optaplanner.benchmark.solver.termination.spent-limit, quarkus.optaplanner.benchmark.solver.termination.best-score-limit, quarkus.optaplanner.benchmark.solver.termination.unimproved-spent-limit is required if termination is not configured in a solver benchmark and the inherited solver benchmark config."

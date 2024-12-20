@@ -1,0 +1,27 @@
+```java
+assertEquals(10, calculator.multiply(2, 5));
+assertEquals("Hello, World!", message);
+assertTrue(customer.isActive());
+assertFalse(file.exists());
+assertNull(exception);
+assertNotNull(user);
+assertSame(instance1, instance2);
+assertNotSame(list1, list2);
+assertArrayEquals(expectedArray, actualArray);
+assertEquals(5.6, value, 0.1); //delta
+```
+
+Saída:
+
+```
+eram esperados valores iguais, mas 10 é diferente de calculator.multiply(2, 5)
+eram esperados valores iguais, mas "Hello, World!" é diferente de message
+esperava-se que customer.isActive() retornasse true, mas retornou false
+esperava-se que file.exists() retornasse false, mas retornou true
+esperava-se null, mas exception é diferente de null
+esperava-se que user fosse diferente de null, mas era null
+esperava-se que instance1 e instance2 referenciavam o mesmo objeto, mas referenciam objetos diferentes.
+esperava-se que list1 e list2 referenciavam objetos diferentes, mas referenciam o mesmo objeto.
+eram esperados arrays iguais, mas expectedArray é diferente de actualArray
+eram esperados valores iguais dentro da margem de erro de 0.1, mas 5.6 é diferente de value
+```

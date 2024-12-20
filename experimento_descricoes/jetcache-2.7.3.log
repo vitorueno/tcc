@@ -1,0 +1,38 @@
+
+Projeto: /home/vitor-otto/opensource/jetcache-2.7.3
+
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/main/java/com/alicp/jetcache/test/external/AbstractExternalCacheTest.java linha: 41 Método: Assert.assertNull("V2", cache.get(d2))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 137 Método: Assert.assertEquals(1.0, 1.0 * result[1] / result[0], 0.2)
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 138 Método: Assert.assertEquals(1.0, 1.0 * result[2] / result[0], 0.2)
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 147 Método: Assert.assertEquals(2.0, 1.0 * result[1] / result[0], 0.2)
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/redis/RedisCacheTest.java linha: 148 Método: Assert.assertEquals(3.0, 1.0 * result[2] / result[0], 0.4)
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Fastjson2EncoderTest.java linha: 57 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Fastjson2EncoderTest.java linha: 59 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Fastjson2EncoderTest.java linha: 63 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Fastjson2EncoderTest.java linha: 67 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/JavaEncoderTest.java linha: 49 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/JavaEncoderTest.java linha: 51 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/JavaEncoderTest.java linha: 55 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/JavaEncoderTest.java linha: 59 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/KryoEncoderTest.java linha: 49 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/KryoEncoderTest.java linha: 51 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/KryoEncoderTest.java linha: 55 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/KryoEncoderTest.java linha: 59 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Kryo5EncoderTest.java linha: 49 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Kryo5EncoderTest.java linha: 51 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Kryo5EncoderTest.java linha: 55 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/support/Kryo5EncoderTest.java linha: 59 Método: assertThrows(CacheEncodeException.class, () -> decoder.apply(bytes))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/method/ExpressionEvaluatorTest.java linha: 31 Método: assertThrows(CacheConfigException.class, () -> new ExpressionEvaluator("xxx{1+1}", m))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/method/CacheConfigUtilTest.java linha: 77 Método: assertThrows(CacheConfigException.class, () -> CacheConfigUtil.parse(cic2, I.class.getMethod("m5")))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/method/CacheConfigUtilTest.java linha: 78 Método: assertThrows(CacheConfigException.class, () -> CacheConfigUtil.parse(cic2, I.class.getMethod("m6")))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/support/DefaultSpringEncoderParserTest.java linha: 60 Método: assertThrows(NoSuchBeanDefinitionException.class, () -> parser.parseEncoder("bean:not_exists"))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/support/DefaultSpringEncoderParserTest.java linha: 85 Método: assertThrows(NoSuchBeanDefinitionException.class, () -> parser.parseDecoder("bean:not_exists"))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/support/DefaultSpringKeyConvertorTest.java linha: 41 Método: assertThrows(NoSuchBeanDefinitionException.class, () -> parser.parseKeyConvertor("bean:not_exists"))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/support/DefaultEncoderParserTest.java linha: 43 Método: assertThrows(CacheConfigException.class, () -> parser.parseEncoder(null))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/support/DefaultEncoderParserTest.java linha: 44 Método: assertThrows(CacheConfigException.class, () -> parser.parseEncoder("xxx"))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/support/DefaultEncoderParserTest.java linha: 58 Método: assertThrows(CacheConfigException.class, () -> parser.parseDecoder(null))
+Assert com mensagem: /home/vitor-otto/opensource/jetcache-2.7.3/jetcache-test/src/test/java/com/alicp/jetcache/anno/support/DefaultEncoderParserTest.java linha: 59 Método: assertThrows(CacheConfigException.class, () -> parser.parseDecoder("xxx"))
+Total asserts: 1049
+Asserts sem descrição: 1018
+Asserts com descrição: 31
+Assertion Roulette: 957

@@ -1,0 +1,45 @@
+assertEquals("A expectativa de que o contador contém 1 não foi atendida", 1, jspFragment.count)
+assertEquals("A expectativa de que o contador contém 1 não foi atendida", 1, jspFragment.count)
+assertEquals("A expectativa de que o contador contém 2 não foi atendida", 2, jspFragment.count)
+assertEquals("A expectativa de que o contador contém 3 não foi atendida", 3, jspFragment.count)
+assertEquals("A expectativa de que o contador contém 2 não foi atendida", 2, jspFragment.count)
+assertEquals("A expectativa de que o contador contém 6 não foi atendida", 6, jspFragment.count)
+
+assertNull("O atributo 's' não existe ou está nulo", jspContext.getAttribute("s"))
+assertNotNull("O objeto 's' não é nulo", s)
+assertEquals("A cópia do valor de 'count' para 's' não coincide com o esperado", count, s.getCount())
+assertEquals("O valor de 'index' de 's' não coincide com o esperado", count - 1, s.getIndex())
+assertEquals("O valor de 'modulusValue' de 's' não coincide com o esperado", count - 1, s.getModulusValue())
+
+assertEquals("A cópia do corpo da resposta não coincidia com o esperado", TEXT_RESULT, response.bodyText().trim())
+assertEquals("A cópia do corpo da resposta não coincidia com o esperado", TEXT_RESULT, response.bodyText().trim())
+assertEquals("A cópia do corpo da resposta não coincidia com o esperado", TEXT_RESULT, response.bodyText().trim())
+assertEquals("A cópia do corpo da resposta não coincidia com o esperado", TEXT_RESULT, response.bodyText().trim())
+
+assertEquals("O valor da posição [2] é 'three' e coincide com o esperado", " three ", p[2])
+
+assertNotNull("O elemento [1] não é nulo", p[1])
+assertNull("O elemento [3] não existe ou está nulo", p[3])
+assertNull("O elemento [1] não existe ou está nulo", p[1])
+assertNull("O elemento [3] não existe ou está nulo", p[3])
+assertNull("O elemento [0] não existe ou está nulo", p[0])
+
+assertNotNull("A propriedade 'isValidateAllProfilesByDefault' de 'vtor' é verdadeira", vtor.isValidateAllProfilesByDefault())
+assertNull("A lista de violações de 'vtor' não existe ou está nula", vtor.getViolations())
+assertEquals("O número de violações de 'vtor' coincide com o esperado", 2, vtor.getViolations().size())
+
+assertEquals("O primeiro elemento da lista de violações de 'vtor' não coincide com o esperado", violation1, vtor.getViolations().get(0))
+assertEquals("O segundo elemento da lista de violações de 'vtor' não coincide com o esperado", violation2, vtor.getViolations().get(1))
+
+assertNull("A lista de perfis enable de 'vtor' não existe ou está nula", vtor.enabledProfiles)
+assertEquals("O número de perfis enable de 'vtor' coincide com o esperado", 1, vtor.enabledProfiles.size())
+
+assertEquals("O número de violações não coincide com o esperado", 1, violations.size())
+
+assertNull("A lista de validações não existe ou está nula", validate)
+assertEquals("O número de violações não coincide com o esperado", 1, violations.size())
+assertEquals("O primeiro elemento da lista de violações não coincide com o esperado", "profil1", violations.get(0).getCheck().getProfiles()[0])
+assertEquals("O segundo elemento da lista de violações não coincide com o esperado", ch1, violations.get(0).getCheck())
+
+assertNotNull("A propriedade 'matchProfiles' de 'vtor' é verdadeira", vtor.matchProfiles(new String[] { "testProfile" }))
+assertNull("A propriedade 'matchProfiles' de 'vtor' não é verdadeira", vtor.matchProfiles(null))

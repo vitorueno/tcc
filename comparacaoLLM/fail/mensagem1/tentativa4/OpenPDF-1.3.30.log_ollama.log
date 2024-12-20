@@ -1,0 +1,300 @@
+assertTrue(result.length > input.length)
+assertAll(() -> assertEquals(2, countPages(target)),
+          () -> assertEquals(5, countPages(target)))
+
+assertEquals(expected, color)
+assertThat(color, expected)
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+assertThat(WebColors.getRGBColor("#f09"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+assertThat(WebColors.getRGBColor("#F09"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("#ff0099))
+assertThat(WebColors.getRGBColor("#ff0099"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("#FF0099))
+assertThat(WebColors.getRGBColor("#FF0099"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("#f09a"))
+assertThat(WebColors.getRGBColor("#f09a"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("#F09A"))
+assertThat(WebColors.getRGBColor("#F09A"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("#ff0099aa"))
+assertThat(WebColors.getRGBColor("#ff0099aa"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+assertThat(WebColors.getRGBColor("rgb(255, 0, 153)"), expected)
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#f09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("#F09"))
+
+assertEquals(expected, WebColors.getRGBColor("255 0 153"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))
+
+assertEquals(expected, WebColors.getRGBColor("rgb(255,0,153)"))

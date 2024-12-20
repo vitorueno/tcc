@@ -1,0 +1,100 @@
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), sampleFile.getPath()) retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), stdin, "-") retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), "--pretty", sampleFile.getPath()) retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), "--reader-schema", "\"long\"", sampleFile.getPath()) retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), "--reader-schema-file", readerSchemaFile.getPath(), sampleFile.getPath()) retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), "--head", sampleFile.getPath()) retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), "--head=3", sampleFile.getPath()) retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), "--head", "5", sampleFile.getPath()) retornou um valor diferente do esperado.
+Valores JSON esperados e obtidos são diferentes: run(new DataFileReadTool(), "--head=3000000000", sampleFile.getPath()) retornou um valor diferente do esperado.
+O valor retornado por run(new DataFileReadTool(), "--head=0", sampleFile.getPath()) era esperado como "\n", mas foi diferente.
+O valor retornado por run(new DataFileReadTool(), "--head=-5", sampleFile.getPath()) era esperado como "\n", mas foi diferente.
+O valor retornado por run(new DataFileGetMetaTool(), sampleFile.getPath(), "--key", "avro.schema") era esperado como schema.toString() + "\n", mas foi diferente.
+O valor retornado por run(new DataFileGetSchemaTool(), sampleFile.getPath()) era esperado como schema.toString() + "\n", mas foi diferente.
+O número de registros em outFile era esperado como 0, mas foi diferente.
+O número de registros em outFile era esperado como 5, mas foi diferente.
+A string baos.toString() não contém "Compression codec (default: null)".
+O conteúdo dos arquivos protocol e outfile são diferentes.
+A string warnings era esperada como "Warning: Found documentation comment at line 19, column 1. Ignoring previous one at line 1, column 1: \"" + "Licensed to the Apache Software Foundation (ASF) under one\n" + "or more contributor license agreements.  See the NOTICE file\n" + "distributed with this work for additional information\n" + "regarding copyright ownership.  The ASF licenses this file\n" + "to you under the Apache License, Version 2.0 (the\n" + "\"License\"); you may not use this file except in compliance\n" + "with the License.  You may obtain a copy of the License at\n\n" + "    https://www.apache.org/licenses/LICENSE-2.0\n\n" + "Unless required by applicable law or agreed to in writing, software\n" + "distributed under the License is distributed on an \"AS IS\" BASIS,\n" + "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n" + "See the License for the specific language governing permissions and\n" + "limitations under the License." + "\"\nDid you mean to use a multiline comment ( /* ... */ ) instead?", mas foi diferente.
+A string err.toString() não contém "Need count (--count)".
+A string err.toString() não contém "Compression codec (default: deflate)".
+O valor de i era esperado como COUNT, mas foi diferente.
+O tamanho de WordCountUtil.COUNTS era esperado como numWords, mas foi diferente.
+O tamanho do array files era esperado como 4, mas foi diferente.
+A string warnings era esperada como "Warning: Found documentation comment at line 19, column 1. Ignoring previous one at line 1, column 1: \"" + "Licensed to the Apache Software Foundation (ASF) under one\n" + "or more contributor license agreements.  See the NOTICE file\n" + "distributed with this work for additional information\n" + "regarding copyright ownership.  The ASF licenses this file\n" + "to you under the Apache License, Version 2.0 (the\n" + "\"License\"); you may not use this file except in compliance\n" + "with the License.  You may obtain a copy of the License at\n\n" + "    https://www.apache.org/licenses/LICENSE-2.0\n\n" + "Unless required by applicable law or agreed to in writing, software\n" + "distributed under the License is distributed on an \"AS IS\" BASIS,\n" + "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n" + "See the License for the specific language governing permissions and\n" + "limitations under the License." + "\"\nDid you mean to use a multiline comment ( /* ... */ ) instead?", mas foi diferente.
+O valor de returnCode era esperado como 1, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O valor de out.toString() era esperado como "220" + System.lineSeparator(), mas foi diferente.
+O valor de baos.toString(UTF8).replace("\r", "") era esperado como json, mas foi diferente.
+O valor de baos.toString(UTF8) era esperado como avro, mas foi diferente.
+A string baos.toString() não contém "Compression codec (default: deflate)".
+O iterador r ainda possui elementos.
+O tamanho dos arquivos defaultOutputFile e nullOutputFile são diferentes.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O número de linhas em output era esperado como LIMIT_WITHIN_INPUT_BOUNDS, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O número de linhas em output era esperado como LIMIT_WITHIN_INPUT_BOUNDS, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O número de linhas em output era esperado como LIMIT_WITHIN_INPUT_BOUNDS, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O número de linhas em output era esperado como ROWS_IN_INPUT_FILES - OFFSET, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+A string baos1.toString("UTF-8").replace("\r", "") não termina com "hello\t{\"greeting\":\"Hi!\"}\n".
+O valor de baos2.toString("UTF-8").replace("\r", "") era esperado como "\"Hello!\"\n", mas foi diferente.
+O valor de codec.toString() era esperado como String.format("zstandard[%d]", level), mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O número de linhas em output era esperado como ROWS_IN_INPUT_FILES * 3, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O número de linhas em output era esperado como ROWS_IN_INPUT_FILES * 3, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O número de linhas em output era esperado como ROWS_IN_INPUT_FILES * 3, mas foi diferente.
+As classes dos codecs de input1 e output são diferentes.
+O valor de returnCode era esperado como 1, mas foi diferente.
+O valor de returnCode era esperado como 2, mas foi diferente.
+O valor de returnCode era esperado como 3, mas foi diferente.
+O valor de returnCode era esperado como 0, mas foi diferente.
+O valor de in.tell() era esperado como 0, mas foi diferente.
+O valor de in.length() era esperado como 0, mas foi diferente.
+O tamanho do array bytes era esperado como 1, mas foi diferente.
+O valor de bytes[0] era esperado como 0, mas foi diferente.
+O valor de in.readInt() era esperado como 0, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.readLong() era esperado como sentinel, mas foi diferente.
+O valor de in.getRowCount() era esperado como 0, mas foi diferente.
+O valor de in.getColumnCount() era esperado como 0, mas foi diferente.
+O valor de in.getRowCount() era esperado como 0, mas foi diferente.
+O valor de in.getColumnCount() era esperado como 1, mas foi diferente.
+O valor de in.getRowCount() era esperado como COUNT, mas foi diferente.
+O valor de in.getColumnCount() era esperado como 1, mas foi diferente.
+O valor de count era esperado como COUNT, mas foi diferente.
+O valor de in.getRowCount() era esperado como COUNT, mas foi diferente.
+O valor de in.getColumnCount() era esperado como 1, mas foi diferente.
+O valor de count era esperado como COUNT, mas foi diferente.
+O valor de in.getRowCount() era esperado como COUNT, mas foi diferente.
+O valor de in.getColumnCount() era esperado como 1, mas foi diferente.
+O valor de count era esperado como COUNT, mas foi diferente.
+O valor de in.getRowCount() era esperado como COUNT, mas foi diferente.
+O valor de in.getColumnCount() era esperado como 2, mas foi diferente.
+O valor de count era esperado como COUNT, mas foi diferente.
+O valor de min era esperado como 0, mas foi diferente.
+O valor de max era esperado como maior que 1024 * 32, mas foi diferente.
+O valor de average era esperado como maior que 16.0f, mas foi diferente.
+O valor de average era esperado como menor que 64.0f, mas foi diferente.
+O valor de compressedSize era esperado como maior que 0, mas foi diferente.
+O valor de compressedSize era esperado como menor que inputSize ou codec igual a "null", mas foi diferente.
+Os buffers decompressedBuffer e inputByteBuffer são diferentes.
+O valor de compressedSize era esperado como maior que 0, mas foi diferente.
+Os buffers decompressedBuffer e inputByteBuffer são diferentes.

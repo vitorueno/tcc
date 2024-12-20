@@ -1,0 +1,61 @@
+eram esperados valores nulos, porém p1.getUnderlyingDataset() não é nulo
+eram esperados valores iguais, mas 0 é diferente de p1.getItemCount()
+era esperado que a lista de chaves estivesse vazia, mas p1.getKeys() não está vazio
+eram esperados valores nulos, porém "R1" não é nulo em p1.getValue("R1")
+eram esperados valores iguais, mas 1.1 é diferente de d1.getValue("C1")
+eram esperados valores iguais, mas 2.2 é diferente de d1.getValue("C2")
+eram esperados valores iguais, mas "C1" é diferente de d1.getKey(0)
+eram esperados valores iguais, mas "C2" é diferente de d1.getKey(1)
+eram esperados valores iguais, mas 0 é diferente de d1.getIndex("C1")
+eram esperados valores iguais, mas 1 é diferente de d1.getIndex("C2")
+eram esperados valores iguais, mas -1 é diferente de d1.getIndex("XX")
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os objetos fossem iguais, mas não são
+era esperado que os valores fossem iguais, mas não são
+era esperado que os valores fossem iguais, mas não são
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+false era esperado que fosse falso, mas não é
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+false era esperado que fosse falso, mas não é
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+os objetos são diferentes
+as classes dos objetos são diferentes
+os objetos são iguais
+os objetos são diferentes
+as classes dos objetos são diferentes
+os objetos são iguais
+era esperado que os objetos fossem nulos, mas não são
+era esperado que os valores fossem iguais, mas não são
+true era esperado que fosse verdadeiro, mas não foi
+true era esperado que fosse verdadeiro, mas não foi
+os objetos são iguais
+os objetos são iguais
+os objetos vazios são iguais
+os objetos são iguais
+os objetos são diferentes
+as classes dos objetos são diferentes
+os objetos são iguais
+os objetos são diferentes
+os objetos são iguais
+os objetos são diferentes
+as classes dos objetos são diferentes
+os objetos são iguais
+era esperado o valor 99.9, mas o valor foi diferente
+era esperado o valor 99.9, mas o valor foi diferente

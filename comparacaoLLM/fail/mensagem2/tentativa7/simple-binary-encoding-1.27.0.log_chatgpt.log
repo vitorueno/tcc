@@ -1,0 +1,102 @@
+eram esperados valores iguais, mas "{\n" + "    \"serialNumber\": 1234,\n" + "    \"modelYear\": 2013,\n" + "    \"available\": \"T\",\n" + "    \"code\": \"A\",\n" + "    \"someNumbers\": [0, 1, 2, 3, 4],\n" + "    \"vehicleCode\": \"ab\\\"def\",\n" + "    \"extras\": { \"sunRoof\": false, \"sportsPack\": true, \"cruiseControl\": true },\n" + "    \"engine\": \n" + "    {\n" + "        \"capacity\": 2000,\n" + "        \"numCylinders\": 4,\n" + "        \"maxRpm\": 9000,\n" + "        \"manufacturerCode\": \"123\",\n" + "        \"fuel\": \"Petrol\"\n" + "    },\n" + "    \"uuid\": [7, 3],\n" + "    \"cupHolderCount\": 5,\n" + "    \"fuelFigures\": [\n" + "    {\n" + "        \"speed\": 30,\n" + "        \"mpg\": 35.9\n" + "    },\n" + "    {\n" + "        \"speed\": 55,\n" + "        \"mpg\": 49.0\n" + "    },\n" + "    {\n" + "        \"speed\": 75,\n" + "        \"mpg\": 40.0\n" + "    }],\n" + "    \"performanceFigures\": [\n" + "    {\n" + "        \"octaneRating\": 95,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 4.0\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.5\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 12.2\n" + "        }]\n" + "    },\n" + "    {\n" + "        \"octaneRating\": 99,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 3.8\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.1\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 11.8\n" + "        }]\n" + "    }],\n" + "    \"manufacturer\": \"Honda\",\n" + "    \"model\": \"Civic VTi\",\n" + "    \"activationCode\": \"315\\\\8\"", result) é diferente de "{\n" + "    \"serialNumber\": 1234,\n" + "    \"modelYear\": 2013,\n" + "    \"available\": \"T\",\n" + "    \"code\": \"A\",\n" + "    \"someNumbers\": [0, 1, 2, 3, 4],\n" + "    \"vehicleCode\": \"ab\\\"def\",\n" + "    \"extras\": { \"sunRoof\": false, \"sportsPack\": true, \"cruiseControl\": true },\n" + "    \"engine\": \n" + "    {\n" + "        \"capacity\": 2000,\n" + "        \"numCylinders\": 4,\n" + "        \"maxRpm\": 9000,\n" + "        \"manufacturerCode\": \"123\",\n" + "        \"fuel\": \"Petrol\"\n" + "    },\n" + "    \"uuid\": [7, 3],\n" + "    \"cupHolderCount\": 5,\n" + "    \"fuelFigures\": [\n" + "    {\n" + "        \"speed\": 30,\n" + "        \"mpg\": 35.9\n" + "    },\n" + "    {\n" + "        \"speed\": 55,\n" + "        \"mpg\": 49.0\n" + "    },\n" + "    {\n" + "        \"speed\": 75,\n" + "        \"mpg\": 40.0\n" + "    }],\n" + "    \"performanceFigures\": [\n" + "    {\n" + "        \"octaneRating\": 95,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 4.0\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.5\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 12.2\n" + "        }]\n" + "    },\n" + "    {\n" + "        \"octaneRating\": 99,\n" + "        \"acceleration\": [\n" + "        {\n" + "            \"mph\": 30,\n" + "            \"seconds\": 3.8\n" + "        },\n" + "        {\n" + "            \"mph\": 60,\n" + "            \"seconds\": 7.1\n" + "        },\n" + "        {\n" + "            \"mph\": 100,\n" + "            \"seconds\": 11.8\n" + "        }]\n" + "    }],\n" + "    \"manufacturer\": \"Honda\",\n" + "    \"model\": \"Civic VTi\",\n" + "    \"activationCode\": \"315\\\\8\""
+eram esperados valores iguais, mas "{\n" + "    \"login\": \"example\",\n" + "    \"encryptedPassword\": \"0b004061\"\n" + "}", result) é diferente de "{\n" + "    \"login\": \"example\",\n" + "    \"encryptedPassword\": \"0b004061\"\n" + "}", result)
+eram esperados valores iguais, mas "For input string: \"" + value + "\"", exception.getMessage()) é diferente de "For input string: \"" + value + "\"", exception.getMessage())
+eram esperados valores iguais, mas "had 4 errors", exception.getMessage()) é diferente de "had 4 errors", exception.getMessage())
+esperado não nulo, mas description é nulo
+esperado não nulo, mas map.get("testType").semanticType() é nulo
+esperado não nulo, mas ((EncodedDataType) map.get("testTypeDefaultCharMinValue")).minValue() é nulo
+esperado não nulo, mas ((EncodedDataType) map.get("testTypeDefaultCharMaxValue")).maxValue() é nulo
+esperado não nulo, mas ((EncodedDataType) map.get("testTypeDefaultCharNullValue")).nullValue() é nulo
+Exceção esperada IllegalStateException
+esperado não nulo, mas fields é nulo
+esperado não nulo, mas fields.get(1).dimensionType() é nulo
+esperado não nulo, mas groupFields é nulo
+esperado não nulo, mas testResource é nulo
+esperado não nulo, mas messageSchema.getType("Symbol") é nulo
+Exceção esperada IllegalStateException
+esperado não nulo, mas fields.get(1).type() é nulo
+esperado não nulo, mas fields.get(1).type() é nulo
+esperado não nulo, mas fields.get(1).type() é nulo
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+esperado verdadeiro, mas varDataField.isVariableLength() é falso
+esperado nulo, mas fields.get(1).type() não é nulo
+esperado nulo, mas fields.get(1).type() não é nulo
+esperado nulo, mas fields.get(1).type() não é nulo
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+Exceção esperada IllegalStateException
+assertThat(SchemaTransformer.IDENTITY_TRANSFORMER).isSameAs(schemaTransformerFactory.delegate())
+assertThat(SchemaTransformer.IDENTITY_TRANSFORMER).isSameAs(schemaTransformerFactory.delegate())
+assertThat(delegate).isInstanceOf(SinceVersionSchemaTransformer.class)
+esperado 5, mas transformer.sinceVersion() é 0
+assertThat(delegate).isInstanceOf(IdKeyedSchemaTransformer.class)
+esperado 20, mas schemaTransformer1.sinceVersion() é 0
+esperado 32, mas schemaTransformer4.sinceVersion() é 0
+esperado 5, mas schemaTransformerDefault.sinceVersion() é 0
+esperado 'a', mas (char) aByte é diferente de 'a'
+esperado "97", mas Byte.toString(aByte) é diferente de "97"
+esperado "65_u8", mas generateRustLiteral(CHAR, "65") é diferente de "65_u8"
+esperado "64.1_f64", mas generateRustLiteral(DOUBLE, "64.1") é diferente de "64.1_f64"
+esperado "f64::NAN", mas generateRustLiteral(DOUBLE, "NaN") é diferente de "f64::NAN"
+esperado "64.1_f32", mas generateRustLiteral(FLOAT, "64.1") é diferente de "64.1_f32"
+esperado "f32::NAN", mas generateRustLiteral(FLOAT, "NaN") é diferente de "f32::NAN"
+esperado "65_i8", mas generateRustLiteral(INT8, "65") é diferente de "65_i8"
+esperado "65_i16", mas generateRustLiteral(INT16, "65") é diferente de "65_i16"
+esperado "65_i32", mas generateRustLiteral(INT32, "65") é diferente de "65_i32"
+esperado "65_i64", mas generateRustLiteral(INT64, "65") é diferente de "65_i64"
+esperado "0x41_u8", mas generateRustLiteral(UINT8, "65") é diferente de "0x41_u8"
+esperado "0x41_u16", mas generateRustLiteral(UINT16, "65") é diferente de "0x41_u16"
+esperado "0x41_u32", mas generateRustLiteral(UINT32, "65") é diferente de "0x41_u32"
+esperado "0x41_u64", mas generateRustLiteral(UINT64, "65") é diferente de "0x41_u64"
+esperado "0xff_u8", mas generateRustLiteral(UINT8, UINT8.nullValue().toString()) é diferente de "0xff_u8"
+esperado "0xffff_u16", mas generateRustLiteral(UINT16, UINT16.nullValue().toString()) é diferente de "0xffff_u16"
+esperado "0xffffffff_u32", mas generateRustLiteral(UINT32, UINT32.nullValue().toString()) é diferente de "0xffffffff_u32"
+esperado "0xffffffffffffffff_u64", mas generateRustLiteral(UINT64, UINT64.nullValue().toString()) é diferente de "0xffffffffffffffff_u64"
+esperado "ABee", mas cleanUpperAcronyms("ABee") é diferente de "ABee"
+esperado "mdEntryTypeBook", mas cleanUpperAcronyms("MDEntryTypeBook") é diferente de "mdEntryTypeBook"
+esperado "MD_EntryTypeBook", mas cleanUpperAcronyms("MD_EntryTypeBook") é diferente de "MD_EntryTypeBook"
+esperado "price9Book", mas cleanUpperAcronyms("PRICE9Book") é diferente de "price9Book"
+esperado "", mas formatFunctionName("") é diferente de ""
+esperado "a", mas formatFunctionName("a") é diferente de "a"
+esperado "a", mas formatFunctionName("A") é diferente de "a"
+esperado "car", mas formatFunctionName("Car") é diferente de "car"
+esperado "car", mas formatFunctionName("car") é diferente de "car"
+esperado "decode_car", mas formatFunctionName("DecodeCar") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("decodeCar") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("decode_car") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("Decode_car") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("decode_Car") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("Decode_Car") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("DECODE_Car") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("DECODE_car") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("DECODECar") é diferente de "decode_car"
+esperado "decode_car", mas formatFunctionName("DECODE_CAR") é diferente de "decode_car"
+esperado "decode_ca_r", mas formatFunctionName("DECODE_caR") é diferente de "decode_ca_r"
+esperado "pricenull_9", mas formatFunctionName("PRICENULL9") é diferente de "pricenull_9"
+esperado "price_9_book", mas formatFunctionName("PRICE9Book") é diferente de "price_9_book"
+esperado "issue_435", mas formatFunctionName("issue435") é diferente de "issue_435"
+esperado "upper_case", mas formatFunctionName("UPPERCase") é diferente de "upper_case"
+esperado "no_md_entries", mas formatFunctionName("NoMDEntries") é diferente de "no_md_entries"
+esperado "md_entry_type_book", mas formatFunctionName("MD_EntryTYPEBook") é diferente de "md_entry_type_book"
+esperado "cl_ord_id", mas formatFunctionName("ClOrdID") é diferente de "cl_ord_id"
+esperado "ab_c", mas formatFunctionName("aBc") é diferente de "ab_c"
+esperado "ab_cd", mas formatFunctionName("aBcD") é diferente de "ab_cd"
+esperado "ab_cd", mas formatFunctionName("aB_cD") é diferente de "ab_cd"
+esperado "ab_cd", mas formatFunctionName("AbCd") é diferente de "ab_cd"
+esperado verdadeiro, mas containsCodeWithSinceVersion(sources, versionIncluded) é falso
+esperado verdadeiro, mas doesNotContainsCodeWithSinceVersion(sources, versionExcluded) é falso
+eram esperados valores iguais, mas "[Car]" + "(sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):" + "serialNumber=1234|modelYear=2013|available=T|code=A|" + "someNumbers=[0,1,2,3,4]|" + "vehicleCode=ab\"def|" + "extras={sportsPack,cruiseControl}|" + "engine=(capacity=2000|numCylinders=4|manufacturerCode=123|)|" + "uuid=[7,3]|cupHolderCount=5|" + "fuelFigures=[" + "(speed=30|mpg=35.9)," + "(speed=55|mpg=49.0)," + "(speed=75|mpg=40.0)]|" + "performanceFigures=[" + "(octaneRating=95|acceleration=[(mph=30|seconds=4.0),(mph=60|seconds=7.5),(mph=100|seconds=12.2)])," + "(octaneRating=99|acceleration=[(mph=30|seconds=3.8),(mph=60|seconds=7.1),(mph=100|seconds=11.8)])]|" + "manufacturer='Honda'|model='Civic VTi'|activationCode=''", result) é diferente de "[Car]" + "(sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):" + "serialNumber=1234|modelYear=2013|available=T|code=A|" + "someNumbers=[0,1,2,3,4]|" + "vehicleCode=ab\"def|" + "extras={sportsPack,cruiseControl}|" + "engine=(capacity=2000|numCylinders=4|manufacturerCode=123|)|" + "uuid=[7,3]|cupHolderCount=5|" + "fuelFigures=[" + "(speed=30|mpg=35.9)," + "(speed=55|mpg=49.0)," + "(speed=75|mpg=40.0)]|" + "performanceFigures=[" + "(octaneRating=95|acceleration=[(mph=30|seconds=4.0),(mph=60|seconds=7.5),(mph=100|seconds=12.2)])," + "(octaneRating=99|acceleration=[(mph=30|seconds=3.8),(mph=60|seconds=7.1),(mph=100|seconds=11.8)])]|" + "manufacturer='Honda'|model='Civic VTi'|activationCode=''"
+eram esperados valores iguais, mas "[Car]" + "(sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):" + "serialNumber=0|modelYear=0|available=F|code=NULL_VAL|someNumbers=[0,0,0,0,0]|vehicleCode=|extras={}|" + "engine=(capacity=0|numCylinders

@@ -1,0 +1,100 @@
+A string "{\"serialNumber\": 1234,\"modelYear\": 2013,\"available\": \"T\",\"code\": \"A\",\"someNumbers\": [0, 1, 2, 3, 4],\"vehicleCode\": \"ab\\\"def\",\"extras\": { \"sunRoof\": false, \"sportsPack\": true, \"cruiseControl\": true },\"engine\": {\"capacity\": 2000,\"numCylinders\": 4,\"maxRpm\": 9000,\"manufacturerCode\": \"123\",\"fuel\": \"Petrol\"},\"uuid\": [7, 3],\"cupHolderCount\": 5,\"fuelFigures\": [{\"speed\": 30,\"mpg\": 35.9},{\"speed\": 55,\"mpg\": 49.0},{\"speed\": 75,\"mpg\": 40.0}],    \"performanceFigures\": [{\"octaneRating\": 95,\"acceleration\": [{\"mph\": 30,\"seconds\": 4.0},{            \"mph\": 60,\"seconds\": 7.5},{\"mph\": 100,\"seconds\": 12.2}]},{\"octaneRating\": 99,\"acceleration\": [{\"mph\": 30,\"seconds\": 3.8},{\"mph\": 60,\"seconds\": 7.1},{\"mph\": 100,\"seconds\": 11.8}]}],    \"manufacturer\": \"Honda\",\"model\": \"Civic VTi\",\"activationCode\": \"315\\\\8\"}" esperada é diferente da string retornada.
+A string "{\"login\": \"example\",\"encryptedPassword\": \"0b004061\"}" esperada é diferente da string retornada.
+A mensagem de exceção "For input string: \"" + value + "\"" esperada é diferente da mensagem retornada.
+A mensagem de exceção "had 4 errors" esperada é diferente da mensagem retornada.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+O valor de filteringVersion esperado é diferente do valor de transformedSchema.version().
+Era esperado um valor nulo, mas o valor obtido foi diferente de nulo.
+O tipo semântico esperado para map.get("testType") é nulo, mas o valor obtido foi diferente de nulo.
+O valor mínimo esperado para ((EncodedDataType) map.get("testTypeDefaultCharMinValue")) é nulo, mas o valor obtido foi diferente de nulo.
+O valor máximo esperado para ((EncodedDataType) map.get("testTypeDefaultCharMaxValue")) é nulo, mas o valor obtido foi diferente de nulo.
+O valor nulo esperado para ((EncodedDataType) map.get("testTypeDefaultCharNullValue")) é diferente do valor obtido.
+Esperava-se uma exceção IllegalStateException.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+Era esperado um valor não nulo para fields.get(1).dimensionType(), mas o valor obtido foi nulo.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+Era esperado um valor não nulo, mas o valor obtido foi nulo.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException.
+Esperava-se uma exceção IllegalStateException.
+Esperava-se uma exceção IllegalStateException.
+Esperava-se uma exceção IllegalStateException.
+Esperava-se uma exceção IllegalStateException.
+Esperava-se uma exceção IllegalStateException.
+Esperava-se uma exceção IllegalStateException.
+Esperava-se uma exceção IllegalStateException.
+O valor booleano esperado é verdadeiro, mas o valor obtido foi falso.
+Era esperado um valor nulo para fields.get(1).type(), mas o valor obtido foi diferente de nulo.
+Era esperado um valor nulo para fields.get(1).type(), mas o valor obtido foi diferente de nulo.
+Era esperado um valor nulo para fields.get(1).type(), mas o valor obtido foi diferente de nulo.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+Esperava-se uma exceção IllegalStateException. A execução falhou por uma causa deliberada.
+O objeto esperado é idêntico ao objeto obtido.
+O objeto esperado é idêntico ao objeto obtido.
+Era esperado uma instância de SinceVersionSchemaTransformer, mas o valor obtido foi diferente.
+O valor inteiro esperado é 5, mas o valor obtido foi diferente.
+Era esperado uma instância de IdKeyedSchemaTransformer, mas o valor obtido foi diferente.
+O valor inteiro esperado é 20, mas o valor obtido foi diferente.
+O valor inteiro esperado é 32, mas o valor obtido foi diferente.
+O valor inteiro esperado é 5, mas o valor obtido foi diferente.
+O caractere esperado 'a' é diferente do caractere obtido.
+A representação em string do byte esperado "97" é diferente da representação obtida.
+A representação literal Rust esperada "65_u8" é diferente da representação obtida.
+A representação literal Rust esperada "64.1_f64" é diferente da representação obtida.
+A representação literal Rust esperada "f64::NAN" é diferente da representação obtida.
+A representação literal Rust esperada "64.1_f32" é diferente da representação obtida.
+A representação literal Rust esperada "f32::NAN" é diferente da representação obtida.
+A representação literal Rust esperada "65_i8" é diferente da representação obtida.
+A representação literal Rust esperada "65_i16" é diferente da representação obtida.
+A representação literal Rust esperada "65_i32" é diferente da representação obtida.
+A representação literal Rust esperada "65_i64" é diferente da representação obtida.
+A representação literal Rust esperada "0x41_u8" é diferente da representação obtida.
+A representação literal Rust esperada "0x41_u16" é diferente da representação obtida.
+A representação literal Rust esperada "0x41_u32" é diferente da representação obtida.
+A representação literal Rust esperada "0x41_u64" é diferente da representação obtida.
+A representação literal Rust esperada "0xff_u8" é diferente da representação obtida.
+A representação literal Rust esperada "0xffff_u16" é diferente da representação obtida.
+A representação literal Rust esperada "0xffffffff_u32" é diferente da representação obtida.
+A representação literal Rust esperada "0xffffffffffffffff_u64" é diferente da representação obtida.
+A string "ABee" esperada é diferente da string retornada.
+A string "mdEntryTypeBook" esperada é diferente da string retornada.
+A string "MD_EntryTypeBook" esperada é diferente da string retornada.
+A string "price9Book" esperada é diferente da string retornada.
+A string "" esperada é diferente da string retornada.
+A string "a" esperada é diferente da string retornada.
+A string "a" esperada é diferente da string retornada.
+A string "car" esperada é diferente da string retornada.
+A string "car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_car" esperada é diferente da string retornada.
+A string "decode_ca_r" esperada é diferente da string retornada.
+A string "pricenull_9" esperada é diferente da string retornada.
+A string "price_9_book" esperada é diferente da string retornada.
+A string "issue_435" esperada é diferente da string retornada.
+A string "upper_case" esperada é diferente da string retornada.
+A string "no_md_entries" esperada é diferente da string retornada.
+A string "md_entry_type_book" esperada é diferente da string retornada.
+A string "cl_ord_id" esperada é diferente da string retornada.
+A string "ab_c" esperada é diferente da string retornada.
+A string "ab_cd" esperada é diferente da string retornada.
+A string "ab_cd" esperada é diferente da string retornada.
+A string "ab_cd" esperada é diferente da string retornada.
+O valor booleano esperado é verdadeiro, mas o valor obtido foi falso.
+O valor booleano esperado é verdadeiro, mas o valor obtido foi falso.
+A string "[Car](sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):serialNumber=1234|modelYear=2013|available=T|code=A|someNumbers=[0,1,2,3,4]|vehicleCode=ab\"def|extras={sportsPack,cruiseControl}|engine=(capacity=2000|numCylinders=4|manufacturerCode=123|)|uuid=[7,3]|cupHolderCount=5|fuelFigures=[(speed=30|mpg=35.9),(speed=55|mpg=49.0),(speed=75|mpg=40.0)]|performanceFigures=[(octaneRating=95|acceleration=[(mph=30|seconds=4.0),(mph=60|seconds=7.5),(mph=100|seconds=12.2)]),(octaneRating=99|acceleration=[(mph=30|seconds=3.8),(mph=60|seconds=7.1),(mph=100|seconds=11.8)])]|manufacturer='Honda'|model='Civic VTi'|activationCode='315\\8'" esperada é diferente da string retornada.
+A string "[Car](sbeTemplateId=1|sbeSchemaId=1|sbeSchemaVersion=2|sbeBlockLength=62):serialNumber=0|modelYear=0|available=F|code=NULL_VAL|someNumbers=[0,0,0,0,0]|vehicleCode=|extras={}|engine=(capacity=0|numCylinders=0|manufacturerCode=|)|uuid=[0,0]|cupHolderCount=0|fuelFigures=[]|performanceFigures=[]|manufacturer=''|model=''|activationCode=''" esperada é diferente da string retornada.
