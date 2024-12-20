@@ -1,0 +1,31 @@
+
+Projeto: /home/vitor-otto/opensource/JDA-5.0.0-beta.5
+
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 164 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> command.addOption(OptionType.STRING, "other", "desc", true))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 168 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> subcommand.addOption(OptionType.STRING, "other", "desc", true))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 174 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new CommandDataImpl("invalid name", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 175 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new CommandDataImpl("invalidName", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 176 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new CommandDataImpl("valid_name", ""))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 178 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new SubcommandData("invalid name", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 179 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new SubcommandData("invalidName", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 180 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new SubcommandData("valid_name", ""))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 182 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new SubcommandGroupData("invalid name", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 183 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new SubcommandGroupData("invalidName", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 184 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new SubcommandGroupData("valid_name", ""))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 191 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> option.addChoice("invalid name", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 192 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> option.addChoice("invalidName", "Valid description"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 193 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> option.addChoice("valid_name", ""))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/CommandDataTest.java linha: 201 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> option.addChoice("name", 100))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 44 Método: Assertions.assertThrows(ParsingException.class, () -> DataPath.getLong(object, "foo"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 49 Método: Assertions.assertThrows(ParsingException.class, () -> DataPath.getObject(array, "[0]"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 60 Método: Assertions.assertThrows(IndexOutOfBoundsException.class, () -> DataPath.getDouble(array, "[1].foo"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 71 Método: Assertions.assertThrows(IndexOutOfBoundsException.class, () -> DataPath.getString(object, "foo[1]"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 82 Método: Assertions.assertThrows(IndexOutOfBoundsException.class, () -> DataPath.getUnsignedInt(array, "[0][1]"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 83 Método: Assertions.assertThrows(IndexOutOfBoundsException.class, () -> DataPath.getUnsignedInt(array, "[1][0]"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 84 Método: Assertions.assertThrows(ParsingException.class, () -> DataPath.getUnsignedInt(array, "[0][1]?"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 85 Método: Assertions.assertThrows(ParsingException.class, () -> DataPath.getUnsignedInt(array, "[1]?[0]"))
+Assert com mensagem: /home/vitor-otto/opensource/JDA-5.0.0-beta.5/src/test/java/DataPathTest.java linha: 99 Método: Assertions.assertThrows(ParsingException.class, () -> DataPath.getString(object, "array[0].wrong?.bar"))
+Total asserts: 388
+Asserts sem descrição: 363
+Asserts com descrição: 24
+Assertion Roulette: 355

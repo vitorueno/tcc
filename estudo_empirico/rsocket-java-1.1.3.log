@@ -1,0 +1,9 @@
+
+Projeto: /home/vitor-otto/opensource/rsocket-java-1.1.3
+
+Assert com mensagem: /home/vitor-otto/opensource/rsocket-java-1.1.3/rsocket-core/src/test/java/io/rsocket/PayloadAssert.java linha: 178 Método: Objects.instance().assertNotNull(info, actual)
+Assert com mensagem: /home/vitor-otto/opensource/rsocket-java-1.1.3/rsocket-core/src/test/java/io/rsocket/FrameAssert.java linha: 327 Método: Objects.instance().assertNotNull(info, actual)
+Total asserts: 1542
+Asserts sem descrição: 1540
+Asserts com descrição: 2
+Assertion Roulette: 1366

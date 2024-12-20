@@ -1,0 +1,15 @@
+
+Projeto: /home/vitor-otto/opensource/ripme-1.7.95
+
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ripper/rippers/ImgurRipperTest.java linha: 75 Método: Assertions.assertTrue(album.images.size() >= 20, "Failed to find 20 files from " + album.url.toExternalForm() + ", only got " + album.images.size())
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ripper/rippers/ImgurRipperTest.java linha: 82 Método: Assertions.assertTrue(album.images.size() >= 100, "Failed to find 100 files from " + album.url.toExternalForm() + ", only got " + album.images.size())
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ripper/rippers/VideoRippersTest.java linha: 32 Método: Assertions.assertFalse(oldURL.equals(ripper.getURL()), "Failed to find download url for " + oldURL)
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ripper/rippers/VscoRipperTest.java linha: 47 Método: Assertions.assertEquals("jolly-roger/59035", ripper.getGID(url), "Failed to get GID")
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ripper/rippers/ChanRipperTest.java linha: 30 Método: Assertions.assertNotNull(ripper.getWorkingDir(), "Ripper for " + url + " did not have a valid working directory.")
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ripper/rippers/RippersTest.java linha: 35 Método: Assertions.assertTrue(ripper.getWorkingDir().listFiles().length >= 1, "Failed to download a single file from " + ripper.getURL())
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ripper/rippers/RippersTest.java linha: 68 Método: Assertions.assertTrue(foundUrls.size() >= 1, "Failed to find single url on page " + ripper.getURL())
+Assert com mensagem: /home/vitor-otto/opensource/ripme-1.7.95/src/test/java/com/rarchives/ripme/tst/ui/LabelsBundlesTest.java linha: 56 Método: assertTrue(defaultSet.contains(key), String.format("The key %s of %s is not in the default bundle", key, lang))
+Total asserts: 134
+Asserts sem descrição: 126
+Asserts com descrição: 8
+Assertion Roulette: 56

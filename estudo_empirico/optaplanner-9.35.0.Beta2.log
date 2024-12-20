@@ -1,0 +1,8 @@
+
+Projeto: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2
+
+Assert com mensagem: /home/vitor-otto/opensource/optaplanner-9.35.0.Beta2/optaplanner-quarkus-integration/optaplanner-quarkus/drl-integration-test/src/test/java/org/optaplanner/quarkus/drl/it/OptaPlannerTestResourceTest.java linha: 33 Método: Assertions.assertNotEquals(result.get("entity.0.fullValue"), result.get("entity.1.fullValue"), "Both entities have the same value. Maybe property reactive is set to ALWAYS?")
+Total asserts: 5214
+Asserts sem descrição: 5210
+Asserts com descrição: 1
+Assertion Roulette: 4764

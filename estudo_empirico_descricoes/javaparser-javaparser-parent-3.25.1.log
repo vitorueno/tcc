@@ -1,0 +1,469 @@
+
+Projeto: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1
+
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2162Test.java linha: 111 Método: assertEquals(0, parseResult.getProblems().size(), "Expected zero errors when attempting to parse the input code.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2162Test.java linha: 112 Método: assertTrue(parseResult.getResult().isPresent(), "Must have a parse result to run this test.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2162Test.java linha: 117 Método: assertEquals(1, classMethods.size(), "Expected only one class with this matching name.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2162Test.java linha: 120 Método: assertTrue(methodCallExprs.size() > 0, "Expected more than one method call.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2162Test.java linha: 140 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    assertEquals("V", javaParserFacade.solve(methodCallExprs.get(3)).getCorrespondingDeclaration().getReturnType().describe());
+}, "Exected this resolution to fail due to the chained methods -- `getView()` shouldn't exist on the return value from the first call to `getView()`.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3045Test.java linha: 63 Método: assertThrows(UnsolvedSymbolException.class, methodType.get()::resolve)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/InstanceOfTest.java linha: 246 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    final ResolvedMethodDeclaration resolve = outOfScopeMethodCall.resolve();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/InstanceOfTest.java linha: 262 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    final ResolvedMethodDeclaration resolve = outOfScopeMethodCall.resolve();
+}, "Error: Variable defined within a pattern expression is used before it is declared - should not be resolved, but is.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/InstanceOfTest.java linha: 312 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    final ResolvedMethodDeclaration resolve = outOfScopeMethodCall.resolve();
+}, "Error: Variable defined within a pattern expression should not be available on the right hand side of an || operator.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/InstanceOfTest.java linha: 414 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    final ResolvedMethodDeclaration resolve = outOfScopeMethodCall.resolve();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/InstanceOfTest.java linha: 442 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    final ResolvedMethodDeclaration resolve = outOfScopeMethodCall.resolve();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/InstanceOfTest.java linha: 547 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    final ResolvedMethodDeclaration resolve = outOfScopeMethodCall.resolve();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/CombinedTypeSolverTest.java linha: 100 Método: assertFalse(expectForward, "Exception, but we expected forwarding")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/CombinedTypeSolverTest.java linha: 98 Método: assertTrue(expectForward, "Forwarded, but we expected an exception")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/CombinedTypeSolverTest.java linha: 133 Método: assertThrows(NullPointerException.class, () -> new CombinedTypeSolver(ExceptionHandlers.IGNORE_NONE, childSolvers, null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest.java linha: 187 Método: assertDoesNotThrow(tasks::join, "JavaParserTypeSolve should work properly when called from multiple threads.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/ReflectionTypeSolverTest.java linha: 73 Método: Assertions.assertThrows(UnsolvedSymbolException.class, () -> unit.accept(new VoidVisitorAdapter<Object>() {
+
+    @Override
+    public void visit(ObjectCreationExpr exp, Object arg) {
+        super.visit(exp, arg);
+        exp.resolve().getSignature();
+    }
+}, null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/AbstractTypeSolverTest.java linha: 60 Método: assertThrows(IllegalStateException.class, () -> solver.setParent(solver))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/AbstractTypeSolverTest.java linha: 72 Método: assertThrows(IllegalStateException.class, () -> solver.setParent(parentSolver))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/TypeSolverBuilderTest.java linha: 44 Método: assertThrows(IllegalStateException.class, typeSolverBuilder::build)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/TypeSolverBuilderTest.java linha: 304 Método: assertTrue(typeSolver.hasType(className), String.format("Unable to solve type %s", className))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/TypeSolverBuilderTest.java linha: 314 Método: assertFalse(typeSolver.hasType(className), String.format("This type solver should not be able to solve type %s", className))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolverTest.java linha: 81 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    Path pathToJar2 = adaptPath("src/test/resources/jar2.jar");
+    JarTypeSolver jarTypeSolver2 = new JarTypeSolver(pathToJar2);
+    ResolvedReferenceTypeDeclaration b = jarTypeSolver2.tryToSolveType("foo.zum.B").getCorrespondingDeclaration();
+    b.getAncestors();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolverTest.java linha: 129 Método: assertThrows(UnsolvedSymbolException.class, () -> typeSolver.solveType("java.lang.Object"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolverTest.java linha: 144 Método: assertThrows(FileNotFoundException.class, () -> new JarTypeSolver(pathToJar))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnnotationsResolutionTest.java linha: 333 Método: assertTrue(hasAnnotation, "org.junit.runner.RunWith not found on reference type")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseJavaSymbolSolver060Test.java linha: 109 Método: assertEquals(0, sourceFileInfoExtractor.getFailures(), "No failures expected when analyzing " + path)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseJavaSymbolSolver060Test.java linha: 110 Método: assertEquals(0, sourceFileInfoExtractor.getUnsupported(), "No UnsupportedOperationException expected when analyzing " + path)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseJavaSymbolSolver060Test.java linha: 125 Método: assertEquals(expectedLines[i].trim(), outputLines[i].trim(), "Line " + (i + 1) + " of " + path + " is different from what is expected")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistEnumTest.java linha: 91 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    solvedSymbol.getCorrespondingDeclaration();
+}, "Expected UnsolvedSymbolException when requesting CorrespondingDeclaration on unsolved SymbolRefernce")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/VariadicResolutionTest.java linha: 114 Método: assertThrows(RuntimeException.class, () -> {
+    MethodUsage call5 = javaParserFacade.solveMethodAsUsage(calls.get(4));
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 71 Método: assertEquals("extends_duplicate.DuplicateTypeName", qualifiedName, "Error - not resolved to the class in the package.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 72 Método: assertNotEquals("extends_duplicate.A.DuplicateTypeName", qualifiedName, "Error - mistakenly resolved to a nested class instead of the expected class.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 101 Método: assertEquals("implements_duplicate.DuplicateTypeName", qualifiedName, "Error - not resolved to interface in the package.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 102 Método: assertNotEquals("implements_duplicate.A.DuplicateTypeName", qualifiedName, "Error - mistakenly resolved to a nested class instead of the expected interface.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 119 Método: assertEquals("another.A", qualifiedName, "Error - not resolved to a class.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 120 Método: assertNotEquals("another.MyEnum.A", qualifiedName, "Error - mistakenly resolved to an enum member instead of the expected class.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 137 Método: assertEquals("another.A", qualifiedName, "Error - not resolved to the imorted class.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 138 Método: assertNotEquals("main.A", qualifiedName, "Error - mistakenly resolved to a package member insted of the explicitly imported class.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 155 Método: assertEquals("main.A", qualifiedName, "Error - not resolved to a package member.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 156 Método: assertNotEquals("another.A", qualifiedName, "Error - mistakenly resolved to an asterisk-imported class instead of the expected package member.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 173 Método: assertEquals("another.String", qualifiedName, "Error - not resolved to an asterisk-imported class.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 174 Método: assertNotEquals("java.lang.String", qualifiedName, "Error - mistakenly resolved to a member of java.lang instead of a member of asterisk-imported package.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 201 Método: assertEquals("implements_duplicate.A.Formattable", qualifiedName, "Error - not resolved to local interface")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/TypeResolutionWithSameNameTest.java linha: 202 Método: assertNotEquals("java.util.Formattable", qualifiedName, "Error - mistakenly resolved to import used in implements")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistClassTest.java linha: 87 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    solvedSymbol.getCorrespondingDeclaration();
+}, "Expected UnsolvedSymbolException when requesting CorrespondingDeclaration on unsolved SymbolRefernce")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/MethodReferenceResolutionTest.java linha: 454 Método: assertEquals(0, errorCount, "Expected zero UnsolvedSymbolException s")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/MethodReferenceResolutionTest.java linha: 487 Método: assertEquals(0, errorCount, "Expected zero UnsolvedSymbolException s")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/MethodReferenceResolutionTest.java linha: 529 Método: assertEquals(0, errorCount, "Expected zero UnsolvedSymbolException s")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/MethodReferenceResolutionTest.java linha: 566 Método: assertEquals(0, errorCount, "Expected zero UnsolvedSymbolException s")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/DefaultPackageTest.java linha: 164 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    String code = "package myPackage; import B; class A extends B {}";
+    MemoryTypeSolver memoryTypeSolver = new MemoryTypeSolver();
+    memoryTypeSolver.addDeclaration("B", new MyClassDeclaration("B"));
+    ClassOrInterfaceType jpType = parse(code).getClassByName("A").get().getExtendedTypes(0);
+    ResolvedType resolvedType = JavaParserFacade.get(memoryTypeSolver).convertToUsage(jpType);
+    assertEquals("B", resolvedType.asReferenceType().getQualifiedName());
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/DefaultPackageTest.java linha: 177 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    String code = "package myPackage; class A extends B {}";
+    MemoryTypeSolver memoryTypeSolver = new MemoryTypeSolver();
+    memoryTypeSolver.addDeclaration("B", new MyClassDeclaration("B"));
+    ResolvedType resolvedType = JavaParserFacade.get(memoryTypeSolver).convertToUsage(parse(code).getClassByName("A").get().getExtendedTypes(0));
+    assertEquals("B", resolvedType.asReferenceType().getQualifiedName());
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/javaparser/contexts/MethodCallExprContextResolutionTest.java linha: 187 Método: assertEquals(0, errorCount, "Expected zero UnsolvedSymbolException s")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/javaparser/contexts/ClassOrInterfaceDeclarationContextResolutionTest.java linha: 408 Método: assertThrows(MethodAmbiguityException.class, () -> {
+    CompilationUnit cu = parseSample("ClassWithMethods");
+    ClassOrInterfaceDeclaration classOrInterfaceDeclaration = Navigator.demandClass(cu, "A");
+    Context context = new ClassOrInterfaceDeclarationContext(classOrInterfaceDeclaration, typeSolver);
+    SymbolReference<ResolvedMethodDeclaration> ref = context.solveMethod("foo5", ImmutableList.of(NullType.INSTANCE), false);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/javaparser/contexts/ClassOrInterfaceDeclarationContextResolutionTest.java linha: 488 Método: assertThrows(MethodAmbiguityException.class, () -> {
+    CompilationUnit cu = parseSample("ClassWithMethods");
+    ClassOrInterfaceDeclaration classOrInterfaceDeclaration = Navigator.demandClass(cu, "A");
+    Context context = new ClassOrInterfaceDeclarationContext(classOrInterfaceDeclaration, new ReflectionTypeSolver());
+    Optional<MethodUsage> ref = context.solveMethodAsUsage("foo5", ImmutableList.of(NullType.INSTANCE));
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/javaparser/VarTypeTest.java linha: 71 Método: assertThrows(IllegalStateException.class, () -> {
+    CompilationUnit ast = javaParser.parse(ParseStart.COMPILATION_UNIT, provider("class X{void x(){var abc;}}")).getResult().get();
+    VarType varType = ast.findFirst(VarType.class).get();
+    varType.resolve();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/javaparser/VarTypeTest.java linha: 81 Método: assertThrows(IllegalStateException.class, () -> {
+    CompilationUnit ast = javaParser.parse(ParseStart.COMPILATION_UNIT, provider("class X{void x(var x){};}")).getResult().get();
+    VarType varType = ast.findFirst(VarType.class).get();
+    varType.resolve();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/UnknownMethodsResolutionTest.java linha: 42 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    CompilationUnit cu = parseSample("UnknownMethods");
+    ClassOrInterfaceDeclaration clazz = Navigator.demandClass(cu, "UnknownMethods");
+    MethodDeclaration method = Navigator.demandMethod(clazz, "test1");
+    MethodCallExpr methodCallExpr = method.getBody().get().getStatement(0).asExpressionStmt().getExpression().asMethodCallExpr();
+    SymbolReference<ResolvedMethodDeclaration> ref = JavaParserFacade.get(new ReflectionTypeSolver()).solve(methodCallExpr);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/UnknownMethodsResolutionTest.java linha: 54 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    CompilationUnit cu = parseSample("UnknownMethods");
+    ClassOrInterfaceDeclaration clazz = Navigator.demandClass(cu, "UnknownMethods");
+    MethodDeclaration method = Navigator.demandMethod(clazz, "test2");
+    MethodCallExpr methodCallExpr = method.getBody().get().getStatement(1).asExpressionStmt().getExpression().asMethodCallExpr();
+    SymbolReference<ResolvedMethodDeclaration> ref = JavaParserFacade.get(new ReflectionTypeSolver()).solve(methodCallExpr);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistInterfaceTest.java linha: 81 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    solvedSymbol.getCorrespondingDeclaration();
+}, "Expected UnsolvedSymbolException when requesting CorrespondingDeclaration on unsolved SymbolRefernce")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 671 Método: assertEquals(expectedNumber, JavaParserFactory.getContext(parent, typeSolver).parametersExposedToChild(child).stream().filter(p -> p.getNameAsString().equals(paramName)).count(), "[" + paramName + "]: " + message)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 687 Método: assertEquals(expectedNumber, vars.stream().filter(p -> p.getNameAsString().equals(paramName)).count(), "[" + paramName + "]: " + message)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 700 Método: assertEquals(expectedNumber, vars.stream().filter(p -> p.getNameAsString().equals(patternExprName)).count(), "[" + patternExprName + "]: " + message)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 713 Método: assertEquals(expectedNumber, vars.stream().filter(p -> p.getNameAsString().equals(patternExprName)).count(), "[" + patternExprName + "]: " + message)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1044 Método: assertEquals(1, variables.size(), "Expected 1 variable -- issue with test configuration/sample?")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1067 Método: assertEquals(2, statements.size(), "Expected 2 statements -- issue with test configuration/sample?")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1080 Método: assertFalse(s.isSolved(), "s is not available -- it is not definitively true when in a separate statement.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1096 Método: assertEquals(3, statements.size(), "Expected 3 statements -- issue with test configuration/sample?")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1115 Método: assertFalse(s.isSolved(), "s is not available -- it is not definitively true when in a separate statement.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1129 Método: assertEquals(2, statements.size(), "Expected 2 statements -- issue with test configuration/sample?")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1142 Método: assertFalse(s.isSolved(), "s is not available -- it is not definitively true when in a separate statement.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1165 Método: assertEquals(1, variables.size(), "Expected 1 variable -- issue with test configuration/sample?")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1299 Método: assertTrue(symbolReference.isSolved(), "symbol not solved")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1301 Método: assertEquals("s", correspondingDeclaration.getName(), "unexpected name for the solved symbol")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1303 Método: assertEquals("s", correspondingDeclaration.asPattern().getName(), "unexpected name for the solved pattern")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1304 Método: assertEquals("java.lang.String", correspondingDeclaration.asPattern().getType().asReferenceType().getQualifiedName(), "unexpected type for the solved pattern")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1326 Método: assertFalse(symbolReference.isSolved(), "symbol supposed to be not solved")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ContextTest.java linha: 1347 Método: assertFalse(symbolReference.isSolved(), "symbol supposed to be not solved")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseNewJavaParserTest.java linha: 88 Método: assertEquals(0, sourceFileInfoExtractor.getFailures(), "No failures expected when analyzing " + path)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseNewJavaParserTest.java linha: 89 Método: assertEquals(0, sourceFileInfoExtractor.getUnsupported(), "No UnsupportedOperationException expected when analyzing " + path)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseNewJavaParserTest.java linha: 104 Método: assertEquals(expectedLines[i].trim(), outputLines[i].trim(), "Line " + (i + 1) + " of " + path + " is different from what is expected")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/types/ResolvedPrimitiveTypeTest.java linha: 52 Método: assertThrows(IllegalArgumentException.class, () -> ResolvedPrimitiveType.byName("unexisting"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseJavaParserTest.java linha: 86 Método: assertEquals(0, sourceFileInfoExtractor.getFailures(), "No failures expected when analyzing " + path)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseJavaParserTest.java linha: 87 Método: assertEquals(0, sourceFileInfoExtractor.getUnsupported(), "No UnsupportedOperationException expected when analyzing " + path)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/AnalyseJavaParserTest.java linha: 95 Método: assertEquals(expectedLines[i].trim(), outputLines[i].trim(), "Line " + (i + 1) + " of " + path + " is different from what is expected")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 150 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavaParserClassDeclaration compilationUnit = (JavaParserClassDeclaration) typeSolver.solveType("com.github.javaparser.ast.CompilationUnit");
+    compilationUnit.asInterface();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 158 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavaParserClassDeclaration compilationUnit = (JavaParserClassDeclaration) typeSolver.solveType("com.github.javaparser.ast.CompilationUnit");
+    compilationUnit.asEnum();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 459 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    JavaParserClassDeclaration constructorDeclaration = (JavaParserClassDeclaration) typeSolverNewCode.solveType("com.github.javaparser.ast.body.ConstructorDeclaration");
+    constructorDeclaration.getField("unexisting");
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 962 Método: assertTrue(compilationUnit.canBeAssignedTo(objectTypeDeclaration), "CompilationUnit should be reported as assignable to Object")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 965 Método: assertTrue(compilationUnit.canBeAssignedTo(cloneableTypeDeclaration), "CompilationUnit should be reported as assignable to Cloneable, because it extends Node which implements Cloneable")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 968 Método: assertTrue(compilationUnit.canBeAssignedTo(compilationUnit), "CompilationUnit should not be reported as assignable to CompilationUnit")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 969 Método: assertTrue(stringTypeDeclaration.canBeAssignedTo(stringTypeDeclaration), "String should not be reported as assignable to String")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 970 Método: assertTrue(objectTypeDeclaration.canBeAssignedTo(objectTypeDeclaration), "Object should be reported as assignable to Object")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 974 Método: assertFalse(cloneableTypeDeclaration.canBeAssignedTo(compilationUnit), "CloneableTypeDeclaration should not be reported as assignable to CompilationUnit")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 975 Método: assertFalse(objectTypeDeclaration.canBeAssignedTo(compilationUnit), "Object should not be reported as assignable to CompilationUnit")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 978 Método: assertFalse(compilationUnit.canBeAssignedTo(stringTypeDeclaration), "CompilationUnit should not be reported as assignable to String")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclarationTest.java linha: 981 Método: assertFalse(compilationUnit.canBeAssignedTo(serializableTypeDeclaration), "CompilationUnit should not be reported as assignable to Serializable")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclarationTest.java linha: 119 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavaParserEnumDeclaration modifier = (JavaParserEnumDeclaration) typeSolver.solveType("com.github.javaparser.ast.Modifier");
+    modifier.asClass();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclarationTest.java linha: 127 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavaParserEnumDeclaration modifier = (JavaParserEnumDeclaration) typeSolver.solveType("com.github.javaparser.ast.Modifier");
+    modifier.asInterface();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclarationTest.java linha: 433 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    JavaParserClassDeclaration constructorDeclaration = (JavaParserClassDeclaration) typeSolver.solveType("com.github.javaparser.ast.body.ConstructorDeclaration");
+    constructorDeclaration.getField("unexisting");
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclarationTest.java linha: 119 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavaParserInterfaceDeclaration nodeWithAnnotations = (JavaParserInterfaceDeclaration) typeSolver.solveType("com.github.javaparser.ast.nodeTypes.NodeWithAnnotations");
+    assertEquals(nodeWithAnnotations, nodeWithAnnotations.asClass());
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclarationTest.java linha: 133 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavaParserInterfaceDeclaration nodeWithAnnotations = (JavaParserInterfaceDeclaration) typeSolver.solveType("com.github.javaparser.ast.nodeTypes.NodeWithAnnotations");
+    nodeWithAnnotations.asEnum();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclarationTest.java linha: 436 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    JavaParserClassDeclaration constructorDeclaration = (JavaParserClassDeclaration) typeSolver.solveType("com.github.javaparser.ast.body.ConstructorDeclaration");
+    constructorDeclaration.getField("unexisting");
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserFieldDeclarationTest.java linha: 47 Método: assertThrows(IllegalArgumentException.class, () -> new JavaParserFieldDeclaration(variableDeclarator, null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2602Test.java linha: 73 Método: assertEquals(0, parseResult.getProblems().size(), "Expected zero errors when attempting to parse the input code.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2602Test.java linha: 74 Método: assertTrue(parseResult.getResult().isPresent(), "Must have a parse result to run this test.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue2602Test.java linha: 94 Método: assertFalse(thisDeclaration.canBeAssignedTo(secondDeclaration), "Both types should not be assignable")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclarationTest.java linha: 86 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    ReflectionEnumDeclaration modifier = (ReflectionEnumDeclaration) typeSolver.solveType("com.github.javaparser.symbolsolver.reflectionmodel.MyModifier");
+    modifier.asClass();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclarationTest.java linha: 94 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    ReflectionEnumDeclaration modifier = (ReflectionEnumDeclaration) typeSolver.solveType("com.github.javaparser.symbolsolver.reflectionmodel.MyModifier");
+    modifier.asInterface();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/InMemoryCacheTest.java linha: 58 Método: assertFalse(memoryCache.get(key).isPresent(), "No value expected at the moment")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/InMemoryCacheTest.java linha: 62 Método: assertTrue(cachedValue.isPresent(), "No value expected at the moment")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/InMemoryCacheTest.java linha: 63 Método: assertEquals(value, cachedValue.get(), "The values seem to be different")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/InMemoryCacheTest.java linha: 66 Método: assertFalse(memoryCache.get(key).isPresent(), "No value expected at the moment")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/InMemoryCacheTest.java linha: 120 Método: assertFalse(memoryCache.contains(key), "At this moment, the key should not exists.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/InMemoryCacheTest.java linha: 122 Método: assertTrue(memoryCache.contains(key), "At this moment, the key should be registered.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/InMemoryCacheTest.java linha: 124 Método: assertFalse(memoryCache.contains(key), "At this moment, the key should not exists.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 46 Método: assertThrows(NullPointerException.class, () -> new GuavaCache<String, String>(null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 67 Método: assertFalse(adapter.get(key).isPresent(), "No value expected at the moment")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 71 Método: assertTrue(cachedValue.isPresent(), "No value expected at the moment")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 72 Método: assertEquals(value, cachedValue.get(), "The values seem to be different")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 75 Método: assertFalse(adapter.get(key).isPresent(), "No value expected at the moment")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 129 Método: assertFalse(adapter.contains(key), "At this moment, the key should not exists.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 131 Método: assertTrue(adapter.contains(key), "At this moment, the key should be registered.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/cache/GuavaCacheAdapterTest.java linha: 133 Método: assertFalse(adapter.contains(key), "At this moment, the key should not exists.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue1480Test.java linha: 53 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    mce.resolve().getQualifiedName();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java linha: 72 Método: assertThrows(UnsolvedSymbolException.class, () -> getExpressionType(typeResolver, parseExpression("new Double[]{2.0d, 3.0d}[1]")))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java linha: 78 Método: assertThrows(UnsolvedSymbolException.class, () -> getExpressionType(typeResolver, parseExpression("new Float[]{2.0d, 3.0d}[1]")))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java linha: 88 Método: assertThrows(IllegalStateException.class, () -> getExpressionType(typeResolver, new FieldAccessExpr(new NameExpr("Locale"), "US")))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue1599Test.java linha: 66 Método: assertThrows(RuntimeException.class, () -> mce.get(1).calculateResolvedType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue1526Test.java linha: 68 Método: assertThrows(UnsolvedSymbolException.class, () -> {
+    doTest(root, file);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/resolution/SymbolReferenceTest.java linha: 108 Método: assertThrows(UnsolvedSymbolException.class, symbol::getCorrespondingDeclaration)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/VoidTypeTest.java linha: 100 Método: assertThrows(UnsupportedOperationException.class, () -> ResolvedVoidType.INSTANCE.asReferenceType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/VoidTypeTest.java linha: 105 Método: assertThrows(UnsupportedOperationException.class, () -> ResolvedVoidType.INSTANCE.asTypeParameter())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/VoidTypeTest.java linha: 110 Método: assertThrows(UnsupportedOperationException.class, () -> ResolvedVoidType.INSTANCE.asArrayType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/NullTypeTest.java linha: 100 Método: assertThrows(UnsupportedOperationException.class, () -> NullType.INSTANCE.asReferenceType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/NullTypeTest.java linha: 105 Método: assertThrows(UnsupportedOperationException.class, () -> NullType.INSTANCE.asTypeParameter())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/NullTypeTest.java linha: 110 Método: assertThrows(UnsupportedOperationException.class, () -> NullType.INSTANCE.asArrayType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/ReferenceTypeTest.java linha: 188 Método: assertThrows(UnsupportedOperationException.class, () -> object.asTypeParameter())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/ReferenceTypeTest.java linha: 193 Método: assertThrows(UnsupportedOperationException.class, () -> object.asArrayType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/ReferenceTypeTest.java linha: 309 Método: assertThrows(IllegalArgumentException.class, () -> {
+    intType.isCorrespondingBoxingType("String");
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/ArrayTypeTest.java linha: 114 Método: assertThrows(UnsupportedOperationException.class, () -> arrayOfBooleans.asReferenceType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/ArrayTypeTest.java linha: 119 Método: assertThrows(UnsupportedOperationException.class, () -> arrayOfBooleans.asTypeParameter())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/ArrayTypeTest.java linha: 124 Método: assertThrows(UnsupportedOperationException.class, () -> arrayOfBooleans.asPrimitive())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/WildcardUsageTest.java linha: 154 Método: assertThrows(UnsupportedOperationException.class, () -> unbounded.asArrayType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/WildcardUsageTest.java linha: 159 Método: assertThrows(UnsupportedOperationException.class, () -> unbounded.asReferenceType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/WildcardUsageTest.java linha: 164 Método: assertThrows(UnsupportedOperationException.class, () -> unbounded.asTypeParameter())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/WildcardUsageTest.java linha: 169 Método: assertThrows(UnsupportedOperationException.class, () -> unbounded.asPrimitive())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclarationTest.java linha: 124 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavassistClassDeclaration compilationUnit = (JavassistClassDeclaration) typeSolver.solveType("com.github.javaparser.ast.CompilationUnit");
+    compilationUnit.asInterface();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclarationTest.java linha: 132 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavassistClassDeclaration compilationUnit = (JavassistClassDeclaration) typeSolver.solveType("com.github.javaparser.ast.CompilationUnit");
+    compilationUnit.asEnum();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclarationTest.java linha: 111 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavassistInterfaceDeclaration nodeWithAnnotations = (JavassistInterfaceDeclaration) typeSolver.solveType("com.github.javaparser.ast.nodeTypes.NodeWithAnnotations");
+    nodeWithAnnotations.asClass();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclarationTest.java linha: 125 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    JavassistInterfaceDeclaration nodeWithAnnotations = (JavassistInterfaceDeclaration) typeSolver.solveType("com.github.javaparser.ast.nodeTypes.NodeWithAnnotations");
+    nodeWithAnnotations.asEnum();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclarationTest.java linha: 202 Método: assertFalse(typeB.isAssignableBy(typeA), "This should not be allowed:" + " NodeWithImplements<Object> node = new NodeWithImplements<? extends Object>()")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclarationTest.java linha: 204 Método: assertTrue(typeA.isAssignableBy(typeB), "This should be allowed:" + " NodeWithImplements<? extends Object> node = new NodeWithImplements<Object>()")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclarationTest.java linha: 226 Método: assertFalse(declarationA.isAssignableBy(declarationB), "This should not be allowed: B variable = new A()")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclarationTest.java linha: 227 Método: assertTrue(declarationB.isAssignableBy(declarationA), "This should be allowed: A variable = new B()")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumDeclarationTest.java linha: 95 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    ResolvedEnumDeclaration modifier = (ResolvedEnumDeclaration) typeSolver.solveType("com.github.javaparser.ast.Modifier");
+    modifier.asClass();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumDeclarationTest.java linha: 103 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    ResolvedEnumDeclaration modifier = (ResolvedEnumDeclaration) typeSolver.solveType("com.github.javaparser.ast.Modifier");
+    modifier.asInterface();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclarationTest.java linha: 39 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asClass)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclarationTest.java linha: 48 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asInterface)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclarationTest.java linha: 57 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asEnum)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclarationTest.java linha: 66 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asTypeParameter)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclarationTest.java linha: 75 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asReferenceType)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedDeclarationTest.java linha: 47 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asField)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedDeclarationTest.java linha: 56 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asMethod)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedDeclarationTest.java linha: 65 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asParameter)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedDeclarationTest.java linha: 74 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asPattern)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedDeclarationTest.java linha: 83 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asEnumConstant)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedDeclarationTest.java linha: 92 Método: assertThrows(UnsupportedOperationException.class, resolvedDeclaration::asType)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedTypeParametrizableTest.java linha: 44 Método: assertThrows(IllegalArgumentException.class, () -> typeParametrizable.findTypeParameter(null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/resolution/declarations/ResolvedValueDeclarationTest.java linha: 39 Método: assertNotNull(expectedTypeQualifiedName, resolvedDeclaration.getType().describe())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/PositionMappingTest.java linha: 119 Método: assertEquals(inPos, transfomedOutPos, "Position mismatch at '" + outPart + "' " + outPos + " -> '" + inPart + "' " + inPos + ".")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/PositionTest.java linha: 46 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new Position(-10, 1))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/PositionTest.java linha: 51 Método: Assertions.assertThrows(IllegalArgumentException.class, () -> new Position(1, -10))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/builders/CompilationUnitBuildersTest.java linha: 111 Método: assertThrows(IllegalArgumentException.class, () -> cu.addImport(new Comparator<Long>() {
+
+    @Override
+    public int compare(Long o1, Long o2) {
+        return o1.compareTo(o2);
+    }
+}.getClass()))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/builders/CompilationUnitBuildersTest.java linha: 130 Método: assertThrows(IllegalArgumentException.class, () -> cu.addImport(localClass))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/builders/FieldDeclarationBuildersTest.java linha: 43 Método: assertThrows(IllegalStateException.class, () -> new FieldDeclaration().createGetter())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/builders/FieldDeclarationBuildersTest.java linha: 48 Método: assertThrows(IllegalStateException.class, () -> new FieldDeclaration().createSetter())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/builders/FieldDeclarationBuildersTest.java linha: 107 Método: assertThrows(IllegalStateException.class, () -> {
+    FieldDeclaration myPrivateField = testClass.addPrivateField(int.class, "myField");
+    myPrivateField.getVariables().add(new VariableDeclarator(intType(), "secondField"));
+    myPrivateField.createGetter();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/builders/FieldDeclarationBuildersTest.java linha: 116 Método: assertThrows(IllegalStateException.class, () -> {
+    FieldDeclaration myPrivateField = testClass.addPrivateField(int.class, "myField");
+    myPrivateField.getVariables().add(new VariableDeclarator(intType(), "secondField"));
+    myPrivateField.createSetter();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/JavaTokenTest.java linha: 90 Método: assertEquals(tokenCount, JavaToken.Kind.values().length, "Error - mismatch between number of tokens.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/JavaTokenTest.java linha: 113 Método: assertEquals(javaccTokenNumber, jpTokenNumber, "Error - Likely need to rerun JP Generators following a grammar change." + "\nProblem with `" + jpTokenName + "`." + "\nNote mismatch between:" + "\n - token #" + javaccTokenNumber + " - GeneratedJavaParserConstants (generated using JavaCC)" + "\n - token #" + jpTokenNumber + " - JavaToken (generated using JP Generators).")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/JavaParserTest.java linha: 244 Método: assertThrows(ParseProblemException.class, () -> parseBlock("{} efijqoifjqefj"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/LineSeparatorProcessorTest.java linha: 101 Método: assertTrue(cu.containsData(Node.LINE_SEPARATOR_KEY), "Expected the processor provider to have set the data on the root node.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/LineSeparatorProcessorTest.java linha: 102 Método: assertFalse(fd.containsData(Node.LINE_SEPARATOR_KEY), "Expected the line ending value to have been inherited, not set directly")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/JavaParserAdapterTest.java linha: 76 Método: assertThrows(ParseProblemException.class, () -> adapter.parse("class A"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/SourceRootTest.java linha: 73 Método: assertThrows(IllegalArgumentException.class, () -> {
+    Path path = CodeGenerationUtils.classLoaderRoot(SourceRootTest.class).resolve("com/github/javaparser/utils/Bla.java");
+    new SourceRoot(path);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/SourceRootTest.java linha: 87 Método: assertThrows(ParseProblemException.class, () -> {
+    Path path = CodeGenerationUtils.mavenModuleRoot(SourceRootTest.class).resolve("src/test/resources/com/github/javaparser/utils");
+    new SourceRoot(path).parse("source.root", "Y.java");
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/TestUtils.java linha: 156 Método: assertTrue(expectedType.isAssignableFrom(instance.getClass()), f("%s is not an instance of %s.", instance.getClass(), expectedType))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/TestUtils.java linha: 249 Método: assertTrue(result.isSuccessful(), result.getProblems().toString())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/TestUtils.java linha: 291 Método: assertEquals(expected, actual, message + String.format(" -- failed due to line separator differences -- Expected: %s, but actual: %s (system eol: %s)", LineSeparator.detect(expected).asEscapedString(), LineSeparator.detect(actual).asEscapedString(), LineSeparator.SYSTEM.asEscapedString()))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/TestUtils.java linha: 317 Método: assertEquals(normalizeEolInTextBlock(expected, LineSeparator.ARBITRARY), normalizeEolInTextBlock(actual, LineSeparator.ARBITRARY), message)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/TestUtils.java linha: 392 Método: assertEquals(expectedLineSeparator, actualLineSeparator, message)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/CodeGenerationUtilsTest.java linha: 52 Método: assertThrows(IllegalArgumentException.class, () -> getterToPropertyName("value"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/SourceZipTest.java linha: 72 Método: assertThrows(IOException.class, () -> new SourceZip(testDir.resolve("test")).parse())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/SourceZipTest.java linha: 77 Método: assertThrows(IOException.class, () -> new SourceZip(testDir.resolve("test.txt")).parse())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/UtilsTest.java linha: 51 Método: assertThrows(AssertionError.class, () -> assertNotNull(null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/UtilsTest.java linha: 57 Método: assertThrows(AssertionError.class, () -> assertNonEmpty(""))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/UtilsTest.java linha: 58 Método: assertThrows(AssertionError.class, () -> assertNonEmpty(null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/UtilsTest.java linha: 65 Método: assertThrows(AssertionError.class, () -> assertNonNegative(-2))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/UtilsTest.java linha: 71 Método: assertThrows(AssertionError.class, () -> assertPositive(-2))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/UtilsTest.java linha: 138 Método: assertThrows(IllegalArgumentException.class, () -> capitalize(""))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/UtilsTest.java linha: 153 Método: assertThrows(IllegalArgumentException.class, () -> decapitalize(""))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 78 Método: assertFalse(contains, "Type and Name are separate branches of the AST, thus should not contain each other.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 109 Método: assertEquals(annotationB, o.getCommentedNode().get(), "Comment has been added to an unexpected node.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 134 Método: assertTrue(nodeContains(x, annotationA, false), formatRangeCompareResult(x, annotationA, "X", "A"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 135 Método: assertTrue(nodeContains(x, annotationB, false), formatRangeCompareResult(x, annotationB, "X", "B"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 136 Método: assertTrue(nodeContains(x, annotationC, false), formatRangeCompareResult(x, annotationC, "X", "C"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 137 Método: assertTrue(nodeContains(x, x, false), formatRangeCompareResult(x, x, "X", "X"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 140 Método: assertFalse(nodeContains(x, annotationA, true), formatRangeCompareResult(x, annotationA, "X", "A"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 141 Método: assertFalse(nodeContains(x, annotationB, true), formatRangeCompareResult(x, annotationB, "X", "B"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 142 Método: assertFalse(nodeContains(x, annotationC, true), formatRangeCompareResult(x, annotationC, "X", "C"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 143 Método: assertFalse(nodeContains(x, x, true), formatRangeCompareResult(x, x, "X", "X"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 177 Método: assertTrue(nodeContains(x, o, false), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 178 Método: assertFalse(nodeContains(x, o, true), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 206 Método: assertTrue(nodeContains(x, o, false), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 207 Método: assertTrue(nodeContains(x, o, true), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 234 Método: assertTrue(nodeContains(x, o, false), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 235 Método: assertTrue(nodeContains(x, o, true), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 271 Método: assertTrue(nodeContains(x, o, false), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/utils/PositionUtilsTest.java linha: 272 Método: assertTrue(nodeContains(x, o, true), formatRangeCompareResult(x, o, "X", "o"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrinterConfigurationTest.java linha: 64 Método: assertThrows(IllegalArgumentException.class, () -> {
+    getOption(config, ConfigOption.PRINT_COMMENTS).get().asValue();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrinterConfigurationTest.java linha: 69 Método: assertThrows(IllegalArgumentException.class, () -> {
+    config.addOption(new DefaultConfigurationOption(ConfigOption.PRINT_COMMENTS, "1"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/Issue2620Test.java linha: 108 Método: assertEquals(expected, actual, "Failed due to EOL differences.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/changes/NoChangeTest.java linha: 56 Método: assertThrows(RuntimeException.class, () -> {
+    new NoChange().getValue(ObservableProperty.IMPORTS, new ClassOrInterfaceType());
+}, "RuntimeException was expected")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/TokenTypesTest.java linha: 53 Método: assertThrows(AssertionError.class, () -> {
+    TokenTypes.getCategory(-1);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/quality/PreconditionsTest.java linha: 39 Método: assertThrows(IllegalArgumentException.class, () -> checkArgument(false))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/quality/PreconditionsTest.java linha: 49 Método: assertThrows(IllegalArgumentException.class, () -> checkNotNull(null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ExpectedTokensTest.java linha: 70 Método: assertEquals(expectedTokenValue, expr.getValue(), "Node at " + line + "," + col)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/Issue1017Test.java linha: 33 Método: Assertions.assertThrows(ParseProblemException.class, () -> {
+    CompilationUnit cu = StaticJavaParser.parse(code);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/nodeTypes/NodeWithVariablesTest.java linha: 48 Método: assertThrows(AssertionError.class, () -> parseVariableDeclarationExpr("int a[],b[][]").getCommonType())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/nodeTypes/NodeWithVariablesTest.java linha: 53 Método: assertThrows(AssertionError.class, () -> {
+    VariableDeclarationExpr declaration = parseVariableDeclarationExpr("int a,b");
+    declaration.getVariable(1).setType(String.class);
+    declaration.getCommonType();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/nodeTypes/NodeWithVariablesTest.java linha: 62 Método: assertThrows(AssertionError.class, () -> {
+    VariableDeclarationExpr declaration = parseVariableDeclarationExpr("int a");
+    declaration.getVariables().clear();
+    declaration.getCommonType();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/nodeTypes/NodeWithVariablesTest.java linha: 88 Método: assertThrows(AssertionError.class, () -> {
+    VariableDeclarationExpr declaration = parseVariableDeclarationExpr("int a,b");
+    declaration.getVariable(1).setType(String.class);
+    declaration.getElementType();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/nodeTypes/NodeWithVariablesTest.java linha: 97 Método: assertThrows(AssertionError.class, () -> {
+    VariableDeclarationExpr declaration = parseVariableDeclarationExpr("int a");
+    declaration.getVariables().clear();
+    declaration.getElementType();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/NodeListTest.java linha: 345 Método: assertThrows(NoSuchElementException.class, () -> {
+    iterator.next();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/NodeListTest.java linha: 369 Método: assertThrows(IllegalArgumentException.class, () -> {
+    iterator.set(new Name("abc"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/NodeListTest.java linha: 415 Método: assertThrows(NoSuchElementException.class, () -> {
+    iterator.next();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/NodeListTest.java linha: 425 Método: assertThrows(NoSuchElementException.class, () -> {
+    iterator.next();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 49 Método: assertThrows(AssertionFailedError.class, () -> {
+    CompilationUnit cu = TestParser.parseCompilationUnit(languageLevel, s);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 65 Método: assertThrows(AssertionFailedError.class, () -> {
+    CompilationUnit cu = TestParser.parseCompilationUnit(languageLevel, s);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 346 Método: assertTrue(recordDeclaration.isFinal(), "Records are implicitly final.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 360 Método: assertTrue(recordDeclaration.isFinal(), "Records are implicitly final.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 564 Método: assertFalse(recordDeclaration.isStatic(), "Top level Records are NOT implicitly static.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 583 Método: assertTrue(recordDeclaration.isStatic(), "Nested Records are implicitly static.")
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 745 Método: assertThrows(AssertionFailedError.class, () -> {
+    CompilationUnit cu = TestParser.parseCompilationUnit(s);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java linha: 751 Método: assertThrows(AssertionFailedError.class, () -> {
+    CompilationUnit cu = TestParser.parseCompilationUnit(s);
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/AnnotationDeclarationTest.java linha: 34 Método: assertThrows(IllegalStateException.class, () -> new AnnotationDeclaration().addField(Object.class, "oo"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/expr/SuperExprTest.java linha: 34 Método: assertThrows(ParseProblemException.class, () -> parseExpression("super"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/expr/SimpleNameTest.java linha: 39 Método: assertThrows(AssertionError.class, () -> new SimpleName(""))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/expr/SimpleNameTest.java linha: 44 Método: assertThrows(AssertionError.class, () -> new SimpleName(null))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/expr/NameTest.java linha: 50 Método: assertThrows(ParseProblemException.class, () -> parseName(""))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/CompilationUnitTest.java linha: 57 Método: assertThrows(RuntimeException.class, () -> {
+    Path sourceRoot = mavenModuleRoot(CompilationUnitTest.class).resolve(Paths.get("src", "test", "resources")).normalize();
+    Path testFile = sourceRoot.resolve(Paths.get("com", "github", "javaparser", "storage", "A.java"));
+    CompilationUnit cu = parse(testFile);
+    cu.getStorage().get().getSourceRoot();
+})
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/type/TypeTest.java linha: 50 Método: assertThrows(ParseProblemException.class, () -> typeAsString("List<long> x;"))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/type/ClassOrInterfaceTypeTest.java linha: 82 Método: Assertions.assertThrows(IllegalStateException.class, classA::resolve)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/type/ClassOrInterfaceTypeTest.java linha: 88 Método: Assertions.assertThrows(IllegalStateException.class, classA::toDescriptor)
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/DataKeyTest.java linha: 73 Método: assertThrows(IllegalStateException.class, () -> node.getData(DING))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/NodePositionTest.java linha: 87 Método: assertNotNull(n.getRange(), String.format("There should be no node without a range: %s (class: %s)", n, n.getClass().getCanonicalName()))
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/stmt/TryStmtTest.java linha: 103 Método: assertTrue(result.isSuccessful(), result.toString())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/stmt/TryStmtTest.java linha: 110 Método: assertTrue(result.isSuccessful(), result.toString())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing/src/test/java/com/github/javaparser/ast/stmt/TryStmtTest.java linha: 117 Método: assertTrue(result.isSuccessful(), result.toString())
+Assert com mensagem: /home/vitor-otto/opensource/javaparser-javaparser-parent-3.25.1/javaparser-core-testing-bdd/src/test/java/com/github/javaparser/steps/ExistenceOfParentNodeVerifier.java linha: 53 Método: assertThat(n + " has no parent set!", n.getParentNode().orElse(null), is(notNullValue()))
+Total asserts: 6158
+Asserts sem descrição: 5878
+Asserts com descrição: 261
+Assertion Roulette: 4499

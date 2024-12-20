@@ -1,0 +1,401 @@
+
+Projeto: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7
+
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/SnapshotDslAcceptanceTest.java linha: 95 Método: assertTrue(serverMappings.containsAll(returnedMappings), "All of the returned mappings should be present in the server")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/SnapshotDslAcceptanceTest.java linha: 114 Método: JSONAssert.assertEquals("{ \"counter\": 55 }", bodyPattern.getExpected(), true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesXPathPatternTest.java linha: 45 Método: assertTrue(match.isExactMatch(), "Expected XPath match")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesXPathPatternTest.java linha: 59 Método: assertFalse(match.isExactMatch(), "Expected XPath non-match")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesXPathPatternTest.java linha: 73 Método: assertFalse(match.isExactMatch(), "Expected XPath non-match")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesXPathPatternTest.java linha: 87 Método: assertFalse(match.isExactMatch(), "Expected XPath non-match")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesXPathPatternTest.java linha: 265 Método: JSONAssert.assertEquals("{ \"matchesXPath\" : \"//*\" ,   \n" + "  \"xPathNamespaces\" : {                                    \n" + "      \"one\" : \"http://one.com/\",                         \n" + "      \"two\" : \"http://two.com/\"                          \n" + "  }                                                          \n" + "}", json, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesXPathPatternTest.java linha: 283 Método: JSONAssert.assertEquals("{ \"matchesXPath\" : \"//*\" }", json, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/EqualToPatternTest.java linha: 82 Método: assertEquals("{                               \n" + "  \"equalTo\": \"something\"    \n" + "}", Json.write(new EqualToPattern("something")), false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/RequestPatternTest.java linha: 133 Método: JSONAssert.assertEquals("{									                \n" + "		\"method\": \"GET\",						\n" + "		\"url\": \"/my/url\"                		\n" + "}												    ", actualJson, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/RequestPatternTest.java linha: 148 Método: JSONAssert.assertEquals("{									                \n" + "		\"method\": \"GET\",						\n" + "		\"urlPattern\": \"/my/url\"           		\n" + "}												    ", actualJson, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/RequestPatternTest.java linha: 163 Método: JSONAssert.assertEquals("{									                \n" + "		\"method\": \"GET\",						\n" + "		\"urlPathPattern\": \"/my/url\"             \n" + "}												    ", actualJson, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/RequestPatternTest.java linha: 183 Método: JSONAssert.assertEquals(URL_PATH_AND_HEADERS_EXAMPLE, actualJson, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/RequestPatternTest.java linha: 238 Método: JSONAssert.assertEquals("{                              \n" + "    \"method\": \"GET\",       \n" + "    \"urlPath\": \"/my/url\",  \n" + "    \"queryParameters\": {     \n" + "        \"param1\": {          \n" + "            \"equalTo\": \"1\" \n" + "        },                     \n" + "        \"param2\": {          \n" + "            \"matches\": \"2\" \n" + "        }                      \n" + "    }                          \n" + "}", actualJson, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/RequestPatternTest.java linha: 504 Método: JSONAssert.assertEquals(ALL_BODY_PATTERNS_EXAMPLE, json, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/BinaryEqualToPatternPatternTest.java linha: 73 Método: assertEquals(expectedJson, Json.write(new BinaryEqualToPattern(expected)), true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MultipartValuePatternTest.java linha: 81 Método: JSONAssert.assertEquals(pattern.getBodyPatterns().get(0).getExpected(), expectedJson, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MultiValuePatternTest.java linha: 106 Método: JSONAssert.assertEquals("{                              \n" + "  \"equalTo\": \"something\"   \n" + "}", actual, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MultiValuePatternTest.java linha: 116 Método: JSONAssert.assertEquals("{                   \n" + "  \"absent\": true   \n" + "}", actual, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/RegexValuePatternTest.java linha: 33 Método: JSONAssert.assertEquals("{                               \n" + "  \"matches\": \"something\"    \n" + "}", actual, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/EqualToJsonTest.java linha: 322 Método: JSONAssert.assertEquals(pattern.getExpected(), expectedJson, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/EqualToJsonTest.java linha: 340 Método: JSONAssert.assertEquals(expected, serialised, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/EqualToJsonTest.java linha: 349 Método: JSONAssert.assertEquals("{\n" + "    \"equalToJson\": \"4444\",\n" + "    \"ignoreArrayOrder\": true,\n" + "    \"ignoreExtraElements\": true\n" + "}", serialised, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/EqualToJsonTest.java linha: 379 Método: JSONAssert.assertEquals(pattern.getExpected(), expectedJson, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/EqualToJsonTest.java linha: 389 Método: JSONAssert.assertEquals("{ \"equalToJson\": " + expectedJson + " }", serialised, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/EqualToJsonTest.java linha: 397 Método: JSONAssert.assertEquals("{\n" + "    \"equalToJson\": \"4444\"\n" + "}", serialised, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 43 Método: assertTrue(pattern.match("{ \"one\": 1 }").isExactMatch(), "Expected match when JSON attribute is present")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 51 Método: assertFalse(pattern.match("{ \"two\": 2 }").isExactMatch(), "Expected no match when JSON attribute is absent")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 60 Método: assertTrue(pattern.match("{ \"numbers\": [ {\"number\": 1}, {\"number\": 2} ]}").isExactMatch(), "Expected match when JSON attribute is present")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 63 Método: assertFalse(pattern.match("{ \"numbers\": [{\"number\": 7} ]}").isExactMatch(), "Expected no match when JSON attribute is absent")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 72 Método: assertTrue(pattern.match("{ \"numbers\": [ {\"number\": 1}, {\"number\": 2} ]}").isExactMatch(), "Expected match when JSON attribute is present")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 75 Método: assertFalse(pattern.match("{ \"numbers\": [{\"number\": 7} ]}").isExactMatch(), "Expected no match when JSON attribute is absent")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 84 Método: assertTrue(pattern.match("{ \"numbers\": [ {\"number\": 1}, {\"number\": 2} ]}").isExactMatch(), "Expected match when JSON attribute is present")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 87 Método: assertFalse(pattern.match("{ \"numbers\": [{\"number\": 7} ]}").isExactMatch(), "Expected no match when JSON attribute is absent")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 95 Método: assertTrue(pattern.match("{ \"things\": { \"thingOne\": { \"innerOne\": 11 }, \"thingTwo\": 2 }}").isExactMatch(), "Expected match")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 107 Método: assertFalse(pattern.match("Not a JSON document").isExactMatch(), "Expected the match to fail")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 118 Método: assertFalse(pattern.match("{ \"nothing\": 1 }").isExactMatch(), "Expected the match to fail")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 343 Método: assertThrows(JsonException.class, () -> {
+    Json.read("{                                      \n" + "    \"matchesJsonPath\": {              \n" + "        \"express\": \"$..thing\",      \n" + "        \"equalTo\": \"the value\"      \n" + "    }                                   \n" + "}", StringValuePattern.class);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/matching/MatchesJsonPathPatternTest.java linha: 360 Método: assertThrows(JsonException.class, () -> {
+    Json.read("{                                      \n" + "    \"matchesJsonPath\": {              \n" + "        \"expression\": \"$..thing\",   \n" + "        \"badOperator\": \"the value\"  \n" + "    }                                   \n" + "}", StringValuePattern.class);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 90 Método: JSONAssert.assertEquals("{                                              \n" + "  \"mappings\" : [ {                           \n" + "    \"id\" : \"" + stubMapping.getId() + "\",  \n" + "    \"uuid\" : \"" + stubMapping.getId() + "\",\n" + "    \"request\" : {                            \n" + "      \"url\" : \"/my-test-url\",              \n" + "      \"method\" : \"GET\"                     \n" + "    },                                         \n" + "    \"response\" : {                           \n" + "      \"status\" : 418                         \n" + "    }                                          \n" + "  } ],                                         \n" + "                                               \n" + "  \"meta\": {                                  \n" + "    \"total\": 1                               \n" + "  }                                            \n" + "}", body, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 158 Método: JSONAssert.assertEquals("{\n" + "  \"mappings\" : [ {\n" + "    \"request\" : {\n" + "      \"url\" : \"/my-test-url\",\n" + "      \"method\" : \"GET\"\n" + "    },\n" + "    \"response\" : {\n" + "      \"status\" : 418\n" + "    }\n" + "  } ]\n" + "}", body, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 185 Método: JSONAssert.assertEquals("{                                          \n" + "    \"id\": \"" + id + "\",              \n" + "    \"uuid\": \"" + id + "\",              \n" + "    \"request\" : {                        \n" + "      \"url\" : \"/my-addressable-stub\",  \n" + "      \"method\" : \"TRACE\"               \n" + "    },                                     \n" + "    \"response\" : {                       \n" + "      \"status\" : 451                     \n" + "    }                                      \n" + "}", body, true)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 374 Método: JSONAssert.assertEquals(requestBody, response.content(), false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 858 Método: assertFalse(Paths.get(fileSource.getTextFileNamed(fileName).getPath()).toFile().exists(), "File should have been deleted")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 873 Método: assertFalse(Paths.get(fileSource.getTextFileNamed(fileName).getPath()).toFile().exists(), "File should have been deleted")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 889 Método: assertEquals("BBB", fileSource.getTextFileNamed(fileName).readContentsAsString(), "File should have been changed")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/AdminApiTest.java linha: 905 Método: assertEquals("BBB", fileSource.getTextFileNamed(fileName).readContentsAsString(), "File should have been changed")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/RecordingDslAcceptanceTest.java linha: 373 Método: assertThrows(NotRecordingException.class, WireMock::stopRecording)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/RecordingDslAcceptanceTest.java linha: 378 Método: assertThrows(NotRecordingException.class, adminClient::stopStubRecording)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/RecordingDslAcceptanceTest.java linha: 383 Método: assertThrows(NotRecordingException.class, proxyingService::stopRecording)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/RecordingDslAcceptanceTest.java linha: 388 Método: assertThrows(InvalidInputException.class, () -> {
+    startRecording(recordSpec());
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/RecordingDslAcceptanceTest.java linha: 397 Método: assertThrows(InvalidInputException.class, () -> {
+    proxyingService.startRecording(recordSpec());
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/standalone/CommandLineOptionsTest.java linha: 181 Método: assertThrows(Exception.class, () -> {
+    new CommandLineOptions("--port");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/standalone/CommandLineOptionsTest.java linha: 211 Método: assertThrows(Exception.class, () -> {
+    new CommandLineOptions("--proxy-all");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/standalone/CommandLineOptionsTest.java linha: 388 Método: assertThrows(IllegalArgumentException.class, () -> {
+    new CommandLineOptions("--no-request-journal", "--record-mappings");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/standalone/ProxySettingsTest.java linha: 29 Método: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings.fromString(":8090");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 75 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requested")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 85 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requeste?query")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 95 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlEqualTo("/this/got/requested/?query")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 111 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlPathEqualTo("/this/got/requeste")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 121 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested?query");
+    verify(getRequestedFor(urlPathEqualTo("/this/got/requested/")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 137 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlPathMatching("/(.*?)/got/")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 147 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlPathMatching("/got/.*")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 157 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/this/got/requested");
+    verify(getRequestedFor(urlEqualTo("/this/did/not")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 212 Método: assertThrows(VerificationException.class, () -> {
+    testClient.put("/to/modify", withHeader("Content-Type", "application/json"), withHeader("Encoding", "LATIN-1"));
+    verify(putRequestedFor(urlEqualTo("/to/modify")).withHeader("Content-Type", equalTo("application/json")).withHeader("Encoding", notMatching("LATIN-1")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 315 Método: assertThrows(VerificationException.class, () -> verify(postRequestedFor(urlEqualTo("/body/json")).withRequestBody(not(containing("Important value")))))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 354 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/query?param=my-value");
+    verify(getRequestedFor(urlPathEqualTo("/query")).withQueryParam("param", equalTo("wrong-value")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 366 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/query");
+    verify(getRequestedFor(urlPathEqualTo("/query")).withQueryParam("param", equalTo("my-value")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 378 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/count/this");
+    testClient.get("/count/this");
+    testClient.get("/count/this");
+    WireMock.reset();
+    verify(getRequestedFor(urlEqualTo("/count/this")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 415 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(5);
+    verify(lessThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 425 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(lessThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 447 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(lessThanOrExactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 457 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(exactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 473 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(6);
+    verify(exactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 483 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(moreThanOrExactly(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 505 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(4);
+    verify(moreThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 515 Método: assertThrows(VerificationException.class, () -> {
+    getCountableRequests(5);
+    verify(moreThan(5), getRequestedFor(urlEqualTo("/add/to/count")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 540 Método: assertThrows(VerificationException.class, () -> {
+    testClient.get("/without/another/header", withHeader("Content-Type", "application/json"));
+    verify(getRequestedFor(urlEqualTo("/without/another/header")).withoutHeader("Content-Type"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 559 Método: assertThrows(VerificationException.class, () -> {
+    testClient.post("/no/body", new StringEntity("not absent"));
+    verify(postRequestedFor(urlEqualTo("/no/body")).withRequestBody(absent()));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 962 Método: assertThrows(RequestJournalDisabledException.class, () -> {
+    verify(getRequestedFor(urlEqualTo("/whatever")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/VerificationAcceptanceTest.java linha: 971 Método: assertThrows(RequestJournalDisabledException.class, () -> {
+    findAll(getRequestedFor(urlEqualTo("/whatever")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/testsupport/WireMatchers.java linha: 72 Método: JSONAssert.assertEquals(expectedJson, actualJson, JSONCompareMode.STRICT)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/testsupport/WireMatchers.java linha: 93 Método: JSONAssert.assertEquals(expectedJson, Strings.stringFromBytes(actualJson), jsonCompareMode)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/testsupport/WireMatchers.java linha: 115 Método: JSONAssert.assertEquals(expectedJson, actualJson, jsonCompareMode)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/testsupport/WireMatchers.java linha: 136 Método: JSONAssert.assertEquals(expectedJson, Strings.stringFromBytes(actualJson), jsonCompareMode)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/client/ClientAuthenticationAcceptanceTest.java linha: 76 Método: assertThrows(NotAuthorisedException.class, () -> {
+    initialise(new BasicAuthenticator(new BasicCredentials("user1", "password1"), new BasicCredentials("user2", "password2")), new ClientBasicAuthenticator("user1", "password1"));
+    badClient = WireMock.create().port(server.port()).authenticator(new ClientBasicAuthenticator("user1", "wrong_password")).build();
+    badClient.getServeEvents();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/ResponseDelayAcceptanceTest.java linha: 165 Método: assertThrows(SocketTimeoutException.class, () -> {
+    stubFor(get(urlEqualTo("/delayed")).willReturn(aResponse().withStatus(200).withFixedDelay(LONGER_THAN_SOCKET_TIMEOUT)));
+    httpClient.execute(new HttpGet(wireMockRule.url("/delayed")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/HttpsAcceptanceTest.java linha: 93 Método: assertThrows(IllegalStateException.class, () -> {
+    WireMockConfiguration config = wireMockConfig().httpDisabled(true).dynamicHttpsPort();
+    wireMockServer = new WireMockServer(config);
+    wireMockServer.start();
+    WireMock.configureFor("https", "localhost", wireMockServer.httpsPort());
+    httpClient = HttpClientFactory.createClient();
+    stubFor(get(urlEqualTo("/https-test")).willReturn(aResponse().withStatus(200).withBody("HTTPS content")));
+    wireMockServer.port();
+    assertThat(contentFor(url("/https-test")), is("HTTPS content"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/HttpsAcceptanceTest.java linha: 172 Método: assertThrows(Exception.class, () -> {
+    String testKeystorePath = Resources.getResource("bad-keystore").toString();
+    startServerWithKeystore(testKeystorePath);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/HttpsAcceptanceTest.java linha: 322 Método: assertTrue(thrown, "No exception was thrown")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/StubbingAcceptanceTest.java linha: 485 Método: assertThrows(RuntimeException.class, () -> testClient.get("/connection/reset"))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/StubbingAcceptanceTest.java linha: 1252 Método: assertTrue(thrown, "No exception was thrown")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/CustomMatchingAcceptanceTest.java linha: 116 Método: assertThrows(AdminException.class, () -> {
+    wm.register(get(urlPathMatching("/the/.*/one")).andMatching(new MyRequestMatcher()).willReturn(ok()));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/ResponseTemplatingAcceptanceTest.java linha: 222 Método: assertThat(response.content(), response.statusCode(), is(200))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/verification/LoggedRequestTest.java linha: 129 Método: JSONAssert.assertEquals(expectedJson, Json.write(loggedRequest), false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/UrlPathTemplateMatchingTest.java linha: 69 Método: assertThrows(InvalidInputException.class, () -> stubFor(get(urlPathEqualTo("/stuff")).withPathParam("wrong", containing("things")).willReturn(ok())))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/UrlPathTemplateMatchingTest.java linha: 81 Método: assertThrows(InvalidInputException.class, () -> wm.stubFor(get(urlPathEqualTo("/stuff")).withPathParam("wrong", containing("things")).willReturn(ok())))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/direct/DirectCallHttpServerTest.java linha: 243 Método: assertThrows(IllegalStateException.class, () -> handle(request))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/UniformDistributionTest.java linha: 37 Método: assertThat("found 0", found[0], is(false))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/UniformDistributionTest.java linha: 38 Método: assertThat("found 1", found[1], is(false))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/UniformDistributionTest.java linha: 39 Método: assertThat("found 2", found[2], is(false))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/UniformDistributionTest.java linha: 40 Método: assertThat("found 3", found[3], is(true))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/UniformDistributionTest.java linha: 41 Método: assertThat("found 4", found[4], is(true))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/ssl/CompositeTrustManagerTest.java linha: 59 Método: assertThrows(CertificateException.class, () -> {
+    compositeTrustManager.checkServerTrusted(chain, authType);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/ssl/CompositeTrustManagerTest.java linha: 117 Método: assertThrows(CertificateException.class, () -> {
+    compositeTrustManager.checkServerTrusted(chain, authType);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/HttpHeaderTest.java linha: 62 Método: assertThrows(IllegalStateException.class, () -> {
+    HttpHeader.absent("Something").firstValue();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/HttpHeaderTest.java linha: 71 Método: assertThrows(IllegalStateException.class, () -> {
+    HttpHeader.absent("Something").values();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/ProxyResponseRendererTest.java linha: 138 Método: assertThat("CORS response header sent from the origin is not present in the response", corsHeader.isPresent(), is(true))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/ProxyResponseRendererTest.java linha: 157 Método: assertThat("CORS response header sent from the origin is present in the response", corsHeader.isPresent(), is(false))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/HttpClientFactoryRejectsUntrustedCertificatesTest.java linha: 60 Método: assertThrows(SSLException.class, () -> client.execute(new HttpGet(server.url("/whatever"))))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/LogNormalTest.java linha: 36 Método: assertEquals(97.1115, sum / (double) n, 5.0)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/HttpHeadersTest.java linha: 84 Método: assertThat("Actual: " + json, json, equalToJson(SINGLE_VALUE_HEADER))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/HttpHeadersTest.java linha: 125 Método: assertThat("Actual: " + json, json, equalToJson(MULTI_VALUE_HEADER))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/http/ContentTypeHeaderTest.java linha: 77 Método: assertThrows(NullPointerException.class, () -> {
+    new MockRequestBuilder().withHeader("Content-Type", null).build();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/StandaloneAcceptanceTest.java linha: 462 Método: assertThrows(MappingFileException.class, this::startRunner)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/NearMissesRuleAcceptanceTest.java linha: 121 Método: assertThrows(VerificationException.class, () -> {
+    client.get("/123");
+    wm.verify(getRequestedFor(urlPathEqualTo("/")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/admin/LimitAndOffsetPaginatorTest.java linha: 92 Método: assertThrows(IllegalArgumentException.class, () -> {
+    new LimitAndOffsetPaginator<>(Collections.<Void>emptyList(), -1, 3);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/admin/LimitAndOffsetPaginatorTest.java linha: 101 Método: assertThrows(IllegalArgumentException.class, () -> {
+    new LimitAndOffsetPaginator<>(Collections.<Void>emptyList(), 0, -10);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/DateTimeOffsetTest.java linha: 124 Método: assertThrows(IllegalArgumentException.class, () -> {
+    DateTimeOffset.fromString("101");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/DateTimeOffsetTest.java linha: 133 Método: assertThrows(IllegalArgumentException.class, () -> {
+    DateTimeOffset.fromString("101 squillions");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ssl/KeyStoreSettingsTest.java linha: 56 Método: assertThrows(IllegalArgumentException.class, () -> {
+    KeyStoreSettings trustStoreSettings = new KeyStoreSettings("test-unknownstore", "", "jks");
+    trustStoreSettings.loadStore();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ClasspathFileSourceTest.java linha: 72 Método: assertThat("Expected a non zero length file", binaryFile.readContents().length, greaterThan(0))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ClasspathFileSourceTest.java linha: 81 Método: assertThat("Expected a non zero length file", binaryFile.readContents().length, greaterThan(0))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ClasspathFileSourceTest.java linha: 101 Método: assertThat("Informative error", e.getMessage(), startsWith("Was unable to find entry: \"zippeddir/thisWillNotBeFound.txt\", found:"))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ClasspathFileSourceTest.java linha: 114 Método: assertThat("Expected a non zero length file", binaryFile.readContents().length, greaterThan(0))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ClasspathFileSourceTest.java linha: 128 Método: assertTrue(new ClasspathFileSource("filesource/subdir").exists(), "Expected to exist")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ClasspathFileSourceTest.java linha: 129 Método: assertTrue(new ClasspathFileSource("META-INF/maven/com.google.guava").exists(), "Expected to exist")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ClasspathFileSourceTest.java linha: 131 Método: assertFalse(new ClasspathFileSource("not/exist").exists(), "Expected not to exist")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/url/PathTemplateTest.java linha: 43 Método: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}");
+    template.parse("/things/stuff/11-22-33");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/url/PathTemplateTest.java linha: 93 Método: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}/otherthings/{subId}");
+    template.render(new PathParams().add("id", "123"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/url/PathTemplateTest.java linha: 161 Método: assertThrows(IllegalArgumentException.class, () -> {
+    PathTemplate template = new PathTemplate("/things/{id}/**");
+    template.render(new PathParams().add("id", "123"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 73 Método: assertThrows(RuntimeException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/filesource/one");
+    fileSource.listFilesRecursively();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 84 Método: assertThrows(RuntimeException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/filesource/one");
+    fileSource.writeTextFile("thing", "stuff");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 96 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource("src/test/resources/security-filesource/root");
+    fileSource.getBinaryFileNamed("../rootdir/file.json");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 107 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.writeTextFile("..", "stuff");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 117 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.writeTextFile(badPath, "stuff");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 128 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.writeBinaryFile("..", "stuff".getBytes());
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 138 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.writeBinaryFile(badPath, "stuff".getBytes());
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 149 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = Paths.get("..", "not-under-root").toAbsolutePath().toString();
+    fileSource.deleteFile(badPath);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 160 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.getBinaryFileNamed("../illegal.file");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 170 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    fileSource.getTextFileNamed("../illegal.file");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 180 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = new File(ROOT_PATH, "../illegal.file").getCanonicalPath();
+    fileSource.getBinaryFileNamed(badPath);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/SingleRootFileSourceTest.java linha: 191 Método: assertThrows(NotAuthorisedException.class, () -> {
+    SingleRootFileSource fileSource = new SingleRootFileSource(ROOT_PATH);
+    String badPath = new File(ROOT_PATH, "../illegal.file").getCanonicalPath();
+    fileSource.getTextFileNamed(badPath);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ServletContextFileSourceTest.java linha: 64 Método: assertThrows(UnsupportedOperationException.class, () -> {
+    fileSource.writeTextFile("filename", "filecontents");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ServletContextFileSourceTest.java linha: 73 Método: assertThrows(UnsupportedOperationException.class, fileSource::createIfNecessary)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ProxySettingsTest.java linha: 57 Método: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString(PROXYVIA_URL + ":80a");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ProxySettingsTest.java linha: 102 Método: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString("https://" + PROXYVIA_URL_WITH_PORT);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/common/ProxySettingsTest.java linha: 112 Método: assertThrows(IllegalArgumentException.class, () -> {
+    ProxySettings proxySettings = ProxySettings.fromString("ul:invalid:80");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/ProxyAcceptanceTest.java linha: 453 Método: assertFalse(lastRequest.getHeaders().getHeader("Accept-Encoding").isPresent(), "Accept-Encoding header should not be present")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/ScenarioAcceptanceTest.java linha: 111 Método: assertThrows(IllegalArgumentException.class, () -> {
+    get(urlEqualTo("/some/resource")).willReturn(aResponse()).inScenario(null);
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/ScenarioAcceptanceTest.java linha: 296 Método: assertThrows(ClientError.class, () -> resetScenario("non-exist"))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/ScenarioAcceptanceTest.java linha: 315 Método: assertThrows(ClientError.class, () -> setScenarioState("set-me", "non-exist"))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/recording/SnapshotOutputFormatterTest.java linha: 33 Método: assertThrows(IllegalArgumentException.class, () -> {
+    SnapshotOutputFormatter.fromString("invalid output format");
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/recording/ResponseDefinitionBodyMatcherDeserializerTest.java linha: 41 Método: assertEquals(expected, actual, "Failed with " + input)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/recording/ScenarioProcessorTest.java linha: 52 Método: assertThat("Last mapping should not have a state transition", foobar3.getNewScenarioState(), nullValue())
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/MultipartBodyMatchingAcceptanceTest.java linha: 64 Método: assertThat(EntityUtils.toString(response.getEntity()), response.getCode(), is(200))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/MultipartBodyMatchingAcceptanceTest.java linha: 109 Método: assertThat(EntityUtils.toString(response.getEntity()), response.getCode(), is(200))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/MultipartBodyMatchingAcceptanceTest.java linha: 134 Método: assertThat(EntityUtils.toString(response.getEntity()), response.getCode(), is(200))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/ResponseDefinitionTransformerAcceptanceTest.java linha: 135 Método: assertThrows(IllegalArgumentException.class, () -> {
+    new WireMockServer(wireMockConfig().dynamicPort().extensions(ExampleTransformer.class, AnotherExampleTransformer.class));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/stubbing/SortedConcurrentMappingSetTest.java linha: 86 Método: assertThat("Mapping set should be empty", mappingSet.iterator().hasNext(), is(false))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/stubbing/ResponseDefinitionTest.java linha: 69 Método: assertFalse(copiedResponse.wasConfigured(), "Should be not configured")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/stubbing/ResponseDefinitionTest.java linha: 107 Método: JSONAssert.assertEquals(STRING_BODY, Json.write(responseDef), false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/stubbing/ResponseDefinitionTest.java linha: 133 Método: JSONAssert.assertEquals(actualJson, BINARY_BODY, false)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/MappingsAcceptanceTest.java linha: 195 Método: assertFalse(response.headers().containsKey("Transfer-Encoding"), "expected Transfer-Encoding head to be absent")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/PostServeActionExtensionTest.java linha: 164 Método: assertThat(response.content(), response.statusCode(), is(201))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/PostServeActionExtensionTest.java linha: 230 Método: assertThat(response.content(), response.statusCode(), is(201))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/PortNumberTest.java linha: 78 Método: assertThrows(IllegalStateException.class, () -> {
+    createServer(wireMockConfig().port(Network.findFreePort())).port();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/PortNumberTest.java linha: 87 Método: assertThrows(IllegalStateException.class, () -> {
+    createServer(wireMockConfig().httpsPort(Network.findFreePort())).httpsPort();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/PortNumberTest.java linha: 96 Método: assertThrows(IllegalStateException.class, () -> {
+    WireMockServer wireMockServer = createServer(wireMockConfig().port(Network.findFreePort()));
+    wireMockServer.start();
+    wireMockServer.httpsPort();
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/HttpsBrowserProxyAcceptanceTest.java linha: 345 Método: assertThrows(IOException.class, () -> {
+    new WireMockServer(options().enableBrowserProxying(true).caKeystorePath(Files.createTempFile("notakeystore", "jks").toString()));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/HttpsBrowserProxyAcceptanceTest.java linha: 357 Método: assertThrows(FatalStartupException.class, new WireMockServer(options().enableBrowserProxying(true).caKeystorePath(emptyKeyStore().toString()))::start)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/junit5/JUnitJupiterExtensionDeclarativeTest.java linha: 48 Método: assertThrows(IllegalStateException.class, wmRuntimeInfo::getHttpsPort)
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/junit5/JUnitJupiterExtensionNonStaticMultiInstanceTest.java linha: 91 Método: assertTrue(getAllServeEvents().isEmpty(), "The request log should be empty")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/junit5/JUnitJupiterExtensionFailOnUnmatchedTest.java linha: 65 Método: assertThrows(VerificationException.class, () -> extension.afterEach(extensionContext))
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/junit5/JUnitJupiterExtensionStaticMultiInstanceTest.java linha: 91 Método: assertTrue(getAllServeEvents().isEmpty(), "The request log should be empty")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/junit5/JUnitJupiterExtensionDeclarativeWithRandomHttpsPortParameterTest.java linha: 42 Método: assertTrue(wmRuntimeInfo.isHttpsEnabled(), "Expected HTTPS to be enabled")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/com/github/tomakehurst/wiremock/junit5/JUnitJupiterExtensionDeclarativeWithFixedHttpsPortParameterTest.java linha: 29 Método: assertTrue(wmRuntimeInfo.isHttpsEnabled(), "Expected HTTPS to be enabled")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/ignored/Examples.java linha: 149 Método: assertThrows(VerificationException.class, () -> {
+    verify(postRequestedFor(urlEqualTo("/verify/this")).withHeader("Content-Type", equalTo("text/xml")));
+    verify(3, postRequestedFor(urlEqualTo("/3/of/these")));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/src/test/java/ignored/Examples.java linha: 162 Método: assertThrows(VerificationException.class, () -> {
+    verify(putRequestedFor(urlEqualTo("/without/header")).withoutHeader("Content-Type"));
+})
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/wiremock-webhooks-extension/src/test/java/functional/WebhooksAcceptanceTest.java linha: 359 Método: assertTrue(latch.await(20, SECONDS), "Timed out waiting for target server to receive a request")
+Assert com mensagem: /home/vitor-otto/opensource/wiremock-3.0.0-beta-7/wiremock-webhooks-extension/src/test/java/functional/FailingWebhookTest.java linha: 106 Método: assertThat("No webook should have been made", latch.getCount(), is(1L))
+Total asserts: 2948
+Asserts sem descrição: 2767
+Asserts com descrição: 181
+Assertion Roulette: 1896

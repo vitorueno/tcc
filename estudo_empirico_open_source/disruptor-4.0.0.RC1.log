@@ -1,0 +1,688 @@
+
+Projeto: /home/vitor-otto/opensource/disruptor-4.0.0.RC1
+
+Antes do refactor: 
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java linha: 33 Método: assertThat(publisher.isAvailable(0), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java linha: 34 Método: assertThat(publisher.isAvailable(1), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java linha: 35 Método: assertThat(publisher.isAvailable(2), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java linha: 36 Método: assertThat(publisher.isAvailable(3), is(true))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java linha: 37 Método: assertThat(publisher.isAvailable(4), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java linha: 38 Método: assertThat(publisher.isAvailable(5), is(true))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/MultiProducerSequencerTest.java linha: 39 Método: assertThat(publisher.isAvailable(6), is(false))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 92 Método: assertFalse(disruptor.hasStarted(), "Should only be set to started after start is called")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 96 Método: assertTrue(disruptor.hasStarted(), "Should be set to started after start is called")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 113 Método: fail("Did not process event published before start was called. Missed events: " + eventCounter.getCount())
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 130 Método: fail("Did not process event published before start was called. Missed events: " + eventCounter.getCount())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 145 Método: assertThat(b1.getSequence().get(), is(-1L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 146 Método: assertThat(b2.getSequence().get(), is(-1L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 147 Método: assertThat(b3.getSequence().get(), is(-1L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 158 Método: assertThat(b1.getSequence().get(), is(5L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 159 Método: assertThat(b2.getSequence().get(), is(5L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 160 Método: assertThat(b3.getSequence().get(), is(5L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 180 Método: assertThat(disruptor.getSequenceValueFor(b1), is(5L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 181 Método: assertThat(disruptor.getSequenceValueFor(b2), is(5L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 182 Método: assertThat(disruptor.getSequenceValueFor(b3), is(5L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 197 Método: assertNotNull(eventHandlerGroup)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 198 Método: assertThat(executor.getExecutionCount(), equalTo(2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 240 Método: assertThat(executor.getExecutionCount(), equalTo(2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 258 Método: assertThat(executor.getExecutionCount(), equalTo(3))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 277 Método: assertThat(executor.getExecutionCount(), equalTo(3))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 284 Método: assertThrows(IllegalArgumentException.class, () -> disruptor.after(createDelayedEventHandler()).handleEventsWith(createDelayedEventHandler()))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 292 Método: assertThrows(IllegalArgumentException.class, () -> {
+    EvilEqualsEventHandler handler1 = new EvilEqualsEventHandler();
+    EvilEqualsEventHandler handler2 = new EvilEqualsEventHandler();
+    disruptor.handleEventsWith(handler1);
+    disruptor.after(handler2);
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 320 Método: assertSame(testException, actualException)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 340 Método: assertSame(testException, actualException)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 358 Método: assertSame(testException, actualException)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 376 Método: assertSame(testException, actualException)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 431 Método: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 444 Método: assertThrows(IllegalStateException.class, () -> {
+    executor.ignoreExecutions();
+    disruptor.handleEventsWith(new SleepingEventHandler());
+    disruptor.start();
+    disruptor.start();
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 471 Método: assertThat(executor.getExecutionCount(), equalTo(2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 493 Método: assertThat(executor.getExecutionCount(), equalTo(2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 516 Método: assertThat(executor.getExecutionCount(), equalTo(3))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 538 Método: assertThat(executor.getExecutionCount(), equalTo(3))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 545 Método: assertThrows(TimeoutException.class, () -> {
+    final DelayedEventHandler delayedEventHandler = createDelayedEventHandler();
+    disruptor.handleEventsWith(delayedEventHandler);
+    publishEvent();
+    disruptor.shutdown(1, SECONDS);
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 575 Método: assertThat(remainingCapacity[0], is(ringBuffer.getBufferSize() - 1L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 576 Método: assertThat(disruptor.getRingBuffer().remainingCapacity(), is(ringBuffer.getBufferSize() - 0L))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 611 Método: assertEquals(0, barrierSequences.length, "Should not have had any barrier sequences")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 631 Método: assertSame(1, barrierSequences.length, "Should have had a barrier sequence")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 679 Método: assertTrue(actualPublicationCount >= expectedPublicationCount, msg)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 672 Método: assertThat(stubPublisher.getPublicationCount(), equalTo(expectedPublicationCount))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 731 Método: assertThat(Long.valueOf(countDownLatch.getCount()), equalTo(Long.valueOf(expectedCountDownValue)))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/DisruptorTest.java linha: 738 Método: assertTrue(released, "Batch handler did not receive entries: " + countDownLatch.getCount())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 69 Método: assertThat(consumerRepository.getBarrierFor(handler1), sameInstance(barrier1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 75 Método: assertThat(consumerRepository.getBarrierFor(handler1), is(nullValue()))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 89 Método: assertThat(lastEventProcessorsInChain.length, equalTo(1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 90 Método: assertThat(lastEventProcessorsInChain[0], sameInstance(eventProcessor1.getSequence()))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 98 Método: assertThat(consumerRepository.getEventProcessorFor(handler1), sameInstance(eventProcessor1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 104 Método: assertThrows(IllegalArgumentException.class, () -> consumerRepository.getEventProcessorFor(new SleepingEventHandler()))
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 132 Método: fail("Unexpected eventProcessor info: " + testEntryEventProcessorInfo)
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 136 Método: assertTrue(seen1, "Included eventProcessor 1")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/ConsumerRepositoryTest.java linha: 137 Método: assertTrue(seen2, "Included eventProcessor 2")
+Assert com mensagem: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/dsl/stubs/StubThreadFactory.java linha: 87 Método: assertFalse(thread.isAlive(), "Failed to stop thread: " + thread)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 59 Método: assertEquals(0, sequencer.next())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 66 Método: assertEquals(3, sequencer.next(4))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 75 Método: assertTrue(sequencer.hasAvailableCapacity(1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 76 Método: assertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 77 Método: assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE + 1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 81 Método: assertTrue(sequencer.hasAvailableCapacity(BUFFER_SIZE - 1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 82 Método: assertFalse(sequencer.hasAvailableCapacity(BUFFER_SIZE))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 93 Método: assertFalse(sequencer.hasAvailableCapacity(1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 109 Método: assertThat(sequencer.getHighestPublishedSequence(Sequencer.INITIAL_CURSOR_VALUE + 1, sequencer.getCursor()), is(expectedFullSequence))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 125 Método: assertThat(sequencer.getHighestPublishedSequence(expectedFullSequence, sequencer.getCursor()), is(expectedFullSequence))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 132 Método: assertThat(sequencer.getHighestPublishedSequence(expectedFullSequence, sequencer.getCursor()), is(expectedFullSequence + 1L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 139 Método: assertThrows(InsufficientCapacityException.class, () -> {
+    sequencer.addGatingSequences(gatingSequence);
+    for (int i = 0; i < BUFFER_SIZE; i++) {
+        sequencer.next();
+    }
+    sequencer.tryNext();
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 156 Método: assertThat(sequencer.remainingCapacity(), is((long) BUFFER_SIZE))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 160 Método: assertThat(sequencer.remainingCapacity(), is((long) BUFFER_SIZE - i))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 172 Método: assertThat(sequencer.isAvailable(i), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 179 Método: assertThat(sequencer.isAvailable(i), is(true))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 182 Método: assertThat(sequencer.isAvailable(6), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 194 Método: assertThat(waitStrategy.signalAllWhenBlockingCalls, is(1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 207 Método: assertThat(waitStrategy.signalAllWhenBlockingCalls, is(1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 226 Método: assertThat(barrier.waitFor(-1), is(mid - 1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 233 Método: assertThat(barrier.waitFor(-1), is(next))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 247 Método: assertThrows(InsufficientCapacityException.class, sequencer::tryNext)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 258 Método: assertThat(sequencer.next(), is(sequence + 1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 265 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.next(-1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 272 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.next(0))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 279 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(-1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 286 Método: assertThrows(IllegalArgumentException.class, () -> sequencer.tryNext(0))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 294 Método: assertFalse(sequencer.isAvailable(seq))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 297 Método: assertTrue(sequencer.isAvailable(seq))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 306 Método: assertTrue(sequencer.isAvailable(seq))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequencerTest.java linha: 313 Método: assertFalse(sequencer.isAvailable(seq))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferWithAssertingStubTest.java linha: 111 Método: assertThat(sequence, is(lastValue))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferWithAssertingStubTest.java linha: 112 Método: assertThat(lastBatchSize, is(1L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferWithAssertingStubTest.java linha: 118 Método: assertThat(hi, is(lastValue))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferWithAssertingStubTest.java linha: 119 Método: assertThat((hi - lo) + 1, is(lastBatchSize))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 45 Método: assertThrows(NullPointerException.class, () -> {
+    final BatchEventProcessor<StubEvent> batchEventProcessor = new BatchEventProcessor<>(ringBuffer, sequenceBarrier, new ExceptionEventHandler());
+    batchEventProcessor.setExceptionHandler(null);
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 71 Método: assertTrue(eventLatch.await(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 94 Método: assertTrue(exceptionLatch.await(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 197 Método: assertEquals(Arrays.asList(3L, 2L, 1L), batchSizes)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 216 Método: assertTrue(h1.awaitStart(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 217 Método: assertTrue(h1.awaitStop(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 227 Método: assertTrue(h2.awaitStart(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 228 Método: assertTrue(h2.awaitStop(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 240 Método: assertTrue(h2.awaitStart(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 241 Método: assertTrue(h2.awaitStop(2, TimeUnit.SECONDS))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 304 Método: assertThat(eventHandler.batchSizeToCountMap.size(), not(0))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchEventProcessorTest.java linha: 305 Método: assertThat(eventHandler.batchSizeToCountMap.get(0L), nullValue())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/LiteTimeoutBlockingWaitStrategyTest.java linha: 24 Método: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/LiteTimeoutBlockingWaitStrategyTest.java linha: 30 Método: assertTrue(timeWaiting >= theTimeout)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceTest.java linha: 14 Método: assertEquals(10, sequence.addAndGet(10))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceTest.java linha: 15 Método: assertEquals(10, sequence.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceTest.java linha: 23 Método: assertEquals(1, sequence.incrementAndGet())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceTest.java linha: 24 Método: assertEquals(1, sequence.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceTest.java linha: 32 Método: assertEquals(0, sequence.getAndAdd(1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceTest.java linha: 33 Método: assertEquals(1, sequence.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceReportingCallbackTest.java linha: 46 Método: assertEquals(-1L, batchEventProcessor.getSequence().get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceReportingCallbackTest.java linha: 50 Método: assertEquals(0L, batchEventProcessor.getSequence().get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceReportingCallbackTest.java linha: 53 Método: assertEquals(0L, batchEventProcessor.getSequence().get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/AggregateEventHandlerTest.java linha: 81 Método: assertThat(eh.lastEvent, is(event))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/AggregateEventHandlerTest.java linha: 82 Método: assertThat(eh.lastSequence, is(sequence))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/AggregateEventHandlerTest.java linha: 90 Método: assertThat(handler.startCalls, is(startCalls))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/AggregateEventHandlerTest.java linha: 98 Método: assertThat(handler.shutdownCalls, is(startCalls))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/support/WaitStrategyTestUtil.java linha: 43 Método: assertThat(sequence, is(0L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventTranslatorTest.java linha: 35 Método: assertEquals(TEST_VALUE, event.getTestString())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/DisruptorStressTest.java linha: 61 Método: assertThat(publisher.failed, is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/DisruptorStressTest.java linha: 66 Método: assertThat(handler.messagesSeen, is(not(0)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/DisruptorStressTest.java linha: 67 Método: assertThat(handler.failureCount, is(0))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/LifecycleAwareTest.java linha: 49 Método: assertThat(Integer.valueOf(handler.startCounter), is(Integer.valueOf(1)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/LifecycleAwareTest.java linha: 50 Método: assertThat(Integer.valueOf(handler.shutdownCounter), is(Integer.valueOf(1)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 55 Método: assertEquals(SingleProducerSequencer.INITIAL_CURSOR_VALUE, ringBuffer.getCursor())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 61 Método: assertEquals(0, sequence)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 64 Método: assertEquals(expectedEvent, event)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 66 Método: assertEquals(0L, ringBuffer.getCursor())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 77 Método: assertEquals(expectedEvent, messages.get().get(0))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 91 Método: assertEquals(expectedSequence, available)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 95 Método: assertEquals(i, ringBuffer.get(i).getValue())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 111 Método: assertEquals(expectedSequence, available)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 115 Método: assertEquals(i, ringBuffer.get(i).getValue())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 131 Método: assertFalse(ringBuffer.tryPublishEvent(StubEvent.TRANSLATOR, 3, "3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 144 Método: assertThrows(InsufficientCapacityException.class, ringBuffer::tryNext)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 178 Método: assertFalse(publisherComplete.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 185 Método: assertTrue(publisherComplete.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 197 Método: assertThat(ringBuffer, ringBufferWithEvents(0L, 1L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 209 Método: assertThat(ringBuffer, ringBufferWithEvents("Foo-0", "Foo-1"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 221 Método: assertThat(ringBuffer, ringBufferWithEvents("FooBar-0", "FooBar-1"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 233 Método: assertThat(ringBuffer, ringBufferWithEvents("FooBarBaz-0", "FooBarBaz-1"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 245 Método: assertThat(ringBuffer, ringBufferWithEvents("FooBarBazBam-0", "FooBarBazBam-1"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 257 Método: assertTrue(ringBuffer.tryPublishEvents(translators))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 259 Método: assertThat(ringBuffer, ringBufferWithEvents(0L, 1L, 2L, 3L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 266 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    final EventTranslator<Object[]> eventTranslator = new NoArgEventTranslator();
+    final EventTranslator<Object[]>[] translators = new EventTranslator[] { eventTranslator, eventTranslator, eventTranslator, eventTranslator, eventTranslator };
+    try {
+        ringBuffer.tryPublishEvents(translators);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 294 Método: assertTrue(ringBuffer.tryPublishEvents(translators, 0, 1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 296 Método: assertThat(ringBuffer, ringBufferWithEvents(is((Object) 0L), is((Object) 1L), is(nullValue()), is(nullValue())))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 312 Método: assertTrue(ringBuffer.tryPublishEvents(translators, 1, 2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 314 Método: assertThat(ringBuffer, ringBufferWithEvents(0L, 1L, 2L, 3L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 324 Método: assertTrue(ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 326 Método: assertThat(ringBuffer, ringBufferWithEvents("Foo-0", "Foo-1", "Foo-2", "Foo-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 332 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 355 Método: assertTrue(ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Foo" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 357 Método: assertThat(ringBuffer, ringBufferWithEvents(is((Object) "Foo-0"), is((Object) "Foo-1"), is(nullValue()), is(nullValue())))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 370 Método: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo", "Foo", "Foo" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 372 Método: assertThat(ringBuffer, ringBufferWithEvents("Foo-0", "Foo-1", "Foo-2", "Foo-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 384 Método: assertThat(ringBuffer, ringBufferWithEvents("FooBar-0", "FooBar-1", "FooBar-2", "FooBar-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 390 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 418 Método: assertThat(ringBuffer, ringBufferWithEvents(is((Object) "Foo0Bar0-0"), is((Object) "Foo2Bar2-1"), is(nullValue()), is(nullValue())))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 435 Método: assertThat(ringBuffer, ringBufferWithEvents("Foo1Bar1-0", "Foo2Bar2-1", "Foo4Bar4-2", "Foo5Bar5-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 449 Método: assertThat(ringBuffer, ringBufferWithEvents("FooBarBaz-0", "FooBarBaz-1", "FooBarBaz-2", "FooBarBaz-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 455 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Foo", "Foo", "Foo", "Foo" }, new String[] { "Bar", "Bar", "Bar", "Bar", "Bar" }, new String[] { "Baz", "Baz", "Baz", "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 486 Método: assertThat(ringBuffer, ringBufferWithEvents(is((Object) "FooBarBaz-0"), is((Object) "FooBarBaz-1"), is(nullValue()), is(nullValue())))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 502 Método: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Foo4", "Foo5" }, new String[] { "Bar3", "Bar4", "Bar5" }, new String[] { "Baz3", "Baz4", "Baz5" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 507 Método: assertThat(ringBuffer, ringBufferWithEvents("Foo1Bar1Baz1-0", "Foo2Bar2Baz2-1", "Foo4Bar4Baz4-2", "Foo5Bar5Baz5-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 520 Método: assertTrue(ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 524 Método: assertThat(ringBuffer, ringBufferWithEvents("FooBarBazBam-0", "FooBarBazBam-1", "FooBarBazBam-2", "FooBarBazBam-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 532 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorVararg<Object[]> translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 562 Método: assertTrue(ringBuffer.tryPublishEvents(translator, 0, 1, new String[] { "Foo", "Bar", "Baz", "Bam" }, new String[] { "Foo", "Bar", "Baz", "Bam" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 566 Método: assertThat(ringBuffer, ringBufferWithEvents(is((Object) "FooBarBazBam-0"), is((Object) "FooBarBazBam-1"), is(nullValue()), is(nullValue())))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 582 Método: assertTrue(ringBuffer.tryPublishEvents(translator, 1, 2, new String[] { "Foo3", "Bar3", "Baz3", "Bam3" }, new String[] { "Foo4", "Bar4", "Baz4", "Bam4" }, new String[] { "Foo5", "Bar5", "Baz5", "Bam5" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 588 Método: assertThat(ringBuffer, ringBufferWithEvents("Foo1Bar1Baz1Bam1-0", "Foo2Bar2Baz2Bam2-1", "Foo4Bar4Baz4Bam4-2", "Foo5Bar5Baz5Bam5-3"))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 597 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 617 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, 0);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 637 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 657 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator }, 1, 3);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 677 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 697 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, 1, -1);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 717 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 736 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslator<Object[]> translator = new NoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(new EventTranslator[] { translator, translator, translator, translator }, -1, 2);
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 755 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 774 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 793 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 812 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 831 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 849 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 875 Método: assertFalse(ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 868 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        assertFalse(ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }));
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 887 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorOneArg<Object[], String> translator = new OneArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 906 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 925 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 944 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 963 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 982 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1000 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1019 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1038 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorTwoArg<Object[], String, String> translator = new TwoArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1057 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1078 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1099 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1120 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1141 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1162 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1183 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1204 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    EventTranslatorThreeArg<Object[], String, String, String> translator = new ThreeArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo", "Foo" }, new String[] { "Bar", "Bar" }, new String[] { "Baz", "Baz" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1225 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1249 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 0, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1271 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1295 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1319 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.publishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1343 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, 3, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1367 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, 1, -1, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1391 Método: assertThrows(IllegalArgumentException.class, () -> {
+    RingBuffer<Object[]> ringBuffer = RingBuffer.createSingleProducer(new ArrayFactory(1), 4);
+    VarArgEventTranslator translator = new VarArgEventTranslator();
+    try {
+        ringBuffer.tryPublishEvents(translator, -1, 2, new String[] { "Foo0", "Bar0", "Baz0", "Bam0" }, new String[] { "Foo1", "Bar1", "Baz1", "Bam1" }, new String[] { "Foo2", "Bar2", "Baz2", "Bam2" });
+    } finally {
+        assertEmptyRingBuffer(ringBuffer);
+    }
+})
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1429 Método: assertThat(ringBuffer.getMinimumGatingSequence(), is(3L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1430 Método: assertTrue(ringBuffer.removeGatingSequence(sequenceThree))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1431 Método: assertThat(ringBuffer.getMinimumGatingSequence(), is(7L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1458 Método: assertThat(rb.getCursor(), is(127L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1468 Método: assertThat(rb.hasAvailableCapacity(1), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1489 Método: assertThat(ringBuffer.get(0)[0], is(nullValue()))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1490 Método: assertThat(ringBuffer.get(1)[0], is(nullValue()))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1491 Método: assertThat(ringBuffer.get(2)[0], is(nullValue()))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RingBufferTest.java linha: 1492 Método: assertThat(ringBuffer.get(3)[0], is(nullValue()))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/FixedSequenceGroupTest.java linha: 34 Método: assertThat(group.get(), is(34L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/FixedSequenceGroupTest.java linha: 36 Método: assertThat(group.get(), is(35L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/FixedSequenceGroupTest.java linha: 38 Método: assertThat(group.get(), is(47L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPublisherTest.java linha: 38 Método: assertThat(Long.valueOf(ringBuffer.get(0).get()), is(Long.valueOf(0 + 29L)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPublisherTest.java linha: 39 Método: assertThat(Long.valueOf(ringBuffer.get(1).get()), is(Long.valueOf(1 + 29L)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPublisherTest.java linha: 49 Método: assertThat(ringBuffer.tryPublishEvent(this), is(true))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPublisherTest.java linha: 54 Método: assertThat(Long.valueOf(ringBuffer.get(i).get()), is(Long.valueOf(i + 29L)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPublisherTest.java linha: 57 Método: assertThat(ringBuffer.tryPublishEvent(this), is(false))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SingleProducerSequencerTest.java linha: 18 Método: assertThat(sequencer.cursor.get(), not(next))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SingleProducerSequencerTest.java linha: 21 Método: assertThat(sequencer.cursor.get(), not(next))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 32 Método: assertEquals(Long.MAX_VALUE, sequenceGroup.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 43 Método: assertEquals(sequence.get(), sequenceGroup.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 65 Método: assertEquals(sequenceThree.get(), sequenceGroup.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 76 Método: assertEquals(3, sequenceGroup.size())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 89 Método: assertEquals(sequenceThree.get(), sequenceGroup.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 91 Método: assertTrue(sequenceGroup.remove(sequenceThree))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 92 Método: assertEquals(sequenceSeven.get(), sequenceGroup.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 93 Método: assertEquals(1, sequenceGroup.size())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 107 Método: assertEquals(sequenceThree.get(), sequenceGroup.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 109 Método: assertTrue(sequenceGroup.remove(sequenceThree))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 110 Método: assertEquals(sequenceSeven.get(), sequenceGroup.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 111 Método: assertEquals(1, sequenceGroup.size())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 127 Método: assertEquals(expectedSequence, sequenceThree.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 128 Método: assertEquals(expectedSequence, sequenceSeven.get())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceGroupTest.java linha: 146 Método: assertThat(sequenceThree.get(), is(10L))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 55 Método: assertTrue(completedWorkSequence >= expectedWorkSequence)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 90 Método: assertTrue(completedWorkSequence >= expectedWorkSequence)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 108 Método: assertThrows(AlertException.class, () -> sequenceBarrier.waitFor(expectedNumberMessages - 1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 146 Método: assertTrue(completedWorkSequence >= expectedWorkSequence)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 154 Método: assertFalse(sequenceBarrier.isAlerted())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 157 Método: assertTrue(sequenceBarrier.isAlerted())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/SequenceBarrierTest.java linha: 160 Método: assertFalse(sequenceBarrier.isAlerted())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchingTest.java linha: 96 Método: assertThat(handler1.publishedValue, CoreMatchers.is((long) eventCount - 2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchingTest.java linha: 97 Método: assertThat(handler1.eventCount, CoreMatchers.is((long) eventCount / 2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchingTest.java linha: 98 Método: assertThat(handler2.publishedValue, CoreMatchers.is((long) eventCount - 1))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/BatchingTest.java linha: 99 Método: assertThat(handler2.eventCount, CoreMatchers.is((long) eventCount / 2))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPollerTest.java linha: 28 Método: assertThat(poller.poll(handler), is(PollState.IDLE))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPollerTest.java linha: 32 Método: assertThat(poller.poll(handler), is(PollState.GATING))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPollerTest.java linha: 35 Método: assertThat(poller.poll(handler), is(PollState.PROCESSING))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/EventPollerTest.java linha: 68 Método: assertThat(events.size(), is(4))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/TimeoutBlockingWaitStrategyTest.java linha: 25 Método: assertThrows(TimeoutException.class, () -> waitStrategy.waitFor(6, cursor, cursor, sequenceBarrier))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/TimeoutBlockingWaitStrategyTest.java linha: 31 Método: assertTrue(timeWaiting >= theTimeout)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 46 Método: assertThat(values, containsExactSequence(event(0, 0)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 67 Método: assertThat(values, containsExactSequence(event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 88 Método: assertThat(values, containsExactSequence(event(0, 7), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 112 Método: assertThat(values, containsExactSequence(event(0, 8), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 133 Método: assertThat(values, containsExactSequence(event(0, 3), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 149 Método: assertThat(values, containsExactSequence(event(0, 0)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 169 Método: assertThat(values, containsExactSequence(event(0, 7), event(0, 7), event(0, 7), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 192 Método: assertThat(values, containsExactSequence(event(0, 8), event(0, 8), event(0, 8), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 215 Método: assertThat(values, containsExactSequence(event(0, 4), event(0, 4), event(0, 4), event(0, 6), event(0, 6), event(0, 6), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 237 Método: assertThat(values, containsExactSequence(event(0, 0)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 255 Método: assertEquals("not rewindable", exceptionHandled.get().getMessage())
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 271 Método: assertThat(values, containsExactSequence(event(0, 9), event(10, 19), event(20, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 293 Método: assertThat(values, containsExactSequence(event(0, 14), event(0, 14), event(0, 14), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 318 Método: assertThat(values, containsExactSequence(event(0, 14), event(0, 14), event(0, 14), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 324 Método: assertEquals(3, rewindPauseStrategy.count)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 345 Método: assertThat(values, containsExactSequence(event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 348 Método: assertEquals(0, rewindPauseStrategy.count)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 368 Método: assertThat(values, containsExactSequence(event(0, 14), event(0, 14), event(0, 14), event(0, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/RewindBatchEventProcessorTest.java linha: 399 Método: assertThat(values, containsExactSequence(event(0, 14), event(0, 14), event(0, 14), event(16, 24), event(16, 24), event(16, 24), event(26, lastSequenceNumber)))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/util/UtilTest.java linha: 30 Método: assertEquals(1024, powerOfTwo)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/util/UtilTest.java linha: 38 Método: assertEquals(1024, powerOfTwo)
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/util/UtilTest.java linha: 45 Método: assertEquals(3L, Util.getMinimumSequence(sequences))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/util/UtilTest.java linha: 53 Método: assertEquals(Long.MAX_VALUE, Util.getMinimumSequence(sequences))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/FatalExceptionHandlerTest.java linha: 34 Método: assertThrows(RuntimeException.class, () -> exceptionHandler.handleEventException(causeException, 0L, event))
+Assert sem descrição: /home/vitor-otto/opensource/disruptor-4.0.0.RC1/src/test/java/com/lmax/disruptor/FatalExceptionHandlerTest.java linha: 36 Método: assertEquals(causeException, ex.getCause())
+Total asserts: 290
+Asserts sem descrição: 278
+Asserts com descrição: 12
+Assertion Roulette: 151
